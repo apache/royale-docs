@@ -1,5 +1,5 @@
 ---
-layout: dockage
+layout: docpage
 title: Doc Page Test
 ---
 
