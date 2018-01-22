@@ -253,6 +253,13 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
+h1 {
+	margin-top: 0px;
+}
+
+.tagline {
+	font-family: 'Hind Siliguri';
+}
 
 .asf
 {
@@ -518,6 +525,7 @@
 .toc_and_doc {
 	display: flex;
 	align-items: flex-start;
+	font-family: 'Hind Siliguri';
 }
 
 .toc {
@@ -527,7 +535,6 @@
 .content {
 	display: inline-block;
 	flex-grow: 1;
-	font-family: 'Hind Siliguri';
 }
 
 .menu_div {
