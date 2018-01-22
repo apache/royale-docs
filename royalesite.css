@@ -515,3 +515,26 @@
 	padding-right: 14px;
 }
 
+.toc {
+	display: inline;
+}
+
+.content {
+	display: inline;
+}
+
+.menu_div {
+	margin-left: 20px;
+}
+
+.toc_entry {
+	margin-left: 20px;
+}
+
+.menu_div2 {
+	margin-left: 40px;
+}
+
+.toc_entry2 {
+	margin-left: 40px;
+}
