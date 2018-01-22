@@ -534,6 +534,7 @@ h1 {
 
 .toc {
 	display: inline-block;
+	margin-top: 10px;
 }
 
 .content {
