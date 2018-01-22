@@ -517,7 +517,7 @@
 
 .toc_and_doc {
 	display: flex;
-	align-items: top;
+	align-items: flex-start;
 }
 
 .toc {
@@ -527,6 +527,7 @@
 .content {
 	display: inline-block;
 	flex-grow: 1;
+	font-family: 'Hind Siliguri';
 }
 
 .menu_div {
