@@ -517,6 +517,7 @@
 
 .toc_and_doc {
 	display: flex;
+	align-items: top;
 }
 
 .toc {
@@ -535,6 +536,8 @@
 .toc_entry {
 	margin-left: 20px;
 	display: block;
+	text-decoration: none;
+	color: rgb(67, 147, 195);
 }
 
 .menu_div2 {
@@ -544,4 +547,6 @@
 .toc_entry2 {
 	margin-left: 40px;
 	display: block;
+	text-decoration: none;
+	color: rgb(67, 147, 195);
 }
