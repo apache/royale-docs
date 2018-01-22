@@ -259,6 +259,8 @@ h1 {
 
 .tagline {
 	font-family: 'Hind Siliguri';
+	margin-top: 0px;
+	font-size: 10px;
 }
 
 .asf
@@ -356,6 +358,7 @@ h1 {
 .social {
 	display: inline;
 	margin-top: 0px;
+	height: 40px;
 }
 
 .social_li {
@@ -377,6 +380,7 @@ h1 {
 	vertical-align: top;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	height: 40px;
 }
 
 .topMenu_li {
