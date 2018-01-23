@@ -26,6 +26,27 @@ limitations under the License.
 </head>
 
 <body class="page">
+{% assign welcome_menu_open = "none" %}
+{% assign features_menu_open = "none" %}
+{% assign involved_menu_open = "none" %}
+{% assign started_menu_open = "none" %}
+{% assign app_menu_open = "none" %}
+{% assign lifecycle_menu_open = "none" %}
+{% assign docpath = page.url | split: "/" %}
+{% for part in docpath %}
+{% if part == "Welcome" %}
+  {% assign welcome_menu_open = "block" %}
+{% if part == "Features" %}
+  {% assign features_menu_open = "block" %}
+{% if part == "GetInvolved" %}
+  {% assign involved_menu_open = "block" %}
+{% if part == "GetStarted" %}
+  {% assign started_menu_open = "block" %}
+{% if part == "CreateAnApplication" %}
+  {% assign app_menu_open = "block" %}
+{% if part == "ApplicationLifecycle" %}
+  {% assign lifecycle_menu_open = "block" %}
+{% endfor %}
 <div class="topbar">
 <img src="http://royale.codeoscopic.com/wp-content/uploads/2018/01/apache-royale-tm-logo-dark.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
 <ul class="topMenu">
@@ -64,26 +85,26 @@ limitations under the License.
 <div class="toc_and_doc">
   <div class="toc" id="toc">
     <a id="welcome" class="toc_entry" href="{{ site.baseurl }}/index.html">Welcome to Apache Royale</a>
-    <div id="welcome_menu" class="menu_div">
+    <div id="welcome_menu" class="menu_div" style="display: {{ welcome_menu_open }}">
       <a id="high_level_view" class="toc_entry" href="{{ site.baseurl }}/Welcome/High%20Level%20View.html">High Level View</a>
       <a id="features_and_concepts" class="toc_entry" href="{{ site.baseurl }}/Welcome/Features%20and%20Concepts.html">Features and Concepts</a>
-      <div id="features_and_concepts_menu" class="menu_div2">
+      <div id="features_and_concepts_menu" class="menu_div2" style="display: {{ features_menu_open }}">
         <a id="as3" class="toc_entry2" href="{{ site.baseurl }}/Welcome/Features/AS3.html">AS3</a>
         <a id="mxml" class="toc_entry2" href="{{ site.baseurl }}/Welcome/Features/MXML.html">MXML</a>
         <a id="payg" class="toc_entry2" href="{{ site.baseurl }}/Welcome/Features/PAYG.html">PAYG</a>
         <a id="strands_and_beads" class="toc_entry2" href="{{ site.baseurl }}/Welcome/Features/Strands%20And%20Beads.html">Strand and Beads</a>
       </div>
-      <a id="what_royale_and_you_can_do" class="toc_entry" href="{{ site.baseurl }}/Welcome/What%20Royale%20and%20You%20Cand%20Do.html">What Royale and You Can Do</a>
+      <a id="what_royale_and_you_can_do" class="toc_entry" href="{{ site.baseurl }}/Welcome/What%20Royale%20and%20You%20Can%20Do.html">What Royale and You Can Do</a>
       <a id="a_bit_of_history" class="toc_entry" href="{{ site.baseurl }}/Welcome/A%20Bit%20of%20History.html">A Bit of History</a>
       <a id="licenses_and_policies" class="toc_entry" href="{{ site.baseurl }}/Welcome/Licenses%20and%20Policies.html">Licenses and Policies</a>
       <a id="get_involved" class="toc_entry" href="{{ site.baseurl }}/Welcome/Get%20Involved.html">Get Involved!</a>
-      <div id="get_involved_menu" class="menu_div2">
+      <div id="get_involved_menu" class="menu_div2" style="display: {{ involved_menu_open }}">
         <a id="the_royale_team" class="toc_entry2" href="{{ site.baseurl }}/Welcome/GetInvolved/The%20%Royale%20Team.html">The Royale Team</a>
         <a id="the_apache_community" class="toc_entry2" href="{{ site.baseurl }}/Welcome/GetInvolved/The%20Apache%20Community.html">The Apache Community</a>
       </div>
     </div>
     <a id="get_started" class="toc_entry" href="{{ site.baseurl }}/Get%20Started.html">Get Started</a>
-    <div id="get_started_menu" class="menu_div">
+    <div id="get_started_menu" class="menu_div" style="display: {{ started_menu_open }}">
       <a id="system_requirements" class="toc_entry" href="{{ site.baseurl }}/GetStarted/System%20Requirements.html">System Requirements</a>
       <a id="development_tools" class="toc_entry" href="{{ site.baseurl }}/GetStarted/Development%20Tools.html">Development Tools</a>
       <a id="frameworks" class="toc_entry" href="{{ site.baseurl }}/GetStarted/Frameworks.html">Frameworks</a>
@@ -91,9 +112,9 @@ limitations under the License.
       <a id="hello_world" class="toc_entry" href="{{ site.baseurl }}/GetStarted/Hello%20World.html">Hello, World!</a>
     </div>
     <a id="create_an_application" class="toc_entry" href="{{ site.baseurl }}/Create%20An%20Application.html">Create an Application</a>
-    <div id="create_an_application_menu" class="menu_div">
+    <div id="create_an_application_menu" class="menu_div" style="display: {{ app_menu_open }}">
       <a id="application_lifecycle" class="toc_entry" href="{{ site.baseurl }}/CreateAnApplication/Application%20Lifecycle.html">Application Lifecycle</a>
-      <div id="application_lifecycle_menu" class="menu_div2">
+      <div id="application_lifecycle_menu" class="menu_div2" style="display: {{ lifecycle_menu_open}}">
         <a id="design" class="toc_entry2" href="{{ site.baseurl }}/CreateAnApplication/ApplicationLIfecycle/Design.html">Design</a>
         <a id="configure" class="toc_entry2" href="{{ site.baseurl }}/CreateAnApplication/ApplicationLIfecycle/Configure.html">Configure</a>
         <a id="build" class="toc_entry2" href="{{ site.baseurl }}/CreateAnApplication/ApplicationLIfecycle/Build.html">Build</a>
