@@ -539,6 +539,7 @@ h1 {
 
 .content {
 	display: inline-block;
+	right-margin: 10px
 	flex-grow: 1;
 }
 
@@ -554,7 +555,7 @@ h1 {
 }
 
 .menu_div2 {
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 .toc_entry2 {
