@@ -36,16 +36,17 @@ limitations under the License.
 {% for part in docpath %}
 {% if part == "Welcome" %}
   {% assign welcome_menu_open = "block" %}
-{% if part == "Features" %}
+{% elsif part == "Features" %}
   {% assign features_menu_open = "block" %}
-{% if part == "GetInvolved" %}
+{% elsif part == "GetInvolved" %}
   {% assign involved_menu_open = "block" %}
-{% if part == "GetStarted" %}
+{% elsif part == "GetStarted" %}
   {% assign started_menu_open = "block" %}
-{% if part == "CreateAnApplication" %}
+{% elsif part == "CreateAnApplication" %}
   {% assign app_menu_open = "block" %}
-{% if part == "ApplicationLifecycle" %}
+{% elsif part == "ApplicationLifecycle" %}
   {% assign lifecycle_menu_open = "block" %}
+{% endif %}
 {% endfor %}
 <div class="topbar">
 <img src="http://royale.codeoscopic.com/wp-content/uploads/2018/01/apache-royale-tm-logo-dark.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
