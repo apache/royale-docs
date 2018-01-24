@@ -77,6 +77,7 @@ limitations under the License.
 {% assign deploy = "inline" %}
 {% assign secure = "inline" %}
 {% assign maintain = "inline" %}
+{% assign structure = "inline" %}
 {% assign label_welcome = "none" %}
 {% assign label_high_level_view = "none" %}
 {% assign label_features_and_concepts = "none" %}
@@ -104,6 +105,7 @@ limitations under the License.
 {% assign label_deploy = "none" %}
 {% assign label_secure = "none" %}
 {% assign label_maintain = "none" %}
+{% assign label_structure = "none" %}
 {% case page.title %}
     {% when "Welcome to Apache Royale" %}
       {% assign welcome = "none" %}
@@ -186,6 +188,9 @@ limitations under the License.
     {% when "Maintain" %}
       {% assign maintain = "none" %}
       {% assign label_maintain = "inline" %}
+    {% when "Structure" %}
+      {% assign structure = "none" %}
+      {% assign label_structure = "inline" %}
 {% endcase %}
 <div class="topbar">
 <img src="http://royale.codeoscopic.com/wp-content/uploads/2018/01/apache-royale-tm-logo-dark.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
@@ -343,7 +348,10 @@ limitations under the License.
           <span class="toc_label" style="display: {{ label_maintain }}">Maintain</span>
         </div>
       </div>
-      <a id="structure" class="toc_entry" href="{{ site.baseurl }}/CreateAnApplication/Structure.html">Structure</a>
+      <div class="toc_entry" >
+        <a class="toc_link" href="CreateAnApplication/Structure.html" style="display: {{ structure }}">Structure</a>
+        <span class="toc_label" style="display: {{ label_structure }}">Structure</span>
+      </div>
     </div>
   </div>
   <div class="content" id="content">
