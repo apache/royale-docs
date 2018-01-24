@@ -547,20 +547,19 @@ h1 {
 	margin-left: 20px;
 }
 
-.toc_entry {
-	margin-left: 20px;
-	display: block;
-	text-decoration: none;
-	color: rgb(67, 147, 195);
-}
-
 .menu_div2 {
 	margin-left: 30px;
 }
 
-.toc_entry2 {
-	margin-left: 40px;
-	display: block;
+.toc_entry {
+}
+
+.toc_link {
 	text-decoration: none;
 	color: rgb(67, 147, 195);
+}
+
+.toc_label {
+    color: rgb(0, 0, 0);
+	font-weight: 600;
 }
