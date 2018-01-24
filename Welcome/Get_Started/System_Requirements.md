@@ -1,3 +1,8 @@
+---
+layout: docpage
+title: System_Requirements
+---
+
 <!-- What sort of hardware will support work in Royale -->
 # System requirements
 
