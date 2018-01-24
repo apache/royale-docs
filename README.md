@@ -9,9 +9,20 @@ We have three main audiences:
 
 We can't assume that everybody understands the conversational shorthand Flex veterans use. Write for a person of good will who is reading to *find out*, and who wants to get to the next needed nugget of knowledge soon so they can go and make progress on the app they are working on. 
 
+## Page structure
+Each .md page starts with "front matter" structured like this:
+
+```
+---
+layout: docpage
+title: README
+---
+```
+Use HTML comments at the top of the document for any explanatory notes for the doc team (```<!-- Not finished yet - Andrew -->```) and for provenance when adapting existing material for Royale purposes (```<!-- Created by Peter Ent, modified by Tom Chiverton, as part of FlexJS documentation-->```).
+
 ## Documentation conventions
 1. Address the reader directly, and in active voice, so "To do X, follow these steps..." rather than "When a developer wishes to do X, these steps would be followed..."
 2. Instead of "he or she" use "they" when the pronoun is for an indefinite singular actor: "When someone has an existing application to migrate, they should start by..." This offends my grammarian soul, but is becoming standard English.
 3. Link generously to other content in the help docs that may throw light on the current subject.
 4. When writing how-to material, provide the *what*, the *so what*, and the *now what*: what a widget is, why widgets can be important in your code, and here's how to find, adapt, or create the widget of your dreams.
-5. Use HTML comments at the top of the document for any explanatory notes for the doc team (```<!-- Not finished yet - Andrew -->```) and for provenance when adapting existing material for Royale purposes (```<!-- Created by Peter Ent, modified by Tom Chiverton, as part of FlexJS documentation-->```).
+
