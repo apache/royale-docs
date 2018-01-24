@@ -1,6 +1,6 @@
 ---
 layout: docpage
-title: migrate-from-flex
+title: Migrate from Flex
 ---
 <!-- This is from material created by Peter Ent and modified by Tom Chiverton: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=34013930 -->
 <!-- I have not added links to other pages, or to other sites, yet -->
