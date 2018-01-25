@@ -1,8 +1,8 @@
 ---
 layout: docpage
-title: Structure
+title: Application structure
 ---
 
-# Migrate from JavaScript
+# Application structure
 
 *This information will be available soon.*
