@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!--
+{% comment %}
 
 Licensed to the Apache Software Foundation (ASF) under one or more
 contributor license agreements.  See the NOTICE file distributed with
@@ -16,7 +16,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
--->
+{% endcomment %}
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -47,6 +47,8 @@ limitations under the License.
   {% assign app_menu_open = "block" %}
 {% elsif part == "ApplicationLifecycle" %}
   {% assign lifecycle_menu_open = "block" %}
+{% elsif part == "migrate-an-existing-app" %}
+  {% assign migration_menu_open = "block" %}
 {% endif %}
 {% endfor %}
 
@@ -78,6 +80,12 @@ limitations under the License.
 {% assign secure = "inline" %}
 {% assign maintain = "inline" %}
 {% assign structure = "inline" %}
+{% assign migrate = "inline" %}
+{% assign migrate_flex = "inline" %}
+{% assign migrate_js = "inline" %}
+{% assign security = "inline" %}
+{% assign modules = "inline" %}
+{% assign code_conventions = "inline" %}
 {% assign label_welcome = "none" %}
 {% assign label_high_level_view = "none" %}
 {% assign label_features_and_concepts = "none" %}
@@ -106,6 +114,12 @@ limitations under the License.
 {% assign label_secure = "none" %}
 {% assign label_maintain = "none" %}
 {% assign label_structure = "none" %}
+{% assign label_migrate = "none" %}
+{% assign label_migrate_flex = "none" %}
+{% assign label_migrate_js = "none" %}
+{% assign label_security = "none" %}
+{% assign label_modules = "none" %}
+{% assign label_code_conventions = "none" %}
 {% case page.title %}
     {% when "Welcome to Apache Royale" %}
       {% assign welcome = "none" %}
@@ -191,6 +205,24 @@ limitations under the License.
     {% when "Application structure" %}
       {% assign structure = "none" %}
       {% assign label_structure = "inline" %}
+    {% when "Migrate an existing application" %}
+      {% assign migrate = "none" %}
+      {% assign label_migrate = "inline" %}
+    {% when "Migrate from Flex" %}
+      {% assign migrate_flex = "none" %}
+      {% assign label_migrate_flex = "inline" %}
+    {% when "Migrate from JavaScript" %}
+      {% assign migrate_js = "none" %}
+      {% assign label_migrate_js = "inline" %}
+    {% when "Security" %}
+      {% assign security = "none" %}
+      {% assign label_security = "inline" %}
+    {% when "Modules" %}
+      {% assign modules = "none" %}
+      {% assign label_modules = "inline" %}
+    {% when "Royale Code Conventions" %}
+      {% assign code_conventions = "none" %}
+      {% assign label_code_conventions = "inline" %}
 {% endcase %}
 <div class="topbar">
 <img src="http://royale.codeoscopic.com/wp-content/uploads/2018/01/apache-royale-tm-logo-dark.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
@@ -351,6 +383,32 @@ limitations under the License.
       <div class="toc_entry" >
         <a class="toc_link" href="create-an-application/application-structure.html" style="display: {{ structure }}">Application structure</a>
         <span class="toc_label" style="display: {{ label_structure }}">Application structure</span>
+      </div>
+      <div class="toc_entry" >
+        <a class="toc_link" href="create-an-application/migrate-an-existing-app.html" style="display: {{ migrate }}">Migrate an existing application</a>
+        <span class="toc_label" style="display: {{ label_migrate }}">Migrate an existing application</span>
+      </div>
+      <div id="application_migration_menu" class="menu_div2" style="display: {{ migration_menu_open}}">
+        <div class="toc_entry" >
+          <a class="toc_link" href="create-an-application/migrate-an-existing-app/migrate-from-flex.html" style="display: {{ migrate_flex }}">Migrate from flex</a>
+          <span class="toc_label" style="display: {{ label_migrate_flex }}">Migrate from flex</span>
+        </div>
+        <div class="toc_entry" >
+          <a class="toc_link" href="create-an-application/migrate-an-existing-app/migrate-from-js.html" style="display: {{ migrate_js }}">Migrate from JavaScript</a>
+          <span class="toc_label" style="display: {{ label_migrate_js }}">Migrate from JavaScript</span>
+        </div>
+      </div>
+      <div class="toc_entry" >
+        <a class="toc_link" href="create-an-application/security.html" style="display: {{ security }}">Security</a>
+        <span class="toc_label" style="display: {{ label_security }}">Security</span>
+      </div>
+      <div class="toc_entry" >
+        <a class="toc_link" href="create-an-application/modules.html" style="display: {{ modules }}">Modules</a>
+        <span class="toc_label" style="display: {{ label_modules }}">Modules</span>
+      </div>
+      <div class="toc_entry" >
+        <a class="toc_link" href="create-an-application/code-conventions.html" style="display: {{ code_conventions }}">Royale code conventions</a>
+        <span class="toc_label" style="display: {{ label_code_conventions }}">Royale code conventions</span>
       </div>
     </div>
   </div>
