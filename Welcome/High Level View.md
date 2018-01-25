@@ -22,7 +22,9 @@ These features help you make fewer mistakes when writing code, and that saves ti
 <!-- Coming soon: LINK TO OM's UPDATED SLIDE SHOW http://events.linuxfoundation.org/sites/events/files/slides/FlexJS_ApacheCon_2015.pdf -->
 
 ## How it works
-*This material will be added soon.*
+Because both ActionScript and JavaScript are based on the same language, ECMAScript, most code you write in AS translates well to JS. One significant difference is that AS uses the concepts of classes and objects to structure how your code functions, while pure JavaScript does not have those concepts. When you get ready to compile and run your application, the Royale compiler translates AS-specific code into JS code organized into pseudo-classes, which then run just fine in a JavaScript world.
+
+That takes care of pretty much everything except the user interface. For that, Royale provides a set of UI containers and controls that do the work that the pure Flex containers and controls required the Flash engine to do.
 
 ## Status
 Adobe Royale 0.9.0 was released in January, 2018. It is roughly of beta quality. The latest release is always available on the *Download* tab of this site.
