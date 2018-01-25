@@ -23,7 +23,7 @@ The easiest way to create a Royale application is to start with an existing one 
 
 This document is divided into several sections:
 
-[Application Lifecycle](create-an-application/application-lifecycle.html) explains how a Royale application starts up and presents the initial UI.
+[Application Lifecycle](create-an-application/application-lifecycle.html) discusses the different phases of application development.
 
 [Structure](create-an-application/application-structure.html) explains the important files that typically comprise and application and what they do.
 

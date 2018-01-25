@@ -45,7 +45,7 @@ limitations under the License.
   {% assign started_menu_open = "block" %}
 {% elsif part == "create-an-application" %}
   {% assign app_menu_open = "block" %}
-{% elsif part == "ApplicationLifecycle" %}
+{% elsif part == "application-lifecycle" %}
   {% assign lifecycle_menu_open = "block" %}
 {% elsif part == "migrate-an-existing-app" %}
   {% assign migration_menu_open = "block" %}
@@ -184,22 +184,22 @@ limitations under the License.
     {% when "Application Lifecycle" %}
       {% assign application_lifecycle = "none" %}
       {% assign label_application_lifecycle = "inline" %}
-    {% when "Design" %}
+    {% when "Application design" %}
       {% assign design = "none" %}
       {% assign label_design = "inline" %}
-    {% when "Configure" %}
+    {% when "Application configuration" %}
       {% assign configure = "none" %}
       {% assign label_configure = "inline" %}
-    {% when "Build" %}
+    {% when "Build the application" %}
       {% assign build = "none" %}
       {% assign label_build = "inline" %}
-    {% when "Deploy" %}
+    {% when "Application deployment" %}
       {% assign deploy = "none" %}
       {% assign label_deploy = "inline" %}
-    {% when "Secure" %}
+    {% when "Application security" %}
       {% assign secure = "none" %}
       {% assign label_secure = "inline" %}
-    {% when "Maintain" %}
+    {% when "Application maintenance" %}
       {% assign maintain = "none" %}
       {% assign label_maintain = "inline" %}
     {% when "Application structure" %}
@@ -351,32 +351,32 @@ limitations under the License.
     </div>
     <div id="create_an_application_menu" class="menu_div" style="display: {{ app_menu_open }}">
       <div class="toc_entry">
-        <a class="toc_link" href="CreateAnApplication/Application%20Lifecycle.html" style="display: {{ application_lifecycle }}">Application Lifecycle</a>
+        <a class="toc_link" href="create-an-application/application-lifecycle.html" style="display: {{ application_lifecycle }}">Application Lifecycle</a>
         <span class="toc_label" style="display: {{ label_application_lifecycle }}">Application Lifecycle</span>
       </div>
       <div id="application_lifecycle_menu" class="menu_div2" style="display: {{ lifecycle_menu_open}}">
         <div class="toc_entry" >
-          <a class="toc_link" href="CreateAnApplication/ApplicationLIfecycle/Design.html" style="display: {{ design }}">Design</a>
+          <a class="toc_link" href="create-an-application/application-lifecycle/design.html" style="display: {{ design }}">Design</a>
           <span class="toc_label" style="display: {{ label_design }}">Design</span>
         </div>
         <div class="toc_entry" >
-          <a class="toc_link" href="CreateAnApplication/ApplicationLIfecycle/Configure.html" style="display: {{ configure }}">Configure</a>
+          <a class="toc_link" href="create-an-application/application-lifecycle/configure.html" style="display: {{ configure }}">Configure</a>
           <span class="toc_label" style="display: {{ label_configure }}">Configure</span>
         </div>
         <div class="toc_entry" >
-          <a class="toc_link" href="CreateAnApplication/ApplicationLIfecycle/Build.html" style="display: {{ build }}">Build</a>
+          <a class="toc_link" href="create-an-application/application-lifecycle/build.html" style="display: {{ build }}">Build</a>
           <span class="toc_label" style="display: {{ label_build }}">Build</span>
         </div>
         <div class="toc_entry" >
-          <a class="toc_link" href="CreateAnApplication/ApplicationLIfecycle/Deploy.html" style="display: {{ deploy }}">Deploy</a>
+          <a class="toc_link" href="create-an-application/application-lifecycle/deploy.html" style="display: {{ deploy }}">Deploy</a>
           <span class="toc_label" style="display: {{ label_deploy }}">Deploy</span>
         </div>
         <div class="toc_entry" >
-          <a class="toc_link" href="CreateAnApplication/ApplicationLIfecycle/Secure.html" style="display: {{ secure }}">Secure</a>
+          <a class="toc_link" href="create-an-application/application-lifecycle/secure.html" style="display: {{ secure }}">Secure</a>
           <span class="toc_label" style="display: {{ label_secure }}">Secure</span>
         </div>
         <div class="toc_entry" >
-          <a class="toc_link" href="CreateAnApplication/ApplicationLIfecycle/Maintain.html" style="display: {{ maintain }}">Maintain</a>
+          <a class="toc_link" href="create-an-application/application-lifecycle/maintain.html" style="display: {{ maintain }}">Maintain</a>
           <span class="toc_label" style="display: {{ label_maintain }}">Maintain</span>
         </div>
       </div>
@@ -390,8 +390,8 @@ limitations under the License.
       </div>
       <div id="application_migration_menu" class="menu_div2" style="display: {{ migration_menu_open}}">
         <div class="toc_entry" >
-          <a class="toc_link" href="create-an-application/migrate-an-existing-app/migrate-from-flex.html" style="display: {{ migrate_flex }}">Migrate from flex</a>
-          <span class="toc_label" style="display: {{ label_migrate_flex }}">Migrate from flex</span>
+          <a class="toc_link" href="create-an-application/migrate-an-existing-app/migrate-from-flex.html" style="display: {{ migrate_flex }}">Migrate from Flex</a>
+          <span class="toc_label" style="display: {{ label_migrate_flex }}">Migrate from Flex</span>
         </div>
         <div class="toc_entry" >
           <a class="toc_link" href="create-an-application/migrate-an-existing-app/migrate-from-js.html" style="display: {{ migrate_js }}">Migrate from JavaScript</a>
