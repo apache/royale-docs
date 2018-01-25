@@ -20,3 +20,14 @@ Beyond that, it is becoming clear that Royale can provide significant developer 
 These features help you make fewer mistakes when writing code, and that saves time and improves productivity.  
 
 <!-- Coming soon: LINK TO OM's UPDATED SLIDE SHOW http://events.linuxfoundation.org/sites/events/files/slides/FlexJS_ApacheCon_2015.pdf -->
+
+## Status
+Adobe Royale 0.9.0 was released in January, 2018. It is roughly of beta quality. The latest release is always available on the *Download* tab of this site.
+
+Our project does not have a roadmap. As with most Apache projects, Royale is largely staffed by devoted volunteers. Rather than having a project owner who directs development, contributors come to agreement as a group about what they will work on next. Decisions are based on a combination of contributor skills and interests, and feature requests we receive from both Apache Flex and Royale users.
+
+*Hint: the best way to move Royale forward is to join in and help!*
+
+
+## Showcase
+Visit "What Royale and you can do" to see examples, with source code, of what you can build with Apache Royale.
