@@ -1,3 +1,7 @@
+# jekyll
+/_site/
+local_config.yml
+
 # eclipse conf file
 .settings
 .classpath
@@ -5,143 +9,41 @@
 .manager
 .scala_dependencies
 .cache
-.actionScriptProperties
-.flexProperties
-.flexLibProperties
 
 # idea conf files
 .idea
 *.iml
 *.ipr
 *.iws
-
-# building
-target/
-[Bb]uild/
-null
-tmp
-temp
-dist
-test-output
-build.log
-release
-fonts
-out
-gen
-bin-debug
-bin-release
-binjs-debug
-binjs-release
-examples/FlexJSTest_again/html-template
-examples/FlexJSTest_again/bin
-rat.report
-mustella/tests/basicTests/bin
-asdoc-output
-
-#Apache Flex Projects
-lib/
-libs/
-in/
-swfobject/
-flex2/
-thirdparty/
-3.0.33/
-3.0.33
-
-*.pbj
-*.vms
-*.ser
-*.mxp
-bundles.properties
-empty.properties
-css_*.properties
-FXGException_*.properties
-FXGLog_*.properties
-FABridge.js
-frameworks/projects/spark/manifest.xml
-frameworks/air-config.xml
-frameworks/createjs-config.xml
-frameworks/flex-config.xml
-frameworks/jquery-config.xml
-frameworks/js-config.xml
-frameworks/node-config.xml
-frameworks/royale-config.xml
-env.properties
-local.properties
-/flex-sdk-description.xml
-/royale-sdk-description.xml
+*.eml
 
 #OS junk files
 [Tt]humbs.db
 *.DS_Store
+/jenkins/
 
-#Files we fake for Flash Builder SDKs
-frameworks/airmobile-config.xml
-frameworks/mxml-manifest.xml
-frameworks/spark-manifest.xml
-frameworks/themes/Halo/Halo.swc
-frameworks/themes/Spark/spark.css
-ide/flashbuilder/flashbuilder-config.xml
+# Maven files
+target/
 
-#Visual Studio files
-*.[Oo]bj
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.[Cc]ache
-*.ilk
-*.log
-*.lib
-*.sbr
-*.sdf
-ipch/
-obj/
-[Dd]ebug/
-[Rr]elease*/
-Ankh.NoLoad
-!releasemgr
+local.properties
+env.properties
 
-#Tooling
-_ReSharper*/
-*.resharper
+out/
+temp/
+rat.report
 
-#CVS files
-.svn
-.git
+# files copied from google closure compiler
+externs/js/externs
+externs/jquery/externs
+externs/jasmine/externs
+externs/createjs/externs
+externs/createjs/in
+externs/google_maps/externs
+externs/node/externs
 
-# Office Temp Files
-~$*
+# debugger output folders
+debugger/bin/
+debugger/generated/
 
-#Binaries
-*.dll
-*.bin
-*.com
-*.exe
-*.class
-*.jar
-*.swf
-*.swc
-
-#Compressed Files
-*.zip
-*.rar
-*.tar
-
-#VF2JS generated files
-vf2js/frameworks/js/
-
-#FlexJS generated files
-frameworks/js/FlexJS/generated-sources
-manualtests/FlexJSTest_SVG/bin
-
-#npm
-node_modules
+# Asciidoctor related temp files
+ditaa-diagram.*
