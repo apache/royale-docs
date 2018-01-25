@@ -21,6 +21,9 @@ These features help you make fewer mistakes when writing code, and that saves ti
 
 <!-- Coming soon: LINK TO OM's UPDATED SLIDE SHOW http://events.linuxfoundation.org/sites/events/files/slides/FlexJS_ApacheCon_2015.pdf -->
 
+## How it works
+*This material will be added soon.*
+
 ## Status
 Adobe Royale 0.9.0 was released in January, 2018. It is roughly of beta quality. The latest release is always available on the *Download* tab of this site.
 
