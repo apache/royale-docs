@@ -40,3 +40,12 @@ Use HTML comments at the top of the document for any explanatory notes for the d
 3. Link generously to other content in the help docs that may throw light on the current subject.
 4. When writing how-to material, provide the *what*, the *so what*, and the *now what*: what a widget is, why widgets can be important in your code, and here's how to find, adapt, or create the widget of your dreams.
 
+## Links
+
+In the .md files, links have to be a full path without the leading slash. So to link to /welcome/features/as3.md, you would use
+
+```[as3](welcome/features/as3.html)```
+
+When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs. The syntax for opening a new browser window or tab is:
+
+```[as3](welcome/features/as3.html){:target='_blank'}```
