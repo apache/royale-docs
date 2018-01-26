@@ -5,7 +5,7 @@ title: Welcome to Apache Royale
 
 # Welcome to Apache Royale!
 
-This is the main documentation for Apache Royale.  If you are looking for the API Reference, [click here](http://apacheroyaleci.westus2.cloudapp.azure.com:8080/job/Royale_ASDoc_Example/lastSuccessfulBuild/artifact/examples/royale/ASDoc/bin/js-debug/index.html).
+This is the main documentation for Apache Royale.  If you are looking for the API Reference, [click here](http://apacheroyaleci.westus2.cloudapp.azure.com:8080/job/Royale_ASDoc_Example/lastSuccessfulBuild/artifact/examples/royale/ASDoc/bin/js-debug/index.html){:target='_blank'}.
 
 This document is divided into several sections:
 
