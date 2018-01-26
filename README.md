@@ -38,6 +38,10 @@ In the .md files, links have to be a full path without the leading slash. So to 
 ```[AS3](Welcome/Features/AS3.html)```
 Links are case-sensitive, and you need to insert ```%20``` where a space appears in the target file's name.
 
-When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs. It does not look like Markdown suppports this behavior very well (there are multiple solutions online, which tells me none of them work uniformly). Use straight HTML for these links, like this:
+When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs. If you want to use MarkDown, set the link like this:
+
+```[Apache Flex](http://flex.apache.org){:target='_blank'}```
+
+You can also use straight HTML for these links, like this:
 
 ```<a href="http://flex.apache.org" target="_blank">Apache Flex</a>```
