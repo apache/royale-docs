@@ -27,203 +27,6 @@ limitations under the License.
 </head>
 
 <body class="page">
-{% assign welcome_menu_open = "none" %}
-{% assign features_menu_open = "none" %}
-{% assign involved_menu_open = "none" %}
-{% assign started_menu_open = "none" %}
-{% assign app_menu_open = "none" %}
-{% assign lifecycle_menu_open = "none" %}
-{% assign docpath = page.url | split: "/" %}
-{% for part in docpath %}
-{% if part == "Welcome" %}
-  {% assign welcome_menu_open = "block" %}
-{% elsif part == "Features" %}
-  {% assign features_menu_open = "block" %}
-{% elsif part == "GetInvolved" %}
-  {% assign involved_menu_open = "block" %}
-{% elsif part == "GetStarted" %}
-  {% assign started_menu_open = "block" %}
-{% elsif part == "create-an-application" %}
-  {% assign app_menu_open = "block" %}
-{% elsif part == "application-lifecycle" %}
-  {% assign lifecycle_menu_open = "block" %}
-{% elsif part == "migrate-an-existing-app" %}
-  {% assign migration_menu_open = "block" %}
-{% endif %}
-{% endfor %}
-
-{% assign welcome = "inline" %}
-{% assign high_level_view = "inline" %}
-{% assign features_and_concepts = "inline" %}
-{% assign as3 = "inline" %}
-{% assign mxml = "inline" %}
-{% assign payg = "inline" %}
-{% assign strands_and_beads = "inline" %}
-{% assign what_royale_and_you_can_do = "inline" %}
-{% assign a_bit_of_history = "inline" %}
-{% assign licenses_and_policies = "inline" %}
-{% assign get_involved = "inline" %}
-{% assign the_royale_team = "inline" %}
-{% assign the_apache_community = "inline" %}
-{% assign get_started = "inline" %}
-{% assign system_requirements = "inline" %}
-{% assign development_tools = "inline" %}
-{% assign frameworks = "inline" %}
-{% assign download_royale = "inline" %}
-{% assign hello_world = "inline" %}
-{% assign create_an_application = "inline" %}
-{% assign application_lifecycle = "inline" %}
-{% assign design = "inline" %}
-{% assign configure = "inline" %}
-{% assign build = "inline" %}
-{% assign deploy = "inline" %}
-{% assign secure = "inline" %}
-{% assign maintain = "inline" %}
-{% assign structure = "inline" %}
-{% assign migrate = "inline" %}
-{% assign migrate_flex = "inline" %}
-{% assign migrate_js = "inline" %}
-{% assign security = "inline" %}
-{% assign modules = "inline" %}
-{% assign code_conventions = "inline" %}
-{% assign label_welcome = "none" %}
-{% assign label_high_level_view = "none" %}
-{% assign label_features_and_concepts = "none" %}
-{% assign label_as3 = "none" %}
-{% assign label_mxml = "none" %}
-{% assign label_payg = "none" %}
-{% assign label_strands_and_beads = "none" %}
-{% assign label_what_royale_and_you_can_do = "none" %}
-{% assign label_a_bit_of_history = "none" %}
-{% assign label_licenses_and_policies = "none" %}
-{% assign label_get_involved = "none" %}
-{% assign label_the_royale_team = "none" %}
-{% assign label_the_apache_community = "none" %}
-{% assign label_get_started = "none" %}
-{% assign label_system_requirements = "none" %}
-{% assign label_development_tools = "none" %}
-{% assign label_frameworks = "none" %}
-{% assign label_download_royale = "none" %}
-{% assign label_hello_world = "none" %}
-{% assign label_create_an_application = "none" %}
-{% assign label_application_lifecycle = "none" %}
-{% assign label_design = "none" %}
-{% assign label_configure = "none" %}
-{% assign label_build = "none" %}
-{% assign label_deploy = "none" %}
-{% assign label_secure = "none" %}
-{% assign label_maintain = "none" %}
-{% assign label_structure = "none" %}
-{% assign label_migrate = "none" %}
-{% assign label_migrate_flex = "none" %}
-{% assign label_migrate_js = "none" %}
-{% assign label_security = "none" %}
-{% assign label_modules = "none" %}
-{% assign label_code_conventions = "none" %}
-{% case page.title %}
-    {% when "Welcome to Apache Royale" %}
-      {% assign welcome = "none" %}
-      {% assign label_welcome = "inline" %}
-    {% when "High Level View" %}
-      {% assign high_level_view = "none" %}
-      {% assign label_high_level_view = "inline" %}
-    {% when "Features and Concepts" %}
-      {% assign features_and_concepts = "none" %}
-      {% assign label_features_and_concepts = "inline" %}
-    {% when "AS3" %}
-      {% assign as3 = "none" %}
-      {% assign label_as3 = "inline" %}
-    {% when "MXML" %}
-      {% assign mxml = "none" %}
-      {% assign label_mxml = "inline" %}
-    {% when "PAYG" %}
-      {% assign payg = "none" %}
-      {% assign label_payg = "inline" %}
-    {% when "Strands and Beads" %}
-      {% assign strands_and_beads = "none" %}
-      {% assign label_strands_and_beads = "inline" %}
-    {% when "What Royale and You Can Do" %}
-      {% assign what_royale_and_you_can_do = "none" %}
-      {% assign label_what_royale_and_you_can_do = "inline" %}
-    {% when "A Bit of History" %}
-      {% assign a_bit_of_history = "none" %}
-      {% assign label_a_bit_of_history = "inline" %}
-    {% when "Licenses and Policies" %}
-      {% assign licenses_and_policies = "none" %}
-      {% assign label_licenses_and_policies = "inline" %}
-    {% when "Get Involved" %}
-      {% assign get_involved = "none" %}
-      {% assign label_get_involved = "inline" %}
-    {% when "The Royale Team" %}
-      {% assign the_royale_team = "none" %}
-      {% assign label_the_royale_team = "inline" %}
-    {% when "The Apache Community" %}
-      {% assign the_apache_community = "none" %}
-      {% assign label_the_apache_community = "inline" %}
-    {% when "Get Started" %}
-      {% assign get_started = "none" %}
-      {% assign label_get_started = "inline" %}
-    {% when "System Requirements" %}
-      {% assign system_requirements = "none" %}
-      {% assign label_system_requirements = "inline" %}
-    {% when "Development Tools" %}
-      {% assign development_tools = "none" %}
-      {% assign label_development_tools = "inline" %}
-    {% when "Frameworks" %}
-      {% assign frameworks = "none" %}
-      {% assign label_frameworks = "inline" %}
-    {% when "Download Royale" %}
-      {% assign download_royale = "none" %}
-      {% assign label_download_royale = "inline" %}
-    {% when "Hello, World" %}
-      {% assign hello_world = "none" %}
-      {% assign label_hello_world = "inline" %}
-    {% when "Create an Application" %}
-      {% assign create_an_application = "none" %}
-      {% assign label_create_an_application = "inline" %}
-    {% when "Application Lifecycle" %}
-      {% assign application_lifecycle = "none" %}
-      {% assign label_application_lifecycle = "inline" %}
-    {% when "Application design" %}
-      {% assign design = "none" %}
-      {% assign label_design = "inline" %}
-    {% when "Application configuration" %}
-      {% assign configure = "none" %}
-      {% assign label_configure = "inline" %}
-    {% when "Build the application" %}
-      {% assign build = "none" %}
-      {% assign label_build = "inline" %}
-    {% when "Application deployment" %}
-      {% assign deploy = "none" %}
-      {% assign label_deploy = "inline" %}
-    {% when "Application security" %}
-      {% assign secure = "none" %}
-      {% assign label_secure = "inline" %}
-    {% when "Application maintenance" %}
-      {% assign maintain = "none" %}
-      {% assign label_maintain = "inline" %}
-    {% when "Application structure" %}
-      {% assign structure = "none" %}
-      {% assign label_structure = "inline" %}
-    {% when "Migrate an existing application" %}
-      {% assign migrate = "none" %}
-      {% assign label_migrate = "inline" %}
-    {% when "Migrate from Flex" %}
-      {% assign migrate_flex = "none" %}
-      {% assign label_migrate_flex = "inline" %}
-    {% when "Migrate from JavaScript" %}
-      {% assign migrate_js = "none" %}
-      {% assign label_migrate_js = "inline" %}
-    {% when "Security" %}
-      {% assign security = "none" %}
-      {% assign label_security = "inline" %}
-    {% when "Modules" %}
-      {% assign modules = "none" %}
-      {% assign label_modules = "inline" %}
-    {% when "Royale Code Conventions" %}
-      {% assign code_conventions = "none" %}
-      {% assign label_code_conventions = "inline" %}
-{% endcase %}
 <div class="topbar">
 <img src="http://royale.codeoscopic.com/wp-content/uploads/2018/01/apache-royale-tm-logo-dark.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
 <ul class="topMenu">
@@ -261,156 +64,72 @@ limitations under the License.
 <p class="tagline">Designed for the future.  Code Once.  Run Everywhere.</p>
 <div class="toc_and_doc">
   <div class="toc" id="toc">
-    <div class="toc_entry">
-      <a class="toc_link" href="index.html" style="display: {{ welcome }}">Welcome to Apache Royale</a>
-      <span class="toc_label" style="display: {{ label_welcome }}">Welcome to Apache Royale</span>
-    </div>
-    <div id="welcome_menu" class="menu_div" style="display: {{ welcome_menu_open }}">
-      <div class="toc_entry" >
-        <a class="toc_link" href="Welcome/High%20Level%20View.html" style="display: {{ high_level_view }}">High Level View</a>
-        <span class="toc_label" style="display: {{ label_high_level_view }}">High Level View</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="Welcome/Features%20and%20Concepts.html" style="display: {{ features_and_concepts }}">Features and Concepts</a>
-        <span class="toc_label" style="display: {{ label_features_and_concepts }}">Features and Concepts</span>
-      </div>
-      <div id="features_and_concepts_menu" class="menu_div2" style="display: {{ features_menu_open }}">
-        <div class="toc_entry" >
-          <a class="toc_link" href="Welcome/Features/AS3.html" style="display: {{ as3 }}">AS3</a>
-          <span class="toc_label" style="display: {{ label_as3 }}">AS3</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="Welcome/Features/MXML.html" style="display: {{ mxml }}">MXML</a>
-          <span class="toc_label" style="display: {{ label_mxml }}">MXML</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="Welcome/Features/PAYG.html" style="display: {{ payg }}">PAYG</a>
-          <span class="toc_label" style="display: {{ label_payg }}">PAYG</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="Welcome/Features/Strands%20And%20Beads.html" style="display: {{ strands_and_beads }}">Strand and Beads</a>
-          <span class="toc_label" style="display: {{ label_strands_and_beads }}">Strand and Beads</span>
-        </div>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="Welcome/What%20Royale%20and%20You%20Can%20Do.html" style="display: {{ what_royale_and_you_can_do }}">What Royale and You Can Do</a>
-        <span class="toc_label" style="display: {{ label_what_royale_and_you_can_do }}">What Royale and You Can Do</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="Welcome/A%20Bit%20of%20History.html" style="display: {{ a_bit_of_history }}">A Bit of History</a>
-        <span class="toc_label" style="display: {{ label_a_bit_of_history }}">A Bit of History</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="Welcome/Licenses%20and%20Policies.html" style="display: {{ licenses_and_policies }}">Licenses and Policies</a>
-        <span class="toc_label" style="display: {{ label_licenses_and_policies }}">Licenses and Policies</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="Welcome/Get%20Involved.html" style="display: {{ get_involved }}">Get Involved!</a>
-        <span class="toc_label" style="display: {{ label_get_involved }}">Get Involved!</span>
-      </div>
-      <div id="get_involved_menu" class="menu_div2" style="display: {{ involved_menu_open }}">
-        <div class="toc_entry" >
-          <a class="toc_link" href="Welcome/GetInvolved/The%20%Royale%20Team.html" style="display: {{ the_royale_team }}">The Royale Team</a>
-          <span class="toc_label" style="display: {{ label_the_royale_team }}">The Royale Team</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="Welcome/GetInvolved/The%20Apache%20Community.html" style="display: {{ the_apache_community }}">The Apache Community</a>
-          <span class="toc_label" style="display: {{ label_the_apache_community }}">The Apache Community</span>
-        </div>
-      </div>
-    </div>
-    <div class="toc_entry">
-      <a class="toc_link" href="Get%20Started.html" style="display: {{ get_started }}">Get Started</a>
-      <span class="toc_label" style="display: {{ label_get_started }}">Get Started</span>
-    </div>
-    <div id="get_started_menu" class="menu_div" style="display: {{ started_menu_open }}">
-      <div class="toc_entry" >
-        <a class="toc_link" href="GetStarted/System%20Requirements.html" style="display: {{ system_requirements }}">System Requirements</a>
-        <span class="toc_label" style="display: {{ label_system_requirements }}">System Requirements</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="GetStarted/Development%20Tools.html" style="display: {{ development_tools }}">Development Tools</a>
-        <span class="toc_label" style="display: {{ label_development_tools }}">Development Tools</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="GetStarted/Frameworks.html" style="display: {{ frameworks }}">Frameworks</a>
-        <span class="toc_label" style="display: {{ label_frameworks }}">Frameworks</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="GetStarted/Download%20Royale.html" style="display: {{ download_royale }}">Download Royale</a>
-        <span class="toc_label" style="display: {{ label_download_royale }}">Download Royale</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="GetStarted/Hello%20World.html" style="display: {{ hello_world }}">Hello, World!</a>
-        <span class="toc_label" style="display: {{ label_hello_world }}">Hello, World!</span>
-      </div>
-    </div>
-    <div class="toc_entry">
-      <a class="toc_link" href="Create%20An%20Application.html" style="display: {{ create_an_application }}">Create an Application</a>
-      <span class="toc_label" style="display: {{ label_create_an_application }}">Create an Application</span>
-    </div>
-    <div id="create_an_application_menu" class="menu_div" style="display: {{ app_menu_open }}">
+{% assign pagepathparts = page.path | split: "/" %}
+{% assign numparts = pagepathparts | size %}
+{% case numparts %)
+  {% when 1 %}
+    {% assign folder1 = "" %}
+    {% assign folder2 = "" %}
+  {% when 2 %}
+    {% assign folder1 = pagepathparts[0] %}
+    {% assign folder2 = "" %}
+  {% when 3 %}
+    {% assign folder1 = pagepathparts[0] %}
+    {% assign folder2 = pagepathparts[1] %}
+{% endcase %}
+{% for entry in site.data.toc.toc %}
+  {% for p in site.pages %}
+    {% if p.path == entry.path %}
       <div class="toc_entry">
-        <a class="toc_link" href="create-an-application/application-lifecycle.html" style="display: {{ application_lifecycle }}">Application Lifecycle</a>
-        <span class="toc_label" style="display: {{ label_application_lifecycle }}">Application Lifecycle</span>
+      {% if p.path == page.path %}
+        <span class="toc_label">{{ p.title }}</span>
+      {% else %}
+        <a class="toc_link" href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a>
+      {% endif %}
       </div>
-      <div id="application_lifecycle_menu" class="menu_div2" style="display: {{ lifecycle_menu_open}}">
-        <div class="toc_entry" >
-          <a class="toc_link" href="create-an-application/application-lifecycle/design.html" style="display: {{ design }}">Design</a>
-          <span class="toc_label" style="display: {{ label_design }}">Design</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="create-an-application/application-lifecycle/configure.html" style="display: {{ configure }}">Configure</a>
-          <span class="toc_label" style="display: {{ label_configure }}">Configure</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="create-an-application/application-lifecycle/build.html" style="display: {{ build }}">Build</a>
-          <span class="toc_label" style="display: {{ label_build }}">Build</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="create-an-application/application-lifecycle/deploy.html" style="display: {{ deploy }}">Deploy</a>
-          <span class="toc_label" style="display: {{ label_deploy }}">Deploy</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="create-an-application/application-lifecycle/secure.html" style="display: {{ secure }}">Secure</a>
-          <span class="toc_label" style="display: {{ label_secure }}">Secure</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="create-an-application/application-lifecycle/maintain.html" style="display: {{ maintain }}">Maintain</a>
-          <span class="toc_label" style="display: {{ label_maintain }}">Maintain</span>
-        </div>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="create-an-application/application-structure.html" style="display: {{ structure }}">Application structure</a>
-        <span class="toc_label" style="display: {{ label_structure }}">Application structure</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="create-an-application/migrate-an-existing-app.html" style="display: {{ migrate }}">Migrate an existing application</a>
-        <span class="toc_label" style="display: {{ label_migrate }}">Migrate an existing application</span>
-      </div>
-      <div id="application_migration_menu" class="menu_div2" style="display: {{ migration_menu_open}}">
-        <div class="toc_entry" >
-          <a class="toc_link" href="create-an-application/migrate-an-existing-app/migrate-from-flex.html" style="display: {{ migrate_flex }}">Migrate from Flex</a>
-          <span class="toc_label" style="display: {{ label_migrate_flex }}">Migrate from Flex</span>
-        </div>
-        <div class="toc_entry" >
-          <a class="toc_link" href="create-an-application/migrate-an-existing-app/migrate-from-js.html" style="display: {{ migrate_js }}">Migrate from JavaScript</a>
-          <span class="toc_label" style="display: {{ label_migrate_js }}">Migrate from JavaScript</span>
-        </div>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="create-an-application/security.html" style="display: {{ security }}">Security</a>
-        <span class="toc_label" style="display: {{ label_security }}">Security</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="create-an-application/modules.html" style="display: {{ modules }}">Modules</a>
-        <span class="toc_label" style="display: {{ label_modules }}">Modules</span>
-      </div>
-      <div class="toc_entry" >
-        <a class="toc_link" href="create-an-application/code-conventions.html" style="display: {{ code_conventions }}">Royale code conventions</a>
-        <span class="toc_label" style="display: {{ label_code_conventions }}">Royale code conventions</span>
-      </div>
-    </div>
+      {% if entry.children %}
+        {% assign entrypathparts = entry.children[0].path | split: "/" %}
+        {% if folder1 == entrypathparts[0] %}
+          <div class="menu_div">
+          {% for p2 in entry.children %}
+            {% for q in site.pages %}
+              {% if p2.path == q.path %}
+                <div class="toc_entry">
+                {% if q.path == page.path %}
+                  <span class="toc_label">{{ q.title }}</span>
+                {% else %}
+                  <a class="toc_link" href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a>
+                {% endif %}
+                </div>
+              {% endif %}
+            {% endfor %}
+            {% if p2.children %}
+              {% assign entrypathparts = p2.children[0].path | split: "/" %}
+              {% if folder2 == entrypathparts[1] %}
+                <div class="menu_div2">
+                {% for p3 in p2.children %}
+                  {% for r in site.pages %}
+                    {% if p3.path == r.path %}
+                      <div class="toc_entry">
+                      {% if r.path == page.path %}
+                        <span class="toc_label">{{ r.title }}</span>
+                      {% else %}
+                        <a class="toc_link" href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a>
+                      {% endif %}
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
   </div>
   <div class="content" id="content">
     {{content}}
