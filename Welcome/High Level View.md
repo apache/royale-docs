@@ -32,7 +32,9 @@ Beyond that, it is becoming clear that Royale can provide significant developer 
 - Runtime Verifier - The verifier catches errors at runtime so you can address them before packaging a release.
 - Choice of IDEs -  You can choose the IDE that suits you best, and the IDEs can provide better code assistance because the coding language is structured.
 
-These features help you make fewer mistakes when writing code, and that saves time and improves productivity.  
+These features help you make fewer mistakes when writing code, and that saves time and improves productivity.
+
+![How Royale fits together](https://royale.codeoscopic.com/wp-content/uploads/2018/01/as-mxmlsnapshot.png "MXML and AS working together")
 
 <!-- Coming soon: LINK TO OM's UPDATED SLIDE SHOW http://events.linuxfoundation.org/sites/events/files/slides/FlexJS_ApacheCon_2015.pdf -->
 
