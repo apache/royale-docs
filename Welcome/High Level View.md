@@ -34,7 +34,7 @@ Beyond that, it is becoming clear that Royale can provide significant developer 
 
 These features help you make fewer mistakes when writing code, and that saves time and improves productivity.
 
-![How Royale fits together](https://royale.codeoscopic.com/wp-content/uploads/2018/01/as-mxmlsnapshot.png "MXML and AS working together")
+![How Royale fits together](_assets/as-mxmlsnapshot.png "MXML and AS working together")
 
 <!-- Coming soon: LINK TO OM's UPDATED SLIDE SHOW http://events.linuxfoundation.org/sites/events/files/slides/FlexJS_ApacheCon_2015.pdf -->
 
