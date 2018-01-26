@@ -42,9 +42,9 @@ Use HTML comments at the top of the document for any explanatory notes for the d
 
 ## Links
 
-In the .md files, links have to be a full path without the leading slash. So to link to /welcome/features/as3.md, you would use
+In the .md files, links have to be a full path without the leading slash. So to link to /Welcome/Features/AS3.md, you would use
 
-```[as3](welcome/features/as3.html)```
+```[AS3](Welcome/Features/AS3.html)```
 
 When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs. It does not look like Markdown suppports this behavior very well (there are multiple solutions online, which tells me none of them work uniformly). Use straight HTML for these links, like this:
 
