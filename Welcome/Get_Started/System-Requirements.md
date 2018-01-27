@@ -15,7 +15,7 @@
 # limitations under the License.
 
 layout: docpage
-title: System_Requirements
+title: System Requirements
 ---
 
 <!-- What sort of hardware will support work in Royale -->
