@@ -27,16 +27,21 @@
                          ]
            },
            {"path" : "Create An Application.md",
-            "children" : [{"path" : "create-an-application/application-lifecycle.md",
-                           "children": [{"path" : "create-an-application/application-lifecycle/design.md"},
-                                        {"path" : "create-an-application/application-lifecycle/configure.md"},
-                                        {"path" : "create-an-application/application-lifecycle/build.md"},
-                                        {"path" : "create-an-application/application-lifecycle/deploy.md"},
-                                        {"path" : "create-an-application/application-lifecycle/secure.md"},
-                                        {"path" : "create-an-application/application-lifecycle/maintain.md"}
+            "children" : [{"path" : "create-an-application/application-structure.md"},
+                          {"path" : "create-an-application/application-tutorial.md",
+                           "children": [{"path" : "create-an-application/application-tutorial/main.md"},
+                                        {"path" : "create-an-application/application-tutorial/data.md"},
+                                        {"path" : "create-an-application/application-tutorial/view.md"},
+                                        {"path" : "create-an-application/application-tutorial/controller.md"},
+                                        {"path" : "create-an-application/application-tutorial/build.md"},
+                                        {"path" : "create-an-application/application-tutorial/debug.md"},
+                                        {"path" : "create-an-application/application-tutorial/deploy.md"},
+                                        {"path" : "create-an-application/application-tutorial/locales.md"},
+                                        {"path" : "create-an-application/application-tutorial/filters.md"},
+                                        {"path" : "create-an-application/application-tutorial/local-storage.md"},
+                                        {"path" : "create-an-application/application-tutorial/routing.md"}
                                        ]
                           },
-                          {"path" : "create-an-application/application-structure.md"},
                           {"path" : "create-an-application/migrate-an-existing-app.md",
                            "children" : [{"path" : "create-an-application/migrate-an-existing-app/migrate-from-flex.md"},
                                          {"path" : "create-an-application/migrate-an-existing-app/migrate-from-js.md"}

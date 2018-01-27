@@ -15,22 +15,18 @@
 # limitations under the License.
 
 layout: docpage
-title: Application Lifecycle
+title: Tutorial - Github Commit Log Application
 ---
-# Application lifecycle
+# Tutorial - Github Commit Log Application
 
-Royale applications are like other applications.  The development tends to go in phases.  This section introduces a set of phases that many application developers use and how Royale is typically used during those phases.  You don't have to develop your application in this way.
+[Main](create-an-application/application-tutorial/main.html)
 
-Applications often have the following phases:
+[Data](create-an-application/application-tutorial/data.html)
 
-[Design](create-an-application/application-lifecycle/design.html)
+[View](create-an-application/application-tutorial/view.html)
 
-[Configure](create-an-application/application-lifecycle/configure.html)
+[Controller](create-an-application/application-tutorial/controller.html)
 
-[Build](create-an-application/application-lifecycle/build.html)
+[Build](create-an-application/application-tutorial/build.html)
 
-[Deploy](create-an-application/application-lifecycle/deploy.html)
-
-[Secure](create-an-application/application-lifecycle/secure.html)
-
-[Maintain](create-an-application/application-lifecycle/maintain.html)
+[Deploy](create-an-application/application-tutorial/deploy.html)

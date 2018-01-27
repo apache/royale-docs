@@ -23,9 +23,9 @@ The easiest way to create a Royale application is to start with an existing one 
 
 This document is divided into several sections:
 
-[Application Lifecycle](create-an-application/application-lifecycle.html) discusses the different phases of application development.
+[Application Structure](create-an-application/application-structure.html) explains the important files that typically comprise an application and what they do.
 
-[Structure](create-an-application/application-structure.html) explains the important files that typically comprise and application and what they do.
+[Application Tutorial](create-an-application/application-tutorial.html) is a step-by-step example of building an application.
 
 [Migrate an Existing App](create-an-application/migrate-an-existing-app.html) provides strategies and techniques when migrating existing Flex apps to Royale, and how to switch to Royale if you already have a Javascript application.
 
