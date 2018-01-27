@@ -20,4 +20,4 @@ title: MXML
 
 # MXML
 
-This is a test of Royale Documentation Template
+MXML is an XML language that you use, when building an application in Royale, to lay out user-interface components.
