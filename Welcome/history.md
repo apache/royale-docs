@@ -15,7 +15,7 @@ Macromedia, a software company that coined the phrase "Rich Internet Application
 
 Adobe Systems bought Macromedia in 2005 and released version 2.0 in 2006 as "Adobe Flex" with a builder environment, "Flash Builder". At this point Flash was one of the most pervasive technologies and platforms in the Internet and on computers.
 
-At the end of 2011, Adobe changed its business focus and decided to stop releasing new versions of Flex and Flash Builder after version 4.6 and donated the Flex techology to the Apache Software Foundation. Since then, development and support have continued under the project name "Apache Flex".
+At the end of 2011, Adobe changed its business focus and decided to stop releasing new versions of Flex and Flash Builder after version 4.6. Adobe donated the Flex techology to the Apache Software Foundation. Since then, development and support have continued under the project name "Apache Flex".
 
 Part of Apache Flex work involved making it possible to create applications in Flex and then compile and distribute them in ways that did not require the Flash Player or Adobe AIR as a platform. These efforts, under the code name "FlexJS", made good progress. 
 
