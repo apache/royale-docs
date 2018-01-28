@@ -13,3 +13,5 @@ This text will be available soon.
 ...
 ## Policies
 ..
+## Legal notice
+This content is protected under copyright law, furnished for informational use only, is subject to change without notice, and should not be construed as a commitment by the Apache Software Foundation (ASF) or the Apache Royale project. ASF and the Apache Royale project assume no responsibility or liability for any errors or inaccuracies that may appear in this informational content.
