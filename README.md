@@ -35,8 +35,8 @@ Use HTML comments at the top of the document for any explanatory notes for the d
 
 In the .md files, links have to be a full path without the leading slash. So to link to the published, HTML, version of /Welcome/Features/AS3.md, you would use
 
-```[AS3](Welcome/Features/AS3.html)```
-Links are case-sensitive, and you need to insert ```%20``` where a space appears in the target file's name.
+```[AS3](Welcome/Features/AS3.html)``` without the leading "/".
+Links are case-sensitive, and you need to insert ```%20``` for any space that appears in the target file's name.
 
 When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs. If you want to use MarkDown, set the link like this:
 
