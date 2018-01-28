@@ -7,7 +7,18 @@
 layout: docpage
 title: A bit of history
 ---
+
+<!-- Drawn from material written by Judah Frangipane and Mark Kessler: https://cwiki.apache.org/confluence/display/FLEX/History -->
 # A bit of history
 
-Macromedia, a software company that coined the phrase "Rich Internet Application", or RIA, developed Flash and the Flash Viewer from earlier work by FutureWave Software. originally created the Flex software development kit (SDK) in XXXX. When Adobe purchased Macrobmedia, the project became Adobe Flex.
-Apache Flex, formerly Adobe Flex, is a software development kit (SDK) for the development and deployment of cross-platform rich Internet applications based on the Adobe Flash platform. Initially developed by Macromedia and then acquired by Adobe Systems, Adobe donated Flex to the Apache Software Foundation in 2011[2] and it was promoted to a top-level project in December 2012.
+Macromedia, a software company that coined the phrase "Rich Internet Application", or RIA, developed Flash and the Flash Viewer from earlier work by FutureWave Software. Macromedia built a toolkit, code-named "Royale", that made it easy to create Flash applications. In 2004 it released version 1.0 of the toolkit under the name "Flex".
+
+Adobe Systems bought Macromedia in 2005 and released version 2.0 in 2006 as "Adobe Flex" with a builder environment, "Flash Builder". At this point Flash was one of the most pervasive technologies and platforms in the Internet and on computers.
+
+At the end of 2011, Adobe changed its business focus and decided to stop releasing new versions of Flex and Flash Builder after version 4.6 and donated the Flex techology to the Apache Software Foundation. Since then, development and support have continued under the project name "Apache Flex".
+
+Part of Apache Flex work involved making it possible to create applications in Flex and then compile and distribute them in ways that did not require the Flash Player or Adobe AIR as a platform. These efforts, under the code name "FlexJS", made good progress. 
+
+In 2017 it was agreed to split this work into a new Apache project, which reached back to the early history of the project for a name. That is how we have arrived at "Apache Royale".
+
+This is a young project, with much to do. Your participation would be very [welcome](Welcome/get-involved.html)!
