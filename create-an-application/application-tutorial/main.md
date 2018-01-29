@@ -15,9 +15,27 @@
 # limitations under the License.
 
 layout: docpage
-title: Application configuration
+title: The main application file
 ---
 
-# Application configuration
+# The main application file
 
-*This information will be available soon.*
+This application uses an MXML file as its main file.
+
+The file starts with:
+
+```
+<js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+                xmlns:local="*"
+                xmlns:js="library://ns.apache.org/royale/express" 
+                >
+```
+
+The line:
+
+```
+                xmlns:js="library://ns.apache.org/royale/express" 
+```
+
+means that the "js" prefix is mapped to the Express set of components.  The Express set is designed for rapid prototyping and proofs-of-concepts and is not optimized for size and performance.  Applications built with the Express components can still be deployed in production environments if the size and performance is acceptable, which it often is.
+
