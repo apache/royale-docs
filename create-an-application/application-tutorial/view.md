@@ -50,7 +50,7 @@ We want to display the date of the commit, who made the commit, and the commit m
 Oh wait, we should have a label that displays the project name above the DataGrid, so before DataGrid add:
 
 ```XML
-<js:Label text="{projectName} Commits Log">
+<js:Label text="{projectName} Commits Log"/>
 ```
 
 Notice how the text of the label is referencing the projectName variable in the Model by wrapping the variable name in curly braces "{}".  In Royale, this is known as DataBinding.  When the compiler sees curly braces in MXML attribute values, it generates code that sets the destination property (in this case, the Label's "text" property) to the value of the expression in the curly braces and also adds code that detects changes to that property and updates the destination property if it changes.  This greatly reduces the amount of simple code you have to write yourself.  Otherwise, we'd probably hook up to an initialization event and have to also write:
@@ -64,12 +64,12 @@ And we'd also have to write change detection code if the value could change at r
 DataBinding is also a good way to assign the data for the DataGrid to display, so we will add a databinding expression to the DataGrid.
 
 ```XML
-<js:DataGrid id="dg" dataProvider="commits">
+<js:DataGrid id="dg" dataProvider="{commits}">
 ```
 
 Also, a commit message might be too long to read in a row of a DataGrid so we will add a place to display the longer message of a selected commit.
 
-<js:MultilineLabel text="{dg.selectedItem.message}" />
+<js:MultilineLabel text="{commits[dg.selectedIndex].message}" />
 
 Notice how with DataBinding, we've written very little if any "code" to connect the DataGrid to the MultilineLabel.
 
