@@ -28,7 +28,7 @@ limitations under the License.
 
 <body class="page">
 <div class="topbar">
-<img src="http://royale.codeoscopic.com/wp-content/uploads/2018/01/apache-royale-tm-logo-dark.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
+<img src="http://royale.codeoscopic.com/wp-content/uploads/2018/01/apache-royale-tm-logo-light.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
 <ul class="topMenu">
 <li class="topMenu_li fa">
 	<a class="topMenu_li_a" href="http://royale.apache.org/features.html">FEATURES</a>
@@ -63,6 +63,9 @@ limitations under the License.
 </div>
 <p class="tagline">Designed for the future.  Code Once.  Run Everywhere.</p>
 <div class="toc_and_doc">
+  <div class="content" id="content">
+    {{content}}
+  </div>
   <div class="toc" id="toc">
 {% assign pagepathparts = page.path | split: "/" %}
 {% assign numparts = pagepathparts | size %}
@@ -130,9 +133,6 @@ limitations under the License.
     {% endif %}
   {% endfor %}
 {% endfor %}
-  </div>
-  <div class="content" id="content">
-    {{content}}
   </div>
 </div>
 <div class="footer">
