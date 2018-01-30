@@ -59,12 +59,14 @@ private function setConfig():void
 }
 ```
 
-The method fetchCommits() will take the list of repos and calls a separate instance of HTTPServie to get the commits:
+The method fetchCommits() will take the list of repos and calls a separate instance of HTTPService to get the commits:
 
 ```XML
 <js:HTTPService id="commitsService" />
 ```
 ```ActionScript
+import org.apache.royale.events.Event;
+
 private var currentIndex:int = 0;
 private function fetchCommits():void
 {
@@ -76,11 +78,30 @@ private function fetchCommits():void
 private function gotCommits(event:Event):void
 {
    currentIndex++;
-   commits = commits.concat(commitsService.data.commits);
+   var results:Array = commitsService.json as Array;
+   var n:int = results.length;
+   for (var i:int = 0; i < n; i++)
+   {
+      var obj:Object = results[i];
+      var data:Object = {};
+      data.author = obj.commit.author.name;
+      // clip date after yyyy-mm-dd
+      data.date = obj.commit.author.date.substr(0, 10);
+      data.message = obj.commit.message;
+      commits.push(data);
+   }
    if (currentIndex < repos.length)
       fetchCommits();
+   else
+      dispatchEvent(new Event("dataReady"));
 }
 
+```
+
+And, of course, we have to tell the service to go fetch the configuration file, so add an initialize event handler to the Application tag to have the HTTPService send the request for the JSON file.
+
+```
+initialize="configurator.send()"
 ```
 
 Now if you build and run this, nothing will show up, so now let's go create the view (user interface).

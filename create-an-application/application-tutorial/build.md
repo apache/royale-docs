@@ -27,11 +27,15 @@ The main MXML file should now look like this:
 ```XML
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
 xmlns:local="*"
-xmlns:js="library://ns.apache.org/royale/express" 
+xmlns:js="library://ns.apache.org/royale/express"
+initialize="addEventListener('dataReady', dataReadyHandler);configurator.send()"
 >
 <fx:Script>
 <![CDATA[
-    public var commits:Array = [];
+    import org.apache.royale.collections.ArrayList;
+    import org.apache.royale.events.Event;
+
+    public const commits:Array = [];
     public var repos:Array;
     public var projectName:String;
 
@@ -60,13 +64,22 @@ xmlns:js="library://ns.apache.org/royale/express"
             var obj:Object = results[i];
             var data:Object = {};
             data.author = obj.commit.author.name;
-            data.date = obj.commit.author.date;
+            // clip date after yyyy-mm-dd
+            data.date = obj.commit.author.date.substr(0, 10);
             data.message = obj.commit.message;
             commits.push(data);
         }
         if (currentIndex < repos.length)
-        fetchCommits();
+            fetchCommits();
+        else
+            dispatchEvent(new Event("dataReady"));
     }
+
+    private function dataReadyHandler(event:Event):void
+    {
+        dg.dataProvider = new ArrayList(commits);
+    }
+
 ]]>
 </fx:Script>
 <js:HTTPService id="configurator" url="project.json" complete="setConfig();fetchCommits()" />
@@ -75,13 +88,14 @@ xmlns:js="library://ns.apache.org/royale/express"
 <js:initialView>
     <js:VView>
         <js:Label text="{projectName} Commits Log"/>
-        <js:DataGrid id="dg" dataProvider="{commits}">
+        <js:DataGrid id="dg">
             <js:columns>
-                <js:DataGridColumn label="Date" dataField="date" columnWidth="15"/>
-                <js:DataGridColumn label="Author" dataField="author" columnWidth="15" />
-                <js:DataGridColumn label="Message" dataField="message" columnWidth="70" />
+                <js:DataGridColumn label="Date" dataField="date"/>
+                <js:DataGridColumn label="Author" dataField="author"/>
+                <js:DataGridColumn label="Message" dataField="message"/>
             </js:columns>
         </js:DataGrid>
+        <js:Label text="Selected Message:"/>
         <js:MultilineLabel text="{commits[dg.selectedIndex].message}" />
     </js:VView>
 </js:initialView>
@@ -99,55 +113,78 @@ The final code should look like this:
 ```XML
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
 xmlns:local="*"
-xmlns:js="library://ns.apache.org/royale/express" 
+xmlns:js="library://ns.apache.org/royale/express"
+initialize="addEventListener('dataReady', dataReadyHandler);configurator.send()"
 >
 <fx:Script>
 <![CDATA[
-[Bindable]
-public var commits:Array = [];
-public var repos:Array;
-[Bindable]
-public var projectName:String;
+    import org.apache.royale.collections.ArrayList;
+    import org.apache.royale.events.Event;
 
-private function setConfig():void
-{
-repos = configurator.data.repos;
-projectName = configurator.data.projectName;
-}
+    public const commits:Array = [];
+    public var repos:Array;
+    [Bindable]
+    public var projectName:String;
 
-private var currentIndex:int = 0;
+    private function setConfig():void
+    {
+        repos = configurator.json.repos;
+        projectName = configurator.json.projectName;
+    }
 
-private function fetchCommits():void
-{
-commitsService.addEventListener("complete", gotCommits);
-commitsService.source = repos[currentIndex];
-commitsService.send();
-}
+    private var currentIndex:int = 0;
+    
+    private function fetchCommits():void
+    {
+        commitsService.addEventListener("complete", gotCommits);
+        commitsService.url = "https://api.github.com/repos/" + repos[currentIndex] + "/commits";
+        commitsService.send();
+    }
 
-private function gotCommits(event:Event):void
-{
-currentIndex++;
-commits = commits.concat(commitsService.data.commits);
-if (currentIndex < repos.length)
-fetchCommits();
-}
+    private function gotCommits(event:Event):void
+    {
+        currentIndex++;
+        var results:Array = commitsService.json as Array;
+        var n:int = results.length;
+        for (var i:int = 0; i < n; i++)
+        {
+            var obj:Object = results[i];
+            var data:Object = {};
+            data.author = obj.commit.author.name;
+            // clip date after yyyy-mm-dd
+            data.date = obj.commit.author.date.substr(0, 10);
+            data.message = obj.commit.message;
+            commits.push(data);
+        }
+        if (currentIndex < repos.length)
+            fetchCommits();
+        else
+            dispatchEvent(new Event("dataReady"));
+    }
+
+    private function dataReadyHandler(event:Event):void
+    {
+        dg.dataProvider = new ArrayList(commits);
+    }
+
 ]]>
 </fx:Script>
-<js:HTTPService id="configurator" source="project.json" complete="setConfig();fetchCommits()" />
-<js:HTTPService id="commitsService" source="project.json" complete="setConfig();fetchCommits()" />
+<js:HTTPService id="configurator" url="project.json" complete="setConfig();fetchCommits()" />
+<js:HTTPService id="commitsService" />
 
 <js:initialView>
-<js:VView>
-<js:Label text="{projectName} Commits Log">
-<js:DataGrid id="dg" dataProvider="commits" width="80%" height="300">
-<js:columns>
-<js:DataGridColumn label="Date" dataField="date" columnWidth="15"/>
-<js:DataGridColumn label="Author" dataField="author" columnWidth="15" />
-<js:DataGridColumn label="Message" dataField="message" columnWidth="70" />
-</js:columns>
-</js:DataGrid>
-<js:MultilineLabel text="{dg.selectedItem.message}" width="80%"/>
-</js:VView>
+    <js:VView>
+        <js:Label text="{projectName} Commits Log"/>
+        <js:DataGrid id="dg" width="600" height="300">
+            <js:columns>
+                <js:DataGridColumn label="Date" dataField="date" columnWidth="100"/>
+                <js:DataGridColumn label="Author" dataField="author" columnWidth="100"/>
+                <js:DataGridColumn label="Message" dataField="message" columnWidth="400"/>
+            </js:columns>
+        </js:DataGrid>
+        <js:Label text="Selected Message:"/>
+        <js:MultilineLabel text="{commits[dg.selectedIndex].message}" width="600" />
+    </js:VView>
 </js:initialView>
 </js:Application>
 ```
@@ -164,7 +201,7 @@ If you've used NPM to install Royale, you can just run:
     mxmlc -debug=true GitHubCommitsViewer.mxml
 ```
 
-This should compile without errors.  Next, let's see the results.
+This should compile with one warning.  We will ignore that for now and fix it later.  Next, let's see the results.
 
 {:align="center"}
 [Previous Page](create-an-application/application-tutorial/build.html) \| [Next Page](create-an-application/application-tutorial/debug.html)
