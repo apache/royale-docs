@@ -44,6 +44,8 @@ Next, we need to get the values for these arrays.  Let's use a .json file to con
   "repos":  [ "apache/royale-asjs", "apache/royale-typedefs", "apache/royale-compiler" ]
 }
 ```
+You can download this file from [here.](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer/src/main/resources/project.json)
+
 Now we need to add calls that fetch the .json file and then the commits.  We can use HTTPService to get the JSON file:
 
 ```XML
@@ -54,8 +56,8 @@ The method setConfig() sets the data model variables:
 ```ActionScript
 private function setConfig():void
 {
-  repos = configurator.data.repos;
-  projectName = configurator.data.projectName;
+  repos = configurator.json.repos;
+  projectName = configurator.json.projectName;
 }
 ```
 

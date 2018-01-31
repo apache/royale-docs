@@ -43,6 +43,7 @@ public class LogEntry
 }
 }
 ```
+You can download this file from [here.](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer/src/main/royale/LogEntry.as)
 
 Notice the use of [Bindable] metadata.  This special syntax indicaes to the compiler that there are no DataBinding notifications for the message field.   Once it is set, it will not change.  We could also specify "message" as a "const" instead of a "var" and set up a constructor with parameters, but constructor parameters are not allowed for anything that wants to be declared in MXML.
 

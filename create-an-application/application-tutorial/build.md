@@ -108,7 +108,7 @@ Another thing missing is that we haven't specified the size of the controls.  Ju
 
 This simple example will look fine if we just set the width and height of the DataGrid and the width of the MultilineLabel, so we will add them directly.  You can read the section on Styles to see other ways of setting styles on the View.
 
-The final code should look like this:
+The final code should look like this: (you can download it from [here](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer/src/main/royale/GitHubCommitLogViewer.mxml))
 
 ```XML
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
@@ -192,13 +192,13 @@ initialize="addEventListener('dataReady', dataReadyHandler);configurator.send()"
 Since we are intersted in JS output, to compile this code, we run:
 
 ```
-    <path to Royale SDK>/royale-asjs/js/bin/mxmlc -debug=true GitHubCommitsViewer.mxml
+    <path to Royale SDK>/royale-asjs/js/bin/mxmlc -debug=true GitHubCommitLogViewer.mxml
 ```
 
 If you've used NPM to install Royale, you can just run:
 
 ```
-    mxmlc -debug=true GitHubCommitsViewer.mxml
+    mxmlc -debug=true GitHubCommitLogViewer.mxml
 ```
 
 This should compile with one warning.  We will ignore that for now and fix it later.  Next, let's see the results.
