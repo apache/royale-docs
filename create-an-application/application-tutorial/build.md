@@ -204,4 +204,4 @@ If you've used NPM to install Royale, you can just run:
 This should compile with one warning.  We will ignore that for now and fix it later.  Next, let's see the results.
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/build.html) \| [Next Page](create-an-application/application-tutorial/debug.html)
+[Previous Page](create-an-application/application-tutorial/controller.html) \| [Next Page](create-an-application/application-tutorial/deploy.html)

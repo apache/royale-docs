@@ -33,7 +33,7 @@ The first six segments will result in a functional application.
 
 [Build](create-an-application/application-tutorial/build.html)  This segment gets the code to compile.
 
-[Deploy](create-an-application/application-tutorial/deploy.html)  This segment discusses how to view the results.
+[Run](create-an-application/application-tutorial/deploy.html)  This segment discusses how to view the results.
 
 The next four segments will discuss further improvements needed to make a production-ready version.
 

@@ -39,7 +39,7 @@ The line:
 
 means that the "js" prefix is mapped to the Express set of components.  The Express set is designed for rapid prototyping and proofs-of-concepts and is not optimized for size and performance.  Applications built with the Express components can still be deployed in production environments if the size and performance is acceptable, which it often is.
 
-As mentioned in [Application structure](create-an-application/application-structure.md), there is more than one pattern for creating applications.  This example will use the MVC.  So, the next step is to create the Model. 
+As mentioned in [Application structure](create-an-application/application-structure.md), there is more than one pattern for creating applications.  This example will use the MVC pattern.  So, the next step is to create the Model. 
 
 
 {:align="center"}
