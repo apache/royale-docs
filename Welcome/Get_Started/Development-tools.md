@@ -22,5 +22,17 @@ title: Development tools
 
 *text coming soon*
 
-##IDEs
+## IDEs
 IDEs that support Apache Royale provide getting-started instructions to help you specify using Royale for a new project, or importing and existing Royale project.
+
+*more text and links coming*
+
+## Command-line scripts
+
+*text coming*
+
+## Apache Maven
+
+*Maven-related text and links coming.*
+
+
