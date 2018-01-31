@@ -35,4 +35,8 @@ IDEs that support Apache Royale provide getting-started instructions to help you
 
 *Maven-related text and links coming.*
 
+## Apache Cordova
+
+*Text coming on packaging an app for mobile phones*
+
 
