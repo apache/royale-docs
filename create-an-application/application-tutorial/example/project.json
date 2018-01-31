@@ -1,0 +1,3 @@
+{ "projectName": "Apache Royale",
+  "repos":  [ "apache/royale-asjs", "apache/royale-typedefs", "apache/royale-compiler" ]
+}
