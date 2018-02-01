@@ -23,7 +23,19 @@ title: Development tools
 *text coming soon*
 
 ## IDEs
-IDEs that support Apache Royale provide getting-started instructions to help you specify using Royale for a new project, or importing and existing Royale project.
+IDEs that support Apache Royale provide getting-started instructions to help you specify using Royale for a new project, or importing an existing Royale project.
+
+- Visual Studio
+
+- Moonshine
+
+- Flash Builder
+
+- IntelliJ IDEA
+
+- FDT
+
+
 
 *more text and links coming*
 
