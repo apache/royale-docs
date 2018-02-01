@@ -33,9 +33,9 @@ Failed to load file:///.../bin/js-debug/project.json: Cross origin requests are 
 
 Because I had simply opened the file from my computer's file viewer in the browser, the browser opened it under the file:/// protocol and wouldn't allow access from my computer to GitHub.
 
-So, to do further testing you will need to set up a web server for the application or copy the application to a web server and run it from there.  If you look in the "js-debug" folder, there is a lot of files to copy.  You can't just copy the index.html file.
+So, to do further testing you will need to set up a web server for the application or copy the application to a web server and run it from there.  If you look in the "js-debug" folder, you will find a lot of files you have to copy. You can't just copy the index.html file.
 
-Back to the topic of debugging for a moment.  Most browsers also have debuggers with breakpoints.  Your application .mxml and .as files have each been turned into a .js file that the browser will let you set breakpoints and step in.  Some IDEs support the ability to see your .mxml and .as files in the debugger.
+Back to the topic of debugging for a moment. Most browsers also have debuggers with breakpoints. Your application .mxml and .as files have each been turned into a .js file that the browser will let you set breakpoints in and step through. Some IDEs support the ability to see your .mxml and .as files in the debugger.
 
 Anyway, to get this application to access GitHub, we have to make the application available on a web server and learn a bit about security.
 
