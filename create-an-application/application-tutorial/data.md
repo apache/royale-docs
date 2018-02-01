@@ -20,7 +20,11 @@ title: The data model
 
 # The data model
 
-Since the goal of this application is to display a list of commits to the Royale GitHub repos, the data the application will work with must include that list of commits.  For large projects, the model is often built in a separate class and source file so it can be separately developed, documented, and maintained (maybe by other team members), but to get something up quickly, it can be easier to just stick a few variables in the main application file in a script block like this:
+Since the goal of this application is to display a list of commits to the Royale GitHub repositories (repos), the data the application will work with must include that list of commits. The application will query GitHub for the information, place what GitHub provides in a data structure, and then connect that data structure to components in the user interface that can display it.
+
+For large projects, the model is often built in a separate class and source file so it can be separately developed, documented, and maintained (maybe by other team members). But to get something up quickly, we are going to just stick a few variables in the main application file in a script block.
+
+First we create the data structure, in this case an array, to hold the information we get from GitHub:
 
 ```
 <fx:Script>
@@ -30,14 +34,14 @@ Since the goal of this application is to display a list of commits to the Royale
 </fx:Script>
 ```
 
-But thinking about this a bit more, it might be nice to not hard code which repos we use to get the commits so that other projects can use this app.  So let's add also:
+It might be nice to not hard-code which repos we use to get the commits so that other projects can use this app. So let's add variables to hold information about the project and repositories we are using:
 
 ```ActionScript
   public var repos:Array;
   public var projectName:String;
 ```
 
-Next, we need to get the values for these arrays.  Let's use a .json file to configure which repos to use and the project name.  So create a file that looks like:
+Next, we need to get the values for these arrays. Let's use a <a href="https://www.json.org/" target="_blank">.json</a> file, called "project.json", to configure which repos to use and the project name. The file contents look like:
 
 ```JSON
 { "projectName": "Apache Royale",
@@ -46,7 +50,7 @@ Next, we need to get the values for these arrays.  Let's use a .json file to con
 ```
 You can download this file from [here.](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer/src/main/resources/project.json)
 
-Now we need to add calls that fetch the .json file and then the commits.  We can use HTTPService to get the JSON file:
+Now we need to add calls that fetch the .json file and then the information about the commits.  We can use HTTPService to get the JSON file:
 
 ```XML
 <js:HTTPService id="configurator" source="project.json" complete="setConfig();fetchCommits()" />
@@ -61,7 +65,7 @@ private function setConfig():void
 }
 ```
 
-The method fetchCommits() will take the list of repos and calls a separate instance of HTTPService to get the commits:
+The method fetchCommits() takes the list of repos and calls a separate instance of HTTPService to get information about the commits:
 
 ```XML
 <js:HTTPService id="commitsService" />
@@ -100,13 +104,13 @@ private function gotCommits(event:Event):void
 
 ```
 
-And, of course, we have to tell the service to go fetch the configuration file, so add an initialize event handler to the Application tag to have the HTTPService send the request for the JSON file.
+And, of course, we have to tell the service to go fetch the configuration file, so we add an "initialize" event handler to the Application tag to have the HTTPService send the request for the JSON file once the application is ready to receive the response.
 
 ```
 initialize="configurator.send()"
 ```
 
-Now if you build and run this, nothing will show up, so now let's go create the view (user interface).
+Now if you build and run this, nothing will show up. So now let's go create the view (user interface).
 
 {:align="center"}
 [Previous Page](create-an-application/application-tutorial/main.html) \| [Next Page](create-an-application/application-tutorial/view.html)
