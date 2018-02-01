@@ -20,13 +20,13 @@ title: The controller
 
 # The controller
 
-The controller is the code that watches for events from the View and updates the Model.  Why separate that out? Because that way a View can be reused in other applications.  Our View right now is pretty generic.  It could be used to display comments on a wiki page, or a text messaging conversation, or even some social media discussion.
+The controller is the code that watches for events from the View and updates the Model.  Why separate that out? Because that way a View can be reused in other applications. Our View right now is pretty generic and could be used to display comments on a wiki page, or a text messaging conversation, or even some social media discussion.
 
-Right now, the View's only interaction (other than scrolling through the list of commits) is selecting a commit so you can see any longer commit message in the MultilineView.  That doesn't really update the model, so this application's controller currently has nothing to do.  But when we add localization and filters later, the controller will have something to do.  Also, the most of the individual components like DataGrid are themselves implemented in the MVC pattern and the DataGrid has a controller that handles selection and updating the selectdItem property.
+Right now, the View's only interaction (other than scrolling through the list of commits) is selecting a commit so you can see any longer commit message in the MultilineView. That doesn't really update the model, so this application's controller currently has nothing to do. Also, the most of the individual components like DataGrid are themselves implemented in the MVC pattern and the DataGrid has a controller that handles selection and updating the selectdItem property. But when we add localization and filters later, the controller will start to get busy. 
 
-Now if there was a reason to share the currently selected commit with other Views then the Model could be extended to have a "currentCommit" field and then the controller would watch for DataGrid selection changes and update the model.
+If there were a reason to share the currently selected commit with other Views, the Model could be extended to have a "currentCommit" field and then the controller would watch for DataGrid selection changes and update the model.
 
-So, nothing to do here.  Let's try to compile it and run it.
+So, nothing to do here for now.  Let's try to compile and run our application.
 
 {:align="center"}
 [Previous Page](create-an-application/application-tutorial/view.html) \| [Next Page](create-an-application/application-tutorial/build.html)
