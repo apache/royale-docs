@@ -22,7 +22,7 @@ title: Components
 *This page will discuss the various component sets available and point to where to learn about using specific components.*
 
 ## Express component set
-*Details coming soon.*
+The Express set is designed for rapid prototyping and proofs-of-concepts and is not optimized for size and performance. Applications built with the Express components can still be deployed in production environments if the size and performance is acceptable, which it often is.
 
 ## Basic component set
 *Details coming soon.*
