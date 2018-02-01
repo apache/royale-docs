@@ -191,7 +191,7 @@ initialize="addEventListener('dataReady', dataReadyHandler);configurator.send()"
 </js:Application>
 ```
 
-Since we are interested in JS output and you're using an [IDE](Welcome/Get_Started/Development-tools.html), set that output target in the project before compiling. If you're using command-line scripts, run:
+Since we are interested in JS output, if you're using an [IDE](Welcome/Get_Started/Development-tools.html), set that output target in the project before compiling. If you're using command-line scripts, run:
 
 ```
     <path to Royale SDK>/royale-asjs/js/bin/mxmlc -debug=true GitHubCommitLogViewer.mxml
