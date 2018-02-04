@@ -183,16 +183,13 @@ were placed into the Public Domain by its author. See: <a href="https://en.wikip
   - Most of the .as files in frameworks/projects/Network/src/main/royale/ in the
 package org.apache.royale.net.remoting.amf are derived from <a href="https://github.com/emilkm/amfjs/blob/master/amf.js" target="_blank">https://github.com/emilkm/amfjs/blob/master/amf.js</a>, which is available under Apache License 2.0.
 
-Most of the .as files in frameworks/projects/GoogleMaps/src/main/royale/google 
+  - Most of the .as files in frameworks/projects/GoogleMaps/src/main/royale/google 
 are derived from the google_maps_api_v3_11.js externs file in the 
 Google Closure Library which are available under Apache License 2.0.
 
-The file frameworks/projects/Core/src/main/royale/org/apache/royale/geom/Matrix.as
-is derived from OpenFL (https://github.com/openfl) which is available under an
-MIT License.
-
-The MIT License (MIT)
-Copyright (c) 2013-2016 Joshua Granick and other OpenFL contributors
+  - The file frameworks/projects/Core/src/main/royale/org/apache/royale/geom/Matrix.as
+is derived from <a href="https://github.com/openfl" target="_blank">OpenFL ()</a> which is available under an
+MIT License Copyright (c) 2013-2016 Joshua Granick and other OpenFL contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a 
 copy of this software and associated documentation files (the "Software"), 
@@ -213,24 +210,12 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 Below are the licenses for components included in the binary distribution.
 
-------------------------------------------------------------------------------------------
+  - This product bundles a subset of Google Closure Library available 
+under Apache License 2.0.  For details see <a href="https://developers.google.com/closure/library/" target="_blank">https://developers.google.com/closure/library/</a>.
 
-This product bundles a subset of Google Closure Library available 
-under Apache License 2.0.  For details see 
-https://developers.google.com/closure/library/
+  - This product bundles SWFObject under the MIT License.  For details see <a href="royale-asjs/templates/swfobject/swfobject.js" target="_blank">royale-asjs/templates/swfobject/swfobject.js</a>.
 
-
-This product bundles SWFObject under the MIT License.  For details see 
-royale-asjs/templates/swfobject/swfobject.js
-
-
-royale-typedefs/js/target/downloads/svg.js
-
-This product bundles svg.js from closureidl.googlecode.com available 
-under the BSD 3-Clause license.
-
-Copyright (c) 2012, Denis Zawada
-All rights reserved.
+  - royale-typedefs/js/target/downloads/svg.js: This product bundles svg.js from <a href="closureidl.googlecode.com" target="_blank">closureidl.googlecode.com</a> available under the BSD 3-Clause license, Copyright (c) 2012, Denis Zawada All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -254,46 +239,33 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+  - This product bundles ANTLR 3 under the BSD License. For details see <a href="royale-asjs/lib/external/antlr-LICENSE.html" target="_blank">royale-asjs/lib/external/antlr-LICENSE.html</a>.
 
-This product bundles ANTLR 3 under the BSD License.  For details see 
-royale-asjs/lib/external/antlr-LICENSE.html
+  - This product bundles the 7-Zip LZMA SDK which has been placed in the public domain. For
+details see <a href="royale-asjs/lib/external/lzma-sdk-LICENSE.html" target="_blank">royale-asjs/lib/external/lzma-sdk-LICENSE.html</a>
 
+  - This product bundles args4J under the MIT License. For
+details see <a href="royale-asjs/js/lib/args4j-LICENSE.html" target="_blank">royale-asjs/js/lib/args4j-LICENSE.html</a>
 
-This product bundles the 7-Zip LZMA SDK which has been placed in the public domain.  For
-details see royale-asjs/lib/external/lzma-sdk-LICENSE.html
+## Google Closure Compiler
 
+This product bundles the Google Closure Compiler available under Apache License 2.0. For details see 
+<a href="https://developers.google.com/closure/compiler/" target="_blank">https://developers.google.com/closure/compiler/</a>.
 
-This product bundles args4J under the MIT License.  For
-details see royale-asjs/js/lib/args4j-LICENSE.html
+Google Closure Compiler bundles 
 
+  - Rhino under MPL 1.1.  For details see: https://github.com/google/closure-compiler/blob/master/README.md. Rhino is
+available at <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino" target="_blank">https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino</a>.
 
-This product bundles the Google Closure Compiler available 
-under Apache License 2.0.  For details see 
-https://developers.google.com/closure/compiler/
+  - args4j under the MIT License. For details see: https://github.com/google/closure-compiler/blob/master/README.md
 
-
-Google Closure Compiler bundles Rhino under MPL 1.1.  For details see:
-https://github.com/google/closure-compiler/blob/master/README.md.  Rhino is
-available at https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino
-
-
-Google Closure Compiler bundles args4j under the MIT License.  For details see:
-https://github.com/google/closure-compiler/blob/master/README.md
-
-
-Google Closure Compiler bundles a subset of JSR 305 under the BSD License.  
-For details see: https://github.com/google/closure-compiler/blob/master/README.md.  The
+  - a subset of JSR 305 under the BSD License.  
+For details see: https://github.com/google/closure-compiler/blob/master/README.md. The
 README.md is confusing as clicking the link takes you to a project that is LGPL, but
 that project is distributing the original JSR 305 artifact that is BSD.  See:
-https://github.com/findbugsproject/findbugs/blob/3.0.1/findbugs/licenses/LICENSE-jsr305.txt.  In JSR 305, the GuardedBy.class appears to be CC-BY-2.5.
+<a href="https://github.com/findbugsproject/findbugs/blob/3.0.1/findbugs/licenses/LICENSE-jsr305.txt" target="_blank">https://github.com/findbugsproject/findbugs/blob/3.0.1/findbugs/licenses/LICENSE-jsr305.txt</a>.  In JSR 305, the GuardedBy.class appears to be CC-BY-2.5.
 
+  - Protocol Buffer under a BSD License.  For details see: https://github.com/google/closure-compiler/blob/master/README.md
 
-Google Closure Compiler bundles Protocol Buffer under a BSD License.  For details see:
-https://github.com/google/closure-compiler/blob/master/README.md
-
-
-
-## Policies
-..
 ## Legal notice
 This content is protected under copyright law, furnished for informational use only, is subject to change without notice, and should not be construed as a commitment by the Apache Software Foundation (ASF) or the Apache Royale project. ASF and the Apache Royale project assume no responsibility or liability for any errors or inaccuracies that may appear in this informational content.
