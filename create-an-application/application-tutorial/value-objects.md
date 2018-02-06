@@ -84,7 +84,7 @@ Another way to prevent the Google Closure Compiler from renaming variables is to
             data.author = authorObj["name"];
             // clip date after yyyy-mm-dd
             data.date = authorObj["date"].substr(0, 10);
-            data.message = commitObj.message;
+            data.message = commitObj["message"];
             commits.push(data);
         }
 ```
