@@ -8,4 +8,16 @@ layout: docpage
 title: Flex equivalents in Royale
 ---
 # Flex equivalents in Royale
+When this page is populated, it will provide information about:
+
+## Flex features that are very similar in Royale
+_This text is coming soon._
+
+## Flex features that are not yet available in Royale
+_This text is coming soon._
+
+## Flex features you can achieve in a different way in Royale
+_This text is coming soon._
+
+## Flex features that will probably not be available in Royale
 _This text is coming soon._
