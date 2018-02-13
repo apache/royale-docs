@@ -20,35 +20,41 @@ title: Development tools
 
 # Development tools
 
-*text coming soon*
+You can just use and standard text editor to write Royale applications and the command-line to compile them, but you may find that an Interactive Development Environment (IDE) can make you even more productive.
 
 ## IDEs
 IDEs that support Apache Royale provide getting-started instructions to help you specify using Royale for a new project, or importing an existing Royale project.
 
-- Visual Studio
+### IDEs with Royale support
 
-- Moonshine
+- [Visual Studio Code with ActionScript and MXML Extensions](https://github.com/BowlerHatLLC/vscode-nextgenas/wiki/Install-the-ActionScript-and-MXML-extension-for-Visual-Studio-Code){:target='_blank'}
 
-- Flash Builder
+- [Moonshine](http://moonshine-ide.com){:target='_blank'}
+
+### IDES that supported Flex and work with Royale with some restrictions and limitations.
+
+- Adobe Flash Builder
 
 - IntelliJ IDEA
 
 - FDT
 
-
-
-*more text and links coming*
+- Flash Develop
 
 ## Command-line scripts
 
-*text coming*
+To run the compiler, run the js/bin/mxmlc tool in the Royale SDK.  The [Download Royale](Welcome/Get_Started/Download-Royale.html) and [Hello World](Welcome/Get_Started/Hello-World.html) sections provide an example of how to use the compiler.
 
 ## Apache Maven
 
-*Maven-related text and links coming.*
+You can use Apache Maven to compile your Royale application.  The Royale documentation will not describe what Maven is and how to use it.  Visit the [Apache Maven Project](http://maven.apache.org){:target='_blank'} to learn more about Maven.  Each of the examples in the examples folder is set up to be built with Maven, and the archetypes folder contains Maven Archetypes.
+
+## Apache Ant
+
+You can use Apache Ant to compile your Royale application.  The Royale documentation will not describe what Ant is and how to use it.  Visit the [Apache Ant Project](http://ant.apache.org){:target='_blank'} to learn more about Ant.  Each of the examples in the examples folder is set up to be built with Ant.
 
 ## Apache Cordova
 
-*Text coming on packaging an app for mobile phones*
+Apache Cordova enables Royale applications to run on mobile devices, tablets, and even desktops.  The MobileTrader example in examples/royale/MobileTrader and a few other examples use Cordova.
 
 

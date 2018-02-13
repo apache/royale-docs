@@ -20,4 +20,16 @@ title: Get Started
 
 # Get started with Royale
 
-*This information will be available soon.*
+Royale is an open source project.  You can get the [source code](http://royale.apache.org/source-code/){:target='_blank'} and build Royale, or, if you are in a hurry, you can click [here](Welcome/Get_Started/Download-Royale.html) to find out how to download pre-compiled code and get going quickly.
+
+This section describes:
+
+[System Requirements](Welcome/Get_Started/System-Requirements.html) - What kinds of computers and operating systems you can use to develop Royale applications.  You can run Royale applications on many more computers, operating systems and even devices such as smartphones and tablets.
+
+[Development Tools](Welcome/Get_Started/Development-tools.html) - You can develop Royale with just the command-line, or you can use scripting/build tools like Apache Ant and Apache Maven, or even use IDEs.
+
+[Frameworks](Welcome/Get_Started/frameworks.html) - What popular JavaScript frameworks can be used in Royale Applications.
+
+[Download Royale](Welcome/Get_Started/Download-Royale.html) - How to download and set up Royale.
+
+[Hello World](Welcome/Get_Started/Hello-World.html) - Build Hello World in Royale.
