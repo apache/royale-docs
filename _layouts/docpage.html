@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!--
+{% comment %}
 
 Licensed to the Apache Software Foundation (ASF) under one or more
 contributor license agreements.  See the NOTICE file distributed with
@@ -16,36 +16,37 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
--->
+{% endcomment %}
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="https://apache.github.io/royale-docs/royalesite.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/royalesite.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<base href="{{ site.baseurl }}/" />
 <title>{{page.title}}</title>
 </head>
 
 <body class="page">
 <div class="topbar">
-<img src="http://royale.codeoscopic.com/wp-content/uploads/2017/11/apache-royale-tm-logo-default.png" />
+<img src="http://royale.codeoscopic.com/wp-content/uploads/2018/01/apache-royale-tm-logo-light.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
 <ul class="topMenu">
 <li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="features.html">FEATURES</a>
+	<a class="topMenu_li_a" href="http://royale.apache.org/features.html">FEATURES</a>
 </li>
 <li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="tryitnow/index.html">TRY IT NOW</a>
+	<a class="topMenu_li_a" href="http://royale.apache.org/tryitnow/index.html">TRY IT NOW</a>
 </li>
 <li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="download.html">DOWNLOAD</a>
+	<a class="topMenu_li_a" href="http://royale.apache.org/download.html">DOWNLOAD</a>
 </li>
 <li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="documentation.html">DOCS</a>
+	<a class="topMenu_li_a" href="http://royale.apache.org/documentation.html">DOCS</a>
 </li>
 <li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="blog.html">BLOG</a>
+	<a class="topMenu_li_a" href="http://royale.apache.org/blog.html">BLOG</a>
 </li>
-<li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="github.html">GITHUB</a>
+<li class="topMenu_li fa fa-github">
+	<a class="topMenu_li_a" href="http://royale.apache.org/github.html">GITHUB</a>
 </li>
 </ul>
 <ul class="social">
@@ -60,34 +61,102 @@ limitations under the License.
 </li>
 </ul>
 </div>
-<h3>Designed for the future</h3>
-<h2>Code Once.  Run Everywhere.</h2>
-<p class="intro">
-Apache Royale™ is a productive open source frontend application technology that allows you to code in MXML & AS3 and output to different formats.
-</p>
-{{content}}
+<p class="tagline">Designed for the future.  Code Once.  Run Everywhere.</p>
+<div class="toc_and_doc">
+  <div class="content" id="content">
+    {{content}}
+  </div>
+  <div class="toc" id="toc">
+{% assign pagepathparts = page.path | split: "/" %}
+{% assign numparts = pagepathparts | size %}
+{% case numparts %)
+  {% when 1 %}
+    {% assign folder1 = "" %}
+    {% assign folder2 = "" %}
+  {% when 2 %}
+    {% assign folder1 = pagepathparts[0] %}
+    {% assign folder2 = "" %}
+  {% when 3 %}
+    {% assign folder1 = pagepathparts[0] %}
+    {% assign folder2 = pagepathparts[1] %}
+{% endcase %}
+{% for entry in site.data.toc.toc %}
+  {% for p in site.pages %}
+    {% if p.path == entry.path %}
+      <div class="toc_entry">
+      {% if p.path == page.path %}
+        <span class="toc_label">{{ p.title }}</span>
+      {% else %}
+        <a class="toc_link" href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a>
+      {% endif %}
+      </div>
+      {% if entry.children %}
+        {% assign entrypathparts = entry.children[0].path | split: "/" %}
+        {% if folder1 == entrypathparts[0] %}
+          <div class="menu_div">
+          {% for p2 in entry.children %}
+            {% for q in site.pages %}
+              {% if p2.path == q.path %}
+                <div class="toc_entry">
+                {% if q.path == page.path %}
+                  <span class="toc_label">{{ q.title }}</span>
+                {% else %}
+                  <a class="toc_link" href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a>
+                {% endif %}
+                </div>
+              {% endif %}
+            {% endfor %}
+            {% if p2.children %}
+              {% assign entrypathparts = p2.children[0].path | split: "/" %}
+              {% if folder2 == entrypathparts[1] %}
+                <div class="menu_div2">
+                {% for p3 in p2.children %}
+                  {% for r in site.pages %}
+                    {% if p3.path == r.path %}
+                      <div class="toc_entry">
+                      {% if r.path == page.path %}
+                        <span class="toc_label">{{ r.title }}</span>
+                      {% else %}
+                        <a class="toc_link" href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a>
+                      {% endif %}
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+  </div>
+</div>
 <div class="footer">
   <div class="footer-column">
   <ul class="footer-list">
     <li class="apacheroyale">APACHE ROYALE</li>
-    <li><a class="footer-list_a" href="index.html">Home</a></li>
-    <li><a class="footer-list_a" href="featurs.html">Features</a></li>
-    <li><a class="footer-list_a" href="tryitnow/index.html">Try it now</a></li>
-    <li><a class="footer-list_a" href="download.html">Download</a></li>
-    <li><a class="footer-list_a" href="showcase.html">Showcase</a></li>
-    <li><a class="footer-list_a" href="blog.html">Blog</a></li>
-    <li><a class="footer-list_a" href="team.html">Team</a></li>
-    <li><a class="footer-list_a" href="royalenpm.html">Royale in npm</a></li>
-    <li><a class="footer-list_a" href="license.html">License</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/index.html">Home</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/features.html">Features</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/tryitnow/index.html">Try it now</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/download.html">Download</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/showcase.html">Showcase</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/blog.html">Blog</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/team.html">Team</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/royalenpm.html">Royale in npm</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/license.html">License</a></li>
   </ul>
   </div>
   <div class="footer-column">
   <ul class="footer-list">
     <li class="documentation">DOCUMENTATION</li>
-    <li><a class="footer-list_a" href="index.html">Getting Started</a></li>
-    <li><a class="footer-list_a" href="docs.html">Docs</a></li>
-    <li><a class="footer-list_a" href="reference/index.html">Reference</a></li>
-    <li><a class="footer-list_a" href="wiki.html">Wiki</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/index.html">Getting Started</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/docs.html">Docs</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/reference/index.html">Reference</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/wiki.html">Wiki</a></li>
   </ul>
   <ul class="footer-list">
     <li class="community">COMMUNITY</li>
@@ -99,9 +168,9 @@ Apache Royale™ is a productive open source frontend application technology tha
   <div class="footer-column">
   <ul class="footer-list">
     <li class="development">DEVELOPMENT</li>
-    <li><a class="footer-list_a" href="github.html">Github</a></li>
-    <li><a class="footer-list_a" href="source.html">Source Code</a></li>
-    <li><a class="footer-list_a" href="issues.html">Issues</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/github.html">Github</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/source.html">Source Code</a></li>
+    <li><a class="footer-list_a" href="http://royale.apache.org/issues.html">Issues</a></li>
   </ul>
   <ul class="footer-list">
     <li class="apache">APACHE</li>
@@ -113,9 +182,9 @@ Apache Royale™ is a productive open source frontend application technology tha
   </div>
   <div class="aboutusdiv" >
   	<p class="aboutus">ABOUT US</p>
-    <p><img class="aboutus-logo" src="http://royale.codeoscopic.com/wp-content/uploads/2017/10/apache-royale-logo-footer-circle-grey.svg"/>Apache Royale™ is a highly productive open source application technology for building expressive frontend applications that outputs to different formats and deploy consistently on all major browsers, desktops and devices.</p>
+    <p class="aboutus_p"><img class="aboutus-logo" src="http://royale.codeoscopic.com/wp-content/uploads/2017/10/apache-royale-logo-footer-circle-grey.svg"/><a href=https://royale.apache.org/index.html" class="aboutus_a">Apache Royale™</a> is a highly productive open source application technology for building expressive frontend applications that outputs to different formats and deploy consistently on all major browsers, desktops and devices.</p>
     <p><img class="aboutus-apache-logo" src="http://royale.codeoscopic.com/wp-content/uploads/2017/10/Apache_PoweredBy.svg" />
-    Apache Royale™, Apache™ and the Apache feather logo™ are trademarks of The Apache Software Foundation. All other marks mentioned may be trademarks or registered trademarks of their respective owners. Read more about our privacy policy on our Privacy Policy page.</p>
+    <a href=https://royale.apache.org/index.html" class="aboutus_a">Apache Royale™</a>, <a href="http://www.apache.org" class="aboutus_a">Apache™</a> and the <a href="http://www.apache.org/foundation/press/kit/" class="aboutus_a">Apache feather logo™</a> are trademarks of The Apache Software Foundation. All other marks mentioned may be trademarks or registered trademarks of their respective owners. Read more about our privacy policy on our Privacy Policy page.</p>
   </div>
 </div>
 <div class="asf">

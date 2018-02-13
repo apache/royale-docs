@@ -1,3 +1,4 @@
+---
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.
@@ -13,5 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-title: Apache Royale Documentation
-baseurl: /job/RoyaleDocs_Staging/lastSuccessfulBuild/artifact/_site
+layout: docpage
+title: Security
+---
+
+# Security
+
+*This information will be available soon.*

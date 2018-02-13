@@ -12,6 +12,260 @@
  * limitations under the License.
  */
 
+/* bengali */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Hind Siliguri Light'), local('HindSiliguri-Light'), url(https://fonts.gstatic.com/s/hindsiliguri/v4/fBpmjMpv5Rh6S25yVfWJn0qii7chi9RE_lAY9XU9O0g.woff2) format('woff2');
+  unicode-range: U+0964-0965, U+0981-09FB, U+200B-200D, U+20B9, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Hind Siliguri Light'), local('HindSiliguri-Light'), url(https://fonts.gstatic.com/s/hindsiliguri/v4/fBpmjMpv5Rh6S25yVfWJn82vutNS_CBIjVgecJYPrsw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Hind Siliguri Light'), local('HindSiliguri-Light'), url(https://fonts.gstatic.com/s/hindsiliguri/v4/fBpmjMpv5Rh6S25yVfWJn88Q1G5JROVRiyA48x3Y_E4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* bengali */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Siliguri Regular'), local('HindSiliguri-Regular'), url(https://fonts.gstatic.com/s/hindsiliguri/v4/f2eEi2pbIa8eBfNwpUl0AqEXMZVoFOEO38LXywQmS6I.woff2) format('woff2');
+  unicode-range: U+0964-0965, U+0981-09FB, U+200B-200D, U+20B9, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Siliguri Regular'), local('HindSiliguri-Regular'), url(https://fonts.gstatic.com/s/hindsiliguri/v4/f2eEi2pbIa8eBfNwpUl0AoEMFHo8fJCOZjaCxXVE7N0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Siliguri Regular'), local('HindSiliguri-Regular'), url(https://fonts.gstatic.com/s/hindsiliguri/v4/f2eEi2pbIa8eBfNwpUl0Ahbke1jeBh3drm8XFbAU4Xs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/gk5FxslNkTTHtojXrkp-xPX7z5o44AuUJ1t1avdkNXJ_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/gk5FxslNkTTHtojXrkp-xLLF6RfyvCYuuChpfFHKAr5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/gk5FxslNkTTHtojXrkp-xIbCcO5IWJIaQ5MtZqYsHUp_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/gk5FxslNkTTHtojXrkp-xHQ3DnTiPFZC1qn696_nOv9_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/gk5FxslNkTTHtojXrkp-xLzZT6Zu7Z-BZJGL0hT-UJV_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/gk5FxslNkTTHtojXrkp-xPJmhJzg6kSQTtrFMk-8lT5_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/gk5FxslNkTTHtojXrkp-xIgEy7irt_A5K-aDq9kG7DHr7w4p9aSvGirXi6XmeXNA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Oswald SemiBold'), local('Oswald-SemiBold'), url(https://fonts.gstatic.com/s/oswald/v16/FPi-c3aUC3zvYWzrDQQz-4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Oswald SemiBold'), local('Oswald-SemiBold'), url(https://fonts.gstatic.com/s/oswald/v16/easTUkYIpjx9W4QcIr8U1IX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Oswald SemiBold'), local('Oswald-SemiBold'), url(https://fonts.gstatic.com/s/oswald/v16/FVV1uRqs2-G7nbyX6T7UGYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Oswald SemiBold'), local('Oswald-SemiBold'), url(https://fonts.gstatic.com/s/oswald/v16/y5-5zezrZlJHkmIVxRH3BZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika Regular'), local('Signika-Regular'), url(https://fonts.gstatic.com/s/signika/v8/ES-hggNmXmQgA9p5FjvOJ1KPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Signika Regular'), local('Signika-Regular'), url(https://fonts.gstatic.com/s/signika/v8/DgXTNsU4VcVVFTc7jwBZzwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Signika SemiBold'), local('Signika-SemiBold'), url(https://fonts.gstatic.com/s/signika/v8/8-PQNacfI9IhpgehJGCuGAsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Signika SemiBold'), local('Signika-SemiBold'), url(https://fonts.gstatic.com/s/signika/v8/FZa_MODmDkR9DTu5jHSnSQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika Bold'), local('Signika-Bold'), url(https://fonts.gstatic.com/s/signika/v8/F587cG5P5ff3TX6w4JlorwsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika Bold'), local('Signika-Bold'), url(https://fonts.gstatic.com/s/signika/v8/7M5kxD4eGxuhgFaIk95pBQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGGWGG8n76xaP_JUl9houU473rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGMP5gXq4cN8pjVji5g2q9Mf3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGIwxT-R1rCKQkeTtsDWzfjL3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGFCUBMgATkHAQY-Bv-74xcn3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGMZXFz2iDKd7GJNSaxRYiSj3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGKyGJhAh-RE0BxGcd_izyev3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGMzFoXZ-Kj537nB_-9jJhlA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+h1 {
+	margin-top: 0px;
+}
+
+.tagline {
+	font-family: 'Hind Siliguri';
+	top: 60px;
+	right: 10px;
+	font-size: 10px;
+	color: #fff;
+	position: absolute;
+}
+
 .asf
 {
 	text-align: center;
@@ -98,40 +352,54 @@
 
 .page {
 	width: 100%;
-	background-color: #cccccc;
-	background-image: url('http://royale.codeoscopic.com/wp-content/uploads/2017/10/isometric-devices-light-curve-1920x1025.png');
+	background-image: url('http://royale.codeoscopic.com/wp-content/uploads/2017/10/page-bg-1-1920x300.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
+	margin-top: 0px;
 }
 
 .social {
 	display: inline;
-	position: absolute;
-	right: 0px;
+	margin-top: 0px;
+	height: 40px;
 }
 
 .social_li {
 	display: inline;
 	margin-right: 20px;
+	line-height: 70px;
+	color: #fff;
 }
 
 .topbar {
-	width: 100%;
+	margin-left: 54px;
+	margin-right: 54px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .topMenu {
 	display: inline-block;
 	vertical-align: top;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 40px;
 }
 
 .topMenu_li {
 	display: inline;
 	margin-right: 20px;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: 'Signika';
+	line-height: 70px;
+	letter-spacing: 1px;
 }
 
 .topMenu_li_a {
 	text-decoration: none;
+	color: #fff;
 }
 
 .orange-box {
@@ -165,61 +433,142 @@
 }
 
 .apache {
-	color: #f0f;
+	color: #a002a0;
+	font-family: Signika;
+	font-weight: 600;
+	line-height: 30px;
 }
 
 .apacheroyale {
-	color: #f00;
+	color: rgb(250, 70, 30);
+	font-family: Signika;
+	font-weight: 600;
+	line-height: 30px;
 }
 
 .documentation {
 	color: #000;
+	font-family: Signika;
+	font-weight: 600;
+	line-height: 30px;
 }
 
 .development {
-	color: #ff0;
+	color: rgb(243, 199, 103);
+	font-family: Signika;
+	font-weight: 600;
+	line-height: 30px;
 }
 
 .community {
-	color: #0f0;
+	color: rgb(42, 139, 42);
+	font-family: Signika;
+	font-weight: 600;
+	line-height: 30px;
 }
 
 .footer {
-	width: 100%;
+	padding-left: 54px;
+	padding-right: 54px;
+	padding-top: 48px;
+	padding-bottom: 18px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: 'Hind Siliguri';
+	font-size: 14px;
+	background-color: rgb(233, 233, 233);
 }
 
 .footer-column {
+	flex-grow: 1;
 }
 
 .footer-list {
 	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 20px;
 }
 
 .footer-list_a{
 	text-decoration: none;
+	line-height: 26px;
+	color: rgb(67, 147, 195);
 }
 
 .aboutusdiv {
 	min-width: 150px;
-	flex-basis: 40%;
+	flex-basis: 33%;
 	flex-grow: 1;
 }
 
 .aboutus {
 	color: #000;
+	font-family: Signika;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.aboutus_p {
+	padding-bottom: 38px;
+}
+
+.aboutus_a {
+	text-decoration: none;
+	color: rgb(67, 147, 195);
 }
 
 .aboutus-logo {
 	float: left;
 	width: 100px;
+	padding-bottom: 14px;
+	padding-right: 14px;
 }
 
 .aboutus-apache-logo {
 	float: right;
 	width: 100px;
+	padding-bottom: 14px;
+	padding-right: 14px;
 }
 
+.toc_and_doc {
+	display: flex;
+	align-items: flex-start;
+	font-family: 'Hind Siliguri';
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.toc {
+	display: inline-block;
+	margin-top: 80px;
+	margin-left: 20px;
+	flex-shrink: 0;
+}
+
+.content {
+	display: inline-block;
+	flex-grow: 1;
+}
+
+.menu_div {
+	margin-left: 20px;
+}
+
+.menu_div2 {
+	margin-left: 30px;
+}
+
+.toc_entry {
+}
+
+.toc_link {
+	text-decoration: none;
+	color: rgb(67, 147, 195);
+}
+
+.toc_label {
+    color: rgb(0, 0, 0);
+	font-weight: 600;
+}

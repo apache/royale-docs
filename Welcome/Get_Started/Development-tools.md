@@ -1,3 +1,4 @@
+---
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.
@@ -13,5 +14,41 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-title: Apache Royale Documentation
-baseurl: /job/RoyaleDocs_Staging/lastSuccessfulBuild/artifact/_site
+layout: docpage
+title: Development tools
+---
+
+# Development tools
+
+*text coming soon*
+
+## IDEs
+IDEs that support Apache Royale provide getting-started instructions to help you specify using Royale for a new project, or importing an existing Royale project.
+
+- Visual Studio
+
+- Moonshine
+
+- Flash Builder
+
+- IntelliJ IDEA
+
+- FDT
+
+
+
+*more text and links coming*
+
+## Command-line scripts
+
+*text coming*
+
+## Apache Maven
+
+*Maven-related text and links coming.*
+
+## Apache Cordova
+
+*Text coming on packaging an app for mobile phones*
+
+

@@ -1,0 +1,46 @@
+---
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+# 
+# http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+layout: docpage
+title: The main application file
+---
+
+# The main application file
+
+This application uses an MXML file as its main file.
+
+The file starts with:
+
+```XML
+<js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+                xmlns:local="*"
+                xmlns:js="library://ns.apache.org/royale/express" 
+                >
+```
+
+The line:
+
+```
+                xmlns:js="library://ns.apache.org/royale/express" 
+```
+
+means that the "js" prefix is mapped to the Express set of [components](User-interface/Components.html). The Express set is designed for rapid prototyping and proofs-of-concepts and is not optimized for size and performance. Applications built with the Express components can still be deployed in production environments if the size and performance is acceptable, which it often is.
+
+As mentioned in [Application structure](create-an-application/application-structure.html), there is more than one pattern for creating applications.  This example will use the MVC pattern.  So, the next step is to create the Model. 
+
+
+{:align="center"}
+\| [Next Page](create-an-application/application-tutorial/data.html)

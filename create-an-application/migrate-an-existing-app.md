@@ -1,3 +1,4 @@
+---
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.
@@ -13,5 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-title: Apache Royale Documentation
-baseurl: /job/RoyaleDocs_Staging/lastSuccessfulBuild/artifact/_site
+layout: docpage
+title: Migrate an existing application
+---
+
+# Migrate an existing application
+
+If you have an existing application and want to start using Royale, the following documents may help you.
+
+[Migrate From Flex](create-an-application/migrate-an-existing-app/migrate-from-flex.html)
+
+[Migrate from JavaScript](create-an-application/migrate-an-existing-app/migrate-from-js.html)
+
