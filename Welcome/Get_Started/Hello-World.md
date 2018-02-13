@@ -20,15 +20,17 @@ title: Hello World
 
 # Hello World
 
-To verify that the Royale SDK is set up correctly, it is recommended to create and build a "Hello World" example.  If that works, you can move on to the ["Create an Application"](Create%20An%20Application.html) section and work through the tutorial on building a more substantial application.
+To verify that the Royale SDK is set up correctly, we recommend you create and build a "Hello World" example. If that works, you can move on to the ["Create an Application"](Create%20An%20Application.html) section and work through the tutorial on building a more substantial application.
+
+These instructions presume you are not using an IDE, but are creating files in a text editor and compiling using command-line scripts or similar controls. [Development tools](Welcome/Get_Started/Development-tools.html) that fully support Royale provide their own instructions for building your first Royale applications.
 
 ## Create the project folders
 
 Create or select a folder to hold this application's source and output.  
 
-In that folder, create a folder called "HelloWorld" (it can be named something else if you want and can contain spaces).  This folder will be referred to as the "project" folder throughout the documentation.  
+In that top-level folder, create a folder called "HelloWorld" (it can be named something else if you want, and the name can contain spaces).  This folder will be referred to as the "project" folder throughout the documentation.  
 
-In the project folder, create a folder called src.  You can use other names, but the compiler will manage your output folders for you if you use "src" or "src/main/royale" ("src\main\royale" on Windows).
+In the project folder, create a folder called "src". You can use other names, but the compiler will manage your output folders for you if you use "src" or "src/main/royale" ("src\main\royale" on Windows).
 
 So, if you used a folder called "Projects" for all of your project folders, then you would have the following folders:
 
@@ -71,12 +73,14 @@ If you didn't use NPM, run:
 
 ## Run the output
 
-If the compiler reported success, there should be a bin/js-release output folder in your project folder, such as 
+If the compiler reported success, there should now be a bin/js-release output folder in your project folder, such as 
 
 ```
     Projects/HelloWorld/bin/js-release
 ```
 
-In there should be an index.html file you can open in your browser and you should see "Hello World" in your browser.  If you see that, congratulations!  You have installed Royale successfully and are ready to build Royale applications.  The ["Create an Application"](Create%20An%20Application.html) contains a tutorial for building a more substantial application.
+In that folder should be an index.html file you can open in your browser to see your "Hello World" application.  If you see that, congratulations!  You have installed Royale successfully and are ready to build Royale applications.  
+
+["Create an Application"](Create%20An%20Application.html) contains a tutorial for building a more substantial application.
 
 
