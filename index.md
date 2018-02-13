@@ -35,3 +35,5 @@ This document is divided into several sections:
 [Licenses and Policies](Welcome/Licenses%20and%20Policies.html) contains the fine print.
 
 [Get Involved](Welcome/Get%20Involved.html) explains how you can contribute to the future of Royale.
+
+*Note: This material is far from complete. However, with each release more useful information will become available.
