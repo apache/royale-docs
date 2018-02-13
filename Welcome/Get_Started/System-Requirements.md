@@ -21,10 +21,8 @@ title: System Requirements
 <!-- What sort of hardware will support work in Royale -->
 # System requirements
 
-Apache Royale is designed for use on Mac or PC computers, but not (yet) on Linux.
+Apache Royale is designed for use on Mac or PC computers. We would love to know your experience with it on a Linux machine!
 
-Since developers normally use Royale in the IDE of their choice, the system needs to satisfy the minimum requirements for that IDE. You do not need Internet access to work with Royale unless that is required by the IDE you are using.
+Since developers often use Royale in the IDE of their choice, the system needs to satisfy the minimum requirements for that IDE. You do not need Internet access to work with Royale unless that is required by the IDE you are using. Royale provides scripts you can run if you want to compile your application using the command line, without an IDE.
 
-If you are compiling strictly by command-line...
-
-Royale requires Java SDK 1.7 or greater to be installed on your computer. You can access the latest Java SDK from DOWNLOAD URL.
+Royale requires Java SDK 1.7 or greater to be installed on your computer. You can access the latest Java SDK from <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">the Java download site</a>.
