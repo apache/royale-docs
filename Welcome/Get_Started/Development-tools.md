@@ -20,7 +20,7 @@ title: Development tools
 
 # Development tools
 
-You can just use and standard text editor to write Royale applications and the command-line to compile them, but you may find that an Interactive Development Environment (IDE) can make you even more productive.
+You can just use any standard text editor to write Royale applications and the command-line to compile them, but you may find that an Interactive Development Environment (IDE) can make you even more productive.
 
 ## IDEs
 IDEs that support Apache Royale provide getting-started instructions to help you specify using Royale for a new project, or importing an existing Royale project.
@@ -43,18 +43,18 @@ IDEs that support Apache Royale provide getting-started instructions to help you
 
 ## Command-line scripts
 
-To run the compiler, run the js/bin/mxmlc tool in the Royale SDK.  The [Download Royale](Welcome/Get_Started/Download-Royale.html) and [Hello World](Welcome/Get_Started/Hello-World.html) sections provide an example of how to use the compiler.
+To run the compiler, run the js/bin/mxmlc tool in the Royale SDK. The [Download Royale](Welcome/Get_Started/Download-Royale.html) and [Hello World](Welcome/Get_Started/Hello-World.html) sections provide guidance about how to use the compiler.
 
 ## Apache Maven
 
-You can use Apache Maven to compile your Royale application.  The Royale documentation will not describe what Maven is and how to use it.  Visit the [Apache Maven Project](http://maven.apache.org){:target='_blank'} to learn more about Maven.  Each of the examples in the examples folder is set up to be built with Maven, and the archetypes folder contains Maven Archetypes.
+You can use Apache Maven to compile your Royale application. Visit the [Apache Maven Project](http://maven.apache.org){:target='_blank'} to learn more about Maven. Each of the examples in the examples folder is set up to be built with Maven, and the archetypes folder contains Maven Archetypes.
 
 ## Apache Ant
 
-You can use Apache Ant to compile your Royale application.  The Royale documentation will not describe what Ant is and how to use it.  Visit the [Apache Ant Project](http://ant.apache.org){:target='_blank'} to learn more about Ant.  Each of the examples in the examples folder is set up to be built with Ant.
+You can use Apache Ant to compile your Royale application. Visit the [Apache Ant Project](http://ant.apache.org){:target='_blank'} to learn more about Ant. Each of the examples in the examples folder is set up to be built with Ant.
 
 ## Apache Cordova
 
-Apache Cordova enables Royale applications to run on mobile devices, tablets, and even desktops.  The MobileTrader example in examples/royale/MobileTrader and a few other examples use Cordova.
+Apache Cordova enables Royale applications to run on mobile devices, tablets, and even desktops.  The MobileTrader example in examples/royale/MobileTrader and a few other examples use Cordova. Visit the <a href="https://cordova.apache.org/" target="_blank">Apache Cordova project</a> to learn more about using Cordova.
 
 
