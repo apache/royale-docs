@@ -33,7 +33,7 @@ The Express set is designed for rapid prototyping and proofs-of-concepts and is 
 ### MDL component set
 *Details coming soon.*
 
-### component set
+### HTML component set
 *Details coming soon.*
 
 ### Flat component set
