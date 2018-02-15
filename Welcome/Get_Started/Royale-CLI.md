@@ -17,47 +17,57 @@
 layout: docpage
 title: Royale CLI
 ---
-#Royale CLI
+# Royale CLI
+Royale CLI is a command-line tool that makes creating and compiling applications easier for users of <a href="https://www.npmjs.com/" target="_blank">npm</a>, the JavaScript package manager.
 
+## Installing Royale CLI
 
-As I was trying to write a `Setting up Royale with npm `blog post, I
-realized that things could be much easier for npm users.  So, I built the
-Royale CLI tool.  It takes inspiration from the create-react-app and the
-angular cli projects.
-
-Here are the details:
-
-*To Install: *
+If you have not installed Royale already, use this command in the command window:
+```
 npm install @apache-royale/royale-js -g
+```
+Then run:
+```
 npm install @apache-royale/cli -g
+```
 
-After installation:
-
-*Help *
+## Working with Royale CLI
+For information at any time aabout available commands and options, run:
+```
 royale help
+```
 
-*Setup *
+### Creating a new application
+Navigate in the command window to the directory where you want to create the new application, called here "my-royale-app", then run:
+```
 royale new  my-royale-app
+```
+This creates a new directory structure using the name of the application, and creates a basic app with one main file: my-royale-app/src/Main.mxml.
+
+To review the app structure so far, navigate into the new direcctory:
+```
 cd my-royale-app
+```
 
- This creates a simple app: my-royale-app/src/Main.mxml
+### Running your application
+Navigate in the command window into your application's directory.
 
-
-*Run in debug mode *
+To compile and run in **debug mode**, run:
+```
 royale serve:debug
-
- Compiles the project in debug mode
- Compiles with source map option
- Starts a http server and serves the files from the bin/js-debug directory
- Opens the default browser and navigates to http://localhost:3000
- Listens to src folder
- When any file changes, it will recompile the app
- Automatically reloads the browser to show the updated application
-
-*Run in release mode *
+```
+Royale:
+  - Compiles the project in debug mode, with a source map option.
+  - Starts a http server and serves the files from the bin/js-debug directory.
+  - Opens the default browser and navigates to http://localhost:3000.
+  - Listens to the *src* folder. When any file changes, Royale will recompile the app and reload the browser to show the updated application.
+  
+To compile and run in **release mode**, run:
+```
 royale serve:release
-
- Compiles the project in release mode
- Starts a http server and serves the files from the bin/js-release
-directory
- Opens the default browser and navigates to http://localhost:3001
+```
+Royale:
+  - Compiles the project in release mode.
+  - Starts a http server and serves the files from the bin/js-release
+directory.
+  - Opens the default browser and navigates to http://localhost:3001.
