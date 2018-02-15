@@ -17,6 +17,11 @@ As they become available, we will provide code snippets, examples, and full tuto
 ## Flex features you can achieve in a different way in Royale
 _This text is coming soon._
 
+- PopUpManager
+- BorderContainer - using UIBase
+- Advanced DataGrid - TreeGrid
+- Remote Object
+
 ## Flex features that are not yet available in Royale
 _This text is coming soon._
 
