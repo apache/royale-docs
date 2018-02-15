@@ -45,6 +45,8 @@ IDEs that support Apache Royale provide getting-started instructions to help you
 
 To run the compiler, run the js/bin/mxmlc tool in the Royale SDK. The [Download Royale](Welcome/Get_Started/Download-Royale.html) and [Hello World](Welcome/Get_Started/Hello-World.html) sections provide guidance about how to use the compiler.
 
+Royale provides [Royale CLI](Welcome/Get_Started/Royale-CLI.html), a tool to simplify creating and compiling applications for those using <a href="https://www.npmjs.com/" target="_blank">npm</a>.
+
 ## Apache Maven
 
 You can use Apache Maven to compile your Royale application. Visit the [Apache Maven Project](http://maven.apache.org){:target='_blank'} to learn more about Maven. Each of the examples in the examples folder is set up to be built with Maven, and the archetypes folder contains Maven Archetypes.
