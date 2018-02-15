@@ -17,6 +17,7 @@ As they become available, we will provide code snippets, examples, and full tuto
 ## Flex features you can achieve in a different way in Royale
 _Details are coming soon._
 
+- **ArrayCollection** is not yet available, but several Royale users report good results by using ArrayList in its place. 
 - PopUpManager
 - BorderContainer - using UIBase
 - Advanced DataGrid - TreeGrid
