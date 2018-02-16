@@ -33,6 +33,17 @@ _Details are coming soon._
 - Editable DataGrids
 - Sorting within DataGrids
 - ArrayCollection
+- Embed tags for convenient handling of graphics.
+- Handling of SVG (graphics) assets.
+- Masking of images and objects.
+- Image componetnts which allow specifying content via raw binary data or the image's URL.
+- Routing: in Flex this was called "deep linking". This allowed changing the URL to use browser history to navigate an application.
+- File transfer API.
+- Font and text handling.
+- UID utilities.
+- Transformations.
+- Color filters and transforms.
+- Cursor Manager
 
 ## Flex features that will probably not be available in Royale
 _This text is coming soon._
