@@ -15,10 +15,26 @@ Moving from Flex to Royale is straightforward for most of your application's fun
 As they become available, we will provide code snippets, examples, and full tutorials to help you with the trickier parts of your migration to Royale.
 
 ## Flex features you can achieve in a different way in Royale
-_This text is coming soon._
+_Details are coming soon._
+
+- **ArrayCollection** is not yet available, but several Royale users report good results by using ArrayList in its place. 
+- PopUpManager
+- BorderContainer - using UIBase
+- Advanced DataGrid - TreeGrid
+- Remote Object
+- Canvas
 
 ## Flex features that are not yet available in Royale
-_This text is coming soon._
+_Details are coming soon._
+
+- TitleWindow
+- Menu and MenuBar
+- VariableRowHeight
+- Editable DataGrids
+- Sorting within DataGrids
+- ArrayCollection
 
 ## Flex features that will probably not be available in Royale
 _This text is coming soon._
+
+
