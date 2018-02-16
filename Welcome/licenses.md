@@ -188,7 +188,7 @@ are derived from the google_maps_api_v3_11.js externs file in the
 Google Closure Library which are available under Apache License 2.0.
 
   - The file frameworks/projects/Core/src/main/royale/org/apache/royale/geom/Matrix.as
-is derived from <a href="https://github.com/openfl" target="_blank">OpenFL ()</a> which is available under an
+is derived from <a href="https://github.com/openfl" target="_blank">OpenFL()</a> which is available under an
 MIT License Copyright (c) 2013-2016 Joshua Granick and other OpenFL contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a 
@@ -213,7 +213,7 @@ Below are the licenses for components included in the binary distribution.
   - This product bundles a subset of Google Closure Library available 
 under Apache License 2.0.  For details see <a href="https://developers.google.com/closure/library/" target="_blank">https://developers.google.com/closure/library/</a>.
 
-  - This product bundles SWFObject under the MIT License.  For details see <a href="royale-asjs/templates/swfobject/swfobject.js" target="_blank">royale-asjs/templates/swfobject/swfobject.js</a>.
+  - This product bundles SWFObject under the MIT License.  For details see <a href="https://github.com/royale-asjs/templates/swfobject/swfobject.js" target="_blank">https://github.com/royale-asjs/templates/swfobject/swfobject.js</a>.
 
   - royale-typedefs/js/target/downloads/svg.js: This product bundles svg.js from <a href="closureidl.googlecode.com" target="_blank">closureidl.googlecode.com</a> available under the BSD 3-Clause license, Copyright (c) 2012, Denis Zawada All rights reserved.
 
@@ -239,13 +239,13 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  - This product bundles ANTLR 3 under the BSD License. For details see <a href="royale-asjs/lib/external/antlr-LICENSE.html" target="_blank">royale-asjs/lib/external/antlr-LICENSE.html</a>.
+  - This product bundles ANTLR 3 under the BSD License. For details see <a href="https://github.com/royale-asjs/lib/external/antlr-LICENSE.html" target="_blank">https://github.com/royale-asjs/lib/external/antlr-LICENSE.html</a>.
 
   - This product bundles the 7-Zip LZMA SDK which has been placed in the public domain. For
-details see <a href="royale-asjs/lib/external/lzma-sdk-LICENSE.html" target="_blank">royale-asjs/lib/external/lzma-sdk-LICENSE.html</a>
+details see <a href="https://github.com/royale-asjs/lib/external/lzma-sdk-LICENSE.html" target="_blank">https://github.com/royale-asjs/lib/external/lzma-sdk-LICENSE.html</a>
 
   - This product bundles args4J under the MIT License. For
-details see <a href="royale-asjs/js/lib/args4j-LICENSE.html" target="_blank">royale-asjs/js/lib/args4j-LICENSE.html</a>
+details see <a href="https://github.com/royale-asjs/js/lib/args4j-LICENSE.html" target="_blank">https://github.com/royale-asjs/js/lib/args4j-LICENSE.html</a>
 
 ## Google Closure Compiler
 
