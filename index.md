@@ -28,7 +28,7 @@ This document is divided into several sections:
 
 [Features and Concepts](Welcome/Features%20And%20Concepts.html) explains the main features of Royale and some concepts that might help you be more productive.
 
-[What Royale and You Can Do](Welcome/What%20Royale%20And%20You%20Can%20Do.html) gives an overview of some apps that have been built with Royale.
+[What Royale and You Can Do](showcase.html) gives an overview of some apps that have been built with Royale.
 
 [A Bit of History](Welcome/history.html) provides a brief background on how Royale came to be.
 
