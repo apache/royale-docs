@@ -26,10 +26,10 @@ Why would you use a third-party framework with Royale? Because you like the look
 
 Royale supports (to varying degrees):
 
-- [Material Design Lite](https://getmdl.io){:target='_blank') Most, if not all, components are available.
+- [Material Design Lite](https://getmdl.io){:target='_blank'} Most, if not all, components are available.
 
-- [JQuery UI](https://jqueryui.com){:target='_blank') Only a few components are available. Volunteers are needed to support more components. Note that this does not mean that you write actual JQuery queries in your application source code; it just means that you can use the user interface controls to get the same user experience as JQuery apps offer.
+- [JQuery UI](https://jqueryui.com){:target='_blank'} Only a few components are available. Volunteers are needed to support more components. Note that this does not mean that you write actual JQuery queries in your application source code; it just means that you can use the user interface controls to get the same user experience as JQuery apps offer.
 
-- [CreateJS](https://www.createjs.com){:target='_blank')  Only a few components are available. Volunteers are needed to support more components.
+- [CreateJS](https://www.createjs.com){:target='_blank'}  Only a few components are available. Volunteers are needed to support more components.
 
 Many other JavaScript frameworks could be made to work with Royale if they support dynamic instantiation of components.  All it takes is volunteers to make it happen.
