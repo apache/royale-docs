@@ -28,7 +28,7 @@ This section describes:
 
 [Development Tools](Welcome/Get_Started/Development-tools.html) - You can develop Royale with just the command-line, or you can use scripting/build tools like Apache Ant and Apache Maven, or even use IDEs.
 
-[Frameworks](Welcome/Get_Started/frameworks.html) - What popular JavaScript frameworks can be used in Royale Applications.
+[Frameworks](Welcome/Get_Started/Frameworks.html) - What popular JavaScript frameworks can be used in Royale Applications.
 
 [Download Royale](Welcome/Get_Started/Download-Royale.html) - How to download and set up Royale.
 
