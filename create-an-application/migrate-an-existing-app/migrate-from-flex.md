@@ -31,6 +31,12 @@ Where most of the changes need to happen is in the MXML files. You built your us
 
 One big change you will notice right away is that the default Royale UI components come with a basic set of functions, but not with the full range of behaviors that was loaded into every single Flex UI component whether it needed it or not. To get exactly the behavior your application needs from a data display or an input field, you may need to add "beads" to the basic Royale component. For example, to provide a field where the user can enter a password, you need to take the basic Royale *TextInput* component and add a [bead](Welcome/Features/Strands%20and%20Beads.html) like *PasswordInputBead* to it. This makes your Royale application much more lightweight than its Flex ancestor was, and learning about [Strands and Beads](Welcome/Features/Strands%20and%20Beads.html) is not too hard.
 
+## Standard runtime problems
+*This section will address some issues that may arise for applications migrated from Flex.*
+
+- **Circular dependencies** - this material will be available soon.
+- **Renaming of properties** - this material will be available soon.
+
 ## Royale equivalents for Flex components ##
 Royale is not a one-for-one migration of Flex, for several reasons. A lot of Flex code presumes, and takes advantage of, features available in the Adobe AIR environment or the Flash Player plugin. Other Flex elements are more bulky than they could best be to cover a wide range of possible events and situations, so a great deal of the code in an application may be there "just in case" and never actually used.
 
