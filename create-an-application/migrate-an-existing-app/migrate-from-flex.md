@@ -34,8 +34,8 @@ One big change you will notice right away is that the default Royale UI componen
 ## Standard runtime problems
 *This section will address some issues that may arise for applications migrated from Flex.*
 
-- **Circular dependencies** - this material will be available soon.
-- **Renaming of properties** - this material will be available soon.
+- **Circular dependencies** - This material will be available soon. For now, <a href="https://cwiki.apache.org/confluence/display/FLEX/Circular+Dependencies" target="_blank">this entry on circular dependencies</a>, written while the project was still known as FlexJS, will be useful.
+- **Renaming of properties** - this material will be available soon. For now, <a href="https://cwiki.apache.org/confluence/display/FLEX/Renaming+Variables" target="_blank">this entry on compiler renaming of properties</a>, written while the project was still known as FlexJS, will be useful.
 
 ## Royale equivalents for Flex components ##
 Royale is not a one-for-one migration of Flex, for several reasons. A lot of Flex code presumes, and takes advantage of, features available in the Adobe AIR environment or the Flash Player plugin. Other Flex elements are more bulky than they could best be to cover a wide range of possible events and situations, so a great deal of the code in an application may be there "just in case" and never actually used.
