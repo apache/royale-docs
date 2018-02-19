@@ -17,6 +17,6 @@
 layout: docpage
 title: Renaming of properties
 ---
-* Renaming of properties
+# Renaming of properties
 
 *This material will be available soon.*
