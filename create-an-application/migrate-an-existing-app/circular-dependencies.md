@@ -26,6 +26,7 @@ public class A extends B
 
 public class B extends A
 ```
+Circular dependencies cause a tight coupling of what should be independent modules. THis makes it difficult to re-use one module without its partner. When a developer makes a small change in one of the co-dependent modules, there may be unexpected effects on the other modules, leading to poor application behavior or compile-time errors. in the worst case, a circular dependency cand generate an infinite recursion leading to a crash or hanging the system.
 
 ## What Flex allows
 
