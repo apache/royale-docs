@@ -19,4 +19,18 @@ title: Circular dependencies
 ---
 # Circular dependencies
 
+In software, a circular dependency is a relation between two or more modules which either directly or indirectly depend on each other to function properly. An extreme example, which could not work, is:
+
+```
+public class A extends B
+
+public class B extends A
+```
+
+## What Flex allows
+
+*This material will be available soon.*
+
+## What compiling for JavaScript requires
+
 *This material will be available soon.*
