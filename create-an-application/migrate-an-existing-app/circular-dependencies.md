@@ -45,4 +45,7 @@ In Flash and AIR the runtime constructs both classes before type-checking for pa
 
 ## What compiling for JavaScript requires
 
+Royale uses the <a href="https://developers.google.com/closure/compiler/" target="_blank">Google Closure Compiler</a> (GCC) to compile your application into JavaScript that can run on browsers and mobile phones without heavy plugins like Flash. GCC "parses your JavaScript, analyzes it, removes dead code and rewrites and minimizes what's left. It also checks syntax, variable references, and types, and warns about common JavaScript pitfalls." 
+
+
 *This material will be available soon.*
