@@ -26,11 +26,22 @@ public class A extends B
 
 public class B extends A
 ```
-Circular dependencies cause a tight coupling of what should be independent modules. THis makes it difficult to re-use one module without its partner. When a developer makes a small change in one of the co-dependent modules, there may be unexpected effects on the other modules, leading to poor application behavior or compile-time errors. in the worst case, a circular dependency cand generate an infinite recursion leading to a crash or hanging the system.
+Circular dependencies cause a tight coupling of what should be independent modules. This makes it difficult to re-use one module without its partner. When a developer makes a small change in one of the co-dependent modules, there may be unexpected effects on the other module, leading to poor application behavior or compile-time errors. in the worst case, a circular dependency can generate an infinite recursion leading to a crash or hanging the system.
 
 ## What Flex allows
 
-*This material will be available soon.*
+You can get away with some circular dependencies when developing an application in Flex or Royale that will be compiled for use in Flash or the AIR environment. You can write code like this:
+
+```
+public class Child {
+  public var parent:Parent;
+}
+
+public class Parent {
+  public var child:Child;
+}
+```
+In Flash and AIR the runtime constructs both classes before type-checking for parent and child properties. That happens only when the application code has initialized and starts to run.
 
 ## What compiling for JavaScript requires
 
