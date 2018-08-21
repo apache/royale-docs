@@ -399,6 +399,10 @@ h1 {
 
 .topMenu_li_a {
 	text-decoration: none;
+	color: rgba(255,255,255,0.7);
+}
+
+.topMenu_li_a:hover {
 	color: #fff;
 }
 
@@ -446,8 +450,15 @@ h1 {
 	line-height: 30px;
 }
 
+.social {
+	color: #053061;
+	font-family: Signika;
+	font-weight: 600;
+	line-height: 30px;
+}
+
 .documentation {
-	color: #000;
+	color: #053061;
 	font-family: Signika;
 	font-weight: 600;
 	line-height: 30px;
@@ -503,7 +514,7 @@ h1 {
 }
 
 .aboutus {
-	color: #000;
+	color: #053061;
 	font-family: Signika;
 	font-weight: 600;
 	line-height: 30px;
