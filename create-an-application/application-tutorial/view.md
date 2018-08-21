@@ -37,7 +37,7 @@ Inside the VView tag we add the DataGrid
 </js:DataGrid>
 ```
 
-We want to display the date of the commit, who made the commit, and the commit message, each in thir own column on each row of the DataGrid. So inside the DataGrid, we add:
+We want to display the date of the commit, who made the commit, and the commit message, each in their own column on each row of the DataGrid. So inside the DataGrid, we add:
 
 ```XML
 <js:columns>
