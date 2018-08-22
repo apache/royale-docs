@@ -49,11 +49,11 @@ Royale provides [Royale CLI](Welcome/Get_Started/Royale-CLI.html), a tool to sim
 
 ## Apache Maven
 
-You can use Apache Maven to compile your Royale application. Visit the [Apache Maven Project](http://maven.apache.org){:target='_blank'} to learn more about Maven. Each of the examples in the examples folder is set up to be built with Maven, and the archetypes folder contains Maven Archetypes.
+You can use Apache Maven to compile your Royale application. Visit the [Apache Maven Project](https://maven.apache.org){:target='_blank'} to learn more about Maven. Each of the examples in the examples folder is set up to be built with Maven, and the archetypes folder contains Maven Archetypes.
 
 ## Apache Ant
 
-You can use Apache Ant to compile your Royale application. Visit the [Apache Ant Project](http://ant.apache.org){:target='_blank'} to learn more about Ant. Each of the examples in the examples folder is set up to be built with Ant.
+You can use Apache Ant to compile your Royale application. Visit the [Apache Ant Project](https://ant.apache.org){:target='_blank'} to learn more about Ant. Each of the examples in the examples folder is set up to be built with Ant.
 
 ## Apache Cordova
 
