@@ -46,8 +46,8 @@ without the leading "/". Links are case-sensitive, and you need to insert ```%20
 
 When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs. If you want to use MarkDown, set the link like this:
 
-```[Apache Flex](http://flex.apache.org){:target='_blank'}```
+```[Apache Flex](https://flex.apache.org){:target='_blank'}```
 
 You can also use straight HTML for these links, like this:
 
-```<a href="http://flex.apache.org" target="_blank">Apache Flex</a>```
+```<a href="https://flex.apache.org" target="_blank">Apache Flex</a>```
