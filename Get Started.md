@@ -20,7 +20,7 @@ title: Get Started
 
 # Get started with Royale
 
-Royale is an open source project.  You can get the [source code](/source-code/){:target='_blank'} and build Royale, or, if you are in a hurry, you can click [here](Welcome/Get_Started/Download-Royale.html) to find out how to download pre-compiled code and get going quickly.
+Royale is an open source project.  You can get the [source code](http://royale.apache.org/source-code/){:target='_blank'} and build Royale, or, if you are in a hurry, you can click [here](Welcome/Get_Started/Download-Royale.html) to find out how to download pre-compiled code and get going quickly.
 
 This section describes:
 

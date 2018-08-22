@@ -21,4 +21,4 @@ Part of Apache Flex work involved making it possible to create applications in F
 
 In 2017 it was agreed to split this work into a new Apache project, which reached back to the early history of the project for a name. That is how we have arrived at "Apache Royale".
 
-This is a young project, with much to do. Your participation would be very <a href="/get-involved" target="_blank">welcome</a>!
+This is a young project, with much to do. Your participation would be very <a href="http://royale.apache.org/get-involved" target="_blank">welcome</a>!
