@@ -36,5 +36,7 @@ Royale also provides a Basic component set that is the opposite of Express.  The
 
 It turns out that the Express components are really just Basic components with lots of Beads packed into them by default.  The underlying component patterns in most Royale components rely on a plug-in model.  Instead of making large component classes with lots of code baked in, each individual feature of a component is designed as its own class with an interface marking it as a "Bead", and then the component itself is called a "Strand" and Beads are placed on the Strand to compose a Royale component.  You can read more about Strands and Beads [here](Welcome/Features/Strands%20and%20Beads.html).
 
+## Calling to/from external JavaScript code
 
+Sometimes you may want your Royale application to call an external piece of JavaScript that is also hosted in your web page, or even for some extenal JavaScript from your page to call into the Royale application. In the Flex (and Flash) world, there was the possibility to use the "ExternalInterface" class to achieve this functionality. If you want this in Royale, there are some options available that you can read about [here](Welcome/Features/external-interface.html).
 
