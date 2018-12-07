@@ -27,17 +27,48 @@ It is not yet possible to just import an existing Flex application into Apache R
 - Your "business logic", which you built all or mainly in ActionScript, probably does not need to change. 
 - Components and their functions that do not rely on Apache Flex or Adobe Flash features will probably work with minor tweaks.
 
-Where most of the changes need to happen is in the MXML files. You built your user interface using Spark and MX components--containers, controls, and so on. All those components will need to migrate to their Royale equivalents. You will find some differences between the components you used and the ones you now have available, and not all Flex components have equivalents in Royale yet.
+There are a few categories of changes to your code base.  One is where you used Flash APIs, if any.  In theory, you should have been able to write a Flex application without importing and using any Flash classes, but most folks found it useful to call directly into Flash.  Those calls will have to be changed.
 
-One big change you will notice right away is that the default Royale UI components come with a basic set of functions, but not with the full range of behaviors that was loaded into every single Flex UI component whether it needed it or not. To get exactly the behavior your application needs from a data display or an input field, you may need to add "beads" to the basic Royale component. For example, to provide a field where the user can enter a password, you need to take the basic Royale *TextInput* component and add a [bead](Welcome/Features/Strands%20and%20Beads.html) like *PasswordInputBead* to it. This makes your Royale application much more lightweight than its Flex ancestor was, and learning about [Strands and Beads](Welcome/Features/Strands%20and%20Beads.html) is not too hard.
+To determine where you may have used Flash APIs look for "import flash" in your code.  If you comment out all of the "import flash" lines and re-compile, the compiler will show you every line that used a Flash API.
 
-## Standard runtime problems
-*This section will address some issues that may arise for applications migrated from Flex.*
+Royale is creating a set of "emulation" components that will eventually have most, if not all, of the Flex APIs.  These components do not promise 100% backward compatibility.  Nor do they promise the same class hierarchy as Flex.  They just try to approximate what Flex did.
 
-- **Circular dependencies** - This material will be available soon. For now, <a href="https://cwiki.apache.org/confluence/display/FLEX/Circular+Dependencies" target="_blank">this entry on circular dependencies</a>, written while the project was still known as FlexJS, will be useful.
-- **Renaming of properties** - this material will be available soon. For now, <a href="https://cwiki.apache.org/confluence/display/FLEX/Renaming+Variables" target="_blank">this entry on compiler renaming of properties</a>, written while the project was still known as FlexJS, will be useful.
+Some popular Flash APIs have been added to the Royale emulation of UIComponent, so look for at the documentation for UIComponent for a replacement for Flash API usage.  If it doesn't exist, then it either hasn't been implemented yet in the emulation components or we have a good reason why.  Ask on the users@royale.apache.org mailing list if unsure.
 
-## Royale equivalents for Flex components ##
-Royale is not a one-for-one migration of Flex, for several reasons. A lot of Flex code presumes, and takes advantage of, features available in the Adobe AIR environment or the Flash Player plugin. Other Flex elements are more bulky than they could best be to cover a wide range of possible events and situations, so a great deal of the code in an application may be there "just in case" and never actually used.
+Another category of changes is namespaces.  In every MXML file you probably have one or both of:
 
-The goal of the Royale project is to provide the convenience and speed of developing in the Flex world while producing a lighter-weight application that plays well in the HTML-JavaScript-CSS environment. To reach that goal requires putting off, or finding alternatives for, certain standard Flex components and functions. Combine that focus with the small size of the development team, and it is clear why there are a lot of Flex features not yet available in Royale. Visit [Flex equivalents in Royale](User-interface/Flex-equivalents.html) to learn what is not yet available and what you can do in Royale a little differently than the way you did it in Flex.
+```
+xmlns:s="library://ns.adobe.com/flex/spark" 
+xmlns:mx="library://ns.adobe.com/flex/mx"
+
+```
+
+These will need to be changed to:
+
+```
+xmlns:s="library://ns.apache.org/royale/spark" 
+xmlns:mx="library://ns.apache.org/royale/mx"
+
+```
+
+We may not have had to force you to make these changes, but we think it will help us and you track what code is not using emulation components in MXML files.
+
+
+Another category of changes is API conflicts.  For example, in Flex, UIComponent (and thus all components and MXML files) had a 'document' property.  The 'document' property conflicts with the 'document' object in the browser, so in the Royale emulation, UIComponent had 'document' renamed to be 'component'.  You will want to look for uses of 'document' and 'parentDocument' and change them to be 'component' and 'parentComponent'.
+
+
+
+## Intepreting Compiler Errors and Warnings
+
+The migration process is probably best done by first trying to get your code to compile without any "import flash' directives and using the Royale emulation components.  You will get a bunch of errors and have to rename Flash APIs, and possibly comment out other parts that are not essential to getting the application up and running.  We recommend that you use a special comment format so you can find places that are temporarily commented out.
+
+You may see an warning about the use of "public var".  As described in the tutorial, Royale uses a optimizing compiler for JavaScript output that will rename variables in order to save on download size.  That generally works fine unless the public vars represent fields in an object from an external source like a JSON object or other server result.  You may need to change the public var to a getter and/or setter.  Or, you can suppress the warning by using the @royalesuppresspublicvarwarning directive.
+
+You may see at the end of the compile output that says "namespace not provided yet".  If you see that, ensure that the -remove-circulars compiler option is on.  It should be on by default.  If you still see that, ask on the mailing list for assistance.
+
+## Running the migrated app after a successful compile
+
+If you get a compile that has no errors, you can try running it.  As mentioned in the tutorial, there is a debuggable version in bin/js-debug/index.html, and a production version in bin/js-release/index.html.  First try the debuggable version and check JavaScript console output for errors.
+
+Once the debuggable version works, it is time to try the production version.  If it doesn't work, first check the JavaScript console for exceptions and errors and try to resolve those.  Most errors, or just not getting the right results will be due to variable renaming as described in the tutorial.  Make sure you have resolved any public var warnings correctly.  If you suppressed the warning but shouldn't have, that could cause a problem.
+
