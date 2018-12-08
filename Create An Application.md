@@ -33,4 +33,4 @@ This document is divided into several sections:
 
 [Modules](create-an-application/modules.html) discusses how to break your application into pieces so it doesn't have to all get downloaded at once.  Or have the whole thing compiled at once.
 
-[Royale code conventions](create-an-application/royale-code-conventions.html) explains the typical ways Royale developers name files, classes, function, variables and more.
+[Royale code conventions](create-an-application/code-conventions.html) explains the typical ways Royale developers name files, classes, function, variables and more.

@@ -20,4 +20,83 @@ title: Royale code conventions
 
 # Royale code conventions
 
-*This information will be available soon.*
+Warning:  This document is not complete.
+
+## Packages
+
+Packages have lower.case.names separated by periods if needed.  MixedCase names starting with lower case is ok, but short package names are preferred so that you aren't tempted to mixCase.
+
+## Classes
+
+Classes have MixedCase names starting with a capital letter (and no hyphens)
+
+## Constants
+
+Constants have CAPITALIZED_NAMES separated by underscore '_'
+
+## Properties
+
+Properties have mixedCase names starting with a lower case letter
+
+## Events
+
+Events have mixedCase names starting with a lower case letter
+
+## Event Classes
+
+Where Apache Flex had lots of event classes, Royale strives to have as few as possible, since each class has download overhead.  Royale has an Event which has an event name in the "type" field and no other payload.  A ValueEvent contains one item that might be of interest to the listener.  ValueChangeEvent has oldValue/newValue.  There may be a StringEvent and other 'typed' event classes.
+
+Event constants go in the Class that will dispatch the event.  Thus the developer only has to import one class and to write the code.
+
+The reason behind this change is partly because JavaScript runtimes aren't really going to type-check the event instance.  Royale has code that will do the type-checking, but it is pretty rare to have to discriminate between event classes.  So it is best to turn off the type-checking code in Royale.
+
+To compare:
+
+### Flex
+
+```
+public class TimerEvent {
+  public const TIMER:String = "timer";
+}
+
+public class Timer {
+   dispatchEvent(new TimerEvent(TimerEvent.TIMER));
+}
+```
+Usage:
+```
+import TimerEvent;
+import Timer;
+
+var timer:Timer = new Timer();
+timer.addEventListener(TimerEvent.TIMER, timerHandler);
+
+function timerHandler(event:TimerEvent):void
+{
+}
+```
+
+### Royale
+
+```
+public class Timer {
+   public const TIMER:String = "timer";
+   dispatchEvent(new Event(TIMER));
+}
+```
+
+Usage:
+
+```
+import Timer;
+
+var timer:Timer = new Timer();
+timer.addEventListener(Timer.TIMER, timerHandler);
+
+function timerHandler(event:Event):void
+{
+}
+```
+
+
+
