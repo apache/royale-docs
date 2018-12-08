@@ -43,9 +43,37 @@ public class Parent {
 ```
 In Flash and AIR the runtime constructs both classes before type-checking for parent and child properties. That happens only when the application code has initialized and starts to run.
 
-## What compiling for JavaScript requires
+## What compiling for JavaScript in Royale requires
 
 Royale uses the <a href="https://developers.google.com/closure/compiler/" target="_blank">Google Closure Compiler</a> (GCC) to compile your application into JavaScript that can run on browsers and mobile phones without heavy plugins like Flash. GCC "parses your JavaScript, analyzes it, removes dead code and rewrites and minimizes what's left. It also checks syntax, variable references, and types, and warns about common JavaScript pitfalls." 
 
 
-*This material will be available soon.*
+GCC is does not like circular dependencies that Flash allows.  The reason is that, in development mode, each class is loaded by a separate Script element so there has to be a well-defined order to load these scripts.  GCC also wants each class to declare the classes it uses via an API called goog.require.  So in the Flash example above, Child will have goog.require('Parent') and Parent will have goog.require('Child') and GCC doesn't know which file to load first and it doesn't really want to examine the rest of the file to determine the order.
+
+Fortunately, the Royale compiler has an option called -remove-circulars that is on by default.  It will analyze the code and determine which goog.require to remove such that GCC won't complain about the circularities and load the scripts in the right order.  However, if you want to know how to refactor your code so that you don't create what GCC considers to be circular dependencies, read on.
+
+GCC recommends refactoring these two classes to use interfaces.  Some folks believe that classes should never reference other classes, only interfaces.  There are some advantages to this approach, but it is more work.  So, you would define two interfaces like this:
+
+```
+public class IChild {
+}
+
+public class IParent {
+}
+```
+
+Note that neither interfaces states that the implementation must reference the other interface, otherwise you would have a circularity in the interfaces.  You could have implementations reference each other if writing JavaScript yourself because you GCC allows more than one top-level 'class' definition in a .js file, where was ActionScript does not.
+
+Anyway, now with these interfaces, the classes look like:
+
+
+```
+public class Child implements IChild {
+public var parent:IParent;
+}
+
+public class Parent implements IParent {
+public var child:IChild;
+}
+```
+
