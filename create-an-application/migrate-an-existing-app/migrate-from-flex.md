@@ -56,11 +56,24 @@ We may not have had to force you to make these changes, but we think it will hel
 
 Another category of changes is API conflicts.  For example, in Flex, UIComponent (and thus all components and MXML files) had a 'document' property.  The 'document' property conflicts with the 'document' object in the browser, so in the Royale emulation, UIComponent had 'document' renamed to be 'component'.  You will want to look for uses of 'document' and 'parentDocument' and change them to be 'component' and 'parentComponent'.
 
+Yet another category of changes is for non-Flex SWCs.  If you used third-party libraries, you will need to find Royale equivalents for them.   Royale is not developing any emulations for any non-Apache Flex libraries at this time.  Some third-party libraries may not have Flash dependencies and can just be transpiled with the Royale compiler.  Others will take some effort and you may prefer to find a different SWC that Royale does support instead.  Start a discussion on dev@royale.apache.org to find out what your options are.
+
+## Running the compiler
+
+The Royale compiler supports every options the Flex compiler supports.  In addition there are some new options for controlling JavaScript output.  Royale also has an Ant task just like Flex does.  It supports all of the options that the Flex Ant task supports, plus some new options for controlling JavaScript output.  You should be able to use the same compiler options on the Royale compiler as you did when compiling your Flex app.  The only thing you must add is the compiler option
+
+```
++configname=flex
+```
+
+THen, assuming you aren't using any third-party libraries, your application should compile.
 
 
 ## Intepreting Compiler Errors and Warnings
 
 The migration process is probably best done by first trying to get your code to compile without any "import flash' directives and using the Royale emulation components.  You will get a bunch of errors and have to rename Flash APIs, and possibly comment out other parts that are not essential to getting the application up and running.  We recommend that you use a special comment format so you can find places that are temporarily commented out.
+
+If you get errors about a component or API not found, then it is likely that the Emulation doesn't support that API yet.  Ask on dev@royale.apache.org to find out what your options are.  If you don't really have to use that API, comment it out for now.
 
 You may see an warning about the use of "public var".  As described in the tutorial, Royale uses a optimizing compiler for JavaScript output that will rename variables in order to save on download size.  That generally works fine unless the public vars represent fields in an object from an external source like a JSON object or other server result.  You may need to change the public var to a getter and/or setter.  Or, you can suppress the warning by using the @royalesuppresspublicvarwarning directive.
 
