@@ -83,5 +83,20 @@ You may see at the end of the compile output that says "namespace not provided y
 
 If you get a compile that has no errors, you can try running it.  As mentioned in the tutorial, there is a debuggable version in bin/js-debug/index.html, and a production version in bin/js-release/index.html.  First try the debuggable version and check JavaScript console output for errors.
 
+If you use XML or Proxy in your application you will get lots of errors if you are not careful about strong typing.  Unlike in Flash, where Flash knows the type and thus knows how to fetch a property of the instance, the JavaScript runtimes don't, so as soon as your XML or Proxy instance is seen as a regular Object, things can go wrong.  One place this is likely to happen is in ItemRenderers.  They have a data property of type Object.  So any code in the item renderer that looks like:
+
+```
+data.property
+```
+
+will not work if data is XML or Proxy.  This code as to be strongly-typed as, in the case of XML,
+
+```
+(data as XML).property
+```
+
 Once the debuggable version works, it is time to try the production version.  If it doesn't work, first check the JavaScript console for exceptions and errors and try to resolve those.  Most errors, or just not getting the right results will be due to variable renaming as described in the tutorial.  Make sure you have resolved any public var warnings correctly.  If you suppressed the warning but shouldn't have, that could cause a problem.
 
+The production version is also likely to be more sensitive to lack of strong typing.  If you have an instance of a class, if the instance gets thought of as a regular Object, the property might get renamed differently.  Again, ItemRenderers are a common place this can happen.
+
+In general, if something is not a plain Object, try to write your code so that the compiler knows it isn't an Object.
