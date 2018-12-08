@@ -77,7 +77,7 @@ If you get errors about a component or API not found, then it is likely that the
 
 You may see an warning about the use of "public var".  As described in the tutorial, Royale uses a optimizing compiler for JavaScript output that will rename variables in order to save on download size.  That generally works fine unless the public vars represent fields in an object from an external source like a JSON object or other server result.  You may need to change the public var to a getter and/or setter.  Or, you can suppress the warning by using the @royalesuppresspublicvarwarning directive.
 
-You may see at the end of the compile output that says "namespace not provided yet".  If you see that, ensure that the -remove-circulars compiler option is on.  It should be on by default.  If you still see that, ask on the mailing list for assistance.
+You may see at the end of the compile output that says "namespace not provided yet".  If you see that, ensure that the -remove-circulars compiler option is on.  It should be on by default.  If you still see that, ask on the mailing list for assistance.  More about circular dependencies can be found [here](create-an-application/migrate-an-existing-app/circular-dependencies.html)
 
 ## Running the migrated app after a successful compile
 
