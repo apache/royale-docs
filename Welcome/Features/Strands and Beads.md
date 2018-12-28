@@ -15,9 +15,29 @@
 # limitations under the License.
 
 layout: docpage
-title: Strand and Beads
+title: Strands and Beads
 ---
 
-# Strand and Beads
+# Strands and Beads
 
-This is a test of Royale Documentation Template
+__This material is not yet complete.__
+
+Strands and beads are key concepts in Royale, related to the [PAYG](https://apache.github.io/royale-docs/Welcome/Features/PAYG.html)  (pay as you go) concept. The idea is to keep component code as lightweight as possible, and to add functionality and complexity only to the components that need it. For example, you may use a lot of text input fields in your application, but only one or two need to be able to protect passwords by converting the display of text the user provides into dots. You may want to disable or enable some components, but not all of them, while an end user is working with your application. There is no reason to have that extra functionality (and added weight of code) available everywhere "just in case", as was the rule in Flex.
+
+Every component contains the minimum code necessary to perform its basic functions, and has "strands" onto which you can string "beads" of functionality that let the component do what you want it to do in a particular place in your application. 
+
+## Finding the beads you need
+
+_How to know what beads are available, and where they are_
+
+## Adding a bead
+
+_Steps for adding a bead_
+
+## Creating a bead
+
+If you see a need for a bead that does not yet exist, you can create your own and contribute it to the Royale project. Information on the bead lifecycle is available at [Creating Components](https://cwiki.apache.org/confluence/display/FLEX/Creating+Components).
+
+## Strand management
+
+_Adding and removing beads; the significance of bead order_
