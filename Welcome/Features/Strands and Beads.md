@@ -36,7 +36,7 @@ _Steps for adding a bead_
 
 ## Creating a bead
 
-_How to create a bead_
+If you see a need for a bead that does not yet exist, you can create your own and contribute it to the Royale project. Information on the bead lifecycle is available at [Creating Components](https://cwiki.apache.org/confluence/display/FLEX/Creating+Components).
 
 ## Strand management
 
