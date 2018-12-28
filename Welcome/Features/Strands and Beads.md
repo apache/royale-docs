@@ -32,7 +32,18 @@ _How to know what beads are available, and where they are_
 
 ## Adding a bead
 
+There are three ways of adding beads to a component: baked into the code using <js:beads>, through CSS, and dynamically using addBead().
+
+### Adding a bead directly in the code
 _Steps for adding a bead_
+
+### Adding a bead through CSS
+_Steps for adding a bead_
+
+### Adding a bead dynamically using addBead()
+_Steps for adding a bead_
+
+
 
 ## Creating a bead
 
