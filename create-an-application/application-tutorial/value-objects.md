@@ -93,7 +93,7 @@ This should now work. If you look in the js-release folder, you now have a singl
 
 If you weren't really following the steps and just skimming, the file in its final form is available [here](create-an-application/application-tutorial/example/index.html){:target='_blank'}.
 
-This concludes the set of steps required to create a not-so-simple application and put it into production. The steps add additional features to the application.
+This concludes the set of steps required to create a not-so-simple application and put it into production. The next steps, which are not yet complete, add additional features to the application.
 
 {:align="center"}
 [Previous Page](create-an-application/application-tutorial/production.html) \| [Next Page](create-an-application/application-tutorial/locales.html)
