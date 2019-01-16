@@ -47,7 +47,7 @@ The next four segments will discuss further improvements needed to make a produc
 
 10. [Value Objects](create-an-application/application-tutorial/value-objects.html) This segment explains how Value Objects (Data Classes) are useful in development and production.
 
-The remaining segments will discuss further improvements needed to add additional common functionality.
+The remaining segments will discuss further improvements needed to add additional common functionality. *Note*: These pages are not yet complete.
 
 11. [Localization](create-an-application/application-tutorial/locales.html) This segment adds the ability to show the user-interface prompts in different languages.
 
