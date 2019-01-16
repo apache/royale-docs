@@ -53,7 +53,7 @@ You can download this file from [here.](https://github.com/apache/royale-asjs/bl
 Now we need to add calls that fetch the .json file and then the information about the commits.  We can use HTTPService to get the JSON file:
 
 ```XML
-<js:HTTPService id="configurator" source="project.json" complete="setConfig();fetchCommits()" />
+<js:HTTPService id="configurator" url="project.json" complete="setConfig();fetchCommits()" />
 ```
 The method setConfig() sets the data model variables:
 
