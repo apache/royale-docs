@@ -15,11 +15,47 @@
 # limitations under the License.
 
 layout: docpage
-title: AS3
+title: ActionScript 3 (AS3)
 ---
 
 # ActionScript 3 (AS3)
 
-ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (later acquired by Adobe Systems). It is a derivation of HyperTalk, the scripting language for HyperCard. It is now a dialect of ECMAScript (meaning it is a superset of the syntax and semantics of the language more widely known as JavaScript). Because both ActionScript and JavaScript are based on ECMAScript, most code you write in AS translates well to JS. One significant difference is that AS uses the concepts of classes and objects to structure how your code functions, while JavaScript does not have those concepts. 
+ActionScript 3 is an object-oriented programming language originally created by Macromedia Inc., which continued to evolve after being acquired by Adobe Systems. It is a superset of the ECMAScript standard (more widely known as JavaScript) with a stronger focus on classes, interfaces, and objects. While originally designed for Adobe Flash Player, ActionScript 3 may be used by developers today to build plugin-free, cross-platform, web applications with [Apache Royale](..).
 
-When you get ready to compile and run your application, the Royale compiler translates AS-specific code into JS code organized into pseudo-classes, which then run just fine in a JavaScript world.
+The following code snippet shows some of ActionScript's core syntax:
+
+```actionscript
+package org.apache.royale
+{
+	public class WelcomeToActionScript
+	{
+		public function WelcomeToActionScript()
+		{
+			var message:String = "Hello world";
+			sayHi(message, 3);
+		}
+
+		private function sayHi(message:String, times:int):void
+		{
+			for (var i:int = 0; i < times; i++)
+			{
+				// prints message to debug console
+				trace(message);
+			}
+		}
+	}
+}
+```
+
+## New ActionScript language features in Royale
+
+The Royale compiler extends the ActionScript language with useful, new features. These language extensions are considered optional, and to use the new syntax, you must enable certain compiler flags.
+
+The following new ActionScript features are available with the Royale compiler:
+
+* [Abstract Classes](abstract-classes.html)
+* [Private Constructors](private-constructors.html)
+
+### Limitations of ActionScript language extensions
+
+Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not support Apache Royale's extensions to the ActionScript language. Attemping to pass source code or SWC libraries using these language extensions to another compiler may result in compile-time errors or unexpected behavior at run-time. In other words, to write 100% portable ActionScript code that works with any compiler, you should avoid using any of Royale's extensions.
