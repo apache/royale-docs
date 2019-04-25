@@ -20,7 +20,7 @@ title: ActionScript 3 (AS3)
 
 # ActionScript 3 (AS3)
 
-ActionScript 3 is an object-oriented programming language originally created by Macromedia Inc., which continued to evolve after being acquired by Adobe Systems. It is a superset of the ECMAScript standard (more widely known as JavaScript) with a stronger focus on classes, interfaces, and objects. While originally designed for Adobe Flash Player, ActionScript 3 may be used by developers today to build plugin-free, cross-platform, web applications with [Apache Royale](..).
+ActionScript 3 is an object-oriented programming language originally created by Macromedia Inc., which continued to evolve after being acquired by Adobe Systems. It is a superset of the ECMAScript standard (more widely known as JavaScript) with a stronger focus on classes, interfaces, and objects. While originally designed for Adobe Flash Player, ActionScript 3 may be used by developers today to build plugin-free, cross-platform, web applications with [Apache Royale](http://royale.apache.org/){:target='_blank'}.
 
 The following code snippet shows some of ActionScript's core syntax:
 
@@ -53,8 +53,8 @@ The Royale compiler extends the ActionScript language with useful, new features.
 
 The following new ActionScript features are available with the Royale compiler:
 
-* [Abstract Classes](abstract-classes.html)
-* [Private Constructors](private-constructors.html)
+* [Abstract Classes](Welcome/Features/actionscript/abstract-classes.html)
+* [Private Constructors](Welcome/Features/actionscript/private-constructors.html)
 
 ### Limitations of ActionScript language extensions
 

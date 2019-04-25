@@ -19,11 +19,11 @@ title: Private constructors in ActionScript
 ---
 # Private constructors in ActionScript
 
-[Apache Royale](../..) adds support for declaring the constructor of a class `private` instead of `public` in [ActionScript](../AS3.html). When a constructor is private, it cannot be instantiated with the `new` keyword outside of the class where it is defined. Private constructors are commonly used for implementing the *singleton* design pattern, which is when only one instance of a particular class should ever be created.
+[Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for declaring the constructor of a class `private` instead of `public` in [ActionScript](Welcome/Features/AS3.html). When a constructor is private, it cannot be instantiated with the `new` keyword outside of the class where it is defined. Private constructors are commonly used for implementing the *singleton* design pattern, which is when only one instance of a particular class should ever be created.
 
 ## Enable private constructors
 
-Like other [new ActionScript language features](../AS3.html#new-actionscript-language-features-in-royale) that Royale adds, private constructors are optional and disabled by default. To enable private constructors in your application, use the `-allow-private-constructors` compiler option.
+Like other [new ActionScript language features](Welcome/Features/AS3.html#new-actionscript-language-features-in-royale) that Royale adds, private constructors are optional and disabled by default. To enable private constructors in your application, use the `-allow-private-constructors` compiler option.
 
 ```sh
 mxmlc -allow-private-constructors MyApp.mxml
@@ -98,4 +98,4 @@ Checking whether a constructor is private or not happens at compile-time only. H
 
 If a SWC library contains classes with private constructors, applications using that library must also enable private constructors before the compiler will enforce any restrictions.
 
-Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize or enforce private constructors. Attemping to pass source code or SWC libraries that contain classes with private constructors to another compiler may result in compile-time errors or unexpected behavior at run-time. In other words, to write 100% portable ActionScript code that works with any compiler, you should avoid using private constructors and any of Royale's other [extensions to the ActionScript language](new-language-features.html).
+Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize or enforce private constructors. Attemping to pass source code or SWC libraries that contain classes with private constructors to another compiler may result in compile-time errors or unexpected behavior at run-time. In other words, to write 100% portable ActionScript code that works with any compiler, you should avoid using private constructors and any of Royale's other [extensions to the ActionScript language](Welcome/Features/AS3.html#new-actionscript-language-features-in-royale).
