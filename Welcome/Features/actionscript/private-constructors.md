@@ -19,11 +19,11 @@ title: Private constructors in ActionScript
 ---
 # Private constructors in ActionScript
 
-[Apache Royale](../..) adds support for declaring the constructor of a class `private` instead of `public`. When a constructor is private, it cannot be instantiated with the `new` keyword outside of the class where it is defined. Private constructors are commonly used for implementing the *singleton* design pattern, which is when only one instance of a particular class should ever be created.
+[Apache Royale](../..) adds support for declaring the constructor of a class `private` instead of `public` in [ActionScript](../AS3.html). When a constructor is private, it cannot be instantiated with the `new` keyword outside of the class where it is defined. Private constructors are commonly used for implementing the *singleton* design pattern, which is when only one instance of a particular class should ever be created.
 
 ## Enable private constructors
 
-Like other [new ActionScript language features](new-language-features.html) that Royale adds, private constructors are optional and disabled by default. To enable private constructors in your application, use the `-allow-private-constructors` compiler option.
+Like other [new ActionScript language features](../AS3.html#new-actionscript-language-features-in-royale) that Royale adds, private constructors are optional and disabled by default. To enable private constructors in your application, use the `-allow-private-constructors` compiler option.
 
 ```sh
 mxmlc -allow-private-constructors MyApp.mxml
