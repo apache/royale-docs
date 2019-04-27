@@ -257,6 +257,10 @@ h1 {
 	margin-top: 0px;
 }
 
+pre {
+	overflow-x: auto;
+}
+
 .tagline {
 	font-family: 'Hind Siliguri';
 	top: 60px;
