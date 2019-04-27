@@ -552,6 +552,8 @@ h1 {
 .toc_and_doc {
 	display: flex;
 	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
 	font-family: 'Hind Siliguri';
 	margin-top: 50px;
 	margin-right: 20px;
@@ -567,6 +569,8 @@ h1 {
 .content {
 	display: inline-block;
 	flex-grow: 1;
+	max-width: 760px;
+	min-width: 0;
 }
 
 .menu_div {
