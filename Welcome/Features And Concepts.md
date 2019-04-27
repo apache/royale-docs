@@ -34,7 +34,7 @@ Royale also provides a Basic component set that is the opposite of Express.  The
 
 ## Strands and Beads
 
-It turns out that the Express components are really just Basic components with lots of Beads packed into them by default.  The underlying component patterns in most Royale components rely on a plug-in model.  Instead of making large component classes with lots of code baked in, each individual feature of a component is designed as its own class with an interface marking it as a "Bead", and then the component itself is called a "Strand" and Beads are placed on the Strand to compose a Royale component.  You can [read more about Strands and Beads here](Welcome/Features/Strands%20and%20Beads.html).
+It turns out that the Express components are really just Basic components with lots of Beads packed into them by default.  The underlying component patterns in most Royale components rely on a plug-in model.  Instead of making large component classes with lots of code baked in, each individual feature of a component is designed as its own class with an interface marking it as a "Bead", and then the component itself is called a "Strand" and Beads are placed on the Strand to compose a Royale component.  You can [read more about Strands and Beads here](Welcome/Features/Strands_and_Beads.html).
 
 ## Calling to/from external JavaScript code
 
