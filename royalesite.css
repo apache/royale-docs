@@ -563,6 +563,7 @@ h1 {
 	display: inline-block;
 	margin-top: 80px;
 	margin-left: 20px;
+	margin-bottom: 20px;
 	flex-shrink: 0;
 }
 
