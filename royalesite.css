@@ -270,6 +270,12 @@ pre {
 	position: absolute;
 }
 
+@media screen and (max-width: 720px) {
+	.tagline {
+		display: none;
+	}
+}
+
 .asf
 {
 	text-align: center;
@@ -368,8 +374,15 @@ pre {
 	}
 }
 
+@media screen and (max-width: 660px) {
+	.topMenu {
+		display: none;
+	}
+}
+
 .social {
-	display: inline;
+	/* hidden until these get hooked up */
+	display: none /* inline */;
 	margin-top: 0px;
 	height: 40px;
 }
@@ -385,7 +398,6 @@ pre {
 	margin-left: 54px;
 	margin-right: 54px;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -403,7 +415,7 @@ pre {
 	font-size: 14px;
 	font-weight: 600;
 	font-family: 'Signika';
-	line-height: 70px;
+	line-height: 40px;
 	letter-spacing: 1px;
 }
 
