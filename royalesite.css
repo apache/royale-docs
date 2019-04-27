@@ -374,12 +374,6 @@ pre {
 	}
 }
 
-@media screen and (max-width: 660px) {
-	.topMenu {
-		display: none;
-	}
-}
-
 .social {
 	/* hidden until these get hooked up */
 	display: none /* inline */;
@@ -404,9 +398,15 @@ pre {
 .topMenu {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 0px;
+	margin-top: 15px;
 	margin-bottom: 0px;
 	height: 40px;
+}
+
+@media screen and (max-width: 660px) {
+	.topMenu {
+		display: none;
+	}
 }
 
 .topMenu_li {
