@@ -353,9 +353,15 @@ h1 {
 .page {
 	width: 100%;
 	background-image: url('https://royale.apache.org/wp-content/uploads/2017/10/page-bg-1-1920x300.png');
-	background-size: 100%;
 	background-repeat: no-repeat;
 	margin-top: 0px;
+	background-position: center top;
+}
+
+@media screen and (max-width: 1920px) {
+	.page {
+		background-size: 100%;
+	}
 }
 
 .social {
