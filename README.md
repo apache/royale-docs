@@ -51,3 +51,11 @@ When linking to locations not in the help-docs stack, including other pages in t
 You can also use straight HTML for these links, like this:
 
 ```<a href="https://flex.apache.org" target="_blank">Apache Flex</a>```
+
+## Build Locally
+
+Install [Jekyll](https://jekyllrb.com/) and run the following command:
+
+```sh
+jekyll build --config local_config.yml
+```
