@@ -54,7 +54,8 @@ You can also use straight HTML for these links, like this:
 
 ## Build Locally
 
-Install [Jekyll](https://jekyllrb.com/) and run the following command:
+1. Install [Ruby+Devkit](https://rubyinstaller.org/downloads/). Ruby is required to run Jekyll.
+1. Install [Jekyll](https://jekyllrb.com/) and run the following command:
 
 ```sh
 jekyll build --config local_config.yml
