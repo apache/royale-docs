@@ -54,8 +54,14 @@ You can also use straight HTML for these links, like this:
 
 ## Build Locally
 
-Install [Jekyll](https://jekyllrb.com/) and run the following command:
+1. Install [Ruby+Devkit](https://rubyinstaller.org/downloads/). Ruby is required to run Jekyll.
+2. Install [Jekyll](https://jekyllrb.com/)
+3. In the `royale-docs` project copy `_config.yml` to `local_config.yml`
+4. In `local_config.yml` change `baseurl` parameter to `../`
+5. Run the following command:
 
-```sh
-jekyll build --config local_config.yml
-```
+    ```sh
+    jekyll build --config local_config.yml
+    ```
+
+6. The website is rendered inside the `_site` folder
