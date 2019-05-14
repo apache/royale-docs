@@ -57,7 +57,7 @@ You can also use straight HTML for these links, like this:
 1. Install [Ruby+Devkit](https://rubyinstaller.org/downloads/). Ruby is required to run Jekyll.
 2. Install [Jekyll](https://jekyllrb.com/)
 3. In the `royale-docs` project copy `_config.yml` to `local_config.yml`
-4. In `local_config.yml` change `baseurl` parameter to `../`
+4. In `local_config.yml` change `baseurl` parameter to absolute path to your `_site` folder inside `royale-docs` project. For example `file:///C:/your/path/to/royale-docs/_site`
 5. Run the following command:
 
     ```sh
