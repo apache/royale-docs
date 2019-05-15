@@ -606,7 +606,7 @@ pre {
 	color: rgb(67, 147, 195);
 }
 
-.toc_label {
+.toc_current {
     color: rgb(0, 0, 0);
-	font-weight: 600;
+		font-weight: 600;
 }

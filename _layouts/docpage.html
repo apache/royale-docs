@@ -86,7 +86,7 @@ limitations under the License.
     {% if p.path == entry.path %}
       <div class="toc_entry">
       {% if p.path == page.path %}
-        <span class="toc_label">{{ p.title }}</span>
+        <span class="toc_current">{{ p.title }}</span>
       {% else %}
         <a class="toc_link" href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a>
       {% endif %}
@@ -100,7 +100,7 @@ limitations under the License.
               {% if p2.path == q.path %}
                 <div class="toc_entry">
                 {% if q.path == page.path %}
-                  <span class="toc_label">{{ q.title }}</span>
+                  <span class="toc_current">{{ q.title }}</span>
                 {% else %}
                   <a class="toc_link" href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a>
                 {% endif %}
@@ -116,7 +116,7 @@ limitations under the License.
                     {% if p3.path == r.path %}
                       <div class="toc_entry">
                       {% if r.path == page.path %}
-                        <span class="toc_label">{{ r.title }}</span>
+                        <span class="toc_current">{{ r.title }}</span>
                       {% else %}
                         <a class="toc_link" href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a>
                       {% endif %}
