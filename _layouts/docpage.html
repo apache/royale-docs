@@ -87,6 +87,41 @@ limitations under the License.
       <div class="toc_entry">
       {% if p.path == page.path %}
         <span class="toc_current">{{ p.title }}</span>
+        <div class="menu_div">
+          {% for p2 in entry.children %}
+            {% for q in site.pages %}
+              {% if p2.path == q.path %}
+                <div class="toc_entry">
+                {% if q.path == page.path %}
+                  <span class="toc_current">{{ q.title }}</span>
+                {% else %}
+                  <a class="toc_link" href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a>
+                {% endif %}
+                </div>
+              {% endif %}
+            {% endfor %}
+            {% if p2.children %}
+              {% assign entrypathparts = p2.children[0].path | split: "/" %}
+              {% if folder2 == entrypathparts[1] %}
+                <div class="menu_div2">
+                {% for p3 in p2.children %}
+                  {% for r in site.pages %}
+                    {% if p3.path == r.path %}
+                      <div class="toc_entry">
+                      {% if r.path == page.path %}
+                        <span class="toc_current">{{ r.title }}</span>
+                      {% else %}
+                        <a class="toc_link" href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a>
+                      {% endif %}
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          </div>          
       {% else %}
         <a class="toc_link" href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a>
       {% endif %}
@@ -101,6 +136,21 @@ limitations under the License.
                 <div class="toc_entry">
                 {% if q.path == page.path %}
                   <span class="toc_current">{{ q.title }}</span>
+                  <div class="menu_div2">
+                    {% for p3 in p2.children %}
+                      {% for r in site.pages %}
+                        {% if p3.path == r.path %}
+                          <div class="toc_entry">
+                          {% if r.path == page.path %}
+                            <span class="toc_current">{{ r.title }}</span>
+                          {% else %}
+                            <a class="toc_link" href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a>
+                          {% endif %}
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    {% endfor %}
+                    </div>
                 {% else %}
                   <a class="toc_link" href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a>
                 {% endif %}
