@@ -19,6 +19,8 @@ title: Create an Application
 ---
 # Create an Application
 
+All you need to now to build your first Apache Royale application
+
 The easiest way to create a Royale application is to start with an existing one and modify it.  In the examples folder are several examples you can use as a starting point.  But if you want to know more about the underlying principles, read on.
 
 This document is divided into several sections:
