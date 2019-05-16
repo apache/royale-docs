@@ -18,18 +18,49 @@ layout: docpage
 title: Get Started
 ---
 
-# Get started with Royale
+# Getting Started
+All you need to know to start developing with Apache Royale
 
-Royale is an open source project.  You can get the [source code](http://royale.apache.org/source-code/){:target='_blank'} and build Royale, or, if you are in a hurry, you can click [here](Welcome/Get_Started/Download-Royale.html) to find out how to download pre-compiled code and get going quickly.
 
-This section describes:
+## Introduction
 
-[System Requirements](Welcome/Get_Started/System-Requirements.html) - What kinds of computers and operating systems you can use to develop Royale applications.  You can run Royale applications on many more computers, operating systems and even devices such as smartphones and tablets.
+Royale is an open source project. You can get the [source code](http://royale.apache.org/source-code/){:target='_blank'} and build Royale, or, if you are in a hurry, you can [click here](https://royale.codeoscopic.com/download/){:target='_blank'} to find out how to download pre-compiled code and get going quickly.
+
+In Apache Royale you develop your applications using ActionScript 3 (AS3) and MXML languages. Your source code is build with the Royale compiler to generate the final Application that will run on the chosen platform.
+
+
+## Getting Royale
+
+[System Requirements](Welcome/Get_Started/System-Requirements.html) - What kinds of computers and operating systems you can use to develop Royale applications. You can run Royale applications on many more computers, operating systems and even devices such as smartphones and tablets.
 
 [Development Tools](Welcome/Get_Started/Development-tools.html) - You can develop Royale with just the command-line, or you can use scripting/build tools like Apache Ant and Apache Maven, or even use IDEs.
 
-[Frameworks](Welcome/Get_Started/Frameworks.html) - What popular JavaScript frameworks can be used in Royale Applications.
-
 [Download Royale](Welcome/Get_Started/Download-Royale.html) - How to download and set up Royale.
 
+
+## Configuring Royale
+
+Download the binary package of Royale from our Download page and set it up to use with your favorite IDE:
+
++ [Moonshine IDE Configuration](https://github.com/apache/royale-asjs/wiki/Moonshine-IDE){:target='_blank'}
++ [Visual Studio Code Configuration](https://github.com/apache/royale-asjs/wiki/Visual-Studio-Code){:target='_blank'}
++ [Adobe Flash Builder Configuration](https://github.com/apache/royale-asjs/wiki/Flash-Builder-4.7){:target='_blank'}
++ [IntelliJ IDEA Configuration](https://github.com/apache/royale-asjs/wiki/IntelliJ-IDEA){:target='_blank'}
+
+
+## Hello, World!
+
+Follow the instructions for your IDE to create your first “Hello World” application. You can also check out:
+
 [Hello World](Welcome/Get_Started/Hello-World.html) - Build Hello World in Royale.
+
+
+## Where to go from here
+
+[Frameworks](Welcome/Get_Started/Frameworks.html) - What popular JavaScript frameworks can be used in Royale Applications.
+
+In the `royale-asjs` repository repository folder you can find examples in the `examples/royale` directory and framework code in `frameworks/projects` that can help you start to get familiar with Apache Royale.
+
+Tutorials and code examples are coming soon!
+
+Happy Coding!

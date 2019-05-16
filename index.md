@@ -20,6 +20,8 @@ title: Welcome to Apache Royale
 
 # Welcome to Apache Royale!
 
+&nbsp;
+
 This is the main documentation for Apache Royale.  If you are looking for the API Reference, [click here](http://royale.apache.org/asdoc/index.html){:target='_blank'}.
 
 This document is divided into several sections:
