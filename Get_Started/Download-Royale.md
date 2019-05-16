@@ -73,4 +73,4 @@ Once downloaded, uncompress the file into a folder somewhere.  This folder will 
 ant -f InstallAdobeSDKs.xml
 ```
 
-At this point, you should be able to run the js/bin/mxmlc compiler from your Royale SDK folder to compile a Royale application.  See the [Hello World](Welcome/Get_Started/Hello-World.html) section for more details.
+At this point, you should be able to run the js/bin/mxmlc compiler from your Royale SDK folder to compile a Royale application.  See the [Hello World](Get_Started/Hello-World.html) section for more details.

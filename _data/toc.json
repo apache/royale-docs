@@ -19,11 +19,11 @@
                         ]
            },
            {"path" : "Get Started.md",
-            "children" : [{"path" : "Welcome/Get_Started/System-Requirements.md" },
-                          {"path" : "Welcome/Get_Started/Development-tools.md" },
-                          {"path" : "Welcome/Get_Started/Frameworks.md" },
-                          {"path" : "Welcome/Get_Started/Download-Royale.md" },
-                          {"path" : "Welcome/Get_Started/Hello-World.md" }
+            "children" : [{"path" : "Get_Started/System-Requirements.md" },
+                          {"path" : "Get_Started/Development-tools.md" },
+                          {"path" : "Get_Started/Frameworks.md" },
+                          {"path" : "Get_Started/Download-Royale.md" },
+                          {"path" : "Get_Started/Hello-World.md" }
                          ]
            },
            {"path" : "Create An Application.md",
