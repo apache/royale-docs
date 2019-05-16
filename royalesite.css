@@ -645,6 +645,8 @@ pre {
 
 .content h1 + p {
 	color: #4393c3;
+font-weight: 400;
+font-size: 20px;
 }
 
 .menu_div {
