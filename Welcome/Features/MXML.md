@@ -20,4 +20,6 @@ title: MXML
 
 # MXML
 
+The declarative XML-based user interface markup language
+
 MXML is an XML language that you use, when building an application in Royale, to lay out user-interface components.

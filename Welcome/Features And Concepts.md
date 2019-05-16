@@ -20,6 +20,8 @@ title: Features and Concepts
 
 # Features and Concepts
 
+Key points to learn
+
 Here are some things you may need to know to help you be more productive with Royale, although some folks get pretty far by just following the tutorial in [Create an Application](Create%20An%20Application.html) and extending it.
 
 ## Languages

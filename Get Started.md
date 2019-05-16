@@ -18,9 +18,9 @@ layout: docpage
 title: Get Started
 ---
 
-# Getting Started
-All you need to know to start developing with Apache Royale
+# Get Started
 
+All you need to know to start developing with Apache Royale
 
 ## Introduction
 
