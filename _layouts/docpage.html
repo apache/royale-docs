@@ -69,6 +69,7 @@ limitations under the License.
     {{content}}
   </div>
   <div class="toc" id="toc">
+    <ul class="accordion">
 {% assign pagepathparts = page.path | split: "/" %}
 {% assign numparts = pagepathparts | size %}
 {% case numparts %)
@@ -85,18 +86,20 @@ limitations under the License.
 {% for entry in site.data.toc.toc %}
   {% for p in site.pages %}
     {% if p.path == entry.path %}
-      <div class="toc_entry">
-      {% if p.path == page.path %}
-        <span class="toc_current">{{ p.title }}</span>
-        <div class="menu_div">
+      <li>
+        <div class="toc_title_wrapper">
+        {% if p.path == page.path %}
+          
+          <h3 class="toc_current">{{ p.title }}</h3>
+          <div class="accordion_content">
           {% for p2 in entry.children %}
             {% for q in site.pages %}
               {% if p2.path == q.path %}
                 <div class="toc_entry">
                 {% if q.path == page.path %}
-                  <span class="toc_current">{{ q.title }}</span>
+                  <h3 class="toc_current">{{ q.title }}</h3>
                 {% else %}
-                  <a class="toc_link" href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a>
+                  <h4 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h4>
                 {% endif %}
                 </div>
               {% endif %}
@@ -110,9 +113,9 @@ limitations under the License.
                     {% if p3.path == r.path %}
                       <div class="toc_entry">
                       {% if r.path == page.path %}
-                        <span class="toc_current">{{ r.title }}</span>
+                        <h3 class="toc_current">{{ r.title }}</h3>
                       {% else %}
-                        <a class="toc_link" href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a>
+                        <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
                       {% endif %}
                       </div>
                     {% endif %}
@@ -122,38 +125,42 @@ limitations under the License.
               {% endif %}
             {% endif %}
           {% endfor %}
-          </div>          
-      {% else %}
-        <a class="toc_link" href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a>
-      {% endif %}
-      </div>
-      {% if entry.children %}
-        {% assign entrypathparts = entry.children[0].path | split: "/" %}
-        {% if folder1 == entrypathparts[0] %}
+          </div>         
+        {% else %}
+          <h3 class="toc_link"><a href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a></h3>
+        {% endif %}
+        </div>
+      
+    {% if entry.children %}
+      {% assign entrypathparts = entry.children[0].path | split: "/" %}
+      {% if folder1 == entrypathparts[0] %}
+        <div class="accordion_content">
           <div class="menu_div">
           {% for p2 in entry.children %}
             {% for q in site.pages %}
               {% if p2.path == q.path %}
                 <div class="toc_entry">
                 {% if q.path == page.path %}
-                  <span class="toc_current">{{ q.title }}</span>
+                  <h3 class="toc_current">{{ q.title }}</h3>
+                  
                   <div class="menu_div2">
                     {% for p3 in p2.children %}
                       {% for r in site.pages %}
                         {% if p3.path == r.path %}
                           <div class="toc_entry">
                           {% if r.path == page.path %}
-                            <span class="toc_current">{{ r.title }}</span>
+                            <h3 class="toc_current">{{ r.title }}</h3>
                           {% else %}
-                            <a class="toc_link" href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a>
+                            <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
                           {% endif %}
                           </div>
                         {% endif %}
                       {% endfor %}
                     {% endfor %}
-                    </div>
+                  </div>
+                  
                 {% else %}
-                  <a class="toc_link" href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a>
+                  <h3 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h3>
                 {% endif %}
                 </div>
               {% endif %}
@@ -167,9 +174,9 @@ limitations under the License.
                     {% if p3.path == r.path %}
                       <div class="toc_entry">
                       {% if r.path == page.path %}
-                        <span class="toc_current">{{ r.title }}</span>
+                        <h4 class="toc_current">{{ r.title }}</h4>
                       {% else %}
-                        <a class="toc_link" href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a>
+                        <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
                       {% endif %}
                       </div>
                     {% endif %}
@@ -180,11 +187,14 @@ limitations under the License.
             {% endif %}
           {% endfor %}
           </div>
+        </div>
         {% endif %}
       {% endif %}
+      </li>
     {% endif %}
   {% endfor %}
 {% endfor %}
+    </ul>
   </div>
 </div>
 <div class="footer">
