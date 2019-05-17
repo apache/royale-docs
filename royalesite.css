@@ -447,10 +447,26 @@ pre {
 }
 
 .topbar {
-	margin-left: 54px;
-	margin-right: 54px;
+	
 	display: flex;
-	justify-content: space-between;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-family: 'Hind Siliguri';
+}
+
+.topbar-left {
+	margin-left: 15px;
+	margin-right: 15px;
+	display: inline-block;
+	flex-grow: 1;
+	max-width: 760px;
+	min-width: 0;
+}
+
+.topbar-right {
+	display: inline-block;
+	flex-shrink: 0;
 }
 
 .topMenu {
@@ -571,6 +587,13 @@ pre {
 	background-color: rgb(233, 233, 233);
 }
 
+.footer-row
+{
+	display: flex;
+	flex: 1 1 100%;
+	flex-direction: row;
+}
+
 .footer-column {
 	flex-grow: 1;
 }
@@ -630,7 +653,6 @@ pre {
 	flex-wrap: wrap;
 	font-family: 'Hind Siliguri';
 	margin-top: 50px;
-	margin-right: 20px;
 }
 
 .toc {

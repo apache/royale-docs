@@ -28,241 +28,262 @@ limitations under the License.
 </head>
 
 <body class="page">
-<div class="topbar"> 
-<a href="https://royale.apache.org/">
-  <img src="https://royale.apache.org/wp-content/uploads/2018/01/apache-royale-tm-logo-light.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
-</a>
-<ul class="topMenu">
-<li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="https://royale.apache.org/features/">FEATURES</a>
-</li>
-<li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="{{ site.baseurl }}/Get Started.html">GET STARTED</a>
-</li>
-<li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="https://royale.apache.org/download/">DOWNLOAD</a>
-</li>
-<li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="https://royale.apache.org/docs/">DOCS</a>
-</li>
-<li class="topMenu_li fa">
-	<a class="topMenu_li_a" href="https://royale.apache.org/blog/">BLOG</a>
-</li>
-<li class="topMenu_li">
-	<a class="topMenu_li_a" href="https://github.com/apache/royale-asjs/wiki/Apache-Royale-Source-Code-Repositories"><span class="grve-item"><i class="grve-menu-icon fa fa-github"></i>GITHUB</span></a>
-</li>
-</ul>
-<ul class="social">
-<li class="social_li fa fa-search">
-	<a href="#grve-search-modal"></a>
-</li>
-<li class="social_li fa fa-share-alt">
-	<a href="#grve-socials-modal"></a>
-</li>
-<li class="social_li fa fa-th">
-	<a href="#grve-toggle-menu"></a>
-</li>
-</ul>
-</div>
-<div class="toc_and_doc">
-  <div class="content" id="content">
-    {{content}}
-  </div>
-  <div class="toc" id="toc">
-    <ul class="accordion">
-{% assign pagepathparts = page.path | split: "/" %}
-{% assign numparts = pagepathparts | size %}
-{% case numparts %)
-  {% when 1 %}
-    {% assign folder1 = "" %}
-    {% assign folder2 = "" %}
-  {% when 2 %}
-    {% assign folder1 = pagepathparts[0] %}
-    {% assign folder2 = "" %}
-  {% when 3 %}
-    {% assign folder1 = pagepathparts[0] %}
-    {% assign folder2 = pagepathparts[1] %}
-{% endcase %}
-{% for entry in site.data.toc.toc %}
-  {% for p in site.pages %}
-    {% if p.path == entry.path %}
-      <li>
-        <div class="toc_title_wrapper">
-        {% if p.path == page.path %}
-          
-          <h3 class="toc_current">{{ p.title }}</h3>
-          <div class="accordion_content">
-          {% for p2 in entry.children %}
-            {% for q in site.pages %}
-              {% if p2.path == q.path %}
-                <div class="toc_entry">
-                {% if q.path == page.path %}
-                  <h3 class="toc_current">{{ q.title }}</h3>
-                {% else %}
-                  <h4 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h4>
-                {% endif %}
-                </div>
-              {% endif %}
-            {% endfor %}
-            {% if p2.children %}
-              {% assign entrypathparts = p2.children[0].path | split: "/" %}
-              {% if folder2 == entrypathparts[1] %}
-                <div class="menu_div2">
-                {% for p3 in p2.children %}
-                  {% for r in site.pages %}
-                    {% if p3.path == r.path %}
-                      <div class="toc_entry">
-                      {% if r.path == page.path %}
-                        <h3 class="toc_current">{{ r.title }}</h3>
-                      {% else %}
-                        <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
-                      {% endif %}
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                {% endfor %}
-                </div>
-              {% endif %}
-            {% endif %}
-          {% endfor %}
-          </div>         
-        {% else %}
-          <h3 class="toc_link"><a href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a></h3>
-        {% endif %}
-        </div>
-      
-    {% if entry.children %}
-      {% assign entrypathparts = entry.children[0].path | split: "/" %}
-      {% if folder1 == entrypathparts[0] %}
-        <div class="accordion_content">
-          <div class="menu_div">
-          {% for p2 in entry.children %}
-            {% for q in site.pages %}
-              {% if p2.path == q.path %}
-                <div class="toc_entry">
-                {% if q.path == page.path %}
-                  <h3 class="toc_current">{{ q.title }}</h3>
-                  
-                  <div class="menu_div2">
-                    {% for p3 in p2.children %}
-                      {% for r in site.pages %}
-                        {% if p3.path == r.path %}
-                          <div class="toc_entry">
-                          {% if r.path == page.path %}
-                            <h3 class="toc_current">{{ r.title }}</h3>
-                          {% else %}
-                            <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
-                          {% endif %}
-                          </div>
-                        {% endif %}
-                      {% endfor %}
-                    {% endfor %}
-                  </div>
-                  
-                {% else %}
-                  <h3 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h3>
-                {% endif %}
-                </div>
-              {% endif %}
-            {% endfor %}
-            {% if p2.children %}
-              {% assign entrypathparts = p2.children[0].path | split: "/" %}
-              {% if folder2 == entrypathparts[1] %}
-                <div class="menu_div2">
-                {% for p3 in p2.children %}
-                  {% for r in site.pages %}
-                    {% if p3.path == r.path %}
-                      <div class="toc_entry">
-                      {% if r.path == page.path %}
-                        <h4 class="toc_current">{{ r.title }}</h4>
-                      {% else %}
-                        <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
-                      {% endif %}
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                {% endfor %}
-                </div>
-              {% endif %}
-            {% endif %}
-          {% endfor %}
-          </div>
-        </div>
-        {% endif %}
-      {% endif %}
+  <div class="topbar">
+    <div class="topbar-left">
+      <div>
+        <a href="https://royale.apache.org/">
+          <img src="https://royale.apache.org/wp-content/uploads/2018/01/apache-royale-tm-logo-light.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
+        </a>
+      </div>
+    </div>
+
+    <div class="topbar-right">
+      <ul class="topMenu">
+      <li class="topMenu_li fa">
+        <a class="topMenu_li_a" href="https://royale.apache.org/features/">FEATURES</a>
       </li>
-    {% endif %}
+      <li class="topMenu_li fa">
+        <a class="topMenu_li_a" href="{{ site.baseurl }}/Get Started.html">GET STARTED</a>
+      </li>
+      <li class="topMenu_li fa">
+        <a class="topMenu_li_a" href="https://royale.apache.org/download/">DOWNLOAD</a>
+      </li>
+      <li class="topMenu_li fa">
+        <a class="topMenu_li_a" href="https://royale.apache.org/docs/">DOCS</a>
+      </li>
+      <li class="topMenu_li fa">
+        <a class="topMenu_li_a" href="https://royale.apache.org/blog/">BLOG</a>
+      </li>
+      <li class="topMenu_li">
+        <a class="topMenu_li_a" href="https://github.com/apache/royale-asjs/wiki/Apache-Royale-Source-Code-Repositories"><span class="grve-item"><i class="grve-menu-icon fa fa-github"></i>GITHUB</span></a>
+      </li>
+      </ul>
+      
+      <ul class="social">
+      <li class="social_li fa fa-search">
+        <a href="#grve-search-modal"></a>
+      </li>
+      <li class="social_li fa fa-share-alt">
+        <a href="#grve-socials-modal"></a>
+      </li>
+      <li class="social_li fa fa-th">
+        <a href="#grve-toggle-menu"></a>
+      </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="toc_and_doc">
+    <div class="content" id="content">
+      {{content}}
+    </div>
+    <div class="toc" id="toc">
+      <ul class="accordion">
+  {% assign pagepathparts = page.path | split: "/" %}
+  {% assign numparts = pagepathparts | size %}
+  {% case numparts %)
+    {% when 1 %}
+      {% assign folder1 = "" %}
+      {% assign folder2 = "" %}
+    {% when 2 %}
+      {% assign folder1 = pagepathparts[0] %}
+      {% assign folder2 = "" %}
+    {% when 3 %}
+      {% assign folder1 = pagepathparts[0] %}
+      {% assign folder2 = pagepathparts[1] %}
+  {% endcase %}
+  {% for entry in site.data.toc.toc %}
+    {% for p in site.pages %}
+      {% if p.path == entry.path %}
+        <li>
+          <div class="toc_title_wrapper">
+          {% if p.path == page.path %}
+            <!-- <div class="toc_accordion_arrow">
+              <i class="fa fa-chevron-down"></i>
+            </div> -->
+            <h3 class="toc_current">{{ p.title }}</h3>
+            <div class="accordion_content">
+            {% for p2 in entry.children %}
+              {% for q in site.pages %}
+                {% if p2.path == q.path %}
+                  <div class="toc_entry">
+                  {% if q.path == page.path %}
+                    <h3 class="toc_current">{{ q.title }}</h3>
+                  {% else %}
+                    <h4 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h4>
+                  {% endif %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+              {% if p2.children %}
+                {% assign entrypathparts = p2.children[0].path | split: "/" %}
+                {% if folder2 == entrypathparts[1] %}
+                  <div class="menu_div2">
+                  {% for p3 in p2.children %}
+                    {% for r in site.pages %}
+                      {% if p3.path == r.path %}
+                        <div class="toc_entry">
+                        {% if r.path == page.path %}
+                          <h3 class="toc_current">{{ r.title }}</h3>
+                        {% else %}
+                          <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
+                        {% endif %}
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  {% endfor %}
+                  </div>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            </div>         
+          {% else %}
+            <h3 class="toc_link"><a href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a></h3>
+          {% endif %}
+          </div>
+        
+      {% if entry.children %}
+        {% assign entrypathparts = entry.children[0].path | split: "/" %}
+        {% if folder1 == entrypathparts[0] %}
+          <div class="accordion_content">
+            <div class="menu_div">
+            {% for p2 in entry.children %}
+              {% for q in site.pages %}
+                {% if p2.path == q.path %}
+                  <div class="toc_entry">
+                  {% if q.path == page.path %}
+                    <h3 class="toc_current">{{ q.title }}</h3>
+                    
+                    <div class="menu_div2">
+                      {% for p3 in p2.children %}
+                        {% for r in site.pages %}
+                          {% if p3.path == r.path %}
+                            <div class="toc_entry">
+                            {% if r.path == page.path %}
+                              <h3 class="toc_current">{{ r.title }}</h3>
+                            {% else %}
+                              <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
+                            {% endif %}
+                            </div>
+                          {% endif %}
+                        {% endfor %}
+                      {% endfor %}
+                    </div>
+                    
+                  {% else %}
+                    <h3 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h3>
+                  {% endif %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+              {% if p2.children %}
+                {% assign entrypathparts = p2.children[0].path | split: "/" %}
+                {% if folder2 == entrypathparts[1] %}
+                  <div class="menu_div2">
+                  {% for p3 in p2.children %}
+                    {% for r in site.pages %}
+                      {% if p3.path == r.path %}
+                        <div class="toc_entry">
+                        {% if r.path == page.path %}
+                          <h4 class="toc_current">{{ r.title }}</h4>
+                        {% else %}
+                          <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
+                        {% endif %}
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  {% endfor %}
+                  </div>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
   {% endfor %}
-{% endfor %}
-    </ul>
+      </ul>
+    </div>
   </div>
-</div>
-<div class="footer">
-  <div class="footer-column">
-  <ul class="footer-list">
-    <li class="apacheroyale">APACHE ROYALE</li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/">Home</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/features/">Features</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/try-it-now/">Try it now</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/download/">Download</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/ides/">IDEs</a></li>
-    <li><a class="footer-list_a" href="https://www.npmjs.com/org/apache-royale">NPM</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/showcase/">Showcase</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/blog/">Blog</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/team/">Team</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/thanks-to/">Thanks To</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/license/">Apache License v2.0</a></li>
-  </ul>
+
+  
+  <div class="footer">
+    <div class="footer-row">
+      <div class="footer-column">
+        <ul class="footer-list">
+          <li class="apacheroyale">APACHE ROYALE</li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/">Home</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/features/">Features</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/try-it-now/">Try it now</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/download/">Download</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/ides/">IDEs</a></li>
+          <li><a class="footer-list_a" href="https://www.npmjs.com/org/apache-royale">NPM</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/showcase/">Showcase</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/blog/">Blog</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/team/">Team</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/thanks-to/">Thanks To</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/license/">Apache License v2.0</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul class="footer-list">
+          <li class="documentation">DOCUMENTATION</li>
+          <li><a class="footer-list_a" href="{{ site.baseurl }}/Get Started.html">Get Started</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/docs/">Docs</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/asdoc/">Reference</a></li>
+          <li><a class="footer-list_a" href="https://github.com/apache/royale-asjs/wiki">Wiki</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li class="community">COMMUNITY</li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/get-involved/">Get Involved</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/mailing-lists/">Mailing Lists</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/faq/">FAQ</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li class="development">DEVELOPMENT</li>
+          <li><a class="footer-list_a" href="https://github.com/apache/royale-asjs/wiki/Apache-Royale-Source-Code-Repositories">Github</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/source-code/">Source Code</a></li>
+          <li><a class="footer-list_a" href="https://github.com/apache/royale-asjs/issues">Issues</a></li>
+        </ul>							      
+      </div>
+
+      <div class="footer-column">
+        <ul class="footer-list">
+          <li class="social">SOCIAL</li>
+          <li><a class="footer-list_a" href="https://twitter.com/apacheroyale">Twitter</a></li>
+          <li><a class="footer-list_a" href="https://facebook.com/ApacheRoyaleSDK/">Facebook</a></li>
+          <li><a class="footer-list_a" href="https://plus.google.com/communities/110767346686043669380">Google+</a></li>
+          <li><a class="footer-list_a" href="https://www.linkedin.com/groups/12118437">LinkedIn</a></li>
+          <li><a class="footer-list_a" href="https://royale.apache.org/feed/">RSS</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li class="apache">APACHE</li>
+          <li><a class="footer-list_a" href="https://www.apache.org/">Apache</a></li>
+          <li><a class="footer-list_a" href="https://www.apache.org/foundation/contributing.html">Donations</a></li>
+          <li><a class="footer-list_a" href="https://www.apache.org/events/current-event">Events</a></li>
+          <li><a class="footer-list_a" href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+          <li><a class="footer-list_a" href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+          <li><a class="footer-list_a" href="https://www.apache.org/security/">Security</a></li>
+        </ul>
+      </div>
+
+      <div class="aboutusdiv" >
+        <p class="aboutus">ABOUT US</p>
+        <p class="aboutus_p"><img class="aboutus-logo" src="https://royale.apache.org/wp-content/uploads/2017/10/apache-royale-logo-footer-circle-grey.svg"/><a href=https://royale.apache.org/index.html" class="aboutus_a">Apache Royale™</a> is a highly productive open source application technology for building expressive frontend applications that outputs to different formats and deploy consistently on all major browsers, desktops and devices.</p>
+        <p><img class="aboutus-apache-logo" src="https://royale.apache.org/wp-content/uploads/2017/10/Apache_PoweredBy.svg" />
+        <a href="https://royale.apache.org" class="aboutus_a">Apache Royale™</a>, <a href="https://www.apache.org" class="aboutus_a">Apache™</a> and the <a href="https://www.apache.org/foundation/press/kit/" class="aboutus_a">Apache feather logo™</a> are trademarks of The Apache Software Foundation. All other marks mentioned may be trademarks or registered trademarks of their respective owners. Read more about our privacy policy on our <a href="https://royale.apache.org/privacy-policy">Privacy Policy page</a>.</p>
+      </div>
+      
+    </div>
+    <div class="asf">
+      Copyright © 2017-2018 <a href="https://www.apache.org">The Apache Software Foundation</a>, Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>
+    </div>
   </div>
-  <div class="footer-column">
-  <ul class="footer-list">
-    <li class="documentation">DOCUMENTATION</li>
-    <li><a class="footer-list_a" href="{{ site.baseurl }}/Get Started.html">Get Started</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/docs/">Docs</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/asdoc/">Reference</a></li>
-    <li><a class="footer-list_a" href="https://github.com/apache/royale-asjs/wiki">Wiki</a></li>
-  </ul>
-  <ul class="footer-list">
-    <li class="community">COMMUNITY</li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/get-involved/">Get Involved</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/mailing-lists/">Mailing Lists</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/faq/">FAQ</a></li>
-  </ul>
-  <ul class="footer-list">
-    <li class="development">DEVELOPMENT</li>
-    <li><a class="footer-list_a" href="https://github.com/apache/royale-asjs/wiki/Apache-Royale-Source-Code-Repositories">Github</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/source-code/">Source Code</a></li>
-    <li><a class="footer-list_a" href="https://github.com/apache/royale-asjs/issues">Issues</a></li>
-  </ul>							      
-  </div>
-  <div class="footer-column">
-  <ul class="footer-list">
-    <li class="social">SOCIAL</li>
-    <li><a class="footer-list_a" href="https://twitter.com/apacheroyale">Twitter</a></li>
-    <li><a class="footer-list_a" href="https://facebook.com/ApacheRoyaleSDK/">Facebook</a></li>
-    <li><a class="footer-list_a" href="https://plus.google.com/communities/110767346686043669380">Google+</a></li>
-    <li><a class="footer-list_a" href="https://www.linkedin.com/groups/12118437">LinkedIn</a></li>
-    <li><a class="footer-list_a" href="https://royale.apache.org/feed/">RSS</a></li>
-  </ul>
-  <ul class="footer-list">
-    <li class="apache">APACHE</li>
-    <li><a class="footer-list_a" href="https://www.apache.org/">Apache</a></li>
-    <li><a class="footer-list_a" href="https://www.apache.org/foundation/contributing.html">Donations</a></li>
-    <li><a class="footer-list_a" href="https://www.apache.org/events/current-event">Events</a></li>
-    <li><a class="footer-list_a" href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
-    <li><a class="footer-list_a" href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
-    <li><a class="footer-list_a" href="https://www.apache.org/security/">Security</a></li>
-  </ul>
-  </div>
-  <div class="aboutusdiv" >
-  	<p class="aboutus">ABOUT US</p>
-    <p class="aboutus_p"><img class="aboutus-logo" src="https://royale.apache.org/wp-content/uploads/2017/10/apache-royale-logo-footer-circle-grey.svg"/><a href=https://royale.apache.org/index.html" class="aboutus_a">Apache Royale™</a> is a highly productive open source application technology for building expressive frontend applications that outputs to different formats and deploy consistently on all major browsers, desktops and devices.</p>
-    <p><img class="aboutus-apache-logo" src="https://royale.apache.org/wp-content/uploads/2017/10/Apache_PoweredBy.svg" />
-    <a href="https://royale.apache.org" class="aboutus_a">Apache Royale™</a>, <a href="https://www.apache.org" class="aboutus_a">Apache™</a> and the <a href="https://www.apache.org/foundation/press/kit/" class="aboutus_a">Apache feather logo™</a> are trademarks of The Apache Software Foundation. All other marks mentioned may be trademarks or registered trademarks of their respective owners. Read more about our privacy policy on our <a href="https://royale.apache.org/privacy-policy">Privacy Policy page</a>.</p>
-  </div>
-  <div class="asf">
-  Copyright © 2017-2018 <a href="https://www.apache.org">The Apache Software Foundation</a>, Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>
-  </div>
-</div>
+
 </body>
 </html>
