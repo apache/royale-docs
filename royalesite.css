@@ -560,7 +560,7 @@ pre {
 	line-height: 30px;
 }
 
-.social {
+.social_t {
 	color: #053061;
 	font-family: Signika;
 	font-weight: 600;
@@ -624,11 +624,22 @@ pre {
 	color: rgb(67, 147, 195);
 }
 
+.footer-list i {
+	margin-right: 5px;
+	width: 1em;
+	text-align: center;
+}
+
 .aboutusdiv {
 	min-width: 150px;
 	flex-basis: 33%;
 	flex-grow: 1;
 }
+
+.aboutusdiv > p {
+	font-size: 14px;
+}
+
 
 .aboutus {
 	color: #053061;
