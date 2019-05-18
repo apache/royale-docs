@@ -80,7 +80,7 @@ limitations under the License.
       {{content}}
     </div>
     <div class="toc" id="toc">
-      <ul class="accordion">
+      
   {% assign pagepathparts = page.path | split: "/" %}
   {% assign numparts = pagepathparts | size %}
   {% case numparts %)
@@ -97,22 +97,53 @@ limitations under the License.
   {% for entry in site.data.toc.toc %}
     {% for p in site.pages %}
       {% if p.path == entry.path %}
-        <li>
+        
           <div class="toc_title_wrapper">
           {% if p.path == page.path %}
-            <!-- <div class="toc_accordion_arrow">
-              <i class="fa fa-chevron-down"></i>
-            </div> -->
+            
             <h3 class="toc_current">{{ p.title }}</h3>
+            <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="8" height="8" class="toc_arrow_rot">
+              <g transform="translate(904.92214,-879.1482)"><path d="
+              m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+              -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+              0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+              -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+              -174.68583 0.6895,0 26.281,25.03215 56.8701,
+              55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+              -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+              -104.0616 -231.873,-231.248 z
+            " fill="currentColor"></path></g></svg>
             <div class="accordion_content">
             {% for p2 in entry.children %}
               {% for q in site.pages %}
                 {% if p2.path == q.path %}
                   <div class="toc_entry">
                   {% if q.path == page.path %}
-                    <h3 class="toc_current">{{ q.title }}</h3>
+                    <h4 class="toc_current">{{ q.title }}</h4>
+                    <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow_rot">
+                        <g transform="translate(904.92214,-879.1482)"><path d="
+                        m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+                        -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+                        0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+                        -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+                        -174.68583 0.6895,0 26.281,25.03215 56.8701,
+                        55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+                        -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+                        -104.0616 -231.873,-231.248 z
+                      " fill="currentColor"></path></g></svg>
                   {% else %}
                     <h4 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h4>
+                    <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow">
+                        <g transform="translate(904.92214,-879.1482)"><path d="
+                        m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+                        -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+                        0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+                        -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+                        -174.68583 0.6895,0 26.281,25.03215 56.8701,
+                        55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+                        -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+                        -104.0616 -231.873,-231.248 z
+                      " fill="currentColor"></path></g></svg>
                   {% endif %}
                   </div>
                 {% endif %}
@@ -126,9 +157,31 @@ limitations under the License.
                       {% if p3.path == r.path %}
                         <div class="toc_entry">
                         {% if r.path == page.path %}
-                          <h3 class="toc_current">{{ r.title }}</h3>
+                          <h5 class="toc_current">{{ r.title }}</h5>
+                          <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow_rot">
+                              <g transform="translate(904.92214,-879.1482)"><path d="
+                              m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+                              -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+                              0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+                              -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+                              -174.68583 0.6895,0 26.281,25.03215 56.8701,
+                              55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+                              -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+                              -104.0616 -231.873,-231.248 z
+                            " fill="currentColor"></path></g></svg>
                         {% else %}
-                          <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
+                          <h5 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h5>
+                          <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow">
+                              <g transform="translate(904.92214,-879.1482)"><path d="
+                              m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+                              -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+                              0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+                              -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+                              -174.68583 0.6895,0 26.281,25.03215 56.8701,
+                              55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+                              -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+                              -104.0616 -231.873,-231.248 z
+                            " fill="currentColor"></path></g></svg>
                         {% endif %}
                         </div>
                       {% endif %}
@@ -141,30 +194,52 @@ limitations under the License.
             </div>         
           {% else %}
             <h3 class="toc_link"><a href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a></h3>
+            <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="8" height="8" class="toc_arrow">
+                <g transform="translate(904.92214,-879.1482)"><path d="
+                m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+                -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+                0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+                -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+                -174.68583 0.6895,0 26.281,25.03215 56.8701,
+                55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+                -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+                -104.0616 -231.873,-231.248 z
+              " fill="currentColor"></path></g></svg>
           {% endif %}
           </div>
         
       {% if entry.children %}
         {% assign entrypathparts = entry.children[0].path | split: "/" %}
         {% if folder1 == entrypathparts[0] %}
-          <div class="accordion_content">
-            <div class="menu_div">
+          <div class="toc_title_wrapper">
+            <div class="accordion_content">
+            
             {% for p2 in entry.children %}
               {% for q in site.pages %}
                 {% if p2.path == q.path %}
                   <div class="toc_entry">
                   {% if q.path == page.path %}
-                    <h3 class="toc_current">{{ q.title }}</h3>
-                    
+                    <h4 class="toc_current">{{ q.title }}</h4>
+                    <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow_rot">
+                        <g transform="translate(904.92214,-879.1482)"><path d="
+                        m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+                        -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+                        0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+                        -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+                        -174.68583 0.6895,0 26.281,25.03215 56.8701,
+                        55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+                        -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+                        -104.0616 -231.873,-231.248 z
+                      " fill="currentColor"></path></g></svg>
                     <div class="menu_div2">
                       {% for p3 in p2.children %}
                         {% for r in site.pages %}
                           {% if p3.path == r.path %}
                             <div class="toc_entry">
                             {% if r.path == page.path %}
-                              <h3 class="toc_current">{{ r.title }}</h3>
+                              <h5 class="toc_current">{{ r.title }}</h5>
                             {% else %}
-                              <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
+                              <h5 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h5>
                             {% endif %}
                             </div>
                           {% endif %}
@@ -173,7 +248,18 @@ limitations under the License.
                     </div>
                     
                   {% else %}
-                    <h3 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h3>
+                    <h4 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h4>
+                    <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow">
+                        <g transform="translate(904.92214,-879.1482)"><path d="
+                        m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+                        -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+                        0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+                        -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+                        -174.68583 0.6895,0 26.281,25.03215 56.8701,
+                        55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+                        -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+                        -104.0616 -231.873,-231.248 z
+                      " fill="currentColor"></path></g></svg>
                   {% endif %}
                   </div>
                 {% endif %}
@@ -187,9 +273,9 @@ limitations under the License.
                       {% if p3.path == r.path %}
                         <div class="toc_entry">
                         {% if r.path == page.path %}
-                          <h4 class="toc_current">{{ r.title }}</h4>
+                          <h5 class="toc_current">{{ r.title }}</h4>
                         {% else %}
-                          <h4 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h4>
+                          <h5 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h5>
                         {% endif %}
                         </div>
                       {% endif %}
@@ -199,15 +285,15 @@ limitations under the License.
                 {% endif %}
               {% endif %}
             {% endfor %}
-            </div>
+            </div>  
           </div>
           {% endif %}
         {% endif %}
-        </li>
+        
       {% endif %}
     {% endfor %}
   {% endfor %}
-      </ul>
+      
     </div>
   </div>
 
