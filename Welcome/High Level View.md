@@ -36,7 +36,7 @@ Beyond that, it is becoming clear that Royale can provide significant developer 
 
 These features help you make fewer mistakes when writing code, and that saves time and improves productivity.
 
-![How Royale fits together]({{ site.url }}/assets/as-mxmlsnapshot.png)
+![How Royale fits together](assets/as-mxmlsnapshot.png)
 
 MXML and AS working together
 
