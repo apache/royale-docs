@@ -446,8 +446,22 @@ pre {
 	color: #fff;
 }
 
+.docs_header {
+	height: 70px;
+	position: relative;
+	z-index: 9998;
+}
+
 .topbar {
-	
+	width: 100%;
+	top: 0;
+	left: auto;
+	position: relative;
+	z-index: 4;
+	max-width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -680,6 +694,7 @@ pre {
 }
 
 .content {
+	min-height: 670px;
 	margin-left: 15px;
 	margin-right: 15px;
 	display: inline-block;
