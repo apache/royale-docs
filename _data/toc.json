@@ -21,7 +21,10 @@
            {"path" : "Get Started.md",
             "children" : [{"path" : "Get_Started/System-Requirements.md" },
                           {"path" : "Get_Started/Development-tools.md" },
-                          {"path" : "Get_Started/Frameworks.md" },
+                          {"path" : "Get_Started/Frameworks.md",
+                            "children" : [{"path" : "Get_Started/Frameworks/Basic.md" },
+                                          {"path" : "Get_Started/Frameworks/Jewel.md" }
+                                         ]},
                           {"path" : "Get_Started/Download-Royale.md" },
                           {"path" : "Get_Started/Hello-World.md" }
                          ]
