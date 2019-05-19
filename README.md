@@ -38,7 +38,7 @@ Use HTML comments at the top of the document for any explanatory notes for the d
 
 ## Links
 
-In the .md files, links have to be a full path without the leading slash. So to link to the published, HTML, version of /Welcome/Features/AS3.md, you would use
+In the .md files, links have to be full paths without the leading slash. So to link to the published, HTML, version of /Welcome/Features/AS3.md, you would use
 
 ```[AS3](Welcome/Features/AS3.html)``` 
 
@@ -55,16 +55,16 @@ You can also use straight HTML for these links, like this:
 ## Build Locally
 
 1. Install [Ruby+Devkit](https://rubyinstaller.org/downloads/). Ruby is required to run Jekyll.
-2. Install [Jekyll](https://jekyllrb.com/)
-3. If you want to provide a local configuration copy `_config.yml` to `local_config.yml`
-4. To build the docs run the following command:
+2. Install [Jekyll](https://jekyllrb.com/).
+3. If you want to provide a local configuration, copy `_config.yml` to `local_config.yml`.
+4. To build the docs, run the following command:
 
     ```sh
     jekyll build --config local_config.yml
     ```
     The website will be rendered inside the `_site` folder.
-5. To browse the docs using built-in Jekyll server run the following command:
+5. To browse the docs using built-in Jekyll server, run the following command:
    ```sh
    jekyll serve
    ```
-   The website will be availeble at `http://127.0.0.1:4000/royale-docs/`
+   The website will be available at `http://127.0.0.1:4000/royale-docs/`.
