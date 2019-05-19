@@ -76,12 +76,11 @@ There are several other component sets that are proofs-of-concept that wrap exis
  
  For sets that do not have an extensive demonstration suite like Tour de Jewel for the Jewel set, you can see quickly what components seem to be available.
  
- Let's say I then decide I want to use the Jewel component set in my application. I need to call it in the opening lines of the main file in my project:
+ Let's say I then decide I want to use the Jewel component set in my application. I need to call it (and the Basic component set, as Jewel builds on some of its elements) in the opening lines of the main file in my project:
  
  ```
  <?xml version="1.0" encoding="utf-8"?>
 <!--
- ...
  <c:MyProjectUsingJewel xmlns:fx="http://ns.adobe.com/mxml/2009" 
 	xmlns:j="library://ns.apache.org/royale/jewel" 
 	xmlns:html="library://ns.apache.org/royale/html" 
@@ -89,7 +88,9 @@ There are several other component sets that are proofs-of-concept that wrap exis
 	xmlns:c="components.*" sourceCodeUrl="MyProjectUsingJewel.mxml">
  ````
  
- Let's say I want to insert a multi-line label in my app's UI. I use the Label component in the "j" namespace I established for Jewel:
+(Note the code example omits the copyright information that normally appears in a file after the "<?xml..." line.)
+
+Let's say I want to insert a multi-line label in my app's UI. I use the Label component in the "j" namespace I established for Jewel:
  
  `
  <j:Label text="This is a multiline label with more text that wraps if container has set a width" multiline="true"/>
