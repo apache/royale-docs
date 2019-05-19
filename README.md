@@ -44,11 +44,7 @@ In the .md files, links have to be full paths without the leading slash. So to l
 
 without the leading "/". Links are case-sensitive, and you need to insert ```%20``` for any space that appears in the target file's name. Check the guidance about file names, above.
 
-When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs. If you want to use MarkDown, set the link like this:
-
-```[Apache Flex](https://flex.apache.org){:target='_blank'}```
-
-You can also use straight HTML for these links, like this:
+When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs. MarkDown does not support the directive to open the link in a new window or tab, so use straight HTML for these links, like this:
 
 ```<a href="https://flex.apache.org" target="_blank">Apache Flex</a>```
 
