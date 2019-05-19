@@ -44,7 +44,7 @@ You can [read more about Strands and Beads here](Welcome/Features/Strands_and_Be
 Royale has a series of component sets, groups of ready-to-use components which are designed for different purposes.
 
 ### Basic component set
-The Basic set complies strictly with the PAYG guidelines and generates the smallest amount of code so it compiles quickly.
+The Basic set complies strictly with the PAYG guidelines and generates the smallest amount of code so it compiles quickly. It is ideal for quick prototyping.
 
 ### Express component set
 The Express set is designed for rapid prototyping and proofs-of-concepts and is not optimized for size and performance. Applications built with the Express components can still be deployed in production environments if the size and performance is acceptable, which it often is.
