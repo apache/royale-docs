@@ -30,7 +30,7 @@ Royale uses both a declarative markup language called [MXML](Welcome/Features/MX
 
 ## Pay as you go (PAYG)
 
-Royale provides a variety of [component sets](User-interface/Components.html), each tuned towards different applications requirements. The easiest one to learn and use is the Express component set. It is designed for rapid-prototyping and proof-of-concept development. You can often take code using Express into production, but because Express components are designed to be customized in MXML, as your application grows in size, you may find yourself wishing for smaller, faster components.
+Royale provides a variety of [component sets](./User-interface/Components.html), each tuned towards different applications requirements. The easiest one to learn and use is the Express component set. It is designed for rapid-prototyping and proof-of-concept development. You can often take code using Express into production, but because Express components are designed to be customized in MXML, as your application grows in size, you may find yourself wishing for smaller, faster components.
 
 Royale also provides a Basic component set that is the opposite of Express.  The components are small and fast, but don't have lots of built-in customization options.  This is because Basic components are designed with a ["Pay as you go"](Welcome/Features/PAYG.html) philosophy.  Only the most common functionality is built into the component, and other options are added as plugins called Beads.  You can [read more about PAYG here](Welcome/Features/PAYG.html).
 
