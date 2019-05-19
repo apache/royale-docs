@@ -20,15 +20,23 @@ title: Frameworks
 
 # Frameworks
 
+Sets of code libraries availables in Royale
+
 A framework is a set of code that provides support for application development by offering templates, components and examples.  Royale provides its own framework for making simple, small and fast applications, but also offers support for using other popular JavaScript frameworks.
 
-- [Basic](Get_Started/Frameworks/Basic.html) is the most smallest, fastest and PAYG set of components possible in Royale, and is used by other sets like Jewel as its base.
+## Apache Royale UI Sets
 
-- [Jewel](Get_Started/Frameworks/Jewel.html) is focused in look and feel and new practices present in modern development like responsivness and multiplatform. Jewel support Themes and diferent kind of desktop and mobile devices.
+Apache Royale support its own [UI Sets](UI_Sets.html) designed to get the most of the technology
+
+- [Basic](UI_Sets/Basic.html) is the most smallest, fastest and PAYG set of components possible in Royale, and is used by other sets like Jewel as its base.
+
+- [Jewel](UI_Sets/Jewel.html) is focused in look and feel and new practices present in modern development like responsivness and multiplatform. Jewel support Themes and diferent kind of desktop and mobile devices.
 
 Why would you use a third-party framework with Royale? Because you like the look and feel of that framework's user interface components but want to use ActionScript to handle the business logic and/or use MXML to set up the UI.
 
-Royale supports (to varying degrees):
+## Other UI Sets
+
+These UI Sets are created under Royale umbrella, but uses or wraps existing external libraries or frameworks. Royale supports (to varying degrees):
 
 - [Material Design Lite](https://getmdl.io){:target='_blank'} Most, if not all, components are available.
 
