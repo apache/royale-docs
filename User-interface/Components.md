@@ -44,10 +44,10 @@ You can [read more about Strands and Beads here](Welcome/Features/Strands_and_Be
 Royale has a series of component sets, groups of ready-to-use components which are designed for different purposes.
 
 ### Basic component set
-The Basic set complies strictly with the PAYG guidelines and generates the smallest amount of code so it compiles quickly. It is ideal for quick prototyping.
+The Basic set complies strictly with the PAYG guidelines and generates the smallest amount of code so it compiles quickly.
 
 ### Express component set
-The Express set is designed for rapid prototyping and proofs-of-concepts and is not optimized for size and performance. Applications built with the Express components can still be deployed in production environments if the size and performance is acceptable, which it often is.
+The Express set is Basic components with lots of Beads packed into them by default. It is designed for rapid prototyping and proofs-of-concepts and is not optimized for size and performance. Applications built with the Express components can still be deployed in production environments if the size and performance are acceptable, which is often the case.
 
 ### Jewel component set
 Jewel is a little less compliant with PAYG so it can provide a great off-the-shelf look and feel. 
