@@ -48,31 +48,31 @@ In the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://en
 
 ## Components
 
-| Type          	| Name           	| Description                                                                                          	| Available SDK 	| State     	|
-|------------------	|------------------	|------------------------------------------------------------------------------------------------------	|---------------	|--------------	|
-| __Containers__  	| Card           	| Container that surronds other components                                                             	|               	|          	    |
-|                	| Grid           	| Container that uses Grid Layout and need other immediate children to work as cells and host content. 	|               	|          	    |
-|                	| SimpleTable    	| An Basic HTML Table that can be declared in MXML                                                     	|               	| Finished      |
-|                	| Table          	| An Complex HTML Table element filled with a data source. Cells are ItemRenderers.                    	|               	| In Progress   |
-|                	| TabBarContent  	| A Container to use with TabBar and capable of parenting organized content                            	|               	|           	|
-|                	| Wizard         	| 11.0+                                                                                                	|               	|           	|
-| __Components__ 	| [Alert](UI_Sets/Jewel/Jewel-Alert.html)        	|                                                                                                             	| Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Finished  	|
+| Type          	| Name                                          	| Description                                                                                          	| Available SDK 	| State     	|
+|------------------	|-------------------------------------------------	|------------------------------------------------------------------------------------------------------	|---------------	|--------------	|
+| __Containers__  	| Card                                           	| Container that surronds other components                                                             	|               	|          	    |
+|                	| Grid                                             	| Container that uses Grid Layout and need other immediate children to work as cells and host content. 	|               	|          	    |
+|                	| SimpleTable                                   	| An Basic HTML Table that can be declared in MXML                                                     	|               	| Finished      |
+|                	| Table                                         	| An Complex HTML Table element filled with a data source. Cells are ItemRenderers.                    	|               	| In Progress   |
+|                	| TabBarContent                                 	| A Container to use with TabBar and capable of parenting organized content                            	|               	|           	|
+|                	| Wizard                                           	| 11.0+                                                                                                	|               	|           	|
+| __Components__ 	| [Alert](UI_Sets/Jewel/Jewel-Alert.html)        	| Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Finished  	|
 |               	| [Button](UI_Sets/Jewel/Jewel-Button.html)        	|                                                                                                      	|               	|           	|
-|                 	| CheckBox       	|                                                                                                      	|               	|           	|
-|                	| ComboBox       	|                                                                                                      	|               	|           	|
-|                	| DateChooser    	|                                                                                                      	|               	|           	|
-|                	| DateField      	|                                                                                                      	|               	|             	|
-|               	| DropDownList   	|                                                                                                      	|               	|           	|
-|               	| Form           	|                                                                                                      	|               	|           	|
-|               	| FormItem       	|                                                                                                      	|               	|           	|
-|                	| Icon           	|                                                                                                      	|               	|           	|
-|               	| Image          	|                                                                                                      	|               	|           	|
-|               	| Label          	|                                                                                                      	|               	|           	|
-|               	| List           	|                                                                                                      	|               	|           	|
-|               	| NumericStepper 	|                                                                                                      	|               	|           	|
-|               	| PopUp          	|                                                                                                      	|               	|           	|
-|               	| RadioButton    	|                                                                                                      	|               	|           	|
-|               	| Slider         	|                                                                                                      	|               	|           	|
-|               	| SnackBar       	|                                                                                                      	|               	|           	|
-|               	| TabBar         	|                                                                                                      	|               	|           	|
-|               	| [TextInput](UI_Sets/Jewel/Jewel-TextInput.html)      	|                                                                                                      	|               	|           	|
+|                 	| CheckBox                                      	|                                                                                                      	|               	|           	|
+|                	| ComboBox                                      	|                                                                                                      	|               	|           	|
+|                	| DateChooser                                     	|                                                                                                      	|               	|           	|
+|                	| DateField                                       	|                                                                                                      	|               	|             	|
+|               	| DropDownList                                  	|                                                                                                      	|               	|           	|
+|               	| Form                                           	|                                                                                                      	|               	|           	|
+|               	| FormItem                                      	|                                                                                                      	|               	|           	|
+|                	| Icon                                            	|                                                                                                      	|               	|           	|
+|               	| Image                                         	|                                                                                                      	|               	|           	|
+|               	| Label                                            	|                                                                                                      	|               	|           	|
+|               	| List                                             	|                                                                                                      	|               	|           	|
+|               	| NumericStepper 	                                |                                                                                                      	|               	|           	|
+|               	| PopUp                                          	|                                                                                                      	|               	|           	|
+|               	| RadioButton                                     	|                                                                                                      	|               	|           	|
+|               	| Slider                                        	|                                                                                                      	|               	|           	|
+|               	| SnackBar                                         	|                                                                                                      	|               	|           	|
+|               	| TabBar                                         	|                                                                                                      	|               	|           	|
+|               	| [TextInput](UI_Sets/Jewel/Jewel-TextInput.html)  	|                                                                                                      	|               	|           	|
