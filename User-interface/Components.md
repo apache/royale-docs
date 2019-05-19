@@ -19,6 +19,8 @@ title: Components
 ---
 # Components
 
+Meet the UI building blocks.
+
 Royale provides a wide range of components to help you design a user interface that presents your material clearly and offers a pleasing user experience. As with Flex, these include:
 
   * Layout aids (groups, cards, grids, forms)
