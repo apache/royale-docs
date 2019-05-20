@@ -318,10 +318,11 @@ a {
 
 .highlight
 {
-	color: #839496;
+	color: #c3d4d6;
 	background-color: #002b36;
 	border-radius: 10px;
 	padding: 15px;
+	font-size: 14px;
 }
 
 pre {
