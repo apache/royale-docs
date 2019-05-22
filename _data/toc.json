@@ -1,67 +1,164 @@
-{"license" : "Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0. ",
- "toc" : [{"path" : "index.md",
-           "children" : [{"path" : "Welcome/High Level View.md" },
-                         {"path" : "Welcome/Features And Concepts.md",
-                          "children" : [{"path" : "Welcome/Features/AS3.md" },
-                                        {"path" : "Welcome/Features/MXML.md" },
-                                        {"path" : "Welcome/Features/PAYG.md" },
-                                        {"path" : "Welcome/Features/Strands and Beads.md" }
-                                       ] 
-                         },
-                         {"path" : "Welcome/A Bit of History.md" },
-                         {"path" : "Welcome/Licenses and Policies.md" },
-                         {"path" : "Welcome/Get Involved.md",
-                          "children" : [{"path" : "Welcome/Get Involved/The Royale Team.md" },
-                                        {"path" : "Welcome/Get Involved/The Apache Community.md" }
-                                       ]
-                         }
-                        ]
-           },
-           {"path" : "Get Started.md",
-            "children" : [{"path" : "Get_Started/System-Requirements.md" },
-                          {"path" : "Get_Started/Development-tools.md" },
-                          {"path" : "Get_Started/Frameworks.md"},
-                          {"path" : "Get_Started/Download-Royale.md" },
-                          {"path" : "Get_Started/Hello-World.md" }
-                         ]
-           },
-           {"path" : "UI_Sets.md",
-            "children" : [{"path" : "UI_Sets/Basic.md" },
-                          {"path" : "UI_Sets/Jewel.md",
-                            "children" : [{"path" : "UI_Sets/Jewel/Jewel-Alert.md" },
-                                          {"path" : "UI_Sets/Jewel/Jewel-Button.md" },
-                                          {"path" : "UI_Sets/Jewel/Jewel-TextInput.md" }
-                                         ]
-                           }
-                         ]},
-           {"path" : "Create An Application.md",
-            "children" : [{"path" : "create-an-application/application-structure.md"},
-                          {"path" : "create-an-application/application-tutorial.md",
-                           "children": [{"path" : "create-an-application/application-tutorial/main.md"},
-                                        {"path" : "create-an-application/application-tutorial/data.md"},
-                                        {"path" : "create-an-application/application-tutorial/view.md"},
-                                        {"path" : "create-an-application/application-tutorial/controller.md"},
-                                        {"path" : "create-an-application/application-tutorial/build.md"},
-                                        {"path" : "create-an-application/application-tutorial/deploy.md"},
-                                        {"path" : "create-an-application/application-tutorial/debug.md"},
-                                        {"path" : "create-an-application/application-tutorial/security.md"},
-                                        {"path" : "create-an-application/application-tutorial/production.md"},
-                                        {"path" : "create-an-application/application-tutorial/value-objects.md"},
-                                        {"path" : "create-an-application/application-tutorial/locales.md"},
-                                        {"path" : "create-an-application/application-tutorial/filters.md"},
-                                        {"path" : "create-an-application/application-tutorial/local-storage.md"},
-                                        {"path" : "create-an-application/application-tutorial/routing.md"}
-                                       ]
-                          },
-                          {"path" : "create-an-application/migrate-an-existing-app.md",
-                           "children" : [{"path" : "create-an-application/migrate-an-existing-app/migrate-from-flex.md"},
-                                         {"path" : "create-an-application/migrate-an-existing-app/migrate-from-js.md"}
-                                        ]
-                          },
-                          {"path" : "create-an-application/security.md" },
-                          {"path" : "create-an-application/modules.md" },
-                          {"path" : "create-an-application/code-conventions.md" }
-                         ]
-           }
-         ]
+{
+    "license": "Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0. ",
+    "toc": [
+        {
+            "path": "index.md",
+            "children": [
+                {
+                    "path": "Welcome/High Level View.md"
+                },
+                {
+                    "path": "Welcome/Features And Concepts.md",
+                    "children": [
+                        {
+                            "path": "Welcome/Features/AS3.md"
+                        },
+                        {
+                            "path": "Welcome/Features/MXML.md"
+                        },
+                        {
+                            "path": "Welcome/Features/PAYG.md"
+                        },
+                        {
+                            "path": "Welcome/Features/Strands and Beads.md"
+                        }
+                    ]
+                },
+                {
+                    "path": "Welcome/history.md"
+                },
+                {
+                    "path": "Welcome/licenses.md"
+                },
+                {
+                    "path": "Welcome/get-involved.md",
+                    "children": [
+                        {
+                            "path": "Welcome/get-involved/The Royale Team.md"
+                        },
+                        {
+                            "path": "Welcome/get-involved/The Apache Community.md"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "Get Started.md",
+            "children": [
+                {
+                    "path": "Get_Started/System-Requirements.md"
+                },
+                {
+                    "path": "Get_Started/Development-tools.md"
+                },
+                {
+                    "path": "Get_Started/Frameworks.md"
+                },
+                {
+                    "path": "Get_Started/Download-Royale.md"
+                },
+                {
+                    "path": "Get_Started/Hello-World.md"
+                }
+            ]
+        },
+        {
+            "path": "UI_Sets.md",
+            "children": [
+                {
+                    "path": "UI_Sets/Basic.md"
+                },
+                {
+                    "path": "UI_Sets/Jewel.md",
+                    "children": [
+                        {
+                            "path": "UI_Sets/Jewel/Jewel-Alert.md"
+                        },
+                        {
+                            "path": "UI_Sets/Jewel/Jewel-Button.md"
+                        },
+                        {
+                            "path": "UI_Sets/Jewel/Jewel-TextInput.md"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "Create An Application.md",
+            "children": [
+                {
+                    "path": "create-an-application/application-structure.md"
+                },
+                {
+                    "path": "create-an-application/application-tutorial.md",
+                    "children": [
+                        {
+                            "path": "create-an-application/application-tutorial/main.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/data.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/view.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/controller.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/build.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/deploy.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/debug.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/security.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/production.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/value-objects.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/locales.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/filters.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/local-storage.md"
+                        },
+                        {
+                            "path": "create-an-application/application-tutorial/routing.md"
+                        }
+                    ]
+                },
+                {
+                    "path": "create-an-application/migrate-an-existing-app.md",
+                    "children": [
+                        {
+                            "path": "create-an-application/migrate-an-existing-app/migrate-from-flex.md"
+                        },
+                        {
+                            "path": "create-an-application/migrate-an-existing-app/migrate-from-js.md"
+                        }
+                    ]
+                },
+                {
+                    "path": "create-an-application/security.md"
+                },
+                {
+                    "path": "create-an-application/modules.md"
+                },
+                {
+                    "path": "create-an-application/code-conventions.md"
+                }
+            ]
+        }
+    ]
 }
