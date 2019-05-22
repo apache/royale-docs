@@ -15,7 +15,7 @@
 # limitations under the License.
 
 layout: docpage
-title: showcase
+title: What Royale and You Can Do
 ---
 # What Royale and You Can Do
 
