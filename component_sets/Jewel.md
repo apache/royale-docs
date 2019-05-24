@@ -22,9 +22,9 @@ title: Jewel
 
 A set of modern UI components
 
-Jewel is a themeizable and responsive set of user interface components for Apache Royale to quickly build Front-end Applications with [ActionScript](Welcome/Features/AS3.html) & [MXML](Welcome/Features/MXML.html).
+Jewel is a themeable and responsive set of user interface components for Apache Royale to help you quickly build the front end of your applications with [ActionScript](Welcome/Features/AS3.html) & [MXML](Welcome/Features/MXML.html).
 
-It's based by design on [Basic](component_sets/Basic.html) components but while Basic is very strict with concepts like [PAYG](Welcome/Features/PAYG.html), in Jewel they are important but when it is necessary, we prioritize other things like responsiveness, themes and look and feel.
+It's based by design on [Basic](component_sets/Basic.html) components. But while Basic is very strict with concepts like [PAYG](Welcome/Features/PAYG.html), in Jewel, while PAYG is important, when necessary we prioritize other things like responsiveness, themes and look and feel.
 
 ## Browser Support
 
@@ -35,8 +35,8 @@ Jewel works on the following table of devices, browsers and versions
 | __Desktop__ 	| Google Chrome        	| 44+     	        |
 |           	| Mozilla Firefox      	| 34+     	        |
 |            	| Apple Safari         	| 11.1+         	|
-|            	| Microsfot Edge       	| 15+              	|
-|            	| Microsfot IE      	| 11+             	|
+|            	| Microsoft Edge       	| 15+              	|
+|            	| Microsoft IE      	| 11+             	|
 |            	| Opera             	|               	|
 | __Mobile__  	| iOS SafariMobile    	| 11.0+          	|
 |             	| Android            	| 5.0            	|
@@ -44,19 +44,19 @@ Jewel works on the following table of devices, browsers and versions
 
 ## Generated Javascript Output
 
-In the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://en.wikipedia.org/wiki/ECMAScript) standard Javascript to ensure applications are compatible with a great set of available browsers, including Microssoft Internet Explorer 11 (IE11).
+For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://en.wikipedia.org/wiki/ECMAScript) standard JavaScript to ensure applications are compatible with a wide range of available browsers, including Microssoft Internet Explorer 11 (IE11).
 
 ## Components
 
 | Type          	| Name                                          	| Description                                                                                          	| Available SDK 	| State     	|
 |------------------	|-------------------------------------------------	|------------------------------------------------------------------------------------------------------	|---------------	|--------------	|
-| __Containers__  	| Card                                           	| Container that surronds other components                                                             	|               	|          	    |
-|                	| Grid                                             	| Container that uses Grid Layout and need other immediate children to work as cells and host content. 	|               	|          	    |
-|                	| SimpleTable                                   	| An Basic HTML Table that can be declared in MXML                                                     	|               	| Finished      |
-|                	| Table                                         	| An Complex HTML Table element filled with a data source. Cells are ItemRenderers.                    	|               	| In Progress   |
-|                	| TabBarContent                                 	| A Container to use with TabBar and capable of parenting organized content                            	|               	|           	|
+| __Containers__  	| Card                                           	| Container that surrounds other components                                                             	|               	|          	    |
+|                	| Grid                                             	| Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	|               	|          	    |
+|                	| SimpleTable                                   	| A basic HTML table that can be declared in MXML                                                     	|               	| Complete      |
+|                	| Table                                         	| A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	|               	| In Progress   |
+|                	| TabBarContent                                 	| A container to use with TabBar and capable of presenting organized content                            	|               	|           	|
 |                	| Wizard                                           	| 11.0+                                                                                                	|               	|           	|
-| __Components__ 	| [Alert](component_sets/Jewel/Jewel-Alert.html)        	| Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Finished  	|
+| __Components__ 	| [Alert](component_sets/Jewel/Jewel-Alert.html)        	| Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
 |               	| [Button](component_sets/Jewel/Jewel-Button.html)        	|                                                                                                      	|               	|           	|
 |                 	| CheckBox                                      	|                                                                                                      	|               	|           	|
 |                	| ComboBox                                      	|                                                                                                      	|               	|           	|
