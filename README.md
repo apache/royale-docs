@@ -27,7 +27,7 @@ Use HTML comments at the top of the document for any explanatory notes for the d
 
 ## File names and titles
 -  File names do not have to be the same as the titles that display at the top of the file.
--  For file names, use all lower-case, join words with - and not _ or ```%20``` statements, and add the markdown specification. The file name should be "another=important-thing.md", not "Another%20Important%20Thing.md", "AnotherImportantThing.md", or "Another_important_thing.md". This is important for SEO, human readability, and readability by assistive devices.
+-  For file names, use all lower-case, join words with - and not _ or ```%20``` statements, and add the markdown specification. The file name should be "another-important-thing.md", not "Another%20Important%20Thing.md", "AnotherImportantThing.md", or "Another_important_thing.md". This is important for SEO, human readability, and readability by assistive devices.
 -  File titles should be in sentence case: "Another important Royale thing", not "Another Important Royale Thing". The point here is that the more capitals involved, the harder it is to read the statement.
 
 ## Documentation conventions
