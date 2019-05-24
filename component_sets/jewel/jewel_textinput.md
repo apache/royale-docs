@@ -15,18 +15,11 @@
 # limitations under the License.
 
 layout: docpage
-title: jewel alert
+title: Jewel TextInput
 ---
 
-# Jewel Alert
+# Jewel TextInput
 
 subtitle
 
 text
-
-{% raw %}
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
-width="400" height="400" 
-src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>
-{% endraw %}
-

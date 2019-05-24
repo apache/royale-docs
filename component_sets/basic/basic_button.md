@@ -15,10 +15,10 @@
 # limitations under the License.
 
 layout: docpage
-title: jewel button
+title: Basic Button
 ---
 
-# Jewel Button
+# Basic Button
 
 subtitle
 
