@@ -26,11 +26,11 @@ A framework is a set of code that provides support for application development b
 
 ## Apache Royale Component Sets
 
-Apache Royale support its own [component_sets](component_sets.html) of controls, grouping methods, and other elements designed to help developers get the most of the technology.
+Apache Royale supports its own [component_sets](component_sets.html) of controls, options for grouping controls, and other elements designed to help developers get the most of the technology.
 
-- [Basic](component_sets/Basic.html) is the most smallest, fastest and PAYG set of components possible in Royale, and is used by other sets like Jewel as its base.
+- [Basic](component_sets/Basic.html) is the most smallest, fastest and most PAYG set of components possible in Royale, and is used by other sets like Jewel as their base.
 
-- [Jewel](component_sets/Jewel.html) is focused in look and feel and new practices present in modern development like responsivness and multiplatform. Jewel support Themes and diferent kind of desktop and mobile devices.
+- [Jewel](component_sets/Jewel.html) is focused in look and feel and new practices present in modern development like responsivness and multiplatform support. Jewel supports Themes and diferent kind of desktop and mobile devices.
 
 Why would you use a third-party framework with Royale? Because you like the look and feel of that framework's user interface components but want to use ActionScript to handle the business logic and/or use MXML to set up the UI.
 
