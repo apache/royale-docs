@@ -15,7 +15,7 @@
 # limitations under the License.
 
 layout: docpage
-title: basic
+title: Basic
 ---
 
 # Basic
