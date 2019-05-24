@@ -64,22 +64,22 @@
             ]
         },
         {
-            "path": "UI_Sets.md",
+            "path": "component_sets.md",
             "children": [
                 {
-                    "path": "UI_Sets/Basic.md"
+                    "path": "component_sets/Basic.md"
                 },
                 {
-                    "path": "UI_Sets/Jewel.md",
+                    "path": "component_sets/Jewel.md",
                     "children": [
                         {
-                            "path": "UI_Sets/Jewel/Jewel-Alert.md"
+                            "path": "component_sets/Jewel/Jewel-Alert.md"
                         },
                         {
-                            "path": "UI_Sets/Jewel/Jewel-Button.md"
+                            "path": "component_sets/Jewel/Jewel-Button.md"
                         },
                         {
-                            "path": "UI_Sets/Jewel/Jewel-TextInput.md"
+                            "path": "component_sets/Jewel/Jewel-TextInput.md"
                         }
                     ]
                 }

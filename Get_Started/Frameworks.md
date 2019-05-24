@@ -36,7 +36,7 @@ Why would you use a third-party framework with Royale? Because you like the look
 
 ## Other Component Sets
 
-These UI Sets are created under Royale umbrella, but uses or wraps existing external libraries or frameworks. Royale supports (to varying degrees):
+These Component Sets are created under Royale umbrella, but uses or wraps existing external libraries or frameworks. Royale supports (to varying degrees):
 
 - [Material Design Lite](https://getmdl.io){:target='_blank'} Most, if not all, components are available.
 

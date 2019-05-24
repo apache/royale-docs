@@ -15,7 +15,7 @@
 # limitations under the License.
 
 layout: docpage
-title: UI Sets
+title: Component Sets
 ---
 
 # Component Sets
@@ -24,7 +24,7 @@ Sets of components and containers designed in Apache Royale.
 
 Royale provides its own component sets that support developing simple, small and fast applications for prototyping and as the basis of complete application user interfaces:
 
-- [Basic](UI_Sets/Basic.html) is the most smallest, fastest and PAYG set of components possible in Royale, and is used by other sets like Jewel as its base.
+- [Basic](component_sets/Basic.html) is the most smallest, fastest and PAYG set of components possible in Royale, and is used by other sets like Jewel as its base.
 
-- [Jewel](UI_Sets/Jewel.html) is focused in look and feel and new practices present in modern development like responsivness and multiplatform. Jewel support Themes and diferent kind of desktop and mobile devices.
+- [Jewel](component_sets/Jewel.html) is focused in look and feel and new practices present in modern development like responsivness and multiplatform. Jewel support Themes and diferent kind of desktop and mobile devices.
 
