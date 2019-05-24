@@ -75,4 +75,4 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 |               	| Slider                                        	|                                                                                                      	|               	|           	|
 |               	| SnackBar                                         	|                                                                                                      	|               	|           	|
 |               	| TabBar                                         	|                                                                                                      	|               	|           	|
-|               	| [TextInput](component_sets/jewel/jewel_textInput.html)  	|                                                                                                      	|               	|           	|
+|               	| [TextInput](component_sets/jewel/jewel_textinput.html)  	|                                                                                                      	|               	|           	|
