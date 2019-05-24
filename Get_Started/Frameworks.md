@@ -26,7 +26,7 @@ A framework is a set of code that provides support for application development b
 
 ## Apache Royale Component Sets
 
-Apache Royale supports its own [component_sets](component_sets.html) of controls, options for grouping controls, and other elements designed to help developers get the most of the technology.
+Apache Royale supports its own [component sets](component_sets.html) of controls, options for grouping controls, and other elements designed to help developers get the most of the technology.
 
 - [Basic](component_sets/Basic.html) is the most smallest, fastest and most PAYG set of components possible in Royale, and is used by other sets like Jewel as their base.
 
