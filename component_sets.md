@@ -18,11 +18,11 @@ layout: docpage
 title: UI Sets
 ---
 
-# UI Sets
+# Component Sets
 
-Sets of components and containers designed in Apache Royale
+Sets of components and containers designed in Apache Royale.
 
-Royale provides its own UI Sets for making simple, small and fast applications:
+Royale provides its own component sets that support developing simple, small and fast applications for prototyping and as the basis of complete application user interfaces:
 
 - [Basic](UI_Sets/Basic.html) is the most smallest, fastest and PAYG set of components possible in Royale, and is used by other sets like Jewel as its base.
 
