@@ -67,19 +67,19 @@
             "path": "component_sets.md",
             "children": [
                 {
-                    "path": "component_sets/Basic.md"
+                    "path": "component_sets/basic.md"
                 },
                 {
-                    "path": "component_sets/Jewel.md",
+                    "path": "component_sets/jewel.md",
                     "children": [
                         {
-                            "path": "component_sets/Jewel/Jewel-Alert.md"
+                            "path": "component_sets/jewel/jewel_alert.md"
                         },
                         {
-                            "path": "component_sets/Jewel/Jewel-Button.md"
+                            "path": "component_sets/jewel/jewel_button.md"
                         },
                         {
-                            "path": "component_sets/Jewel/Jewel-TextInput.md"
+                            "path": "component_sets/jewel/jewel_textinput.md"
                         }
                     ]
                 }

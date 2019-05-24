@@ -24,7 +24,7 @@ A set of modern UI components
 
 Jewel is a themeable and responsive set of user interface components for Apache Royale to help you quickly build the front end of your applications with [ActionScript](Welcome/Features/AS3.html) & [MXML](Welcome/Features/MXML.html).
 
-It's based by design on [Basic](component_sets/Basic.html) components. But while Basic is very strict with concepts like [PAYG](Welcome/Features/PAYG.html), in Jewel, while PAYG is important, when necessary we prioritize other things like responsiveness, themes and look and feel.
+It's based by design on [Basic](component_sets/basic.html) components. But while Basic is very strict with concepts like [PAYG](Welcome/Features/PAYG.html), in Jewel, while PAYG is important, when necessary we prioritize other things like responsiveness, themes and look and feel.
 
 ## Browser Support
 
@@ -56,8 +56,8 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 |                	| Table                                         	| A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	|               	| In Progress   |
 |                	| TabBarContent                                 	| A container to use with TabBar and capable of presenting organized content                            	|               	|           	|
 |                	| Wizard                                           	| 11.0+                                                                                                	|               	|           	|
-| __Components__ 	| [Alert](component_sets/Jewel/Jewel-Alert.html)        	| Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
-|               	| [Button](component_sets/Jewel/Jewel-Button.html)        	|                                                                                                      	|               	|           	|
+| __Components__ 	| [Alert](component_sets/jewel/jewel_alert.html)        	| Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
+|               	| [Button](component_sets/jewel/jewel_button.html)        	|                                                                                                      	|               	|           	|
 |                 	| CheckBox                                      	|                                                                                                      	|               	|           	|
 |                	| ComboBox                                      	|                                                                                                      	|               	|           	|
 |                	| DateChooser                                     	|                                                                                                      	|               	|           	|
@@ -75,4 +75,4 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 |               	| Slider                                        	|                                                                                                      	|               	|           	|
 |               	| SnackBar                                         	|                                                                                                      	|               	|           	|
 |               	| TabBar                                         	|                                                                                                      	|               	|           	|
-|               	| [TextInput](component_sets/Jewel/Jewel-TextInput.html)  	|                                                                                                      	|               	|           	|
+|               	| [TextInput](component_sets/jewel/jewel_textInput.html)  	|                                                                                                      	|               	|           	|
