@@ -15,10 +15,10 @@
 # limitations under the License.
 
 layout: docpage
-title: Jewel Button
+title: jewel textInput
 ---
 
-# Jewel Button
+# Jewel TextInput
 
 subtitle
 
