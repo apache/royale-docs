@@ -40,7 +40,9 @@ It uses the `AlertView` bead to display a modal dialog with a title and a variet
 
 You can use the static method `show` to display the component:
 
-    Alert.show('This is an Alert component example that shows a label text and the default OK button.', 'Alert Example')
+```as3
+Alert.show('This is an Alert component example that shows a label text and the default OK button.', 'Alert Example')
+```
 
 This produces:
 
@@ -51,7 +53,7 @@ src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>
 {% endraw %}
 
 You can attach listeners to the `CloseEvent.CLOSE` as follows:
-```actionscript
+```as3
 var alert:Alert = Alert.show("Do you want to <b>save</b> your changes?", "Save Changes", 3);
 alert.addEventListener(CloseEvent.CLOSE, alertClickHandler);
 ```
