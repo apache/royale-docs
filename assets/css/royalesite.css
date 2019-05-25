@@ -316,24 +316,6 @@ a {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-/* .highlight
-{
-	color: #c3d4d6;
-	background-color: #002b36;
-	border-radius: 10px;
-	font-size: 14px;
-	padding: 10px 10px 10px 30px;
-	margin-left: -30px;
-} */
-
-.highlighter-rouge {
-	background-color: rgba(27,31,35,.05);
-	border-radius: 3px;
-	font-size: 85%;
-	margin: 0;
-	padding: .2em .4em;
-}
-
 pre {
 	overflow-x: auto;
 }
@@ -862,4 +844,24 @@ table tr {
 table tr:nth-child(2n) {
 	background-color: #f6f8fa
 }
+
+
+.highlight
+{
+	color: #c3d4d6;
+	background-color: #002b36;
+	border-radius: 10px;
+	font-size: 14px;
+	padding: 10px 10px 10px 30px;
+	margin-left: -30px;
+}
+
+.highlighter-rouge {
+	background-color: rgba(27,31,35,.05);
+	border-radius: 3px;
+	font-size: 85%;
+	margin: 0;
+	padding: .2em .4em;
+}
+
 

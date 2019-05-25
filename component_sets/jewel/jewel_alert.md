@@ -53,6 +53,7 @@ src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>
 {% endraw %}
 
 You can attach listeners to the `CloseEvent.CLOSE` as follows:
+
 ```as3
 var alert:Alert = Alert.show("Do you want to <b>save</b> your changes?", "Save Changes", 3);
 alert.addEventListener(CloseEvent.CLOSE, alertClickHandler);
