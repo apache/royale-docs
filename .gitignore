@@ -21,6 +21,7 @@ local_config.yml
 [Tt]humbs.db
 *.DS_Store
 /jenkins/
+.sass-cache
 
 # Maven files
 target/
