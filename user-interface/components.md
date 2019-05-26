@@ -40,7 +40,7 @@ Developers who have worked in Flex will quickly feel at home with Royale compone
 </j:TextInput>
 ```
 
-You can [read more about Strands and Beads here](welcome/features/Strands_and_Beads.html).
+You can [read more about Strands and Beads here](welcome/features/strands-and-beads.html).
 
 ## Component sets
 Royale has a series of component sets, groups of ready-to-use components which are designed for different purposes.
