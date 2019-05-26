@@ -44,7 +44,7 @@
             ]
         },
         {
-            "path": "Get Started.md",
+            "path": "get-started.md",
             "children": [
                 {
                     "path": "get-started/system-requirements.md"
