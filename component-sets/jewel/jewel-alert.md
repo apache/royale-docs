@@ -46,11 +46,11 @@ Alert.show('This is an Alert component example that shows a label text and the d
 
 This produces:
 
-{% raw %}
+
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
 width="100%" height="300" 
 src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>
-{% endraw %}
+
 
 You can attach listeners to the `CloseEvent.CLOSE` as follows:
 
