@@ -23,3 +23,29 @@ title: MXML
 The declarative XML-based user interface markup language
 
 MXML is an XML language that you use, when building an application in Royale, to lay out user-interface components.
+
+```mxml
+<?xml version="1.0" encoding="utf-8"?>
+<j:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+        xmlns:j="library://ns.apache.org/royale/jewel" 
+        xmlns:html="library://ns.apache.org/royale/html">
+
+    <fx:Script>
+    <![CDATA[      
+        private function clickHandler(event:MouseEvent):void {
+            button.emphasis = (button.emphasis == Button.PRIMARY) ? "" : Button.PRIMARY;
+        }
+    ]]>
+    </fx:Script>
+
+    <j:Card width="600">
+        <html:H3 text="items expand test"/>
+
+        <j:HGroup itemsExpand="true" gap="3">
+            <j:Button text="Hello" click="clickHandler(event)"/>
+            <j:Button text="Apache"/>
+            <j:Button text="Royale!!!!"/>
+        </j:HGroup>
+    </j:Card>
+</j:Group>
+```
