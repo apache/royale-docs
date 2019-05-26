@@ -20,19 +20,23 @@ title: Hello World
 
 # Hello World
 
-To verify that the Royale SDK is set up correctly, we recommend you create and build a "Hello World" example. If that works, you can move on to [Create an Application](create-an-Application.html) and work through the tutorial on building a more substantial application.
+Try the simplest piece of code possible
 
-These instructions presume you are not using an IDE, but are creating files in a text editor and compiling using command-line scripts or similar controls. [Development tools]get-started/development-tools.html) that fully support Royale provide their own instructions for building your first Royale applications.
+To verify that the Royale SDK is set up correctly, we recommend you create and build a ["Hello World"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program){:target='_blank'} example. If that works, you can move on to [Create an Application](create-an-Application.html) and work through the tutorial on building a more substantial application.
+
+These instructions presume you are not using an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment){:target='_blank'}, but are creating files in a text editor and compiling using command-line scripts or similar controls. [Development tools](get-started/development-tools.html) that fully support Royale provide their own instructions for building your first Royale applications.
+
+> In our Apache Royale Blog Examples, you can read about the ['Hello World' example](https://royale.apache.org/creating-a-hello-world-in-apache-royale/) to complement the information exposed here. Notice that the main difference is that while in this Hello World we use the _Express_ library, in the blog example we use the _Basic_ version that requires a few more lines of code.
 
 ## Create the project folders
 
 Create or select a folder to hold this application's source and output.  
 
-In that top-level folder, create a folder called "HelloWorld" (it can be named something else if you want, and the name can contain spaces).  This folder will be referred to as the "project" folder throughout the documentation.  
+In that top-level folder, create a folder called `HelloWorld` (it can be named something else if you want, and the name can contain spaces). This folder will be referred to as the `project` folder throughout the documentation.  
 
-In the project folder, create a folder called "src". You can use other names, but the compiler will manage your output folders for you if you use "src" or "src/main/royale" ("src\main\royale" on Windows).
+In the project folder, create a folder called `src`. You can use other names, but the compiler will manage your output folders for you if you use `src` or `src/main/royale` (`src\main\royale` on Windows).
 
-So, if you used a folder called "Projects" for all of your project folders, then you would have the following folders:
+So, if you used a folder called `Projects` for all of your project folders, then you would have the following folders:
 
 ```
 Projects
@@ -42,12 +46,12 @@ Projects/HelloWorld/src
 
 ## Create the source file
 
-In the src folder, create a file called HelloWorld.mxml and use your favorite text editor to give that file the following contents:
+In the `src` folder, create a file called `HelloWorld.mxml` and use your favorite text editor to give that file the following contents:
 
-```xml
+```mxml
 <?xml version="1.0" encoding="utf-8"?>
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
-            xmlns:js="library://ns.apache.org/royale/express">
+                xmlns:js="library://ns.apache.org/royale/express">
 
     <js:initialView>
         <js:View>
@@ -59,26 +63,26 @@ In the src folder, create a file called HelloWorld.mxml and use your favorite te
 
 ## Compile the source file
 
-If you used <a href="https://www.npmjs.com/" target="_blank">npm</a> to install Royale, run from your project folder:
+If you used [npm](https://www.npmjs.com/){:target='_blank'} to install Royale, run from your project folder:
 
 ```
-    mxmlcnpm src/HelloWorld.mxml
+mxmlcnpm src/HelloWorld.mxml
 ```
 
 If you didn't use npm, run:
 
 ```
-    <path to SDK folder>/js/binmxmlc src/HelloWorld.mxml
+<path to SDK folder>/js/binmxmlc src/HelloWorld.mxml
 ```
 
 ## Run the output
 
-If the compiler reported success, there should now be a bin/js-release output folder in your project folder, such as 
+If the compiler reported success, there should now be a `bin/js-release output` folder in your project folder, such as 
 
 ```
-    Projects/HelloWorld/bin/js-release
+Projects/HelloWorld/bin/js-release
 ```
 
-In that folder should be an index.html file you can open in your browser to see your "Hello World" application.  If you see that, congratulations!  You have installed Royale successfully and are ready to build Royale applications.  
+In that folder should be an `index.html` file you can open in your browser to see your "Hello World" application.  If you see that, congratulations! You have installed Royale successfully and are ready to build Royale applications.  
 
 [Create an Application](create-an-Application.html) contains a tutorial for building a more substantial application. The Royale SDK includes an **Examples** directory that provides practical demonstrations of how to achieve many features and effects using Royale.
