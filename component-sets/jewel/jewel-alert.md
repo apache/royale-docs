@@ -27,21 +27,24 @@ org.apache.royale.jewel.Alert
 | extends    	| org.apache.royale.jewel.Group 	| -  	| -   	|
 | implements 	| org.apache.royale.core.IPopUp 	|    	|     	|
 
-Note: This component is currently only available in JS
+<sup>_Note: This component is currently only available in JS_</sup>
 
-Available since 0.9.4
+Available since version __0.9.4__
 
 ## Overview
 
 The alert component displays a message and one or more buttons in a view that pops up over all other controls and views. 
 It uses the `AlertView` bead to display a modal dialog with a title and a variety of buttons configured through the flag property of its `show` static function.
 
+> Alert use the HTML dialog element, which currently has very limited cross-browser support.
+To ensure support across all modern browsers, we use dialogPolyfill extern.
+
 ## Examples
 
 You can use the static method `show` to display the component:
 
 ```as3
-Alert.show('This is an Alert component example that shows a label text and the default OK button.', 'Alert Example')
+Alert.show('This Alert shows a label text and the default OK button.', 'Alert Example');
 ```
 
 This produces:
@@ -51,16 +54,16 @@ This produces:
 width="100%" height="300" 
 src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>
 
+---
 
 You can attach listeners to the `CloseEvent.CLOSE` as follows:
 
 ```as3
-var alert:Alert = Alert.show("Do you want to <b>save</b> your changes?", "Save Changes", 3);
+var alert:Alert = Alert.show("Do you want to save your changes?", "Save Changes", 3);
 alert.addEventListener(CloseEvent.CLOSE, alertClickHandler);
 ```
 
-> Alert use the HTML dialog element, which currently has very limited cross-browser support.
-To ensure support across all modern browsers, we use dialogPolyfill extern.
+
 
 ## Beads
 
@@ -71,7 +74,7 @@ The Alert component uses the following beads:
 | IBeadModel      	| org.apache.royale.jewel.beads.models.AlertModel           	| the data model for the Alert                   	|
 | IBeadView       	| org.apache.royale.jewel.beads.views.AlertView             	| the bead used to create the parts of the Alert 	|
 | IBeadController 	| org.apache.royale.jewel.beads.controllers.AlertController 	| the bead used to handle input events           	|
-| IBeadLayout     	| org.apache.royale.jewel.beads.layouts.NullLayout(*)       	| the bead used to postion the internal parts       |
+| IBeadLayout     	| org.apache.royale.jewel.beads.layouts.NullLayout<sup>_(*)_</sup>  | the bead used to postion the internal parts       |
 
+<sup>_(*) NullLayout is used temporary_</sup>
 
-(*) NullLayout is used temporary
