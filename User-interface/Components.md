@@ -72,7 +72,7 @@ There are several other component sets that are proofs-of-concept that wrap exis
  ## Component sets for your application
  When you download the Royale SDK to your local computer, you can browse the component sets in this location: 
  
- royale-asjs/frameworks/projects
+ royale-asjsframeworks/projects
  
  For sets that do not have an extensive demonstration suite like Tour de Jewel for the Jewel set, you can see quickly what components seem to be available.
  

@@ -47,19 +47,19 @@
             "path": "Get Started.md",
             "children": [
                 {
-                    "path": "Get_Started/System-Requirements.md"
+                    "path": "get-started/system-requirements.md"
                 },
                 {
-                    "path": "Get_Started/Development-tools.md"
+                    "path": "get-started/development-tools.md"
                 },
                 {
-                    "path": "Get_Started/Frameworks.md"
+                    "path": "get-started/frameworks.md"
                 },
                 {
-                    "path": "Get_Started/Download-Royale.md"
+                    "path": "get-started/download-royale.md"
                 },
                 {
-                    "path": "Get_Started/Hello-World.md"
+                    "path": "get-started/hello-world.md"
                 }
             ]
         },

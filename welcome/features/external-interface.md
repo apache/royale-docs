@@ -27,7 +27,7 @@ and lets external JavaScript code call a function within the Flex application. W
 you may need to replicate this functionality.
 
 To make this easier, there is an implementation of the same API available as
-<A HREF="https://github.com/apache/royale-asjs/blob/develop/frameworks/projects/MXRoyale/src/main/royale/mx/external/ExternalInterface.as" target="_blank">mx.external.ExternalInterface</A>.
+<A HREF="https://github.com/apache/royale-asjs/blob/developframeworks/projects/MXRoyale/src/main/royale/mx/external/ExternalInterface.as" target="_blank">mx.external.ExternalInterface</A>.
 You should be able to just rename your imports from `flash.external.ExternalInterface` to `mx.external.ExternalInterface`.
 
 For new code, it would be preferable to create an ActionScript wrapper API into the required JavaScript.

@@ -31,11 +31,11 @@ In Apache Royale you develop your applications using ActionScript 3 (AS3) and MX
 
 ## Getting Royale
 
-[System Requirements](Get_Started/System-Requirements.html) - What kinds of computers and operating systems you can use to develop Royale applications. You can run Royale applications on many more computers, operating systems and even devices such as smartphones and tablets.
+[System Requirements]get-started/system-requirements.html) - What kinds of computers and operating systems you can use to develop Royale applications. You can run Royale applications on many more computers, operating systems and even devices such as smartphones and tablets.
 
-[Development Tools](Get_Started/Development-tools.html) - You can develop Royale with just the command-line, or you can use scripting/build tools like Apache Ant and Apache Maven, or even use IDEs.
+[Development Tools]get-started/development-tools.html) - You can develop Royale with just the command-line, or you can use scripting/build tools like Apache Ant and Apache Maven, or even use IDEs.
 
-[Download Royale](Get_Started/Download-Royale.html) - How to download and set up Royale.
+[Download Royale]get-started/download-royale.html) - How to download and set up Royale.
 
 
 ## Configuring Royale
@@ -52,12 +52,12 @@ Download the binary package of Royale from our Download page and set it up to us
 
 Follow the instructions for your IDE to create your first “Hello World” application. You can also check out:
 
-[Hello World](Get_Started/Hello-World.html) - Build Hello World in Royale.
+[Hello World]get-started/hello-world.html) - Build Hello World in Royale.
 
 
 ## Where to go from here
 
-[Frameworks](Get_Started/Frameworks.html) - What popular JavaScript frameworks can be used in Royale Applications.
+[Frameworks]get-startedframeworks.html) - What popular JavaScript frameworks can be used in Royale Applications.
 
 In the `royale-asjs` repository repository folder you can find examples in the `examples/royale` directory and framework code in `frameworks/projects` that can help you start to get familiar with Apache Royale.
 
