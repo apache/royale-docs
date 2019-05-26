@@ -22,9 +22,9 @@ title: Jewel
 
 A set of modern UI components
 
-Jewel is a themeable and responsive set of user interface components for Apache Royale to help you quickly build the front end of your applications with [ActionScript](welcome/features/AS3.html) & [MXML](welcome/features/MXML.html).
+Jewel is a themeable and responsive set of user interface components for Apache Royale to help you quickly build the front end of your applications with [ActionScript](welcome/features/as3.html) & [MXML](welcome/features/mxml.html).
 
-It's based by design on [Basic](component-sets/basic.html) components. But while Basic is very strict with concepts like [PAYG](welcome/features/PAYG.html), in Jewel, while PAYG is important, when necessary we prioritize other things like responsiveness, themes and look and feel.
+It's based by design on [Basic](component-sets/basic.html) components. But while Basic is very strict with concepts like [PAYG](welcome/features/payg.html), in Jewel, while PAYG is important, when necessary we prioritize other things like responsiveness, themes and look and feel.
 
 ## Browser Support
 

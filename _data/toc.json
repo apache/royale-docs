@@ -11,13 +11,13 @@
                     "path": "welcome/features-and-concepts.md",
                     "children": [
                         {
-                            "path": "welcome/features/AS3.md"
+                            "path": "welcome/features/as3.md"
                         },
                         {
-                            "path": "welcome/features/MXML.md"
+                            "path": "welcome/features/mxml.md"
                         },
                         {
-                            "path": "welcome/features/PAYG.md"
+                            "path": "welcome/features/payg.md"
                         },
                         {
                             "path": "welcome/features/Strands and Beads.md"

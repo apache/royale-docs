@@ -32,7 +32,7 @@ Let's say you are creating a project called MyFirstRoyaleApp. Create a MyFirstRo
 
 If you use <a href="https://maven.apache.org/" target="_blank">Apache Maven</a> to build your app, you can use one of the Maven archetypes, which put the main application source code 3 levels deep in a "src/main/royale" folder structure. Other kinds of files then go in "src/main/resource", "src/main/config" and so on. Maven instructs the compiler to put the output in a "target/javascript/bin" folder.
 
-Most Royale applications use an [MXML](welcome/features/MXML.html) file as the main application file. Other files are written in MXML or [ActionScript](welcome/features/AS3.html) depending on whether you are assembling pieces or writing custom logic. You can write a Royale Application without using MXML at all, but you'll end up writing more code.
+Most Royale applications use an [MXML](welcome/features/mxml.html) file as the main application file. Other files are written in MXML or [ActionScript](welcome/features/as3.html) depending on whether you are assembling pieces or writing custom logic. You can write a Royale Application without using MXML at all, but you'll end up writing more code.
 
 So, if you decide to use MXML as your main application file, then your folder structure might look like this:
 

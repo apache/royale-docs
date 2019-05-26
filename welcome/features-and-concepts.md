@@ -26,13 +26,13 @@ Here are some things you may need to know to help you be more productive with Ro
 
 ## Languages
 
-Royale uses both a declarative markup language called [MXML](welcome/features/MXML.html) and a scripting language called [ActionScript](welcome/features/AS3.html) that is like JavaScript, but with classes and interfaces and types.  This allows you to more efficiently declare the static portions of your application and write up the dynamic portions in a language where the compiler can catch more errors sooner.
+Royale uses both a declarative markup language called [MXML](welcome/features/mxml.html) and a scripting language called [ActionScript](welcome/features/as3.html) that is like JavaScript, but with classes and interfaces and types.  This allows you to more efficiently declare the static portions of your application and write up the dynamic portions in a language where the compiler can catch more errors sooner.
 
 ## Pay as you go (PAYG)
 
 Royale provides a variety of [component sets](./user-interface/components.html), each tuned towards different applications requirements. The easiest one to learn and use is the Express component set. It is designed for rapid-prototyping and proof-of-concept development. You can often take code using Express into production, but because Express components are designed to be customized in MXML, as your application grows in size, you may find yourself wishing for smaller, faster components.
 
-Royale also provides a Basic component set that is the opposite of Express.  The components are small and fast, but don't have lots of built-in customization options.  This is because Basic components are designed with a ["Pay as you go"](welcome/features/PAYG.html) philosophy.  Only the most common functionality is built into the component, and other options are added as plugins called Beads.  You can [read more about PAYG here](welcome/features/PAYG.html).
+Royale also provides a Basic component set that is the opposite of Express.  The components are small and fast, but don't have lots of built-in customization options.  This is because Basic components are designed with a ["Pay as you go"](welcome/features/payg.html) philosophy.  Only the most common functionality is built into the component, and other options are added as plugins called Beads.  You can [read more about PAYG here](welcome/features/payg.html).
 
 ## Strands and Beads
 

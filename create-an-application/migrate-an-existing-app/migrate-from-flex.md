@@ -21,7 +21,7 @@ title: Migrate from Flex
 <!-- This is from material created by Peter Ent and modified by Tom Chiverton: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=34013930 -->
 # Migrate from Flex
 
-If you have developed applications using [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, or Adobe Flex before it, your applications probably combine [MXML](welcome/features/MXML.html) and [ActionScript](welcome/features/AS3.html) files along with resources like images and audio files; and some of the MXML files have <fx:Script> tags with ActionScript snippets inside them. If that is the case, you will find yourself at home working with Apache Royale. The big difference is not so much the code you use, but the output and what it needs to run properly.
+If you have developed applications using [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, or Adobe Flex before it, your applications probably combine [MXML](welcome/features/mxml.html) and [ActionScript](welcome/features/as3.html) files along with resources like images and audio files; and some of the MXML files have <fx:Script> tags with ActionScript snippets inside them. If that is the case, you will find yourself at home working with Apache Royale. The big difference is not so much the code you use, but the output and what it needs to run properly.
 
 It is not yet possible to just import an existing Flex application into Apache Royale and then produce output in JavaScript that will run almost anywhere. However, you may need to do less hands-on conversion than you think to get to where you can produce your application, transpiled to JavaScript, through Royale.
 
