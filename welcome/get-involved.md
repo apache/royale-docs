@@ -9,10 +9,14 @@ title: Get involved
 ---
 # Get involved
 
+Join us to make Apache Royale better!
+
 Apache Royale is a non-profit, open-source project. It grows and thrives on contributions, insights, and efforts by people like you. It would be stronger with your participation.
 
 ## The Royale team
-Becoming active with Royale usually starts with becoming connected with the developers who are working on the code and the users who are building or adapting applications with it. Check out <a href="http://royale.apache.org/get-involved" target="_blank">the details</a> here, or meet our <a href="http://royale.apache.org/team/" target="_blank">most active contributors</a>. We hope you can join us!
+
+Becoming active with Royale usually starts with becoming connected with the developers who are working on the code and the users who are building or adapting applications with it. Check out [the details](https://royale.apache.org/get-involved){:target='_blank'} here, or meet our [most active contributors](https://royale.apache.org/team/){:target='_blank'}. We hope you can join us!
 
 ## Apache Software Foundation
-Royale is a project of the <a href="https://www.apache.org/" target="_blank">Apache Software Foundation</a> (ASF). The all-volunteer ASF develops, stewards, and incubates more than 350 Open Source projects and initiatives. The ASF welcomes and thrives on feedback and participation by those who <a href="https://www.apache.org/foundation/getinvolved.html" target="_blank">get involved</a> in projects they find important.
+
+Royale is a project of the [Apache Software Foundation](https://www.apache.org/){:target='_blank'} (ASF). The all-volunteer ASF develops, stewards, and incubates more than 350 Open Source projects and initiatives. The ASF welcomes and thrives on feedback and participation by those who [get involved](https://www.apache.org/foundation/getinvolved.html){:target='_blank'} in projects they find important.
