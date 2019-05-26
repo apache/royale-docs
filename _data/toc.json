@@ -64,22 +64,22 @@
             ]
         },
         {
-            "path": "component_sets.md",
+            "path": "component-sets.md",
             "children": [
                 {
-                    "path": "component_sets/basic.md"
+                    "path": "component-sets/basic.md"
                 },
                 {
-                    "path": "component_sets/jewel.md",
+                    "path": "component-sets/jewel.md",
                     "children": [
                         {
-                            "path": "component_sets/jewel/jewel_alert.md"
+                            "path": "component-sets/jewel/jewel-alert.md"
                         },
                         {
-                            "path": "component_sets/jewel/jewel_button.md"
+                            "path": "component-sets/jewel/jewel-button.md"
                         },
                         {
-                            "path": "component_sets/jewel/jewel_textinput.md"
+                            "path": "component-sets/jewel/jewel-textinput.md"
                         }
                     ]
                 }
