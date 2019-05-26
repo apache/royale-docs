@@ -5,10 +5,10 @@
             "path": "index.md",
             "children": [
                 {
-                    "path": "Welcome/High Level View.md"
+                    "path": "Welcome/high-level-view.md"
                 },
                 {
-                    "path": "Welcome/Features And Concepts.md",
+                    "path": "Welcome/features-and-concepts.md",
                     "children": [
                         {
                             "path": "Welcome/Features/AS3.md"
@@ -86,7 +86,7 @@
             ]
         },
         {
-            "path": "Create An Application.md",
+            "path": "create-an-Application.md",
             "children": [
                 {
                     "path": "create-an-application/application-structure.md"

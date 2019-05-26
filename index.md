@@ -26,9 +26,9 @@ This is the main documentation for Apache Royale.  If you are looking for the AP
 
 This document is divided into several sections:
 
-[High Level View](Welcome/High%20Level%20View.html) gives an overview of Royale.
+[High Level View](Welcome/high-level-view.html) gives an overview of Royale.
 
-[Features and Concepts](Welcome/Features%20And%20Concepts.html) explains the main features of Royale and some concepts that might help you be more productive.
+[Features and Concepts](Welcome/features-and-concepts.html) explains the main features of Royale and some concepts that might help you be more productive.
 
 [A Bit of History](Welcome/history.html) provides a brief background on how Royale came to be.
 

@@ -20,7 +20,7 @@ title: Hello World
 
 # Hello World
 
-To verify that the Royale SDK is set up correctly, we recommend you create and build a "Hello World" example. If that works, you can move on to [Create an Application](Create%20An%20Application.html) and work through the tutorial on building a more substantial application.
+To verify that the Royale SDK is set up correctly, we recommend you create and build a "Hello World" example. If that works, you can move on to [Create an Application](create-an-Application.html) and work through the tutorial on building a more substantial application.
 
 These instructions presume you are not using an IDE, but are creating files in a text editor and compiling using command-line scripts or similar controls. [Development tools](Get_Started/Development-tools.html) that fully support Royale provide their own instructions for building your first Royale applications.
 
@@ -81,4 +81,4 @@ If the compiler reported success, there should now be a bin/js-release output fo
 
 In that folder should be an index.html file you can open in your browser to see your "Hello World" application.  If you see that, congratulations!  You have installed Royale successfully and are ready to build Royale applications.  
 
-[Create an Application](Create%20An%20Application.html) contains a tutorial for building a more substantial application. The Royale SDK includes an **Examples** directory that provides practical demonstrations of how to achieve many features and effects using Royale.
+[Create an Application](create-an-Application.html) contains a tutorial for building a more substantial application. The Royale SDK includes an **Examples** directory that provides practical demonstrations of how to achieve many features and effects using Royale.
