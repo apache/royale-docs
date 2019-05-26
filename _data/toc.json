@@ -5,39 +5,39 @@
             "path": "index.md",
             "children": [
                 {
-                    "path": "Welcome/high-level-view.md"
+                    "path": "welcome/high-level-view.md"
                 },
                 {
-                    "path": "Welcome/features-and-concepts.md",
+                    "path": "welcome/features-and-concepts.md",
                     "children": [
                         {
-                            "path": "Welcome/Features/AS3.md"
+                            "path": "welcome/Features/AS3.md"
                         },
                         {
-                            "path": "Welcome/Features/MXML.md"
+                            "path": "welcome/Features/MXML.md"
                         },
                         {
-                            "path": "Welcome/Features/PAYG.md"
+                            "path": "welcome/Features/PAYG.md"
                         },
                         {
-                            "path": "Welcome/Features/Strands and Beads.md"
+                            "path": "welcome/Features/Strands and Beads.md"
                         }
                     ]
                 },
                 {
-                    "path": "Welcome/history.md"
+                    "path": "welcome/history.md"
                 },
                 {
-                    "path": "Welcome/licenses.md"
+                    "path": "welcome/licenses.md"
                 },
                 {
-                    "path": "Welcome/get-involved.md",
+                    "path": "welcome/get-involved.md",
                     "children": [
                         {
-                            "path": "Welcome/get-involved/The Royale Team.md"
+                            "path": "welcome/get-involved/The Royale Team.md"
                         },
                         {
-                            "path": "Welcome/get-involved/The Apache Community.md"
+                            "path": "welcome/get-involved/The Apache Community.md"
                         }
                     ]
                 }
