@@ -1,0 +1,457 @@
+/**
+ * Licensed under the Apache License, Version 2.0 (the "License")
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@media screen and (max-width: 720px) 
+	.tagline 
+		display: none
+
+
+
+.asf
+	text-align: center
+	font-family: Verdana, Geneva, sans-serif
+	font-size: 10px
+
+.curved-top 
+	background-color: #ffffff
+	border-top-right-radius: 50% 20px
+	border-top-left-radius: 50% 20px
+	border-color: #ffffff
+	border-style: solid none none none
+	width: 100%
+	padding: 30px
+
+.responsive-table 
+	display: flex
+	flex-wrap: wrap
+
+.responsive-table-tile 
+	width: 350px
+
+
+.responsive-table-tile-text 
+	margin-left: 60px
+	margin-top: 16px
+
+
+.responsive-table-tile-icon 
+	font-size: 40px
+	float: left
+
+.responsive-table-tile-title 
+	color: #00ffff
+
+.responsive-table-tile-content 
+
+.big-buttons 
+
+.big-button 
+	border-radius: 100px
+	padding: 30px
+	margin: 20px
+	display: inline-block
+
+.big-button_a 
+	color: #ffffff
+	text-decoration: none
+
+.red-button 
+	background-color: #ff0000
+	border-color: #ff0000
+
+.blue-button 
+	background-color: #0000ff
+	border-color: #0000ff
+
+.centerButton 
+	display: flex
+	justify-content: center
+
+.white-border-button 
+	border-color: #fff
+	border-style: solid
+
+.intro 
+	width: 40%
+	font-family:Verdana, Geneva, sans-serif
+
+.page 
+	width: 100%
+	background-image: url('https://royale.apache.org/wp-content/uploads/2017/10/page-bg-1-1920x300.png')
+	background-repeat: no-repeat
+	margin-top: 0px
+	background-position: center top
+
+@media screen and (min-width: 1920px) 
+	.page 
+		background-size: 100%
+	
+.social 
+	/* hidden until these get hooked up */
+	display: none /* inline */
+	margin-top: 0px
+	height: 40px
+
+.social_li 
+	display: inline
+	margin-right: 20px
+	line-height: 70px
+	color: #fff
+
+.docs_header 
+	height: 70px
+	position: relative
+	z-index: 9998
+
+.topbar 
+	width: 100%
+	top: 0
+	left: auto
+	position: relative
+	z-index: 4
+	max-width: 1170px
+	margin-right: auto
+	margin-left: auto
+	position: relative
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	flex-wrap: wrap
+	font-family: 'Hind Siliguri'
+
+.topbar-left 
+	margin-left: 15px
+	margin-right: 15px
+	display: inline-block
+	flex-grow: 1
+	max-width: 760px
+	min-width: 0
+
+.topbar-right 
+	display: inline-block
+	flex-shrink: 0
+
+.topMenu 
+	display: inline-block
+	vertical-align: top
+	margin-top: 15px
+	margin-bottom: 0px
+	height: 40px
+
+@media screen and (max-width: 660px) 
+	.topMenu 
+		display: none
+	
+.topMenu_li 
+	display: inline
+	margin-right: 20px
+	font-size: 14px
+	font-weight: 600
+	font-family: 'Signika'
+	line-height: 40px
+	letter-spacing: 1px
+
+.topMenu_li_a 
+	text-decoration: none
+	color: rgba(255,255,255,0.7)
+
+.topMenu_li_a:hover 
+	color: #fff
+
+.orange-box 
+	background-color: #F93
+	width: 100%
+	padding-top: 20px
+	padding-bottom: 20px
+
+.orange-box-text 
+	margin: 20px 200px
+
+.orange-box-code 
+	font-family: "Courier New", Courier, monospace
+	background-color: #FC0
+	text-align: left
+	margin: 20px 200px
+
+.npm-title 
+	color: #fff
+	text-align: center
+
+.npm-command 
+	background-color: #000
+	color: #fff
+	text-align: center
+	margin: 20px 300px
+
+.apache 
+	color: #a002a0
+	font-family: Signika
+	font-weight: 600
+	line-height: 30px
+
+.apacheroyale 
+	color: rgb(250, 70, 30)
+	font-family: Signika
+	font-weight: 600
+	line-height: 30px
+
+.social_t 
+	color: #053061
+	font-family: Signika
+	font-weight: 600
+	line-height: 30px
+
+.documentation 
+	color: #053061
+	font-family: Signika
+	font-weight: 600
+	line-height: 30px
+
+.development 
+	color: rgb(243, 199, 103)
+	font-family: Signika
+	font-weight: 600
+	line-height: 30px
+
+.community 
+	color: rgb(42, 139, 42)
+	font-family: Signika
+	font-weight: 600
+	line-height: 30px
+
+.footer 
+	padding-left: 54px
+	padding-right: 54px
+	padding-top: 48px
+	padding-bottom: 18px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	font-family: 'Hind Siliguri'
+	font-size: 14px
+	background-color: rgb(233, 233, 233)
+
+.footer p, .footer ul, .footer li 
+	font-size: 14px
+
+.footer-row
+	display: flex
+	flex: 1 1 100%
+	flex-direction: row
+
+.footer-column 
+	flex-grow: 1
+
+.footer-list 
+	list-style: none
+	padding-left: 0px
+	margin-bottom: 20px
+
+.footer-list_a
+	text-decoration: none
+	line-height: 26px
+	color: rgb(67, 147, 195)
+
+.footer-list i 
+	margin-right: 5px
+	width: 1em
+	text-align: center
+
+.aboutusdiv 
+	min-width: 150px
+	flex-basis: 33%
+	flex-grow: 1
+
+.aboutusdiv > p 
+	font-size: 14px
+
+.aboutus 
+	color: #053061
+	font-family: Signika
+	font-weight: 600
+	line-height: 30px
+
+.aboutus_p 
+	padding-bottom: 38px
+
+.aboutus_a 
+	text-decoration: none
+	color: rgb(67, 147, 195)
+
+.aboutus-logo 
+	float: left
+	width: 100px
+	padding-bottom: 14px
+	padding-right: 14px
+
+.aboutus-apache-logo 
+	float: right
+	width: 100px
+	padding-bottom: 14px
+	padding-right: 14px
+
+.toc_and_doc 
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	flex-wrap: wrap
+	font-family: 'Hind Siliguri'
+	margin-top: 50px
+
+.toc 
+	display: inline-block
+	margin-top: 80px
+	margin-left: 15px
+	margin-left: 15px
+	margin-bottom: 20px
+	flex-shrink: 0
+	width: 350px
+
+.toc_arrow
+	margin-left: 7px
+	width: 26px
+	opacity: .4
+	margin-bottom: 2px
+
+.toc_arrow_rot
+	width: 26px
+	margin-left: 7px
+	transform: rotateX(180deg)
+	margin-bottom: 2px
+
+.content 
+	min-height: 670px
+	margin-left: 15px
+	margin-right: 15px
+	display: inline-block
+	flex-grow: 1
+	max-width: 760px
+	min-width: 0
+	width: 760px
+
+.content h1 + p 
+	color: #4393c3
+	font-weight: 400
+	font-size: 20px
+
+.menu_div, .menu_div2 
+	margin-left: 15px
+
+.accordion 
+	list-style: none
+	margin: 0
+	line-height: 30px
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+.accordion > li 
+	line-height: 1.4em
+	position: relative
+	margin-bottom: 8px
+	display: list-item
+	text-align: -webkit-match-parent
+
+.accordion_content 
+	margin-left: 15px
+	font-family: Signika
+	font-weight: 600
+	font-style: normal
+	text-transform: none
+
+.toc_title_wrapper 
+	padding: 0px 20px
+	line-height: 1em
+	position: relative
+	cursor: pointer
+	display: block
+	font-family: Signika
+	font-weight: 600
+	font-style: normal
+	text-transform: none
+
+//.toc_accordion_arrow 
+//	right: 0
+//	transform: rotate(180deg)
+//	transform-origin: 50% 50%
+//	opacity: 0.7
+//	position: absolute
+//	top: 50%
+//	height: 20px
+//	margin-top: -10px
+//	z-index: 2
+//	color: inherit
+//	opacity: 0.4
+//	float: right
+
+//.toc_accordion_arrow .fa 
+//	display: block
+//	text-align: center
+//	line-height: 20px
+
+
+.toc_title_wrapper h3 
+	font-size: 20px
+	line-height: 28px
+	letter-spacing: 0px
+
+.accordion_content h4 
+	font-size: 18px
+	line-height: 24px
+	letter-spacing: 0px
+
+.accordion_content h5 	
+	font-size: 17px
+	line-height: 20px
+	letter-spacing: 0px
+
+.toc_link 
+	text-decoration: none
+	color: rgb(67, 147, 195)
+	position: relative
+	margin-bottom: 0
+	line-height: 1.4em
+	display: inline-block
+	user-select: none
+
+.toc_current 
+	color: rgb(0, 0, 0)
+	font-weight: 600
+	position: relative
+	margin-bottom: 0
+	line-height: 1.4em
+	display: inline-block
+	user-select: none
+
+.highlight
+	border-radius: 10px
+	font-size: 14px
+	padding: 10px 30px 10px 30px
+	margin-left: -30px
+	margin-right: -30px
+
+.highlighter-rouge 
+	background-color: rgba(27,31,35,.05)
+	border-radius: 3px
+	font-size: 85%
+	margin: 0
+	padding: .3em .5em
+	border-top-left-radius: 3px
+	border-top-right-radius: 3px
+	border-bottom-right-radius: 3px
+	border-bottom-left-radius: 3px
+	color: rgb(17, 17, 17)
+	box-shadow: rgb(238, 238, 238) 0px 0px 0px 1px inset

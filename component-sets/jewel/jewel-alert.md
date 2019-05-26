@@ -59,7 +59,7 @@ var alert:Alert = Alert.show("Do you want to <b>save</b> your changes?", "Save C
 alert.addEventListener(CloseEvent.CLOSE, alertClickHandler);
 ```
 
-Alert use the HTML dialog element, which currently has very limited cross-browser support.
+> Alert use the HTML dialog element, which currently has very limited cross-browser support.
 To ensure support across all modern browsers, we use dialogPolyfill extern.
 
 ## Beads

@@ -16,3 +16,6 @@
 title: Apache Royale Documentation
 baseurl: /royale-docs
 highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
