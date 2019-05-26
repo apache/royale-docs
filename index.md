@@ -22,18 +22,24 @@ title: Welcome to Apache Royale
 
 Designed for the future. Code Once. Run Everywhere.
 
+<p align="center">
+  <img width="33%" height="33%" src="assets/images/apache-royale-main-logo-1000x1000.png">
+</p>
+<!-- ![Apache Royale logo](assets/images/apache-royale-main-logo-1000x1000.png){:height="50%" width="50%"} -->
+
+
 This is the main documentation for Apache Royale.  If you are looking for the API Reference, [click here](http://royale.apache.org/asdoc/index.html){:target='_blank'}.
 
 This document is divided into several sections:
 
-[High Level View](Welcome/high-level-view.html) gives an overview of Royale.
+ * [High Level View](Welcome/high-level-view.html) gives an overview of Royale.
 
-[Features and Concepts](Welcome/features-and-concepts.html) explains the main features of Royale and some concepts that might help you be more productive.
+ * [Features and Concepts](Welcome/features-and-concepts.html) explains the main features of Royale and some concepts that might help you be more productive.
 
-[A Bit of History](Welcome/history.html) provides a brief background on how Royale came to be.
+ * [A Bit of History](Welcome/history.html) provides a brief background on how Royale came to be.
 
-[Licenses and Policies](Welcome/licenses.html) contains the fine print.
+ * [Licenses and Policies](Welcome/licenses.html) contains the fine print.
 
-[Get Involved](Welcome/get-involved.html) explains how you can contribute to the future of Royale.
+ * [Get Involved](Welcome/get-involved.html) explains how you can contribute to the future of Royale.
 
-*Note: This material is far from complete. However, with each release more useful information will become available.
+<sup>_(*)Note: This material is far from complete. However, with each release more useful information will become available._</sup>
