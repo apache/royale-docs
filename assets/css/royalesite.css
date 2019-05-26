@@ -593,6 +593,10 @@ pre {
 	background-color: rgb(233, 233, 233);
 }
 
+.footer p, ul, li {
+	font-size: 14px;
+}
+
 .footer-row
 {
 	display: flex;
@@ -848,8 +852,6 @@ table tr:nth-child(2n) {
 
 .highlight
 {
-	color: #c3d4d6;
-	background-color: #002b36;
 	border-radius: 10px;
 	font-size: 14px;
 	padding: 10px 10px 10px 30px;
