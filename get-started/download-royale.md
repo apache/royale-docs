@@ -20,7 +20,9 @@ title: Download Royale
 
 # Download Royale
 
-You can download Apache Royale via Node Package Manager (NPM) or from mirrors of Apache releases.  NPM is simpler.
+know how you can grab your bits
+
+You can download Apache Royale via [Node Package Manager(NPM)](https://www.npmjs.com/){:target='_blank'} or from mirrors of Apache releases.  NPM is simpler.
 
 ## NPM
 
@@ -31,6 +33,7 @@ To use NPM to install Royale, use the following command line for your operating 
 ```
 sudo npm install @apache-royale/royale-js -g
 ```
+
 ### Windows
 
 ```
@@ -44,6 +47,7 @@ If you want SWF output as well as JavaScript output, install these packages inst
 ```
 sudo npm install @apache-royale/royale-js-swf -g
 ```
+
 ### Windows
 
 ```
@@ -67,10 +71,10 @@ If you want SWF output as well as JavaScript output, download one of these packa
 
 [zip (for Windows)](http://www.apache.org/dyn/closer.lua/royale/0.9.1/binaries/apache-royale-0.9.1-bin-js-swf.zip){:target='_blank'}
 
-Once downloaded, uncompress the file into a folder somewhere.  This folder will be referred to as the SDK folder throughout the documentation.  If you chose the package with SWF support, you will need to follow the instructions in the README to install libraries from Adobe System Inc or use the Apache Ant script InstallAdobeSDKs.xml by running from the SDK folder:
+Once downloaded, uncompress the file into a folder somewhere.  This folder will be referred to as the SDK folder throughout the documentation.  If you chose the package with SWF support, you will need to follow the instructions in the README to install libraries from Adobe System Inc or use the Apache Ant script `InstallAdobeSDKs.xml` by running from the SDK folder:
 
 ```
 ant -f InstallAdobeSDKs.xml
 ```
 
-At this point, you should be able to run the js/bin/mxmlc compiler from your Royale SDK folder to compile a Royale application.  See the [Hello World]get-started/hello-world.html) section for more details.
+At this point, you should be able to run the `js/bin/mxmlc` compiler from your Royale SDK folder to compile a Royale application.  See the [Hello World](get-started/Hello-World.html) section for more details.

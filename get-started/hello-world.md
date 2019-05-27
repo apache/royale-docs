@@ -63,7 +63,7 @@ In the `src` folder, create a file called `HelloWorld.mxml` and use your favorit
 
 ## Compile the source file
 
-If you used [npm](https://www.npmjs.com/){:target='_blank'} to install Royale, run from your project folder:
+If you used [NPM](https://www.npmjs.com/){:target='_blank'} to install Royale, run from your project folder:
 
 ```
 mxmlcnpm src/HelloWorld.mxml
