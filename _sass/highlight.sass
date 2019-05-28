@@ -11,13 +11,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-     
-.highlight
-	border-radius: 10px
-	font-size: 14px
-	padding: 10px 30px 10px 30px
-	margin-left: -30px
-	margin-right: -30px
+
+// Variables
+
+// Background
+$bg-color: rgb(40,44,52)
+$text-color: white
+
+// Styles
 
 .highlighter-rouge 
 	background-color: rgba(27,31,35,.05)
@@ -31,3 +32,154 @@
 	border-bottom-left-radius: 3px
 	color: rgb(16, 16, 16)
 	box-shadow: rgb(230, 230, 230) 0px 0px 0px 1px inset
+
+.highlight
+	border-radius: 10px
+	font-size: 14px
+	padding: 10px 30px 10px 30px
+	margin-left: -30px
+	margin-right: -30px
+
+	background: $bg-color
+	color: $text-color
+
+	.o
+		color: #abb2bf // symbols
+	
+	.k
+		color: #ff79c6 // pink // for, this, new, if, else
+	
+	.kr
+		color: #c678dd // AS3, i.e: private, public, class, trace
+
+	.cp
+		color: #7f9f7f // MXML i.e: ?xml, CDATA
+	
+	.nt
+		color: #fc929e // MXML i.e: j:Group, fx:Script, html:H3
+
+	.s
+		color: #efef8f //MXML attibute value, i.e: "true", "http://ns.apache.org/r/j", "600"
+
+	.p
+		color: #cde7e4 // function parenthesis { }
+	
+	.nx
+		color: #61aeee // function params
+	.c1
+		color: #ededed // comments
+	.kd
+		color: #ffffff // function, var, true
+		// font-style: italic
+	.nb
+		color: #8be9fd //cyan // void
+	.na
+		color: #e3ceab // MXML attributes i.e: width, text, xmlns:fx
+	.s2
+		color: #f1fa8c //yellow
+	.mi
+		color: #bd93f9 //purple
+
+
+// $gray: #44475a
+// $gray-light: #f8f8f2
+// $blue: #6272a4
+// $green: #50fa7b
+// $red: #ff5555
+// 	.gh,
+// 	.gi,
+// 	.gu
+// 		font-weight: bold
+
+// 	.ge
+// 		text-decoration: underline
+
+// 	.bp,
+// 	.nb,
+// 	.nl,
+// 	.nv,
+// 	.vc,
+// 	.vg,
+// 	.vi,
+// 	.vm
+// 		font-style: italic
+
+// 	.hll,
+// 	.sa,
+// 	.sb,
+// 	.sc,
+// 	.dl,
+// 	.sd,
+// 	.se,
+// 	.sh,
+// 	.si,
+// 	.sx,
+// 	.sr,
+// 	.s1,
+// 	.ss
+// 		color: $yellow
+	
+// 	.go
+// 		color: $gray
+
+// 	.err,
+// 	.g,
+// 	.l,
+// 	.n,
+// 	.x,
+// 	.ge,
+// 	.gr,
+// 	.gh,
+// 	.gi,
+// 	.gp,
+// 	.gs,
+// 	.gu,
+// 	.gt,
+// 	.ld,
+// 	.no,
+// 	.nd,
+// 	.ni,
+// 	.ne,
+// 	.nn,
+// 	.py,
+// 	.w,
+// 	.bp
+// 		color: $gray-light
+	
+// 	.c,
+// 	.ch,
+// 	.cm,
+// 	.cpf,
+// 	.cs
+// 		color: $blue
+
+// 	.kt,
+// 	.nl,
+// 	.nv,
+// 	.vc,
+// 	.vg,
+// 	.vi,
+// 	.vm
+// 		color: $cyan
+
+// 	.nc,
+// 	.nf,
+// 	.fm
+// 		color: $green
+	
+// 	.kc,
+// 	.kn,
+// 	.kp,
+// 	.ow
+// 		color: $pink
+	
+// 	.m,
+// 	.mb,
+// 	.mf,
+// 	.mh,
+// 	.mo,
+// 	.il
+// 		color: $purple
+
+// 	.gd
+// 		color: $red
