@@ -29,7 +29,7 @@ IDEs that support Apache Royale provide getting-started instructions to help you
 
 - [Visual Studio Code with ActionScript and MXML Extensions](https://github.com/BowlerHatLLC/vscode-nextgenas/wiki/Install-the-ActionScript-and-MXML-extension-for-Visual-Studio-Code){:target='_blank'}
 
-- [Moonshine](http://moonshine-ide.com){:target='_blank'}
+- [Moonshine IDE](http://moonshine-ide.com){:target='_blank'}
 
 ### IDES that supported Flex and work with Royale with some restrictions and limitations.
 
