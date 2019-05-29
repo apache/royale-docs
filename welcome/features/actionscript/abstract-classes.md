@@ -27,10 +27,10 @@ title: Abstract classes in ActionScript
 
 ## Enable abstract classes
 
-Like other [new ActionScript language features](welcome/features/as3.html#new-actionscript-language-features-in-royale) that Royale adds, abstract classes are optional and disabled by default. To enable abstract classes in your application, use the `-allow-abstract-classes` compiler option.
+Like other [new ActionScript language features](welcome/features/as3.html#new-actionscript-language-features-in-royale) that Royale adds, abstract classes are enabled by default. To disable abstract classes in your application, use the `-allow-abstract-classes` compiler option.
 
 ```sh
-mxmlc -allow-abstract-classes MyApp.mxml
+mxmlc -allow-abstract-classes=false MyApp.mxml
 ```
 
 ## Code example
