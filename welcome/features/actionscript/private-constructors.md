@@ -27,10 +27,10 @@ title: Private constructors in ActionScript
 
 ## Enable private constructors
 
-Like other [new ActionScript language features](welcome/features/as3.html#new-actionscript-language-features-in-royale) that Royale adds, private constructors are optional and disabled by default. To enable private constructors in your application, use the `-allow-private-constructors` compiler option.
+Like other [new ActionScript language features](welcome/features/as3.html#new-actionscript-language-features-in-royale) that Royale adds, are enabled by default. To disable private constructors in your application, use the `-allow-private-constructors` compiler option.
 
 ```sh
-mxmlc -allow-private-constructors MyApp.mxml
+mxmlc -allow-private-constructors=false MyApp.mxml
 ```
 
 ## Code example
