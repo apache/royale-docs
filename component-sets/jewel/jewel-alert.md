@@ -27,7 +27,7 @@ Available since version __0.9.4__
 
 | Class                 	    | Extends                           | Implements	                    |
 |------------------------------	|----------------------------------	|---------------------------------  |
-| [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html/Alert){:target='_blank'} | [org.apache.royale.jewel.Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html/Group){:target='_blank'} | [org.apache.royale.core.IPopUp](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IPopUp){:target='_blank'} 	|
+| [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'} | [org.apache.royale.jewel.Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Group){:target='_blank'} | [org.apache.royale.core.IPopUp](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IPopUp){:target='_blank'} 	|
 
 <sup>_Note: This component is currently only available in JS_</sup>
 
@@ -58,7 +58,7 @@ To close the window the user can push one of the buttons in the bottom `ControlB
 
 ## Relevant Properties and Methods
 
-> Note: Check the Reference of [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html/Alert){:target='_blank'} for a more detailed list of properties and methods.
+> Note: Check the Reference of [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'} for a more detailed list of properties and methods.
 
 ### Properties
 
@@ -102,9 +102,9 @@ The `Alert` component uses the following beads:
 
 | Bead Type       	| Implementation                                            	| Description                                    	|
 |-----------------	|-----------------------------------------------------------	|------------------------------------------------	|
-| [IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'}      	| [org.apache.royale.jewel.beads.models.AlertModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads.models/AlertModel){:target='_blank'}           	| The data model for the Alert                   	|
-| [IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'}       	| [org.apache.royale.jewel.beads.views.AlertView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/AlertView){:target='_blank'}           	| The bead used to create the parts of the Alert 	|
-| [IBeadController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadController){:target='_blank'} 	| [org.apache.royale.jewel.beads.controllers.AlertController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads.controllers/AlertController){:target='_blank'} 	| The bead used to handle input events           	|
+| [IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'}      	| [org.apache.royale.jewel.beads.models.AlertModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/AlertModel){:target='_blank'}           	| The data model for the Alert                   	|
+| [IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'}       	| [org.apache.royale.jewel.beads.views.AlertView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.views/AlertView){:target='_blank'}           	| The bead used to create the parts of the Alert 	|
+| [IBeadController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadController){:target='_blank'} 	| [org.apache.royale.jewel.beads.controllers.AlertController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controllers/AlertController){:target='_blank'} 	| The bead used to handle input events           	|
 | [IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'}     	| [org.apache.royale.jewel.beads.layouts.NullLayout](){:target='_blank'}<sup>_(*)_</sup>  | The bead used to postion the internal parts       |
 
 <sup>_(*) NullLayout is used temporary_</sup>
