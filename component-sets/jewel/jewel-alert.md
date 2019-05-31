@@ -16,6 +16,7 @@
 
 layout: docpage
 title: Jewel Alert
+description: The Jewel Alert component displays a message and one or more buttons in a view that pops up over all other controls and views.
 ---
 
 # Jewel Alert
