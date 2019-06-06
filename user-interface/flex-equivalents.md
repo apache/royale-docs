@@ -17,7 +17,6 @@ As they become available, we will provide code snippets, examples, and full tuto
 ## Flex features you can achieve in a different way in Royale
 _Further details are coming soon._
 
-- **ArrayCollection** is not yet available, but several Royale users report good results by using ArrayList in its place. 
 - **States** are a super tool that lets you include or exclude components based on the current state of the application. For example, a registration/login form could have different fields and controls depending on whether the current state was "register" or "login". In Flex you could declare States (and make other declarations) in the application level, and then use those states for all the components of the application. In Royale the earliest component where you can have such declarations is View. In general you can declare States in every component which inherits from UIBase. <js:Application doesn't inherit from UIBase.
 - **Embedding assets**, in Flex, was necessary to quickly access images and other assets that were part of a compiled Flash SWF. So, to make it easy to display on a button an icon that was in a SWF, we wrote something like:
  `<mx:Button icon="@Embed('icons.swf#our_button')"/>`
@@ -26,7 +25,6 @@ Since JavaScript does not support the concept of embedding assets, doing the sam
 - PopUpManager
 - BorderContainer - using UIBase
 - Advanced DataGrid - TreeGrid
-- Remote Object
 - Canvas
 
 ## Flex features that are not yet available in Royale
@@ -36,7 +34,6 @@ Since JavaScript does not support the concept of embedding assets, doing the sam
 - VariableRowHeight
 - Editable DataGrids
 - Sorting within DataGrids
-- ArrayCollection
 - Handling of SVG (graphics) assets.
 - Masking of images and objects.
 - Image components which allow specifying content via raw binary data or the image's URL.
