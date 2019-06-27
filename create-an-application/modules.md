@@ -20,7 +20,15 @@ title: Modules
 
 # Modules
 
-Royale supports a distributed development model called **modules**. Those familiar with Apache Flex will recognize the term. Royale modules work almost identically to Flex modules with a few differences.
+Break you Application in parts
+
+Royale supports a distributed development model called **modules**. Those familiar with [Apache Flex](https://flex.apache.org/){:target='_blank'} SDK will recognize the term. Royale modules work almost identically to Flex modules with a few differences.
+
+An example of an Application loading a Module can be seen below:
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
+width="100%" height="300" 
+src="assets/BE0013_Dividing_an_Apache_Royale_application_with_modules/index.html"></iframe>
 
 ## Why modules?
 
@@ -28,25 +36,29 @@ As your application grows in size, you have to load more and more code just to s
 
 Also, as your application grows in size, the number of files of code you will grow and compile-time will increase. You may have teammates helping develop some of these files. Having to coordinate changes in the various files and wait for long compile-times is expensive. If you have properly designed your application, you know that not every file needs to be re-compiled when other files change, so having one teammate work on one set of files while you work on another saves time and hassle.
 
-A **module** is a separate compilation of one or more source files that results in output that can be loaded when it is needed by the main application.
+A `Module` is a separate compilation of one or more source files that results in output that can be loaded when it is needed by the main application.
 
-A module can contain code that doesn't have a UI, or it can be mostly UI. Modules can provide other UI screens and associated logic. There is a ModuleLoader component that displays the components that are children of a module. MXML files are commonly used to specify the UI components. There is an example in the examples/royale/ModuleExample folder.
+A `Module` can contain code that doesn't have a UI, or it can be mostly UI. Modules can provide other UI screens and associated logic. There is a `ModuleLoader` component that displays the components that are children of a module. MXML files are commonly used to specify the UI components.
 
-Proper use of modules can help maintain "separation of concerns" which helps keep you from writing "spaghetti code". If only the code in one module changes, only that module needs to be recompiled. And if that code isn't needed to show the first screen, then the application will start up faster if that module gets compiled only when it is needed.
+There is an example for [Basic](component-sets/basic.html) UI Set [here](https://github.com/apache/royale-asjs/tree/develop/examples/royale/ModuleExample){:target='_blank'} and other for [Jewel](component-sets/jewel.html) UI Set can be found [here](https://github.com/apache/royale-asjs/tree/develop/examples/blog/BE0013_Dividing_an_Apache_Royale_application_with_modules){:target='_blank'}.
+
+Proper use of modules can help maintain _"separation of concerns"_ which helps keep you from writing _"spaghetti code"_. If only the code in one module changes, only that module needs to be recompiled. And if that code isn't needed to show the first screen, then the application will start up faster if that module is loaded only when it is needed.
 
 ## Compiling modules
 
-Typically, you develop a in a separate folder of source files, and generate the output as a sibling to the other source files, which then cannot be easily accessed by the output of the main app. In JavaScript output, in development mode, the compiler generates lots of files. All these files must be relocated into the main app's output folder so the main app can reference them via the same relative path when the module is compiled into a single output file in production mode. The Royale compiler supports a -module-output=<destination folder> that redirects where the output goes in order to place the development output in the right place.
+Typically, you develop a in a separate folder of source files, and generate the output as a sibling to the other source files, which then cannot be easily accessed by the output of the main app. In JavaScript output, in development mode, the compiler generates lots of files. All these files must be relocated into the main app's output folder so the main app can reference them via the same relative path when the module is compiled into a single output file in production mode.
+
+The Royale compiler supports a `-module-output=<destination folder>` that redirects where the output goes in order to place the development output in the right place.
 
 ## Using modules
 
-Modules are loaded by specifying the path to the main JavaScript file for the module. If you are also working with Flash/AIR output, you can specify the .swf suffix and the Royale ModuleLoader will replace that with .js as needed.
+`Modules` are loaded by specifying the path to the main JavaScript file for the module. If you are also working with Flash/AIR output, you can specify the .swf suffix and the Royale `ModuleLoader` will replace that with .js as needed.
 
 ## Differences from Flex modules
 
-An important difference between Flex modules and Royale modules is how memory is managed. Flash/AIR runtimes support the concept of unloadable code via the **ApplicationDomain** class. If you load a SWF in Flash or AIR and then remove all references to its code and instances, the SWF and related code definitions will be freed from memory.
+An important difference between Flex modules and Royale modules is how memory is managed. Flash/AIR runtimes support the concept of unloadable code via the `ApplicationDomain` class. If you load a SWF in Flash or AIR and then remove all references to its code and instances, the SWF and related code definitions will be freed from memory.
 
-There is currently no emulation of ApplicationDomain in Royale. Royale modules all load into the same global variable scope as the main application. It might be possible to emulate ApplicationDomain, but it will likely be expensive.
+There is currently no emulation of `ApplicationDomain` in Royale. Royale modules all load into the same global variable scope as the main application. It might be possible to emulate `ApplicationDomain`, but it will likely be expensive.
 
 The benefit of having unloadable code in JavaScript may not be as compelling as it is for Flash/AIR. In Flash, SWFs are compressed binaries that cannot be further compressed when downloaded over the network. The code in a SWF is intermediate byte code instead of plain text that has been minified. And Flash always just-in-time compiled intermediate byte code. Different browsers will have different behaviors when interpreting JavaScript.
 
