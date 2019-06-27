@@ -157,6 +157,17 @@
                 },
                 {
                     "path": "create-an-application/code-conventions.md"
+                },
+                {
+                    "path": "create-an-application/optimizations.md",
+                    "children": [
+                        {
+                            "path": "create-an-application/optimizations/compiler-configuration-settings.md"
+                        },
+                        {
+                            "path": "create-an-application/optimizations/doc-comment-directives.md"
+                        }
+                    ]
                 }
             ]
         }

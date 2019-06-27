@@ -25,13 +25,30 @@
     <property environment="env"/>
     <property file="${basedir}/../local.properties"/>
     <property file="${basedir}/../build.properties"/>
-    
+    <condition property="jekyll.executable" value="jekyll" else="jekyll.bat" >
+		<not>
+			<os family="windows"/>
+		</not>	
+    </condition>
+	
+	<property name="launchURL" value="http://127.0.0.1:4000/royale-docs/"/>
+	
     <target name="main" description="Build everything">
-        <exec executable="jekyll" failonerror="true">
+        <exec executable="${jekyll.executable}" failonerror="true">
             <arg value="build" />
             <arg value="--config" />
             <arg value="local_config.yml" />
         </exec>
     </target>
 
+	<target name="serve" description="Serve and launch">
+		<!-- this approach/sequence works on windows, needs checking on mac -->
+		<script language="javascript"><![CDATA[
+			var location = project.getProperty("launchURL").toString();
+			java.awt.Desktop.getDesktop().browse(java.net.URI.create(location));
+		]]></script>
+        <exec executable="${jekyll.executable}" failonerror="true">
+            <arg value="serve" />
+        </exec>
+    </target>
 </project>
