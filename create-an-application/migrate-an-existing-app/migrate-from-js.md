@@ -38,5 +38,5 @@ If you are thinking of moving to an easier way of writing applications, compilin
 
 Take Royale out for a spin!
 
-- [Hello, world!]get-started/hello-world.html)
+- [Hello, world!](get-started/hello-world.html)
 - [Create an applicaton](create-an-Application.html)

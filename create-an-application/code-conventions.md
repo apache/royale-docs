@@ -54,7 +54,7 @@ To compare:
 
 ### Flex
 
-```
+```actionscript
 public class TimerEvent {
   public const TIMER:String = "timer";
 }
@@ -63,8 +63,10 @@ public class Timer {
    dispatchEvent(new TimerEvent(TimerEvent.TIMER));
 }
 ```
+
 Usage:
-```
+
+```actionscript
 import TimerEvent;
 import Timer;
 
@@ -78,7 +80,7 @@ function timerHandler(event:TimerEvent):void
 
 ### Royale
 
-```
+```actionscript
 public class Timer {
    public const TIMER:String = "timer";
    dispatchEvent(new Event(TIMER));
@@ -87,7 +89,7 @@ public class Timer {
 
 Usage:
 
-```
+```actionscript
 import Timer;
 
 var timer:Timer = new Timer();
@@ -97,6 +99,3 @@ function timerHandler(event:Event):void
 {
 }
 ```
-
-
-

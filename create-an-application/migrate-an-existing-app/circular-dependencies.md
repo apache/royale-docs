@@ -21,7 +21,7 @@ title: Circular dependencies
 
 In software, a circular dependency is a relation between two or more modules which either directly or indirectly depend on each other to function properly. An extreme example, which could not work, is:
 
-```
+```actionscript
 public class A extends B
 
 public class B extends A
@@ -32,7 +32,7 @@ Circular dependencies cause a tight coupling of what should be independent modul
 
 You can get away with some circular dependencies when developing an application in Flex or Royale that will be compiled for use in Flash or the AIR environment. You can write code like this:
 
-```
+```actionscript
 public class Child {
   public var parent:Parent;
 }
@@ -56,7 +56,7 @@ GCC recommends refactoring interdependent classes to use interfaces. Some folks 
 
 You would define two interfaces like this:
 
-```
+```actionscript
 public class IChild {
 }
 
@@ -69,7 +69,7 @@ Note that neither interfaces states that the implementation must reference the o
 Anyway, with these interfaces, the classes look like:
 
 
-```
+```actionscript
 public class Child implements IChild {
 public var parent:IParent;
 }
