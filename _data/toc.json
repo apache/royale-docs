@@ -170,6 +170,25 @@
                     ]
                 }
             ]
+        },
+        {
+            "path": "testing.md",
+            "children": [
+                {
+                    "path": "testing/royaleunit.md",
+                    "children": [
+                        {
+                            "path": "testing/royaleunit/create-a-unit-test.md"
+                        },
+                        {
+                            "path": "testing/royaleunit/run-unit-tests-with-ant.md"
+                        },
+                        {
+                            "path": "testing/royaleunit/metadata.md"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
