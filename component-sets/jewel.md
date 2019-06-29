@@ -30,17 +30,21 @@ It's based by design on [Basic](component-sets/basic.html) components. But while
 
 Jewel works on the following table of devices, browsers and versions
 
-|         	    | Browser             	| Minimun Version 	|
-|-----------	|-------------------	|-----------------	|
-| __Desktop__ 	| Google Chrome        	| 44+     	        |
-|           	| Mozilla Firefox      	| 34+     	        |
-|            	| Apple Safari         	| 11.1+         	|
-|            	| Microsoft Edge       	| 15+              	|
-|            	| Microsoft IE      	| 11+             	|
+|         	    | Browser             	| Minimun Version 	| Release Date   |
+|-----------	|-------------------	|-----------------	| -------------- |
+| __Desktop__ 	| Google Chrome        	| 44+     	        | July,21, 2015  |
+|           	| Mozilla Firefox      	| 34+     	        | Dec, 1, 2014   |
+|            	| Apple Safari         	| 11.1+(High Sierra)| Feb, 22 2018   |
+|            	| Microsoft Edge       	| 15+              	|                |
+|            	| Microsoft IE      	| 11+             	|                |
 |            	| Opera             	|               	|
-| __Mobile__  	| iOS SafariMobile    	| 11.0+          	|
-|             	| Android            	| 5.0            	|
-|             	| Windows Mobile    	|               	|
+| __Mobile__  	| iOS SafariMobile    	| 11.0+          	| Sep, 19, 2017  |
+|             	| Android            	| 5.0            	| 2014           |
+|             	| Windows Mobile    	|               	|                |
+
+(*) This list can change depending on evolution and completion of the different components, but normally it should remain in this state.
+
+Thanks to [Browserstack](https://www.browserstack.com){:target='_blank'} we created the list of minimum browser versions (*) where Apache Royale Jewel works consistently
 
 ## Generated Javascript Output
 
