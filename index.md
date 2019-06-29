@@ -22,7 +22,6 @@ title: Welcome to Apache Royale
 
 Designed for the future. Code Once. Run Everywhere.
 
-<!-- ![Apache Royale logo](assets/images/apache-royale-main-logo-1000x1000.png){:height="50%" width="50%"} -->
 <p align="center">
   <img width="33%" height="33%" src="assets/images/apache-royale-main-logo-1000x1000.png">
 </p>
