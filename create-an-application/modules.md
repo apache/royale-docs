@@ -48,7 +48,11 @@ Proper use of modules can help maintain _"separation of concerns"_ which helps k
 
 Typically, you develop a in a separate folder of source files, and generate the output as a sibling to the other source files, which then cannot be easily accessed by the output of the main app. In JavaScript output, in development mode, the compiler generates lots of files. All these files must be relocated into the main app's output folder so the main app can reference them via the same relative path when the module is compiled into a single output file in production mode.
 
-The Royale compiler supports a `-module-output=<destination folder>` that redirects where the output goes in order to place the development output in the right place.
+The Royale compiler supports a `-module-output=<destination folder>` that redirects where the output goes in order to place the development output in the right place. This is useful in some cases when using module that are in the same source path as the main app as opposed to being in separate projects.
+
+> For example in TourDeFlex, the main app is in the `src` folder, and a module example may be in `src/mx/controls/` such as `mx/controls/ButtonExample.mxml`. Without this options, the output might end up in `src/mx/controls/bin/js-debug` and `src/mx/controls/bin/js-release` when it would be better if the output was relative to the main app and go in `bin/js-debug/mx/controls` and `bin/js-release/mx/controls`. Even specifying js-output doesn't work as setting it to the main app's bin folder would result in the output .JS going in the same folder as the main app instead of being nested in mx/controls.  So, by setting this option to mx/controls, the compiler will calculate the desired folder structure.
+
+For complex scenarios (i.e: each module is a separate project), the user can automate copying files to other locations as we do in this [example](https://github.com/apache/royale-asjs/tree/develop/examples/blog/BE0013_Dividing_an_Apache_Royale_application_with_modules){:target='_blank'}.
 
 ## Using modules
 
