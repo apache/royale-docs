@@ -52,7 +52,7 @@ Download the binary package of Royale from our Download page and set it up to us
 
 Follow the instructions for your IDE to create your first “Hello World” application. You can also check out:
 
-[Hello World]get-started/hello-world.html) - Build Hello World in Royale.
+[Hello World](get-started/hello-world.html) - Build Hello World in Royale.
 
 
 ## Where to go from here

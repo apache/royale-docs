@@ -43,7 +43,7 @@ IDEs that support Apache Royale provide getting-started instructions to help you
 
 ## Command-line scripts
 
-To run the compiler, run the js/bin/mxmlc tool in the Royale SDK. The [Download Royale]get-started/download-royale.html) and [Hello World]get-started/hello-world.html) sections provide guidance about how to use the compiler.
+To run the compiler, run the js/bin/mxmlc tool in the Royale SDK. The [Download Royale]get-started/download-royale.html) and [Hello World](get-started/hello-world.html) sections provide guidance about how to use the compiler.
 
 Royale provides [Royale CLI]get-started/royale-cli.html), a tool to simplify creating and compiling applications for those using <a href="https://www.npmjs.com/" target="_blank">npm</a>.
 
