@@ -53,33 +53,33 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 ## Components
 
 | Type          	| Name                                          	| Description                                                                                          	| Available SDK 	| State     	|
-|------------------	|-------------------------------------------------	|------------------------------------------------------------------------------------------------------	|---------------	|--------------	|
-| __Containers__  	| Card                                           	| Container that surrounds other components                                                             	|               	|          	    |
-|                	| Grid                                             	| Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	|               	|          	    |
-|                	| SimpleTable                                   	| A basic HTML table that can be declared in MXML                                                     	|               	| Complete      |
-|                	| Table                                         	| A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	|               	| In Progress   |
-|                	| TabBarContent                                 	| A container to use with TabBar and capable of presenting organized content                            	|               	|           	|
-|                	| Wizard                                           	| 11.0+                                                                                                	|               	|           	|
-| __Components__ 	| [Alert](component-sets/jewel/jewel-alert.html)        	| Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
-|               	| [Button](component-sets/jewel/jewel-button.html)        	|                                                                                                      	|               	|           	|
-|                 	| CheckBox                                      	|                                                                                                      	|               	|           	|
-|                	| ComboBox                                      	|                                                                                                      	|               	|           	|
-|                	| DateChooser                                     	|                                                                                                      	|               	|           	|
-|                	| DateField                                       	|                                                                                                      	|               	|             	|
-|               	| DropDownList                                  	|                                                                                                      	|               	|           	|
-|               	| Form                                           	|                                                                                                      	|               	|           	|
-|               	| FormItem                                      	|                                                                                                      	|               	|           	|
-|                	| Icon                                            	|                                                                                                      	|               	|           	|
-|               	| Image                                         	|                                                                                                      	|               	|           	|
-|               	| Label                                            	|                                                                                                      	|               	|           	|
-|               	| List                                             	|                                                                                                      	|               	|           	|
-|               	| NumericStepper 	                                |                                                                                                      	|               	|           	|
-|               	| PopUp                                          	|                                                                                                      	|               	|           	|
-|               	| RadioButton                                     	|                                                                                                      	|               	|           	|
-|               	| Slider                                        	|                                                                                                      	|               	|           	|
-|               	| SnackBar                                         	|                                                                                                      	|               	|           	|
-|               	| TabBar                                         	|                                                                                                      	|               	|           	|
-|               	| [TextInput](component-sets/jewel/jewel-textinput.html)  	|                                                                                                      	|               	|           	|
+|------------------	|------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------	|---------------	|--------------	|
+| __Containers__  	| [Card](component-sets/jewel/jewel-card.html)              	    | Container that surrounds other components                                                             	|               	|          	    |
+|                	| [Grid](component-sets/jewel/jewel-grid.html)              	    | Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	|               	|          	    |
+|                	| [SimpleTable](component-sets/jewel/jewel-simpletable.html)	    | A basic HTML table that can be declared in MXML                                                     	|               	| Complete      |
+|                	| [Table](component-sets/jewel/jewel-table.html)                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	|               	| In Progress   |
+|                	| [TabBarContent](component-sets/jewel/jewel-tabbarcontent.html)    | A container to use with TabBar and capable of presenting organized content                            	|               	|           	|
+|                	| [Wizard](component-sets/jewel/jewel-wizard.html)             	    | 11.0+                                                                                                	|               	|           	|
+| __Components__ 	| [Alert](component-sets/jewel/jewel-alert.html)            	    | Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
+|               	| [Button](component-sets/jewel/jewel-button.html)          	    |                                                                                                      	|               	|           	|
+|                 	| [CheckBox](component-sets/jewel/jewel-checkbox.html)        	    |                                                                                                      	|               	|           	|
+|                	| [ComboBox](component-sets/jewel/jewel-combobox.html)              |                                                                                                      	|               	|           	|
+|                	| [DateChooser](component-sets/jewel/jewel-datechooser.html)        |                                                                                                      	|               	|           	|
+|                	| [DateField](component-sets/jewel/jewel-datefield.html)            |                                                                                                      	|               	|             	|
+|               	| [DropDownList](component-sets/jewel/jewel-dropdownlist.html)      |                                                                                                      	|               	|           	|
+|               	| [Form](component-sets/jewel/jewel-form.html)                      |                                                                                                      	|               	|           	|
+|               	| [FormItem](component-sets/jewel/jewel-formitem.html)      	    |                                                                                                      	|               	|           	|
+|                	| [Icon](component-sets/jewel/jewel-icon.html)                	    |                                                                                                      	|               	|           	|
+|               	| [Image](component-sets/jewel/jewel-image.html)                    |                                                                                                      	|               	|           	|
+|               	| [Label](component-sets/jewel/jewel-label.html)               	    |                                                                                                      	|               	|           	|
+|               	| [List](component-sets/jewel/jewel-list.html)               	    |                                                                                                      	|               	|           	|
+|               	| [NumericStepper](component-sets/jewel/jewel-numericstepper.html)  |                                                                                                      	|               	|           	|
+|               	| [PopUp](component-sets/jewel/jewel-popup.html)                    |                                                                                                      	|               	|           	|
+|               	| [RadioButton](component-sets/jewel/jewel-radiobutton.html)  	    |                                                                                                      	|               	|           	|
+|               	| [Slider](component-sets/jewel/jewel-slider.html)                  |                                                                                                      	|               	|           	|
+|               	| [SnackBar](component-sets/jewel/jewel-snackbar.html)  	   	    |                                                                                                      	|               	|           	|
+|               	| [TabBar](component-sets/jewel/jewel-tabbar.html)  	            |                                                                                                      	|               	|           	|
+|               	| [TextInput](component-sets/jewel/jewel-textinput.html)        	|                                                                                                      	|               	|           	|
 
 ## Jewel Themes
 
