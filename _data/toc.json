@@ -150,6 +150,9 @@
                         {
                             "path": "component-sets/jewel/jewel-textinput.md"
                         },
+                        {
+                            "path": "component-sets/jewel/jewel-themes.md"
+                        }
                     ]
                 }
             ]
