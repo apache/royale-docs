@@ -34,7 +34,7 @@ Frameworks are software libraries that structure and simplify repeated software 
 - Mate
 - RobotLegs
 
-The first Royale framework in development is *Crux*, based on Swiz for Flex. It proposes to provide:
+The first Royale framework in development is [Crux](crux.html), based on Swiz for Flex. It proposes to provide:
 
 - Inversion of Control (IOC) / Dependency Injection (DI) with metadata
 - Event handling (metadata)
