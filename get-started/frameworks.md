@@ -22,7 +22,21 @@ title: Frameworks
 
 Sets of code libraries availables in Royale
 
-A framework is a set of code that provides support for application development by offering templates, components and examples. Royale provides its own framework for making simple, small and fast applications, but also offers support for using other popular JavaScript frameworks.
+A framework is a set of code that provides support for application development by offering templates, components and examples. Developers using Adobe and Apache Flex benefitted from a number of frameworks, including: Tide, Swiz, Parsley, Cairngorm, PureMVC, DropAS3, Fabrication, Mate, and RobotLegs.
+
+Royale provides its own framework for making simple, small and fast applications, but also offers support for deploying additional Royale frameworks and using popular JavaScript frameworks.
+
+## Apache Royale frameworks
+
+The first Royale framework in development is [Crux](/frameworks/crux.html), based on Swiz for Flex. It proposes to provide:
+
+- Inversion of Control (IOC) / Dependency Injection (DI) with metadata
+- Event handling (metadata)
+- Simple life cycle for asynchronous remote method invocations
+- Decoupling from application code
+
+Documentation for Crux will be available soon.
+
 
 ## Apache Royale Component Sets
 
@@ -34,14 +48,14 @@ Apache Royale supports its own [component sets](component-sets.html) of controls
 
 Why would you use a third-party framework with Royale? Because you like the look and feel of that framework's user interface components but want to use ActionScript to handle the business logic and/or use MXML to set up the UI.
 
-## Other Component Sets
+### Other Component Sets
 
-These Component Sets are created under Royale umbrella, but uses or wraps existing external libraries or frameworks. Royale supports (to varying degrees):
+These component sets are created under the Royale umbrella, but use or wrap existing external libraries or frameworks. Royale supports (to varying degrees):
 
 - [Material Design Lite](https://getmdl.io){:target='_blank'} Most, if not all, components are available.
 
 - [JQuery UI](https://jqueryui.com){:target='_blank'} Only a few components are available. Volunteers are needed to support more components. Note that this does not mean that you write actual JQuery queries in your application source code; it just means that you can use the user interface controls to get the same user experience as JQuery apps offer.
 
-- [CreateJS](https://www.createjs.com){:target='_blank'}  Only a few components are available. Volunteers are needed to support more components.
+- [CreateJS](https://www.createjs.com){:target='_blank'} Only a few components are available. Volunteers are needed to support more components.
 
 Many other JavaScript frameworks could be made to work with Royale if they support dynamic instantiation of components. All it takes is volunteers to make it happen.
