@@ -22,6 +22,13 @@ title: Testing
 
 Methods for testing Apache Royale projects
 
+Every developer is building something from nothing, or adapting something that may already work into a new use, on a new platform, for a new audience. At every stage of the development process, there are more unknowns than knowns.
+
+ - You may think you have written the code clearly and correctly, but when you compile it, it runs mysteriously slowly, or fails to run at all.
+ - You proudly present the current state of the application to your stakeholders, and they shake their heads and say, "But that's not at all what we asked you to build."
+ - Something that was working last week, or in the most recent build, is not working at all today.
+ - Users are doing things with the app that you didn't expect them to do, like putting lines of code in a text entry field, and things are blowing up everywhere.
+
 ## Unit tests
 
 Apache Royale includes the [RoyaleUnit](testing/royaleunit.html) library for unit testing.
