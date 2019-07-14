@@ -28,7 +28,7 @@ _Text coming soon_
 
 ## Requirements
 
-_List of requirements coming soon_
+Apache RoyaleUnit is designed to work with <a href="https://ant.apache.org" target="_blank">Apache Ant</a>, a command-line tool which can drive processes described in build files as targets and extension points dependent upon each other. The Ant website provides an overview, documentation, and a free download of the Ant installer.
 
 ## Tutorials
 
