@@ -22,6 +22,14 @@ title: RoyaleUnit
 
 A unit testing library for Apache Royale
 
+## What RoyaleUnit does
+
+_Text coming soon_
+
+## Requirements
+
+_List of requirements coming soon_
+
 ## Tutorials
 
 * [Create a unit test](testing/royaleunit/create-a-unit-test.html)
