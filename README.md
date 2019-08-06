@@ -11,12 +11,12 @@ We can't assume that everybody understands the conversational shorthand Flex vet
 
 ## Documentation types
 We produce four flavors of documentation:
-1. *Tutorials* to show how to do a complete thing, with source code a reader can copy and learn from.
-2. *How-to guides* that explain how to achieve something in Royale that is either of a general nature ("How to find the bead you need") or does not merit a full tutorial ("How to disable an input field").
-3. *Explanations* that explain the "why" of Royale features--why we do it this way, or avoid doing it that way.
-4. *Technical references* are all the gritty details of what each Royale component, bead, and feature requires, produces, and can do.
+1. *Tutorials* to show how to do a complete thing, with source code a reader can copy and learn from. These generally appear on the website blog at the moment.
+2. *How-to guides* that explain how to achieve something in Royale that is either of a general nature ("How to find the bead you need") or does not merit a full tutorial ("How to disable an input field"). This material should be in the user documentation.
+3. *Explanations* that explain the "why" of Royale features--why we do it this way, or avoid doing it that way. This appears in the high-level-view pages of the user documentation.
+4. *Technical references* are all the gritty details of what each Royale component, bead, and feature requires, produces, and can do. This material would normally be in the <a href="https://royale.apache.org/asdoc/" target="_blank">ASDoc reference</a>, the <a href="https://github.com/apache/royale-asjs/wiki" target="_blank">framework wiki</a>, or the <a href="https://github.com/apache/royale-compiler/wiki" target="_blank">compiler wiki</a>.
 
-No one flavor is better than the others. All contributions strengthen Royale by expanding the number of people who can find the answers they need to create applications.
+No one flavor is better in all circumstances than the others. All contributions strengthen Royale by expanding the number of people who can find the answers they need to create applications.
 
 ## Page structure
 Each .md page starts with "front matter" structured like this:
