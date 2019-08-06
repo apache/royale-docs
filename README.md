@@ -7,7 +7,16 @@ We have three main audiences:
 2. People who are new to AS and MXML, and possibly new to developing applications altogether, and want to know how to get started.
 3. Experienced developers who want to see if Royale will give a better experience both in code development and through the application's lifecycle than what they have been using.
 
-We can't assume that everybody understands the conversational shorthand Flex veterans use. Write for a person of good will who is reading to *find out*, and who wants to get to the next needed nugget of knowledge soon so they can go and make progress on the app they are working on. 
+We can't assume that everybody understands the conversational shorthand Flex veterans use. Write for a person of good will who is reading to *find out*, and who wants to get to the next needed nugget of knowledge soon so they can go and make progress on the app they are working on.
+
+## Documentation types
+We produce four flavors of documentation:
+1. *Tutorials* to show how to do a complete thing, with source code a reader can copy and learn from.
+2. *How-to guides* that explain how to achieve something in Royale that is either of a general nature ("How to find the bead you need") or does not merit a full tutorial ("How to disable an input field").
+3. *Explanations* that explain the "why" of Royale features--why we do it this way, or avoid doing it that way.
+4. *Technical references* are all the gritty details of what each Royale component, bead, and feature requires, produces, and can do.
+
+No one flavor is better than the others. All contributions strengthen Royale by expanding the number of people who can find the answers they need to create applications.
 
 ## Page structure
 Each .md page starts with "front matter" structured like this:
