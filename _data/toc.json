@@ -152,6 +152,9 @@
                         },
                         {
                             "path": "component-sets/jewel/jewel-themes.md"
+                        },
+                        {
+                            "path": "component-sets/jewel/jewel-theme-creation.md"
                         }
                     ]
                 }
