@@ -40,31 +40,29 @@ The `default.css` file is the resuling CSS file that holds all CSS definitions f
 
 ## Jewel Library
 
-Here you'll find the [ActionScript](welcome/features/as3.html) classes that define each component and many other support class files each component need in order to work properly. You'll find a `sass` folder with a `.sass` file per component where all _structural_ definitions are defined. Those definitions can be normal _CSS rules_ or _royale bead definition rules_.
+Here you'll find the [ActionScript](welcome/features/as3.html) classes that define each component and support class files components need to work properly. You'll find a `sass` folder with a `.sass` file for each component which holds all _structural_ definitions. Those definitions can be normal _CSS rules_ or _royale bead definition rules_.
 
-By design, you'll never find any style rule in __Jewel library__ that define _colors, lines, fonts, or shapes_ (those will be part of the theme so we'll locate in the theme library). We'll find only the CSS rules that are needed to generate each jewel component visual structure (i.e: display, position, z-index, overflow,...), and the default ActionScript bead classes that ship with a concrete component per platform (i.e: BeadView, BeadModel, BeadController, BeadLayout,...)
+You'll never find a style rule in the Jewel library that define _colors, lines, fonts, or shapes_ (the theme we locate in the __theme library__ handles these values). We'll find only the CSS rules needed to generate each jewel component visual structure (i.e: display, position, z-index, overflow,...), and the default ActionScript bead classes that ship with a concrete component per platform (i.e: BeadView, BeadModel, BeadController, BeadLayout,...).
 
-> Apache Royale uses CSS through all the framwework to link [beads to the component strand](welcome/features/strands-and-beads.html) so components define the default compositions of beads via CSS.
+> Apache Royale uses CSS through all the framwework to link [beads to the component's strand](welcome/features/strands-and-beads.html) so components define the default composition of beads via CSS.
 
 ## Jewel Theme Library
 
-This library is like a __master theme__ where _colors, fonts, icons or shapes_ are defined and is the library from wich the rest of Jewel theme variants are generated thanks to SASS preprocess power. Each jewel theme in Apache Royale use the definitions in this jewel theme library and [just change a few variables to generate the variants](component-sets/jewel/jewel-theme-creation.html#theme-sass-file)
+This library is like a __master theme__ where _colors, fonts, icons or shapes_ are defined, and is the library which generates Jewel theme variants, thanks to SASS preprocessing power. Each Jewel theme in Apache Royale uses the definitions in this library and [just changes a few variables to generate the variants](component-sets/jewel/jewel-theme-creation.html#theme-sass-file).
 
 ## Primary, Secondary and Emphasized colors
 
-Since jewel themes support 3 diferent colors: __Primary__, __Secondary__ and __Emphasized__, then the __Jewel Theme Library__ folder structure is the following:
+Since Jewel themes support three diferent colors (__Primary__, __Secondary__ and __Emphasized__),  the Jewel Theme Library folder structure is:
 
-* For __Primary__ color: `sass/components-primary` for styles that use primary and default colors.
-* For __Secondary__ color: `sass/components-secondary` for styles that use secondary colors.
-* For __Emphasized__ color: `sass/components-empahsized` for styles that use emphasized colors.
+* __Primary__ color: `sass/components-primary` for styles that use primary and default colors.
+* __Secondary__ color: `sass/components-secondary` for styles that use secondary colors.
+* __Emphasized__ color: `sass/components-empahsized` for styles that use emphasized colors.
 
-`primary` is used by most of the components in Jewel, while `secondary` and `emphasized` is only used for some of them (i.e: Button, Badge or SnackBar) that could need these variants.
+`primary` is used by most of the components in Jewel, while only a few (i.e: Button, Badge or SnackBar) that need these variants use `secondary` and `emphasized`.
 
 ## Theme SASS file
 
-`sass/_theme.sass` is the SASS file where we can make jewel themes take significant visual changes. It's a very simple configuration file with few variables that SASS will use when we want to generate a `default.css` file.
-
-This is essentialy what each of the jewel themes that comes with Apache Royale defines in a different way.
+`sass/_theme.sass` is the SASS file where we can modify Jewel themes. It's a very simple configuration file with variables that SASS uses to generate a `default.css` file. This is essentialy how each of the Jewel themes that come with Apache Royale are defined.
 
 For example, by default, we can find:
 
@@ -77,11 +75,11 @@ $secondary-color: $topaz
 $emphasized-color: $emerald
 ```
 
-so this `_theme.sass` file will create a jewel theme variant that will look _no-flat_ and _light_, with _blue as primary color_, _topaz as secondary color_ and _emerald as emphasized color_.
+so this `_theme.sass` file will create a Jewel theme variant that will look _no-flat_ and _light_, with _blue as primary color_, _topaz as secondary color_ and _emerald as emphasized color_.
 
 ## Jewel Theme Summary
 
-So, in summary, __Jewel library__ has defintions that normally users does not need to change, while __Jewel Theme library__ is like a __master theme__ for all royale jewel themes and a good starting point to create a new user defined jewel theme or just modify one of the ones that comes with the royale distribution.
+__Jewel library__ has defintions that normally users does not need to change, while __Jewel Theme library__ is like a __master theme__ for all royale jewel themes and a good starting point to create a new user defined jewel theme or just modify one of the ones that comes with the royale distribution.
 
 > A user should just need to duplicate the __Jewel Theme Library__ to start modifing each style per jewel component to create a new custom jewel theme.
 
