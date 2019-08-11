@@ -114,7 +114,7 @@ In the `sass` file you find the corresponding CSS selector:
 
 Nested in that selector is the corresponding tree of rules and selectors for that component.
 
-So __Alert__ is composed of four ActionScript files and one `.sass` file that wire the component with its beads and define a set of CSS rules to give a concrete CSS structure, but do not define colors, gradients, shapes or icons for Alert. The them does all of that.
+So __Alert__ is composed of four ActionScript files, and one `.sass` file that wires the component with its beads and defines a set of CSS rules to give a concrete CSS structure, but does not define colors, gradients, shapes or icons for Alert. The theme does all of that.
 
 In __Jewel Theme library__ you can find:
 
