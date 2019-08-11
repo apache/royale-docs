@@ -24,7 +24,7 @@ How to make a new theme for Jewel
 
 Jewel is a component set designed with change of appearance in mind. Jewel comes with a series of pre-designed themes so you can use it right away without having to create your own theme. You can learn more about the existing themes [here](component-sets/jewel/jewel-themes.html). The Jewel themes that come with Apache Royale define 12 colors, dark and light, flat / no-flat visuals. However, you may want a personalized look, and you can either adapt one of the existing themes or create one from scratch.
 
-## Theme Basics
+## Theme basics
 
 Themes are a combination of files that define styles in [Cascading Style Sheets (CSS)](https://en.wikipedia.org/wiki/Cascading_Style_Sheets){:target='_blank'} and other assets like images (JPG, PNG, SVG,...). In Jewel we use [SASS](https://sass-lang.com){:target='_blank'} to define the CSS style rules since is a preprocessor scripting language that is interpreted or compiled into CSS.
 
@@ -75,22 +75,22 @@ $secondary-color: $topaz
 $emphasized-color: $emerald
 ```
 
-so this `_theme.sass` file will create a Jewel theme variant that will look _no-flat_ and _light_, with _blue as primary color_, _topaz as secondary color_ and _emerald as emphasized color_.
+so this `_theme.sass` file will create a Jewel theme variant that will look _no-flat_ and _light_, with _blue as the primary color_, _topaz as the secondary color_ and _emerald as the emphasized color_.
 
-## Jewel Theme Summary
+## Jewel Theme summary
 
-__Jewel library__ has defintions that normally users does not need to change, while __Jewel Theme library__ is like a __master theme__ for all royale jewel themes and a good starting point to create a new user defined jewel theme or just modify one of the ones that comes with the royale distribution.
+__Jewel library__ has defintions that you don't normally need to change, while __Jewel Theme library__ is like a __master theme__ for all Royale Jjewel themes and is a good starting point when you want to create a new Jewel theme or just modify an existing one.
 
-> A user should just need to duplicate the __Jewel Theme Library__ to start modifing each style per jewel component to create a new custom jewel theme.
+> To modify a style, make a copy of the __Jewel Theme Library__ and start adjusting the style for each Jewel component.
 
-## Looking to a concrete jewel component as an example
+## A Jewel component example
 
-Lets take [Jewel Alert](component-sets/jewel/jewel-alert.html) component as an example to help us to visualize the different files that compose this concrete component:
+Let's take the [Jewel Alert](component-sets/jewel/jewel-alert.html) component as an example and look at the different files that compose this component:
 
 In __Jewel library__ you can find:
 
-* [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'}: This is the main __Alert__ component file
-* `sass/components/_alert.sass`: This is the main __Alert__ SASS definition that holds all structural CSS rules and the default beads for Alert. The beads defined here for the __javascript platform__ are:
+* [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'}: This is the main __Alert__ component file.
+* `sass/components/_alert.sass`: This is the main definition file that holds all structural CSS rules and the default beads for Alert. The beads defined here for the JavaScript platform are:
 
 ```sass 
 j|Alert
@@ -100,24 +100,24 @@ j|Alert
     IBeadView:  ClassReference("org.apache.royale.jewel.beads.views.AlertView")
 ```
 
-Regarding the CSS selectors for Alert: The main `.as` file (in this case `Alert.as`) will assign a css selector to the `typeNames` variable:
+Regarding the CSS selectors for Alert: The main `.as` file (in this case `Alert.as`) assigns a css selector to the `typeNames` variable:
 
 ```as3
     typeNames = "jewel alert";
 ```
 
-In the `sass` file you'll find the corresponding CSS selector
+In the `sass` file you find the corresponding CSS selector:
 
 ```sass
     .jewel.alert
 ```
 
-and nested in that selector you'll find the corresponding tree of rules and selectors for that component.
+Nested in that selector is the corresponding tree of rules and selectors for that component.
 
-So __Alert__ is composed by four Actionscript files and one `.sass` files that wire the component with its beads and setup a set of CSS rules to give a concrete CSS structrure, but does not define colors, gradients, shapes or icons for Alert. All of this will be found in the theme.
+So __Alert__ is composed of four ActionScript files and one `.sass` file that wire the component with its beads and define a set of CSS rules to give a concrete CSS structure, but do not define colors, gradients, shapes or icons for Alert. The them does all of that.
 
 In __Jewel Theme library__ you can find:
 
-* `sass/components-primary/_alert.sass`: This is the main __Alert__ SASS theme definition that holds all theme CSS rules. Here you can find colors, gradients, line styles and other visual things that will affect how the __Alert__ component is presented to the user. All those styles will be found inside a `.jewel.alert` CSS selector.
+* `sass/components-primary/_alert.sass`: This is the main __Alert__ SASS definition that holds all theme CSS rules. Here you can define colors, gradients, line styles and other visual features that affect how the __Alert__ component appears to the user. All styles are in a `.jewel.alert` CSS selector.
 
-In this case, `Alert` component doesn't define any `secondary` or `emphasized` color.
+As you can see, the `Alert` component doesn't define any `secondary` or `emphasized` color.
