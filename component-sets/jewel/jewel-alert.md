@@ -59,7 +59,7 @@ To close the window the user can push one of the buttons in the bottom `ControlB
 
 ## Relevant Properties and Methods
 
-> Note: Check the Reference of [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'} for a more detailed list of properties and methods.
+> Check the Reference of [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'} for a more detailed list of properties and methods.
 
 ### Properties
 
@@ -76,7 +76,7 @@ To close the window the user can push one of the buttons in the bottom `ControlB
 | __show__   	| _message(String), title(String), flags(uint), parent(Object)_ 	| Shows the Alert non modal anchored to the given parent object which is usally a root component such,*,as a UIView or body if null	|
 | __close__  	| buttonFlag:uint = 0x000004                                    	| Closes the dialog element.                                                                                                       	|
 
-## Events
+## Relevant Events
 
 `Alert` component uses `CloseEvent.CLOSE` event when the user removes it from the application. You can attach callback listeners to the `CloseEvent.CLOSE` as follows:
 
@@ -97,7 +97,7 @@ private function alertClickHandler(event:CloseEvent):void {
 }
 ```
 
-## Beads
+## Relevant Beads
 
 The `Alert` component uses the following beads:
 
