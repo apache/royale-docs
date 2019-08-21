@@ -37,7 +37,7 @@ Available since version __0.9.4__.
 
 The Jewel Button is a commonly-used rectangular button with a text label. Users can click or tap it to take an action or make a choice.
 
-The Jewel Button can show different looks and feels. By default it appears with light or dark highlights depending on the [jewel theme configuration](component-sets/jewel/jewel-theme-creation.html#theme-sass-file). You can use the `emphasis` property to tint the button with __PRIMARY__, __SECONDARY__ or __EMPHASIZED__ colors (defined as well in the Jewel theme).
+The Jewel Button can show different looks and feels. By default it appears with light or dark highlights depending on the [Jewel theme configuration](component-sets/jewel/jewel-theme-creation.html#theme-sass-file). You can use the `emphasis` property to tint the button with __PRIMARY__, __SECONDARY__ or __EMPHASIZED__ colors (defined as well in the Jewel theme).
 
 When a user interacts with the button (mouse over, long-press, double-click...) the button calls an event listener to perform an action. When a user clicks the mouse on the button or taps the button on a touch screen, the button dispatches a click event.
 
