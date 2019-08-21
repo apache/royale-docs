@@ -37,32 +37,34 @@ Available since version __0.9.4__
 
 The Jewel `Button` component is a commonly used rectangular button with `text` or `html` inside. It looks like it can be pressed and allow users to take actions, and make choices, with a single click or tap.
 
-Jewel Button can show different looks and feels. By default it appears light or dark finishes depending on the [jewel theme configuration](component-sets/jewel/jewel-theme-creation.html#theme-sass-file). Also using the `emphasis` property can be tinted with __PRIMARY__, __SECONDARY__ or __EMPHASIZED__ colors. These colors are as well defined in the jewel theme used.
+Jewel Button can show different looks and feels. By default it appears with light or dark finishes depending on the [jewel theme configuration](component-sets/jewel/jewel-theme-creation.html#theme-sass-file). Also using the `emphasis` property can be tinted with __PRIMARY__, __SECONDARY__ or __EMPHASIZED__ colors (defined as well in the jewel theme).
 
-It typically use event listeners to perform an action when the user interact with the control. When a user clicks the mouse or tap with the finger this control it dispatches a click event.
+It typically use event listeners to perform an action when the user interact with the control (click, mouse over, double click,...). When a user clicks the mouse or tap with the finger this control, it dispatches a click event.
 
-> If you doesn't need a text or label in your Button check BasicButton, located in the jewel supportClasses package since is more lightweight and fits that use case saving some bytes.
+> If you doesn't need a text or label in your Button check jewel [BasicButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.button/BasicButton){:target='_blank'}, located in the jewel `supportClasses` package since is more lightweight and fits that use case saving some bytes.
 
 ## Example of use
 
-In MXML we can declare a button with a default look like this:
+In __MXML__ we can declare a `Button` with a default look like this:
 
 ```mxml
 <j:Button text="Button"/>
 ```
 
-In ActionScript we can do the same in the following way: 
+In __ActionScript__ we can do the same in the following way: 
 
 ```as3
 var b:Button = new Button();
 b.text = "Button";
 ```
 
-An example of `Button` can be seen as when click the following button:
+An example of `Button` can be seen here:
 
-<!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
 width="100%" height="300" 
-src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>-->
+src="assets/jewel/jewel_button/index.html"></iframe>
+
+[code here](assets/jewel/jewel_button/jewel_button.mxml){:target='_blank'}
 
 ## Relevant Properties and Methods
 
@@ -82,15 +84,15 @@ None.
 
 ## Relevant Events
 
-`Button` component has many events like `rollOver`, `rollOut`, `mouseDown`, `mouseUp`, `mouseMove`, `mouseOut`, `mouseOver`, `mouseWheel` and `mouseWheel`, all of wich are of `org.apache.royale.events.MouseEvent` type, but the most important is the `click` event to trigger some action coded in the callback function.
+`Button` component has many events like `rollOver`, `rollOut`, `mouseDown`, `mouseUp`, `mouseMove`, `mouseOut`, `mouseOver`, `mouseWheel` and `mouseWheel`, all of wich are of [org.apache.royale.events.MouseEvent](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/MouseEvent){:target='_blank'} type, but the most important is the `click` event to trigger some action coded in a callback function.
 
-You can attach callback listeners to the `click` as follows:
+You can attach callback listeners to the _click_ event in __MXML__ as follows:
 
 ```mxml
 <j:Button text="Button" click="clickHandler(event)"/>
 ```
 
-the click event will use a clickHandler function written in ActionScript like this:
+the _click_ event will use the `clickHandler` callback function written in __ActionScript__:
 
 ```mxml
 <fx:Script>
@@ -104,7 +106,7 @@ the click event will use a clickHandler function written in ActionScript like th
 
 When the user clicks the button the message _"Hello from a Button!"_ will be printed in the console log.
 
-In ActionScript we can create a similar button in the following way: 
+In __ActionScript__ we can create a similar button in the following way: 
 
 ```as3
 var b:Button = new Button();
@@ -114,9 +116,9 @@ b.addEventListener('click', clickHandler);
 
 ## Relevant Beads
 
-Unlike other components in Royale, Jewel `Button` does not has beads for _View_, _Controller_ or _Model_ in the Javascript platform.
+Unlike other components in Royale, the jewel `Button` does not has beads for _View_, _Controller_ or _Model_ in the Javascript platform.
 
-In the other hand it can be used with other common control beads that provides more functionality. This beads are shared with many other Jewel controls.
+In the other hand it can be used with other common jewel control beads that provides more functionality. This beads are shared with many other jewel controls.
 
 ### Common Beads
 
@@ -130,7 +132,7 @@ In the other hand it can be used with other common control beads that provides m
 
 ## Related controls
 
-Other kind of jewel buttons you can be interested:
+Other jewel button components you can be interested are the following:
 
 * [IconButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/IconButton){:target='_blank'}
 * [ToggleButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/ToggleButton){:target='_blank'}
