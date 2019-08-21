@@ -20,7 +20,7 @@ title: externs
 
 # Externs
 
-Some Apache Royale elements at the moment have limited cross-browser support. To get reliable display and performance in those cases, Royale makes use of existing external JavaScript libraries. For example, [Jewel.Alert](https://apache.github.io/royale-docs/component-sets/jewel/jewel-alert.html){:target='_blank'} uses the HTML dialog element and references the _dialogPolyfill_ external library to make sure the display is as intended in all modern browsers.
+Some Apache Royale elements at the moment have limited cross-browser support. To get reliable display and performance in those cases, Royale makes use of existing external JavaScript libraries. For example, [Jewel.Alert](https://apache.github.io/royale-docs/component-sets/jewel/jewel-alert.html){:target='_blank'} uses the HTML dialog element, which is not reliable across all browsers. So Jewel.Alert references the _dialogPolyfill_ external library to make sure the display is as intended in whichever browser the alert displays.
 
 Google Closure Compiler (GCC) provides a mechanism called _@externs_ that Apache Royale uses to declare that a name for a property or function is defined in external code and so should not be renamed when application code is compiled.
 
