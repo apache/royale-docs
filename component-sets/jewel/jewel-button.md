@@ -64,7 +64,8 @@ An example of `Button` can be seen here:
 width="100%" height="300" 
 src="assets/jewel/jewel_button/index.html"></iframe>
 
-[code here](assets/jewel/jewel_button/jewel_button.mxml){:target='_blank'}
+[code here](https://github.com/apache/royale-docs/blob/master/assets/jewel/jewel_button/jewel_button.mxml){:target='_blank'}
+            
 
 ## Relevant Properties and Methods
 
