@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Jewel Alert
-description: The Jewel Alert component displays a message and one or more buttons in a view that pops up over all other controls and views.
+description: The Jewel Alert component displays a message and one or more buttons in a window that pops up over all other controls and views.
 ---
 
 # Jewel Alert
@@ -30,32 +30,32 @@ Available since version __0.9.4__
 |------------------------------	|----------------------------------	|---------------------------------  |
 | [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'} | [org.apache.royale.jewel.Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Group){:target='_blank'} | [org.apache.royale.core.IPopUp](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IPopUp){:target='_blank'} 	|
 
-<sup>_Note: This component is currently only available in JS_</sup>
+<sup>_Note: This component is currently only available in JavaScript_</sup>.
 
 ## Overview
 
-The `Alert` component displays a message and one or more buttons in a view that pops up over all other controls and views. 
+The `Alert` component displays a message and one or more buttons in a window that pops up over all other controls and views. 
 It uses the `AlertView` bead to display a [modal dialog](https://en.wikipedia.org/wiki/Modal_window){:target='_blank'} with a title and a variety of buttons configured through the flag property of its `show` static function.
 
-> `Alert` use the HTML dialog element, which currently has very limited cross-browser support. To ensure support across all modern browsers, we use dialogPolyfill extern.
+> `Alert` uses the HTML dialog element, which currently has very limited cross-browser support. To ensure support across all modern browsers, we use the dialogPolyfill externs.
 
 ## Example of use
 
-`Alert` is not designed to be instantiated as the majority of components. Instead, you can use the static method `show` to display the component like in the following snipet.
+`Alert` is not designed to be instantiated the way the majority of components are. Instead, use the static method `show` to display the component, as in the following snippet:
 
 ```as3
-Alert.show('This Alert shows a label text and the default OK button.', 'Alert Example');
+Alert.show('This alert shows a label text and the default OK button.', 'Alert Example');
 ```
 
-When using this way Royale generates a [modal dialog](https://en.wikipedia.org/wiki/Modal_window){:target='_blank'} that is added and centered in front of the application above the rest of displayed visual elements.
+When you use `Alert.show()`, Royale generates a [modal dialog](https://en.wikipedia.org/wiki/Modal_window){:target='_blank'} and adds it, centered in front of the application and on top of all displayed visual elements.
 
-An example of `Alert` can be seen as when click the following button:
+Click the following button to see an example of `Alert`:
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
 width="100%" height="300" 
 src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>
 
-To close the window the user can push one of the buttons in the bottom `ControlBar` or programatically call to `close` method on the instance.
+To close the window, click one of the buttons on the bottom `ControlBar`, or programatically call the `Alert.close()` method on the instance.
 
 ## Relevant Properties and Methods
 
@@ -65,22 +65,22 @@ To close the window the user can push one of the buttons in the bottom `ControlB
 
 | PROPERTY 	    | Type   	| Description                                                                                                	|
 |--------------	|----------	|-----------------------------------------------------------------------------------------------------------	|
-| __title__    	| _String_ 	| The title of the `Alert`                                                                                      |
-| __message__  	| _String_ 	| The message to display in the `Alert` body                                                         	        |
-| __flags__    	| _uint_   	| The buttons to display on the `Alert` as bit-mask values. Possible values are: `YES`, `NO`, `OK`, `CANCEL` 	|
+| __title__    	| _String_ 	| The title of the `Alert`.                                                                                      |
+| __message__  	| _String_ 	| The message to display in the `Alert` body.                                                        	        |
+| __flags__    	| _uint_   	| The buttons to display on the `Alert` as bit-mask values. Possible values are: `YES`, `NO`, `OK`, and `CANCEL`. 	|
 
 ### Methods
 
 | Method    	| Parameters                                                    	| Description                                                                                                                      	|
 |-----------	|---------------------------------------------------------------	|----------------------------------------------------------------------------------------------------------------------------------	|
-| __show__   	| _message(String), title(String), flags(uint), parent(Object)_ 	| Shows the Alert non modal anchored to the given parent object which is usally a root component such,*,as a UIView or body if null	|
+| __show__   	| _message(String), title(String), flags(uint), parent(Object)_ 	| Shows the Alert non modal anchored to the given parent object, which is usally a root component such as *, as a UIView or body if null.	|
 | __close__  	| buttonFlag:uint = 0x000004                                    	| Closes the dialog element.                                                                                                       	|
 
 ## Relevant Events
 
-`Alert` component uses `CloseEvent.CLOSE` event when the user removes it from the application. You can attach callback listeners to the `CloseEvent.CLOSE` as follows:
+The `Alert` component uses the `CloseEvent.CLOSE` event when the user removes it from the application. You can attach callback listeners to the `CloseEvent.CLOSE` as follows:
 
-```as3
+```AS3
 var alert:Alert = Alert.show("Do you want to save your changes?", "Save Changes", Alert.OK);
 alert.addEventListener(CloseEvent.CLOSE, alertClickHandler);
 ```
@@ -103,10 +103,10 @@ The `Alert` component uses the following beads:
 
 | Bead Type       	| Implementation                                            	| Description                                    	|
 |-----------------	|-----------------------------------------------------------	|------------------------------------------------	|
-| [IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'}      	| [org.apache.royale.jewel.beads.models.AlertModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/AlertModel){:target='_blank'}           	| The data model for the Alert                   	|
-| [IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'}       	| [org.apache.royale.jewel.beads.views.AlertView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.views/AlertView){:target='_blank'}           	| The bead used to create the parts of the Alert 	|
-| [IBeadController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadController){:target='_blank'} 	| [org.apache.royale.jewel.beads.controllers.AlertController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controllers/AlertController){:target='_blank'} 	| The bead used to handle input events           	|
-| [IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'}     	| [org.apache.royale.jewel.beads.layouts.NullLayout](){:target='_blank'}<sup>_(*)_</sup>  | The bead used to postion the internal parts       |
+| [IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'}      	| [org.apache.royale.jewel.beads.models.AlertModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/AlertModel){:target='_blank'}           	| The data model for the Alert.                   	|
+| [IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'}       	| [org.apache.royale.jewel.beads.views.AlertView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.views/AlertView){:target='_blank'}           	| The bead used to create the elements of the Alert. 	|
+| [IBeadController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadController){:target='_blank'} 	| [org.apache.royale.jewel.beads.controllers.AlertController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controllers/AlertController){:target='_blank'} 	| The bead used to handle input events.           	|
+| [IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'}     	| [org.apache.royale.jewel.beads.layouts.NullLayout](){:target='_blank'}<sup>_(*)_</sup>  | The bead used to postion the elements of the Alert.       |
 
-<sup>_(*) NullLayout is used temporary_</sup>
+<sup>_(*) NullLayout is used temporarily_.</sup>
 
