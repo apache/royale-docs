@@ -56,7 +56,7 @@ parent.addElement(textInput);
 
 where `parent` is the container where the control will be added.
 
-Here is an example of the default button:
+Here is an example of the default text input:
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
 width="100%" height="300" 
