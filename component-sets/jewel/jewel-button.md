@@ -54,9 +54,12 @@ In __MXML__ declare a `Button` with a default look like this:
 In __ActionScript__ we can do the same in the following way: 
 
 ```as3
-var b:Button = new Button();
-b.text = "Button";
+var button:Button = new Button();
+button.text = "Button";
+parent.addElement(button);
 ```
+
+where `parent` is the container where the control will be added.
 
 Here is an example of the default button:
 
@@ -113,6 +116,7 @@ In __ActionScript__ we can add an event handler this way:
 var b:Button = new Button();
 b.text = "Button";
 b.addEventListener('click', clickHandler);
+parent.addElement(button);
 ```
 
 ## Relevant Beads
