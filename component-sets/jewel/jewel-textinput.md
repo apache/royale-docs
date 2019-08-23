@@ -113,4 +113,26 @@ parent.addElement(textInput);
 
 ## Relevant Beads
 
-TODO
+Unlike other components in Royale, the Jewel `TextInput` does not have beads for _View_, _Controller_ or _Model_ in the Javascript platform.
+
+On the other hand, you can add to it beads specialy crafted for this control or other common Jewel control beads (shared with other controls) to provide more functionality.
+
+### TextInput Beads
+
+| Bead Type       	| Implementation                               	  | Description                                     |
+|-----------------	|------------------------------------------------ |------------------------------------------------	|
+| [LowerCase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/LowerCase){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to makes all text change to lower case.           	|
+| [MaxNumberCharacters](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/MaxNumberCharacters){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to set the maximun number of characters the text field can hold.           	|
+| [PasswordInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/PasswordInput){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to secures the text field by masking the input as it is typed. 	|
+| [Restrict](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/Restrict){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to use a regular expresion pattern to validate input from user. |
+| [SearchFilterForList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/SearchFilterForList){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to filter options in other [Jewel List](component-sets/jewel/jewel-list.html) component used in combo with the text input.	|
+| [TextPrompt](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/TextPrompt){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to place a string into the input field when there is no value associated with the text property. |
+| [UpperCase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/UpperCase){:target='_blank'}       	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to makes all text change to upper case.  	|
+
+### Common Beads
+
+| Bead Type       	| Implementation                               	  | Description                                     |
+|-----------------	|------------------------------------------------ |------------------------------------------------	|
+| [Disabled](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/Disabled){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | This bead lets you disable and enable a Jewel control.	|
+| [SizeControl](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/SizeControl){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to give the Jewel control a custom size.           	|
+| [ToolTip](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/ToolTip){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to enable floating a text string over the control when the user hovers the mouse cursor over it. |
