@@ -61,7 +61,7 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 |                	| [TabBarContent](component-sets/jewel/jewel-tabbarcontent.html)    | A container to use with TabBar and capable of presenting organized content                            	|               	|           	|
 |                	| [Wizard](component-sets/jewel/jewel-wizard.html)             	    | 11.0+                                                                                                	|               	|           	|
 | __Components__ 	| [Alert](component-sets/jewel/jewel-alert.html)            	    | Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
-|               	| [Button](component-sets/jewel/jewel-button.html)          	    |                                                                                                      	|               	|           	|
+|               	| [Button](component-sets/jewel/jewel-button.html)          	    | A commonly-used rectangular button with a text label. Users can click or tap it to take an action. 	| 0.9.4         	| Complete  	|
 |                 	| [CheckBox](component-sets/jewel/jewel-checkbox.html)        	    |                                                                                                      	|               	|           	|
 |                	| [ComboBox](component-sets/jewel/jewel-combobox.html)              |                                                                                                      	|               	|           	|
 |                	| [DateChooser](component-sets/jewel/jewel-datechooser.html)        |                                                                                                      	|               	|           	|
@@ -79,7 +79,7 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 |               	| [Slider](component-sets/jewel/jewel-slider.html)                  |                                                                                                      	|               	|           	|
 |               	| [SnackBar](component-sets/jewel/jewel-snackbar.html)  	   	    |                                                                                                      	|               	|           	|
 |               	| [TabBar](component-sets/jewel/jewel-tabbar.html)  	            |                                                                                                      	|               	|           	|
-|               	| [TextInput](component-sets/jewel/jewel-textinput.html)        	|                                                                                                      	|               	|           	|
+|               	| [TextInput](component-sets/jewel/jewel-textinput.html)        	| A control for single-line text field. 	| 0.9.4         	| Complete  	|
 
 ## Jewel Themes
 

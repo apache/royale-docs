@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Jewel Button
-description: The Jewel Button is a commonly-used rectangular button with a text label. Users can click or tap it to take an action or make a choice.
+description: The Jewel Button is a commonly-used rectangular button with a text label. Users can click or tap it to take an action.
 
 ---
 

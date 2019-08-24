@@ -53,6 +53,9 @@
                     "path": "features/as3.md",
                     "children": [
                         {
+                            "path": "features/actionscript/metadata.md"
+                        },
+                        {
                             "path": "features/actionscript/abstract-classes.md"
                         },
                         {
