@@ -33,6 +33,9 @@
                         },
                         {
                             "path": "welcome/features/view-states.md"
+                        },
+                        {
+                            "path": "welcome/features/modules.md"
                         }
                     ]
                 },
@@ -238,9 +241,6 @@
                 },
                 {
                     "path": "create-an-application/security.md"
-                },
-                {
-                    "path": "create-an-application/modules.md"
                 },
                 {
                     "path": "create-an-application/code-conventions.md"
