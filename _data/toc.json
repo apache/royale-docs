@@ -83,6 +83,20 @@
                 },
                 {
                     "path": "features/modules.md"
+                },
+                {
+                    "path": "features/loading-external-data.md",
+                    "children": [
+                        {
+                            "path": "features/loading-external-data/httpservice.md"
+                        },
+                        {
+                            "path": "features/loading-external-data/json.md"
+                        },
+                        {
+                            "path": "features/loading-external-data/amf.md"
+                        }
+                    ]
                 }
             ]
         },
