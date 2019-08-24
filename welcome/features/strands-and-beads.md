@@ -16,6 +16,7 @@
 
 layout: docpage
 title: Strands and Beads
+description: Adding functionality to a component through composition
 ---
 
 # Strands and Beads

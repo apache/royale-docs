@@ -16,6 +16,7 @@
 
 layout: docpage
 title: Components
+description: Meet the UI building blocks.
 ---
 # Components
 

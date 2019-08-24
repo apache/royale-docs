@@ -16,6 +16,7 @@
 
 layout: docpage
 title: Features and Concepts
+description: Features and Concepts
 ---
 
 # Features and Concepts
@@ -36,7 +37,9 @@ Royale provides a variety of [component sets](./user-interface/components.html),
 
 The underlying component patterns in most Royale components rely on a plug-in model.  Instead of making large component classes with lots of code baked in, each individual feature of a component is designed as its own class with an interface marking it as a "Bead", and then the component itself is called a "Strand" and Beads are placed on the Strand to compose a Royale component.  You can [read more about Strands and Beads here](welcome/features/strands-and-beads.html).
 
-## Calling to/from external JavaScript code
+## ExternalInterface and Externs
 
-Sometimes you may want your Royale application to call an external piece of JavaScript that is also hosted in your web page, or even for some extenal JavaScript from your page to call into the Royale application. In the Flex (and Flash) world, there was the possibility to use the "ExternalInterface" class to achieve this functionality. If you want this in Royale, there are some options available that you can [read about here](welcome/features/external-interface.html).
+Sometimes you may want your Royale application to call an external piece of JavaScript that is also hosted in your web page, or even for some extenal JavaScript from your page to call into the Royale application. In the Flex (and Flash) world, there was the possibility to use the `ExternalInterface` class to achieve this functionality. If you want this in Royale, there are some options available that you can [read about here](welcome/features/external-interface.html).
+
+Another option are externs, wich is uses [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/){:target='_blank'} to declare that a name for a class, property or function is defined in external code and so should not be renamed when application code is compiled. Apache Royale can use the properties of the external library, and you can even see them as options if you are using an __IDE__, with _code intelligence_ enabled. [read about here](welcome/features/externs.html).
 
