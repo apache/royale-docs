@@ -16,9 +16,12 @@
 
 layout: docpage
 title: Value Objects
+description: Plain ActionScript Objects with properties or arrays
 ---
 
 # Value Objects
+
+Plain ActionScript Objects with properties or arrays
 
 Queries for data to many servers return JSON, which is a plain object or array often referencing other plain objects and arrays. In ActionScript there are advantages to using something called "data classes" or "value objects" (also sometimes "ValueObjects").
 
@@ -30,7 +33,7 @@ There is more than one way to create a Value Object for JSON objects. This tutor
 
 Many people prefer to keep their Value Objects in a separate folder/package. For simplicity in this tutorial, we will just create the Value Object in the main "src" folder. It will look like this:
 
-```
+```as3
 package {
 
 public class LogEntry
@@ -45,11 +48,11 @@ public class LogEntry
 ```
 You can download this file from [here](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer/src/main/royale/LogEntry.as).
 
-Notice the use of [Bindable](data-driven/data-binding.html) metadata. This special syntax indicates to the compiler that there are no DataBinding notifications for the message field.  Once it is set, it will not change. We could also specify "message" as a "const" instead of a "var" and set up a constructor with parameters, but constructor parameters are not allowed for anything that wants to be declared in MXML.
+Notice the use of [Bindable](welcome/features/data-binding.html) metadata. This special syntax indicates to the compiler that there are no DataBinding notifications for the message field.  Once it is set, it will not change. We could also specify "message" as a "const" instead of a "var" and set up a constructor with parameters, but constructor parameters are not allowed for anything that wants to be declared in MXML.
 
 Once we have the LogEntry Value Object, we use LogEntry throughout the app. In the conversion loop, we change it to look like this:
 
-```
+```as3
         for (var i:int = 0; i < n; i++)
         {
             var obj:Object = results[i];
@@ -64,7 +67,7 @@ Once we have the LogEntry Value Object, we use LogEntry throughout the app. In t
 
 In the data binding to the MultilineLabel, we must declare the type of the object in the Array so that the compilers know that the message property is from a LogEntry and should not be changed.
 
-```
+```mxml
 <js:MultilineLabel text="{LogEntry(commits[dg.selectedIndex]).message}" width="600" />
 ```
 
@@ -74,7 +77,7 @@ We could define more Value Objects like LogEntry for these GitHub API data types
 
 Another way to prevent the Google Closure Compiler from renaming variables is to use bracket notation.  To use the fewest bracket notations (because they are prone to mispelling) we will refactor the code a bit (which should also make it run a bit faster). Now the conversion loop looks like this:
 
-```
+```as3
         for (var i:int = 0; i < n; i++)
         {
             var obj:Object = results[i];

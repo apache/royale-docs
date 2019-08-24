@@ -43,3 +43,10 @@ Sometimes you may want your Royale application to call an external piece of Java
 
 Another option are externs, wich is uses [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/){:target='_blank'} to declare that a name for a class, property or function is defined in external code and so should not be renamed when application code is compiled. Apache Royale can use the properties of the external library, and you can even see them as options if you are using an __IDE__, with _code intelligence_ enabled. [read about here](welcome/features/externs.html).
 
+## Data Binding
+
+[read about here](welcome/features/data-binding.html)
+
+## View States
+
+[read about here](welcome/features/view-states.html)

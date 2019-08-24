@@ -24,6 +24,12 @@
                         },
                         {
                             "path": "welcome/features/externs.md"
+                        },
+                        {
+                            "path": "welcome/features/data-binding.md"
+                        },
+                        {
+                            "path": "welcome/features/view-states.md"
                         }
                     ]
                 },
