@@ -50,7 +50,15 @@
             "path": "features-and-concepts.md",
             "children": [
                 {
-                    "path": "features/as3.md"
+                    "path": "features/as3.md",
+                    "children": [
+                        {
+                            "path": "features/actionscript/abstract-classes.md"
+                        },
+                        {
+                            "path": "features/actionscript/private-constructors.md"
+                        }
+                    ]
                 },
                 {
                     "path": "features/mxml.md"

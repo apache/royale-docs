@@ -15,8 +15,8 @@
 # limitations under the License.
 
 layout: docpage
-title: Abstract classes in ActionScript
-
+title: Abstract classes
+description: Abstract classes in ActionScript
 ---
 
 # Abstract classes in ActionScript

@@ -15,8 +15,8 @@
 # limitations under the License.
 
 layout: docpage
-title: Private constructors in ActionScript
-
+title: Private constructors
+description: Private constructors in ActionScript
 ---
 
 # Private constructors in ActionScript
