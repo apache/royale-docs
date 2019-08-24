@@ -33,7 +33,7 @@ This document is divided into several sections:
 
 [Security](create-an-application/security.html) provides more information about making sure hackers can't use your app to be malicous and about dealing with common security restrictions when your app wants to access external resources.
 
-[Modules](welcome/features/modules.html) discusses how to break your application into pieces so it doesn't have to all get downloaded at once.  Or have the whole thing compiled at once.
+[Modules](features/modules.html) discusses how to break your application into pieces so it doesn't have to all get downloaded at once.  Or have the whole thing compiled at once.
 
 [Royale code conventions](create-an-application/code-conventions.html) explains the typical ways Royale developers name files, classes, function, variables and more.
 

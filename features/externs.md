@@ -92,4 +92,4 @@ To learn more about using the huge range of external JavaScript libraries that i
 
 ## ExternalInterface
 
-Check [ExternalInterface](welcome/features/external-interface.html) to know another way to communicate to/from External JavaScript.
+Check [ExternalInterface](features/external-interface.html) to know another way to communicate to/from External JavaScript.

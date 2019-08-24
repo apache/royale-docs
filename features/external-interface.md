@@ -76,4 +76,4 @@ MyJSInterface.testFunction("This will be passed to TestFunc");
 
 ## Externs
 
-Finally a better and recommended way is to use [Externs](welcome/features/externs.html) to know another way to communicate to/from External JavaScript that brings many benefits like _code completion_ and _code intelligence_ since externs code is considered standard __ActionScript__ code.
+Finally a better and recommended way is to use [Externs](features/externs.html) to know another way to communicate to/from External JavaScript that brings many benefits like _code completion_ and _code intelligence_ since externs code is considered standard __ActionScript__ code.

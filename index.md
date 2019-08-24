@@ -32,7 +32,7 @@ This document is divided into several sections:
 
  * [High Level View](welcome/high-level-view.html) gives an overview of Royale.
 
- * [Features and Concepts](welcome/features-and-concepts.html) explains the main features of Royale and some concepts that might help you be more productive.
+ * [Features and Concepts](features-and-concepts.html) explains the main features of Royale and some concepts that might help you be more productive.
 
  * [A Bit of History](welcome/history.html) provides a brief background on how Royale came to be.
 

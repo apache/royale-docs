@@ -16,6 +16,7 @@
 
 layout: docpage
 title: High Level View
+description: Where we come from
 ---
 <!-- Based on material written by Peter Ent and modified by Tom Chiverton: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=34013930 -->
 
@@ -29,8 +30,8 @@ While Flex may work using Flash in browsers or within AIR on computers with trad
 
 Beyond that, it is becoming clear that Royale can provide significant developer productivity gains for new projects. Flex made it easy and efficient to create robust applications. Like Flex, Royale provides:
 
- * Declarative Language ([MXML](welcome/features/mxml.html)) - Declarative languages provide a schematic, or diagram. of the pieces of the application, and are more terse than options like JavaScript.
- * Semi-Structured Language ([ActionScript](welcome/features/as3.html)) - ActionScript deploys classes and interfaces, so it can do a better job of enforcing correct use of APIs than JavaScript can.
+ * Declarative Language ([MXML](features/mxml.html)) - Declarative languages provide a schematic, or diagram. of the pieces of the application, and are more terse than options like JavaScript.
+ * Semi-Structured Language ([ActionScript](features/as3.html)) - ActionScript deploys classes and interfaces, so it can do a better job of enforcing correct use of APIs than JavaScript can.
  * Runtime Verifier - The verifier catches errors at runtime so you can address them before packaging a release.
  * Choice of IDEs -  You can choose the IDE that suits you best, and the IDEs can provide better code assistance because the coding language is structured.
 
@@ -40,11 +41,13 @@ These features help you make fewer mistakes when writing code, and that saves ti
 <!-- Coming soon: LINK TO OM's UPDATED SLIDE SHOW http://events.linuxfoundation.org/sites/events/files/slides/FlexJS_ApacheCon_2015.pdf -->
 
 ## How it works
-Because both [ActionScript](welcome/features/as3.html) and JavaScript are based on the same language, ECMAScript, most code you write in AS translates well to JS. One significant difference is that AS uses the concepts of classes and objects to structure how your code functions, while pure JavaScript does not have those concepts. When you get ready to compile and run your application, the Royale compiler translates AS-specific code into JS code organized into pseudo-classes, which then run just fine in a JavaScript world.
+
+Because both [ActionScript](features/as3.html) and JavaScript are based on the same language, ECMAScript, most code you write in AS translates well to JS. One significant difference is that AS uses the concepts of classes and objects to structure how your code functions, while pure JavaScript does not have those concepts. When you get ready to compile and run your application, the Royale compiler translates AS-specific code into JS code organized into pseudo-classes, which then run just fine in a JavaScript world.
 
 That takes care of pretty much everything except the user interface. For that, Royale provides a set of UI containers and controls that do the work that the pure Flex containers and controls required the Flash engine to do.
 
 ## Status
+
 Adobe Royale 0.9.1 was released in February, 2018. It is roughly of beta quality. The latest release is always available on the *Download* tab of this site.
 
 Our project does not have a roadmap. As with most Apache projects, Royale is largely staffed by devoted volunteers. Rather than having a project owner who directs development, contributors come to agreement as a group about what they will work on next. Decisions are based on a combination of contributor skills and interests, and feature requests we receive from both Apache Flex and Royale users.

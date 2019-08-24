@@ -47,9 +47,9 @@ Use HTML comments at the top of the document for any explanatory notes for the d
 
 ## Links
 
-In the .md files, links have to be full paths without the leading slash. So to link to the published, HTML, version of /Welcome/Features/as3.md, you would use
+In the .md files, links have to be full paths without the leading slash. So to link to the published, HTML, version of features/as3.md, you would use
 
-```[AS3](welcome/features/as3.html)``` 
+`[AS3](features/as3.html)` 
 
 without the leading "/". Links are case-sensitive, and you need to insert ```%20``` for any space that appears in the target file's name. Check the guidance about file names, above.
 

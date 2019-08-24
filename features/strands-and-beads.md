@@ -23,7 +23,7 @@ description: Adding functionality to a component through composition
 
 Adding functionality to a component through composition
 
-Strands and beads are key concepts in Royale, related to the [PAYG](welcome/features/payg.html)  (pay as you go) concept. The idea is to keep component code as lightweight as possible, and to add functionality and complexity only to the components that need it.
+Strands and beads are key concepts in Royale, related to the [PAYG](features/payg.html)  (pay as you go) concept. The idea is to keep component code as lightweight as possible, and to add functionality and complexity only to the components that need it.
 
 > For example, you may use a lot of text input fields in your application, but only one or two need to be able to protect passwords by converting the display of text the user provides into dots. You may want to disable or enable some instances of the text input component, but not all of them, while an end user is working with your application. There is no reason to have that extra functionality (and added weight of code) available everywhere _"just in case"_, as was the rule in Apache Flex.
 

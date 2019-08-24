@@ -55,8 +55,8 @@ The Royale compiler extends the ActionScript language with useful, new features.
 
 The following new ActionScript features are available with the Royale compiler:
 
-* [Abstract Classes](welcome/features/actionscript/abstract-classes.html)
-* [Private Constructors](welcome/features/actionscript/private-constructors.html)
+* [Abstract Classes](features/actionscript/abstract-classes.html)
+* [Private Constructors](features/actionscript/private-constructors.html)
 
 ### Limitations of ActionScript language extensions
 

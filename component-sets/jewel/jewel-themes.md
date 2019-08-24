@@ -23,7 +23,7 @@ title: Jewel Themes
 The look and feel of the jewel component set
 
 Jewel component set focus on themes. Themes provides the capability of change the appearance of _all_ components at once. 
-A theme is a predefined CSS file (and optionally a other assets like images) that holds the definitions of each Jewel component, its subcomponents and the default [beads](welcome/features/strands-and-beads.html) used to configure that components. 
+A theme is a predefined CSS file (and optionally a other assets like images) that holds the definitions of each Jewel component, its subcomponents and the default [beads](features/strands-and-beads.html) used to configure that components. 
 
 Royale use the theme to add the right css selectors to the final compilation so when the user loads the application the required css and other files are loaded and the application shows a concrete look and feel.
 

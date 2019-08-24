@@ -8,38 +8,6 @@
                     "path": "welcome/high-level-view.md"
                 },
                 {
-                    "path": "welcome/features-and-concepts.md",
-                    "children": [
-                        {
-                            "path": "welcome/features/as3.md"
-                        },
-                        {
-                            "path": "welcome/features/mxml.md"
-                        },
-                        {
-                            "path": "welcome/features/payg.md"
-                        },
-                        {
-                            "path": "welcome/features/strands-and-beads.md"
-                        },
-                        {
-                            "path": "welcome/features/external-interface.md"
-                        },
-                        {
-                            "path": "welcome/features/externs.md"
-                        },
-                        {
-                            "path": "welcome/features/data-binding.md"
-                        },
-                        {
-                            "path": "welcome/features/view-states.md"
-                        },
-                        {
-                            "path": "welcome/features/modules.md"
-                        }
-                    ]
-                },
-                {
                     "path": "welcome/history.md"
                 },
                 {
@@ -75,6 +43,38 @@
                 },
                 {
                     "path": "get-started/hello-world.md"
+                }
+            ]
+        },
+        {
+            "path": "features-and-concepts.md",
+            "children": [
+                {
+                    "path": "features/as3.md"
+                },
+                {
+                    "path": "features/mxml.md"
+                },
+                {
+                    "path": "features/payg.md"
+                },
+                {
+                    "path": "features/strands-and-beads.md"
+                },
+                {
+                    "path": "features/external-interface.md"
+                },
+                {
+                    "path": "features/externs.md"
+                },
+                {
+                    "path": "features/data-binding.md"
+                },
+                {
+                    "path": "features/view-states.md"
+                },
+                {
+                    "path": "features/modules.md"
                 }
             ]
         },

@@ -40,11 +40,11 @@ The `default.css` file is the resuling CSS file that holds all CSS definitions f
 
 ## Jewel Library
 
-Here you'll find the [ActionScript](welcome/features/as3.html) classes that define each component and support class files components need to work properly. You'll find a `sass` folder with a `.sass` file for each component which holds all _structural_ definitions. Those definitions can be normal _CSS rules_ or _royale bead definition rules_.
+Here you'll find the [ActionScript](features/as3.html) classes that define each component and support class files components need to work properly. You'll find a `sass` folder with a `.sass` file for each component which holds all _structural_ definitions. Those definitions can be normal _CSS rules_ or _royale bead definition rules_.
 
 You'll never find a style rule in the Jewel library that define _colors, lines, fonts, or shapes_ (the theme we locate in the __theme library__ handles these values). We'll find only the CSS rules needed to generate each jewel component visual structure (i.e: display, position, z-index, overflow,...), and the default ActionScript bead classes that ship with a concrete component per platform (i.e: BeadView, BeadModel, BeadController, BeadLayout,...).
 
-> Apache Royale uses CSS through all the framwework to link [beads to the component's strand](welcome/features/strands-and-beads.html) so components define the default composition of beads via CSS.
+> Apache Royale uses CSS through all the framwework to link [beads to the component's strand](features/strands-and-beads.html) so components define the default composition of beads via CSS.
 
 ## Jewel Theme Library
 
