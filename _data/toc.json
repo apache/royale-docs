@@ -88,6 +88,9 @@
                     "path": "features/modules.md"
                 },
                 {
+                    "path": "features/styling.md"
+                },
+                {
                     "path": "features/loading-external-data.md",
                     "children": [
                         {
