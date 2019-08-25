@@ -22,9 +22,8 @@ title: Welcome to Apache Royale
 
 Designed for the future. Code Once. Run Everywhere.
 
-<p align="center">
-  <img width="33%" height="33%" src="assets/images/apache-royale-main-logo-1000x1000.png">
-</p>
+{:align="center"}
+![Apache Royale Logo](assets/images/apache-royale-main-logo-1000x1000.png){:height="33%" width="33%"}
 
 This is the main documentation for Apache Royale.  If you are looking for the API Reference, [click here](http://royale.apache.org/asdoc/index.html){:target='_blank'}.
 
