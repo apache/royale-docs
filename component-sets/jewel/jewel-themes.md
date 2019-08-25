@@ -31,6 +31,7 @@ Royale use the theme to add the right css selectors to the final compilation so 
 
 Jewel comes with predefined themes based on the 12 color wheel below:
 
+{:align="center"}
 ![Jewel 12 color wheel](assets/images/apache-royale-jewel-12-color-wheel.jpeg)
 
 Current colors are:
@@ -54,22 +55,25 @@ Current colors are:
 
 Jewel has been designed to cover multiple visual needs and support Light/Dark and Flat/No Flat themes:
 
+{:align="center"}
 ![Light/No Flat](assets/images/apache-royale-jewel-light-noflat.jpeg){:height="80%" width="80%"}
 <br>
 Light/No Flat
-<br><br>
+
+{:align="center"}
 ![Dark/No Flat](assets/images/apache-royale-jewel-dark-noflat.jpeg){:height="80%" width="80%"}
 <br>
 Dark/No Flat
-<br><br>
+
+{:align="center"}
 ![Light/Flat](assets/images/apache-royale-jewel-light-flat.jpeg){:height="80%" width="80%"}
 <br>
 Light/Flat
-<br><br>
+
+{:align="center"}
 ![Dark/Flat](assets/images/apache-royale-jewel-dark-flat.jpeg){:height="80%" width="80%"}
 <br>
 Dark/Flat
-<br><br>
 
 Jewel Themes are a CSS file in the end (`default.css`), with all needed CSS rules predefined. We create this CSSs using the __Jewel SASS Theme framework__ located in __JewelTheme__ project. By udating the rules in this theme project, we can recompile all predefined jewel themes in Apache Royale to update those themes with the latest changes.
 
