@@ -13,13 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-title: Apache Royale Documentation
-baseurl: /royale-docs
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed # possible values: nested expanded compact compressed
-algolia:
-  application_id: RDWVZJYELD
-  index_name: royale_docs
-  search_only_api_key: 890fa760fbe09782229acd811738def3
+source 'https://rubygems.org'
+
+gem 'jekyll', '~> 3.6'
+
+group :jekyll_plugins do
+  gem 'jekyll-algolia'
+end

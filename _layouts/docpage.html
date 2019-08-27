@@ -105,14 +105,31 @@ limitations under the License.
   </header>
 
   <div class="toc_and_doc">
+    
     <div class="content" id="content">
+
       {{content}}
+
+      
+      <div class="post-list" id="search-hits">
+        {% for post in site.pages %}
+          <div class="post-item">
+            <h3>
+              <a class="post-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+            </h3>
+            <div class="post-snippet">{{ page.description | description }}</div>
+          </div>
+        {% endfor %}
+      </div>
+      
+
 
       <div class="bottom-links">
         <a href="https://github.com/apache/royale-docs/edit/master/{{ page.path }}" target="_blank">Edit this page</a>
       </div>
     </div>
     <div class="toc" id="toc">
+        <div id="search-searchbar"></div>
       
   {% assign pagepathparts = page.path | split: "/" %}
   {% assign numparts = pagepathparts | size %}
@@ -405,6 +422,8 @@ limitations under the License.
       Copyright © 2017-2018 <a href="https://www.apache.org">The Apache Software Foundation</a>, Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>
     </div>
   </div>
+
+  {% include algolia.html %}
 
 </body>
 </html>
