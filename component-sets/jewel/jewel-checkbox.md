@@ -53,7 +53,7 @@ parent.addElement(checkBox);
 
 where `parent` is the container where the control will be added.
 
-Here is an example of the default check box:
+Here is an example for this control:
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
 width="100%" height="300" 
@@ -107,7 +107,7 @@ In __ActionScript__ we can add an event handler this way:
 
 ```as3
 var checkBox:CheckBox = new CheckBox();
-checkBox.text = "A Checkbox";
+checkBox.text = "A CheckBox";
 checkBox.value = 50;
 checkBox.addEventListener('change', changeHandler);
 parent.addElement(checkBox);
@@ -125,8 +125,12 @@ On the other hand, you can add to it other common Jewel control beads to provide
 |-----------------	|------------------------------------------------ |------------------------------------------------	|
 | [Disabled](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/Disabled){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | This bead lets you disable and enable a Jewel control.	|
 
+## More examples
+
+* [Selecting options from a group of Jewel CheckBox controls](https://royale.apache.org/selecting-options-from-a-group-of-jewel-checkbox-controls/){:target='_blank'}
+
 ## Related controls
 
 Other related Jewel components are:
 
-* [RadioButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/RadioButton){:target='_blank'}
+* [RadioButton](component-sets/jewel/jewel-radiobutton.html)
