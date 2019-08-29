@@ -135,6 +135,12 @@ On the other hand, you can add to it other common Jewel control beads to provide
 | [ToolTip](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/ToolTip){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to enable floating a text string over the control when the user hovers the mouse cursor over it. |
 | [Badge](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/Badge){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to provide small status descriptors for the control       |
 
+## More examples
+
+* [Using the Jewel Slider Control](https://royale.apache.org/using-the-jewel-slider-control/){:target='_blank'}
+* [Selecting options from a group of Jewel CheckBox controls](https://royale.apache.org/selecting-options-from-a-group-of-jewel-checkbox-controls/){:target='_blank'}
+* [Dividing an Apache Royale application with modules](https://royale.apache.org/dividing-an-apache-royale-application-with-modules/){:target='_blank'}
+
 ## Related controls
 
 Other useful Jewel button components are:

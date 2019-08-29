@@ -136,3 +136,9 @@ On the other hand, you can add to it beads specialy crafted for this control or 
 | [Disabled](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/Disabled){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | This bead lets you disable and enable a Jewel control.	|
 | [SizeControl](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/SizeControl){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to give the Jewel control a custom size.           	|
 | [ToolTip](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/ToolTip){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to enable floating a text string over the control when the user hovers the mouse cursor over it. |
+
+## More examples
+
+* [Binding the text property of a Jewel TextInput to update a text Label](https://royale.apache.org/binding-the-text-property-of-a-jewel-textinput-to-update-a-text-label/){:target='_blank'}
+* [Using View States to show or hide content](https://royale.apache.org/using-view-states-to-show-or-hide-content/){:target='_blank'}
+* [Dividing an Apache Royale application with modules](https://royale.apache.org/dividing-an-apache-royale-application-with-modules/){:target='_blank'}
