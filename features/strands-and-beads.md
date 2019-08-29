@@ -26,14 +26,14 @@ Adding functionality to a component through composition
 Strands and beads are key concepts in Royale, related to the [PAYG](features/payg.html)  (pay as you go) concept. The idea is to keep component code as lightweight as possible, and to add functionality and complexity only to the components that need it.
 
 {:align="center"}
-![Fig 1: MVC with Strands and Beads](assets/images/strand-beads/strand-bead-1.jpg)
+![Fig 1: MVC with Strands and Beads](assets/images/strand-beads/strand-bead-1.jpg){:height="70%" width="70%"}
 
 In the image, a [TextInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html/TextInput){:target='_blank'} is composed by a model ([TextModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads.models/TextModel){:target='_blank'}), a view ([TextInputWithBorderView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/TextInputWithBorderView){:target='_blank'}) and a controller ([EditableTextKeyboardController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads.controllers/EditableTextKeyboardController){:target='_blank'}). These are the minimun [MVC](https://en.wikipedia.org/wiki/Model–view–controller){:target='_blank'} beads to make it work for this component.
 
 > For example, you may use a lot of text input fields in your application, but only one or two need to be able to protect passwords by converting the display of text the user provides into dots. You may want to disable or enable some instances of the text input component, but not all of them, while an end user is working with your application. There is no reason to have that extra functionality (and added weight of code) available everywhere _"just in case"_, as was the rule in Apache Flex.
 
 {:align="center"}
-![Fig 1: Adding optional Beads to the Strand](assets/images/strand-beads/strand-bead-2.jpg)
+![Fig 1: Adding optional Beads to the Strand](assets/images/strand-beads/strand-bead-2.jpg){:height="70%" width="70%"}
 
 In the image we are composing (adding) two optional beads to the strand.
 
