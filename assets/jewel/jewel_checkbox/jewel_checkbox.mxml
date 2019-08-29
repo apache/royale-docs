@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+-->
+<j:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:j="library://ns.apache.org/royale/jewel"
+               xmlns:html="library://ns.apache.org/royale/html">
+    
+    <fx:Script>
+		<![CDATA[
+            import org.apache.royale.jewel.Alert;
+
+            private function changeHandler(event:Event):void {
+                Alert.show('CheckBox value is: ' + event.target.value , 'CheckBox value.');
+            }
+		]]>
+	</fx:Script>
+
+    <j:initialView>
+        <j:View style="padding: 10px;">
+            <j:beads>
+                <j:VerticalLayout gap="3"/>
+            </j:beads>
+            
+            <j:Label text="Jewel CheckBox (click handler attached)"/>
+
+            <j:CheckBox text="Not Checkbox" click="Alert.show('CheckBox selected state is: ' + event.target.selected , 'CheckBox selected state.')"/>
+            
+            <j:Label text="Jewel CheckBox (change handler attached)"/>
+
+            <j:CheckBox text="Checked" selected="true" value="50" change="changeHandler(event)"/>
+            
+            <j:Label text="Jewel CheckBox disabled states"/>
+			
+            <j:CheckBox text="Disabled">
+                <j:beads>
+                    <j:Disabled/>
+                </j:beads>
+            </j:CheckBox>
+
+            <j:CheckBox text="Checked And Disabled" selected="true">
+                <j:beads>
+                    <j:Disabled/>
+                </j:beads>
+            </j:CheckBox>
+                
+        </j:View>
+    </j:initialView>
+
+</j:Application>
