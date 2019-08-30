@@ -54,6 +54,7 @@ limitations under the License.
 
 <base href="{{ site.baseurl }}/" />
 <title>{{page.title}}</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 </head>
 
 <body class="page">
@@ -118,6 +119,10 @@ limitations under the License.
     <div class="toc" id="toc">
         
       
+
+        <div align="center">
+            <input class="docsearch-input"/>
+          </div>
   {% assign pagepathparts = page.path | split: "/" %}
   {% assign numparts = pagepathparts | size %}
   {% case numparts %)
@@ -411,6 +416,15 @@ limitations under the License.
   </div>
 
   
+  <!--{% include algolia.html %} -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script type="text/javascript"> docsearch({
+  apiKey: 'd8ce6f56dbe882dae881d6cb769d8fc9',
+  indexName: 'apache_royale',
+  inputSelector: '.docsearch-input',
+  debug: true // Set debug to true if you want to inspect the dropdown
+  });
+  </script>
 
 </body>
 </html>
