@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Jewel CheckBox
-description: The Jewel CheckBox consists of a box, that can contain a check mark or not, and an optional label.
+description: The Jewel CheckBox consists of a selectable box, that can contain a check mark or not, and an optional label.
 
 ---
 
@@ -34,7 +34,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel CheckBox consists of a box, that can contain a check mark or not, and an optional label. When a user clicks or touches this control or its associated text, the CheckBox changes its state from checked to unchecked or from unchecked to checked, communicating clearly a binary condition. Checkboxes can appear in groups (but not necesarily), and can be selected and deselected individually.
+The Jewel CheckBox consists of a selectable box, that can contain a check mark, and an optional label. When a user clicks or touches this control or its associated text, the CheckBox changes its state from checked to unchecked or from unchecked to checked, communicating clearly a binary condition. Checkboxes can appear alone or in groups, and can be selected and deselected individually.
 
 ## Example of use
 
@@ -79,19 +79,19 @@ None.
 
 ## Relevant Events
 
-The `CheckBox` has _change_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when the control is selected or deselected by the user. Notice that programatic changes will not trigger this event.
+The `CheckBox` has a _change_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when the control is selected or deselected by the user. Notice that Programmatic changes will not trigger this event.
 
-Since this component is in essence a button, it has _click_ event as well, so when the control is clicked by the user it dispatches a normal _click_ event as usual.
+Since this component is in essence a button, it has a _click_ event as well. When the user clicks the control it dispatches a normal _click_ event.
 
-You can attach callback listeners to the _change_ event in __MXML__ as follows:
+You can attach callback listeners to the _change_ event in MXML as follows:
 
 ```mxml
 <j:CheckBox text="A Checkbox" value="50" change="changeHandler(event)"/>
 ```
 
-the _change_ event will use the `changeHandler` callback function you provide in __ActionScript__:
+the _change_ event will use the `changeHandler` callback function you provide in ActionScript:
 
-```mxml
+```as3
 <fx:Script>
     <![CDATA[
         private function changeHandler(event:Event):void {
@@ -101,9 +101,9 @@ the _change_ event will use the `changeHandler` callback function you provide in
 </fx:Script>
 ```
 
-When the user click or touch over the CheckBox a message will be logged in console showing the `value` and `selected` property values.
+When the user clicks or presses the CheckBox a message will be logged in the console showing the `value` and `selected` property values.
 
-In __ActionScript__ we can add an event handler this way: 
+In ActionScript we can add an event handler this way: 
 
 ```as3
 var checkBox:CheckBox = new CheckBox();
