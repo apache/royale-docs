@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Jewel RadioButton
-description: The Jewel RadioButton control lets the user make a single choice within a set of mutually exclusive choices.
+description: The Jewel RadioButton control lets the user choose one of a set of options.
 
 ---
 
@@ -34,7 +34,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel RadioButton control lets the user make a single choice within a set of mutually exclusive choices. A RadioButton consists of a circle and, typically, text that clearly communicates a condition that will be set when the user clicks or touches it. Radio buttons always appear in groups of two or more with the same `groupName` property. While they can be individually selected, can only be deselected by selecting a different RadioButton in the same group (which deselects the rest of RadioButton).
+The Jewel RadioButton control lets the user choose one of a set of options. Fpr each option there is a selectable circle and text that describes the option. Radio buttons always appear in groups of two or more with the same `groupName` property. When you select one radio button, any other button you may have previously selected in the group becomes deselected.
 
 ## Example of use
 
@@ -69,11 +69,11 @@ src="assets/jewel/jewel_radiobutton/index.html"></iframe>
 
 | PROPERTY 	    | Type   	| Description                                                                   |
 |--------------	|----------	| -----------------------------------------------------------------------------	|
-| __selected__  | _Boolean_ | `true` if the check mark is displayed, `false` otherwise. Only one RadioButton can be selected in the same group. |
+| __selected__  | _Boolean_ | `true` if the check mark is displayed, `false` otherwise. Only one RadioButton can be selected at a time in the same group. |
 | __selectedValue__  | _Object_ | The currently selected value in the group.                     |
 | __text__  	| _String_ 	| The string used as a label.                                                   |
 | __value__     | _String_  | The associated value.                                                         |
-| __groupName__     | _String_  | The name of the group to which this radio belongs. |
+| __groupName__     | _String_  | The name of the group to which this radio button belongs. |
 
 ### Methods
 
@@ -81,17 +81,17 @@ None.
 
 ## Relevant Events
 
-The `RadioButton` has _change_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when the control is selected or deselected by the user. Notice that programatic changes will not trigger this event.
+The `RadioButton` has a _change_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when the control is selected or deselected by the user. Notice that programmatic changes will not trigger this event.
 
-Since this component is in essence a button, it has _click_ event as well, so when the control is clicked by the user it dispatches a normal _click_ event as usual.
+Since this component is in essence a button, it has _click_ event as well. When the user clicks the radio button, it dispatches a normal _click_ event.
 
-You can attach callback listeners to the _change_ event in __MXML__ as follows:
+You can attach callback listeners to the _change_ event in MXML as follows:
 
 ```mxml
 <j:RadioButton text="A RadioButton" value="somevalue" change="changeHandler(event)"/>
 ```
 
-the _change_ event will use the `changeHandler` callback function you provide in __ActionScript__:
+the _change_ event will use the `changeHandler` callback function you provide in ActionScript:
 
 ```mxml
 <fx:Script>
@@ -103,9 +103,9 @@ the _change_ event will use the `changeHandler` callback function you provide in
 </fx:Script>
 ```
 
-When the user click or touch over the RadioButton a message will be logged in console showing the `value` and `selected` property values.
+When the user clicks or presses the a radio button a message will be logged in the console showing the `value` and `selected` property values.
 
-In __ActionScript__ we can add an event handler this way: 
+In ActionScript we can add an event handler this way: 
 
 ```as3
 var radioButton:RadioButton = new RadioButton();
@@ -117,9 +117,9 @@ parent.addElement(radioButton);
 
 ## Relevant Beads
 
-Unlike other components in Royale, the Jewel `RadioButton` does not have beads for _View_, _Controller_ or _Model_ in the Javascript platform.
+Unlike other components in Royale, the Jewel `RadioButton` does not have beads for _View_, _Controller_ or _Model_ in the JavaScript platform.
 
-On the other hand, you can add to it other common Jewel control beads to provide more functionality. Many Jewel controls share these beads.
+On the other hand, you can add other common Jewel control beads to it to provide more functionality. Many Jewel controls share these beads.
 
 ### Common Beads
 
