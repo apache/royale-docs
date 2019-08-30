@@ -34,7 +34,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel RadioButton control lets the user choose one of a set of options. Fpr each option there is a selectable circle and text that describes the option. Radio buttons always appear in groups of two or more with the same `groupName` property. When you select one radio button, any other button you may have previously selected in the group becomes deselected.
+The Jewel RadioButton control lets the user choose one of a set of options. For each option there is a selectable circle and text that describes the option. Radio buttons always appear in groups of two or more with the same `groupName` property. When you select one radio button, any other button you may have previously selected in the group becomes deselected.
 
 ## Example of use
 
