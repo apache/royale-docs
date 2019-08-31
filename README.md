@@ -31,15 +31,18 @@ Each .md page starts with "front matter" structured like this:
 layout: docpage
 title: README
 ---
+
 ```
 Use HTML comments at the top of the document for any explanatory notes for the doc team (```<!-- Not finished yet - Andrew -->```) and for provenance when adapting existing material for Royale purposes (```<!-- Created by Peter Ent, modified by Tom Chiverton, as part of FlexJS documentation-->```).
 
 ## File names and titles
+
 -  File names do not have to be the same as the titles that display at the top of the file.
 -  For file names, use all lower-case, join words with - and not _ or ```%20``` statements, and add the markdown specification. The file name should be "another-important-thing.md", not "Another%20Important%20Thing.md", "AnotherImportantThing.md", or "Another_important_thing.md". This is important for SEO, human readability, and readability by assistive devices.
 -  File titles should be in sentence case: "Another important Royale thing", not "Another Important Royale Thing". The point here is that the more capitals involved, the harder it is to read the statement.
 
 ## Documentation conventions
+
 1. Address the reader directly, and in active voice, so "To do X, follow these steps..." rather than "When a developer wishes to do X, these steps would be followed..."
 2. Instead of "he or she" use "they" when the pronoun is for an indefinite singular actor: "When someone has an existing application to migrate, they should start by..." This offends my grammarian soul, but is becoming standard English.
 3. Link generously to other content in the help docs that may throw light on the current subject.
@@ -51,16 +54,16 @@ In the .md files, links have to be full paths without the leading slash. So to l
 
 `[AS3](features/as3.html)` 
 
-without the leading "/". Links are case-sensitive, and you need to insert ```%20``` for any space that appears in the target file's name. Check the guidance about file names, above.
+without the leading "/". Links are case-sensitive, and you need to insert `%20` for any space that appears in the target file's name. Check the guidance about file names, above.
 
-When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs. MarkDown does not support the directive to open the link in a new window or tab, so use straight HTML for these links, like this:
+When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs:
 
-```<a href="https://flex.apache.org" target="_blank">Apache Flex</a>```
+`[Apache Flex](https://flex.apache.org){:target='_blank'}`
 
 ## Build Locally
 
-1. Install [Ruby+Devkit](https://rubyinstaller.org/downloads/). Ruby is required to run Jekyll.
-2. Install [Jekyll](https://jekyllrb.com/).
+1. Install [Ruby+Devkit](https://rubyinstaller.org/downloads/){:target='_blank'}. Ruby is required to run Jekyll.
+2. Install [Jekyll](https://jekyllrb.com/){:target='_blank'}.
 3. If you want to provide a local configuration, copy `_config.yml` to `local_config.yml`.
 4. To build the docs, run the following command:
 
@@ -73,3 +76,9 @@ When linking to locations not in the help-docs stack, including other pages in t
    jekyll serve
    ```
    The website will be available at `http://127.0.0.1:4000/royale-docs/`.
+
+### About Search
+
+Search is done thanks to [Algolia DocSearch](https://community.algolia.com/docsearch/){:target='_blank'}.
+
+    * [Algolia DocSearch Docs](https://community.algolia.com/docsearch/what-is-docsearch.html){:target='_blank'}
