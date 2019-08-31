@@ -39,7 +39,7 @@ Some popular Flash APIs have been added to the Royale emulation of UIComponent, 
 
 Another category of changes is **namespaces**. In every MXML file you probably have one or both of:
 
-```
+```mxml
 xmlns:s="library://ns.adobe.com/flex/spark" 
 xmlns:mx="library://ns.adobe.com/flex/mx"
 
@@ -47,7 +47,7 @@ xmlns:mx="library://ns.adobe.com/flex/mx"
 
 These need to change to:
 
-```
+```mxml
 xmlns:s="library://ns.apache.org/royale/spark" 
 xmlns:mx="library://ns.apache.org/royale/mx"
 
@@ -63,9 +63,7 @@ Yet another category of changes is for **non-Flex SWCs**. If you used third-part
 
 The Royale compiler supports every options the Flex compiler supports. There are also some new options for controlling JavaScript output. Royale has an Ant task just as Flex does. It supports all the options that the Flex Ant task supports, plus some new options for controlling JavaScript output. You should be able to use the same options on the Royale compiler that you used when compiling your Flex app. The only thing you must add is the compiler option
 
-```
-+configname=flex
-```
+`+configname=flex`
 
 Then, assuming you aren't using any third-party libraries, your application should compile.
 
@@ -86,15 +84,11 @@ If you get a compile that has no errors, you can try running it. As mentioned in
 
 If you use XML or Proxy in your application you will get lots of errors if you are not careful about strong typing. In your compiled Flex application, Flash knows the type of the instance and thus knows how to fetch a property for it. The Royale JavaScript runtimes don't know instance types, so as soon as your XML or Proxy instance is seen as a regular Object, things can go wrong. One place this is likely to happen is in ItemRenderers. They have a data property of type Object, so any code in the item renderer that looks like:
 
-```
-data.property
-```
+`data.property`
 
 will not work if the data is XML or Proxy. Change this code so it is strongly-typed as, in the case of XML,
 
-```
-(data as XML).property
-```
+`(data as XML).property`
 
 Once the debuggable version works, it is time to try the production version. If it doesn't work, check the JavaScript console for exceptions and errors and try to resolve them. Most errors, or just not getting the right results, will be due to variable renaming as described in the tutorial. Make sure you have resolved any public var warnings correctly. If you suppressed the warning but shouldn't have, that could cause a problem.
 

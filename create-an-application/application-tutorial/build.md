@@ -16,15 +16,18 @@
 
 layout: docpage
 title: Build the application
+description: building the application
 ---
 
 # Build the application
+
+building the application
 
 In many other HTML/JS/CSS development models, you write the JS and then just view it in the browser. Royale uses a compiler to convert your MXML and ActionScript code into HTML/JS/CSS. Why? Because there is a philosophy that the sooner you catch a bug, the less expensive it is to fix it. The compiler scans your source code to make sure that it makes sense. The compiler checks that there aren't typos in property names, that if you are expecting a String you'll probably get one, and more.  
 
 The main MXML file should now look like this:
 
-```XML
+```mxml
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
 xmlns:local="*"
 xmlns:js="library://ns.apache.org/royale/express"
@@ -112,7 +115,7 @@ This simple example will look fine if we just set the width and height of the Da
 
 The final code should look like this: (you can download it from [here](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer/src/main/royale/GitHubCommitLogViewer.mxml).)
 
-```XML
+```mxml
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
 xmlns:local="*"
 xmlns:js="library://ns.apache.org/royale/express"
@@ -191,17 +194,13 @@ initialize="addEventListener('dataReady', dataReadyHandler);configurator.send()"
 </js:Application>
 ```
 
-Since we are interested in JS output, if you're using an [IDE]get-started/development-tools.html), set that output target in the project before compiling. If you're using command-line scripts, run:
+Since we are interested in JS output, if you're using an [IDE](get-started/development-tools.html), set that output target in the project before compiling. If you're using command-line scripts, run:
 
-```
-    <path to Royale SDK>/royale-asjs/js/bin/mxmlc -debug=true GitHubCommitLogViewer.mxml
-```
+`<path to Royale SDK>/royale-asjs/js/bin/mxmlc -debug=true GitHubCommitLogViewer.mxml`
 
 If you've used NPM to install Royale, you can just run:
 
-```
-    mxmlc -debug=true GitHubCommitLogViewer.mxml
-```
+`mxmlc -debug=true GitHubCommitLogViewer.mxml`
 
 This should compile with one warning. We will ignore that for now and fix it later.  Next, let's see the results.
 

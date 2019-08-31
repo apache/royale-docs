@@ -24,7 +24,7 @@ In an MVC application the View contains the user interface elements that display
 
 The main or initial view of an application is identified as its "initialView" property. We want our user interface elements to appear vertically so we use VView as the view:
 
-```XML
+```mxml
 <js:initialView>
   <js:VView>
   </js:VView>
@@ -32,14 +32,14 @@ The main or initial view of an application is identified as its "initialView" pr
 ```
 Inside the VView tag we add the DataGrid
 
-```XML
+```mxml
 <js:DataGrid id="dg">
 </js:DataGrid>
 ```
 
 We want to display the date of the commit, who made the commit, and the commit message, each in their own column on each row of the DataGrid. So inside the DataGrid, we add:
 
-```XML
+```mxml
 <js:columns>
   <js:DataGridColumn label="Date" dataField="date"/>
   <js:DataGridColumn label="Author" dataField="author"/>
@@ -49,13 +49,13 @@ We want to display the date of the commit, who made the commit, and the commit m
 
 Oh wait, we should have a label that displays the project name above the DataGrid, so before DataGrid add:
 
-```XML
+```mxml
 <js:Label text="{projectName} Commits Log"/>
 ```
 
 Notice how the text of the label uses the projectName variable in the Model by wrapping the variable name in curly braces "{}".  In Royale, this is known as Data Binding. When the compiler sees curly braces in MXML attribute values, it generates code that sets the destination property (in this case, the Label's "text" property) to the value of the expression in the curly braces and also adds code that detects changes to that property and updates the destination property if the source value changes. This greatly reduces the amount of simple code you have to write. Without data binding, we'd probably hook up to an initialization event and also have to write:
 
-```ActionScript
+```as3
 myLabel.text = projectName;
 ```
 
@@ -65,7 +65,9 @@ See more about what this powerful feature can do for you on this page: [Data bin
 
 Also, a commit message might be too long to read in a row of a DataGrid so we will add a place to display the longer message of a selected commit.
 
+```mxml
 <js:MultilineLabel text="{commits[dg.selectedIndex].message}" />
+```
 
 Notice how with data binding, we've written very little "code" to connect the DataGrid to the MultilineLabel.
 
@@ -75,7 +77,7 @@ It is possible to create something other than an Array that will dispatch change
 
 In the script block we add a handler for the dataReady event.
 
-```ActionScript
+```as3
 import org.apache.royale.collections.ArrayList;
 
 private function dataReadyHandler(event:Event):void
@@ -86,7 +88,7 @@ private function dataReadyHandler(event:Event):void
 ```
 In the initialize handler, we add a listener for the dataReady event:
 
-```ActionScript
+```as3
 addEventListener('dataReady', dataReadyHandler);
 ```
 

@@ -26,7 +26,7 @@ There are multiple popular ways of dividing an Application into coherent and reu
 
 Whatever you decide for how many files you will have, another thing to keep in mind is that Royale can produce different kinds of output, like SWFs for Adobe FlashPlayer or Adobe AIR as well as HTML/JS/CSS for browsers and Apache Cordova applications.  So, the recommended practice is to create a folder for your project files and a set of subfolders within it. The Royale compiler detects certain common folder patterns and automatically chooses where to put output folders, although you can override that if you desire.
 
-If you are using an [IDE]get-started/development-tools.html) that supports Royale, it will create the standard folder structure for you when you create a Royale project. If you are working outside of an IDE, and perhaps using command-line instructions to compile your code, here is how to structure your project.
+If you are using an [IDE](get-started/development-tools.html) that supports Royale, it will create the standard folder structure for you when you create a Royale project. If you are working outside of an IDE, and perhaps using command-line instructions to compile your code, here is how to structure your project.
 
 Let's say you are creating a project called MyFirstRoyaleApp. Create a MyFirstRoyaleApp folder and in it create a folder named "src". Put your source code in there. If you do that, the compiler will put the output in a "bin" folder that it creates.
 

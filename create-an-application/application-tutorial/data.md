@@ -26,7 +26,7 @@ For large projects, the model is often built in a separate class and source file
 
 First we create the data structure, in this case an array, to hold the information we get from GitHub:
 
-```
+```mxml
 <fx:Script>
 <![CDATA[
   public var commits:Array = [];
@@ -36,14 +36,14 @@ First we create the data structure, in this case an array, to hold the informati
 
 It might be nice to not hard-code which repos we use to get the commits so that other projects can use this app. So let's add variables to hold information about the project and repositories we are using:
 
-```ActionScript
+```as3
   public var repos:Array;
   public var projectName:String;
 ```
 
 Next, we need to get the values for these arrays. Let's use a <a href="https://www.json.org/" target="_blank">.json</a> file, called "project.json", to configure which repos to use and the project name. The file contents look like:
 
-```JSON
+```json
 { "projectName": "Apache Royale",
   "repos":  [ "apache/royale-asjs", "apache/royale-typedefs", "apache/royale-compiler" ]
 }
@@ -52,12 +52,12 @@ You can download this file from [here.](https://github.com/apache/royale-asjs/bl
 
 Now we need to add calls that fetch the .json file and then the information about the commits.  We can use HTTPService to get the JSON file:
 
-```XML
+```mxml
 <js:HTTPService id="configurator" url="project.json" complete="setConfig();fetchCommits()" />
 ```
 The method setConfig() sets the data model variables:
 
-```ActionScript
+```as3
 private function setConfig():void
 {
   repos = configurator.json.repos;
@@ -67,10 +67,11 @@ private function setConfig():void
 
 The method fetchCommits() takes the list of repos and calls a separate instance of HTTPService to get information about the commits:
 
-```XML
+```mxml
 <js:HTTPService id="commitsService" />
 ```
-```ActionScript
+
+```as3
 import org.apache.royale.events.Event;
 
 private var currentIndex:int = 0;
@@ -106,7 +107,7 @@ private function gotCommits(event:Event):void
 
 And, of course, we have to tell the service to go fetch the configuration file, so we add an "initialize" event handler to the Application tag to have the HTTPService send the request for the JSON file once the application is ready to receive the response.
 
-```
+```mxml
 initialize="configurator.send()"
 ```
 

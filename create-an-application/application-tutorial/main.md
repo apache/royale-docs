@@ -24,7 +24,7 @@ This application uses an MXML file as its main file.
 
 The file starts with:
 
-```XML
+```mxml
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
                 xmlns:local="*"
                 xmlns:js="library://ns.apache.org/royale/express" 
@@ -32,8 +32,7 @@ The file starts with:
 ```
 
 The line:
-
-```
+mxml
                 xmlns:js="library://ns.apache.org/royale/express" 
 ```
 

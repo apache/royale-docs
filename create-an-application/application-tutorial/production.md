@@ -16,12 +16,12 @@
 
 layout: docpage
 title: Making a production version
-description: 
+description: Releasing an application for consumers
 ---
 
 # Making a production version
 
-releasing an application for consumers
+Releasing an application for consumers
 
 The version in the "js-debug" folder is considered a "debug version" or "development version".  If you looked at all of the files in the folder or copied them to a web server, you probably noticed there are quite a few, and that each takes time to load.
 

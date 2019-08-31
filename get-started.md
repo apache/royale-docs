@@ -18,7 +18,7 @@ layout: docpage
 title: Get Started
 ---
 
-# Getting Started
+# Get Started
 
 All you need to know to start developing with Apache Royale
 
@@ -31,11 +31,11 @@ In Apache Royale you develop your applications using ActionScript 3 (AS3) and MX
 
 ## Getting Royale
 
-[System Requirements]get-started/system-requirements.html) - What kinds of computers and operating systems you can use to develop Royale applications. You can run Royale applications on many more computers, operating systems and even devices such as smartphones and tablets.
+[System Requirements](get-started/system-requirements.html) - What kinds of computers and operating systems you can use to develop Royale applications. You can run Royale applications on many more computers, operating systems and even devices such as smartphones and tablets.
 
-[Development Tools]get-started/development-tools.html) - You can develop Royale with just the command-line, or you can use scripting/build tools like Apache Ant and Apache Maven, or even use IDEs.
+[Development Tools](get-started/development-tools.html) - You can develop Royale with just the command-line, or you can use scripting/build tools like Apache Ant and Apache Maven, or even use IDEs.
 
-[Download Royale]get-started/download-royale.html) - How to download and set up Royale.
+[Download Royale](get-started/download-royale.html) - How to download and set up Royale.
 
 
 ## Configuring Royale
