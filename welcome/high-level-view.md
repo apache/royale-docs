@@ -17,6 +17,7 @@
 layout: docpage
 title: High Level View
 description: Where we come from
+permalink: /high-level-view
 ---
 <!-- Based on material written by Peter Ent and modified by Tom Chiverton: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=34013930 -->
 

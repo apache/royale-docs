@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Welcome to Apache Royale
+description: Designed for the future. Code Once. Run Everywhere.
+
 ---
 
 # Welcome to Apache Royale!
@@ -24,6 +26,10 @@ Designed for the future. Code Once. Run Everywhere.
 
 {:align="center"}
 ![Apache Royale Logo](assets/images/apache-royale-main-logo-1000x1000.png){:height="33%" width="33%"}
+
+Apache Royale is the new SDK, built on the solid foundation developed by the Flex universe, that lets you create applications in MXML and ActionScript that will run almost anywhere without heavy plugins like Flash or Adobe AIR.
+
+With Royale, you can create a single code base that can be compiled to work like a native app on Windows or Apple systems, on Android phones, on tablets of all systems and sizes, or on embedded JavaScript environments like Chromium Embedded Framework. 
 
 This is the main documentation for Apache Royale.  If you are looking for the API Reference, [click here](http://royale.apache.org/asdoc/index.html){:target='_blank'}.
 

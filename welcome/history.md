@@ -7,12 +7,14 @@
 
 layout: docpage
 title: A bit of history
+description: How things evolved to this day
+permalink: /history
 ---
 
 <!-- Drawn from material written by Judah Frangipane and Mark Kessler: https://cwiki.apache.org/confluence/display/FLEX/History -->
 # A bit of history
 
-how things evolved to this day
+How things evolved to this day
 
 Macromedia, a software company that coined the phrase ["Rich Internet Application", or RIA](https://en.wikipedia.org/wiki/Rich_web_application){:target='_blank'} 
 developed Flash and the Flash Viewer from earlier work by FutureWave Software. Macromedia built a toolkit, code-named _"Royale"_, that made it easy to create Flash applications. In 2004 it released version 1.0 of the toolkit under the name _"Flex"_.
