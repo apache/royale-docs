@@ -8,7 +8,7 @@
 layout: docpage
 title: Get involved
 description: Join us to make Apache Royale better!
-permalink: /get-involved
+permalink: /welcome/get-involved
 ---
 
 # Get involved

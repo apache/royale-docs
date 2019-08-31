@@ -8,7 +8,7 @@
 layout: docpage
 title: A bit of history
 description: How things evolved to this day
-permalink: /history
+permalink: /welcome/history
 ---
 
 <!-- Drawn from material written by Judah Frangipane and Mark Kessler: https://cwiki.apache.org/confluence/display/FLEX/History -->

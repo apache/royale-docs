@@ -7,7 +7,7 @@
 layout: docpage
 title: Licenses and policies
 description: About Apache Royale licenses and policies
-permalink: /licenses
+permalink: /welcome/licenses
 ---
 
 # Licenses
