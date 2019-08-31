@@ -19,412 +19,47 @@ limitations under the License.
 {% endcomment %}
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
   
     gtag('config', 'UA-141008188-1');
   </script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" />
-<link rel="shortcut icon" href="">
-<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<meta property="og:image" content="https://royale.apache.org/wp-content/uploads/2019/05/apache-royale-docs.jpg"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="fb:app_id" content="677150849390886">
-<meta property="og:title" content="{{ page.title }}">
-<meta property="og:description" content="{{ page.description }}">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:site_name" content="Apache Royale™">
-<meta property="article:publisher" content="//www.facebook.com/Apache-Royale-249305752259661/">
 
-<meta property="twitter:image" content="https://royale.apache.org/wp-content/uploads/2019/05/apache-royale-docs.jpg">
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="{{ page.title }}">
-<meta property="twitter:description" content="{{ page.description }}">
-<meta property="twitter:url" content="{{ page.url | absolute_url }}">
-<meta property="twitter:site" content="@ApacheRoyale">
-<meta property="twitter:creator" content="@ApacheRoyale">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" />
+  <link rel="shortcut icon" href="">
+  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-<base href="{{ site.baseurl }}/" />
-<title>{{page.title}}</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  {% include open-graph.html %}
+
+  <base href="{{ site.baseurl }}/" />
+  <title>{{page.title}}</title>
 </head>
 
 <body class="page">
-  <header class="docs_header">
-    <div class="topbar">
-      <div class="topbar-left">
-        <div>
-          <a href="https://royale.apache.org/">
-            <img src="https://royale.apache.org/wp-content/uploads/2018/01/apache-royale-tm-logo-light.svg" style="margin-top:15px; margin-bottom: 5px; width: 190px; height: 40px;"/>
-          </a>
-        </div>
-      </div>
-
-      <div class="topbar-right">
-        <ul class="topMenu">
-        <li class="topMenu_li fa">
-          <a class="topMenu_li_a" href="https://royale.apache.org/features/">FEATURES</a>
-        </li>
-        <li class="topMenu_li fa">
-          <a class="topMenu_li_a" href="{{ site.baseurl }}/get-started.html">GET STARTED</a>
-        </li>
-        <li class="topMenu_li fa">
-          <a class="topMenu_li_a" href="https://royale.apache.org/download/">DOWNLOAD</a>
-        </li>
-        <li class="topMenu_li fa">
-          <a class="topMenu_li_a" href="https://royale.apache.org/docs/">DOCS</a>
-        </li>
-        <li class="topMenu_li fa">
-          <a class="topMenu_li_a" href="https://royale.apache.org/blog/">BLOG</a>
-        </li>
-        <li class="topMenu_li">
-          <a class="topMenu_li_a" href="https://github.com/apache/royale-asjs/wiki/Apache-Royale-Source-Code-Repositories"><span class="grve-item"><i class="grve-menu-icon fa fa-github"></i>GITHUB</span></a>
-        </li>
-        </ul>
-        
-        <ul class="social">
-        <li class="social_li fa fa-search">
-          <a href="#grve-search-modal"></a>
-        </li>
-        <li class="social_li fa fa-share-alt">
-          <a href="#grve-socials-modal"></a>
-        </li>
-        <li class="social_li fa fa-th">
-          <a href="#grve-toggle-menu"></a>
-        </li>
-        </ul>
-      </div>
-
-    </div>
-  </header>
+  {% include header.html %}
 
   <div class="toc_and_doc">
-    
     <div class="content" id="content">
-
       {{content}}
-
       <div class="bottom-links">
         <a href="https://github.com/apache/royale-docs/edit/master/{{ page.path }}" target="_blank">Edit this page</a>
       </div>
     </div>
     <div class="toc" id="toc">
-        
-      
-
         <div align="center">
-            <input class="docsearch-input"/>
-          </div>
-  {% assign pagepathparts = page.path | split: "/" %}
-  {% assign numparts = pagepathparts | size %}
-  {% case numparts %)
-    {% when 1 %}
-      {% assign folder1 = "" %}
-      {% assign folder2 = "" %}
-    {% when 2 %}
-      {% assign folder1 = pagepathparts[0] %}
-      {% assign folder2 = "" %}
-    {% when 3 %}
-      {% assign folder1 = pagepathparts[0] %}
-      {% assign folder2 = pagepathparts[1] %}
-  {% endcase %}
-  {% for entry in site.data.toc.toc %}
-    {% for p in site.pages %}
-      {% if p.path == entry.path %}
-        
-          <div class="toc_title_wrapper">
-          {% if p.path == page.path %}
-            
-            <h3 class="toc_current">{{ p.title }}</h3>
-            <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="8" height="8" class="toc_arrow_rot">
-              <g transform="translate(904.92214,-879.1482)"><path d="
-              m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
-              -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
-              0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
-              -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
-              -174.68583 0.6895,0 26.281,25.03215 56.8701,
-              55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
-              -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
-              -104.0616 -231.873,-231.248 z
-            " fill="currentColor"></path></g></svg>
-            <div class="accordion_content">
-            {% for p2 in entry.children %}
-              {% for q in site.pages %}
-                {% if p2.path == q.path %}
-                  <div class="toc_entry">
-                  {% if q.path == page.path %}
-                    <h4 class="toc_current">{{ q.title }}</h4>
-                    <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow_rot">
-                        <g transform="translate(904.92214,-879.1482)"><path d="
-                        m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
-                        -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
-                        0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
-                        -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
-                        -174.68583 0.6895,0 26.281,25.03215 56.8701,
-                        55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
-                        -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
-                        -104.0616 -231.873,-231.248 z
-                      " fill="currentColor"></path></g></svg>
-                  {% else %}
-                    <h4 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h4>
-                    <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow">
-                        <g transform="translate(904.92214,-879.1482)"><path d="
-                        m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
-                        -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
-                        0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
-                        -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
-                        -174.68583 0.6895,0 26.281,25.03215 56.8701,
-                        55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
-                        -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
-                        -104.0616 -231.873,-231.248 z
-                      " fill="currentColor"></path></g></svg>
-                  {% endif %}
-                  </div>
-                {% endif %}
-              {% endfor %}
-              {% if p2.children %}
-                {% assign entrypathparts = p2.children[0].path | split: "/" %}
-                {% if folder2 == entrypathparts[1] %}
-                  <div class="menu_div2">
-                  {% for p3 in p2.children %}
-                    {% for r in site.pages %}
-                      {% if p3.path == r.path %}
-                        <div class="toc_entry">
-                        {% if r.path == page.path %}
-                          <h5 class="toc_current">{{ r.title }}</h5>
-                          <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow_rot">
-                              <g transform="translate(904.92214,-879.1482)"><path d="
-                              m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
-                              -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
-                              0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
-                              -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
-                              -174.68583 0.6895,0 26.281,25.03215 56.8701,
-                              55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
-                              -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
-                              -104.0616 -231.873,-231.248 z
-                            " fill="currentColor"></path></g></svg>
-                        {% else %}
-                          <h5 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h5>
-                          <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow">
-                              <g transform="translate(904.92214,-879.1482)"><path d="
-                              m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
-                              -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
-                              0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
-                              -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
-                              -174.68583 0.6895,0 26.281,25.03215 56.8701,
-                              55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
-                              -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
-                              -104.0616 -231.873,-231.248 z
-                            " fill="currentColor"></path></g></svg>
-                        {% endif %}
-                        </div>
-                      {% endif %}
-                    {% endfor %}
-                  {% endfor %}
-                  </div>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-            </div>         
-          {% else %}
-            <h3 class="toc_link"><a href="{{ p.url | remove_first: '/'}}">{{ p.title }}</a></h3>
-            <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="8" height="8" class="toc_arrow">
-                <g transform="translate(904.92214,-879.1482)"><path d="
-                m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
-                -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
-                0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
-                -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
-                -174.68583 0.6895,0 26.281,25.03215 56.8701,
-                55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
-                -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
-                -104.0616 -231.873,-231.248 z
-              " fill="currentColor"></path></g></svg>
-          {% endif %}
-          </div>
-        
-      {% if entry.children %}
-        {% assign entrypathparts = entry.children[0].path | split: "/" %}
-        {% if folder1 == entrypathparts[0] %}
-          <div class="toc_title_wrapper">
-            <div class="accordion_content">
-            
-            {% for p2 in entry.children %}
-              {% for q in site.pages %}
-                {% if p2.path == q.path %}
-                  <div class="toc_entry">
-                  {% if q.path == page.path %}
-                    <h4 class="toc_current">{{ q.title }}</h4>
-                    <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow_rot">
-                        <g transform="translate(904.92214,-879.1482)"><path d="
-                        m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
-                        -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
-                        0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
-                        -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
-                        -174.68583 0.6895,0 26.281,25.03215 56.8701,
-                        55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
-                        -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
-                        -104.0616 -231.873,-231.248 z
-                      " fill="currentColor"></path></g></svg>
-                    <div class="menu_div2">
-                      {% for p3 in p2.children %}
-                        {% for r in site.pages %}
-                          {% if p3.path == r.path %}
-                            <div class="toc_entry">
-                            {% if r.path == page.path %}
-                              <h5 class="toc_current">{{ r.title }}</h5>
-                            {% else %}
-                              <h5 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h5>
-                            {% endif %}
-                            </div>
-                          {% endif %}
-                        {% endfor %}
-                      {% endfor %}
-                    </div>
-                    
-                  {% else %}
-                    <h4 class="toc_link"><a href="{{ q.url | remove_first: '/'}}">{{ q.title }}</a></h4>
-                    <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="7" height="7" class="toc_arrow">
-                        <g transform="translate(904.92214,-879.1482)"><path d="
-                        m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
-                        -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
-                        0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
-                        -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
-                        -174.68583 0.6895,0 26.281,25.03215 56.8701,
-                        55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
-                        -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
-                        -104.0616 -231.873,-231.248 z
-                      " fill="currentColor"></path></g></svg>
-                  {% endif %}
-                  </div>
-                {% endif %}
-              {% endfor %}
-              {% if p2.children %}
-                {% assign entrypathparts = p2.children[0].path | split: "/" %}
-                {% if folder2 == entrypathparts[1] %}
-                  <div class="menu_div2">
-                  {% for p3 in p2.children %}
-                    {% for r in site.pages %}
-                      {% if p3.path == r.path %}
-                        <div class="toc_entry">
-                        {% if r.path == page.path %}
-                          <h5 class="toc_current">{{ r.title }}</h4>
-                        {% else %}
-                          <h5 class="toc_link"><a href="{{ r.url | remove_first: '/'}}">{{ r.title }}</a></h5>
-                        {% endif %}
-                        </div>
-                      {% endif %}
-                    {% endfor %}
-                  {% endfor %}
-                  </div>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-            </div>  
-          </div>
-          {% endif %}
-        {% endif %}
-        
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-      
+          <input class="docsearch-input"/>
+        </div>
+        {% include toc.html %}
     </div>
   </div>
-
   
-  <div class="footer">
-    <div class="footer-row">
-      <div class="footer-column">
-        <ul class="footer-list">
-          <li class="apacheroyale">APACHE ROYALE</li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/">Home</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/features/">Features</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/try-it-now/">Try it now</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/download/">Download</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/ides/">IDEs</a></li>
-          <li><a class="footer-list_a" href="https://www.npmjs.com/org/apache-royale">NPM</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/showcase/">Showcase</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/blog/">Blog</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/team/">Team</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/thanks-to/">Thanks To</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/license/"><i class="grve-menu-icon fa fa-external-link-square"></i>Apache License v2.0</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <ul class="footer-list">
-          <li class="documentation">DOCUMENTATION</li>
-          <li><a class="footer-list_a" href="{{ site.baseurl }}/get-started.html">get-started</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/docs/">Docs</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/asdoc/">Reference</a></li>
-          <li><a class="footer-list_a" href="https://github.com/apache/royale-asjs/wiki"><i class="grve-menu-icon fa fa-github"></i>Wiki</a></li>
-          <li><a class="footer-list_a" href="https://stackoverflow.com/questions/tagged/apache-royale"><i class="grve-menu-icon fa fa-stack-overflow"></i>StackOverFlow Tag</a></li>
-        </ul>
-        <ul class="footer-list">
-          <li class="community">COMMUNITY</li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/get-involved/">Get Involved</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/mailing-lists/">Mailing Lists</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/faq/">FAQ</a></li>
-        </ul>
-        <ul class="footer-list">
-          <li class="development">DEVELOPMENT</li>
-          <li><a class="footer-list_a" href="https://github.com/apache/royale-asjs/wiki/Apache-Royale-Source-Code-Repositories"><i class="grve-menu-icon fa fa-github"></i>Github</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/source-code/">Source Code</a></li>
-          <li><a class="footer-list_a" href="https://github.com/apache/royale-asjs/issues"><i class="grve-menu-icon fa fa-github"></i>Issues</a></li>
-        </ul>							      
-      </div>
-
-      <div class="footer-column">
-        <ul class="footer-list">
-          <li class="social_t">SOCIAL</li>
-          <li><a class="footer-list_a" href="https://twitter.com/apacheroyale">Twitter</a></li>
-          <li><a class="footer-list_a" href="https://facebook.com/ApacheRoyaleSDK/">Facebook</a></li>
-          <!-- <li><a class="footer-list_a" href="https://plus.google.com/communities/110767346686043669380">Google+</a></li> -->
-          <li><a class="footer-list_a" href="https://www.linkedin.com/groups/12118437">LinkedIn</a></li>
-          <li><a class="footer-list_a" href="https://royale.apache.org/feed/">RSS</a></li>
-        </ul>
-        <ul class="footer-list">
-          <li class="apache">APACHE</li>
-          <li><a class="footer-list_a" href="https://www.apache.org/"><i class="grve-menu-icon fa fa-external-link-square"></i>Apache</a></li>
-          <li><a class="footer-list_a" href="https://www.apache.org/foundation/contributing.html"><i class="grve-menu-icon fa fa-external-link-square"></i>Donations</a></li>
-          <li><a class="footer-list_a" href="https://www.apache.org/events/current-event"><i class="grve-menu-icon fa fa-external-link-square"></i>Events</a></li>
-          <li><a class="footer-list_a" href="https://www.apache.org/foundation/sponsorship.html"><i class="grve-menu-icon fa fa-external-link-square"></i>Sponsorship</a></li>
-          <li><a class="footer-list_a" href="https://www.apache.org/foundation/thanks.html"><i class="grve-menu-icon fa fa-external-link-square"></i>Thanks</a></li>
-          <li><a class="footer-list_a" href="https://www.apache.org/security/"><i class="grve-menu-icon fa fa-external-link-square"></i>Security</a></li>
-        </ul>
-      </div>
-
-      <div class="aboutusdiv" >
-        <p class="aboutus">ABOUT US</p>
-        <p class="aboutus_p"><img class="aboutus-logo" src="https://royale.apache.org/wp-content/uploads/2017/10/apache-royale-logo-footer-circle-grey.svg"/><a href=https://royale.apache.org/index.html" class="aboutus_a">Apache Royale™</a> is a highly productive open source application technology for building expressive frontend applications that outputs to different formats and deploy consistently on all major browsers, desktops and devices.</p>
-        <p><img class="aboutus-apache-logo" src="https://royale.apache.org/wp-content/uploads/2017/10/Apache_PoweredBy.svg" />
-        <a href="https://royale.apache.org" class="aboutus_a">Apache Royale™</a>, <a href="https://www.apache.org" class="aboutus_a">Apache™</a> and the <a href="https://www.apache.org/foundation/press/kit/" class="aboutus_a">Apache feather logo™</a> are trademarks of The Apache Software Foundation. All other marks mentioned may be trademarks or registered trademarks of their respective owners. Read more about our privacy policy on our <a href="https://royale.apache.org/privacy-policy">Privacy Policy page</a>.</p>
-      </div>
-      
-    </div>
-    <div class="asf">
-      Copyright © 2017-2018 <a href="https://www.apache.org">The Apache Software Foundation</a>, Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>
-    </div>
-  </div>
-
-  
-  <!--{% include algolia.html %} -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-  <script type="text/javascript"> docsearch({
-  apiKey: 'd8ce6f56dbe882dae881d6cb769d8fc9',
-  indexName: 'apache_royale',
-  inputSelector: '.docsearch-input',
-  debug: true // Set debug to true if you want to inspect the dropdown
-  });
-  </script>
+  {% include footer.html %}
+  {% include docsearch.html %}
 
 </body>
 </html>
