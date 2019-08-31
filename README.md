@@ -5,9 +5,9 @@
 
 We have three main audiences:
 
-    1. Folks who have previously developed applications using [Apache Flex](https://flex.apache.org){:target='_blank'}, and who want to learn whether and how to migrate their apps to Apache Royale.
-    2. People who are new to AS3 and MXML, and possibly new to developing applications altogether, and want to know how to get started.
-    3. Experienced developers who want to see if Royale will give a better experience both in code development and through the application's lifecycle than what they have been using.
+1. Folks who have previously developed applications using [Apache Flex](https://flex.apache.org){:target='_blank'}, and who want to learn whether and how to migrate their apps to Apache Royale.
+2. People who are new to AS3 and MXML, and possibly new to developing applications altogether, and want to know how to get started.
+3. Experienced developers who want to see if Royale will give a better experience both in code development and through the application's lifecycle than what they have been using.
 
 We can't assume that everybody understands the conversational shorthand Flex veterans use. Write for a person of good will who is reading to *find out*, and who wants to get to the next needed nugget of knowledge soon so they can go and make progress on the app they are working on.
 
@@ -15,10 +15,10 @@ We can't assume that everybody understands the conversational shorthand Flex vet
 
 We produce four flavors of documentation:
 
-    1. *Tutorials* to show how to do a complete thing, with source code a reader can copy and learn from. These generally appear on the website blog at the moment.
-    2. *How-to guides* that explain how to achieve something in Royale that is either of a general nature ("How to find the bead you need") or does not merit a full tutorial ("How to disable an input field"). This material should be in the user documentation.
-    3. *Explanations* that explain the "why" of Royale features--why we do it this way, or avoid doing it that way. This appears in the [High Level View](welcome/high-level-view.html){:target='_blank'} pages of the user documentation.
-    4. *Technical references* are all the gritty details of what each Royale component, bead, and feature requires, produces, and can do. This material would normally be in the [ASDoc reference](https://royale.apache.org/asdoc/){:target='_blank'}, the [framework wiki](https://github.com/apache/royale-asjs/wiki){:target='_blank'}, or the [compiler wiki](https://github.com/apache/royale-compiler/wiki){:target='_blank'}.
+1. *Tutorials* to show how to do a complete thing, with source code a reader can copy and learn from. These generally appear on the website blog at the moment.
+2. *How-to guides* that explain how to achieve something in Royale that is either of a general nature ("How to find the bead you need") or does not merit a full tutorial ("How to disable an input field"). This material should be in the user documentation.
+3. *Explanations* that explain the "why" of Royale features--why we do it this way, or avoid doing it that way. This appears in the [High Level View](welcome/high-level-view.html){:target='_blank'} pages of the user documentation.
+4. *Technical references* are all the gritty details of what each Royale component, bead, and feature requires, produces, and can do. This material would normally be in the [ASDoc reference](https://royale.apache.org/asdoc/){:target='_blank'}, the [framework wiki](https://github.com/apache/royale-asjs/wiki){:target='_blank'}, or the [compiler wiki](https://github.com/apache/royale-compiler/wiki){:target='_blank'}.
 
 No one flavor is better in all circumstances than the others. All contributions strengthen Royale by expanding the number of people who can find the answers they need to create applications.
 
@@ -45,17 +45,17 @@ Use HTML comments at the top of the document for any explanatory notes for the d
 
 ## File names and titles
 
-    * File names do not have to be the same as the titles that display at the top of the file.
-    * For file names, use all lower-case, join words with - and not _ or `%20` statements, and add the markdown specification. The file name should be `another-important-thing.md`, not `Another%20Important%20Thing.md`, `AnotherImportantThing.md`, or `Another_important_thing.md`. This is important for SEO, human readability, and readability by assistive devices.
-    * Remember to add a permalink. For the latest example it should be: `permalink: /another-important-thing`, if is nested the permalink will be prefixed with the required folder estrucrure.
-    * File titles should be in sentence case: "Another important Royale thing", not "Another Important Royale Thing". The point here is that the more capitals involved, the harder it is to read the statement.
+* File names do not have to be the same as the titles that display at the top of the file.
+* For file names, use all lower-case, join words with - and not _ or `%20` statements, and add the markdown specification. The file name should be `another-important-thing.md`, not `Another%20Important%20Thing.md`, `AnotherImportantThing.md`, or `Another_important_thing.md`. This is important for SEO, human readability, and readability by assistive devices.
+* Remember to add a permalink. For the latest example it should be: `permalink: /another-important-thing`, if is nested the permalink will be prefixed with the required folder estrucrure.
+* File titles should be in sentence case: "Another important Royale thing", not "Another Important Royale Thing". The point here is that the more capitals involved, the harder it is to read the statement.
 
 ## Documentation conventions
 
-    1. Address the reader directly, and in active voice, so "To do X, follow these steps..." rather than "When a developer wishes to do X, these steps would be followed..."
-    2. Instead of "he or she" use "they" when the pronoun is for an indefinite singular actor: "When someone has an existing application to migrate, they should start by...". This offends my grammarian soul, but is becoming standard English.
-    3. Link generously to other content in the help docs that may throw light on the current subject.
-    4. When writing how-to material, provide the *what*, the *so what*, and the *now what*: what a widget is, why widgets can be important in your code, and here's how to find, adapt, or create the widget of your dreams.
+1. Address the reader directly, and in active voice, so "To do X, follow these steps..." rather than "When a developer wishes to do X, these steps would be followed..."
+2. Instead of "he or she" use "they" when the pronoun is for an indefinite singular actor: "When someone has an existing application to migrate, they should start by...". This offends my grammarian soul, but is becoming standard English.
+3. Link generously to other content in the help docs that may throw light on the current subject.
+4. When writing how-to material, provide the *what*, the *so what*, and the *now what*: what a widget is, why widgets can be important in your code, and here's how to find, adapt, or create the widget of your dreams.
 
 ## Links
 
