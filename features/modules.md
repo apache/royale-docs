@@ -17,6 +17,7 @@
 layout: docpage
 title: Modules
 description: Break you Application in parts
+permalink: /features/modules
 ---
 
 # Modules

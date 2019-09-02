@@ -17,11 +17,12 @@
 layout: docpage
 title: JSON
 description: JSON
+permalink: /features/loading-external-data/json
 ---
 
 # JSON
 
-JSON
+*information coming soon.*
 
 
 

@@ -17,13 +17,15 @@
 layout: docpage
 title: Loading External Data
 description: Loading External Data
+permalink: /features/loading-external-data
 ---
 
 # Loading External Data
 
 Loading External Data
 
-* [HTTPService](features/loading-external-data/httpservice.html)
-* [JSON](features/loading-external-data/json.html)
-* [AMF](features/loading-external-data/amf.html)
+* [HTTPService](features/loading-external-data/httpservice)
+* [JSON](features/loading-external-data/json)
+* [AMF](features/loading-external-data/amf)
 
+*information coming soon.*

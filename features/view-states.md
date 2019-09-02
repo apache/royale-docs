@@ -17,8 +17,9 @@
 layout: docpage
 title: View States
 description: View States
+permalink: /features/view-states
 ---
 
 # View States
 
-View States
+*information coming soon.*

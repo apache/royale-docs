@@ -17,6 +17,7 @@
 layout: docpage
 title: Metadata
 description: Metadata
+permalink: /features/as3/metadata
 ---
 
 # Metadata

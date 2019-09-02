@@ -17,11 +17,14 @@
 layout: docpage
 title: AMF
 description: ActionScript Message Format
+permalink: /features/loading-external-data/amf
 ---
 
 # AMF
 
 ActionScript Message Format
+
+*information coming soon.*
 
 
 

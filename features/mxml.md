@@ -16,6 +16,7 @@
 
 layout: docpage
 title: MXML
+permalink: /features/mxml
 ---
 
 # MXML

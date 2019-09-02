@@ -17,8 +17,9 @@
 layout: docpage
 title: Styling
 description: Styling
+permalink: /features/styling
 ---
 
 # Styling
 
-Styling
+*information coming soon.*

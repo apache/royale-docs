@@ -61,7 +61,7 @@ myLabel.text = projectName;
 
 And we'd also have to write change detection code if the value could change at runtime (which it doesn't in this case). 
 
-See more about what this powerful feature can do for you on this page: [Data binding](features/data-binding.html).
+See more about what this powerful feature can do for you on this page: [Data binding](features/data-binding).
 
 Also, a commit message might be too long to read in a row of a DataGrid so we will add a place to display the longer message of a selected commit.
 

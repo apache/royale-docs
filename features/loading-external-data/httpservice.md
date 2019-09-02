@@ -17,11 +17,12 @@
 layout: docpage
 title: HTTPService
 description: HTTPService
+permalink: /features/loading-external-data/httpservice
 ---
 
 # HTTPService
 
-HTTPService
+*information coming soon.*
 
 
 

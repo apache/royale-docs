@@ -16,6 +16,7 @@
 
 layout: docpage
 title: ActionScript 3 (AS3)
+permalink: /features/as3
 ---
 
 # ActionScript 3 (AS3)
@@ -55,8 +56,8 @@ The Royale compiler extends the ActionScript language with useful, new features.
 
 The following new ActionScript features are available with the Royale compiler:
 
-* [Abstract Classes](features/actionscript/abstract-classes.html)
-* [Private Constructors](features/actionscript/private-constructors.html)
+* [Abstract Classes](features/as3/abstract-classes)
+* [Private Constructors](features/as3/private-constructors)
 
 ### Limitations of ActionScript language extensions
 

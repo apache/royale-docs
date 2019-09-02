@@ -17,6 +17,7 @@
 layout: docpage
 title: Externs
 description: Use external javascript libraries in ActiopnScript
+permalink: /features/externs
 ---
 
 # Externs
@@ -92,4 +93,4 @@ To learn more about using the huge range of external JavaScript libraries that i
 
 ## ExternalInterface
 
-Check [ExternalInterface](features/external-interface.html) to know another way to communicate to/from External JavaScript.
+Check [ExternalInterface](features/external-interface) to know another way to communicate to/from External JavaScript.

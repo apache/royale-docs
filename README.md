@@ -17,7 +17,7 @@ We produce four flavors of documentation:
 
 1. *Tutorials* to show how to do a complete thing, with source code a reader can copy and learn from. These generally appear on the website blog at the moment.
 2. *How-to guides* that explain how to achieve something in Royale that is either of a general nature ("How to find the bead you need") or does not merit a full tutorial ("How to disable an input field"). This material should be in the user documentation.
-3. *Explanations* that explain the "why" of Royale features--why we do it this way, or avoid doing it that way. This appears in the [High Level View](welcome/high-level-view.html){:target='_blank'} pages of the user documentation.
+3. *Explanations* that explain the "why" of Royale features--why we do it this way, or avoid doing it that way. This appears in the [High Level View](welcome/high-level-view){:target='_blank'} pages of the user documentation.
 4. *Technical references* are all the gritty details of what each Royale component, bead, and feature requires, produces, and can do. This material would normally be in the [ASDoc reference](https://royale.apache.org/asdoc/){:target='_blank'}, the [framework wiki](https://github.com/apache/royale-asjs/wiki){:target='_blank'}, or the [compiler wiki](https://github.com/apache/royale-compiler/wiki){:target='_blank'}.
 
 No one flavor is better in all circumstances than the others. All contributions strengthen Royale by expanding the number of people who can find the answers they need to create applications.
@@ -59,9 +59,11 @@ Use HTML comments at the top of the document for any explanatory notes for the d
 
 ## Links
 
-In the .md files, links have to be full paths without the leading slash. So to link to the published, HTML, version of features/as3.md, you would use
+In the .md files, links have to be full paths without the leading slash. The link to the published HTML version of features/as3.md, is `[AS3](features/as3.html)`, but we want to use permalinks so the link to use should be:
 
-`[AS3](features/as3.html)` 
+`[AS3](features/as3)`
+
+and the permalink on that page will be, `permalink: /features/as3`
 
 without the leading "/". Links are case-sensitive, and you need to insert `%20` for any space that appears in the target file's name. Check the guidance about file names, above.
 

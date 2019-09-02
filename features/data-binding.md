@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Data binding
+permalink: /features/data-binding
 ---
 # Data binding
+
 *information coming soon.*

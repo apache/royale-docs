@@ -17,6 +17,7 @@
 layout: docpage
 title: PAYG
 description: Pay as you Go
+permalink: /features/payg
 ---
 
 # PAYG
@@ -73,7 +74,7 @@ However, we don't want to ignore DRY. Using subclasses in extended components ca
 
 ### Strands and Beads
 
-The [Strands and Beads](features/strands-and-beads.html) concept is a metaphor for adding extra functionality (beads) onto a component (strand). _Beads_ are the modular units of functionality that can be added to the _strand_ (base component).
+The [Strands and Beads](features/strands-and-beads) concept is a metaphor for adding extra functionality (beads) onto a component (strand). _Beads_ are the modular units of functionality that can be added to the _strand_ (base component).
  
 ### Compiler
 
