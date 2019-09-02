@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Testing
+description: Methods for testing Apache Royale projects
+permalink: /testing
 ---
 
 # Testing with Apache Royale

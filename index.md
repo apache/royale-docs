@@ -17,7 +17,7 @@
 layout: docpage
 title: Welcome to Apache Royale
 description: Designed for the future. Code Once. Run Everywhere.
-
+permalink: /
 ---
 
 # Welcome to Apache Royale!
@@ -35,14 +35,14 @@ This is the main documentation for Apache Royale.  If you are looking for the AP
 
 This document is divided into several sections:
 
- * [High Level View](/royale-docs/welcome/high-level-view) gives an overview of Royale.
+ * [High Level View](welcome/high-level-view) gives an overview of Royale.
 
  * [Features and Concepts](features-and-concepts) explains the main features of Royale and some concepts that might help you be more productive.
 
- * [A Bit of History](/royale-docs/welcome/history) provides a brief background on how Royale came to be.
+ * [A Bit of History](welcome/history) provides a brief background on how Royale came to be.
 
- * [Licenses and Policies](/royale-docs/welcome//licenses) contains the fine print.
+ * [Licenses and Policies](welcome//licenses) contains the fine print.
 
- * [Get Involved](/royale-docs/welcome/get-involved) explains how you can contribute to the future of Royale.
+ * [Get Involved](welcome/get-involved) explains how you can contribute to the future of Royale.
 
 <sup>_(*)Note: This material is far from complete. However, with each release more useful information will become available._</sup>

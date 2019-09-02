@@ -194,11 +194,11 @@ initialize="addEventListener('dataReady', dataReadyHandler);configurator.send()"
 </js:Application>
 ```
 
-Since we are interested in JS output, if you're using an [IDE](get-started/development-tools.html), set that output target in the project before compiling. If you're using command-line scripts, run:
+Since we are interested in JS output, if you're using an [IDE](get-started/development-tools), set that output target in the project before compiling. If you're using command-line scripts, run:
 
 `<path to Royale SDK>/royale-asjs/js/bin/mxmlc -debug=true GitHubCommitLogViewer.mxml`
 
-If you've used NPM to install Royale, you can just run:
+If you've used [NPM](https://www.npmjs.com/){:target='_blank'} to install Royale, you can just run:
 
 `mxmlc -debug=true GitHubCommitLogViewer.mxml`
 

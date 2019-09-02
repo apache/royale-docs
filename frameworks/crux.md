@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Crux
+description: An Apache Royale framework based on Swiz
+permalink: /frameworks/crux
 ---
 
 # Crux

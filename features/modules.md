@@ -16,13 +16,13 @@
 
 layout: docpage
 title: Modules
-description: Break you Application in parts
+description: Break you application in parts
 permalink: /features/modules
 ---
 
 # Modules
 
-Break you Application in parts
+Break you application in parts
 
 Royale supports a distributed development model called **modules**. Those familiar with [Apache Flex](https://flex.apache.org/){:target='_blank'} SDK will recognize the term. Royale modules work almost identically to Flex modules with a few differences.
 

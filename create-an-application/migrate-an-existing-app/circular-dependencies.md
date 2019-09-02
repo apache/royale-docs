@@ -49,7 +49,7 @@ In Flash and AIR the runtime constructs both classes before type-checking for pa
 
 ## What compiling for JavaScript in Royale requires
 
-Royale uses the <a href="https://developers.google.com/closure/compiler/" target="_blank">Google Closure Compiler</a> (GCC) to compile your application into JavaScript that can run on browsers and mobile phones without heavy plugins like Flash. GCC "parses your JavaScript, analyzes it, removes dead code and rewrites and minimizes what's left. It also checks syntax, variable references, and types, and warns about common JavaScript pitfalls." 
+Royale uses the [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler){:target='_blank'} to compile your application into JavaScript that can run on browsers and mobile phones without heavy plugins like Flash. GCC "parses your JavaScript, analyzes it, removes dead code and rewrites and minimizes what's left. It also checks syntax, variable references, and types, and warns about common JavaScript pitfalls." 
 
 GCC does not like circular dependencies that Flash allows. The reason is that, in development mode, each class is loaded by a separate script element, so there has to be a well-defined order to load these scripts. GCC also wants each class to declare the classes it uses via an API called goog.require. So in the Flash example above, Child will have goog.require('Parent') and Parent will have goog.require('Child') and GCC doesn't know which file to load first and it doesn't really want to examine the rest of the file to determine the order.
 

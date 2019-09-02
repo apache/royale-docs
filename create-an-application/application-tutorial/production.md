@@ -37,7 +37,7 @@ On the command line, create a production version by running:
 
 `<path to Royale SDK>/royale-asjs/js/bin/mxmlc GitHubCommitsViewer.mxml`
 
-If you've used NPM to install Royale, you can just run:
+If you've used [NPM](https://www.npmjs.com/){:target='_blank'} to install Royale, you can just run:
 
 `mxmlc GitHubCommitsViewer.mxml`
 

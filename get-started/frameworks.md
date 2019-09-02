@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Frameworks
+description: Sets of code libraries availables in Royale
+permalink: /get-started/frameworks
 ---
 
 # Frameworks

@@ -73,7 +73,7 @@ Below are the licenses for components included in the binary distribution. This 
   * [args4J](http://args4j.kohsuke.org){:target='_blank'} under the __MIT License__. See:
     * [http://args4j.kohsuke.org](http://args4j.kohsuke.org){:target='_blank'}
 
-  * [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/){:target='_blank'} under __Apache License 2.0__. See:
+  * [ (GCC)](https://developers.google.com/closure/compiler/){:target='_blank'} under __Apache License 2.0__. See:
     * [https://github.com/google/closure-compiler/blob/master/README.md#closure-compiler-license](https://github.com/google/closure-compiler/blob/master/README.md#closure-compiler-license){:target='_blank'}.
     
     Also __GCC__ bundles other software. See dependency licenses: 

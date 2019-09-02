@@ -16,36 +16,37 @@
 
 layout: docpage
 title: Development tools
+description: Software tools to help you while developing Royale code
+permalink: /get-started/development-tools
 ---
 
 # Development tools
 
+Software tools to help you while developing Royale code
+
 You can just use any standard text editor to write Royale applications and the command-line to compile them, but you may find that an Interactive Development Environment (IDE) can make you even more productive.
 
 ## IDEs
+
 IDEs that support Apache Royale provide getting-started instructions to help you specify using Royale for a new project, or importing an existing Royale project.
 
 ### IDEs with Royale support
 
 - [Visual Studio Code with ActionScript and MXML Extensions](https://github.com/BowlerHatLLC/vscode-nextgenas/wiki/Install-the-ActionScript-and-MXML-extension-for-Visual-Studio-Code){:target='_blank'}
-
 - [Moonshine IDE](http://moonshine-ide.com){:target='_blank'}
 
 ### IDES that supported Flex and work with Royale with some restrictions and limitations.
 
-- Adobe Flash Builder
-
-- IntelliJ IDEA
-
-- FDT
-
-- Flash Develop
+- [Adobe Flash Builder](https://www.adobe.com/products/flash-builder-standard.html){:target='_blank'}
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/){:target='_blank'}
+- [FDT](https://fdt.powerflasher.com){:target='_blank'}
+- [Flash Develop](https://www.flashdevelop.org){:target='_blank'}
 
 ## Command-line scripts
 
-To run the compiler, run the js/bin/mxmlc tool in the Royale SDK. The [Download Royale](get-started/download-royale.html) and [Hello World](get-started/hello-world.html) sections provide guidance about how to use the compiler.
+To run the compiler, run the js/bin/mxmlc tool in the Royale SDK. The [Download Royale](get-started/download-royale) and [Hello World](get-started/hello-world) sections provide guidance about how to use the compiler.
 
-Royale provides [Royale CLI](get-started/royale-cli.html), a tool to simplify creating and compiling applications for those using <a href="https://www.npmjs.com/" target="_blank">npm</a>.
+Royale provides [Royale CLI](get-started/royale-cli), a tool to simplify creating and compiling applications for those using [NPM](https://www.npmjs.com/){:target='_blank'}.
 
 ## Apache Maven
 
@@ -57,6 +58,6 @@ You can use Apache Ant to compile your Royale application. Visit the [Apache Ant
 
 ## Apache Cordova
 
-Apache Cordova enables Royale applications to run on mobile devices, tablets, and even desktops.  The MobileTrader example in examples/royale/MobileTrader and a few other examples use Cordova. Visit the <a href="https://cordova.apache.org/" target="_blank">Apache Cordova project</a> to learn more about using Cordova.
+Apache Cordova enables Royale applications to run on mobile devices, tablets, and even desktops. The MobileTrader example in examples/royale/MobileTrader and a few other examples use Cordova. Visit the [Apache Cordova project](https://cordova.apache.org){:target='_blank'} to learn more about using Cordova.
 
 

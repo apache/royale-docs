@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Create an Application
+description: Building your first Apache Royale application
+permalink: /create-an-application
 ---
 # Create an Application
 

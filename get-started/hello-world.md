@@ -16,15 +16,17 @@
 
 layout: docpage
 title: Hello World
+description: Try the simplest piece of code possible
+permalink: /get-started/hello-world
 ---
 
 # Hello World
 
 Try the simplest piece of code possible
 
-To verify that the Royale SDK is set up correctly, we recommend you create and build a ["Hello World"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program){:target='_blank'} example. If that works, you can move on to [Create an Application](create-an-Application.html) and work through the tutorial on building a more substantial application.
+To verify that the Royale SDK is set up correctly, we recommend you create and build a ["Hello World"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program){:target='_blank'} example. If that works, you can move on to [Create an Application](create-an-Application) and work through the tutorial on building a more substantial application.
 
-These instructions presume you are not using an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment){:target='_blank'}, but are creating files in a text editor and compiling using command-line scripts or similar controls. [Development tools](get-started/development-tools.html) that fully support Royale provide their own instructions for building your first Royale applications.
+These instructions presume you are not using an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment){:target='_blank'}, but are creating files in a text editor and compiling using command-line scripts or similar controls. [Development tools](get-started/development-tools) that fully support Royale provide their own instructions for building your first Royale applications.
 
 > In our Apache Royale Blog Examples, you can read about the ['Hello World' example](https://royale.apache.org/creating-a-hello-world-in-apache-royale/) to complement the information exposed here. Notice that the main difference is that while in this Hello World we use the _Express_ library, in the blog example we use the _Basic_ version that requires a few more lines of code.
 
@@ -65,13 +67,13 @@ In the `src` folder, create a file called `HelloWorld.mxml` and use your favorit
 
 If you used [NPM](https://www.npmjs.com/){:target='_blank'} to install Royale, run from your project folder:
 
-```
+```sh
 mxmlcnpm src/HelloWorld.mxml
 ```
 
 If you didn't use npm, run:
 
-```
+```sh
 <path to SDK folder>/js/binmxmlc src/HelloWorld.mxml
 ```
 
@@ -85,4 +87,4 @@ Projects/HelloWorld/bin/js-release
 
 In that folder should be an `index.html` file you can open in your browser to see your "Hello World" application.  If you see that, congratulations! You have installed Royale successfully and are ready to build Royale applications.  
 
-[Create an Application](create-an-Application.html) contains a tutorial for building a more substantial application. The Royale SDK includes an **Examples** directory that provides practical demonstrations of how to achieve many features and effects using Royale.
+[Create an Application](create-an-Application) contains a tutorial for building a more substantial application. The Royale SDK includes an **Examples** directory that provides practical demonstrations of how to achieve many features and effects using Royale.

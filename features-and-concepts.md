@@ -16,15 +16,15 @@
 
 layout: docpage
 title: Features and Concepts
-description: Features and Concepts
+description: Key points to learn Apache Royale
 permalink: /features-and-concepts
 ---
 
 # Features and Concepts
 
-Key points to learn Royale
+Key points to learn Apache Royale
 
-Here are some things you may need to know to help you be more productive with Royale, although some folks get pretty far by just following the tutorial in [Create an Application](create-an-Application.html) and extending it.
+Here are some things you may need to know to help you be more productive with Royale, although some folks get pretty far by just following the tutorial in [Create an Application](create-an-Application) and extending it.
 
 ## AS3 and MXML Languages
 
@@ -42,7 +42,7 @@ The underlying component patterns in most Royale components rely on a plug-in mo
 
 Sometimes you may want your Royale application to call an external piece of JavaScript that is also hosted in your web page, or even for some extenal JavaScript from your page to call into the Royale application. In the Flex (and Flash) world, there was the possibility to use the `ExternalInterface` class to achieve this functionality. If you want this in Royale, there are some options available that you can [read about here](features/external-interface).
 
-Another option are externs, wich is uses [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/){:target='_blank'} to declare that a name for a class, property or function is defined in external code and so should not be renamed when application code is compiled. Apache Royale can use the properties of the external library, and you can even see them as options if you are using an __IDE__, with _code intelligence_ enabled. [read about here](features/externs).
+Another option are externs, wich is uses [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler){:target='_blank'} to declare that a name for a class, property or function is defined in external code and so should not be renamed when application code is compiled. Apache Royale can use the properties of the external library, and you can even see them as options if you are using an __IDE__, with _code intelligence_ enabled. [read about here](features/externs).
 
 ## Data Binding
 

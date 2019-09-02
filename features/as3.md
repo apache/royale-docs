@@ -16,6 +16,7 @@
 
 layout: docpage
 title: ActionScript 3 (AS3)
+description: The object-oriented programming language
 permalink: /features/as3
 ---
 

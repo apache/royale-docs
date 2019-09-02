@@ -16,12 +16,13 @@
 
 layout: docpage
 title: System Requirements
+description: The minimum hardware needed to work in Apache Royale
+permalink: get-started/system-requirements
 ---
 
-<!-- What sort of hardware will support work in Royale -->
 # System requirements
 
-&nbsp;
+The minimum hardware needed to work in Apache Royale
 
 Apache Royale is designed for use on Mac or PC computers. We would love to know your experience with it on a Linux machine!
 

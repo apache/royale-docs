@@ -16,6 +16,7 @@
 
 layout: docpage
 title: Data binding
+description: Data binding
 permalink: /features/data-binding
 ---
 # Data binding

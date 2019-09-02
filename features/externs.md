@@ -26,7 +26,7 @@ Use external javascript libraries in ActiopnScript
 
 Some Apache Royale elements at the moment have limited cross-browser support. To get reliable display and performance in those cases, Royale makes use of existing external JavaScript libraries. For example, [Jewel Alert](https://apache.github.io/royale-docs/component-sets/jewel/alert) uses the HTML dialog element, which is not reliable across all browsers. So Jewel Alert references the _dialogPolyfill_ external library to make sure the display is as intended in whichever browser the alert displays.
 
-[Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/){:target='_blank'} provides a mechanism called _@externs_ that Apache Royale uses to declare that a name for a class, property or function is defined in external code and so should not be renamed when application code is compiled.
+[Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler){:target='_blank'} provides a mechanism called _@externs_ that Apache Royale uses to declare that a name for a class, property or function is defined in external code and so should not be renamed when application code is compiled.
 
 The compiler assumes that externs will exist in the environment in which the compiled JavaScript will be interpreted.
 

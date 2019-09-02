@@ -16,6 +16,7 @@
 
 layout: docpage
 title: MXML
+description: The declarative XML-based user interface markup language
 permalink: /features/mxml
 ---
 
