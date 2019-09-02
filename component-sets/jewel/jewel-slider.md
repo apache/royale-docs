@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel Slider
+description: The Jewel Slider
+permalink: /component-sets/jewel/slider
 ---
 
 # Jewel Slider

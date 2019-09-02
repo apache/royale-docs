@@ -44,26 +44,33 @@ Developers who have worked in Flex will quickly feel at home with Royale compone
 You can [read more about Strands and Beads here](features/strands-and-beads).
 
 ## Component sets
-Royale has a series of [component sets](component-sets.html), groups of ready-to-use components which are designed for different purposes.
+
+Royale has a series of [component sets](component-sets), groups of ready-to-use components which are designed for different purposes.
 
 ### Basic component set
-The [Basic](component-sets/basic.html) set complies strictly with the PAYG guidelines and generates the smallest amount of code so it compiles quickly.
+
+The [Basic](component-sets/basic) set complies strictly with the PAYG guidelines and generates the smallest amount of code so it compiles quickly.
 
 ### Express component set
+
 The Express set is Basic components with lots of Beads packed into them by default. It is designed for rapid prototyping and proofs-of-concepts and is not optimized for size and performance. Applications built with the Express components can still be deployed in production environments if the size and performance are acceptable, which is often the case.
 
 ### Jewel component set
-[Jewel](component-sets/jewel.html) is a little less compliant with PAYG so it can provide a great off-the-shelf look and feel. 
 
-[Tour de Jewel](https://royale.apache.org/tourdejewel/){:target='_blank'} provides working examples of Royale components styled in Jewel, with source code you can copy and paste into your own project.
+[Jewel](component-sets/jewel) is a little less compliant with PAYG so it can provide a great off-the-shelf look and feel. 
+
+[Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} provides working examples of Royale components styled in Jewel, with source code you can copy and paste into your own project.
 
 ### MDL component set
+
 The MateriaDesignLite set wraps the display concepts related to [Google's Material Design](https://en.wikipedia.org/wiki/Material_Design){:target='_blank'} language. This library wraps the components of [Material Design Lite](https://getmdl.io/components/index.html){:target='_blank'} library.
 
 ### MXRoyale/MXSpark component sets
+
 This component set seeks to emulate the functions and experience Flex developers are familiar with.
 
 ### Other component sets
+
 There are several other component sets that are proofs-of-concept that wrap existing JavaScript frameworks. They include:
 
  * CreateJS
@@ -71,6 +78,7 @@ There are several other component sets that are proofs-of-concept that wrap exis
  * JQuery
  
  ## Component sets for your application
+ 
  When you download the Royale SDK to your local computer, you can browse the component sets in this location: 
  
  `royale-asjsframeworks/projects`

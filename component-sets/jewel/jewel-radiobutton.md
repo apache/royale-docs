@@ -17,7 +17,7 @@
 layout: docpage
 title: Jewel RadioButton
 description: The Jewel RadioButton control lets the user choose one of a set of options.
-
+permalink: /component-sets/jewel/radiobutton
 ---
 
 # Jewel RadioButton
@@ -135,4 +135,4 @@ On the other hand, you can add other common Jewel control beads to it to provide
 
 Other related Jewel components are:
 
-* [CheckBox](component-sets/jewel/jewel-checkbox.html)
+* [CheckBox](component-sets/jewel/checkbox)

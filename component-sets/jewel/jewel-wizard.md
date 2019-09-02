@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel Wizard
+description: The Jewel Wizard
+permalink: /component-sets/jewel/wizard
 ---
 
 # Jewel Wizard

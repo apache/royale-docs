@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel SnackBar
+description: The Jewel SnackBar
+permalink: /component-sets/jewel/snackbar
 ---
 
 # Jewel SnackBar

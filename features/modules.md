@@ -42,7 +42,7 @@ A `Module` is a separate compilation of one or more source files that results in
 
 A `Module` can contain code that doesn't have a UI, or it can be mostly UI. Modules can provide other UI screens and associated logic. There is a `ModuleLoader` component that displays the components that are children of a module. MXML files are commonly used to specify the UI components.
 
-There is an example for [Basic](component-sets/basic.html) UI Set [here](https://github.com/apache/royale-asjs/tree/develop/examples/royale/ModuleExample){:target='_blank'} and other for [Jewel](component-sets/jewel.html) UI Set can be found [here](https://github.com/apache/royale-asjs/tree/develop/examples/blog/BE0013_Dividing_an_Apache_Royale_application_with_modules){:target='_blank'}.
+There is an example for [Basic](component-sets/basic) UI Set [here](https://github.com/apache/royale-asjs/tree/develop/examples/royale/ModuleExample){:target='_blank'} and other for [Jewel](component-sets/jewel) UI Set can be found [here](https://github.com/apache/royale-asjs/tree/develop/examples/blog/BE0013_Dividing_an_Apache_Royale_application_with_modules){:target='_blank'}.
 
 Proper use of modules can help maintain _"separation of concerns"_ which helps keep you from writing _"spaghetti code"_. If only the code in one module changes, only that module needs to be recompiled. And if that code isn't needed to show the first screen, then the application will start up faster if that module is loaded only when it is needed.
 

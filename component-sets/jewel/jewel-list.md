@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel List
+description: The Jewel List
+permalink: /component-sets/jewel/list
 ---
 
 # Jewel List

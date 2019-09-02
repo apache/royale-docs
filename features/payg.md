@@ -60,7 +60,7 @@ The ‘paying’ aspect of PAYG does not include _developer effort_ in the ‘pa
 
 The _Express_ component set has pre-composed components that feature combinations of functionality to suit general use cases. This reduces the time and effort required to deploy common components by including their more commonly needed functionality, helping balance ease of development against __PAYG__ benefits.
 
-Similarly, the [Jewel](component-sets/jewel.html){:target='_blank'} component set is designed with PAYG in mind but tries to balance towards the usability of the framework and to not be PAYG-strict. 
+Similarly, the [Jewel](component-sets/jewel){:target='_blank'} component set is designed with PAYG in mind but tries to balance towards the usability of the framework and to not be PAYG-strict. 
 
 ## PAYG vs DRY
 

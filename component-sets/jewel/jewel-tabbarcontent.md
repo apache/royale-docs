@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel TabBarContent
+description: The Jewel TabBarContent
+permalink: /component-sets/jewel/tabbarcontent
 ---
 
 # Jewel TabBarContent

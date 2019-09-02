@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel DropDownList
+description: The Jewel DropDownList
+permalink: /component-sets/jewel/dropdownlist
 ---
 
 # Jewel DropDownList

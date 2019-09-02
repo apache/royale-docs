@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel
+description: A set of modern UI components
+permalink: /component-sets/jewel
 ---
 
 # Jewel
@@ -24,7 +26,7 @@ A set of modern UI components
 
 Jewel is a themeable and responsive set of user interface components for Apache Royale to help you quickly build the front end of your applications with [ActionScript](features/as3) & [MXML](features/mxml).
 
-It's based by design on [Basic](component-sets/basic.html) components. But while Basic is very strict with concepts like [PAYG](features/payg), in Jewel, while PAYG is important, when necessary we prioritize other things like responsiveness, themes and look and feel.
+It's based by design on [Basic](component-sets/basic) components. But while Basic is very strict with concepts like [PAYG](features/payg), in Jewel, while PAYG is important, when necessary we prioritize other things like responsiveness, themes and look and feel.
 
 ## Browser Support
 
@@ -54,33 +56,33 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 
 | Type          	| Name                                          	| Description                                                                                          	| Available SDK 	| State     	|
 |------------------	|------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------	|---------------	|--------------	|
-| __Containers__  	| [Card](component-sets/jewel/jewel-card.html)              	    | Container that surrounds other components                                                             	|               	|          	    |
-|                	| [Grid](component-sets/jewel/jewel-grid.html)              	    | Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	|               	|          	    |
-|                	| [SimpleTable](component-sets/jewel/jewel-simpletable.html)	    | A basic HTML table that can be declared in MXML                                                     	|               	| Complete      |
-|                	| [Table](component-sets/jewel/jewel-table.html)                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	|               	| In Progress   |
-|                	| [TabBarContent](component-sets/jewel/jewel-tabbarcontent.html)    | A container to use with TabBar and capable of presenting organized content                            	|               	|           	|
-|                	| [Wizard](component-sets/jewel/jewel-wizard.html)             	    | 11.0+                                                                                                	|               	|           	|
-| __Components__ 	| [Alert](component-sets/jewel/jewel-alert.html)            	    | Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
-|               	| [Button](component-sets/jewel/jewel-button.html)          	    | A commonly-used rectangular button with a text label. Users can click or tap it to take an action. 	| 0.9.4         	| Complete  	|
-|                 	| [CheckBox](component-sets/jewel/jewel-checkbox.html)        	    | Consists of a box that can contain a check mark and an optional label.	| 0.9.4         	| Complete  	|
-|                	| [ComboBox](component-sets/jewel/jewel-combobox.html)              |                                                                                                      	|               	|           	|
-|                	| [DateChooser](component-sets/jewel/jewel-datechooser.html)        |                                                                                                      	|               	|           	|
-|                	| [DateField](component-sets/jewel/jewel-datefield.html)            |                                                                                                      	|               	|             	|
-|               	| [DropDownList](component-sets/jewel/jewel-dropdownlist.html)      |                                                                                                      	|               	|           	|
-|               	| [Form](component-sets/jewel/jewel-form.html)                      |                                                                                                      	|               	|           	|
-|               	| [FormItem](component-sets/jewel/jewel-formitem.html)      	    |                                                                                                      	|               	|           	|
-|                	| [Icon](component-sets/jewel/jewel-icon.html)                	    |                                                                                                      	|               	|           	|
-|               	| [Image](component-sets/jewel/jewel-image.html)                    |                                                                                                      	|               	|           	|
-|               	| [Label](component-sets/jewel/jewel-label.html)               	    |                                                                                                      	|               	|           	|
-|               	| [List](component-sets/jewel/jewel-list.html)               	    |                                                                                                      	|               	|           	|
-|               	| [NumericStepper](component-sets/jewel/jewel-numericstepper.html)  |                                                                                                      	|               	|           	|
-|               	| [PopUp](component-sets/jewel/jewel-popup.html)                    |                                                                                                      	|               	|           	|
-|               	| [RadioButton](component-sets/jewel/jewel-radiobutton.html)  	    | Lets the user make a single choice within a set of mutually exclusive choices	| 0.9.4         	| Complete  	|
-|               	| [Slider](component-sets/jewel/jewel-slider.html)                  |                                                                                                      	|               	|           	|
-|               	| [SnackBar](component-sets/jewel/jewel-snackbar.html)  	   	    |                                                                                                      	|               	|           	|
-|               	| [TabBar](component-sets/jewel/jewel-tabbar.html)  	            |                                                                                                      	|               	|           	|
-|               	| [TextInput](component-sets/jewel/jewel-textinput.html)        	| A control for single-line text field. 	| 0.9.4         	| Complete  	|
+| __Containers__  	| [Card](component-sets/jewel/card)              	    | Container that surrounds other components                                                             	|               	|          	    |
+|                	| [Grid](component-sets/jewel/grid)              	    | Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	|               	|          	    |
+|                	| [SimpleTable](component-sets/jewel/simpletable)	    | A basic HTML table that can be declared in MXML                                                     	|               	| Complete      |
+|                	| [Table](component-sets/jewel/table)                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	|               	| In Progress   |
+|                	| [TabBarContent](component-sets/jewel/tabbarcontent)    | A container to use with TabBar and capable of presenting organized content                            	|               	|           	|
+|                	| [Wizard](component-sets/jewel/wizard)             	    | 11.0+                                                                                                	|               	|           	|
+| __Components__ 	| [Alert](component-sets/jewel/alert)            	    | Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
+|               	| [Button](component-sets/jewel/button)          	    | A commonly-used rectangular button with a text label. Users can click or tap it to take an action. 	| 0.9.4         	| Complete  	|
+|                 	| [CheckBox](component-sets/jewel/checkbox)        	    | Consists of a box that can contain a check mark and an optional label.	| 0.9.4         	| Complete  	|
+|                	| [ComboBox](component-sets/jewel/combobox)              |                                                                                                      	|               	|           	|
+|                	| [DateChooser](component-sets/jewel/datechooser)        |                                                                                                      	|               	|           	|
+|                	| [DateField](component-sets/jewel/datefield)            |                                                                                                      	|               	|             	|
+|               	| [DropDownList](component-sets/jewel/dropdownlist)      |                                                                                                      	|               	|           	|
+|               	| [Form](component-sets/jewel/form)                      |                                                                                                      	|               	|           	|
+|               	| [FormItem](component-sets/jewel/formitem)      	    |                                                                                                      	|               	|           	|
+|                	| [Icon](component-sets/jewel/icon)                	    |                                                                                                      	|               	|           	|
+|               	| [Image](component-sets/jewel/image)                    |                                                                                                      	|               	|           	|
+|               	| [Label](component-sets/jewel/label)               	    |                                                                                                      	|               	|           	|
+|               	| [List](component-sets/jewel/list)               	    |                                                                                                      	|               	|           	|
+|               	| [NumericStepper](component-sets/jewel/numericstepper)  |                                                                                                      	|               	|           	|
+|               	| [PopUp](component-sets/jewel/popup)                    |                                                                                                      	|               	|           	|
+|               	| [RadioButton](component-sets/jewel/radiobutton)  	    | Lets the user make a single choice within a set of mutually exclusive choices	| 0.9.4         	| Complete  	|
+|               	| [Slider](component-sets/jewel/slider)                  |                                                                                                      	|               	|           	|
+|               	| [SnackBar](component-sets/jewel/snackbar)  	   	    |                                                                                                      	|               	|           	|
+|               	| [TabBar](component-sets/jewel/tabbar)  	            |                                                                                                      	|               	|           	|
+|               	| [TextInput](component-sets/jewel/textinput)        	| A control for single-line text field. 	| 0.9.4         	| Complete  	|
 
 ## Jewel Themes
 
-[Jewel Themes](component-sets/jewel/jewel-themes.html)
+[Jewel Themes](component-sets/jewel/themes)

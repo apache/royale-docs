@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel DateField
+description: The Jewel DateField
+permalink: /component-sets/jewel/datefield
 ---
 
 # Jewel DateField

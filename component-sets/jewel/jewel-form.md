@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel Form
+description: The Jewel Form
+permalink: /component-sets/jewel/form
 ---
 
 # Jewel Form

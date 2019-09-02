@@ -44,8 +44,8 @@ Every Royale component contains the minimum code necessary to perform its basic 
 
 Finding the beads that will provide what you want for a given component, or even knowing what beads are available in the official Apache Royale SDK can be a daunting task. There are hundreds of these little pieces of code distributed all over the framework code. For this reason we are gradually assembling a list of beads on each component page, so users can refer to a concrete _strand_ (the component) and see a list of _beads_ that work with it. Normally you can have:
 
-* __Specific Component Beads__. (beads only usable for a specific component, like [Jewel PasswordInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/PasswordInput){:target='_blank'} for an instance of [Jewel TextInput](component-sets/jewel/jewel-textinput.html))
-* __Common Shared Beads__. Beads that can be used with more than one component, like [Jewel Disabled bead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/Disabled){:target='_blank'}, which can be used by [Jewel Button](component-sets/jewel/jewel-button.html), [Jewel TextInput](component-sets/jewel/jewel-textinput.html) or [Jewel CheckBox](component-sets/jewel/jewel-checkbox.html).
+* __Specific Component Beads__. (beads only usable for a specific component, like [Jewel PasswordInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/PasswordInput){:target='_blank'} for an instance of [Jewel TextInput](component-sets/jewel/textinput))
+* __Common Shared Beads__. Beads that can be used with more than one component, like [Jewel Disabled bead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/Disabled){:target='_blank'}, which can be used by [Jewel Button](component-sets/jewel/button), [Jewel TextInput](component-sets/jewel/textinput) or [Jewel CheckBox](component-sets/jewel/checkbox).
 
 ## Adding a bead
 
@@ -55,7 +55,7 @@ There are three ways to add beads to a component: bake it into the code using `<
 
 Each _strand_ supports a `beads` array and users can add beads in MXML.
 
-In the following example we are using the [Jewel TextInput](component-sets/jewel/jewel-textinput.html) strand to add [Jewel TextPrompt](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/TextPrompt){:target='_blank'} and [Jewel Disabled](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/Disabled){:target='_blank'} beads to the strand. Note that while `TextPrompt` is specific to TextInput, you can use `Disabled` with many Jewel components.
+In the following example we are using the [Jewel TextInput](component-sets/jewel/textinput) strand to add [Jewel TextPrompt](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/TextPrompt){:target='_blank'} and [Jewel Disabled](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/Disabled){:target='_blank'} beads to the strand. Note that while `TextPrompt` is specific to TextInput, you can use `Disabled` with many Jewel components.
 
 ```mxml
 <j:TextInput text="Disabled with text...">
@@ -79,7 +79,7 @@ IBeadView: ClassReference("org.apache.royale.jewel.beads.views.ListView");
 ```
 
 Royale uses __CSS__ to configure components with defaults beads. The following
-code snippet is the default initial bead configuration for a [Jewel List](component-sets/jewel/jewel-list.html) and is declared though [SASS](https://sass-lang.com){:target='_blank'} (that gets compiled to __CSS__). 
+code snippet is the default initial bead configuration for a [Jewel List](component-sets/jewel/list) and is declared though [SASS](https://sass-lang.com){:target='_blank'} (that gets compiled to __CSS__). 
 
 ```sass
 j|List

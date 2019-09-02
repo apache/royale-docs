@@ -17,7 +17,7 @@
 layout: docpage
 title: Jewel CheckBox
 description: The Jewel CheckBox consists of a selectable box, that can contain a check mark or not, and an optional label.
-
+permalink: /component-sets/jewel/checkbox
 ---
 
 # Jewel CheckBox
@@ -133,4 +133,4 @@ On the other hand, you can add to it other common Jewel control beads to provide
 
 Other related Jewel components are:
 
-* [RadioButton](component-sets/jewel/jewel-radiobutton.html)
+* [RadioButton](component-sets/jewel/radiobutton)

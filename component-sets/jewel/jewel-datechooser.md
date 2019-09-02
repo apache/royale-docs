@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel DateChooser
+description: The Jewel DateChooser
+permalink: /component-sets/jewel/datechooser
 ---
 
 # Jewel DateChooser

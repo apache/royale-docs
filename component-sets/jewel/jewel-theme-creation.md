@@ -16,13 +16,15 @@
 
 layout: docpage
 title: Jewel Theme Creation
+description: How to make a new theme for Jewel
+permalink: /component-sets/jewel/theme-creation
 ---
 
 # Jewel Theme Creation
 
 How to make a new theme for Jewel
 
-Jewel is a component set designed with change of appearance in mind. Jewel comes with a series of pre-designed themes so you can use it right away without having to create your own theme. You can learn more about the existing themes [here](component-sets/jewel/jewel-themes.html). The Jewel themes that come with Apache Royale define 12 colors, dark and light, flat / no-flat visuals. However, you may want a personalized look, and you can either adapt one of the existing themes or create one from scratch.
+Jewel is a component set designed with change of appearance in mind. Jewel comes with a series of pre-designed themes so you can use it right away without having to create your own theme. You can learn more about the existing themes [here](component-sets/jewel/themes). The Jewel themes that come with Apache Royale define 12 colors, dark and light, flat / no-flat visuals. However, you may want a personalized look, and you can either adapt one of the existing themes or create one from scratch.
 
 ## Theme basics
 
@@ -48,7 +50,7 @@ You'll never find a style rule in the Jewel library that define _colors, lines, 
 
 ## Jewel Theme Library
 
-This library is like a __master theme__ where _colors, fonts, icons or shapes_ are defined, and is the library which generates Jewel theme variants, thanks to SASS preprocessing power. Each Jewel theme in Apache Royale uses the definitions in this library and [just changes a few variables to generate the variants](component-sets/jewel/jewel-theme-creation.html#theme-sass-file).
+This library is like a __master theme__ where _colors, fonts, icons or shapes_ are defined, and is the library which generates Jewel theme variants, thanks to SASS preprocessing power. Each Jewel theme in Apache Royale uses the definitions in this library and [just changes a few variables to generate the variants](component-sets/jewel/theme-creation#theme-sass-file).
 
 ## Primary, Secondary and Emphasized colors
 
@@ -85,7 +87,7 @@ __Jewel library__ has defintions that you don't normally need to change, while _
 
 ## A Jewel component example
 
-Let's take the [Jewel Alert](component-sets/jewel/jewel-alert.html) component as an example and look at the different files that compose this component:
+Let's take the [Jewel Alert](component-sets/jewel/alert) component as an example and look at the different files that compose this component:
 
 In __Jewel library__ you can find:
 

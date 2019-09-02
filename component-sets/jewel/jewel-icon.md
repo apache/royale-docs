@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel Icon
+description: The Jewel Icon
+permalink: /component-sets/jewel/icon
 ---
 
 # Jewel Icon

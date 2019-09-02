@@ -16,10 +16,9 @@
 
 layout: docpage
 title: Jewel Card
+permalink: /component-sets/jewel/card
 ---
 
 # Jewel Card
 
-subtitle
 
-text

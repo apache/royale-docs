@@ -16,19 +16,13 @@
 
 layout: docpage
 title: Basic
+description: The most smallest, fastest and PAYG set
+permalink: /component-sets/basic
 ---
 
 # Basic
 
 The most smallest, fastest and PAYG set
 
-Basic is ...
+*information coming soon.*
 
-## Components
-
-| Type       	| Name           	| Description                                                                                          	| Available SDK 	| State    	|
-|------------	|----------------	|------------------------------------------------------------------------------------------------------	|---------------	|----------	|
-| Container  	|                  	|                                                                                                   	|               	|          	|
-| Components 	| Alert          	| Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.0             	| Finished 	|
-|            	| Button         	|                                                                                                      	|               	|          	|
-|            	| CheckBox       	|                                                                                                      	|               	|          	|

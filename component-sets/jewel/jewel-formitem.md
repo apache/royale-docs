@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel FormItem
+description: The Jewel FormItem
+permalink: /component-sets/jewel/formitem
 ---
 
 # Jewel FormItem

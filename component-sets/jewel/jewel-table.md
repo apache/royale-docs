@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel Table
+description: The Jewel Table
+permalink: /component-sets/jewel/table
 ---
 
 # Jewel Table

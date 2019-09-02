@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel Label
+description: The Jewel Label
+permalink: /component-sets/jewel/label
 ---
 
 # Jewel Label

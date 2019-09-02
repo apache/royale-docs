@@ -17,7 +17,7 @@
 layout: docpage
 title: Jewel TextInput
 description: The Jewel TextInput is a control for single-line text field
-
+permalink: /component-sets/jewel/textinput
 ---
 
 # Jewel TextInput
@@ -37,7 +37,7 @@ Available since version __0.9.4__.
 
 The Jewel TextInput implements the jewel control for single-line text field. It dispatches a change event when the user input text.
 
-> For multi line text input control see [TextArea](component-sets/jewel/jewel-textarea.html)
+> For multi line text input control see [TextArea](component-sets/jewel/textarea)
 
 ## Example of use
 
@@ -125,7 +125,7 @@ On the other hand, you can add to it beads specialy crafted for this control or 
 | [MaxNumberCharacters](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/MaxNumberCharacters){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to set the maximun number of characters the text field can hold.           	|
 | [PasswordInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/PasswordInput){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to secures the text field by masking the input as it is typed. 	|
 | [Restrict](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/Restrict){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to use a regular expresion pattern to validate input from user. |
-| [SearchFilterForList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/SearchFilterForList){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to filter options in other [Jewel List](component-sets/jewel/jewel-list.html) component used in combo with the text input.	|
+| [SearchFilterForList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/SearchFilterForList){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to filter options in other [Jewel List](component-sets/jewel/list) component used in combo with the text input.	|
 | [TextPrompt](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/TextPrompt){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to place a string into the input field when there is no value associated with the text property. |
 | [UpperCase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/UpperCase){:target='_blank'}       	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to makes all text change to upper case.  	|
 
@@ -142,3 +142,9 @@ On the other hand, you can add to it beads specialy crafted for this control or 
 * [Binding the text property of a Jewel TextInput to update a text Label](https://royale.apache.org/binding-the-text-property-of-a-jewel-textinput-to-update-a-text-label/){:target='_blank'}
 * [Using View States to show or hide content](https://royale.apache.org/using-view-states-to-show-or-hide-content/){:target='_blank'}
 * [Dividing an Apache Royale application with modules](https://royale.apache.org/dividing-an-apache-royale-application-with-modules/){:target='_blank'}
+
+## Related controls
+
+Other related Jewel components are:
+
+* [TextArea](component-sets/jewel/textarea)

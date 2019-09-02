@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel Themes
+description: The look and feel of the jewel component set
+permalink: /component-sets/jewel/themes
 ---
 
 # Jewel Themes
@@ -79,7 +81,7 @@ Jewel Themes are a CSS file in the end (`default.css`), with all needed CSS rule
 
 ## Predefined Jewel Themes
 
-Jewel library has a __master theme__ called JewelTheme and other 144 themes in the `themes` folder that are generated from JewelTheme. You can know more about how this is done in the [Jewel Theme Creation](component-sets/jewel/jewel-theme-creation.html) section.
+Jewel library has a __master theme__ called JewelTheme and other 144 themes in the `themes` folder that are generated from JewelTheme. You can know more about how this is done in the [Jewel Theme Creation](component-sets/jewel/theme-creation) section.
 
 > Only to name a few examples, `themes/Jewel-Dark-NoFlat-Primary-Violet-Theme` or `themes/Jewel-Light-NoFlat-Secondary-Emerald-Theme` are examples of concrete jewel themes that are part of Apache Royale official distribution. There's 144 unique themes that are the combinations of the 12 colors, dark/light and flat/no-flat options.
 

@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel PopUp
+description: The Jewel PopUp
+permalink: /component-sets/jewel/popup
 ---
 
 # Jewel PopUp

@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel Grid
+description: The Jewel Grid
+permalink: /component-sets/jewel/grid
 ---
 
 # Jewel Grid

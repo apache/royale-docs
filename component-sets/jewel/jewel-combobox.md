@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel ComboBox
+description: The Jewel ComboBox
+permalink: /component-sets/jewel/combobox
 ---
 
 # Jewel ComboBox

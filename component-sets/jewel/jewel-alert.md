@@ -17,6 +17,7 @@
 layout: docpage
 title: Jewel Alert
 description: The Jewel Alert component displays a message and one or more buttons in a window that pops up over all other controls and views.
+permalink: /component-sets/jewel/alert
 ---
 
 # Jewel Alert

@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Jewel SimpleTable
+description: The Jewel SimpleTable
+permalink: /component-sets/jewel/simpletable
 ---
 
 # Jewel SimpleTable
