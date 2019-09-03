@@ -16,13 +16,13 @@
 
 layout: docpage
 title: Crux
-description: An Apache Royale framework based on Swiz
-permalink: /frameworks/crux
+description: An Apache Royale library based on Swiz
+permalink: /libraries/crux
 ---
 
 # Crux
 
-An Apache Royale framework based on Swiz
+An Apache Royale library based on Swiz
 
 Apache Royale Crux provides:
 
@@ -33,4 +33,4 @@ Apache Royale Crux provides:
  
 for your Apache Royale project.
 
-Documentation will appear here as soon as it is available.
+*Documentation will appear here as soon as it is available.*

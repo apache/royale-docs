@@ -210,6 +210,14 @@
             ]
         },
         {
+            "path": "libraries.md",
+            "children": [
+                {
+                    "path": "libraries/crux.md"
+                }
+            ]
+        },
+        {
             "path": "create-an-application.md",
             "children": [
                 {
