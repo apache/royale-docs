@@ -22,12 +22,14 @@ title: Security
 
 Royale can output a SWF that runs on the Adobe Flash/AIR runtimes or HTML/JS/CSS that run in browsers and other environments that support JavaScript, such as Node.
 
-Each runtime environment has its own security rules.  Here are links to security documentation for these runtimes:
+Each runtime environment has its own security rules. Here are links to security documentation for these runtimes:
 
-Browsers:  <a href="https://developer.mozilla.org/en-US/docs/Web/Security" target="_blank">Mozilla Web Security</a>
-<a href="https://developers.google.com/web/fundamentals/security/" target="_blank">Google Web Fundamentals</a>
+* Browsers:
+    * [Mozilla Web Security](https://developer.mozilla.org/en-US/docs/Web/Security){:target='_blank'}
+    * [Google Web Fundamentals](https://developers.google.com/web/fundamentals/security/){:target='_blank'}
 
-Flash:  <a href="https://www.adobe.com/devnet/flashplayer/security.html" target="_blank">Adobe Flash Security Articles</a>
+* Flash:
+    * [Adobe Flash Security Articles](https://www.adobe.com/devnet/flashplayer/security.html){:target='_blank'}
 
 
 

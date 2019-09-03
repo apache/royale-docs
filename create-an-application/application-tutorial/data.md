@@ -41,14 +41,14 @@ It might be nice to not hard-code which repos we use to get the commits so that 
   public var projectName:String;
 ```
 
-Next, we need to get the values for these arrays. Let's use a <a href="https://www.json.org/" target="_blank">.json</a> file, called "project.json", to configure which repos to use and the project name. The file contents look like:
+Next, we need to get the values for these arrays. Let's use a [JSON](https://www.json.org){:target='_blank'} file, called "project.json", to configure which repos to use and the project name. The file contents look like:
 
 ```json
 { "projectName": "Apache Royale",
   "repos":  [ "apache/royale-asjs", "apache/royale-typedefs", "apache/royale-compiler" ]
 }
 ```
-You can download this file from [here.](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer/src/main/resources/project.json)
+You can download this file from [here](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer/src/main/resources/project.json){:target='_blank'}.
 
 Now we need to add calls that fetch the .json file and then the information about the commits.  We can use HTTPService to get the JSON file:
 

@@ -32,7 +32,8 @@ The file starts with:
 ```
 
 The line:
-mxml
+
+```mxml
                 xmlns:js="library://ns.apache.org/royale/express" 
 ```
 

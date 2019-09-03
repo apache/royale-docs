@@ -31,7 +31,7 @@ Every developer is building something from nothing, or adapting something that m
  - Something that was working last week, or in the most recent build, is not working at all today.
  - Users are doing things with the app that you didn't expect them to do, like putting lines of code in a text entry field, and things are blowing up everywhere.
 
-The main defense you have against buggy code and a failed development project is testing. Test early, test often...consider trying out <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test Driven Development</a>. 
+The main defense you have against buggy code and a failed development project is testing. Test early, test often...consider trying out [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development){:target='_blank'}. 
 
 Over time we will add pointers to general testing guides, and tips and tricks more specific to Apache Royale. Keep checking back, or consider contributing your own insights.
 

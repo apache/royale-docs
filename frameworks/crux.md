@@ -26,8 +26,8 @@ An Apache Royale framework based on Swiz
 
 Apache Royale Crux provides:
 
- - <a href="https://www.codeproject.com/articles/592372/dependency-injection-di-vs-inversion-of-control-io" target="_blank">Inversion of Control (IoC) and Dependency Injection (DI)</a> with metadata
- - <a href="https://en.wikipedia.org/wiki/Event_(computing)" target="_blank">Event handling</a> with metadata
+ - [Inversion of Control (IoC) and Dependency Injection (DI)](https://www.codeproject.com/articles/592372/dependency-injection-di-vs-inversion-of-control-io){:target='_blank'} with metadata
+ - [Event handling](https://en.wikipedia.org/wiki/Event_(computing)){:target='_blank'} with metadata
  - Simple life cycle for asynchronous remote method invocations
  - Decoupling from application code
  

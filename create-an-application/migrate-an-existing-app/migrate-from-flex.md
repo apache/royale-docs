@@ -67,8 +67,7 @@ The Royale compiler supports every options the Flex compiler supports. There are
 
 Then, assuming you aren't using any third-party libraries, your application should compile.
 
-
-## Intepreting compiler errors and warnings
+## Interpreting compiler errors and warnings
 
 To start migrating your Flex app to Royale, try to get your code to compile without any "import flash' directives and use the Royale emulation components. You will get a bunch of errors and have to rename Flash APIs, and possibly comment out parts of the code that are not essential to getting the core of your application up and running. If you do that, use a special comment format so that, later, you can find places that are temporarily commented out and work on making them Royale-happy.
 

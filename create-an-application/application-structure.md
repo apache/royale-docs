@@ -16,9 +16,12 @@
 
 layout: docpage
 title: Application structure
+description: All about the organization of your project files and folders
 ---
 
 # Application structure
+
+All about the organization of your project files and folders
 
 Royale applications are usually comprised of many files. If you are in rapid-prototyping or proof-of-concept "get something small running quickly" mode, you can cram everything into one file. But breaking things into multiple pieces often helps you organize or create "separation of concerns", and as your project and team grows, you and your teammates can work on individual pieces independently without stepping on each other's work. Finally, coherent pieces that perform some standard function or provide a common user experience (like a login form and its related logic) can more easily be re-used in other applications.
 
@@ -64,4 +67,3 @@ If you create a production version, you will also see:
       |-MyFirstRoyaleApp.js
       |-MyFirstRoyaleApp.css
 ```
-
