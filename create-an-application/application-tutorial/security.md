@@ -32,4 +32,4 @@ It is up the external resource to decide whether you can access it or not. And e
 Fortunately, for this tutorial, GitHub's APIs are very permissive. Once you have your application on a website it should now show rows of commits even if it wasn't when running from file://.
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/debug.html) \| [Next Page](create-an-application/application-tutorial/production.html)
+[Previous Page](create-an-application/application-tutorial/debug) \| [Next Page](create-an-application/application-tutorial/production.html)

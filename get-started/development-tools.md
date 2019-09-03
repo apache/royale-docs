@@ -50,7 +50,7 @@ Royale provides [Royale CLI](get-started/royale-cli), a tool to simplify creatin
 
 ## Apache Maven
 
-You can use Apache Maven to compile your Royale application. Visit the [Apache Maven Project](https://maven.apache.org){:target='_blank'} to learn more about Maven. Each of the examples in the examples folder is set up to be built with Maven, and the archetypes folder contains Maven Archetypes.
+You can use Apache Maven to compile your Royale application. Visit the [Apache Maven Project](https://maven.apache.org){:target='_blank'} to learn more about Maven. Each of the examples in the examples folder is set up to be built with Maven, and the archetypes folder contains **Maven Archetypes**.
 
 ## Apache Ant
 

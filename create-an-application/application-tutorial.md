@@ -54,7 +54,7 @@ The first six segments will result in a functional application.
 
 The next four segments will discuss further improvements needed to make a production-ready version.
 
-7. [Debugging](create-an-application/application-tutorial/debug.html) This segment introduces a couple of techniques for figuring out why your app isn't working as expected.
+7. [Debugging](create-an-application/application-tutorial/debug) This segment introduces a couple of techniques for figuring out why your app isn't working as expected.
 
 8. [Security](create-an-application/application-tutorial/security.html) This segment discusses how to deal with network access to other domains.
 

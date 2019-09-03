@@ -37,5 +37,5 @@ src="assets/application-tutorial/index.html"></iframe>
 Or maybe the commits won't appear. In fact, many browsers will not run this app successfully. Let's figure out why.
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/build) \| [Next Page](create-an-application/application-tutorial/debug.html)
+[Previous Page](create-an-application/application-tutorial/build) \| [Next Page](create-an-application/application-tutorial/debug)
 
