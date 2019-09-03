@@ -16,98 +16,99 @@
 
 layout: docpage
 title: Build the application
-description: building the application
+description: Building the application
+permalink: /create-an-application/application-tutorial/build
 ---
 
 # Build the application
 
-building the application
+Building the application
 
-In many other HTML/JS/CSS development models, you write the JS and then just view it in the browser. Royale uses a compiler to convert your MXML and ActionScript code into HTML/JS/CSS. Why? Because there is a philosophy that the sooner you catch a bug, the less expensive it is to fix it. The compiler scans your source code to make sure that it makes sense. The compiler checks that there aren't typos in property names, that if you are expecting a String you'll probably get one, and more.  
+In many other *HTML/JS/CSS* development models, you write the *JS* and then just view it in the browser. Royale uses a compiler to convert your *MXML* and *ActionScript* code into *HTML/JS/CSS*. Why? Because there is a philosophy that the sooner you catch a bug, the less expensive it is to fix it. The compiler scans your source code to make sure that it makes sense. The compiler checks that there aren't typos in property names, that if you are expecting a `String` you'll probably get one, and more.  
 
-The main MXML file should now look like this:
+The main *MXML* file should now look like this:
 
 ```mxml
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
-xmlns:local="*"
-xmlns:js="library://ns.apache.org/royale/express"
-initialize="addEventListener('dataReady', dataReadyHandler);configurator.send()"
->
-<fx:Script>
-<![CDATA[
-    import org.apache.royale.collections.ArrayList;
-    import org.apache.royale.events.Event;
+                xmlns:local="*"
+                xmlns:js="library://ns.apache.org/royale/express"
+                initialize="addEventListener('dataReady', dataReadyHandler);configurator.send()">
+    <fx:Script>
+    <![CDATA[
+        import org.apache.royale.collections.ArrayList;
+        import org.apache.royale.events.Event;
 
-    public const commits:Array = [];
-    public var repos:Array;
-    public var projectName:String;
+        public const commits:Array = [];
+        public var repos:Array;
+        public var projectName:String;
 
-    private function setConfig():void
-    {
-        repos = configurator.json.repos;
-        projectName = configurator.json.projectName;
-    }
-
-    private var currentIndex:int = 0;
-    
-    private function fetchCommits():void
-    {
-        commitsService.addEventListener("complete", gotCommits);
-        commitsService.url = "https://api.github.com/repos/" + repos[currentIndex] + "/commits";
-        commitsService.send();
-    }
-
-    private function gotCommits(event:Event):void
-    {
-        currentIndex++;
-        var results:Array = commitsService.json as Array;
-        var n:int = results.length;
-        for (var i:int = 0; i < n; i++)
+        private function setConfig():void
         {
-            var obj:Object = results[i];
-            var data:Object = {};
-            data.author = obj.commit.author.name;
-            // clip date after yyyy-mm-dd
-            data.date = obj.commit.author.date.substr(0, 10);
-            data.message = obj.commit.message;
-            commits.push(data);
+            repos = configurator.json.repos;
+            projectName = configurator.json.projectName;
         }
-        if (currentIndex < repos.length)
-            fetchCommits();
-        else
-            dispatchEvent(new Event("dataReady"));
-    }
 
-    private function dataReadyHandler(event:Event):void
-    {
-        dg.dataProvider = new ArrayList(commits);
-    }
+        private var currentIndex:int = 0;
+        
+        private function fetchCommits():void
+        {
+            commitsService.addEventListener("complete", gotCommits);
+            commitsService.url = "https://api.github.com/repos/" + repos[currentIndex] + "/commits";
+            commitsService.send();
+        }
 
-]]>
-</fx:Script>
-<js:HTTPService id="configurator" url="project.json" complete="setConfig();fetchCommits()" />
-<js:HTTPService id="commitsService" />
+        private function gotCommits(event:Event):void
+        {
+            currentIndex++;
+            var results:Array = commitsService.json as Array;
+            var n:int = results.length;
+            for (var i:int = 0; i < n; i++)
+            {
+                var obj:Object = results[i];
+                var data:Object = {};
+                data.author = obj.commit.author.name;
+                // clip date after yyyy-mm-dd
+                data.date = obj.commit.author.date.substr(0, 10);
+                data.message = obj.commit.message;
+                commits.push(data);
+            }
+            if (currentIndex < repos.length)
+                fetchCommits();
+            else
+                dispatchEvent(new Event("dataReady"));
+        }
 
-<js:initialView>
-    <js:VView>
-        <js:Label text="{projectName} Commits Log"/>
-        <js:DataGrid id="dg">
-            <js:columns>
-                <js:DataGridColumn label="Date" dataField="date"/>
-                <js:DataGridColumn label="Author" dataField="author"/>
-                <js:DataGridColumn label="Message" dataField="message"/>
-            </js:columns>
-        </js:DataGrid>
-        <js:Label text="Selected Message:"/>
-        <js:MultilineLabel text="{commits[dg.selectedIndex].message}" />
-    </js:VView>
-</js:initialView>
+        private function dataReadyHandler(event:Event):void
+        {
+            dg.dataProvider = new ArrayList(commits);
+        }
+
+    ]]>
+    </fx:Script>
+    
+    <js:HTTPService id="configurator" url="project.json" complete="setConfig();fetchCommits()" />
+    <js:HTTPService id="commitsService" />
+
+    <js:initialView>
+        <js:VView>
+            <js:Label text="{projectName} Commits Log"/>
+            <js:DataGrid id="dg">
+                <js:columns>
+                    <js:DataGridColumn label="Date" dataField="date"/>
+                    <js:DataGridColumn label="Author" dataField="author"/>
+                    <js:DataGridColumn label="Message" dataField="message"/>
+                </js:columns>
+            </js:DataGrid>
+            <js:Label text="Selected Message:"/>
+            <js:MultilineLabel text="{commits[dg.selectedIndex].message}" />
+        </js:VView>
+    </js:initialView>
 </js:Application>
 ```
 
 Before we compile this code, there are a few things we want to add. 
 
-First, there is so far no way to know if a "var" has changed. So we want to tell the compiler to convert the var into a get/set property so we can detect changes. Otherwise, you will get a warning that assignment to some variable cannot be detected. In Royale, this is done via MetaData. Metadata consists of square brackets "[]" which contain a tag and some attributes. The compiler knows to act on some MetaData. Other MetaData can be compiled into the code and used at runtime. To convert a var to a get/set property use the [Bindable] metadata. You can see it in the final code below.
+First, there is so far no way to know if a variable has changed. So we want to tell the compiler to convert the var into a get/set property so we can detect changes. Otherwise, you will get a warning that assignment to some variable cannot be detected. In Royale, this is done via [Metadata](features/as3/metadata). Metadata consists of square brackets `[]` which contain a tag and some attributes. The compiler knows to act on some MetaData. Other MetaData can be compiled into the code and used at runtime. To convert a var to a get/set property use the [Bindable] metadata. You can see it in the final code below.
 
 Another thing missing is that we haven't specified the size of the controls. As with HTML/JS/CSS, there are several ways to do this. We could have a separate .css file, specify styles there and assign class names in the MXML tags. That allows the CSS to be tweaked without recompiling so you can just refresh the browser and see changes; but in Royale, the CSS file is actually generated by the compiler from the CSS file in your source code and CSS files in the libraries you used. So if you do make changes directly to the output CSS file, and want to keep the changes, you will need to make those changes in the source CSS file before compiling the source again.
 
@@ -205,4 +206,4 @@ If you've used [NPM](https://www.npmjs.com/){:target='_blank'} to install Royale
 This should compile with one warning. We will ignore that for now and fix it later.  Next, let's see the results.
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/controller.html) \| [Next Page](create-an-application/application-tutorial/deploy.html)
+[Previous Page](create-an-application/application-tutorial/controller) \| [Next Page](create-an-application/application-tutorial/deploy)

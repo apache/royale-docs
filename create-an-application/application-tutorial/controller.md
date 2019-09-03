@@ -16,17 +16,21 @@
 
 layout: docpage
 title: The controller
+description: Watching events from the View and updating the Model
+permalink: /create-an-application/application-tutorial/controller
 ---
 
 # The controller
 
-The controller is the code that watches for events from the View and updates the Model.  Why separate that out? Because that way a View can be reused in other applications. Our View right now is pretty generic and could be used to display comments on a wiki page, or a text messaging conversation, or even some social media discussion.
+Watching events from the View and updating the Model
 
-Right now, the View's only interaction (other than scrolling through the list of commits) is selecting a commit so you can see any longer commit message in the MultilineView. That doesn't really update the model, so this application's controller currently has nothing to do. Also, the most of the individual components like DataGrid are themselves implemented in the MVC pattern and the DataGrid has a controller that handles selection and updating the selectdItem property. But when we add localization and filters later, the controller will start to get busy. 
+The controller is the code that watches for events from the View and updates the Model. Why separate that out? Because that way a View can be reused in other applications. Our View right now is pretty generic and could be used to display comments on a wiki page, or a text messaging conversation, or even some social media discussion.
 
-If there were a reason to share the currently selected commit with other Views, the Model could be extended to have a "currentCommit" field and then the controller would watch for DataGrid selection changes and update the model.
+Right now, the View's only interaction (other than scrolling through the list of commits) is selecting a commit so you can see any longer commit message in the `MultilineLabel`. That doesn't really update the model, so this application's controller currently has nothing to do. Also, the most of the individual components like `DataGrid` are themselves implemented in the [MVC](https://en.wikipedia.org/wiki/Model–view–controller){:target='_blank'} pattern and the `DataGrid` has a controller that handles selection and updating the `selectdItem` property. But when we add localization and filters later, the controller will start to get busy. 
 
-So, nothing to do here for now.  Let's try to compile and run our application.
+If there were a reason to share the currently selected commit with other Views, the Model could be extended to have a `currentCommit` field and then the controller would watch for `DataGrid` selection changes and update the model.
+
+So, nothing to do here for now. Let's try to compile and run our application.
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/view.html) \| [Next Page](create-an-application/application-tutorial/build.html)
+[Previous Page](create-an-application/application-tutorial/view) \| [Next Page](create-an-application/application-tutorial/build)

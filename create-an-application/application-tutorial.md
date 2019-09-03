@@ -20,33 +20,37 @@ description: A complete tutorial on how to build a simple Royale application
 permalink: /create-an-application/application-tutorial
 ---
 
-# Tutorial - GitHub Commit Log Application
+# GitHub Commit Log Application Tutorial
 
 A complete tutorial on how to build a simple Royale application
 
 This tutorial will take you through building an app that displays the commit logs for the Royale project by connecting to the [GitHub](https://github.com){:target='_blank'} servers.
 
-See the running example:
+At the end of this tutorial we'll get the following:
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
 width="100%" height="350" 
 src="assets/application-tutorial/index.html"></iframe>
 
-The steps in this tutorial start with a blank file and walk you through what to add and why. Or you can get the complete source [here](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer){:target='_blank'}. Note that Royale examples are set up to build with [Apache Maven](https://maven.apache.org){:target='_blank'} so the folder structure reflects that. There are other ways to organize your code.
+> This example uses [Basic](component-sets/basic) components to build the interface. This components are build with very basic look and feel. For a more advanced set with look and feel you should use instead [Jewel](component-sets/jewel) or **MDL** sets
+
+The steps in this tutorial start with a blank file and walk you through what to add and why. Or you can get the complete source [here](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer){:target='_blank'}.
+
+> Note that Royale examples are set up to build with [Apache Maven](https://maven.apache.org){:target='_blank'} so the folder structure reflects that. There are other ways to organize your code.
 
 The first six segments will result in a functional application.
 
-1. [The Main Application File](create-an-application/application-tutorial/main.html) This segment starts filling in the main application file.
+1. [The Main Application File](create-an-application/application-tutorial/main) This segment starts filling in the main application file.
 
-2. [Data Model](create-an-application/application-tutorial/data.html) This segment adds the code that manages the data in the application, including network access to GitHub.
+2. [Data Model](create-an-application/application-tutorial/data-model) This segment adds the code that manages the data in the application, including network access to GitHub.
 
-3. [View (User Interface)](create-an-application/application-tutorial/view.html) This segment builds out the initial user interface.
+3. [View (User Interface)](create-an-application/application-tutorial/view) This segment builds out the initial user interface.
 
-4. [Controller](create-an-application/application-tutorial/controller.html) This segment hooks up the user interface to code that responds to the user's interactions.
+4. [Controller](create-an-application/application-tutorial/controller) This segment hooks up the user interface to code that responds to the user's interactions.
 
-5. [Build](create-an-application/application-tutorial/build.html) This segment gets the code to compile.
+5. [Build](create-an-application/application-tutorial/build) This segment gets the code to compile.
 
-6. [Run](create-an-application/application-tutorial/deploy.html) This segment discusses how to view the results.
+6. [Run](create-an-application/application-tutorial/deploy) This segment discusses how to view the results.
 
 The next four segments will discuss further improvements needed to make a production-ready version.
 
@@ -69,4 +73,3 @@ The remaining segments will discuss further improvements needed to add additiona
 14. [Routing](create-an-application/application-tutorial/routing.html) This segment shows how to map URL parameters to different initial values in the application, and _vice versa_.
 
 This is going to be fun!
-

@@ -40,5 +40,5 @@ Back to the topic of debugging for a moment. Most browsers also have debuggers w
 Anyway, to get this application to access GitHub, we have to make the application available on a web server and learn a bit about security.
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/deploy.html) \| [Next Page](create-an-application/application-tutorial/security.html)
+[Previous Page](create-an-application/application-tutorial/deploy) \| [Next Page](create-an-application/application-tutorial/security.html)
 

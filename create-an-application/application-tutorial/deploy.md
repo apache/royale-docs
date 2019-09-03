@@ -16,16 +16,26 @@
 
 layout: docpage
 title: Run the application
+description: Running the application in a browser
+permalink: /create-an-application/application-tutorial/deploy
 ---
 
 # Run the application
 
-Assuming you followed the typical directory and file pattern, and the MXML file was in a "src" directory, next to the "src" directory should be a "bin" directory with a "js-debug" directory inside it.
+Running the application in a browser
 
-Inside the "js-debug" directory is an index.html file. You can open it in your browser and you should see the list of commits appear.
+Assuming you followed the typical directory and file pattern, and the MXML file was in a `src` directory, next to the `src` directory should be a `bin` directory with a `js-debug` directory inside it.
+
+Inside the `js-debug` directory is an `index.html` file. You can open it in your browser and you should see the list of commits appear.
+
+You should see something like this:
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
+width="100%" height="350" 
+src="assets/application-tutorial/index.html"></iframe>
 
 Or maybe the commits won't appear. In fact, many browsers will not run this app successfully. Let's figure out why.
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/build.html) \| [Next Page](create-an-application/application-tutorial/debug.html)
+[Previous Page](create-an-application/application-tutorial/build) \| [Next Page](create-an-application/application-tutorial/debug.html)
 
