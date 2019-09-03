@@ -56,20 +56,20 @@ The next four segments will discuss further improvements needed to make a produc
 
 7. [Debugging](create-an-application/application-tutorial/debug) This segment introduces a couple of techniques for figuring out why your app isn't working as expected.
 
-8. [Security](create-an-application/application-tutorial/security.html) This segment discusses how to deal with network access to other domains.
+8. [Security](create-an-application/application-tutorial/security) This segment discusses how to deal with network access to other domains.
 
-9. [Production](create-an-application/application-tutorial/production.html) This segment discusses the differences between a development version and a production version of an app.
+9. [Production](create-an-application/application-tutorial/production) This segment discusses the differences between a development version and a production version of an app.
 
-10. [Value Objects](create-an-application/application-tutorial/value-objects.html) This segment explains how Value Objects (Data Classes) are useful in development and production.
+10. [Value Objects](create-an-application/application-tutorial/value-objects) This segment explains how Value Objects (Data Classes) are useful in development and production.
 
-The remaining segments will discuss further improvements needed to add additional common functionality. *Note*: These pages are not yet complete.
+The remaining segments will discuss further improvements needed to add additional common functionality. (*Note: These pages are not yet complete.*)
 
-11. [Localization](create-an-application/application-tutorial/locales.html) This segment adds the ability to show the user-interface prompts in different languages.
+11. [Localization](create-an-application/application-tutorial/locales) This segment adds the ability to show the user-interface prompts in different languages.
 
-12. [Filters](create-an-application/application-tutorial/filters.html) This segment adds the ability to filter what commits are shown.
+12. [Filters](create-an-application/application-tutorial/filters) This segment adds the ability to filter what commits are shown.
 
-13. [Local Storage](create-an-application/application-tutorial/local-storage.html) This segment shows how to store information in a cookie or equivalent in order to retain some of the state of the app between runs.
+13. [Local Storage](create-an-application/application-tutorial/local-storage) This segment shows how to store information in a cookie or equivalent in order to retain some of the state of the app between runs.
 
-14. [Routing](create-an-application/application-tutorial/routing.html) This segment shows how to map URL parameters to different initial values in the application, and _vice versa_.
+14. [Routing](create-an-application/application-tutorial/routing) This segment shows how to map URL parameters to different initial values in the application, and _vice versa_.
 
 This is going to be fun!

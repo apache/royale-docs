@@ -16,12 +16,16 @@
 
 layout: docpage
 title: Localization
+description: About localization
+permalink: /create-an-application/application-tutorial/locales
 ---
 
 # Localization
 
-Instructions and sample code to help you localize your app into multiple languages will be available soon.
+About localization
+
+*Instructions and sample code to help you localize your app into multiple languages will be available soon.*
 
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/value-objects.html) \| [Next Page](create-an-application/application-tutorial/filters.html)
+[Previous Page](create-an-application/application-tutorial/value-objects) \| [Next Page](create-an-application/application-tutorial/filters)

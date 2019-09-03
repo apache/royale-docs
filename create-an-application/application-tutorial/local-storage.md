@@ -16,12 +16,16 @@
 
 layout: docpage
 title: Local Storage
+description: About Local Storage
+permalink: /create-an-application/application-tutorial/local-storage
 ---
 
 # Local Storage
 
-Instructions and sample code will go here to show you how you can store key data in a cookie or similar structure on the user's computer to retain some of the app's state between sessions.
+About Local Storage
+
+*Instructions and sample code will go here to show you how you can store key data in a cookie or similar structure on the user's computer to retain some of the app's state between sessions.*
 
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/filters.html) \| [Next Page](create-an-application/application-tutorial/routing.html)
+[Previous Page](create-an-application/application-tutorial/filters) \| [Next Page](create-an-application/application-tutorial/routing)

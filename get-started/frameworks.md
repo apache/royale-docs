@@ -30,7 +30,7 @@ Royale provides its own framework for making simple, small and fast applications
 
 ## Apache Royale frameworks
 
-The first Royale framework in development is [Crux](https://apache.github.io/royale-docs/frameworks/crux.html), based on Swiz for Flex. It proposes to provide:
+The first Royale framework in development is [Crux](libraries/crux), based on Swiz for Flex. It proposes to provide:
 
 - Inversion of Control (IOC) / Dependency Injection (DI) with metadata
 - Event handling (metadata)

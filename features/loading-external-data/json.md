@@ -16,11 +16,15 @@
 
 layout: docpage
 title: JSON
-description: JSON
+description: A plain object or array often referencing other plain objects and arrays
 permalink: /features/loading-external-data/json
 ---
 
 # JSON
+
+A plain object or array often referencing other plain objects and arrays
+
+About [JSON](https://www.json.org){:target='_blank'} implementation in Royale
 
 *information coming soon.*
 

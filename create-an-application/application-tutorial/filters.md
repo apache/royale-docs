@@ -16,12 +16,16 @@
 
 layout: docpage
 title: Filters
+description: About Filters
+permalink: /create-an-application/application-tutorial/filters
 ---
 
 # Filters
 
-Instructions and sample code will go here to show how you can filter the data you pulled to show just the material you want.
+About Filters
+
+*Instructions and sample code will go here to show how you can filter the data you pulled to show just the material you want.*
 
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/locales.html) \| [Next Page](create-an-application/application-tutorial/local-storage.html)
+[Previous Page](create-an-application/application-tutorial/locales) \| [Next Page](create-an-application/application-tutorial/local-storage)

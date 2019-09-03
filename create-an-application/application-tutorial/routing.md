@@ -16,12 +16,16 @@
 
 layout: docpage
 title: Routing
+description: About Routing
+permalink: /create-an-application/application-tutorial/routing
 ---
 
 # Routing
 
-Instructions and sample code will appear here soon to show how you can map URL parameters to different initial values in the application, and vice versa.
+About Routing
+
+*Instructions and sample code will appear here soon to show how you can map URL parameters to different initial values in the application, and vice versa.*
 
 
 {:align="center"}
-[Previous Page](create-an-application/application-tutorial/local-storage.html)
+[Previous Page](create-an-application/application-tutorial/local-storage)
