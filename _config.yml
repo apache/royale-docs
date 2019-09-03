@@ -19,7 +19,3 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed # possible values: nested expanded compact compressed
-#algolia:
-#  application_id: RDWVZJYELD
-#  index_name: royale_docs
-#  search_only_api_key: 890fa760fbe09782229acd811738def3
