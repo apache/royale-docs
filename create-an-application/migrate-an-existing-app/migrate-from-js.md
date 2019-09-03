@@ -39,4 +39,4 @@ If you are thinking of moving to an easier way of writing applications, compilin
 Take Royale out for a spin!
 
 - [Hello, world!](get-started/hello-world)
-- [Create an applicaton](create-an-Application)
+- [Create an applicaton](create-an-application)

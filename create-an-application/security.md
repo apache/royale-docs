@@ -16,9 +16,13 @@
 
 layout: docpage
 title: Security
+description: Target environment security rules
+permalink: /create-an-application/security
 ---
 
 # Security
+
+Target environment security rules
 
 Royale can output a SWF that runs on the Adobe Flash/AIR runtimes or HTML/JS/CSS that run in browsers and other environments that support JavaScript, such as Node.
 

@@ -15,12 +15,16 @@
 # limitations under the License.
 
 layout: docpage
-title: Royale code conventions
+title: Code Conventions
+description: Coding standards for writing code in ActionScript 3
+permalink: /features/as3/code-conventions
 ---
 
-# Royale code conventions
+# Code Conventions
 
-Warning:  This document is not complete.
+Coding standards for writing code in ActionScript 3
+
+*Warning:  This document is not complete.*
 
 ## Packages
 
@@ -54,7 +58,7 @@ To compare:
 
 ### Flex
 
-```actionscript
+```as3
 public class TimerEvent {
   public const TIMER:String = "timer";
 }
@@ -66,7 +70,7 @@ public class Timer {
 
 Usage:
 
-```actionscript
+```as3
 import TimerEvent;
 import Timer;
 
@@ -80,7 +84,7 @@ function timerHandler(event:TimerEvent):void
 
 ### Royale
 
-```actionscript
+```as3
 public class Timer {
    public const TIMER:String = "timer";
    dispatchEvent(new Event(TIMER));
@@ -89,7 +93,7 @@ public class Timer {
 
 Usage:
 
-```actionscript
+```as3
 import Timer;
 
 var timer:Timer = new Timer();

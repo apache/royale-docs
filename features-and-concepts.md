@@ -24,7 +24,7 @@ permalink: /features-and-concepts
 
 Key points to learn Apache Royale
 
-Here are some things you may need to know to help you be more productive with Royale, although some folks get pretty far by just following the tutorial in [Create an Application](create-an-Application) and extending it.
+Here are some things you may need to know to help you be more productive with Royale, although some folks get pretty far by just following the tutorial in [Create an Application](create-an-application) and extending it.
 
 ## AS3 and MXML Languages
 

@@ -53,6 +53,9 @@
                     "path": "features/as3.md",
                     "children": [
                         {
+                            "path": "features/actionscript/code-conventions.md"
+                        },
+                        {
                             "path": "features/actionscript/metadata.md"
                         },
                         {
@@ -83,6 +86,9 @@
                 },
                 {
                     "path": "features/view-states.md"
+                },
+                {
+                    "path": "features/item-renderers.md"
                 },
                 {
                     "path": "features/modules.md"
@@ -204,7 +210,7 @@
             ]
         },
         {
-            "path": "create-an-Application.md",
+            "path": "create-an-application.md",
             "children": [
                 {
                     "path": "create-an-application/application-structure.md"

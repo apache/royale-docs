@@ -16,9 +16,13 @@
 
 layout: docpage
 title: Migrate an existing application
+description: Coming from other technologies to Royale
+permalink: /create-an-application/migrate-an-existing-app
 ---
 
 # Migrate an existing application
+
+Coming from other technologies to Royale
 
 If you have an existing application and want to start using Royale, the following documents may help you.
 

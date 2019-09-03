@@ -94,7 +94,11 @@ Another way to prevent the Google Closure Compiler from renaming variables is to
 
 This should now work. If you look in the js-release folder, you now have a single .js file to deploy (along with the .css, .json and .html files). The .js.map file is there in case you have to debug this optimized .js file. If you don't deploy it, anyone trying to reverse-engineer your application is in for quite a challenge!
 
-If you weren't really following the steps and just skimming, the file in its final form is available [here](create-an-application/application-tutorial/example/index.html){:target='_blank'}.
+If you weren't really following the steps and just skimming, the file in its final form is available [here](assets/application-tutorial/index.html){:target='_blank'}.
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
+width="100%" height="350" 
+src="assets/application-tutorial/index.html"></iframe>
 
 This concludes the set of steps required to create a not-so-simple application and put it into production. The next steps, which are not yet complete, add additional features to the application.
 

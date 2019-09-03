@@ -51,6 +51,13 @@ package org.apache.royale
 }
 ```
 
+## Sections
+
+This document is divided into several sections:
+
+[Metadata](features/as3/metadata) describe the Metadata decorations that can be used for variables and functions.
+[Code Conventions](features/as3/code-conventions) explains the typical ways Royale developers name files, classes, function, variables and more.
+
 ## New ActionScript language features in Royale
 
 The Royale compiler extends the ActionScript language with useful, new features. These language extensions are considered optional, and to use the new syntax, you must enable certain compiler flags.

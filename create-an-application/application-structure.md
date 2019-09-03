@@ -17,6 +17,7 @@
 layout: docpage
 title: Application structure
 description: All about the organization of your project files and folders
+permalink: /create-an-application/application-structure
 ---
 
 # Application structure

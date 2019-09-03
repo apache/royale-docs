@@ -19,7 +19,7 @@ Apache Royale is a non-profit, open-source project. It grows and thrives on cont
 
 ## The Royale team
 
-Becoming active with Royale usually starts with becoming connected with the developers who are working on the code and the users who are building or adapting applications with it. Check out [the details](https://royale.apache.org/get-involved){:target='_blank'} here, or meet our [most active contributors](https://royale.apache.org/team/){:target='_blank'}. We hope you can join us!
+Becoming active with Royale usually starts with becoming connected with the developers who are working on the code and the users who are building or adapting applications with it. Check out [the details](https://royale.apache.org/get-involved){:target='_blank'} here, or meet our [most active contributors](https://royale.apache.org/team){:target='_blank'}. We hope you can join us!
 
 ## Apache Software Foundation
 

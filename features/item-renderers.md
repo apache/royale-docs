@@ -15,9 +15,13 @@
 # limitations under the License.
 
 layout: docpage
-title: View States
+title: ItemRenderers
+description: Visual representation of data items in lists and other collection components
+permalink: /features/item-renderers
 ---
 
-# View States
+# ItemRenderers
+
+Visual representation of data items in lists and other collection components
 
 *information coming soon.*

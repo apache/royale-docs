@@ -16,10 +16,14 @@
 
 layout: docpage
 title: Optimizations
+description: Compiler settings and doc comments directives that can be used to improve generated output
+permalink: /create-an-application/optimizations
 ---
 # Optimizations
 
-Warning:  This document is a work-in-progress/undergoing review.
+Compiler settings and doc comments directives that can be used to improve generated output
+
+*Warning:  This document is a work-in-progress/undergoing review.*
 
 ## Optimization options
 

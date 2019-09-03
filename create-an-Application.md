@@ -19,6 +19,7 @@ title: Create an Application
 description: Building your first Apache Royale application
 permalink: /create-an-application
 ---
+
 # Create an Application
 
 Building your first Apache Royale application
@@ -27,17 +28,15 @@ The easiest way to create a Royale application is to start with an existing one 
 
 This document is divided into several sections:
 
-[Application Structure](create-an-application/application-structure.html) explains the important files that typically comprise an application and what they do.
+[Application Structure](create-an-application/application-structure) explains the important files that typically comprise an application and what they do.
 
-[Application Tutorial](create-an-application/application-tutorial.html) is a step-by-step example of building an application.
+[Application Tutorial](create-an-application/application-tutorial) is a step-by-step example of building an application.
 
-[Migrate an Existing App](create-an-application/migrate-an-existing-app.html) provides strategies and techniques when migrating existing Flex apps to Royale, and how to switch to Royale if you already have a Javascript application.
+[Migrate an Existing App](create-an-application/migrate-an-existing-app) provides strategies and techniques when migrating existing Flex apps to Royale, and how to switch to Royale if you already have a Javascript application.
 
-[Security](create-an-application/security.html) provides more information about making sure hackers can't use your app to be malicous and about dealing with common security restrictions when your app wants to access external resources.
+[Security](create-an-application/security) provides more information about making sure hackers can't use your app to be malicous and about dealing with common security restrictions when your app wants to access external resources.
 
 [Modules](features/modules) discusses how to break your application into pieces so it doesn't have to all get downloaded at once.  Or have the whole thing compiled at once.
 
-[Royale code conventions](create-an-application/code-conventions.html) explains the typical ways Royale developers name files, classes, function, variables and more.
-
-[Optimizations](create-an-application/optimizations.html) explains some of the compiler settings and in-code doc comment directives that can be used to tune the output of javascript that Royale generates.
+[Optimizations](create-an-application/optimizations) explains some of the compiler settings and in-code doc comment directives that can be used to tune the output of javascript that Royale generates.
 

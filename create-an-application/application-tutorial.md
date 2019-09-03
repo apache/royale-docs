@@ -15,11 +15,22 @@
 # limitations under the License.
 
 layout: docpage
-title: Tutorial - GitHub Commit Log Application
+title: Application tutorial
+description: A complete tutorial on how to build a simple Royale application
+permalink: /create-an-application/application-tutorial
 ---
+
 # Tutorial - GitHub Commit Log Application
 
+A complete tutorial on how to build a simple Royale application
+
 This tutorial will take you through building an app that displays the commit logs for the Royale project by connecting to the [GitHub](https://github.com){:target='_blank'} servers.
+
+See the running example:
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" 
+width="100%" height="350" 
+src="assets/application-tutorial/index.html"></iframe>
 
 The steps in this tutorial start with a blank file and walk you through what to add and why. Or you can get the complete source [here](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer){:target='_blank'}. Note that Royale examples are set up to build with [Apache Maven](https://maven.apache.org){:target='_blank'} so the folder structure reflects that. There are other ways to organize your code.
 
