@@ -1,0 +1,103 @@
+/**
+ * Licensed under the Apache License, Version 2.0 (the "License")
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.navbar
+    position: absolute
+    right: 0px
+    width: 300px
+    height: 100%
+    background-color: black
+    // text-align: center
+    transition: .3s ease
+
+    > .side-nav
+        list-style-type: none
+        padding: 0px
+        margin: 0px
+
+.nav-item
+    display: flex
+
+    > .nav-link
+        text-decoration: none
+        color: white
+        font:
+            size: 1.1em
+        padding: 1em
+        flex: 1
+
+        &:hover
+            background-color: white
+            color: black
+
+.toggle-collapse
+    float: left
+    margin-left: -3.3em
+    margin-top: .5em
+    content: ""
+    outline: inherit
+    border: 0px
+    background: transparent
+
+/* Toggle Icon */
+.toggle-icon,
+.toggle-icon::before,
+.toggle-icon::after
+    content: ""
+    width: 30px
+    height: 3px
+    position: fixed
+    background-color: black
+    border-radius: 2em
+    border: 1px solid black
+    cursor: pointer
+    transition: .3s ease
+    margin-top: .8em   
+
+.toggle-icon::before
+    position: absolute
+    left: -1px
+    margin-top: -0.8em
+
+.toggle-icon::after
+    position: absolute
+    left: -1px
+    margin-top: -.6em
+    width: 20px
+
+.toggle-icon
+    width: 15px
+
+.show
+    .toggle-icon::after
+        width: 30px
+.show
+    .toggle-icon
+        width: 30px
+    
+.nav-item 
+    > .site-name
+        text-decoration: none
+        padding: 1.3em
+        font:
+            size: 2em
+        color: white
+    &:last-child
+        > .nav-link
+            i
+                padding: .5em
+    &:hover:last-child
+        > .nav-link
+            background-color: black
+            color: white
