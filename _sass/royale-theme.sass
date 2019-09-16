@@ -199,12 +199,21 @@
 	padding-right: 14px
 
 .toc_and_doc 
-	display: flex
-	align-items: flex-start
-	justify-content: center
-	flex-wrap: wrap
 	font-family: 'Hind Siliguri'
 	margin-top: 50px
+
+	padding-left: 20px
+	padding-right: 20px
+	margin-left: auto
+	margin-right: auto
+
+@media (min-width: 1340px)
+	.toc_and_doc
+		max-width: 1260px
+
+@media (min-width: 780px)
+	.toc_and_doc
+		width: 90%
 
 .toc 
 	display: inline-block
@@ -227,16 +236,15 @@
 	transform: rotateX(180deg)
 	margin-bottom: 2px
 
-.page-content 
-	min-height: 670px
-	margin-left: 15px
-	margin-right: 15px
+.page-content
+	display: flex
+	min-height: calc(100vh - 60px)
 	padding-bottom: 60px
-	display: inline-block
-	flex-grow: 1
-	max-width: 760px
-	min-width: 0
-	width: 760px
+	// display: inline-block
+	// flex-grow: 1
+	// max-width: 760px
+	// min-width: 0
+	// width: 760px
 
 	h1 + p 
 		color: #4393c3
@@ -248,6 +256,10 @@
 
 		a
 			background-color: rgba(104, 223, 255, 0)
+
+@media (max-width: 599px)
+	.page-content
+		flex-direction: column
 
 .menu_div2 
 	margin-left: 15px

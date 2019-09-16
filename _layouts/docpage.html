@@ -42,19 +42,19 @@ limitations under the License.
   {% include header.html %}
 
   <div class="toc_and_doc">
-    <div class="page-content" id="content">
+    <div class="page-content">
       <article>
         {{content}}
-      </article>
-      <div class="bottom-links">
-        <a href="https://github.com/apache/royale-docs/edit/master/{{ page.path }}" target="_blank">Edit this page</a>
-      </div>
-    </div>
-    <div class="toc" id="toc">
-        <div align="center">
-          <input class="docsearch-input" type="search" placeholder="Search docs..." autocomplete="off" spellcheck="false"/>
+        <div class="bottom-links">
+          <a href="https://github.com/apache/royale-docs/edit/master/{{ page.path }}" target="_blank">Edit this page</a>
         </div>
-        {% include toc.html %}
+      </article>
+      <div class="toc">
+          <div align="center">
+            <input class="docsearch-input" type="search" placeholder="Search docs..." autocomplete="off" spellcheck="false"/>
+          </div>
+          {% include toc.html %}
+      </div>
     </div>
   </div>
   
