@@ -12,92 +12,262 @@
  * limitations under the License.
  */
 
-.navbar
-    position: absolute
-    right: 0px
-    width: 300px
-    height: 100%
-    background-color: black
-    // text-align: center
-    transition: .3s ease
-
-    > .side-nav
-        list-style-type: none
-        padding: 0px
-        margin: 0px
-
-.nav-item
+.toc
     display: flex
+    flex-direction: column
+    flex: 0 0 300px
+    margin-top: 80px
+    background-color: #f7f7f7
+    padding: 20px 20px
+    border-radius: 10px
 
-    > .nav-link
-        text-decoration: none
-        color: white
-        font:
-            size: 1.1em
-        padding: 1em
-        flex: 1
+@media (min-width: 600px)
+    .toc
+        // border-left: 1px solid #ececec
+        margin-left: 80px
 
-        &:hover
-            background-color: white
-            color: black
+@media (max-width: 979px) and (min-width: 600px)
+    .toc
+        margin-left: 40px
 
-.toggle-collapse
-    float: left
-    margin-left: -3.3em
-    margin-top: .5em
-    content: ""
-    outline: inherit
-    border: 0px
-    background: transparent
+// media (min-width: 1100px)
+// 	.toc
+// 		flex: 0 0 300px
 
-/* Toggle Icon */
-.toggle-icon,
-.toggle-icon::before,
-.toggle-icon::after
-    content: ""
-    width: 30px
-    height: 3px
-    position: fixed
-    background-color: black
-    border-radius: 2em
-    border: 1px solid black
+// media (max-width: 1339px) and (min-width: 600px)
+// 	.toc
+// 		flex: 0 0 200px
+// 		margin-left: 80px
+
+// media (min-width: 2000px)
+// 	.toc
+// 		position: fixed
+// 		right: 0
+// 		width: 300px
+// 		z-index: 2
+
+// .toc 
+// 	display: inline-block
+// 	margin-top: 80px
+// 	margin-left: 15px
+// 	margin-left: 15px
+// 	margin-bottom: 20px
+// 	flex-shrink: 0
+// 	width: 350px
+
+// .sidebar
+//     display: flex
+//     flex-direction: column
+//     flex-grow: 0
+//     flex-shrink: 1
+//     flex-basis: auto
+//     justify-content: flex-start
+//     align-items: stretch
+
+//     width: 100%
+//     padding-left: 20px
+//     position: relative
+
+// media (min-width: 1100px)
+//     .sidebar
+//         padding-left: 40px
+
+// media (max-width: 599px)
+//     .sidebar
+//         padding-bottom: 100px
+
+.menu_div2 
+    margin-left: 15px
+
+.toc-title-arrow
+    display: inline-flex
+    align-items: center
+
+.toc-title-wrapper 
+    padding: 0px 0px
+    line-height: 1em
+    position: relative
     cursor: pointer
-    transition: .3s ease
-    margin-top: .8em   
+    display: block
+    font-family: Signika
+    font-weight: 600
+    font-style: normal
+    text-transform: none
 
-.toggle-icon::before
-    position: absolute
-    left: -1px
-    margin-top: -0.8em
+.toc-title-wrapper a
+    padding: 0px
+    background-color: transparent
+    border-bottom: none
 
-.toggle-icon::after
-    position: absolute
-    left: -1px
-    margin-top: -.6em
-    width: 20px
+.toc-title-wrapper h3 
+    font-size: 16px
+    line-height: 28px
+    letter-spacing: 0px
 
-.toggle-icon
-    width: 15px
+.accordion-content 
+    margin-left: 15px
+    font-family: Signika
+    font-weight: 600
+    font-style: normal
+    text-transform: none
 
-.show
-    .toggle-icon::after
-        width: 30px
-.show
-    .toggle-icon
-        width: 30px
+.accordion-content h4 
+    font-size: 14px
+    line-height: 24px
+    letter-spacing: 0px
+
+.accordion-content h5 	
+    font-size: 13px
+    line-height: 20px
+    letter-spacing: 0px
+
+.toc-link 
+    text-decoration: none
+    color: rgb(67, 147, 195)
+    position: relative
+    margin-bottom: 0
+    line-height: 1.4em
+    display: inline-block
+    user-select: none
+
+.toc-current 
+    text-decoration: none
+    color: black
+    position: relative
+    margin-bottom: 0
+    line-height: 1.4em
+    display: inline-block
+    user-select: none
+    // color: rgb(0, 0, 0)
+    // font-weight: 600
+    // position: relative
+    // margin-bottom: 0
+    // line-height: 1.4em
+    // display: inline-block
+    // user-select: none
+    // white-space: nowrap
+    // text-transform: uppercase
+
+.toc-arrow
+    // margin-left: 7px
+    width: 26px
+    opacity: .4
+    // margin-bottom: 2px
+
+.toc-arrow-rot
+    width: 26px
+    // margin-left: 7px
+    transform: rotateX(180deg)
+    // margin-bottom: 2px
     
-.nav-item 
-    > .site-name
-        text-decoration: none
-        padding: 1.3em
-        font:
-            size: 2em
-        color: white
-    &:last-child
-        > .nav-link
-            i
-                padding: .5em
-    &:hover:last-child
-        > .nav-link
-            background-color: black
-            color: white
+// .toc-button
+//     cursor: pointer
+//     background-color: transparent
+//     border: 0
+//     margin-top: 10px
+
+// .ttoc-title-current
+//     color: #6d6d6d
+//     font-size: 14px
+//     font-weight: 700
+//     line-height: 3
+//     text-transform: uppercase
+//     letter-spacing: 0.08em
+
+// .toc-arrow
+//     margin-left: 7px
+//     transform: rotateX(180deg)
+//     transition: -webkit-transform 0.2s ease,transform 0.2s ease
+//     -webkit-transform: rotateX(180deg)
+//     -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease
+//     -moz-transition: transform 0.2s ease
+
+// .navbar
+//     position: absolute
+//     right: 0px
+//     width: 300px
+//     height: 100%
+//     background-color: black
+//     // text-align: center
+//     transition: .3s ease
+
+//     > .side-nav
+//         list-style-type: none
+//         padding: 0px
+//         margin: 0px
+
+// .nav-item
+//     display: flex
+
+//     > .nav-link
+//         text-decoration: none
+//         color: white
+//         font:
+//             size: 1.1em
+//         padding: 1em
+//         flex: 1
+
+//         &:hover
+//             background-color: white
+//             color: black
+
+// .toggle-collapse
+//     float: left
+//     margin-left: -3.3em
+//     margin-top: .5em
+//     content: ""
+//     outline: inherit
+//     border: 0px
+//     background: transparent
+
+// /* Toggle Icon */
+// .toggle-icon,
+// .toggle-icon::before,
+// .toggle-icon::after
+//     content: ""
+//     width: 30px
+//     height: 3px
+//     position: fixed
+//     background-color: black
+//     border-radius: 2em
+//     border: 1px solid black
+//     cursor: pointer
+//     transition: .3s ease
+//     margin-top: .8em   
+
+// .toggle-icon::before
+//     position: absolute
+//     left: -1px
+//     margin-top: -0.8em
+
+// .toggle-icon::after
+//     position: absolute
+//     left: -1px
+//     margin-top: -.6em
+//     width: 20px
+
+// .toggle-icon
+//     width: 15px
+
+// .show
+//     .toggle-icon::after
+//         width: 30px
+// .show
+//     .toggle-icon
+//         width: 30px
+    
+// .nav-item 
+//     > .site-name
+//         text-decoration: none
+//         padding: 1.3em
+//         font:
+//             size: 2em
+//         color: white
+//     &:last-child
+//         > .nav-link
+//             i
+//                 padding: .5em
+//     &:hover:last-child
+//         > .nav-link
+//             background-color: black
+//             color: white
