@@ -12,10 +12,39 @@
  * limitations under the License.
  */
 
+.sidebar-button
+    display: none
+    background-color: #20232a
+    top: 20px
+    color: #61dafb
+    cursor: pointer
+    position: fixed
+    left: -58px
+    // z-index: 30
+    // border-radius: 50%
+    // border: 1px solid rgba(255, 255, 255, 0.1)
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4)
+    outline: none
+    width: 38px
+    height: 38px
+    transform: scaleX(-1)
+    padding: 4px
+
+.sidebar-button-inner
+    width: 20px
+    height: 20px
+    align-self: center
+    display: flex
+    flex-direction: column
+    color: #61dafb
+
+.titanic path
+    fill: #fff
+    stroke: #fff
+
 .toc
     display: flex
     flex-direction: column
-    // flex: 0 0 300px
     margin-top: 80px
     background-color: #f7f7f7
     padding: 20px 20px
@@ -23,59 +52,52 @@
 
 @media (min-width: 600px)
     .toc
-        // border-left: 1px solid #ececec
         margin-left: 80px
 
 @media (max-width: 979px) and (min-width: 600px)
     .toc
         margin-left: 40px
 
-// media (min-width: 1100px)
-// 	.toc
-// 		flex: 0 0 300px
+@media (max-width: 599px)
+    .toc
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4)
+        top: 0px
+        bottom: 0px
+        right: 0px
+        position: fixed
+        background-color: rgb(255, 255, 255)
+        // z-index: 20
+        height: 100vh
+        // overflow: visible
+        pointer-events: auto
+        padding: 30px
+        background-color: black
+        color: white
+        margin-top: 0px
+        border-radius: 0px
+        // transform: translate(0px, 0px)
+        // transition: transform 0.5s ease 0s
+        transform: translateX(100%)
+        transition: all 0.2s
+    .toc-link a, .toc-title-wrapper a
+        color: white
+    .toc-current
+        color: #4393c3 !important
+    .open
+        //right: 0px
+        transform: translateX(0%)
 
-// media (max-width: 1339px) and (min-width: 600px)
-// 	.toc
-// 		flex: 0 0 200px
-// 		margin-left: 80px
 
-// media (min-width: 2000px)
-// 	.toc
-// 		position: fixed
-// 		right: 0
-// 		width: 300px
-// 		z-index: 2
-
-// .toc 
-// 	display: inline-block
-// 	margin-top: 80px
-// 	margin-left: 15px
-// 	margin-left: 15px
-// 	margin-bottom: 20px
-// 	flex-shrink: 0
-// 	width: 350px
+@media (max-width: 599px)
+    .sidebar-button
+        display: inline-block
 
 .sidebar
     display: flex
     flex-direction: column
-    // flex-grow: 0
-    // flex-shrink: 1
-    // flex-basis: auto
     justify-content: flex-start
     align-items: stretch
     width: 300px
-
-//     width: 100%
-//     padding-left: 20px
-//     position: relative
-
-// media (min-width: 1100px)
-//     .sidebar
-//         padding-left: 40px
-
-// media (max-width: 599px)
-//     .sidebar
-//         padding-bottom: 100px
 
 .menu_div2 
     margin-left: 15px
@@ -139,15 +161,6 @@
     line-height: 1.4em
     display: inline-block
     user-select: none
-    // color: rgb(0, 0, 0)
-    // font-weight: 600
-    // position: relative
-    // margin-bottom: 0
-    // line-height: 1.4em
-    // display: inline-block
-    // user-select: none
-    // white-space: nowrap
-    // text-transform: uppercase
 
 .toc-arrow
     // margin-left: 7px
@@ -211,64 +224,3 @@
 //         &:hover
 //             background-color: white
 //             color: black
-
-// .toggle-collapse
-//     float: left
-//     margin-left: -3.3em
-//     margin-top: .5em
-//     content: ""
-//     outline: inherit
-//     border: 0px
-//     background: transparent
-
-// /* Toggle Icon */
-// .toggle-icon,
-// .toggle-icon::before,
-// .toggle-icon::after
-//     content: ""
-//     width: 30px
-//     height: 3px
-//     position: fixed
-//     background-color: black
-//     border-radius: 2em
-//     border: 1px solid black
-//     cursor: pointer
-//     transition: .3s ease
-//     margin-top: .8em   
-
-// .toggle-icon::before
-//     position: absolute
-//     left: -1px
-//     margin-top: -0.8em
-
-// .toggle-icon::after
-//     position: absolute
-//     left: -1px
-//     margin-top: -.6em
-//     width: 20px
-
-// .toggle-icon
-//     width: 15px
-
-// .show
-//     .toggle-icon::after
-//         width: 30px
-// .show
-//     .toggle-icon
-//         width: 30px
-    
-// .nav-item 
-//     > .site-name
-//         text-decoration: none
-//         padding: 1.3em
-//         font:
-//             size: 2em
-//         color: white
-//     &:last-child
-//         > .nav-link
-//             i
-//                 padding: .5em
-//     &:hover:last-child
-//         > .nav-link
-//             background-color: black
-//             color: white

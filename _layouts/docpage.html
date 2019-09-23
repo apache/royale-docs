@@ -25,6 +25,8 @@ limitations under the License.
   </script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" />
   <link rel="shortcut icon" href="">
   <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
@@ -49,12 +51,12 @@ limitations under the License.
           <a href="https://github.com/apache/royale-docs/edit/master/{{ page.path }}" target="_blank">Edit this page</a>
         </div>
       </article>
-      <div class="toc">
-        <div align="center">
-          <input class="docsearch-input" type="search" placeholder="Search docs..." autocomplete="off" spellcheck="false"/>
-        </div>
+      <div class="toc" id="toc">
+        <input class="docsearch-input" type="search" placeholder="Search docs..." autocomplete="off" spellcheck="false"/>
         <div class="sidebar">
           {% include toc.html %}
+        </div>
+        <div id="sbButton" onclick="showSideBar()" role="button" tabindex="0" class="sidebar-button titanic titanic-forward-arrow"/>
         </div>
       </div>
     </div>
@@ -63,5 +65,28 @@ limitations under the License.
   {% include footer.html %}
   {% include docsearch.html %}
 
+  <script>
+    var titanic = new Titanic({
+      hover: false, // auto animated on hover (default true)
+      click: false  // auto animated on click/tap (default false)
+    });
+
+    function showSideBar()
+    {
+      if(toc.classList.contains("open"))
+      {
+        titanic.items[0].off();
+        toc.classList.remove("open");
+
+      }
+      else
+      {
+        titanic.items[0].on();
+        toc.classList.add("open");
+      }
+    }
+  </script>
 </body>
+
+
 </html>
