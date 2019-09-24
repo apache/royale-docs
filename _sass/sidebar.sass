@@ -15,20 +15,18 @@
 .sidebar-button
     display: none
     background-color: #20232a
-    top: 20px
+    top: 30px
     color: #61dafb
     cursor: pointer
     position: fixed
-    left: -58px
-    // z-index: 30
-    // border-radius: 50%
-    // border: 1px solid rgba(255, 255, 255, 0.1)
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4)
+    left: -38px
     outline: none
-    width: 38px
-    height: 38px
+    width: 42px
+    height: 42px
     transform: scaleX(-1)
-    padding: 4px
+    padding: 4px 10px 4px 4px
+    border-top-right-radius: 50%
+    border-bottom-right-radius: 50%
 
 .sidebar-button-inner
     width: 20px
@@ -43,12 +41,14 @@
     stroke: #fff
 
 .toc
+    font-family: 'Source Sans Pro'
     display: flex
     flex-direction: column
     margin-top: 80px
     background-color: #f7f7f7
-    padding: 20px 20px
+    padding: 30px
     border-radius: 10px
+    text-transform: uppercase
 
 @media (min-width: 600px)
     .toc
@@ -66,17 +66,13 @@
         right: 0px
         position: fixed
         background-color: rgb(255, 255, 255)
-        // z-index: 20
         height: 100vh
         // overflow: visible
         pointer-events: auto
-        padding: 30px
-        background-color: black
+        background-color: #20232a
         color: white
         margin-top: 0px
         border-radius: 0px
-        // transform: translate(0px, 0px)
-        // transition: transform 0.5s ease 0s
         transform: translateX(100%)
         transition: all 0.2s
     .toc-link a, .toc-title-wrapper a
@@ -86,7 +82,6 @@
     .open
         //right: 0px
         transform: translateX(0%)
-
 
 @media (max-width: 599px)
     .sidebar-button
@@ -112,10 +107,8 @@
     position: relative
     cursor: pointer
     display: block
-    font-family: Signika
     font-weight: 600
     font-style: normal
-    text-transform: none
 
 .toc-title-wrapper a
     padding: 0px
@@ -129,10 +122,8 @@
 
 .accordion-content 
     margin-left: 15px
-    font-family: Signika
     font-weight: 600
     font-style: normal
-    text-transform: none
 
 .accordion-content h4 
     font-size: 14px
@@ -153,7 +144,7 @@
     display: inline-block
     user-select: none
 
-.toc-current 
+.toc-current
     text-decoration: none
     color: black
     position: relative
@@ -174,53 +165,3 @@
     transform: rotateX(180deg)
     // margin-bottom: 2px
     
-// .toc-button
-//     cursor: pointer
-//     background-color: transparent
-//     border: 0
-//     margin-top: 10px
-
-// .ttoc-title-current
-//     color: #6d6d6d
-//     font-size: 14px
-//     font-weight: 700
-//     line-height: 3
-//     text-transform: uppercase
-//     letter-spacing: 0.08em
-
-// .toc-arrow
-//     margin-left: 7px
-//     transform: rotateX(180deg)
-//     transition: -webkit-transform 0.2s ease,transform 0.2s ease
-//     -webkit-transform: rotateX(180deg)
-//     -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease
-//     -moz-transition: transform 0.2s ease
-
-// .navbar
-//     position: absolute
-//     right: 0px
-//     width: 300px
-//     height: 100%
-//     background-color: black
-//     // text-align: center
-//     transition: .3s ease
-
-//     > .side-nav
-//         list-style-type: none
-//         padding: 0px
-//         margin: 0px
-
-// .nav-item
-//     display: flex
-
-//     > .nav-link
-//         text-decoration: none
-//         color: white
-//         font:
-//             size: 1.1em
-//         padding: 1em
-//         flex: 1
-
-//         &:hover
-//             background-color: white
-//             color: black
