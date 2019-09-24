@@ -83,10 +83,6 @@
         //right: 0px
         transform: translateX(0%)
 
-@media (max-width: 599px)
-    .sidebar-button
-        display: inline-block
-
 .sidebar
     display: flex
     flex-direction: column
@@ -96,9 +92,27 @@
     overflow-y: auto
     margin-top: 20px
 
+.sidebar-logo
+    display: none
+
 @media (max-width: 599px)
+    .sidebar-button
+        display: inline-block
+
     .sidebar
         width: 100%
+
+    .sidebar-logo
+        display: inline-flex
+        flex: 1 0 auto
+        flex-direction: column
+        align-self: center
+        width: 170px
+        margin: 0px 10px 10px 10px
+
+        a
+            background-color: transparent
+            border-bottom: 0px
 
 .menu_div2 
     margin-left: 15px
