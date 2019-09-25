@@ -50,6 +50,18 @@
     border-radius: 10px
     text-transform: uppercase
 
+.sidebar
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: stretch
+    width: 280px
+    overflow-y: auto
+    margin-top: 20px
+
+.sidebar-logo
+    display: none
+
 @media (min-width: 600px)
     .toc
         margin-left: 80px
@@ -96,20 +108,6 @@
             will-change: opacity
             transition: opacity 0.4s 0ms
 
-
-.sidebar
-    display: flex
-    flex-direction: column
-    justify-content: flex-start
-    align-items: stretch
-    width: 280px
-    overflow-y: auto
-    margin-top: 20px
-
-.sidebar-logo
-    display: none
-
-@media (max-width: 599px)
     .sidebar-button
         display: inline-block
 
@@ -118,11 +116,11 @@
 
     .sidebar-logo
         display: inline-flex
-        flex: 1 0 auto
+        flex: 0 0 auto
         flex-direction: column
         align-self: center
         width: 170px
-        margin: 0px 10px 10px 10px
+        margin: 0px 10px 30px 10px
 
         a
             background-color: transparent
