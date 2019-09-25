@@ -82,6 +82,20 @@
     .open
         //right: 0px
         transform: translateX(0%)
+    .noscroll
+        pointer-events: none
+        position: fixed
+        &::before
+            background-color: rgba(0,0,0,0.65)
+            position: absolute
+            content: ""
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            will-change: opacity
+            transition: opacity 0.4s 0ms
+
 
 .sidebar
     display: flex
