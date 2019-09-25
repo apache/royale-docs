@@ -40,7 +40,7 @@ limitations under the License.
   <title>{{page.title}}</title>
 </head>
 
-<body class="page" id="main">
+<body class="page noscroll" id="main">
   {% include header.html %}
 
   <div class="toc_and_doc">
@@ -81,13 +81,13 @@ limitations under the License.
       if(toc.classList.contains("open"))
       {
         titanic.items[0].off();
-        main.classList.remove("noscroll");
+        main.classList.remove("open");
         toc.classList.remove("open");
       }
       else
       {
         titanic.items[0].on();
-        main.classList.add("noscroll");
+        main.classList.add("open");
         toc.classList.add("open");
       }
     }

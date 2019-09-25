@@ -79,7 +79,6 @@
         position: fixed
         background-color: rgb(255, 255, 255)
         height: 100vh
-        // overflow: visible
         pointer-events: auto
         background-color: #20232a
         color: white
@@ -92,11 +91,8 @@
     .toc-current
         color: #4393c3 !important
     .open
-        //right: 0px
         transform: translateX(0%)
     .noscroll
-        pointer-events: none
-        position: fixed
         &::before
             background-color: rgba(0,0,0,0.65)
             position: absolute
@@ -105,8 +101,14 @@
             left: 0
             width: 100%
             height: 100%
+            opacity: 0
             will-change: opacity
             transition: opacity 0.4s 0ms
+        &.open
+            pointer-events: none
+            position: fixed
+            &::before
+                opacity: 1       
 
     .sidebar-button
         display: inline-block
