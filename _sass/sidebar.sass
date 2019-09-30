@@ -15,7 +15,7 @@
 .sidebar-button
     display: none
     background-color: #20232a
-    top: 30px
+    top: 80px
     color: #61dafb
     cursor: pointer
     position: fixed
@@ -49,6 +49,7 @@
     padding: 30px
     border-radius: 10px
     text-transform: uppercase
+    z-index: 200
 
 .sidebar
     display: flex
@@ -57,10 +58,13 @@
     align-items: stretch
     width: 280px
     overflow-y: auto
-    margin-top: 20px
 
 .sidebar-logo
     display: none
+
+.search-bar
+    display: flex
+    align-items: center
 
 @media (min-width: 600px)
     .toc
@@ -122,7 +126,7 @@
         flex-direction: column
         align-self: center
         width: 170px
-        margin: 0px 10px 30px 10px
+        margin: 0px 10px 0px 10px
 
         a
             background-color: transparent

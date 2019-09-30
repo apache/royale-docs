@@ -25,8 +25,6 @@
 	background-position: center top
 	
 .social 
-	/* hidden until these get hooked up */
-	display: none /* inline */
 	margin-top: 0px
 	height: 40px
 
@@ -39,30 +37,54 @@
 .docs_header 
 	height: 70px
 
-.topbar 
+.topbar
+	display: inline-flex
+	margin-top: 5px
 	width: 100%
-	top: 0
-	max-width: 1170px
-	margin-right: auto
-	margin-left: auto
-	position: relative
-	display: flex
-	align-items: flex-start
+
+.topbar-left
+	display: inline-flex
+	justify-content: flex-start
+
+	div
+		margin-top: 15px
+		margin-bottom: 5px
+		width: 180px
+		height: 40px
+
+@media (max-width: 599px)
+	.topbar-left
+		div
+			width: 140px
+			
+
+	
+.topbar-center
+	display: inline-flex
+	flex: 1 1 auto
 	justify-content: center
-	flex-wrap: wrap
+	padding: 0px 20px
 
-.topbar-left 
-	margin-left: 15px
-	margin-right: 15px
-	display: inline-block
-	flex-grow: 1
-	max-width: 760px
-	min-width: 0
+.topbar-right
+	display: inline-flex
+	// flex: 1 1 auto
+	justify-content: flex-end
 
-.topbar-right 
-	display: inline-block
-	flex-shrink: 0
+.dropdown-wrapper
+	display: flex
 
+.topMenu-dropbtn
+	display: none
+	height: 38px
+	background: transparent
+	border: transparent
+	color: rgba(255,255,255,0.7)
+	font-size: 14px
+	font-weight: 600
+	line-height: 40px
+	white-space: nowrap
+	outline: 0
+	
 .topMenu 
 	display: inline-block
 	vertical-align: top
@@ -70,10 +92,37 @@
 	margin-bottom: 0px
 	height: 40px
 
-@media screen and (max-width: 660px) 
+@media screen and (max-width: 1160px)
+	.topbar-center
+		align-items: center
+
+	.topMenu-dropbtn
+		display: flex
+		z-index: 100
+
 	.topMenu 
 		display: none
-	
+		flex-direction: column
+		position: absolute
+		z-index: 1
+
+	.topMenu_li
+		background-color: #f7f7f7
+		padding: 6px 18px
+		margin: 0px
+		box-shadow: 0px 18px 16px 0px rgba(0,0,0,0.2)
+		line-height: 1em
+		
+	.topMenu_li_a
+		font-family: "Source Sans Pro"
+		color: #4393c3 !important
+		font-size: 16px
+		line-height: 28px
+		letter-spacing: 0px
+
+	.topbar-center:hover .topMenu
+		display: flex
+		
 .topMenu_li
 	font-family: 'Signika'
 	display: inline
@@ -190,20 +239,21 @@
 	padding-bottom: 14px
 	padding-right: 14px
 
-.toc_and_doc 
-	margin-top: 50px
-
+.docs_header, .toc_and_doc
 	padding-left: 20px
 	padding-right: 20px
 	margin-left: auto
 	margin-right: auto
 
+.toc_and_doc
+	margin-top: 50px
+
 @media (min-width: 1340px)
-	.toc_and_doc
+	.docs_header, .toc_and_doc
 		max-width: 1260px
 
 @media (min-width: 780px)
-	.toc_and_doc
+	.docs_header, .toc_and_doc
 		width: 90%
 
 .page-content
