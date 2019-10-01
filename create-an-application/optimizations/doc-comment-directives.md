@@ -59,7 +59,7 @@ This means that for:
 class MyThing{  
 	public var myImportantVar:String = 'myValue';  
 }
-```actionscript
+```as3
 var myThing:MyThing = new MyThing();
 var s:String = myThing.myImportantVar; //this always works
 var fieldName:String = 'myImportantVar';
@@ -68,7 +68,7 @@ s = myThing[fieldName]; //this will work in a js-debug build, but may not work i
 Because of issues like the above, the Royale compiler outputs a warning to alert the developer.
 However in many cases, the dynamic access may not be needed, and using a public var will be fine.
 To prevent the warning from the compiler, the doc comment directive can be used as follows:
-```actionscript
+```as3
 /**
 * @royalesuppresspublicvarwarning
 */
@@ -84,7 +84,7 @@ This is an option to avoid compiler output of coercions of a certain type.
 It can help avoid unnecessary code and improve performance.
 
 A simplistic, illustrative example is:
-```actionscript
+```as3
 if (myVar is MyClass) { //this generates code to check if myVar is of type 'MyClass'
 	(myVar as MyClass).myClassMethod(); 
 	//the above normally generates similar code to check if myVar is of type 'MyClass'
@@ -115,7 +115,7 @@ Please read the [Strict equality comparisons](create-an-application/optimization
 
 How to use:  
 A simplistic example is:
-```actionscript
+```as3
 /**
 * setting goes here
 */
@@ -153,7 +153,7 @@ Please read the [Vector Index Checking](create-an-application/optimizations/comp
 
 How to use:
 A simplistic example is:  
-```actionscript
+```as3
 /**
 * setting goes here
 */
@@ -193,7 +193,7 @@ Please read the [Implict Coercions of non-primitive types](create-an-application
 How to use:
 
 A simplistic example is:
-```actionscript
+```as3
 /**
 * setting goes here
 */

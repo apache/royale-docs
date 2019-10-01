@@ -38,7 +38,7 @@ mxmlc -allow-private-constructors=false MyApp.mxml
 
 You might implement a global logger as a singleton by using a private constructor.
 
-```actionscript
+```as3
 package
 {
 	public class Logger
@@ -68,7 +68,7 @@ package
 
 If you were to attempt to instantate this `Logger` class, the compiler would fail with an error:
 
-```actionscript
+```as3
 package com.example
 {
 	public class MyApplication
@@ -84,7 +84,7 @@ package com.example
 
 However, you may call `Logger.getInstance()` to access an instance that is created inside the `Logger` class itself:
 
-```actionscript
+```as3
 package com.example
 {
 	public class MyApplication

@@ -38,7 +38,7 @@ mxmlc -allow-abstract-classes=false MyApp.mxml
 
 Consider the following code that creates a class named `GraphicsObject`:
 
-```actionscript
+```as3
 package
 {
 	public abstract class GraphicsObject
@@ -57,7 +57,7 @@ package
 
 This class uses the `abstract` modifier, so if we tried to instantiate the class directly, we'd get a compile-time error:
 
-```actionscript
+```as3
 // Error: Abstract classes cannot be instantiated with the new operator.
 var object:GraphicsObject = new GraphicsObject();
 ```
@@ -69,7 +69,7 @@ The `GraphicsObject` class defines a method named `draw()` that also uses the `a
 The next code sample show how to extend the abstract class `GraphicsObject` and implement its `draw()` method:
 
 
-```actionscript
+```as3
 package
 {
 	public class Rectangle extends GraphicsObject
@@ -98,7 +98,7 @@ package
 If we extended `GraphicsObject` and did not implement its abstract method, we'd get a compile-time error:
 
 
-```actionscript
+```as3
 package
 {
 	// Error: Method draw in abstract class GraphicsObject not implemented by class Foobar

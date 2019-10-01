@@ -55,7 +55,7 @@ Note that some reflection utility functions require this to be true in order for
 This corresponds to AVM runtime implicit type coercions for non-primitive types (anything that is not a Number, int, uint, String, Boolean) and is not being cast to something that is untyped (__*__ type) or loosely typed, e.g. of **Object** type.  
 
 An (overly simplistic) example would be:
-```actionscript
+```as3
 var cat:Cat = new Cat();
 var myCats:Array = [cat]; 
 //from this point on, array access of index 0 in myCats 
@@ -89,7 +89,7 @@ It ensures greater compatibility between AVM and javascript, in particular for s
 This is not just important for the binary operators like `===` or `!==`, but also for things like `Array.indexOf`, which uses strict equality for checking.  
 
 An (overly simplistic) example would be:  
-```actionscript
+```as3
 var clazz:Class = String;
 var test:Array = ['test', new clazz(30.5)]; 
 //in AVM, the above would result in: ['test', '30.5']
@@ -113,7 +113,7 @@ In javascript the **js&#x2011;debug** output, you can do a ***search in files***
 This corresponds to AVM runtime checking during Vector index assignments (*note:* currently only for assignment, not access)  
 
 An (overly simplistic) example would be:  
-```actionscript
+```as3
 var myVec:Vector.<Number> = new Vector.<Number>();
 myVec[1] = 2; 
 //the above will generate a runtime error in AVM,
@@ -123,7 +123,7 @@ myVec[1] = 2;
 ```
 
 or:
-```actionscript
+```as3
 myVec = new Vector.<Number>(20,true); //create a fixed length Vector, with indices 0 to 19.
 myVec[20] = 2; 
 //the above will generate a runtime error in AVM,
@@ -138,7 +138,7 @@ In most cases it could be avoided to assist with performance. This is particular
 Often the loop variable is used as the index for the value assignment, and in this case, it is usually already certain to be within the valid range for the targetted Vector instance.  
 For example:
 
-```actionscript
+```as3
 var l:uint = myVec.length;  
 for (var i:uint = 0; i<l; i++) {  
  myVec[i] = i/SOME_CONST; 
