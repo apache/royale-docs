@@ -28,7 +28,7 @@ ActionScript 3 is an object-oriented programming language originally created by 
 
 The following code snippet shows some of ActionScript's core syntax:
 
-```actionscript
+```as3
 package org.apache.royale
 {
 	public class WelcomeToActionScript

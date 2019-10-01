@@ -16,6 +16,8 @@
 
 layout: docpage
 title: RoyaleUnit
+description: A unit testing library for Apache Royale
+permalink: /testing/royaleunit
 ---
 
 # RoyaleUnit
@@ -24,7 +26,7 @@ A unit testing library for Apache Royale
 
 ## What RoyaleUnit does
 
-_Text coming soon_
+RoyaleUnit is an extensible testing framework for ActionScript classes and provides extensions for working with the Royale Framework. The RoyaleUnit framework is used to automate unit and integration testing.
 
 ## Requirements
 
@@ -32,9 +34,9 @@ Apache RoyaleUnit is designed to work with [Apache Ant](https://ant.apache.org){
 
 ## Tutorials
 
-* [Create a unit test](testing/royaleunit/create-a-unit-test.html)
-* [Run unit tests with Apache Ant](testing/royaleunit/run-unit-tests-with-ant.html)
+* [Create a unit test](testing/royaleunit/create-a-unit-test)
+* [Run unit tests with Apache Ant](testing/royaleunit/run-unit-tests-with-ant)
 
 ## Reference
 
-* [Metadata](testing/royaleunit/metadata.html)
+* [Metadata](testing/royaleunit/metadata)

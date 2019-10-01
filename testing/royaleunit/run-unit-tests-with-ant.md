@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Run unit tests with Apache Ant
+description: How to run unit test with Ant
+permalink: /testing/royaleunit/run-unit-tests-with-ant
 ---
 
 # Run unit tests with Apache Ant

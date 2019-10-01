@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Metadata
+description: RoyaleUnit Metadata tags
+permalink: /testing/royaleunit/metadata
 ---
 
 # RoyaleUnit metadata

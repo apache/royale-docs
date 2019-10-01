@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Create a unit test
+description: How to create a unit test
+permalink: /testing/royaleunit/create-a-unit-test
 ---
 
 # Create a unit test
@@ -24,9 +26,9 @@ An example of creating unit tests with RoyaleUnit
 
 ## Test cases
 
-A test case is a class that defines a collection of tests. Each test is written as a method of a class. Each test method should be marked with [`[Test]` metadata](testing/royaleunit/metadata.html#test).
+A test case is a class that defines a collection of tests. Each test is written as a method of a class. Each test method should be marked with [`[Test]` metadata](testing/royaleunit/metadata#test).
 
-```actionscript
+```as3
 package com.example
 {
 	import org.apache.royale.test.Assert;
@@ -50,16 +52,16 @@ package com.example
 }
 ```
 
-Each test method should be marked with [`[Test]` metadata](testing/royaleunit/metadata.html#test):
+Each test method should be marked with [`[Test]` metadata](testing/royaleunit/metadata#test):
 
-```actionscript
+```as3
 [Test]
 public function testSimpleAdd():void
 ```
 
 The `org.apache.royale.test.Assert` class defines a number of assertion methods that may be useful for testing. In this case, use `assertEquals()` to compare two values:
 
-```actionscript
+```as3
 Assert.assertEquals(result, 5);
 ```
 
@@ -107,13 +109,13 @@ Use an instance of the `RoyaleUnitCore` class to run unit tests:
 
 The `TraceListener` class tells `RoyaleUnitCore` displays the test results in the debug console:
 
-```actionscript
+```as3
 core.addListener(new TraceListener());
 ```
 
 Pass one or more test classes to the `runClasses()` method of the `RoyaleUnitCore` instance:
 
-```actionscript
+```as3
 core.runClasses(MyFirstTests);
 ```
 
@@ -123,7 +125,7 @@ Compile this application and run it using a debugger to see the results of the t
 mxmlc -keep-as3-metadata+=Test MyTests.mxml
 ```
 
-> Don't forget to tell the compiler to keep any [RoyaleUnit metadata](testing/royaleunit/metadata.html) that is used in the application. In this case, only `[Test]` metadata is used, but several other tags are available.
+> Don't forget to tell the compiler to keep any [RoyaleUnit metadata](testing/royaleunit/metadata) that is used in the application. In this case, only `[Test]` metadata is used, but several other tags are available.
 
 The debug console output should look similar to the following:
 
