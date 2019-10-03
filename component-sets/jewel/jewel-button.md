@@ -29,7 +29,7 @@ Available since version __0.9.4__.
 
 | Class                 	    | Extends                           |
 |------------------------------	|----------------------------------	|
-| [org.apache.royale.jewel.Button](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Button){:target='_blank'} | [org.apache.royale.jewel.supportClasses.button.BasicButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.button/BasicButton){:target='_blank'} |
+| [org.apache.royale.jewel.Button](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Button){:target='_blank'} | [org.apache.royale.jewel.supportClasses.button.SimpleButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.button/SimpleButton){:target='_blank'} |
 
 <sup>_Note: This component is currently only available for JavaScript._</sup>
 
@@ -41,7 +41,7 @@ The Jewel Button can show different looks and feels. By default it appears with 
 
 When a user interacts with the button (mouse over, long-press, double-click...) the button calls an event listener to perform an action. When a user clicks the mouse on the button or taps the button on a touch screen, the button dispatches a click event.
 
-> If you don't need a custom label on your button consider using Jewel's [BasicButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.button/BasicButton){:target='_blank'}, located in the Jewel `supportClasses` package, since is more lightweight and will save you some bytes if it fits your use case.
+> If you don't need a custom label on your button consider using Jewel's [SimpleButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.button/SimpleButton){:target='_blank'}, located in the Jewel `supportClasses` package, since is more lightweight and will save you some bytes if it fits your use case.
 
 ## Example of use
 
