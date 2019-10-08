@@ -59,7 +59,7 @@ public static function afterClass():void
 }
 ```
 
-Using `[AfterClass]` metadata requires a nightly build of Apache Royale 0.9.7. This metadata will not work properly in version 0.9.6.
+> Using `[AfterClass]` metadata requires a nightly build of Apache Royale 0.9.7. This metadata will not work properly in version 0.9.6.
 
 ## Before
 
@@ -85,7 +85,7 @@ public static function beforeClass():void
 }
 ```
 
-Using `[BeforeClass]` metadata requires a nightly build of Apache Royale 0.9.7. This metadata will not work properly in version 0.9.6.
+> Using `[BeforeClass]` metadata requires a nightly build of Apache Royale 0.9.7. This metadata will not work properly in version 0.9.6.
 
 ## Ignore
 
@@ -112,6 +112,8 @@ public class MySuite()
 }
 ```
 
+In most cases, the runner should be `org.apache.royale.test.runners.SuiteRunner`, but it is possible to create a custom runner, if desired.
+
 ## Suite
 
 Specify that a class is a test suite. Should be combined with [`[RunWith]` metadata](testing/royaleunit/metadata.html#runwith).
@@ -121,7 +123,7 @@ Specify that a class is a test suite. Should be combined with [`[RunWith]` metad
 [RunWith("org.apache.royale.test.runners.SuiteRunner")]
 public class MySuite()
 {
-	public var myTestsCase:MyTestCase;
+	public var myTestCase:MyTestCase;
 	public var myOtherSuite:MyOtherSuite;
 }
 ```
@@ -140,3 +142,29 @@ public function testSimpleAdd():void
 	Assert.assertEquals(result, 5);
 }
 ```
+
+To test asynchronous functionality, add the `async` modifier to the `[Test]` metadata, and use the static methods on the `org.apache.royale.test.async.Async` class to set up a context for testing asynchronously.
+
+```actionscript
+[Test(async)]
+public function testAsync():void
+{
+	Async.delayCall(this, function():void
+	{
+		// add asserts here
+	}, 250);
+}
+```
+
+In the example above, we use `Async.delayCall()` to call a function after 250 milliseconds. See the `Async` class for a number of different methods that you can use for asynchronous tests.
+
+By default, asynchronous tests fail if they do not complete within 500 milliseconds. Set the `timeout` modifier on the `[Test]` metadata to customize this duration (measured in milliseconds).
+
+```actionscript
+[Test(async,timeout="2000")]
+public function testAsyncWithCustomTimeout():void
+{
+}
+```
+
+> Asynchronous tests require a nightly build of Apache Royale 0.9.7. They are not supported in version 0.9.6.
