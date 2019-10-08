@@ -143,6 +143,8 @@ public function testSimpleAdd():void
 }
 ```
 
+### async
+
 To test asynchronous functionality, add the `async` modifier to the `[Test]` metadata, and use the static methods on the `org.apache.royale.test.async.Async` class to set up a context for testing asynchronously.
 
 ```actionscript
@@ -158,6 +160,10 @@ public function testAsync():void
 
 In the example above, we use `Async.delayCall()` to call a function after 250 milliseconds. See the `Async` class for a number of different methods that you can use for asynchronous tests.
 
+> The `async` modifier requires a nightly build of Apache Royale 0.9.7. It is not supported in version 0.9.6.
+
+### timeout
+
 By default, asynchronous tests fail if they do not complete within 500 milliseconds. Set the `timeout` modifier on the `[Test]` metadata to customize this duration (measured in milliseconds).
 
 ```actionscript
@@ -167,4 +173,24 @@ public function testAsyncWithCustomTimeout():void
 }
 ```
 
-> Asynchronous tests require a nightly build of Apache Royale 0.9.7. They are not supported in version 0.9.6.
+> The `timeout` modifier requires a nightly build of Apache Royale 0.9.7. It is not supported in version 0.9.6.
+
+### expected
+
+To require that a specific exception is thrown while a test is running, set the `expected` modifier on the `[Test]` metadata to the name of the exception class.
+
+```actionscript
+[Test(expected="RangeError")]
+public function testWithExpectedException():void
+{
+	throw new RangeError("Out of range");
+}
+```
+
+If the exception class is in a package, include the full package name.
+
+```actionscript
+[Test(expected="com.example.CustomError")]
+```
+
+> The `expected` modifier requires a nightly build of Apache Royale 0.9.7. It is not supported in version 0.9.6.
