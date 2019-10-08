@@ -15,8 +15,8 @@
 # limitations under the License.
 
 layout: docpage
-title: Metadata
-description: RoyaleUnit Metadata tags
+title: RoyaleUnit metadata
+description: RoyaleUnit metadata tags
 permalink: /testing/royaleunit/metadata
 ---
 
@@ -39,30 +39,104 @@ The following ActionScript metadata tags may be used with RoyaleUnit test classe
 
 Specify a method to run after each test in this class.
 
+```actionscript
+[After]
+public static function after():void
+{
+	// runs after every test method in the same class
+}
+```
+
 ## AfterClass
 
-Specify a method to run one time, after all tests have completed in this class.
+Specify a static method to run one time, after all tests have completed in this class.
+
+```actionscript
+[AfterClass]
+public static function afterClass():void
+{
+	// runs after all test methods in the same class have completed
+}
+```
+
+Using `[AfterClass]` metadata requires a nightly build of Apache Royale 0.9.7. This metadata will not work properly in version 0.9.6.
 
 ## Before
 
 Specify a method to run before each test in this class.
 
+```actionscript
+[Before]
+public static function before():void
+{
+	// runs before every test method in the same class
+}
+```
+
 ## BeforeClass
 
-Specify a method to run one time, before any tests have run in this class.
+Specify a static method to run one time, before any tests have run in this class.
+
+```actionscript
+[BeforeClass]
+public static function beforeClass():void
+{
+	// runs before all test methods in the same class
+}
+```
+
+Using `[BeforeClass]` metadata requires a nightly build of Apache Royale 0.9.7. This metadata will not work properly in version 0.9.6.
 
 ## Ignore
 
 Specify that a specific test method should not run.
 
+```actionscript
+[Ignore]
+[Test]
+public function ignoredTest():void
+{
+	// this test will not be run
+}
+```
+
 ## RunWith
 
 Specify the runner to be used with a specific test suite. Should be combined with [`[Suite]` metadata](testing/royaleunit/metadata.html#suite) metadata.
 
+```actionscript
+[Suite]
+[RunWith("org.apache.royale.test.runners.SuiteRunner")]
+public class MySuite()
+{
+}
+```
+
 ## Suite
 
-Specify that a class is a test suite. Should be combined with Should be combined with [`[RunWith]` metadata](testing/royaleunit/metadata.html#runwith).
+Specify that a class is a test suite. Should be combined with [`[RunWith]` metadata](testing/royaleunit/metadata.html#runwith).
+
+```actionscript
+[Suite]
+[RunWith("org.apache.royale.test.runners.SuiteRunner")]
+public class MySuite()
+{
+	public var myTestsCase:MyTestCase;
+	public var myOtherSuite:MyOtherSuite;
+}
+```
+
+To add test classes to the suite, define a public variable for each class, using the class as the variable type. You may also add other suite classes in the same way.
 
 ## Test
 
 Specify that a method is a test that should be run.
+
+```actionscript
+[Test]
+public function testSimpleAdd():void
+{
+	var result:Number = 2 + 3;
+	Assert.assertEquals(result, 5);
+}
+```
