@@ -109,6 +109,20 @@
                             "path": "features/loading-external-data/amf.md"
                         }
                     ]
+                },
+                {
+                    "path": "features/nodejs.md",
+                    "children": [
+                        {    
+                            "path": "features/nodejs/scripting.md"
+                        },
+                        {    
+                            "path": "features/nodejs/modules.md"
+                        },
+                        {    
+                            "path": "features/nodejs/external-modules.md"
+                        }
+                    ]
                 }
             ]
         },
