@@ -33,4 +33,4 @@ Apache Royale Crux provides:
  
 for your Apache Royale project.
 
-*Documentation will appear here as soon as it is available.*
+*Documentation will appear here as soon as it is available. You can check the official Swiz Framework docs in the meanwhile [here](https://swizframework.jira.com/wiki/spaces/SWIZ/overview){:target='_blank'}. Think that documentation was created for the original Flex framework so it's not 100% accurate for Royale.*
