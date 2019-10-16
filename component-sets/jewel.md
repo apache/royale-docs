@@ -73,7 +73,7 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 |               	| [FormItem](component-sets/jewel/formitem)      	    |                                                                                                      	|               	|           	|
 |                	| [Icon](component-sets/jewel/icon)                	    |                                                                                                      	|               	|           	|
 |               	| [Image](component-sets/jewel/image)                    |                                                                                                      	|               	|           	|
-|               	| [Label](component-sets/jewel/label)               	    |  Used for single or multi lined text labels                                                          	| 0.9.4              	|           	|
+|               	| [Label](component-sets/jewel/label)               	    |  Used for single or multi lined text labels                                  	| 0.9.4    	| Complete	|
 |               	| [List](component-sets/jewel/list)               	    |                                                                                                      	|               	|           	|
 |               	| [NumericStepper](component-sets/jewel/numericstepper)  |                                                                                                      	|               	|           	|
 |               	| [PopUp](component-sets/jewel/popup)                    |                                                                                                      	|               	|           	|
