@@ -22,11 +22,11 @@ permalink: /features/nodejs/external-modules
 
 # Load external Node.js modules with Apache Royale
 
-Expose Node.js modules installed from npm to ActionScript
+Expose Node.js modules installed from the npm registry to ActionScript
 
 By creating [type definitions](features/externs) with special metadata, developers can use [Node.js](features/nodejs) modules from [ActionScript](features/as3) code.
 
-Let's try to use the [boxen](https://www.npmjs.com/package/boxen) module from [npm](https://www.npmjs.com/) in ActionScript. This module draws a box around a string to display in the console, and it exposes many styling options like colors, padding, and alignment.
+Let's try to use the [boxen](https://www.npmjs.com/package/boxen) module from [the npm registry](https://www.npmjs.com/) in ActionScript. This module draws a box around a string to display in the console, and it exposes many styling options like colors, borders, and alignment.
 
 First, make sure to install the boxen module in your project's root folder:
 
@@ -34,7 +34,7 @@ First, make sure to install the boxen module in your project's root folder:
 npm install boxen
 ```
 
-> To install a module from npm, you must have [Node.js](https://nodejs.org/) installed.
+> To install a module from [the npm registry](https://www.npmjs.com/), you must have [Node.js](https://nodejs.org/) installed.
 
 ## Define the module's API in ActionScript
 

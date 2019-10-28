@@ -22,10 +22,10 @@ permalink: /features/nodejs
 
 # Node.js and Apache Royale
 
-Compile ActionScript code to JavaScript and run on Node.js
-
-There are two main approaches to targeting the popular [Node.js](https://nodejs.org/) JavaScript runtime with Apache Royale and the [ActionScript](features/as3) language.
+Compile [ActionScript](features/as3) code to JavaScript and run on [Node.js](https://nodejs.org/)
 
 [Command line scripting](features/nodejs/scripting) explains how to call Node.js APIs from ActionScript, compile to JavaScript, and run the generated script from the command line.
 
-[Node.js modules](features/nodejs/modules) explains how to compile a Node.js module with ActionScript that can be loaded with `require()` and deployed to npm.
+[Node.js modules](features/nodejs/modules) explains how to compile a Node.js module with ActionScript that can be loaded with `require()` and deployed to the npm registry.
+
+[External modules](features/nodejs/external-modules) explains how to use third-party modules installed from the npm registry in ActionScript.
