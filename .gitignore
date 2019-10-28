@@ -2,6 +2,9 @@
 /_site/
 local_config.yml
 
+#cache
+.jekyll-cache/
+
 # eclipse conf file
 .settings
 .classpath
