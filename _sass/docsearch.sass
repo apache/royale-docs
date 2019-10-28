@@ -479,9 +479,26 @@
     height: 100%
     display: block
 
-@media only screen and (max-width: 600px)
-    .algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-]
-        max-width: 75%
+// Since some values are added by Javascript, we have 
+// To add the !important option to override these values
+.algolia-autocomplete
+    // On a max-width of 768px
+    @media (max-width: 768px)
+        .ds-dropdown-menu 
+            max-width: calc(100vw - 32px) !important
+            min-width: calc(100vw - 32px) !important      
+            width: calc(100vw - 32px) !important
+            margin-left: 16px !important
+
+        .algolia-docsearch-suggestion--content
+            width: 100% !important
+            padding-left: 0 !important
+
+        .algolia-docsearch-suggestion--content:before
+            display: none !important
+
+        .algolia-docsearch-suggestion--subcategory-column
+            display: none !important
 
 /* Category (eg. Downloads) */
 // .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column 
