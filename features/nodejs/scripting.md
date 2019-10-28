@@ -24,6 +24,10 @@ permalink: /features/nodejs/scripting
 
 Write command line scripts for Node.js using ActionScript
 
+Much of the JavaScript development ecosystem is powered by [Node.js](https://nodejs.org/). This runtime is used for simple command line scripts, web servers, and more. With the help of Apache Royale, developers can use [ActionScript](features/as3) to create their own tools that run on Node.js.
+
+## Hello, Node.js
+
 Create a file named *MyServer.as*, and add the following code:
 
 ```actionscript
@@ -40,7 +44,7 @@ package
 
 Apache Royale requires an ActionScript class, like this one, as the entrypoint for a Node.js project. The constructor will run automatically on startup.
 
-Next, let's expand this code to create a simple server using the "http" module provided by Node.js.
+Next, let's expand this code to create a simple server using the [http](https://nodejs.org/api/http.html) module, which is included with Node.js.
 
 ```actionscript
 package
@@ -80,7 +84,7 @@ package
 
 ## Compile with asnodec
 
-Using Apache Royale's **asnodec** compiler, compile our project into JavaScript that can be run with Node.js:
+Using Apache Royale's **asnodec** compiler, compile the project into JavaScript code that can be run with Node.js:
 
 ```sh
 asnodec src/MyServer.as
@@ -89,6 +93,8 @@ asnodec src/MyServer.as
 The generated JavaScript code will be created in the *bin/js-debug* folder for debug builds, and the *bin/js-release* folder for release builds.
 
 ## Run the project
+
+> To run the generated JavaScript, you must have [Node.js](https://nodejs.org/) installed.
 
 Use the following command to run the compiled project:
 

@@ -26,7 +26,17 @@ Expose Node.js modules installed from npm to ActionScript
 
 By creating [type definitions](features/externs) with special metadata, developers can use [Node.js](features/nodejs) modules from [ActionScript](features/as3) code.
 
-Let's try to use the [boxen](https://www.npmjs.com/package/boxen) module from [npm](https://www.npmjs.com/) in ActionScript.
+Let's try to use the [boxen](https://www.npmjs.com/package/boxen) module from [npm](https://www.npmjs.com/) in ActionScript. This module draws a box around a string to display in the console, and it exposes many styling options like colors, padding, and alignment.
+
+First, make sure to install the boxen module in your project's root folder:
+
+```sh
+npm install boxen
+```
+
+> To install a module from npm, you must have [Node.js](https://nodejs.org/) installed.
+
+## Define the module's API in ActionScript
 
 Create a file named *boxen.as* and add the following code:
 
@@ -37,7 +47,7 @@ package
 	 * @externs
 	 */
 	[JSModule(name="boxen")]
-	public function boxen(message:String, options:Object = null):void {}
+	public native function boxen(message:String, options:Object = null):String;
 }
 ```
 
@@ -63,14 +73,16 @@ Set the `name` field inside `[JSModule]` to the string that should be passed to 
 The default export of a module should either be a class, a function, or a variable. In this case, the default export of the "boxen" module is a function.
 
 ```actionscript
-public function boxen(message:String, options:Object = null):void {}
+public native function boxen(message:String, options:Object = null):String;
 ```
 
 The name of the default export should be derived from the name of the module. In this case, the name of the module and the name of the `function` are both `boxen`.
 
 > If the module name contains dashes, the symbol name should be converted to [camel case](https://en.wikipedia.org/wiki/Camel_case). For example, `[JSModule(name="my-example-module")]` would require the symbol to be named `myExampleModule`.
 
-## Use the module
+By specifying that the function is `native`, no body is required.
+
+## Use a Node.js module in ActionScript
 
 Create a file named *MyScript.as*, and add the following content:
 
@@ -81,19 +93,28 @@ package
 	{
 		public function MyScript()
 		{
-			boxen("I loaded a module!");
+			var result:String = boxen("I loaded a module!");
+			trace(result);
 		}
 	}
 }
 ```
 
-## Compile and run
+This simple script passes a string to `boxen()`, and then it writes the result to the console.
 
-Using Apache Royale's **asnodec** compiler, compile our project into JavaScript that can be run with Node.js:
+## Compile with asnodec
+
+Using Apache Royale's **asnodec** compiler, compile the project into JavaScript code that can be run with Node.js:
 
 ```sh
 asnodec MyScript.as
 ```
+
+The generated JavaScript code will be created in the *bin/js-debug* folder for debug builds, and the *bin/js-release* folder for release builds.
+
+## Run the project
+
+> To run the generated JavaScript, you must have [Node.js](https://nodejs.org/) installed.
 
 Use the following command to run the compiled project:
 
