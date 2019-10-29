@@ -22,10 +22,16 @@ permalink: /features/nodejs
 
 # Node.js and Apache Royale
 
-Compile [ActionScript](features/as3) code to JavaScript and run on [Node.js](https://nodejs.org/)
+Compile AS3 code to JS and run on Node.js
 
-[Command line scripting](features/nodejs/scripting) explains how to call Node.js APIs from ActionScript, compile to JavaScript, and run the generated script from the command line.
+Apache Royale can transpile [ActionScript](features/as3) to JavaScript and run on [Node.js](https://nodejs.org/). In this way you get all the benefits of AS3 language in Node. Check the following topics to get started:
 
-[Node.js modules](features/nodejs/modules) explains how to compile a Node.js module with ActionScript that can be loaded with `require()` and deployed to the npm registry.
+ * [Command line scripting](features/nodejs/scripting) explains how to call Node.js APIs from ActionScript, compile to JavaScript, and run the generated script from the command line.
 
-[External modules](features/nodejs/external-modules) explains how to use third-party modules installed from the npm registry in ActionScript.
+ * [Node.js modules](features/nodejs/modules) explains how to compile a Node.js module with ActionScript that can be loaded with `require()` and deployed to the npm registry.
+
+ * [External modules](features/nodejs/external-modules) explains how to use third-party modules installed from the npm registry in ActionScript.
+
+## Related example
+
+* [Hello Node: How to transpile ActionScript for Node.js](https://royale.apache.org/hello-node-how-to-transpile-actionscript-for-node-js/){:target='_blank'}
