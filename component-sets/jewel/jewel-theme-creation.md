@@ -32,7 +32,7 @@ Themes are a combination of files that define styles in [Cascading Style Sheets 
 
 > You can create your own theme without the need of SASS, since is not obligatory, but we strongly recommend using it for the same reason we use AS3 instead of plain JavaScript.
 
-One of the advantages of using SASS is that we can organize style definitions by separating styles into files. In Jewel we use a `.sass` file per component so we can easily find all the definitions of the style's components.
+One of the advantages of using SASS is that we can organize style definitions by separating styles into files. In Jewel we use a `.sass` file per component so we can easily find all the definitions of the component's styles.
 
 ## Generating default.css
 
