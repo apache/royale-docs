@@ -66,7 +66,7 @@ The `GraphicsObject` class defines a method named `draw()` that also uses the `a
 
 > The `IGraphicsContext` type used by the single parameter of `draw()` is a hypothetical interface that (for the purposes of this example) we'll say has two methods, named `moveTo()` and `lineTo()`.
 
-The next code sample show how to extend the abstract class `GraphicsObject` and implement its `draw()` method:
+The next code sample shows how to extend the abstract class `GraphicsObject` and implement its `draw()` method:
 
 
 ```as3
@@ -115,6 +115,6 @@ package
 
 Checking whether a class is abstract happens at compile-time only. However, by using reflection APIs, a developer could potentially gain access to an abstract class and instantiate it at run-time without errors.
 
-If a SWC library contains classes with abstract classes, applications using that library must also enable abstract classes before the compiler will enforce any restrictions.
+If a SWC library contains abstract classes, applications using that library must also enable abstract classes before the compiler will enforce any restrictions.
 
-Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize or enforce private constructors. Attemping to pass source code or SWC libraries that contain classes with private constructors to another compiler may result in compile-time errors or unexpected behavior at run-time. In other words, to write 100% portable ActionScript code that works with any compiler, you should avoid using abstract classes and any of Royale's other [extensions to the ActionScript language](features/as3#new-actionscript-language-features-in-royale).
+Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize or enforce private constructors. Attemping to pass source code or SWC libraries that contain classes with private constructors to another compiler may result in compile-time errors or unexpected behavior at run-time. In other words, to write 100% portable ActionScript code that works with any compiler, avoid using abstract classes and any of Royale's other [extensions to the ActionScript language](features/as3#new-actionscript-language-features-in-royale).
