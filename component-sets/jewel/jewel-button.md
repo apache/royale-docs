@@ -37,11 +37,11 @@ Available since version __0.9.4__.
 
 The Jewel Button is a commonly-used rectangular button with a text label. Users can click or tap it to take an action or make a choice.
 
-The Jewel Button can show different looks and feels. By default it appears with light or dark highlights depending on the [Jewel theme configuration](component-sets/jewel/theme-creation#theme-sass-file). You can use the `emphasis` property to tint the button with __PRIMARY__, __SECONDARY__ or __EMPHASIZED__ colors (defined as well in the Jewel theme).
+The Jewel Button can have different looks and feels. By default it appears with light or dark highlights depending on the [Jewel theme configuration](component-sets/jewel/theme-creation#theme-sass-file). You can use the `emphasis` property to tint the button with __PRIMARY__, __SECONDARY__ or __EMPHASIZED__ colors (defined in the Jewel theme).
 
-When a user interacts with the button (mouse over, long-press, double-click...) the button calls an event listener to perform an action. When a user clicks the mouse on the button or taps the button on a touch screen, the button dispatches a click event.
+When a user interacts with the button (mouse over, long-press, double-click...) the button calls an event listener that can perform an action. When a user clicks the mouse on the button or taps the button on a touch screen, the button dispatches a click event.
 
-> If you don't need a custom label on your button consider using Jewel's [SimpleButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.button/SimpleButton){:target='_blank'}, located in the Jewel `supportClasses` package, since is more lightweight and will save you some bytes if it fits your use case.
+> If you don't need a custom label on your button consider using Jewel's [SimpleButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.button/SimpleButton){:target='_blank'}, located in the Jewel `supportClasses` package, since it is more lightweight and will save you some bytes if it fits your use case.
 
 ## Example of use
 
@@ -121,7 +121,7 @@ parent.addElement(button);
 
 ## Relevant Beads
 
-Unlike other components in Royale, the Jewel `Button` does not have beads for _View_, _Controller_ or _Model_ in the Javascript platform.
+Unlike other components in Royale, the Jewel `Button` does not have beads for _View_, _Controller_ or _Model_ in the JavaScript platform.
 
 On the other hand, you can add to it other common Jewel control beads to provide more functionality. Many Jewel controls share these beads.
 
