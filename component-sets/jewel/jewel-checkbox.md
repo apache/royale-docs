@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Jewel CheckBox
-description: The Jewel CheckBox consists of a selectable box, that can contain a check mark or not, and an optional label.
+description: The Jewel CheckBox consists of a selectable box that can contain a check mark and an optional label.
 permalink: /component-sets/jewel/checkbox
 ---
 
@@ -34,7 +34,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel CheckBox consists of a selectable box, that can contain a check mark, and an optional label. When a user clicks or touches this control or its associated text, the CheckBox changes its state from checked to unchecked or from unchecked to checked, communicating clearly a binary condition. Checkboxes can appear alone or in groups, and can be selected and deselected individually.
+The Jewel CheckBox consists of a selectable box that can contain a check mark and an optional label. When a user clicks or touches this control or its associated text, the CheckBox changes its state from checked to unchecked or from unchecked to checked, communicating clearly a binary condition. Checkboxes can appear alone or in groups, and can be selected and deselected individually.
 
 ## Example of use
 
@@ -115,7 +115,7 @@ parent.addElement(checkBox);
 
 ## Relevant Beads
 
-Unlike other components in Royale, the Jewel `CheckBox` does not have beads for _View_, _Controller_ or _Model_ in the Javascript platform.
+Unlike other components in Royale, the Jewel `CheckBox` does not have beads for _View_, _Controller_ or _Model_ in the JavaScript platform.
 
 On the other hand, you can add to it other common Jewel control beads to provide more functionality. Many Jewel controls share these beads.
 
