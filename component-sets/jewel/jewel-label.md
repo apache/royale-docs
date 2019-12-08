@@ -35,7 +35,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel Label implements the jewel control for text labels (single and multi line). It can dispatches a click event when the user clicks over it.
+The Jewel Label implements the Jewel control for single and multi line text labels. It dispatches a click event when the user clicks over it.
 
 ## Example of use
 
@@ -80,7 +80,7 @@ None.
 
 ## Relevant Events
 
-The `Label` has _click_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when clicks over the control and triggers some action coded in a callback function. Notice that programatic changes will not trigger this event.
+The `Label` has _click_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when the user clicks the control and triggers some action coded in a callback function. Programatic changes will not trigger this event.
 
 You can attach callback listeners to the _click_ event in __MXML__ as follows:
 
@@ -100,7 +100,7 @@ the _click_ event will use the `clickHandler` callback function you provide in _
 </fx:Script>
 ```
 
-When the user click over the label, the message _"you clicked the label!"_ will appear in the console log.
+When the user clicks the label, the message _"you clicked the label!"_ will appear in the console log.
 
 In __ActionScript__ we can add an event handler this way: 
 
@@ -112,13 +112,13 @@ parent.addElement(label);
 
 ## Relevant Beads
 
-Unlike other components in Royale, the Jewel `Label` does not have beads for _View_, _Controller_ in the Javascript platform, but has _Model_.
+Unlike other components in Royale, the Jewel `Label` does not have beads for _View_ pr _Controller_ in the JavaScript platform, but has _Model_.
 
 | Bead Type       	| Implementation                                            	| Description                                    	|
 |-----------------	|-----------------------------------------------------------	|------------------------------------------------	|
 | [IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'}      	| [org.apache.royale.jewel.beads.models.TextModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/TextModel){:target='_blank'}           	| The data model for the Label.                   	|
 
-On the other hand, label does not have beads specialy crafted for this control but can use other common Jewel control beads (shared with other controls) to provide more functionality.
+Jewel does not have beads specialy crafted for this control, but it can use other common Jewel control beads (shared with other controls) to provide more functionality.
 
 ### Label Beads
 
