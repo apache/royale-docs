@@ -28,7 +28,7 @@ permalink: /features/as3/private-constructors
 
 ## Enable private constructors
 
-Like other [new ActionScript language features](features/as3#new-actionscript-language-features-in-royale) that Royale adds, are enabled by default. To disable private constructors in your application, use the `-allow-private-constructors` compiler option.
+Like other [new ActionScript language features](features/as3#new-actionscript-language-features-in-royale) that Royale adds, private constructors are enabled by default. To disable private constructors in your application, use the `-allow-private-constructors` compiler option.
 
 ```sh
 mxmlc -allow-private-constructors=false MyApp.mxml
@@ -99,7 +99,7 @@ package com.example
 
 ## Limitations of private constructors in Royale
 
-Checking whether a constructor is private or not happens at compile-time only. However, by using reflection APIs, a developer could potentially gain access to a private constructor and instantiate it at run-time without errors.
+Checking whether a constructor is private happens at compile-time only. However, by using reflection APIs, a developer could gain access to a private constructor and instantiate it at run-time without errors.
 
 If a SWC library contains classes with private constructors, applications using that library must also enable private constructors before the compiler will enforce any restrictions.
 
