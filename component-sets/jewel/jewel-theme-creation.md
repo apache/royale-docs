@@ -28,7 +28,7 @@ Jewel is a component set designed with change of appearance in mind. Jewel comes
 
 ## Theme basics
 
-Themes are a combination of files that define styles in [Cascading Style Sheets (CSS)](https://en.wikipedia.org/wiki/Cascading_Style_Sheets){:target='_blank'} and other assets like images (JPG, PNG, SVG,...). In Jewel we use [SASS](https://sass-lang.com){:target='_blank'} to define the CSS style rules since is a preprocessor scripting language that is interpreted or compiled into CSS.
+Themes are a combination of files that define styles in [Cascading Style Sheets (CSS)](https://en.wikipedia.org/wiki/Cascading_Style_Sheets){:target='_blank'} and other assets like images (JPG, PNG, SVG,...). In Jewel we use [SASS](https://sass-lang.com){:target='_blank'} to define the CSS style rules since SASS is a preprocessor scripting language that is interpreted or compiled into CSS.
 
 > You can create your own theme without the need of SASS, but we strongly recommend using it for the same reason we use AS3 instead of plain JavaScript.
 
