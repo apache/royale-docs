@@ -43,7 +43,7 @@ So, to do further testing you will need to set up a web server for the applicati
 
 Back to the topic of debugging for a moment. Most browsers also have debuggers with breakpoints. Your application `.mxml` and `.as` files have each been turned into a `.js` file that the browser will let you set breakpoints in and step through. Some IDEs support the ability to see your `.mxml` and `.as` files in the debugger.
 
-> if you compiled your application with [sourcemaps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps){:target='_blank'} using `-source-map=true` compiler option, the Royale compiler will generate source maps for each `.js` file and you'll see a `.js.map` at the same level.
+> if you compiled your application with [sourcemaps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps){:target='_blank'} using the `-source-map=true` compiler option, the Royale compiler will generate source maps for each `.js` file and you'll see a `.js.map` at the same level.
 
 Anyway, to get this application to access GitHub, we have to make the application available on a web server and learn a bit about security.
 
