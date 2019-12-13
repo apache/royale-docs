@@ -30,7 +30,7 @@ It's based by design on [Basic](component-sets/basic) components. But while Basi
 
 ## Browser Support
 
-Jewel works on the following table of devices, browsers and versions
+Jewel works on the following browser and device versions:
 
 |         	    | Browser             	| Minimun Version 	| Release Date   |
 |-----------	|-------------------	|-----------------	| -------------- |
