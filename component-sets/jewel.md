@@ -85,4 +85,4 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 
 ## Jewel Themes
 
-[Jewel Themes](component-sets/jewel/themes)
+[Jewel Themes](component-sets/jewel/jewel-themes)
