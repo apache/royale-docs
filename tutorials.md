@@ -25,4 +25,9 @@ Here you can find links to tutorials and how-to blog articles that will help you
 
   * [Hello World](get-started/hello-world)
   * [Build your first application](create-an-application)
-  * [Royale in a Week](tutorials/royale-in-a-week)
+  * [Royale in a Week](tutorials/royale-in-a-week) _not available yet_
+  
+Blog articles
+
+  * <a href="https://royale.apache.org/dividing-an-apache-royale-application-with-modules/" target="_blank">Dividing an Apache Royale application with modules</a>
+  * <a href="https://royale.apache.org/using-external-javascript-libraries-in-apache-royale/" target="_blank">Using external JavaScript libraries in Apache Royale</a>
