@@ -21,4 +21,7 @@ permalink: /features/data-binding
 ---
 # Data binding
 
+Royale, like Flex before it, makes it easy to create dynamic applications in which a change to data automatically updates the display of that data in the user interface, and potentially in calculations or other functions that use that data. The feature that makes this possible without having to write lots of code is *data binding*.
+
+
 *information coming soon.*
