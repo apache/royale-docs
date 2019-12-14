@@ -31,3 +31,5 @@ Blog articles
 
   * <a href="https://royale.apache.org/dividing-an-apache-royale-application-with-modules/" target="_blank">Dividing an Apache Royale application with modules</a>
   * <a href="https://royale.apache.org/using-external-javascript-libraries-in-apache-royale/" target="_blank">Using external JavaScript libraries in Apache Royale</a>
+  
+<a href="https://https://royale.apache.org/tourdejewel/" target="_blank">Tour de Jewel</a> is an ever-expanding set of examples of how to use the [Jewel component set](component-sets/jewel) to build a user interface that will deliver what you want and provide a great user experience.
