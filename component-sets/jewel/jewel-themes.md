@@ -17,7 +17,7 @@
 layout: docpage
 title: Jewel Themes
 description: The look and feel of the jewel component set
-permalink: /component-sets/jewel/jewel-themes
+permalink: /component-sets/jewel/themes
 ---
 
 # Jewel Themes
