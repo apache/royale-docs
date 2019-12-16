@@ -34,5 +34,7 @@ Blog articles
   * <a href="https://royale.apache.org/how-to-create-a-desktop-application-with-royale-and-electron/" target="_blank">How to create a desktop application with Royale and Electron</a>
   * <a href="https://royale.apache.org/loading-external-data-through-httpservice/" target="_blank">Loading external data through HTTPService</a>
   * <a href="https://royale.apache.org/using-view-states-to-show-or-hide-content/" target="_blank">Using View States to show or hide content</a>
+  * <a href="https://royale.apache.org/using-an-item-renderer-with-a-list/" target="_blank">Using an item renderer with a list</a>
+  * <a href="https://royale.apache.org/customization-through-the-royale-api/" target="_blank">Customization through the Royale API</a>
   
 <a href="https://https://royale.apache.org/tourdejewel/" target="_blank">Tour de Jewel</a> is an ever-expanding set of examples of how to use the [Jewel component set](component-sets/jewel) to build a user interface that will deliver what you want and provide a great user experience.
