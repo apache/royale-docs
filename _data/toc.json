@@ -160,10 +160,16 @@
                             "path": "component-sets/jewel/jewel-button.md"
                         },
                         {
+                            "path": "component-sets/jewel/jewel-buttonbar.md"
+                        },
+                        {
                             "path": "component-sets/jewel/jewel-checkbox.md"
                         },
                         {
                             "path": "component-sets/jewel/jewel-combobox.md"
+                        },
+                        {
+                            "path": "component-sets/jewel/jewel-datagrid.md"
                         },
                         {
                             "path": "component-sets/jewel/jewel-datechooser.md"

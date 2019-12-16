@@ -15,11 +15,11 @@
 # limitations under the License.
 
 layout: docpage
-title: Jewel Card
-description: The Jewel Card
-permalink: /component-sets/jewel/card
+title: Jewel DataGrid
+description: The Jewel DataGrid
+permalink: /component-sets/jewel/datagrid
 ---
 
-# Jewel Card
+# Jewel DataGrid
 
 

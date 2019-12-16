@@ -15,11 +15,13 @@
 # limitations under the License.
 
 layout: docpage
-title: Jewel Card
-description: The Jewel Card
-permalink: /component-sets/jewel/card
+title: Jewel ButtonBar
+description: The Jewel ButtonBar
+permalink: /component-sets/jewel/buttonbar
 ---
 
-# Jewel Card
+# Jewel ButtonBar
 
+subtitle
 
+text

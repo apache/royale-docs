@@ -64,8 +64,10 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 |                	| [Wizard](component-sets/jewel/wizard)             	    | 11.0+                                                                                                	|               	|           	|
 | __Components__ 	| [Alert](component-sets/jewel/alert)            	    | Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
 |               	| [Button](component-sets/jewel/button)          	    | A commonly-used rectangular button with a text label. Users can click or tap it to take an action. 	| 0.9.4         	| Complete  	|
+|               	| [ButtonBar](component-sets/jewel/buttonbar)          	    |  	| 0.9.7         	| Complete  	|
 |                 	| [CheckBox](component-sets/jewel/checkbox)        	    | Consists of a box that can contain a check mark and an optional label.	| 0.9.4         	| Complete  	|
 |                	| [ComboBox](component-sets/jewel/combobox)              |                                                                                                      	|               	|           	|
+|                	| [DataGrid](component-sets/jewel/datagrid)        |                                                                                                      	|  0.9.7             	|           	|
 |                	| [DateChooser](component-sets/jewel/datechooser)        |                                                                                                      	|               	|           	|
 |                	| [DateField](component-sets/jewel/datefield)            |                                                                                                      	|               	|             	|
 |               	| [DropDownList](component-sets/jewel/dropdownlist)      |                                                                                                      	|               	|           	|
