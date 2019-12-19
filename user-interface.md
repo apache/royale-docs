@@ -32,10 +32,10 @@ Apache Royale provides tools, structures, features, and component sets that help
 
 _These entries will become links to specific pages_
 
-* Component Sets
-  * Basic
-  * Jewel
-* Layouts
+* [Component Sets](component-sets)
+  * [Basic](component-sets/basic)
+  * [Jewel](component-sets/jewel)
+* [Layouts](user-interface/layouts)
 * View States
 * Transitions
 * Styles and CSS
