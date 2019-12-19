@@ -338,6 +338,22 @@
                     ]
                 }
             ]
+        },
+        {
+            "path": "tutorials.md",
+            "children": [
+                {
+                    "path": "get-started/hello-world.md"
+                },
+                {
+                    "path": "create-an-application/application-tutorial.md"
+                },
+                {
+                    "path": "tutorials/royale-in-a-week.md"
+                }
+             ]
         }
+        
     ]
 }
+                
