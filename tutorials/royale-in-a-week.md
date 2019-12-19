@@ -21,4 +21,8 @@ permalink: /tutorials/royale-in-a-week
 ---
 # Royale in a Week
 
-_Royale in a Week_ is a comprehensive introduction to Apache Royale, based on the classic _Flex in a Week_ series for Adobe (and Apache) Flex. When it is complete, the material will be available online, in downloadable PDFs with sample files, and through a video series. It will be available at no charge.
+A comprehensive introduction to Apache Royale
+
+_Royale in a Week_ is a comprehensive introduction to Apache Royale, based on the classic _Flex in a Week_ series for Adobe (and Apache) Flex. You do not have to have worked with Flex in order to follow this material.
+
+When it is complete, the material will be available online, in downloadable PDFs with sample files, and through a video series. It will be available at no charge.
