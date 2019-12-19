@@ -128,7 +128,7 @@
         },
         {
             "path": "user-interface.md",
-            "children: [
+            "children": [
               {
               "path": "component-sets.md"
                 "children": [
