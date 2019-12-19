@@ -130,7 +130,7 @@
             "path": "user-interface.md",
             "children": [
               {
-              "path": "component-sets.md"
+              "path": "component-sets.md",
                 "children": [
                   {
                       "path": "component-sets/basic.md"
