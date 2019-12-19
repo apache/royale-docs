@@ -127,6 +127,27 @@
             ]
         },
         {
+            "path": "user-interface.md",
+            "children: [
+              {
+              "path": "component-sets.md"
+                "children": [
+                  {
+                      "path": "component-sets/basic.md"
+                  },
+                  {
+                      "path": "component-sets/jewel.md"
+                  }
+                ]
+               },
+             {
+             "path": "user-interface/layouts.md"
+             } 
+            
+            
+          ]
+        },
+        {
             "path": "component-sets.md",
             "children": [
                 {
