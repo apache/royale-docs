@@ -31,7 +31,7 @@ Apache Royale is the new SDK, built on the solid foundation developed by the Fle
 
 With Royale, you can create a single code base that can be compiled to work like a native app on Windows or Apple systems, on Android phones, on tablets of all systems and sizes, or on embedded JavaScript environments like Chromium Embedded Framework. 
 
-This is the main documentation for Apache Royale.  If you are looking for the API Reference, [click here](http://royale.apache.org/asdoc/index.html){:target='_blank'}.
+This is the main documentation for Apache Royale. If you are looking for the API Reference, [click here](http://royale.apache.org/asdoc/index.html){:target='_blank'}.
 
 This document is divided into several sections:
 
