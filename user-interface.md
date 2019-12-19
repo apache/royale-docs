@@ -37,5 +37,7 @@ Apache Royale provides tools, structures, features, and component sets that help
 * View States
 * Transitions
 * Styles and CSS
+* Localization
+* Internationalization
 * Graphics
 * Rich media
