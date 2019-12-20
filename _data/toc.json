@@ -251,7 +251,7 @@
             ]
         },
         {
-            "path": "libraries.md",
+            "path": "frameworks-and-libraries.md",
             "children": [
                 {
                     "path": "libraries/crux.md"
