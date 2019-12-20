@@ -15,7 +15,7 @@
 # limitations under the License.
 
 layout: docpage
-title: User Interface (UI)
+title: Working with Data
 description: Getting, sending, and displaying data
 permalink: /working-with-data
 ---
