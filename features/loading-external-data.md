@@ -22,10 +22,13 @@ permalink: /features/loading-external-data
 
 # Loading External Data
 
-Loading External Data
+Dynamic sites and real-time updates lead to good user experiences
+
+Unless you are building a brochure-style website that makes a statement and provides contact information, you are going to be working with _data_. You will get some of that data from your site or application users, but you will probably also get a lot from outside your app or website.
+
+Royale provides three reliable, fast, and secure ways to get data from remote sources, and also to send data when you need to:
 
 * [HTTPService](features/loading-external-data/httpservice)
 * [JSON](features/loading-external-data/json)
 * [AMF](features/loading-external-data/amf)
 
-*information coming soon.*
