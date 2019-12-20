@@ -82,9 +82,6 @@
                     "path": "features/externs.md"
                 },
                 {
-                    "path": "features/data-binding.md"
-                },
-                {
                     "path": "features/view-states.md"
                 },
                 {
@@ -95,20 +92,6 @@
                 },
                 {
                     "path": "features/styling.md"
-                },
-                {
-                    "path": "features/loading-external-data.md",
-                    "children": [
-                        {
-                            "path": "features/loading-external-data/httpservice.md"
-                        },
-                        {
-                            "path": "features/loading-external-data/json.md"
-                        },
-                        {
-                            "path": "features/loading-external-data/amf.md"
-                        }
-                    ]
                 },
                 {
                     "path": "features/nodejs.md",
@@ -344,7 +327,21 @@
         {
             "path": "working-with-data.md",
             "children": [
-            {
+          {
+             "path": "features/loading-external-data.md",
+             "children": [
+                 {
+                     "path": "features/loading-external-data/httpservice.md"
+                 },
+                 {
+                     "path": "features/loading-external-data/json.md"
+                 },
+                 {
+                     "path": "features/loading-external-data/amf.md"
+                 }
+             ]
+         },
+         {
                 "path": "features/data-binding.md"
             }
           ]
