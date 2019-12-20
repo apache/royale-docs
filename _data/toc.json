@@ -342,7 +342,7 @@
             ]
         },
         {
-            "path": "working-with-data.md".
+            "path": "working-with-data.md",
             "children": [
             {
                 "path": "features/data-binding.md"
