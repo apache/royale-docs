@@ -15,21 +15,26 @@
 # limitations under the License.
 
 layout: docpage
-title: Libraries
+title: Frameworks and Libraries
 description: pre-written sets of code which allows for easier development of Royale-based applications
-permalink: /libraries
+permalink: /frameworks-and-libraries
 ---
 
-# Libraries
+# Frameworks and Libraries
 
 Pre-written sets of code which allows for easier development of Royale-based applications.
 
 we'll be listing here the available Royale libraries.
 
-## Part of Apache Royale:
+## Frameworks
+_Information coming soon_
+
+## Libraries
+
+### Part of Apache Royale:
 
 * [Crux](libraries/crux) An library based on Swiz. Swiz is a framework that simplifies applications and gives you Inversion of Control/Dependency Injection, Event handling, new Metadatas, simplified life cycle for asynchronous remote method invocations and many more.
 
-## Third party (external libraries)
+### Third party (external libraries)
 
 * [PureMVC](https://github.com/PureMVC/puremvc-as3-multicore-framework/wiki){:target='_blank'} is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. Is part of [The PureMVC Framework](https://puremvc.org){:target='_blank'} that implements the same library in many other popular languages and technologies.
