@@ -124,8 +124,11 @@
                 ]
                },
              {
-             "path": "user-interface/layouts.md"
-             } 
+                  "path": "user-interface/layouts.md"
+             },
+             {
+                 "path": "user-interface/flex-equivalents.md"
+             }
             
             
           ]
