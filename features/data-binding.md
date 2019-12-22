@@ -27,7 +27,7 @@ Royale, like Flex before it, makes it easy to pass data around your application.
 
 There are several ways to deploy data binding:
 
-* [Using curly braces](features/data-binding.html#using-curly-braces}
+* [Using curly braces](features/data-binding.html#Using&nbsp;curly&nbsp;braces}
 * Using data binding in MXML
 * Using data binding in ActionScript
 
