@@ -21,9 +21,25 @@ permalink: /features/data-binding
 ---
 # Data binding
 
-Update the UI in real time as displayed data changes
+Update the UI in real time as data changes
 
-Royale, like Flex before it, makes it easy to create dynamic applications in which a change to data automatically updates the display of that data in the user interface, and potentially in calculations or other functions that use that data. The feature that makes this possible without having to write lots of code is *data binding*.
+Royale, like Flex before it, makes it easy to pass data around your application. A change to data can automatically update the display of that data in the user interface, and potentially in calculations or other functions that use that data. The feature that makes this possible without having to write lots of code is *data binding*.
+
+There are several ways to deploy data binding:
+
+* [Using curly braces](#using-curly-braces)
+* [Using binding in MXML](#using-binding-in-mxml)
+* [Using binding in ActionScript](#using-binding-in-actionscript)
 
 
-*information coming soon.*
+
+
+
+## Using curly braces
+_Details coming soon_
+
+## Using binding in MXML
+_Details coming soon_
+
+## Using binding in ActionScript
+_Details coming soon_
