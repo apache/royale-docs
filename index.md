@@ -29,20 +29,16 @@ Designed for the future. Code Once. Run Everywhere.
 
 Apache Royale is the new SDK, built on the solid foundation developed by the Flex universe, that lets you create applications in MXML and ActionScript that will run almost anywhere without heavy plugins like Flash or Adobe AIR.
 
-With Royale, you can create a single code base that can be compiled to work like a native app on Windows or Apple systems, on Android phones, on tablets of all systems and sizes, or on embedded JavaScript environments like Chromium Embedded Framework. 
+With Royale, you can create a single code base that can be compiled to work like a native app on Windows or Apple systems, on Android phones, on tablets of all systems and sizes, in browsers, or on embedded JavaScript environments like Chromium Embedded Framework. 
 
 This is the main documentation for Apache Royale. If you are looking for the API Reference, [click here](http://royale.apache.org/asdoc/index.html){:target='_blank'}.
 
-This document is divided into several sections:
+The documentation ranges from a [high-level view](welcome/high-level-view) that gives an overview of Royale, through a review of Royale's [features and concepts](features-and-concepts) to help you be more productive. 
 
- * [High Level View](welcome/high-level-view) gives an overview of Royale.
+Use the table of contents to learn how to lay out your application's [user interface](user-interface), how to [work with data](working-with-data), and how to [unit-test](testing) your application. 
 
- * [Features and Concepts](features-and-concepts) explains the main features of Royale and some concepts that might help you be more productive.
+The [Tutorials](tutorials) section steps you through projects ranging from a simple "Hello World" to a dynamic application displaying data that updates in real time.
 
- * [A Bit of History](welcome/history) provides a brief background on how Royale came to be.
+Volunteer contributions of work and wisdom help move Royale forward. [Get Involved](welcome/get-involved) explains how you can contribute to the future of Royale.
 
- * [Licenses and Policies](welcome//licenses) contains the fine print.
-
- * [Get Involved](welcome/get-involved) explains how you can contribute to the future of Royale.
-
-<sup>_(*)Note: This material is far from complete. However, with each release more useful information will become available._</sup>
+<sup>_(*)Note: This material is far from complete. However, the Royale team updates and extends it regularly, with a goal of covering all major Royale features and functions early in 2020._</sup>
