@@ -22,11 +22,11 @@ permalink: /create-an-application/migrate-an-existing-app
 
 # Migrate an existing application
 
-Coming from other technologies to Royale
+Move from other technologies to Royale
 
-If you have an existing application and want to start using Royale, the following documents may help you.
+If you have an existing application and want to start using Royale to extend or maintain it, the following documents may help you.
 
-[Migrate From Flex](create-an-application/migrate-an-existing-app/migrate-from-flex.html)
+* [Migrate From Flex](create-an-application/migrate-an-existing-app/migrate-from-flex)
 
-[Migrate from JavaScript](create-an-application/migrate-an-existing-app/migrate-from-js.html)
+* [Migrate from JavaScript](create-an-application/migrate-an-existing-app/migrate-from-js)
 
