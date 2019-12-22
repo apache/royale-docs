@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Migrate an existing application
-description: Coming from other technologies to Royale
+description: Move from other technologies to Royale
 permalink: /create-an-application/migrate-an-existing-app
 ---
 
