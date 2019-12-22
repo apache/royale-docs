@@ -29,7 +29,7 @@ There are several ways to deploy data binding:
 
 * [Using curly braces](features/data-binding.html#Using&#160;curly&#160;braces)
 * [Using data binding in MXML](features/data-binding.html#mxml)
-* Using data binding in ActionScript
+* [Using data binding in ActionScript](features/data-binding.html#Using&#160;data&#160;binding&#160;in&#160;ActionScript)
 
 
 
