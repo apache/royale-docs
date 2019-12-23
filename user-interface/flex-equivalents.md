@@ -20,7 +20,7 @@ As they become available, we will provide code snippets, examples, and full tuto
 ## Flex features you can achieve in a different way in Royale
 _This list is growing as people migrating Flex applications run into features and functions they need, but Royale does not yet support._
 
-- **States** are a super tool that lets you include or exclude components based on the current state of the application. For example, a registration/login form could have different fields and controls depending on whether the current state was "register" or "login". In Flex you could declare States (and make other declarations) in the application level, and then use those states for all the components of the application. In Royale the earliest component where you can have such declarations is View. In general you can declare States in every component which inherits from UIBase. <js:Application doesn't inherit from UIBase.
+- **[View States](/features/view-states)** is  a super feature that lets you include or exclude components based on the current state of the application. For example, a registration/login form could have different fields and controls depending on whether the current state was "register" or "login". In Flex you could declare States (and make other declarations) in the application level, and then use those states for all the components of the application. In Royale the earliest component where you can have such declarations is View. In general you can declare States in every component which inherits from UIBase. <js:Application doesn't inherit from UIBase.
 - **Embedding assets** was necessary in Flex so the application could quickly access images and other assets that were part of a compiled Flash SWF. To make it easy to display on a button an icon that was in a SWF, we wrote something like:
  `<mx:Button icon="@Embed('icons.swf#our_button')"/>`
 Since JavaScript does not support the concept of embedding assets, doing the same thing in Royale is a simple URL reference:
@@ -29,6 +29,7 @@ Since JavaScript does not support the concept of embedding assets, doing the sam
 - BorderContainer - using UIBase
 - Advanced DataGrid - TreeGrid
 - Canvas
+- Routing: in Flex this was called "deep linking". This allowed changing the URL to use browser history to navigate an application.
 
 ## Flex features that are not yet available in Royale
 
@@ -40,7 +41,6 @@ Since JavaScript does not support the concept of embedding assets, doing the sam
 - Handling of SVG (graphics) assets.
 - Masking of images and objects.
 - Image components which allow specifying content via raw binary data or the image's URL.
-- Routing: in Flex this was called "deep linking". This allowed changing the URL to use browser history to navigate an application.
 - File transfer API.
 - Font and text handling.
 - UID utilities.
@@ -51,5 +51,5 @@ Since JavaScript does not support the concept of embedding assets, doing the sam
 ## Flex features that will probably not be available in Royale
 
 - Timeline and onEnterFrame
-- Embedding assets (see the workaround, above)
+- Embedding assets (not needed in Royale, as explained above)
 
