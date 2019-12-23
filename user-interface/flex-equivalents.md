@@ -51,5 +51,3 @@ Since JavaScript does not support the concept of embedding assets, doing the sam
 ## Flex features that will probably not be available in Royale
 
 - Timeline and onEnterFrame
-- Embedding assets (not needed in Royale, as explained above)
-
