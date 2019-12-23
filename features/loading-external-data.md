@@ -28,7 +28,8 @@ Unless you are building a brochure-style website that makes a statement and prov
 
 Royale provides three reliable, fast, and secure ways to get data from remote sources, and also to send data when you need to:
 
-* [HTTPService](features/loading-external-data/httpservice)
 * [JSON](features/loading-external-data/json)
-* [AMF](features/loading-external-data/amf)
+* [LocalSharedObject](features/loading-external-data/localsharedobject)
+* [HTTPService](features/loading-external-data/httpservice)
+* [RemoteObject](features/loading-external-data/remoteobject)
 

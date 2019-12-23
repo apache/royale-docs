@@ -79,6 +79,9 @@
                     "path": "features/data-binding.md"
                 },
                 {
+                    "path": "features/loading-external-data/amf.md"
+                },
+                {
                     "path": "features/external-interface.md"
                 },
                 {
@@ -333,24 +336,27 @@
         {
             "path": "working-with-data.md",
             "children": [
-          {
-             "path": "features/loading-external-data.md",
-             "children": [
-                 {
-                     "path": "features/loading-external-data/httpservice.md"
-                 },
-                 {
-                     "path": "features/loading-external-data/json.md"
-                 },
-                 {
-                     "path": "features/loading-external-data/amf.md"
-                 }
-             ]
-         },
-         {
-                "path": "features/data-binding.md"
-            }
-          ]
+                {
+                    "path": "features/loading-external-data.md",
+                    "children": [
+                        {
+                            "path": "features/loading-external-data/json.md"
+                        },
+                        {
+                            "path": "features/loading-external-data/localsharedobject.md"
+                        },
+                        {
+                            "path": "features/loading-external-data/httpservice.md"
+                        },
+                        {
+                            "path": "features/loading-external-data/remoteobject.md"
+                        }
+                    ]
+                },
+                {
+                    "path": "features/data-binding.md"
+                }
+            ]
         },
         {
             "path": "testing.md",
