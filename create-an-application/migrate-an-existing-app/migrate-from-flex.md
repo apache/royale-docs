@@ -16,12 +16,16 @@
 
 layout: docpage
 title: Migrate from Flex
+description: Migrate an app from Flex to Royale
+permalink: /create-an-application/migrate-an-existing-app
 ---
 
 <!-- This is from material created by Peter Ent and modified by Tom Chiverton: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=34013930 -->
-New life for your Flex applications
+
 
 # Migrate from Flex
+
+New life for your Flex applications
 
 If you have developed applications using [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, or Adobe Flex before it, your applications probably combine [MXML](features/mxml) and [ActionScript](features/as3) files along with resources like images and audio files; and some of the MXML files have <fx:Script> tags with ActionScript snippets inside them. If that is the case, you will find yourself at home working with Apache Royale. The big difference is not so much the code you use, but the output and what it needs to run properly.
 
