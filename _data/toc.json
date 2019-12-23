@@ -131,11 +131,8 @@
              },
              {
                   "path": "features/view-states.md"
-             },
-             {
-                 "path": "user-interface/flex-equivalents.md"
              }
-            
+             
             
           ]
         },
@@ -328,6 +325,9 @@
             "children": [
                 {
                     "path": "create-an-application/migrate-an-existing-app/migrate-from-flex.md"
+                },
+                {
+                    "path": "user-interface/flex-equivalents.md"
                 },
                 {
                     "path": "create-an-application/migrate-an-existing-app/migrate-from-js.md"
