@@ -8,9 +8,10 @@ layout: docpage
 title: Flex equivalents in Royale
 ---
 
+# Flex equivalents in Royale
+
 Working with Royale is _almost_, but _not quite_, like working with Flex
 
-# Flex equivalents in Royale
 Royale is not a one-for-one migration of Flex, for several reasons. A lot of Flex code presumes, and takes advantage of, features available in the Adobe AIR environment or the Flash Player plugin. Other Flex elements are more bulky than they could best be as they try to cover a wide range of possible events and situations, so a great deal of the code in an application may be there "just in case" and is never actually used.
 
 Moving from Flex to Royale is straightforward for most of your application's functions, such as getting and manipulating data, performing calculations, and moving objects through their life cycles in the application. However, some Flex features, especially among UI components and functions, do not have direct Royale equivalents.
