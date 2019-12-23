@@ -130,6 +130,9 @@
                   "path": "user-interface/layouts.md"
              },
              {
+                  "path": "features/view-states.md"
+             },
+             {
                  "path": "user-interface/flex-equivalents.md"
              }
             
