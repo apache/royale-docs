@@ -9,10 +9,7 @@
                 },
                 {
                     "path": "welcome/history.md"
-                },
-                {
-                    "path": "welcome/licenses.md"
-                },
+                },            
                 {
                     "path": "welcome/get-involved.md",
                     "children": [
@@ -303,17 +300,7 @@
                         }
                     ]
                 },
-                {
-                    "path": "create-an-application/migrate-an-existing-app.md",
-                    "children": [
-                        {
-                            "path": "create-an-application/migrate-an-existing-app/migrate-from-flex.md"
-                        },
-                        {
-                            "path": "create-an-application/migrate-an-existing-app/migrate-from-js.md"
-                        }
-                    ]
-                },
+                
                 {
                     "path": "create-an-application/security.md"
                 },
@@ -330,6 +317,17 @@
                             "path": "create-an-application/optimizations/doc-comment-directives.md"
                         }
                     ]
+                }
+            ]
+        },
+        {
+          "path": "create-an-application/migrate-an-existing-app.md",
+            "children": [
+                {
+                    "path": "create-an-application/migrate-an-existing-app/migrate-from-flex.md"
+                },
+                {
+                    "path": "create-an-application/migrate-an-existing-app/migrate-from-js.md"
                 }
             ]
         },
@@ -390,6 +388,9 @@
                     "path": "tutorials/royale-in-a-week.md"
                 }
              ]
+        },
+        {
+           "path": "welcome/licenses.md"
         }
         
     ]
