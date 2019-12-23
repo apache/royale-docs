@@ -76,6 +76,9 @@
                     "path": "features/strands-and-beads.md"
                 },
                 {
+                    "path": "features/data-binding.md"
+                },
+                {
                     "path": "features/external-interface.md"
                 },
                 {
