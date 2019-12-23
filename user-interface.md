@@ -30,13 +30,11 @@ A good "user experience" includes not just getting the process result you want, 
 
 Apache Royale provides tools, structures, features, and component sets that help you create a user interface that helps your end-users do what they want to do.
 
-_These entries will become links to specific pages_
-
 * [Component Sets](component-sets)
   * [Basic](component-sets/basic)
   * [Jewel](component-sets/jewel)
 * [Layouts](user-interface/layouts)
-* View States
+* [View States](/features/view-states)
 * Transitions
 * Styles and CSS
 * Localization
