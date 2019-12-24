@@ -119,6 +119,6 @@ To replace a Container's content view:
 * Add the functions you need to create the content.
 * In the CSS Style definition for your class, add IContentView with a ClassReference that names your custom content view.
 
-## Conclusion
+## Examples
 
-Apache Royale provides a number of ways to achieve a custom look in an application. You can use the common Container component with custom layouts or extend ContainerView and add more elements or use a combination of custom view, custom layout, and even a custom contentView. See the Royale Component Sets for examples.
+<a href="https://royale.apache.org/tourdejewel" target="_blank">Tour de Jewel</a> is a suite of examples of the effects you can get with Apache Royale. It features our Jewel component set. There are seven examples of layouts, with sample code you can download, study, and adapt to your project.
