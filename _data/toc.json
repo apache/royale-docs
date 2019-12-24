@@ -240,6 +240,34 @@
             ]
         },
         {
+            "path": "working-with-data.md",
+            "children": [
+                {
+                    "path": "features/loading-external-data.md",
+                    "children": [
+                        {
+                            "path": "features/loading-external-data/json.md"
+                        },
+                        {
+                            "path": "features/loading-external-data/amf.md"
+                        },
+                        {
+                            "path": "features/loading-external-data/localsharedobject.md"
+                        },
+                        {
+                            "path": "features/loading-external-data/httpservice.md"
+                        },
+                        {
+                            "path": "features/loading-external-data/remoteobject.md"
+                        }
+                    ]
+                },
+                {
+                    "path": "features/data-binding.md"
+                }
+            ]
+        },
+        {
             "path": "frameworks-and-libraries.md",
             "children": [
                 {
@@ -334,34 +362,7 @@
                 }
             ]
         },
-        {
-            "path": "working-with-data.md",
-            "children": [
-                {
-                    "path": "features/loading-external-data.md",
-                    "children": [
-                        {
-                            "path": "features/loading-external-data/json.md"
-                        },
-                        {
-                            "path": "features/loading-external-data/amf.md"
-                        },
-                        {
-                            "path": "features/loading-external-data/localsharedobject.md"
-                        },
-                        {
-                            "path": "features/loading-external-data/httpservice.md"
-                        },
-                        {
-                            "path": "features/loading-external-data/remoteobject.md"
-                        }
-                    ]
-                },
-                {
-                    "path": "features/data-binding.md"
-                }
-            ]
-        },
+      
         {
             "path": "testing.md",
             "children": [
