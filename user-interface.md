@@ -35,7 +35,7 @@ Apache Royale provides tools, structures, features, and component sets that help
   * [Jewel](component-sets/jewel)
 * [Layouts](user-interface/layouts)
 * [View States](/features/view-states)
-* Transitions
+* Alerts
 * Styles and CSS
 * Localization
 * Internationalization
