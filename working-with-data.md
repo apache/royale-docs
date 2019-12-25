@@ -30,6 +30,8 @@ These pages can help you get, send, and display data smoothly and efficiently in
   * [Loading external data](/features/loading-external-data)
   * [Local Shared Object](/features/loading-external-data/localsharedobject)
 
+* Managing data
+  * [Data model](/features/data-model)
 
 * Displaying data
   * [Data binding](/features/data-binding)
