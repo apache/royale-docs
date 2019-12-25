@@ -25,6 +25,8 @@ Update the UI in real time as data changes
 
 Royale, like Flex before it, makes it easy to pass data around your application. A change to data can automatically update the display of that data in the user interface, and potentially in calculations or other functions that use that data. The feature that makes this possible without having to write lots of code is *data binding*.
 
+Data binding requires a source property, a destination property, and a triggering event that indicates when to copy the data from the source to the destination.
+
 There are several ways to deploy data binding:
 
 * [Using curly braces](features/data-binding.html#curly-braces)
@@ -37,6 +39,7 @@ There are several ways to deploy data binding:
 
 
 ## Using curly braces {#curly-braces}
+
 _Details coming soon_
 
 ## Using data binding in MXML {#mxml}
