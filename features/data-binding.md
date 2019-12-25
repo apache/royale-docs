@@ -40,9 +40,8 @@ There are several ways to deploy data binding:
 
 ## Using curly braces ({}) {#curly-braces}
 
-You can bind the value of a property in the user interface to that value of another property very simply. The TextInput example in <a hred="https://royale.apache.org/tourdejewel/#" target="_blank">Tour de Jewel</a> uses data binding twice:
+You can bind the value of a property in the user interface to that value of another property very simply. One of the TextInput examples in <a href="https://royale.apache.org/tourdejewel/#" target="_blank">Tour de Jewel</a> uses data binding twice:
 
-###Text field to text field
 If you clear the existing text in the first text field in the example, then type in a string, what you type in appears in the second and fourth text fields, as you type it.
 
 The **source property** is the text property of a TextInput control. The key part of its code is 
