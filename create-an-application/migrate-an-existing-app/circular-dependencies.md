@@ -16,10 +16,12 @@
 
 layout: docpage
 title: Circular dependencies
-description: 
+description: Refactoring code to remove circular dependencies
+permalink: /create-an-application/migrate-an-existing-app/circular-dependencies
 ---
 # Circular dependencies
 
+Avoiding a pattern that can cause problems at compile-time
 
 
 In software, a circular dependency is a relation between two or more classes which either directly or indirectly depend on each other to function properly. An extreme example, which could not work, is:
@@ -54,6 +56,8 @@ Royale uses the [Google Closure Compiler (GCC)](https://developers.google.com/cl
 GCC does not like circular dependencies that Flash allows. The reason is that, in development mode, each class is loaded by a separate script element, so there has to be a well-defined order to load these scripts. GCC also wants each class to declare the classes it uses via an API called goog.require. So in the Flash example above, Child will have goog.require('Parent') and Parent will have goog.require('Child') and GCC doesn't know which file to load first and it doesn't really want to examine the rest of the file to determine the order.
 
 Fortunately, the Royale compiler has an option called -remove-circulars that is on by default. It analyzes the code and determines which goog.require to remove so GCC won't complain about the circularities and can load the scripts in the right order. However, if you want to know how to refactor your code so that you don't create what GCC considers to be circular dependencies, read on.
+
+### Refactoring interdependent classes
 
 GCC recommends refactoring interdependent classes to use interfaces. Some folks believe that classes should never reference other classes, only interfaces. There are some advantages to this approach, but it is more work.
 
