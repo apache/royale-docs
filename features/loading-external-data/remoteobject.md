@@ -22,21 +22,21 @@ permalink: /features/loading-external-data/remoteobject
 
 # RemoteObject
 
-Remote Procedure Calls with AMF Binary protocol
+Remote procedure calls with the AMF binary protocol
 
-RemoteObject allows Apache Royale applications to make [Remote Procedure Calls (RPCs)](https://en.wikipedia.org/wiki/Remote_procedure_call){:target='_blank'} to a back-end server using [ActionScript Message Format (AMF) protocol](features/loading-external-data/amf). The server could be written in Java, PHP, ColdFusion, .NET, Ruby, Python or many other back-end technologies.
+RemoteObject lets Apache Royale applications make [Remote Procedure Calls (RPCs)](https://en.wikipedia.org/wiki/Remote_procedure_call){:target='_blank'} to a back-end server using the [ActionScript Message Format (AMF) protocol](features/loading-external-data/amf). The server can be written in Java, PHP, ColdFusion, .NET, Ruby, Python or many other back-end technologies.
 
 ## Implementations
 
 In Apache Royale we have two RemoteObject implementations:
 
-* **MXRoyale**: Is the emulation of the Flex implementation. Is the best option if you're migrating from Flex since it support the same API Flex Framework use.
+* **MXRoyale**: Is an emulation of the implementation that Flex applications use. It is the best option if you're migrating from Flex since it supports the same API that the Flex framework uses.
 
-* **Network**: Is a newer bead implementation. This one is still under development, so you can find some issues that must to be solve
+* **Network**: Is a newer bead implementation. This is still under development, so you may run into some issues that will need to be resolved.
 
-> We recommend to use the `MXRoyale` instead of `Network` version since is more close to the Flex implementation and is already use in Apache Royale applications currently in production.
+> We recommend using `MXRoyale` instead of the `Network` version for now, since it is closer to the Flex implementation and is already in use in Apache Royale applications currently in production.
 
-## Example of use
+## Examples of use
 
 In Apache Royale you can write an `mx:RemoteObject` in the following way:
 
@@ -59,7 +59,7 @@ You can write the `Network` implementation in the following way:
 </js:beads>
 ```
 
-Don't forget to add the ClassAliasBead to the Application level beads:
+Don't forget to add _ClassAliasBead_ to the Application level beads:
 
 ```mxml
 <j:beads>
