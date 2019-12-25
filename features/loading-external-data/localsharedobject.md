@@ -34,16 +34,106 @@ Instead of using cookies, your Royale application can use Local Shared Objects t
 * have whatever name you give them, with the _.sol_ file type
 
 ## Create and retrieve a Local Shared Object
+You use the same static method _getLocal()_ to create a new Local Shared Object or to retrieve an existing one.
+```
+public static function getLocal(name:String, localPath:String = null, secure:Boolean = false):SharedObject
+```
+The call the method and save the referrence in a variable:
+```
+var myNewLocalSharedObject:SharedObject = SharedObject.getLocal("myNewLocalSharedObject");
+```
+Royale looks for an existing myNewLocalSharedObject.sol file on the user's computer. local directory on the user's computer. If it does not find one, Royale creates a new .sol file with that name. It then returns a reference to the file.
 
-_information coming soon_
+To see if the .sol file has any data (and, therefore, whether it is new), you can query its size:
+```
+var myNewLocalSharedObject:SharedObject = SharedObject.getLocal("myNewLocalSharedObject");
+if (myNewLocalSharedObject.size > 0)
+  {
+      trace("Existing Local Shared Object");
+  }
+  else
+  {
+      trace("New Local Shared Object");
+  }
+  ```
+The _getLocal()_ method has three parameters:
+
+ * _name_ (required) assigns a name to the Local Shared Object.
+ * _localPath_ is optional. You can use it if many components in the same application may be accessing the same Local Shared Object, rather than accessing the object your created in the app.
+ * _secure_ is optional. If you create it, future calls to this Local Shared Object must use HTTPS.
 
 ## Access and update Local Shared Object values
 
-_information coming soon_
+A Local Shared Object can have many attributes. A Local Shared Object for each registered user of your app could include name, role, userID, age and other data your app needs to provide a good user experience. Each attribute is a property of the Local Shared Object's data property. You can read, update, or delete these values. For a Local Shared Object you have created for user Alan Smithee, alansmithee.sol, you can:
+
+### Read LSO data
+Create an instance of the Local Shared Object and populate it with the contents of the Local Shared Object on the user's computer.
+
+``` var so:SharedObject = SharedObject.getLocal("alansmithee.sol");```
+
+#### Get the value of a specific property
+Once you have read the Local Shared Object, you can get the values of specific properties.
+
+```
+var name:String = so.data.name;
+var age:int = so.data.age;
+```
+
+### Update property values
+You can update any of the existing values:
+
+```
+so.data.name= "John Smith";
+so.data.age = 23;
+so.data.orderIds = [23456, 24444, 25432];
+```
+<!--
+a custom class must be registered and marked serializable using the [RemoteClass] metadata tag
+var address:Address = new Address();
+address.street = "125 Foo Lane";
+so.data.address = address;
+-->
+
+### Delete values
+You can delete values of specific properties, rather than replacing them.
+
+```
+delete so.data.age;
+delete so.data.orderIds;
+```
 
 ## Save a Local Shared Object
 
-_information coming soon_
+Use the _flush()_ method to immediately write a Local Shared Object to the user's computer.
+
+`public function flush(minDiskSpace:int = 0):String`
+
+The _minDiskSpace_ parameter is optional. Add a value to request additional space over 100 kb on the user's computer. If the value is greater than 0, the user sees a dialog box requesting the additional space.
+
+A call to _flush()_ returns either _SharedObjectFlushStatus.PENDING_ or _SharedObjectFlushStatus.FLUSHED_. If the Local Shared Object needs more space than it currently has on the user's computer, the method returns _PENDING_ and presents a dialog box to ask the user to grant more space.
+
+When the user chooses either "Allow" or "Deny", the response dispatches a _NetStatusEvent.NET_STATUS_ event. Register an event listener to handle this event:
+```
+so.addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler);
+```
+
+You can write a "save" function like this:
+```
+private function writeSharedObject():void
+{
+    var so:SharedObject = SharedObject.getLocal("mySO");
+    so.data.name = "Alan Smithee";
+    try
+    {
+        // wrap in a try to handle a scenario where local storage has been disallowed
+        so.flush(500000);
+    }
+    catch (e:Error)
+    {
+        trace("Local storage is disabled for this domain");
+    }
+}
+```
 
 ## Delete a Local Shared Object
 
