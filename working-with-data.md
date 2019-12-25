@@ -24,16 +24,14 @@ permalink: /working-with-data
 
 Getting, sending, and displaying data in your app
 
-Information about the data layer goes here.
+These pages can help you get, send, and display data smoothly and efficiently in your Apache Royale apps.
 
-## Getting data
+* Getting, storing and sending data
+  * [Loading external data](/features/loading-external-data)
+  * [Local Shared Object](/features/loading-external-data/localsharedobject)
 
-_coming soon_
 
-## Sending data
-
-_coming soon_
-
-## Displaying data
-
-_coming soon_
+* Displaying data
+  * [Data binding](/features/data-binding)
+  * [Item renderers](/features/item-renderers)
+  
