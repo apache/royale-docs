@@ -23,4 +23,8 @@ permalink: /features/data-model
 
 Creating and using data models in your app
 
+A data model helps organize data elements so you can easily use them in your application.
+
+>See an example of using a data model in the [GitHub Commit log Application tutorial](/create-an-application/application-tutorial).
+
 _Details coming soon_
