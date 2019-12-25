@@ -38,7 +38,7 @@ In Apache Royale we have two RemoteObject implementations:
 
 ## Example of use
 
-In Apache Royale you can write a RemoteObject in the following way:
+In Apache Royale you can write an `mx:RemoteObject` in the following way:
 
 ```mxml
 <fx:Declarations>
@@ -46,6 +46,17 @@ In Apache Royale you can write a RemoteObject in the following way:
             endpoint="http://localhost:8080/messagebroker/websocket-amf"
             destination="exampleService"/>
 </fx:Declarations>
+```
+
+You can write the `Network` implementation in the following way:
+
+```mxml
+<js:beads>
+    <js:RemoteObject id="service"
+        endPoint = "http://localhost:8080/messagebroker/websocket-amf"
+        destination = "exampleService"
+        result="onResult(event)" fault="onFault(event)"/>
+</js:beads>
 ```
 
 Don't forget to add the ClassAliasBead to the Application level beads:
@@ -68,8 +79,17 @@ registerClassAlias('org.apache.royale.collections.ArrayList', ArrayList);
 
 RemoteObject in Apache Royale is very near to the Flex implementation and is working in some production applications migrated from Flex:
 
-- Small Messages are supported too, so you can rely on that Apache Flex BlazeDS implementation.
-- Vector and Dictionary in Apache Royale AMF implementation is still not supported.
+- **About Small Messages**: Apache Flex BlazeDS use by default special extra serialization through small messages. Small Messages are supported in Apache Royale implementation so you can left it on by default:
+
+```xml
+    <channel-definition ...>
+        <properties>
+            <serialization>
+                <enable-small-messages>true</enable-small-messages>
+            </serialization>
+```
+
+- **AMF Types not implemented yet**: Vector and Dictionary in Apache Royale AMF implementation is still not supported.
 
 ## Example projects available in Apache Royale
 
@@ -95,3 +115,14 @@ To run this example localy you can follow this steps. Note: At this time some pa
 
 {:align="center"}
 ![Apache Royale communication with AMF and RemoteObject Example](assets/images/RemoteObjectExample_1.jpeg)
+
+## CompressedRemoteObject
+
+A new RemoteObject, called CompressedRemoteObject, that performs compression has been added to Apache Royale. RemoteObjectAMFTest client and SampleAmfWebApp application has been updated to show this new feature. This remote object compress the AMF data with the zlib algorithm to improve the transfer times even more.
+
+{:align="center"}
+![CompressedRemoteObject Example](assets/images/RemoteObjectExample_2.png)
+
+## SimpleRemoteObject
+
+For more simple AMF backends probably RemoteObject will be more than you need. For this reason you can use SimpleRemoteObject that doesn't care about "clientId", or other BlazeDS functionalities.
