@@ -99,7 +99,7 @@ In the `examples` folder you can find some client implementations using `MXRoyal
 
 > We don't yet have example back end code written in other languages like .NET, PHP, or Python. You are welcome to submit AMF examples to the project in other server languages.
 
-To run this example localy, follow this steps. 
+To run this example localy, follow these steps. 
 > Note: At this time some parts of the example only can be built with **maven**, we'll be providing at some time an ANT build, but this is not a priority. If you're interested in an ANT build you can submit a PR.
 
 1. Build **RemoteObjectAMFTest** with maven using "mvn clean install" from its folder. This generates the Apache Royale client.
