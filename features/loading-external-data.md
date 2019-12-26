@@ -32,5 +32,4 @@ Royale provides reliable, fast, and secure ways to get data from remote sources,
 * [LocalSharedObject](features/loading-external-data/localsharedobject)
 * [HTTPService](features/loading-external-data/httpservice)
 * [RemoteObject](features/loading-external-data/remoteobject)
-* [AMF](features/loading-external-data/amf)
 
