@@ -35,17 +35,17 @@ Instead of using cookies, your Royale application can use Local Shared Objects (
 * can even store instances of a custom class, if the class is registered using the _RemoteCass_ -metadata tag.
 * have whatever name you give them, with the _.sol_ file type
 
-> Storing data types and instances of a custom class is done thanks to [AMF](features/loading-external-data/amf) enconding used as well in [RemoteObject](features/loading-external-data/remoteobject).
+> Storing data types and instances of a custom class use [AMF](features/loading-external-data/amf) encoding, which [RemoteObject](features/loading-external-data/remoteobject) also uses.
 
 ## Implementations
 
-In Apache Royale we have currently two implementations of Local Shared Object:
+Apache Royalecurrently has two implementations of Local Shared Object:
 
 - **SharedObject**: An emulation class to support the swf based Local Shared Object. This implementation supports AMF encoded content (requires `[RemoteClass]` or `registerClassAlias` before reading and writing to roundtrip instances of custom classes).
 
-- **SharedObjectJSON**: An lighter weight emulation class to support the swf based Local SharedObject support. This implementation does not support AMF encoded content. It is intended for javascript implementations that require persistence, but do not already have the AMF support dependency as part of the application.
+- **SharedObjectJSON**: A lighter-weight emulation class to make use of swf-based Local SharedObject support. This implementation does not support AMF encoded content. It is intended for JavaScript implementations that require persistence, but do not already have the AMF support dependency as part of the application.
 
-Both classes can be found in `MXRoyale` library.
+Both classes can be found in the `MXRoyale` library.
 
 ## Create and retrieve a Local Shared Object
 
@@ -55,13 +55,13 @@ You use the same static method `getLocal()` to create a new Local Shared Object 
 public static function getLocal(name:String, localPath:String = null, secure:Boolean = false):SharedObject
 ```
 
-The call the method and save the referrence in a variable:
+Then call the method and save the referrence in a variable:
 
 ```as3
 var myNewLocalSharedObject:SharedObject = SharedObject.getLocal("myNewLocalSharedObject");
 ```
 
-Royale looks for an existing `myNewLocalSharedObject.sol` file on the user's computer. local directory on the user's computer. If it does not find one, Royale creates a new `.sol` file with that name. It then returns a reference to the file.
+Royale looks for an existing `myNewLocalSharedObject.sol` file in the local directory on the user's computer. If it does not find one, Royale creates a new `.sol` file with that name. It then returns a reference to the file.
 
 To see if the `.sol` file has any data (and, therefore, whether it is new), you can query its size:
 
