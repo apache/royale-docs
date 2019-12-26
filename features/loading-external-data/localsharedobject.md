@@ -22,7 +22,7 @@ permalink: /features/loading-external-data/localsharedobject
 
 # Local Shared Object (LSO)
 
-<!-- Based on material by Jeremy Mitchell at http://blog.flexdevelopers.com/2010/01/flex-basics-local-shared-object.html />
+<!-- Based on material by Jeremy Mitchell at http://blog.flexdevelopers.com/2010/01/flex-basics-local-shared-object.html -->
 
 Store user data in the equivalent of a cookie
 
