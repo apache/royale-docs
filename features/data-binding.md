@@ -33,11 +33,6 @@ There are several ways to deploy data binding:
 * [Using data binding in MXML](features/data-binding.html#mxml)
 * [Using data binding in ActionScript](features/data-binding.html#actionscript)
 
-
-
-
-
-
 ## Using curly braces ({}) {#curly-braces}
 
 You can bind the value of a property in the user interface to that value of another property very simply. One of the TextInput examples in [Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} uses data binding twice:
@@ -45,14 +40,16 @@ You can bind the value of a property in the user interface to that value of anot
 If you clear the existing text in the first text field in the example, then type in a string, what you type in appears in the second and fourth text fields, as you type it.
 
 The **source property** is the text property of a TextInput control. The key part of its code is 
-```
+
+```mxml
 <j:TextInput text="A TextInput" change="textInputChange(event)"/>
 ```
+
 When you first open the example, the control displays "A Text Input".
 
 The **destination property** is the text property of two other TextInput controls. The ID for the first one is "textToChange", and its code looks like this:
 
-```
+```mxml
 <j:TextInput id="textToChange">
   <j:beads>
     <j:TextPrompt prompt="With prompt..."/>
@@ -62,7 +59,7 @@ The **destination property** is the text property of two other TextInput control
  
 The second destination shows a different way to bind properties. This TextInput control is disabled, but the value of its text property is bound to the "textToChange" text property value:
  
-```
+```mxml
 <j:TextInput text="{textToChange.text}">
   <j:beads>
     <j:TextPrompt prompt="Disabled with prompt..."/>
@@ -71,18 +68,19 @@ The second destination shows a different way to bind properties. This TextInput 
 </j:TextInput>
 ```
  
- This second destination's value won't change until the first one's does.
+This second destination's value won't change until the first one's does.
 
 The **triggering event** is any change to the text property of the first control: `change="textInputChange(event)"`. 
 
 When there's a change, the control sends an event to its change handler, _textInputChange()_, the **function** that carries out the changes. Its code looks like this:
 
-```
+```as3
 private function textInputChange(event:Event):void
   {
     textToChange.text = event.target.text;
   }
 ```
+
 _more to come!_
 
 ## Using data binding in MXML {#mxml}
