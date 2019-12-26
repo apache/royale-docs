@@ -16,12 +16,12 @@
 
 layout: docpage
 title: Layouts
-description: Visual screen organization for your components
+description: Organize the components in your UI
 permalink: /user-interface/layouts
 ---
 # Layouts
 
-Visual screen organization for your components
+Organize the components in your UI
 
 Laying out components in Royale works a bit differently than in the Adobe or Apache Flex SDKs. If you don’t care about the _why_ and want to get to the _how_, skip ahead to the “Royale Layouts" section.
 
@@ -122,4 +122,4 @@ To replace a Container's content view:
 
 ## Examples
 
-[Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} is a suite of examples of the effects you can get with Apache Royale. It features our Jewel component set. There are seven examples of layouts, with sample code you can download, study, and adapt to your project.
+[Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} has seven examples of layouts, with sample code you can download, study, and adapt to your project. The examples use the Jewel component set, but the layouts would work equally well with any component set.
