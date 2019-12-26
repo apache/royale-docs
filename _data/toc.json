@@ -197,6 +197,9 @@
                             "path": "component-sets/jewel/jewel-formitem.md"
                         },
                         {
+                            "path": "component-sets/jewel/jewel-hslider.md"
+                        },
+                        {
                             "path": "component-sets/jewel/jewel-icon.md"
                         },
                         {
@@ -218,9 +221,6 @@
                             "path": "component-sets/jewel/jewel-radiobutton.md"
                         },
                         {
-                            "path": "component-sets/jewel/jewel-slider.md"
-                        },
-                        {
                             "path": "component-sets/jewel/jewel-snackbar.md"
                         },
                         {
@@ -228,6 +228,9 @@
                         },
                         {
                             "path": "component-sets/jewel/jewel-textinput.md"
+                        },
+                        {
+                            "path": "component-sets/jewel/jewel-vslider.md"
                         },
                         {
                             "path": "component-sets/jewel/jewel-themes.md"

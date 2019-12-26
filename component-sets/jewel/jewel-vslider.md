@@ -15,12 +15,12 @@
 # limitations under the License.
 
 layout: docpage
-title: Jewel Slider
-description: The Jewel Slider
-permalink: /component-sets/jewel/slider
+title: Jewel VSlider
+description: The Jewel VSlider
+permalink: /component-sets/jewel/vslider
 ---
 
-# Jewel Slider
+# Jewel VSlider
 
 subtitle
 
