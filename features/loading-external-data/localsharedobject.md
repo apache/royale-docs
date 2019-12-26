@@ -22,6 +22,8 @@ permalink: /features/loading-external-data/localsharedobject
 
 # Local Shared Object (LSO)
 
+<!-- Based on material by Jeremy Mitchell at http://blog.flexdevelopers.com/2010/01/flex-basics-local-shared-object.html />
+
 Store user data in the equivalent of a cookie
 
 Web browsers often store small amounts of data on a user's computer in a "cookie", a set of one or more name-value pairs in text. This information can be useful for session management and customizing the UI to match the user's needs and interests. Cookies have a bit of a bad name, though, because many applications and websites also use them for tracking user behavior and recording data the application really does not need in order to function.
