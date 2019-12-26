@@ -22,7 +22,46 @@ permalink: /features/loading-external-data/httpservice
 
 # HTTPService
 
-*information coming soon.*
+Loading external data through REST services
 
+You can load external data in Apache Royale using the `HTTPService` class. Use `HTTPService` to make _POST_, _GET_, _PUT_ and _DELETE_ operations for requests on external data for [REST](https://en.wikipedia.org/wiki/Representational_state_transfer){:target='_blank'} services.
 
+## Implementations
 
+In Apache Royale we have two `HTTPService` implementations:
+
+* **MXRoyale**: Is an emulation of the implementation that Flex applications use. It is the best option if you're migrating from Flex since it supports the same API that the Flex framework uses.
+
+* **Network**: Is a newer bead implementation. This is still under development, so you may run into some issues that will need to be resolved.
+
+## Examples
+
+In Apache Royale you can write an `mx:RemoteObject` like this:
+
+```mxml
+<fx:Declarations>
+    	<mx:HTTPService id="srv" useProxy="false" resultFormat="text"
+            result="resultHandler(event)" fault="faultHandler(event)"/>
+</fx:Declarations>
+```
+
+You can write the `Network` implementation like this:
+
+```mxml
+<js:beads>
+    <js:HTTPService id="service">
+        <js:LazyCollection id="collection">
+            <js:inputParser>
+                <js:JSONInputParser />
+            </js:inputParser>
+            <js:itemConverter>
+                <local:StockDataJSONItemConverter />
+            </js:itemConverter> 
+        </js:LazyCollection>
+    </js:HTTPService>
+</js:beads>
+```
+
+## More examples
+
+- [Loading external data through HTTPService](https://royale.apache.org/loading-external-data-through-httpservice/){:target='_blank'} 

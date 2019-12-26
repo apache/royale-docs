@@ -28,7 +28,7 @@ RemoteObject lets Apache Royale applications make [Remote Procedure Calls (RPCs)
 
 ## Implementations
 
-In Apache Royale we have two RemoteObject implementations:
+In Apache Royale we have two `RemoteObject` implementations:
 
 * **MXRoyale**: Is an emulation of the implementation that Flex applications use. It is the best option if you're migrating from Flex since it supports the same API that the Flex framework uses.
 
