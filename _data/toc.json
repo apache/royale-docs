@@ -249,9 +249,6 @@
                             "path": "features/loading-external-data/json.md"
                         },
                         {
-                            "path": "features/loading-external-data/amf.md"
-                        },
-                        {
                             "path": "features/loading-external-data/localsharedobject.md"
                         },
                         {
