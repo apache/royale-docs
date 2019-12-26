@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Metadata
-description: Metadata
+description: Decorate classes, properties and methods with extra information that can be used at compile or run time
 permalink: /features/as3/metadata
 ---
 

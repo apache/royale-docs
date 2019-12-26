@@ -16,11 +16,12 @@
 
 layout: docpage
 title: Layouts
-description: Organize your components
+description: Visual screen organization for your components
+permalink: /user-interface/layouts
 ---
 # Layouts
 
-Organize your components
+Visual screen organization for your components
 
 Laying out components in Royale works a bit differently than in the Adobe or Apache Flex SDKs. If you don’t care about the _why_ and want to get to the _how_, skip ahead to the “Royale Layouts" section.
 

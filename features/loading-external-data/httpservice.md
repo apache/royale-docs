@@ -16,7 +16,7 @@
 
 layout: docpage
 title: HTTPService
-description: HTTPService
+description: Loading external data through REST services
 permalink: /features/loading-external-data/httpservice
 ---
 

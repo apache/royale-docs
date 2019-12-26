@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Data binding
-description: Data binding
+description: Update the UI in real time as data changes
 permalink: /features/data-binding
 ---
 # Data binding

@@ -16,7 +16,7 @@
 
 layout: docpage
 title: RemoteObject
-description: RemoteObject
+description: Remote procedure calls with the AMF binary protocol
 permalink: /features/loading-external-data/remoteobject
 ---
 

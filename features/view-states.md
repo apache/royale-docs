@@ -16,17 +16,17 @@
 
 layout: docpage
 title: View States
-description: View States
+description: Page-level state management for show diferent parts to the user
 permalink: /features/view-states
 ---
 
 # View States
 
-Show the right content to the right users
+Page-level state management for show diferent parts to the user
 
 The View States feature is a way of putting different filters over parts of your application so that different things appear depending on what the app is doing, what permissions the user has, what the user just did, or some other condition. You create a series of “states” and associate components of your application with one or more of the states. 
 
 Learn how to use View States in your app:
 
- * [A tutorial on View States](https://royale.apache.org/using-view-states-to-show-or-hide-content){:target='_blank'} on the Royale blog.
- * The [Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} page, which has a wealth of example of using Royale's [Jewel component set](/component-sets/jewel), has an interactive demonstration of using View States with both "includeIn" and dot notation, with downloadable code you can adapt to your app's needs.
+* [A tutorial on View States](https://royale.apache.org/using-view-states-to-show-or-hide-content){:target='_blank'} on the Royale blog.
+* The [Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} page, which has a wealth of example of using Royale's [Jewel component set](/component-sets/jewel), has an interactive demonstration of using View States with both "includeIn" and dot notation, with downloadable code you can adapt to your app's needs.

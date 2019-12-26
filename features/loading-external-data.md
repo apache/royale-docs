@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Loading External Data
-description: Loading External Data
+description: Dynamic sites and real-time updates lead to good user experiences
 permalink: /features/loading-external-data
 ---
 

@@ -16,13 +16,13 @@
 
 layout: docpage
 title: AMF
-description: ActionScript Message Format
+description: ActionScript Message Format binary protocol
 permalink: /features/loading-external-data/amf
 ---
 
 # AMF
 
-ActionScript Message Format
+ActionScript Message Format binary protocol
 
 AMF is a great way to send data between an Apache Royale client and a backend server. The server could be written in Java, PHP, ColdFusion, .NET, Ruby, Python or many other backend technologies.
 
