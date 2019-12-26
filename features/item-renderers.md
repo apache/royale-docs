@@ -24,4 +24,8 @@ permalink: /features/item-renderers
 
 Visual representation of data items in lists and other collection components
 
-*information coming soon.*
+Collections of data are composed by objects or items. Several components in Royale can show collections of data to the user like _List_, _DataGrid_, _TabBar_ or _ButtonBar_. Those components need to describe each item and adapt the visaluzation to the data inside each object. Apache Royale uses Item Renderers components along with the before mentioned collection components to realize the visualization of each piece of data stored in each collection object.
+
+## Examples
+
+- [Using an item renderer with a list](https://royale.apache.org/using-an-item-renderer-with-a-list){:target='_blank'}
