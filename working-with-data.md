@@ -27,13 +27,13 @@ Getting, sending, and displaying data in your app
 These pages can help you get, send, and display data smoothly and efficiently in your Apache Royale apps.
 
 * Getting, storing and sending data
-  * [Loading external data](/features/loading-external-data)
-  * [Local Shared Object](/features/loading-external-data/localsharedobject)
+  * [Loading external data](features/loading-external-data)
+  * [Local Shared Object](features/loading-external-data/localsharedobject)
 
 * Managing data
-  * [Data model](/features/data-model)
+  * [Data model](features/data-model)
 
 * Displaying data
-  * [Data binding](/features/data-binding)
-  * [Item renderers](/features/item-renderers)
+  * [Data binding](features/data-binding)
+  * [Item renderers](features/item-renderers)
   
