@@ -121,4 +121,4 @@ To replace a Container's content view:
 
 ## Examples
 
-<a href="https://royale.apache.org/tourdejewel" target="_blank">Tour de Jewel</a> is a suite of examples of the effects you can get with Apache Royale. It features our Jewel component set. There are seven examples of layouts, with sample code you can download, study, and adapt to your project.
+[Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} is a suite of examples of the effects you can get with Apache Royale. It features our Jewel component set. There are seven examples of layouts, with sample code you can download, study, and adapt to your project.
