@@ -24,17 +24,20 @@ permalink: /frameworks-and-libraries
 
 Pre-written sets of code which allows for easier development of Royale-based applications.
 
-we'll be listing here the available Royale libraries.
+Frameworks provide reliable templates to help you develop complex projects more easily and sustainably. Libraries are generally collections of modules and functions that focus on a particular task or theme--you might find a library to help you with scientific calculations, and another library for manipulating graphics.
 
 ## Frameworks
-_Information coming soon_
+Apache Royale itself is a framework. It can play well with other frameworks to help simplify development, especially when many people are working on the same project.
 
-## Libraries
+### Designed for Apache Royale:
 
-### Part of Apache Royale:
-
-* [Crux](libraries/crux) An library based on Swiz. Swiz is a framework that simplifies applications and gives you Inversion of Control/Dependency Injection, Event handling, new Metadatas, simplified life cycle for asynchronous remote method invocations and many more.
+* [Crux](libraries/crux) is a library based on Swiz. Swiz is a framework that simplifies applications and gives you Inversion of Control/Dependency Injection, Event handling, new Metadatas, simplified life cycle for asynchronous remote method invocations and many more. Swiz was developed specifically for ActionScript and Flex.
 
 ### Third party (external libraries)
 
 * [PureMVC](https://github.com/PureMVC/puremvc-as3-multicore-framework/wiki){:target='_blank'} is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. Is part of [The PureMVC Framework](https://puremvc.org){:target='_blank'} that implements the same library in many other popular languages and technologies.
+
+## Libraries
+
+_We will add here information about specific libaries that work well with Royale as we run into them._
+
