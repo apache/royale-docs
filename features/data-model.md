@@ -16,12 +16,12 @@
 
 layout: docpage
 title: Data Model
-description: Using data models
+description: Creating and using data models
 permalink: /features/data-model
 ---
 # Data Model
 
-Creating and using data models in your app
+Creating and using data models
 
 A data model helps organize data elements so you can easily use them in your application.
 
