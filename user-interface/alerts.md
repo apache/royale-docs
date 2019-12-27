@@ -39,4 +39,10 @@ _Information about the Popups component will appear here_
 _Information about the Snackbar component will appear here_
 
 ## Examples
-_Info about the examples in Tour de Jewel will appear here_
+[Tour de Jewel](https://royale.apache.org/tourdejewel/#){:target="_Blank"} is not just an excellent resource for not seeing what various Royale components can do. You can also review the code for each sample online, or download it so you can study it in detail and adapt it to your project.
+
+Tour de Jewel has examples of the three ways of alerting your app users or asking them questions:
+
+ * Alert: four examples of increasing complexity (don't miss the one in the footer!)
+ * Popup: modal and non-modal examples
+ * Snackbar: seven examples showing off how you can customize snackbar look and behavior
