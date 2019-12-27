@@ -29,7 +29,7 @@ _introductory material goes here_
 
 _Information about the Alerts component will appear here_
 
-Read a [tutorial about creating an Alert](https://royale.apache.org/using-jewel-alert-control/){;target="_blank")
+Read a [tutorial about creating an Alert](https://royale.apache.org/using-jewel-alert-control/){:target="_blank")
 
 ## Popups
 
