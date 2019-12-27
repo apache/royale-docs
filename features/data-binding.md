@@ -81,7 +81,9 @@ private function textInputChange(event:Event):void
   }
 ```
 
-_more to come!_
+When the text in the first TextInput component changes, it triggers the event which changes the text in the second component. _That_, in turn, changes the text in the third component.
+
+Here is a [data binding tutorial](https://royale.apache.org/binding-the-text-property-of-a-jewel-textinput-to-update-a-text-label/){target="_blank"} using the Tour de Jewel example.
 
 ## Using data binding in MXML {#mxml}
 _Details coming soon_
