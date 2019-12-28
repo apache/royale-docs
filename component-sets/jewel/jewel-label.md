@@ -80,7 +80,7 @@ None.
 
 ## Relevant Events
 
-The `Label` has _click_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when the user clicks the control and triggers some action coded in a callback function. Programatic changes will not trigger this event.
+The `Label` has a _click_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when the user clicks the control and triggers some action coded in a callback function. Programmatic changes will not trigger this event.
 
 You can attach callback listeners to the _click_ event in __MXML__ as follows:
 
@@ -94,13 +94,13 @@ the _click_ event will use the `clickHandler` callback function you provide in _
 <fx:Script>
     <![CDATA[      
         private function clickHandler(event:Event):void {
-            trace("you clicked the label!");
+            trace("You clicked the label!");
         }
     ]]>
 </fx:Script>
 ```
 
-When the user clicks the label, the message _"you clicked the label!"_ will appear in the console log.
+When the user clicks the label, the message _"You clicked the label!"_ appears in the console log.
 
 In __ActionScript__ we can add an event handler this way: 
 
@@ -118,7 +118,7 @@ Unlike other components in Royale, the Jewel `Label` does not have beads for _Vi
 |-----------------	|-----------------------------------------------------------	|------------------------------------------------	|
 | [IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'}      	| [org.apache.royale.jewel.beads.models.TextModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/TextModel){:target='_blank'}           	| The data model for the Label.                   	|
 
-Jewel does not have beads specialy crafted for this control, but it can use other common Jewel control beads (shared with other controls) to provide more functionality.
+Jewel does not have beads specially crafted for this control, but it can use other common Jewel control beads (shared with other controls) to provide more functionality.
 
 ### Label Beads
 
