@@ -39,6 +39,9 @@ Apache Royale itself is a framework. It can play well with other frameworks to h
 
 ## Libraries
 
+* Use the [ExternalInterface](/features/external-interface) class to connect with and use external JavaScript libraries in your Royale project.
+* An even more robust method for connecting with and using external JavaScript libraries is [externs](/features/externs).
+
 _We will add here information about specific libaries that work well with Royale as we run into them._
 
 
