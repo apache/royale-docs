@@ -30,3 +30,6 @@ Royale provides its own component sets that support developing simple, small and
 
 - [Jewel](component-sets/jewel) is focused in look and feel and new practices present in modern development like responsivness and multiplatform. Jewel support Themes and diferent kind of desktop and mobile devices.
 
+### External Component Sets
+
+Besides the component sets uncluded in Royale, you can use just about any CSS Framework as the basis for your components. One example is [Spectrum-Royale](https://github.com/unhurdle/spectrum-royale) which uses Adobe's [Spectrum System](https://spectrum.adobe.com/)
