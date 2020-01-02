@@ -19,6 +19,7 @@ title: Jewel VSlider
 description: The Jewel VSlider
 permalink: /component-sets/jewel/vslider
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel VSlider
 
