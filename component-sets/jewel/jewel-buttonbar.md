@@ -19,6 +19,7 @@ title: Jewel ButtonBar
 description: The Jewel ButtonBar
 permalink: /component-sets/jewel/buttonbar
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel ButtonBar
 
