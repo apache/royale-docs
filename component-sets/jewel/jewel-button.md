@@ -25,7 +25,7 @@ permalink: /component-sets/jewel/button
 
 ## Reference
 
-Available since version __0.9.4__.
+From [Jewel Components UI Set](component-sets/jewel). Available since version __0.9.4__.
 
 | Class                 	    | Extends                           |
 |------------------------------	|----------------------------------	|
