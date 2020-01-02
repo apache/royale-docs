@@ -19,6 +19,7 @@ title: Jewel Image
 description: The Jewel Image
 permalink: /component-sets/jewel/image
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Image
 
