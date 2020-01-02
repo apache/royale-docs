@@ -19,6 +19,7 @@ title: Jewel HSlider
 description: The Jewel HSlider
 permalink: /component-sets/jewel/hslider
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel HSlider
 
