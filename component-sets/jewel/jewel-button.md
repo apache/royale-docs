@@ -22,10 +22,11 @@ permalink: /component-sets/jewel/button
 
 # Jewel Button
 
+[< Jewel Components list](component-sets/jewel)
 
 ## Reference
 
-[< Jewel Components list](component-sets/jewel). Available since version __0.9.4__.
+Available since version __0.9.4__.
 
 | Class                 	    | Extends                           |
 |------------------------------	|----------------------------------	|
