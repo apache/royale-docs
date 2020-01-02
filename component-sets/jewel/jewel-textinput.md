@@ -19,6 +19,7 @@ title: Jewel TextInput
 description: The Jewel TextInput is a control for single-line text field
 permalink: /component-sets/jewel/textinput
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel TextInput
 
