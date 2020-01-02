@@ -19,6 +19,7 @@ title: Jewel DateChooser
 description: The Jewel DateChooser
 permalink: /component-sets/jewel/datechooser
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel DateChooser
 
