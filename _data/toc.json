@@ -116,24 +116,11 @@
             "path": "user-interface.md",
             "children": [
                 {
-                    "path": "component-sets.md",
-                    "children": [
-                        {
-                            "path": "component-sets/basic.md"
-                        },
-                        {
-                            "path": "component-sets/jewel.md"
-                        }
-                    ]
-                },
-                {
                     "path": "user-interface/layouts.md"
                 },
                 {
                     "path": "features/view-states.md"
                 }
-             
-            
           ]
         },
         {
@@ -328,7 +315,6 @@
                         }
                     ]
                 },
-                
                 {
                     "path": "create-an-application/security.md"
                 },
@@ -355,14 +341,13 @@
                     "path": "create-an-application/migrate-an-existing-app/migrate-from-flex.md"
                 },
                 {
-                    "path": "user-interface/flex-equivalents.md"
+                    "path": "create-an-application/migrate-an-existing-app/flex-equivalents.md"
                 },
                 {
                     "path": "create-an-application/migrate-an-existing-app/migrate-from-js.md"
                 }
             ]
         },
-      
         {
             "path": "testing.md",
             "children": [
