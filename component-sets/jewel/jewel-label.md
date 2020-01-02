@@ -19,6 +19,7 @@ title: Jewel Label
 description: The Jewel Label
 permalink: /component-sets/jewel/label
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Label
 
