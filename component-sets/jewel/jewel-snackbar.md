@@ -19,6 +19,7 @@ title: Jewel SnackBar
 description: The Jewel SnackBar
 permalink: /component-sets/jewel/snackbar
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel SnackBar
 
