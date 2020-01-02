@@ -19,6 +19,7 @@ title: Jewel NumericStepper
 description: The Jewel NumericStepper
 permalink: /component-sets/jewel/numericstepper
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel NumericStepper
 
