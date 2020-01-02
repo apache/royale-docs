@@ -19,12 +19,12 @@ title: Jewel Alert
 description: The Jewel Alert component displays a message and one or more buttons in a window that pops up over all other controls and views.
 permalink: /component-sets/jewel/alert
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Alert
 
 
 ## Reference
-
 Available since version __0.9.4__
 
 | Class                 	    | Extends                           | Implements	                    |
