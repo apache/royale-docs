@@ -24,5 +24,7 @@ permalink: /component-sets/basic
 
 The most smallest, fastest and PAYG set
 
+is the most smallest, fastest and PAYG set of components possible in Royale, and is used by other sets like Jewel as its base.
+
 *information coming soon.*
 

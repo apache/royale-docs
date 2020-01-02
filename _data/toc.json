@@ -117,9 +117,6 @@
             "children": [
                 {
                     "path": "user-interface/layouts.md"
-                },
-                {
-                    "path": "features/view-states.md"
                 }
           ]
         },
@@ -248,9 +245,6 @@
                             "path": "features/loading-external-data/remoteobject.md"
                         }
                     ]
-                },
-                {
-                    "path": "features/data-binding.md"
                 }
             ]
         },
