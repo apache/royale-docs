@@ -19,10 +19,10 @@ title: Jewel Button
 description: The Jewel Button is a commonly-used rectangular button with a text label. Users can click or tap it to take an action.
 permalink: /component-sets/jewel/button
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Button
 
-[< Jewel Components list](component-sets/jewel)
 
 ## Reference
 
