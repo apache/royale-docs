@@ -19,6 +19,7 @@ title: Jewel DataGrid
 description: The Jewel DataGrid
 permalink: /component-sets/jewel/datagrid
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel DataGrid
 
