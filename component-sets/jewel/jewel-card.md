@@ -19,6 +19,7 @@ title: Jewel Card
 description: The Jewel Card
 permalink: /component-sets/jewel/card
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Card
 
