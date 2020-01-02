@@ -19,6 +19,7 @@ title: Jewel Wizard
 description: The Jewel Wizard
 permalink: /component-sets/jewel/wizard
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Wizard
 
