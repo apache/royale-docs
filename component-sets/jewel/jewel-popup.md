@@ -19,6 +19,7 @@ title: Jewel PopUp
 description: The Jewel PopUp
 permalink: /component-sets/jewel/popup
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel PopUp
 
