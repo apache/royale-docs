@@ -19,6 +19,7 @@ title: Jewel Table
 description: The Jewel Table
 permalink: /component-sets/jewel/table
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Table
 
