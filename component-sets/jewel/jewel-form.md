@@ -19,6 +19,7 @@ title: Jewel Form
 description: The Jewel Form
 permalink: /component-sets/jewel/form
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Form
 
