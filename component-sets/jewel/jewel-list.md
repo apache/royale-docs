@@ -19,6 +19,7 @@ title: Jewel List
 description: The Jewel List
 permalink: /component-sets/jewel/list
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel List
 
