@@ -17,6 +17,7 @@
 layout: docpage
 title: Components
 description: Meet the UI building blocks.
+permalink: /user-interface/components
 ---
 # Components
 

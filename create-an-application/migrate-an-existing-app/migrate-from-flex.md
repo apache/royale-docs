@@ -17,7 +17,7 @@
 layout: docpage
 title: Migrate from Flex
 description: Migrate an app from Flex to Royale
-permalink: /create-an-application/migrate-an-existing-app
+permalink: /create-an-application/migrate-an-existing-app/migrate-from-flex
 ---
 
 <!-- This is from material created by Peter Ent and modified by Tom Chiverton: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=34013930 -->

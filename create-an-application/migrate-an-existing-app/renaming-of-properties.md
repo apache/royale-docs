@@ -16,7 +16,10 @@
 
 layout: docpage
 title: Renaming of properties
+description: Renaming of properties
+permalink: /create-an-application/migrate-an-existing-app/renaming-of-properties
 ---
+
 # Renaming of properties
 
 *This material will be available soon.*
