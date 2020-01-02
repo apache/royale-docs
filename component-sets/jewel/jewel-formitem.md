@@ -19,6 +19,7 @@ title: Jewel FormItem
 description: The Jewel FormItem
 permalink: /component-sets/jewel/formitem
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel FormItem
 
