@@ -19,6 +19,7 @@ title: Jewel ComboBox
 description: The Jewel ComboBox
 permalink: /component-sets/jewel/combobox
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel ComboBox
 
