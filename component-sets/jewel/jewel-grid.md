@@ -19,6 +19,7 @@ title: Jewel Grid
 description: The Jewel Grid
 permalink: /component-sets/jewel/grid
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Grid
 
