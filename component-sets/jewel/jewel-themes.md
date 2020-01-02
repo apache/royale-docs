@@ -19,6 +19,7 @@ title: Jewel Themes
 description: The look and feel of the jewel component set
 permalink: /component-sets/jewel/themes
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Themes
 
