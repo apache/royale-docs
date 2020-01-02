@@ -19,6 +19,7 @@ title: Jewel DateField
 description: The Jewel DateField
 permalink: /component-sets/jewel/datefield
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel DateField
 
