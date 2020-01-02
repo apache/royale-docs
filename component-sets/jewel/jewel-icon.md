@@ -19,6 +19,7 @@ title: Jewel Icon
 description: The Jewel Icon
 permalink: /component-sets/jewel/icon
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Icon
 
