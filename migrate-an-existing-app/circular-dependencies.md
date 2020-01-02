@@ -17,7 +17,7 @@
 layout: docpage
 title: Circular dependencies
 description: Refactoring code to remove circular dependencies
-permalink: /create-an-application/migrate-an-existing-app/circular-dependencies
+permalink: /migrate-an-existing-app/circular-dependencies
 ---
 # Circular dependencies
 

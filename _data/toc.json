@@ -329,19 +329,19 @@
             ]
         },
         {
-            "path": "create-an-application/migrate-an-existing-app.md",
+            "path": "migrate-an-existing-app.md",
             "children": [
                 {
-                    "path": "create-an-application/migrate-an-existing-app/circular-dependencies.md"
+                    "path": "migrate-an-existing-app/circular-dependencies.md"
                 },
                 {
-                    "path": "create-an-application/migrate-an-existing-app/migrate-from-flex.md"
+                    "path": "migrate-an-existing-app/migrate-from-flex.md"
                 },
                 {
-                    "path": "create-an-application/migrate-an-existing-app/flex-equivalents.md"
+                    "path": "migrate-an-existing-app/flex-equivalents.md"
                 },
                 {
-                    "path": "create-an-application/migrate-an-existing-app/migrate-from-js.md"
+                    "path": "migrate-an-existing-app/migrate-from-js.md"
                 }
             ]
         },

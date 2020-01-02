@@ -17,7 +17,7 @@
 layout: docpage
 title: Migrate from Flex
 description: Migrate an app from Flex to Royale
-permalink: /create-an-application/migrate-an-existing-app/migrate-from-flex
+permalink: /migrate-an-existing-app/migrate-from-flex
 ---
 
 <!-- This is from material created by Peter Ent and modified by Tom Chiverton: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=34013930 -->
@@ -81,7 +81,7 @@ If you get errors about a component or API not found, it is likely that the emul
 
 You may see a warning about the use of "public var". As we mention in the tutorial, Royale uses a optimizing compiler for JavaScript output that renames variables to save on download size. That generally works fine unless the public vars represent fields in an object from an external source, like a JSON object or some other server result. You may need to change the public var to a getter and/or setter. Or you can suppress the warning by using the @royalesuppresspublicvarwarning directive.
 
-You may see at the end of the compile output that says "namespace not provided yet". If you see that, ensure that the -remove-circulars compiler option is on. It should be on by default. If you still see that message, ask on the mailing list for assistance. More about circular dependencies can be found [here](create-an-application/migrate-an-existing-app/circular-dependencies.html)
+You may see at the end of the compile output that says "namespace not provided yet". If you see that, ensure that the -remove-circulars compiler option is on. It should be on by default. If you still see that message, ask on the mailing list for assistance. More about circular dependencies can be found [here](migrate-an-existing-app/circular-dependencies.html)
 
 ## Running the migrated app after a successful compile
 

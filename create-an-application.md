@@ -32,7 +32,7 @@ This document is divided into several sections:
 
 [Application Tutorial](create-an-application/application-tutorial) is a step-by-step example of building an application.
 
-[Migrate an Existing App](create-an-application/migrate-an-existing-app) provides strategies and techniques when migrating existing Flex apps to Royale, and how to switch to Royale if you already have a Javascript application.
+[Migrate an Existing App](migrate-an-existing-app) provides strategies and techniques when migrating existing Flex apps to Royale, and how to switch to Royale if you already have a Javascript application.
 
 [Security](create-an-application/security) provides more information about making sure hackers can't use your app to be malicous and about dealing with common security restrictions when your app wants to access external resources.
 

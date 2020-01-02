@@ -8,7 +8,7 @@
 layout: docpage
 title: Flex equivalents in Royale
 description: Working with Royale is _almost_, but _not quite_, like working with Flex
-permalink: /user-interface/flex-equivalents
+permalink: /migrate-an-existing-app/flex-equivalents
 ---
 
 # Flex equivalents in Royale

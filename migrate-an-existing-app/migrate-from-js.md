@@ -17,7 +17,7 @@
 layout: docpage
 title: Migrate from JavaScript
 description: Improve your JS development experience
-permalink: /create-an-application/migrate-an-existing-app/migrate-from-js
+permalink: /migrate-an-existing-app/migrate-from-js
 ---
 
 <!-- Based on material written for FlexJS by Peter Ent and modified by Tom Chiverton -->
