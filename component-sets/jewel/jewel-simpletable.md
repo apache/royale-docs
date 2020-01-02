@@ -19,6 +19,7 @@ title: Jewel SimpleTable
 description: The Jewel SimpleTable
 permalink: /component-sets/jewel/simpletable
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel SimpleTable
 
