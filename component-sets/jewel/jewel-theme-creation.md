@@ -19,6 +19,7 @@ title: Jewel Theme Creation
 description: How to make a new theme for Jewel
 permalink: /component-sets/jewel/theme-creation
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Theme Creation
 
