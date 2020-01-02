@@ -19,6 +19,7 @@ title: Jewel TabBar
 description: The Jewel TabBar
 permalink: /component-sets/jewel/tabbar
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel TabBar
 
