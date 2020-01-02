@@ -19,6 +19,7 @@ title: Basic Button
 description: The Basic Button is a commonly-used rectangular button. Users can click or tap it to take an action.
 permalink: /component-sets/basic/button
 ---
+[< Jewel Components list](component-sets/basic)
 
 # Basic Button
 
