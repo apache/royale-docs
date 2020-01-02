@@ -19,6 +19,7 @@ title: Jewel CheckBox
 description: The Jewel CheckBox consists of a selectable box that can contain a check mark and an optional label.
 permalink: /component-sets/jewel/checkbox
 ---
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel CheckBox
 
