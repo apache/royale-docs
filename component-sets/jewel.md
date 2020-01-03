@@ -85,7 +85,6 @@ If the component name is a link, you can click it to see more information about 
 |               	| HSlider                  |                                                                                                      	| 0.9.4    	| Complete |
 |               	| VSlider                  |                                                                                                      	| 0.9.6    	| Complete |
 |               	| SnackBar  	   	    |                                                                                                      	| 0.9.4    	| Complete |
-
 |               	| [TextInput](component-sets/jewel/textinput)        	| A control for single-line text field. 	| 0.9.4         	| Complete  	|
 
 ## Jewel Themes
