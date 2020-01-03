@@ -58,7 +58,7 @@ If the component name is a link, you can click it to see more information about 
 | Type          	| Name                       | Description                                                                    	| Available SDK 	| State     	|
 |------------------	|--------------------------- |--------------------------------------------------------------------------------- |------------------ |--------------	|
 | __Containers__  	| ButtonBar              	    | Container that displays a series of buttons                                                             	| 0.9.7              	| Complete         	    |
-|   	| Card]           	    | Container that surrounds other components                                                             	| 0.9.4              	|          	    |
+|   	| Card           	    | Container that surrounds other components                                                             	| 0.9.4              	|          	    |
 |                	| Grid              	    | Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	| 0.9.4    	| Complete |
 |                	| SimpleTable	    | A basic HTML table that can be declared in MXML                                                     	| 0.9.4              	| Complete      |
 |                	| Table                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	| 0.9.4              	| In Progress   |
