@@ -26,7 +26,7 @@ Sets of components and containers designed in Apache Royale.
 
 Royale provides its own component sets that support developing simple, small and fast applications for prototyping and as the basis of complete application user interfaces:
 
-- [Basic](component-sets/basic) is the most smallest, fastest and PAYG set of components possible in Royale, and is used by other sets like Jewel as its base.
+- [Basic](component-sets/basic) is the smallest, fastest and most [PAYG](features/payg) set of components possible in Royale, and is used by other sets like Jewel as its base.
 
 - [Jewel](component-sets/jewel) is focused in look and feel and new practices present in modern development like responsivness and multiplatform. Jewel support Themes and diferent kind of desktop and mobile devices.
 
