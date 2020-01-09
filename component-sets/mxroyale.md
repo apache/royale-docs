@@ -29,17 +29,33 @@ This component set includes Royale components that reproduce the functions of so
 The source code for these emulations is in the SDK at frameworks/projects/MXRoyale/src/main/royale.
 
 **Working emulations**
+This component set has working emulations in these general areas:
 
+* AdvancedDataGrid features
+* Charts
+* Collections
+* Containers
+* Controls (dozens of them!)
+* Core utilities
+* Effects
+* Events
+* Formaters
+* Graphics
+* Loggers
+* Managers
+* Messaging
+* Printing
+* RPC (Remote Procedure Call)
+* Skins
+* States
+* Styles
+* Utilities
+* Validators
 
 
 **Stubs**
-When creating a lower-level emulation component, we first want to try to get the migrating user's app to compile. So the process is to quickly create a class of the same package name and class name as the Flex component and do one of 
 
-1. Copy in Royale APIs (renaming them if necessary)
-2. Copy in the API from the flex-sdk repo (if it will work as is) or
-3. Copy in the API from the flex-sdk repo, remove all of the code and leave a TODO note
+When you browse the components in the SDK, you will encounter some that seem to have no function code. This is a _stub_. We have created it so we can get an app migrating from Flex to compile, creating a class of the same package name and class name as the Flex component but removing all of the code and leaving a TODO note
 
-If we use the third option the result is a _stub_. The application can compile but this particular component does not do anything yet. The next task will be to add the minimal code the component need sto perform its most basic functions, and put optional and special-case functions into beads a developer can add to the component strand.
-
-
+The application including this stub can compile but the component does not do anything yet. The next task will be to add the minimal code the component needs to perform its most basic functions, and put optional and special-case functions into beads a developer can add to the component strand.
 
