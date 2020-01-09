@@ -24,4 +24,22 @@ permalink: /component-sets/sparkroyale
 
 Emulations of Flex Spark components
 
-_details coming soon_
+This component set includes Royale components that reproduce the functions of some UI components many applications used in Flex. These components do not promise 100% backward compatibility and may not use the same class hierarchy as Flex.
+
+The source code for these emulations is in the SDK at frameworks/projects/SparkRoyale/src/main/royale.
+
+**Working emulations** 
+
+This component set has working emulations in these general areas:
+
+* Components (dozens of them!)
+* Events
+* Layouts
+* Primitives
+* Skins
+
+**Stubs**
+
+When you browse the components in the SDK, you will encounter some that seem to have no functioning code. This is a _stub_. We have created it so we can get an app migrating from Flex to compile, creating a class of the same package name and class name as the Flex component but removing all of the code and leaving a TODO note
+
+The application including this stub can compile but the component does not do anything yet. The next task will be to add the minimal code the component needs to perform its most basic functions, and put optional and special-case functions into beads a developer can add to the component strand.
