@@ -247,6 +247,9 @@
                     "path": "migrate-an-existing-app/flex-equivalents.md"
                 },
                 {
+                    "path": "migrate-an-existing-app/emulation.md"
+                },
+                {
                     "path": "migrate-an-existing-app/migrate-from-js.md"
                 }
             ]
