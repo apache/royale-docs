@@ -22,6 +22,24 @@ permalink: /component-sets/mxroyale
 
 # MXRoyale
 
-Emulations of Flext UIComponent
+Emulations of Flex UIComponent
 
-_details coming soon_
+This component set includes Royale components that reproduce the functions of some UI components many applications used in Flex. These components do not promise 100% backward compatibility and may not use the same class hierarchy as Flex.
+
+The source code for these emulations is in the SDK at frameworks/projects/MXRoyale/src/main/royale.
+
+**Working emulations**
+
+
+
+**Stubs**
+When creating a lower-level emulation component, we first want to try to get the migrating user's app to compile. So the process is to quickly create a class of the same package name and class name as the Flex component and do one of 
+
+1. Copy in Royale APIs (renaming them if necessary)
+2. Copy in the API from the flex-sdk repo (if it will work as is) or
+3. Copy in the API from the flex-sdk repo, remove all of the code and leave a TODO note
+
+If we use the third option the result is a _stub_. The application can compile but this particular component does not do anything yet. The next task will be to add the minimal code the component need sto perform its most basic functions, and put optional and special-case functions into beads a developer can add to the component strand.
+
+
+
