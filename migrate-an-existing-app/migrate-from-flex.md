@@ -39,7 +39,7 @@ There are areas in your code base that will have to change. One is anywhere that
 
 To determine where you may have used Flash APIs, look for "import flash" in your code. If you comment out all the "import flash" lines and re-compile, the compiler will show you every line that uses a Flash API.
 
-Royale is creating a set of **emulation** components that will eventually deliver most, if not all, of the Flex APIs. These components do not promise 100% backward compatibility. Nor do they promise the same class hierarchy as Flex. They just try to approximate what Flex did.
+Royale is creating a set of [emulation](/migrate-an-existing-app/emulation) components that will eventually deliver most, if not all, of the Flex APIs. These components do not promise 100% backward compatibility. Nor do they promise the same class hierarchy as Flex. They just try to approximate what Flex did.
 
 Some popular Flash APIs have been added to the Royale emulation of UIComponent, so review the documentation for UIComponent to see if it has a replacement for a Flash API your old app uses. If a replacement doesn't exist, it either hasn't been implemented yet in the emulation components or we have a good reason why it shouldn't be. Ask on the users@royale.apache.org mailing list if you want to know more about an emulation for a particular API.
 
