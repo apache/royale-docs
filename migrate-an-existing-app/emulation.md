@@ -19,7 +19,10 @@ Apache Royale offers a growing list of components that let you build your applic
 
 Royale is creating a set of **emulation** components to replace the Flex components that depended on Flash features. These components do not promise 100% backward compatibility and may not use the same class hierarchy as Flex. But they do approximate what the equivalent components in Flex did.
 
-There are two sets of emulation components: _MXRoyale_ contains emulations of UIComponent and other MX components. _SparkRoyale_ will contain emulation of Spark components.
+There are two emulation [component sets](/component-sets):
+
+* **MXRoyale** contains emulations of UIComponent and other MX components.
+* **SparkRoyale** contains emulations of Spark components.
 
 The Royale team typically discovers the need to emulate a component when a project or company starts to migrate an existing Flex application. We have developed guides to help developers create emulations that they need for their own applications, and that they can share with the community.
 
