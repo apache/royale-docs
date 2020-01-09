@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Component Sets
-description: Sets of components and containers designed in Apache Royale.
+description: Sets of components and containers designed in Apache Royale
 permalink: /component-sets
 ---
 
