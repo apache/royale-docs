@@ -23,3 +23,5 @@ permalink: /libraries/spectrum-royale
 # Spectrum Royale
 
 Using the Adobe Spectrum system with Royale
+
+_demonstration with downloadable code at https://unhurdle.github.io/spectrum-royale_
