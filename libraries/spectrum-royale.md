@@ -17,7 +17,7 @@
 layout: docpage
 title: Spectrum Royale
 description: Using the Adobe Spectrum system with Royale
-permalink: /libraries/crux
+permalink: /libraries/spectrum-royale
 ---
 
 # Spectrum Royale
