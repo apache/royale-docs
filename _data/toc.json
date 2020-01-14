@@ -164,6 +164,12 @@
             "children": [
                 {
                     "path": "libraries/crux.md"
+                },
+                                {
+                    "path": "libraries/mdl-royale.md"
+                },
+                                {
+                    "path": "libraries/spectrum-royale.md"
                 }
             ]
         },
