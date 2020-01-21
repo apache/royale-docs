@@ -23,20 +23,32 @@ permalink: /user-interface/alerts
 
 Send messages to your app users
 
-When a user is working with your application, you may need to get their attention to ask them a question, remind them of something they need to do, or update them about some app process that just completed (or broke!). Apache Royale provides three components that let you get your message out, and one of them lets your app user respond.
+When a user is working with your application, you may need to get their attention to ask them a question, remind them of something they need to do, or update them about some app process that just completed (or broke!). Apache Royale provides several components that let you get your message out, and one of them lets your app user respond.
 
-## Alerts
+## Alert
 
-_Information about the Alerts component will appear here_
+_Information about the Alert component will appear here_
 
 Read a [tutorial about creating an Alert](https://royale.apache.org/using-jewel-alert-control/){:target="_blank")
 
-## Popups
+## Banner
+
+_Information about the banner component will appear here_
+
+## Popup
 
 _Information about the Popups component will appear here_
 
 ## Snackbar
 _Information about the Snackbar component will appear here_
+
+## Toast
+
+_Information about the toast feature will appear here_
+
+## Tooltip
+
+_Information about the tooltip component will appear here_
 
 ## Examples
 [Tour de Jewel](https://royale.apache.org/tourdejewel/#){:target="_Blank"} is not just an excellent resource for not seeing what various Royale components can do. You can also review the code for each sample online, or download it so you can study it in detail and adapt it to your project.
