@@ -39,6 +39,10 @@ _Information about the banner component will appear here_
 
 _Information about the Popups component will appear here_
 
+## Progress bar
+
+_Information about progress bars goes here._
+
 ## Snackbar
 _Information about the Snackbar component will appear here_
 
