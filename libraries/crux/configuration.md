@@ -28,8 +28,8 @@ Page Contents:
 
 * [Configuration Overview](libraries/crux/configuration.html#overview)
 <!-- * [Logging] -->
-* [setUpEventType, setUpEventPhase](libraries/crux/configuration.html#setup-event)
-* [tearDownEventType, tearDownEventPhase](libraries/crux/configuration.html#tear-down)
+<!-- * [setUpEventType, setUpEventPhase](libraries/crux/configuration.html#setup-event)
+* [tearDownEventType, tearDownEventPhase](libraries/crux/configuration.html#tear-down) -->
 * [Default Dispatcher](libraries/crux/configuration.html#default-dispatcher)
 
 ## Configuration Overview {#overview}
@@ -44,10 +44,6 @@ You configure each Crux instance using the `CruxConfig` class. It allows you to 
  
     <crux:config>
         <crux:CruxConfig
-            setUpEventType="{ Event.ADDED_TO_STAGE }"
-            setUpEventPhase="{ EventPhase.CAPTURING_PHASE }"
-            tearDownEventType="{ Event.REMOVED_FROM_STAGE }"
-            tearDownEventPhase="{ EventPhase.CAPTURING_PHASE }"
             eventPackages="com.foo.event.*, org.bar.event.*"
             viewPackages="com.foo.view.*, org.bar.view.*"
             defaultFaultHandler="handleUnhandledFaults"
@@ -64,13 +60,15 @@ You configure each Crux instance using the `CruxConfig` class. It allows you to 
 
 As you can see above, Crux includes a basic logging target called SwizTraceTarget to trace debugging information to the console. Due to the way the MXMLC compiler works, it was not possible to use the built-in Royale logging target(s), because it increases the size of the Crux swc by an unacceptable amount. If necessary, you can extend the AbstractSwizLoggingTarget to customize the output. -->
 
-## setUpEventType, setUpEventPhase {#setup-event}
+<!-- ## setUpEventType, setUpEventPhase {#setup-event}
 
-These properties configure the listener that Crux will use to trigger the set up of views (assuming they are eligible) to inject dependencies, create event handlers, etc. The default is a capture phase listener (to catch all views regardless of their place in the display list hierarchy) for the `Event.ADDED_TO_STAGE` event.<!-- , with a priority of 50.  -->
+These properties configure the listener that Crux will use to trigger the set up of views (assuming they are eligible) to inject dependencies, create event handlers, etc. The default is a capture phase listener (to catch all views regardless of their place in the display list hierarchy) for the `Event.ADDED_TO_STAGE` event. -->
+<!-- , with a priority of 50.  -->
 
-## tearDownEventType, tearDownEventPhase {#tear-down}
+<!-- ## tearDownEventType, tearDownEventPhase {#tear-down}
 
-These properties configure the listener that Crux will use to trigger the tearing down of views to clean up injected dependencies, remove event handlers, etc. The default is a capture phase listener for the `Event.REMOVED_FROM_STAGE` event.<!-- , with a priority of 50. -->
+These properties configure the listener that Crux will use to trigger the tearing down of views to clean up injected dependencies, remove event handlers, etc. The default is a capture phase listener for the `Event.REMOVED_FROM_STAGE` event. -->
+<!-- , with a priority of 50. -->
 
 ## Default Dispatcher {#default-dispatcher}
 
