@@ -170,6 +170,9 @@
                         },
                         {
                             "path": "libraries/crux/configuration.md"
+                        },
+                        {
+                            "path": "libraries/crux/ioc-container.md"
                         }
                     ]
                 },

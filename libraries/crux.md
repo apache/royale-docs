@@ -35,6 +35,7 @@ Start here:
 
 - [Quick Start](libraries/crux/quickstart)
 - [Configuration](libraries/crux/configuration)
+- [IoC Container](libraries/crux/ioc-container)
 
 for your Apache Royale project.
 
