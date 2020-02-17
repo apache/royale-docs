@@ -167,6 +167,9 @@
                     "children": [
                         {
                             "path": "libraries/crux/quickstart.md"
+                        },
+                        {
+                            "path": "libraries/crux/configuration.md"
                         }
                     ]
                 },

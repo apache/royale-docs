@@ -34,6 +34,7 @@ Apache Royale Crux provides:
 Start here:
 
 - [Quick Start](libraries/crux/quickstart)
+- [Configuration](libraries/crux/configuration)
 
 for your Apache Royale project.
 
