@@ -26,11 +26,15 @@ An Apache Royale library based on Swiz
 
 Apache Royale Crux provides:
 
- - [Inversion of Control (IoC) and Dependency Injection (DI)](https://www.codeproject.com/articles/592372/dependency-injection-di-vs-inversion-of-control-io){:target='_blank'} with metadata
- - [Event handling](https://en.wikipedia.org/wiki/Event_(computing)){:target='_blank'} with metadata
- - Simple life cycle for asynchronous remote method invocations
- - Decoupling from application code
- 
+- [Inversion of Control (IoC) and Dependency Injection (DI)](https://www.codeproject.com/articles/592372/dependency-injection-di-vs-inversion-of-control-io){:target='_blank'} with metadata
+- [Event handling](https://en.wikipedia.org/wiki/Event_(computing)){:target='_blank'} with metadata
+- Simple life cycle for asynchronous remote method invocations
+- Decoupling from application code
+
+Start here:
+
+- [Quick Start](libraries/crux/quickstart)
+
 for your Apache Royale project.
 
 *Documentation will appear here as soon as it is available. You can check the official Swiz Framework docs in the meanwhile [here](https://swizframework.jira.com/wiki/spaces/SWIZ/overview){:target='_blank'}. Think that documentation was created for the original Flex framework so it's not 100% accurate for Royale.*

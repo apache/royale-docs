@@ -163,12 +163,17 @@
             "path": "frameworks-and-libraries.md",
             "children": [
                 {
-                    "path": "libraries/crux.md"
+                    "path": "libraries/crux.md",
+                    "children": [
+                        {
+                            "path": "libraries/crux/quickstart.md"
+                        }
+                    ]
                 },
-                                {
+                {
                     "path": "libraries/mdl-royale.md"
                 },
-                                {
+                {
                     "path": "libraries/spectrum-royale.md"
                 }
             ]
