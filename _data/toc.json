@@ -176,6 +176,9 @@
                         },
                         {
                             "path": "libraries/crux/dependency-injection.md"
+                        },
+                        {
+                            "path": "libraries/crux/bean-life-cycle-management.md"
                         }
                     ]
                 },

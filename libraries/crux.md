@@ -48,7 +48,7 @@ In contrast to other major frameworks for Royale, Crux:
   - [IoC Container](libraries/crux/ioc-container)
   - [Dependency Injection](libraries/crux/dependency-injection)
   - View Mediator and ViewNavigator (check if we support this on Royale)
-  - Bean Life Cycle Management
+  - [Bean Life Cycle Management](libraries/crux/bean-life-cycle-management)
   - Event Handling
   - Service Layer
   - Client Persistence
