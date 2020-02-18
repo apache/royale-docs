@@ -27,9 +27,10 @@ Learn how to configure Crux
 Page Contents:
 
 * [Configuration Overview](libraries/crux/configuration.html#overview)
-<!-- * [Logging] -->
-<!-- * [setUpEventType, setUpEventPhase](libraries/crux/configuration.html#setup-event)
-* [tearDownEventType, tearDownEventPhase](libraries/crux/configuration.html#tear-down) -->
+<!-- Logging 
+setUpEventType, setUpEventPhase libraries/crux/configuration.html#setup-event)
+tearDownEventType, tearDownEventPhase libraries/crux/configuration.html#tear-down
+-->
 * [Default Dispatcher](libraries/crux/configuration.html#default-dispatcher)
 
 ## Configuration Overview {#overview}

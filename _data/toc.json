@@ -173,6 +173,9 @@
                         },
                         {
                             "path": "libraries/crux/ioc-container.md"
+                        },
+                        {
+                            "path": "libraries/crux/dependency-injection.md"
                         }
                     ]
                 },

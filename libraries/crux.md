@@ -36,6 +36,7 @@ Start here:
 - [Quick Start](libraries/crux/quickstart)
 - [Configuration](libraries/crux/configuration)
 - [IoC Container](libraries/crux/ioc-container)
+- [Dependency Injection](libraries/crux/dependency-injection)
 
 for your Apache Royale project.
 
