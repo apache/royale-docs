@@ -30,10 +30,10 @@ Page Contents:
 - [Handling Events with [EventHandler]](libraries/crux/event-handling.html#eventhandler)
   - [Event Handling Using Class and Constant Names](libraries/crux/event-handling.html#eventhandler-class-const-names)
   - [Event Handling Using Event Type Value](libraries/crux/event-handling.html#eventhandler-event-type-value)
-- [[EventHandler] tag options](libraries/crux/event-handling.html#tag-options)
-  - [properties attribute](libraries/crux/event-handling.html#properties-attribute)
-  - [Other attributes](libraries/crux/event-handling.html#other-attributes)
-- [Handling Multiple Events from a Single Method](libraries/crux/event-handling.html#multiple-events-single-method)
+  - [[EventHandler] tag options](libraries/crux/event-handling.html#tag-options)
+    - [properties attribute](libraries/crux/event-handling.html#properties-attribute)
+    - [Other attributes](libraries/crux/event-handling.html#other-attributes)
+  - [Handling Multiple Events from a Single Method](libraries/crux/event-handling.html#multiple-events-single-method)
 
 Crux offers features to assist with both the dispatching and handling of events within an application. The following sections explain these features in detail.
 
@@ -103,7 +103,7 @@ public function handleAddUserEvent( event:UserEvent ):void
 }
 ```
 
-## [EventHandler] tag options {#tag-options}
+### [EventHandler] tag options {#tag-options}
 
 The examples above show methods that take the target event as an argument, but in some cases you don't need the event passed to your method. Crux will intelligently examine the signature of your method and call it without parameters if that is how it's defined.
 
@@ -115,7 +115,7 @@ public function handleAddUserEvent():void
 }
 ```
 
-### properties attribute {#properties-attribute}
+#### properties attribute {#properties-attribute}
 
 You can also specify a comma delimited list of property names in the tag to have the matching properties pulled off of the event and passed into your method. This can be useful for allowing methods to be defined in a more semantic manner to mask the fact that they are event listeners.
 
@@ -129,11 +129,11 @@ public function addUser( user:User ):void
 }
 ```
 
-### Other attributes {#other-attributes}
+#### Other attributes {#other-attributes}
 
 Since `[EventHandler]` causes Crux to create an event listener behind the scenes, it also supports some related attributes. `useCapture`, `stopPropagation` and `stopImmediatePropagation` are all supported, and Crux will handle their implementation for you. `useCapture` map directly to the `useCapture` parameter of the resulting listener. Setting `stopPropagation` or `stopImmediatePropagation` to `true` will cause Crux to automatically call the corresponding methods on the event after your method executes.
 
-## Handling Multiple Events from a Single Method {#multiple-events-single-method}
+### Handling Multiple Events from a Single Method {#multiple-events-single-method}
 
 It is possible to handle multiple events using a single method:
 
