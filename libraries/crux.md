@@ -49,7 +49,7 @@ In contrast to other major frameworks for Royale, Crux:
   - [Dependency Injection](libraries/crux/dependency-injection)
   - View Mediator and ViewNavigator (check if we support this on Royale)
   - [Bean Life Cycle Management](libraries/crux/bean-life-cycle-management)
-  - Event Handling
+  - [Event Handling](libraries/crux/event-handling)
   - Service Layer
   - Client Persistence
   - Interfaces
@@ -57,7 +57,7 @@ In contrast to other major frameworks for Royale, Crux:
   - AutowiredTestCase
   - Chaining API
   - Custom Metadata Processors
-  - Module Support
+  - [Module support](libraries/crux/module-support)
   - Support for the Command pattern
   - Presentation Model
 - **Examples**
