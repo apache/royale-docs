@@ -22,22 +22,52 @@ permalink: /libraries/crux
 
 # Crux
 
-An Apache Royale library based on Swiz
+An Apache Royale library based on Swiz Framework
 
 Apache Royale Crux provides:
 
-- [Inversion of Control (IoC) and Dependency Injection (DI)](https://www.codeproject.com/articles/592372/dependency-injection-di-vs-inversion-of-control-io){:target='_blank'} with metadata
-- [Event handling](https://en.wikipedia.org/wiki/Event_(computing)){:target='_blank'} with metadata
+- [Inversion of Control (IoC) and Dependency Injection (DI)](https://www.codeproject.com/articles/592372/dependency-injection-di-vs-inversion-of-control-io){:target='_blank'} with **Metadata**
+- [Event handling](https://en.wikipedia.org/wiki/Event_(computing)){:target='_blank'} with **Metadata**
 - Simple life cycle for asynchronous remote method invocations
 - Decoupling from application code
 
-Start here:
+In contrast to other major frameworks for Royale, Crux:
 
-- [Quick Start](libraries/crux/quickstart)
-- [Configuration](libraries/crux/configuration)
-- [IoC Container](libraries/crux/ioc-container)
-- [Dependency Injection](libraries/crux/dependency-injection)
+- Imposes no [JEE patterns](https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition){:target='_blank'} on your code
+- No repetitive folder layouts
+- No boilerplate code on your development
+- Does not require you to extend framework-specific classes
 
-for your Apache Royale project.
+> Crux represents best practices learned from the top front end developers at some of the best consulting firms in the industry, enabling Crux to be simple, lightweight, and extremely productive.
 
-*Documentation will appear here as soon as it is available. You can check the official Swiz Framework docs in the meanwhile [here](https://swizframework.jira.com/wiki/spaces/SWIZ/overview){:target='_blank'}. Think that documentation was created for the original Flex framework so it's not 100% accurate for Royale.*
+## Start here:
+
+- **User Guide**
+  - [Quick Start](libraries/crux/quickstart)
+  - [Configuration](libraries/crux/configuration)
+  - [IoC Container](libraries/crux/ioc-container)
+  - [Dependency Injection](libraries/crux/dependency-injection)
+  - View Mediator and ViewNavigator (check if we support this on Royale)
+  - Bean Life Cycle Management
+  - Event Handling
+  - Service Layer
+  - Client Persistence
+  - Interfaces
+- **Advanced Topics**
+  - AutowiredTestCase
+  - Chaining API
+  - Custom Metadata Processors
+  - Module Support
+  - Support for the Command pattern
+  - Presentation Model
+- **Examples**
+  - [CruxQuickStart](https://github.com/apache/royale-asjs/tree/develop/examples/crux/CruxQuickStart){:target='_blank'}
+    - This is the example showcased in the [Quick Start](libraries/crux/quickstart) above. It uses Crux and the [Jewel UI Set](component-sets/jewel).
+  - [CruxQuickStartBasic](https://github.com/apache/royale-asjs/tree/develop/examples/crux/CruxQuickStartBasic){:target='_blank'}
+    - This is the same example than _CruxQuickStart_ but using [Basic](component-sets/basic) intead of [Jewel](component-sets/jewel).
+  - [CruxGitHubCommitLogViewer](https://github.com/apache/royale-asjs/tree/develop/examples/crux/CruxGitHubCommitLogViewer){:target='_blank'}
+    - This is the same tutorial [here](create-an-application/application-tutorial), but refactored to use Crux. 
+  - [TodoMVC](https://github.com/apache/royale-asjs/tree/develop/examples/crux/todomvc-jewel-crux){:target='_blank'}
+    -  This is the [TodoMVC Application example](https://github.com/apache/royale-asjs/tree/develop/examples/jewel/todomvc) inspired in the [todomv.com](http://todomvc.com){:target='_blank'} site, done with [Jewel](component-sets/jewel), but refactored to use Crux.
+
+> This documentation is a migration from the official Swiz Framework docs [here](https://swizframework.jira.com/wiki/spaces/SWIZ/overview){:target='_blank'}. The original documentation was created for the original Flex framework so it's not 100% accurate for Royale.
