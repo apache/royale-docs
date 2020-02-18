@@ -50,9 +50,9 @@ In contrast to other major frameworks for Royale, Crux:
   - View Mediator and ViewNavigator (check if we support this on Royale)
   - [Bean Life Cycle Management](libraries/crux/bean-life-cycle-management)
   - [Event Handling](libraries/crux/event-handling)
-  - Service Layer
-  - Client Persistence
-  - Interfaces
+  - [Service Layer](libraries/crux/service-layer)
+  - [Client Persistence](libraries/crux/client-persistence)
+  - [Interfaces](libraries/crux/interfaces)
 - **Advanced Topics**
   - AutowiredTestCase
   - Chaining API
