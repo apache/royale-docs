@@ -24,7 +24,7 @@ permalink: /create-an-application/application-tutorial/routing
 
 About Routing
 
-_This information is not yet available_
+_This tutorial step is not yet available. However, information about routing is <a href="https://apache.github.io/royale-docs/features/routing">here</a>.
 
 
 
