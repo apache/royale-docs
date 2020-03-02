@@ -87,6 +87,8 @@
                 {
                     "path": "features/view-states.md"
                 },
+                {   "path": "features/routing.md"
+                },
                 {
                     "path": "features/item-renderers.md"
                 },
