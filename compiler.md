@@ -24,17 +24,17 @@ permalink: /compiler
 
 Turn your source code into one or more compiled outputs
 
-Royale provide a compiler and a command-line debugger to turn your source code into the required output. The compiler takes [AS3](features/as3) & [MXML](features/mxml) (and CSS) as inputs. 
+Royale provides a compiler (some call it a transpiler or cross-compiler) and a command-line debugger to turn your source code into compiled output you can share with users. The compiler takes [AS3](features/as3), [MXML](features/mxml), and CSS as inputs. 
 
-The main output of the compiler is **JavaScript** (some call it a transpiler or cross-compiler). The compiler can also output **SWFs** for the **Adobe Flash** runtimes. There is some initial work on **Web Assembly** output.
+The main output of the compiler is **JavaScript**. The compiler can also output **SWF**s for the **Adobe Flash** and **AIR** runtimes. There is some initial work on **Web Assembly** output.
 
-> The compiler has been designed to make it relatively straightforward to add additional output formats.
+> It is relatively straightforward to add additional output formats to the compiler.
 
-The code is based on the ActionScript Compiler 2.0 donated to Apache by Adobe. The SWF output was pretty much working at the time of donation. The JavaScript output code is a new implementation by Apache committers
+The code is based on the <a href="https://www.adobe.com/content/dam/acom/en/devnet/air/pdfs/adobe-actionscript-compiler-20-release-notes.pdf" target="_blank">ActionScript Compiler 2.0</a> that Adobe donated to Apache. The SWF output was pretty much working at the time of donation. Volunteers working on the Apache Flex and Royale projects have created the JavaScript output code.
 
 ## User Guide
 
-The Royale Compiler does many things besides compile **MXML** and **ActionScript** into **JavaScript** and/or **SWF**. But if that's all you want to do, you can use the compiler with **Apache Maven**, **Apache Ant**, several **IDEs**, **NPM** and the command-line. Below are some pointers to getting started:
+The Royale Compiler does many things besides compile **MXML** and **ActionScript** into **JavaScript** and/or **SWF**. But if that's all you want to do, you can use the compiler with <a href="https://maven.apache.org/" target="_blank">Apache Maven</a>, <a href="https://ant.apache.org/" target="_blank">Apache Ant</a>, several [IDEs](development-tools.html), <a href="https://www.npmjs.com/" target="_blank">npm</a> and through the command-line. Below are some pointers to getting started:
 
 ### Apache Maven
 
