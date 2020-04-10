@@ -16,13 +16,13 @@
 
 layout: docpage
 title: Compiler
-description: Refactoring code to remove circular dependencies
+description: Using the Royale compiler to create release artifacts
 permalink: /compiler
 ---
 
 # Apache Royale Compiler
 
-Turn your source code into one or more compiled outputs
+Turn your source code into compiled output
 
 Royale provides a compiler (some call it a transpiler or cross-compiler) and a command-line debugger to turn your source code into compiled output you can share with users. The compiler takes [AS3](features/as3), [MXML](features/mxml), and CSS as inputs. 
 
@@ -34,7 +34,7 @@ The code is based on the <a href="https://www.adobe.com/content/dam/acom/en/devn
 
 ## User Guide
 
-The Royale Compiler does many things besides compile **MXML** and **ActionScript** into **JavaScript** and/or **SWF**. But if that's all you want to do, you can use the compiler with <a href="https://maven.apache.org/" target="_blank">Apache Maven</a>, <a href="https://ant.apache.org/" target="_blank">Apache Ant</a>, several [IDEs](development-tools.html), <a href="https://www.npmjs.com/" target="_blank">npm</a> and through the command-line. Below are some pointers to getting started:
+The Royale Compiler does many things besides compile **MXML** and **ActionScript** into **JavaScript** and/or **SWF**. But if that's all you want to do, you can use the compiler with <a href="https://maven.apache.org/" target="_blank">Apache Maven</a>, <a href="https://ant.apache.org/" target="_blank">Apache Ant</a>, several [IDEs](get-started/development-tools), <a href="https://www.npmjs.com/" target="_blank">npm</a> and through the command-line. Below are some pointers to getting started:
 
 ### Apache Maven
 
@@ -58,8 +58,8 @@ The `js/bin` folder should contain `mxmlc` and `compc` scripts that will launch 
 
 ## Compiler Options
 
-Royale provide several compiler options to customize the use. You can check the list of compiler options here:
+Royale provides several compiler options to customize the use. You can check the list of compiler options here:
 
 - [Compiler Options](compiler/compiler-options)
 
-> To read about how to contribute to Apache Royale Compiler use the following [Apache Royale Compiler Developer Guide](https://github.com/apache/royale-compiler/wiki/Developer-Guide) available on the Apache Royale Compiler Wiki.
+> Read about <a href="https://github.com/apache/royale-compiler/wiki/Developer-Guide" target="_blank">how to contribute to the Apache Royale Compiler</a>.
