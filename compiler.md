@@ -46,13 +46,13 @@ In an Apache Royale distribution, there is a `compiler-royaleTasks.jar` in the `
 
 ### IDEs
 
-Consult your IDE documentation for how to launch the Royale Compiler. You can generate a IDE distribution from Apache Maven and/or Apache ANT.
+Consult your IDE documentation for how to launch the Royale Compiler. You can generate an IDE distribution from Apache Maven and/or Apache ANT.
 
 ### NPM
 
-You should be able to run `mxmlc` or `compc` from the command-line after installing Royale via NPM. Use `mxmlc --help` to see the latest list of options.
+You should be able to run `mxmlc` or `compc` from the command line after installing Royale via npm. Use `mxmlc --help` to see the latest list of options.
 
-### Command-line
+### Command line
 
 The `js/bin` folder should contain `mxmlc` and `compc` scripts that will launch the compiler. Use `mxmlc --help` to see the latest list of options.
 
