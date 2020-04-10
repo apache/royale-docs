@@ -205,6 +205,14 @@
             ]
         },
         {
+            "path": "compiler.md",
+            "children": [
+                {
+                    "path": "compiler/compiler-options.md"
+                }
+            ]
+        },
+        {
             "path": "create-an-application.md",
             "children": [
                 {
