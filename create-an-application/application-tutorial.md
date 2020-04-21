@@ -73,3 +73,6 @@ The remaining segments will discuss further improvements needed to add additiona
 14. [Routing](create-an-application/application-tutorial/routing) This segment shows how to map URL parameters to different initial values in the application, and _vice versa_.
 
 This is going to be fun!
+
+{:align="center"}
+\| [Next Page](create-an-application/application-tutorial/main)
