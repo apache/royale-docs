@@ -46,4 +46,4 @@ means that the `js` prefix is mapped to the Express set of [components](user-int
 As mentioned in [Application structure](create-an-application/application-structure), there is more than one pattern for creating applications.  This example will use the [MVC pattern](https://en.wikipedia.org/wiki/Model–view–controller){:target='_blank'}.  So, the next step is to create the Model. 
 
 {:align="center"}
-\| [Next Page](create-an-application/application-tutorial/data-model)
+[Previous Page](create-an-application/application-tutorial) \| [Next Page](create-an-application/application-tutorial/data-model)
