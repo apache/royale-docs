@@ -24,7 +24,7 @@ permalink: /create-an-application/application-tutorial
 
 A complete tutorial on how to build a simple Royale application
 
-This tutorial will take you through building an app that displays the commit logs for the Royale project by connecting to the [GitHub](https://github.com){:target='_blank'} servers.
+This tutorial will take you through building an app that displays the commit logs for the Apache Royale project by connecting to its [GitHub](https://github.com){:target='_blank'} repository on the Apache servers.
 
 At the end of this tutorial we'll get the following:
 
@@ -32,7 +32,7 @@ At the end of this tutorial we'll get the following:
 width="100%" height="350" 
 src="assets/application-tutorial/index.html"></iframe>
 
-> This example uses [Basic](component-sets/basic) components to build the interface. This components are build with very basic look and feel. For a more advanced set with look and feel you should use instead [Jewel](component-sets/jewel) or **MDL** sets
+> This example uses [Basic](component-sets/basic) components to build the interface. These components have a very, well, basic look and feel. For a more advanced look and feel for your application you try using the [Jewel](component-sets/jewel) or **MDL** sets.
 
 The steps in this tutorial start with a blank file and walk you through what to add and why. Or you can get the complete source [here](https://github.com/apache/royale-asjs/blob/develop/examples/express/GitHubCommitLogViewer){:target='_blank'}.
 
