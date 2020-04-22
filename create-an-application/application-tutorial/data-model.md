@@ -116,7 +116,9 @@ And, of course, we have to tell the service to go fetch the configuration file, 
 initialize="configurator.send()"
 ```
 
-Now if you build and run this, nothing will show up. So now let's go create the view (user interface).
+If you build and run the application at this point, you will get a series of errors because. We have written the code to get the data we need, but we have not yet given it a place to put the data: the user interface or _view_.
+
+Let's create that now.
 
 {:align="center"}
 [Previous Page](create-an-application/application-tutorial/main) \| [Next Page](create-an-application/application-tutorial/view)
