@@ -26,6 +26,8 @@ The declarative XML-based user interface markup language
 
 MXML is an XML language that you use, when building an application in Royale, to lay out user-interface components.
 
+Most Royale applications have an MXML file as the main file in the app. It provides the structure of the application, and generally imports resources and functions that the app needs.
+
 ```mxml
 <?xml version="1.0" encoding="utf-8"?>
 <j:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
