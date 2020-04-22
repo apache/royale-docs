@@ -484,10 +484,13 @@
 .algolia-autocomplete
     // On a max-width of 768px
     @media (max-width: 768px)
+        
+        width: 100% !important
+
         .ds-dropdown-menu 
-            max-width: calc(100vw - 32px) !important
-            min-width: calc(100vw - 32px) !important      
-            width: calc(100vw - 32px) !important
+            max-width: 100% !important
+            min-width: 0 !important     
+            width: 100% !important
             margin-left: 16px !important
 
         .algolia-docsearch-suggestion--content
