@@ -28,7 +28,7 @@ MXML is an XML-based language introduced in 2004 by Macromedia. In Royale you us
 
 Most Royale applications have an MXML file as the main file in the app. It provides the structure of the application. A simple main MXML file might look like this:
 
-```mxml
+```
 <?xml version="1.0" encoding="utf-8"?>
 <j:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
         xmlns:j="library://ns.apache.org/royale/jewel" 
@@ -57,3 +57,19 @@ Most Royale applications have an MXML file as the main file in the app. It provi
 ## What goes where ##
 
 The more complex the application is, the more things the main MXML file needs to be able to support and do. Typically, a developer organizes the file so it is easy to locate things in it. Some elements must be inside certain tags, and for others you have a lot of flexibility. However, if you are working in a team, it is good to have an agreement about what goes where so nobody wastes time or adds in code that already exists somewhere else in the file.
+
+### What your file _must_ have ###
+
+Your main MXML file has two essential elements:
+
+**the header**: In the example above, the header tag `<?xml version="1.0" encoding="utf-8"?>` has two parts:
+
+  - **XML declaration**: this tells the compiler what version of XML the file is using. 1.0 is the default; but since other versions exist, you have to specify it.
+  - **The encoding**: this tells the compiler what text encoding to use to translate the bits of code into letters and numbers to displahy in the UI. The default is `utf-8`, but some applications use different encodings that suit their specific needs.
+  
+  
+**The main tag**: This tag includes everything else on the page. For a full application, it usually starts `<js:Application...` and ends as the last line of the file: `</js:Application>`.
+
+You write the rest of the page's contents within this tag, and the tag's attributes are very important for configuring and launching the application
+
+### What your file _may_ have ###
