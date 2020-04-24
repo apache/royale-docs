@@ -30,6 +30,13 @@ Most Royale applications have an MXML file as the main file in the app. It provi
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
+
+</-- 
+   A comments field that could include a copyright statement, license notice, author notice, 
+   a statement of the purpose of the file, and 
+   other information useful for future file maintenance.
+-->
+
 <j:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
         xmlns:j="library://ns.apache.org/royale/jewel" 
         xmlns:html="library://ns.apache.org/royale/html">
@@ -65,11 +72,34 @@ Your main MXML file has two essential elements:
 **the header**: In the example above, the header tag `<?xml version="1.0" encoding="utf-8"?>` has two parts:
 
   - **XML declaration**: this tells the compiler what version of XML the file is using. 1.0 is the default; but since other versions exist, you have to specify it.
-  - **The encoding**: this tells the compiler what text encoding to use to translate the bits of code into letters and numbers to displahy in the UI. The default is `utf-8`, but some applications use different encodings that suit their specific needs.
+  - **The encoding**: this tells the compiler what text encoding to use to translate the bits of code into letters and numbers to display in the UI. The default is `utf-8`, but some applications use different encodings that suit their specific needs.
   
   
-**The main tag**: This tag includes everything else on the page. For a full application, it usually starts `<js:Application...` and ends as the last line of the file: `</js:Application>`.
+**The main tag**: This tag includes everything else on the page. For a full application, it usually starts `<js:Application...` and ends as the last line of the file: `</js:Application>`. In the example above, which is for a module that could be included in a larger application, the main tag defines a group: `<j:Group...` and closes at the end of the file: `</J:Group>`.
 
-You write the rest of the page's contents within this tag, and the tag's attributes are very important for configuring and launching the application
+The main tag's **attributes** are very important for configuring and launching the application. The attributes can include:
+
+  - the page's name, which may appear in a header bar or in metadata the browser displays.
+  - a declaration of **namespaces**. These are the location of resources you may want to use in the app. Declaring their namespaces means you can deploy a control, container, or some other neat thing from that namespace without much struggle. In the example above, because we declare the `xmlns:j="library://ns.apache.org/royale/jewel` in the main tag, we can later deploy buttons from that namespace (like `<j:Button text="Apache"/>`) very simply.
+  - simple property values like the width and height of the app or module.
+  - if the app or module implements or inherits from some other app or module.
+  - what should happen as soon as the app is ready (something like `initialize="addEventListener('dataReady', dataReadyHandler);configurator.send()"`)
+
+You write what this file does, how it does it, and what the user sees as a result, after this main tag and before its closing tag at the end of the file. See the "What your file _may_ have" section, below.
+
+### What your file _should_ have ###
+
+It is good to add, just under the XML declaration line, a **comments block** that includes a copyright statement, license notice, author notice, a statement of the purpose of the file, and other information useful for future file maintenance. The file will compile and run just fine without such a statement; but if you are building code others will see, try to maintain, and possibly want to reuse, you should include it.
 
 ### What your file _may_ have ###
+
+A lot happens inside the main tag, and things can get complicated. The following elements to not all have to appear in every app or module, and do not have to appear in a specific order for the app to compile and run. But it's good to have a pattern you follow, especially if you are working as part of a team, so you can avoid wasting time trying to find something, forgetting to add something, or adding it twice.
+
+**Declarations**: Define things like effects, validators, and formatters, and send and request data, inside the `<fx:Declarations>...</fx:Declarations>` tag.
+
+**Metadata**: Add additional information to classes, properties, or methods to use at runtime inside the `<fx:Metadata>...</fx:Metadata>` tag. <a href="https://apache.github.io/royale-docs/features/as3/metadata">Learn more</a>.
+
+**Functions, property definitions, and other features**: Declare properties, instantiate components, and write functions inside the `<fx:Script>...</fx:Script>` tag. In the example above, we declare an event handler, a function that does things when you click one of the buttons in the user interface.
+
+
+
