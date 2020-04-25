@@ -121,7 +121,7 @@ A lot happens inside the main tag, and things can get complicated. The following
 
 **Metadata**: Add additional information to classes, properties, or methods to use at runtime inside the `<fx:Metadata>...</fx:Metadata>` tag. <a href="https://apache.github.io/royale-docs/features/as3/metadata">Learn more</a>.
 
-**Functions, property definitions, and other features**: Declare properties, instantiate components, and write functions inside the `<fx:Script>...</fx:Script>` tag. In the example above, we declare an event handler, a function that does things when you click one of the buttons in the user interface.
+**Functions, property definitions, and other features**: Declare properties, instantiate components, and write functions inside the `<fx:Script>...</fx:Script>` tag. In the component example above, we declare an _event handler_, a function that does things when you click one of the buttons in the user interface.
 
 
 
