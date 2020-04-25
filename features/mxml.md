@@ -91,7 +91,7 @@ The more complex the application is, the more things the main MXML file needs to
 
 Your main MXML file has two essential elements:
 
-**the header**: In the example above, the header tag `<?xml version="1.0" encoding="utf-8"?>` has two parts:
+**The header**: In the example above, the header tag `<?xml version="1.0" encoding="utf-8"?>` has two parts:
 
   - **XML declaration**: this tells the compiler what version of XML the file is using. 1.0 is the default; but since other versions exist, you have to specify it.
   - **The encoding**: this tells the compiler what text encoding to use to translate the bits of code into letters and numbers to display in the UI. The default is `utf-8`, but some applications use different encodings that suit their specific needs.
@@ -121,7 +121,13 @@ A lot happens inside the main tag, and things can get complicated. The following
 
 **Metadata**: Add additional information to classes, properties, or methods to use at runtime inside the `<fx:Metadata>...</fx:Metadata>` tag. <a href="https://apache.github.io/royale-docs/features/as3/metadata">Learn more</a>.
 
+**Styles**: Declare the styles the app uses in the `<fx:Styles>...</fx:Styles>` tag.
+
 **Functions, property definitions, and other features**: Declare properties, instantiate components, and write functions inside the `<fx:Script>...</fx:Script>` tag. In the component example above, we declare an _event handler_, a function that does things when you click one of the buttons in the user interface.
+
+**Beads**: Royale components generally follow the <a href="https://apache.github.io/royale-docs/features/payg" target="_blank">PAYG</a> principle of starting out with just enough functionality to do the basic things you would expect of them. If you want a component to do more, you add a <a href="https://apache.github.io/royale-docs/features/strands-and-beads" target="_blank">bead</a> with extra functions to it, as if the component were a thread. This way, only the components that need a lot of code have it, and this keeps down the size of the application.
+
+**User interface**:
 
 
 
