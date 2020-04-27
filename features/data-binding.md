@@ -36,55 +36,7 @@ There are several ways to deploy data binding:
 
 ## Using curly braces ({}) {#curly-braces}
 
-You can bind the value of a property in the user interface to that value of another property very simply. One of the TextInput examples in [Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} uses data binding twice:
-
-If you clear the existing text in the first text field in the example, then type in a string, what you type in appears in the second and fourth text fields, as you type it.
-
-The **source property** is the text property of a TextInput control. The key part of its code is 
-
-```mxml
-<j:TextInput text="A TextInput" change="textInputChange(event)"/>
-```
-
-When you first open the example, the control displays "A Text Input".
-
-The **destination property** is the text property of two other TextInput controls. The ID for the first one is "textToChange", and its code looks like this:
-
-```mxml
-<j:TextInput id="textToChange">
-  <j:beads>
-    <j:TextPrompt prompt="With prompt..."/>
-  </j:beads>
- </j:TextInput>
- ```
- 
-The second destination shows a different way to bind properties. This TextInput control is disabled, but the value of its text property is bound to the "textToChange" text property value:
- 
-```mxml
-<j:TextInput text="{textToChange.text}">
-  <j:beads>
-    <j:TextPrompt prompt="Disabled with prompt..."/>
-    <j:Disabled/>
-  </j:beads>
-</j:TextInput>
-```
- 
-This second destination's value won't change until the first one's does.
-
-The **triggering event** is any change to the text property of the first control: `change="textInputChange(event)"`. 
-
-When there's a change, the control sends an event to its change handler, _textInputChange()_, the **function** that carries out the changes. Its code looks like this:
-
-```as3
-private function textInputChange(event:Event):void
-  {
-    textToChange.text = event.target.text;
-  }
-```
-
-When the text in the first TextInput component changes, it triggers the event which changes the text in the second component. _That_, in turn, changes the text in the third component.
-
-Here is a [data binding tutorial](https://royale.apache.org/binding-the-text-property-of-a-jewel-textinput-to-update-a-text-label/){target="_blank"} using Tour de Jewe.
+_Details coming soon._
 
 ## Using data binding in MXML {#mxml}
 
@@ -93,7 +45,61 @@ _Details coming soon._
 
 
 ## Using data binding in ActionScript {#actionscript}
-_Details coming soon_.
+You can bind the value of a property in the user interface to that value of another property using the `<fx:Binding>` declaration and an ActionScript function, as in this example: 
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<j:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+				xmlns:j="library://ns.apache.org/royale/jewel"
+				pageTitle="Data Binding test">
+	
+	<fx:Script>
+		<![CDATA[
+
+			private function textInputChange(event:Event):void
+			{
+				textToChange.text = event.target.text;
+			}		
+
+		]]>
+	</fx:Script>
+	
+		<fx:Binding
+		source="input1.text"
+		destination="textToChange.text"/>
+		
+		<fx:Binding
+		source="input2.text"
+		destination="textToChange.text"/>
+	
+	<j:initialView>
+		<j:View width="100%" height="100%">
+			<j:VGroup width="100%" height="100%" gap="5" >		
+				<j:TextInput id="input1" width="300" text="" change="textInputChange(event)">
+					<j:beads>
+						<j:TextPrompt prompt="Type something"/>
+					</j:beads>			
+				</j:TextInput>
+				
+        <j:Label id="textToChange" text="This is a text" />	
+				
+			  <j:TextInput id="input2" width="300" text="" change="textInputChange(event)">
+					<j:beads>
+						<j:TextPrompt prompt="Type something else"/>
+					</j:beads>
+		    </j:TextInput >
+	
+			</j:VGroup>	
+		</j:View>
+	</j:initialView>
+</j:Application>
+```
+
+Here we have two text input fields, and a single label that is bound to both of them. If you type a value into either of the input fields, the text in the label changes to match it. The label accepts the value from whichever input field you use most recently.
+
+There are two `<fx:Binding>` declarations, one for each input field. Each declaration requires values for its source and destination properties.
+
+The function, `textInputChange', listens for a change event on either input field and transmits the changed text to the target.
 
 ## Two-way data binding {#twoway}
 
