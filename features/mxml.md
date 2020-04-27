@@ -28,10 +28,10 @@ MXML is an XML-based language introduced in 2004 by Macromedia. In Royale you us
 
 Most Royale applications have an MXML file as the main file. It provides the structure of the application. The main MXML file from our very simple <a href="https://apache.github.io/royale-docs/get-started/hello-world" target="_blank">hello world example</a> looks a bit like this:
 
-```
+```mxml
 <?xml version="1.0" encoding="utf-8"?>
 
-</-- 
+<!-- 
    A comments field that could include a copyright statement, license notice, author notice, 
    a statement of the purpose of the file, and 
    other information useful for future file maintenance.
@@ -50,10 +50,10 @@ Most Royale applications have an MXML file as the main file. It provides the str
 
 You also build components that you might incorporate into an application using an MXML file. A component with a card layout to display a set of clickable buttons might look like this:
 
-```
+```mxml
 <?xml version="1.0" encoding="utf-8"?>
 
-</-- 
+<!-- 
    A comments field that could include a copyright statement, license notice, author notice, 
    a statement of the purpose of the file, and 
    other information useful for future file maintenance.
