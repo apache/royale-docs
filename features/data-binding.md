@@ -25,9 +25,14 @@ Update the UI in real time as data changes
 
 Royale, like Flex before it, makes it easy to pass data around your application. A change to data can automatically update the display of that data in the user interface, and potentially in calculations or other functions that use that data. The feature that makes this possible without having to write lots of code is *data binding*.
 
-Data binding requires a **source property**, a **destination property**, a **triggering event** that indicates when to copy the data from the source to the destination, and a **function** to actually do the copying.
-
-There are several ways to deploy data binding:
+Data binding requires
+ - a **data binding bead** that adds this functionality to the whole application, or to the container in which the data binding happens.
+ - a **source property**
+ - a **destination property**
+ - a **triggering event** that indicates when to copy the data from the source to the destination
+ - a **function** to actually do the copying.
+ 
+ There are several ways to deploy data binding and, depending on which one you choose, you may have to specify some or all of the binding requirements above.
 
 * [Using curly braces ({})](features/data-binding.html#curly-braces)
 * [Using data binding in MXML](features/data-binding.html#mxml)
@@ -35,8 +40,19 @@ There are several ways to deploy data binding:
 * [Two-way data binding](features/data-binding.html#twoway)
 
 ## Using curly braces ({}) {#curly-braces}
+The blog post <a href="https://royale.apache.org/binding-the-text-property-of-a-jewel-textinput-to-update-a-text-label/" target="_blank">Binding the text property of a Jewel TextInput to update a text label</a> explains the curly-braces feature in detail, and compares how it works to the more traditional method using an event handler. In the example
 
-_Details coming soon._
+```
+<j:TextInput id="databinding_ti">
+                <j:beads>
+                    <j:TextPrompt prompt="Using databinding"/>
+                </j:beads>
+            </j:TextInput>
+
+            <j:Label text="The TextInput field text value is: {databinding_ti.text}"/>
+```
+
+the label listens for any changes in the "databinding_ti" text input field, and immediately adds it at the end of the string that is the text value for the label. Basically, all the hardware of event propagation, an event listener, and a response function is tucked into the "{...}" statement.
 
 ## Using data binding in MXML {#mxml}
 
