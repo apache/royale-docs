@@ -62,6 +62,6 @@ You can write the `Network` implementation like this:
 </js:beads>
 ```
 
-## More examples
+## Example
 
-- [Loading external data through HTTPService](https://royale.apache.org/loading-external-data-through-httpservice/){:target='_blank'} 
+- See this tutorial on [Loading external data through HTTPService](https://royale.apache.org/loading-external-data-through-httpservice/){:target='_blank'} 
