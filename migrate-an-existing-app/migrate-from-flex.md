@@ -69,7 +69,7 @@ Yet another category of changes is for **non-Flex SWCs**. If you used third-part
 
 The Royale compiler supports every options the Flex compiler supports. There are also some new options for controlling JavaScript output. Royale has an Ant task just as Flex does. It supports all the options that the Flex Ant task supports, plus some new options for controlling JavaScript output. You should be able to use the same options on the Royale compiler that you used when compiling your Flex app. The only thing you must add is the compiler option
 
-`+configname=flex`
+`+config=flex`
 
 Then, assuming you aren't using any third-party libraries, your application should compile.
 
