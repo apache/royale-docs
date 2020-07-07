@@ -74,12 +74,12 @@ mxmlcnpm src/HelloWorld.mxml
 If you didn't use npm, run:
 
 ```sh
-<path to SDK folder>/js/binmxmlc src/HelloWorld.mxml
+<path to SDK folder>/js/bin/mxmlc src/HelloWorld.mxml
 ```
 
 ## Run the output
 
-If the compiler reported success, there should now be a `bin/js-release output` folder in your project folder, such as 
+If the compiler reported success, there should now be a `bin/js-release` output folder in your project folder, such as 
 
 ```
 Projects/HelloWorld/bin/js-release
