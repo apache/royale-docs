@@ -30,7 +30,7 @@ Collections of data are composed by objects or items. Several components in Roya
 
 Although Item Renders use to be declared in a separate file (and this is the recommended way), you can also declare an item renderer inline for convenience:
 
-´´´mxml
+```mxml
 <j:DataContainer width="100%" labelField="name" dataProvider="{dataList}">
     <j:beads>
         <j:Viewport clipContent="false"/>
@@ -67,7 +67,7 @@ Although Item Renders use to be declared in a separate file (and this is the rec
         </fx:Component>
     </j:itemRenderer>
 </j:DataContainer>
-´´´
+```
 
 ## Examples
 
