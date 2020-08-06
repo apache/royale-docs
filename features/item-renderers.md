@@ -26,6 +26,49 @@ Visual representation of data items in lists and other collection components
 
 Collections of data are composed by objects or items. Several components in Royale can show collections of data to the user like _List_, _DataGrid_, _TabBar_ or _ButtonBar_. Those components need to describe each item and adapt the visaluzation to the data inside each object. Apache Royale uses Item Renderers components along with the before mentioned collection components to realize the visualization of each piece of data stored in each collection object.
 
+# Inline
+
+Although Item Renders use to be declared in a separate file (and this is the recommended way), you can also declare an item renderer inline for convenience:
+
+´´´mxml
+<j:DataContainer width="100%" labelField="name" dataProvider="{dataList}">
+    <j:beads>
+        <j:Viewport clipContent="false"/>
+    </j:beads>
+    <j:itemRenderer>
+        <fx:Component>
+            <j:ListItemRenderer width="100%">
+                <fx:Script>
+                    <![CDATA[            
+                    import vos.Provider;
+
+                    [Bindable("dataChange")]
+                    public function get provider():Provider {
+                        return data as Provider;
+                    }      
+                    ]]>
+                </fx:Script>
+                <j:beads>
+                    <js:ItemRendererDataBinding/>
+                </j:beads>
+                <j:HGroup gap="3" itemsVerticalAlign="itemsCenter">
+                    <js:FontAwesomeIcon text="{FontAwesome5IconType.PARKING_CIRCLE}" 
+                                        faStyle="{FontAwesomeIcon.REGULAR}" 
+                                        relativeSize="{FontAwesomeIcon.SIZE_LG}"
+                                        style="color: {provider.color};"/>
+                    <j:Label text="Offered by" className="weight-bold"/>
+                    <j:Image width="60" height="24" src="{provider.logo}">
+                        <j:beads>
+                            <js:ErrorImage emptyIsError="true"/>
+                        </j:beads>
+                    </j:Image>
+                </j:HGroup>
+            </j:ListItemRenderer>
+        </fx:Component>
+    </j:itemRenderer>
+</j:DataContainer>
+´´´
+
 ## Examples
 
 - [Using an item renderer with a list](https://royale.apache.org/using-an-item-renderer-with-a-list){:target='_blank'}
