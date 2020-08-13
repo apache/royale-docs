@@ -48,7 +48,7 @@ In __MXML__ declare a `DataContainer` like this:
 
 ```mxml
 <j:DataContainer width="100%" height="250">
-    <js:ArrayList localId="avengers" source="[Iron Man, Hulk, Thor, Captain America, Black Widow]"/>
+    <js:ArrayList localId="avengers" source="[Iron Man, Hulk, Thor, Captain America, Black Widow, Hawkeye]"/>
 </j:DataContainer>
 ```
 
@@ -68,4 +68,93 @@ where `parent` is the container where the control will be added.
 ## Relevant Properties and Methods
 
 > Check the Reference of [org.apache.royale.jewel.DataContainer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DataContainer){:target='_blank'} for a more detailed list of properties and methods.
+
+### Properties
+
+| PROPERTY 	         | Type   	    | Description                                                                                           |
+|------------------- |--------------| ------------------------------------------------------------------------------------------------------|
+| __currentState__   | _String_ 	| The name of the current state.                                                                        |
+| __itemRenderer__   | _String_ 	| The class or factory used to display each item.                                                       |
+| __labelField__     | _String_ 	| The name of field within the data used for display.                                                   |
+| __dataProvider__   | _Object_ 	| The data being display by the List. Is the [DefaultProperty](features/as3/metadata#default-property). In Jewel an [ArrayList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.collections/ArrayList){:target='_blank'}                                             |
+| __numElements__    | _int_ 	    | The number of element children that can be laid out.                                                  |
+| __states__         | _Array_ 	    | The array of view states. These should be instances of [org.apache.royale.states.State](https://royale.apache.org/asdoc/index.html#!org.apache.royale.states/State){:target='_blank'}|
+| __strandChildren__ | _[IParent](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IParent){:target='_blank'}_ 	| An object to access the immediate children of the strand. |
+
+### Methods
+
+| Method    	       | Parameters                                                     |Description                                            |
+|----------------------|----------------------------------------------------------------|-------------------------------------------------------|
+| __addElement__   	   | c(IChild), dispatchEvent(Boolean=true) 	                    | Add a component to the parent.	                    |
+| __addElementAt__     | c(IChild), index(int), dispatchEvent(Boolean=true) 	        | Add a component to the parent at the specified index.	|
+| __getElementIndex__  | c(IChild)                                           	        | Gets the index of this subcomponent.	                |
+| __getElementAt__     | index(int)                                         	        | Get a component from the parent at specified index.	|
+| __removeElement__    | c(IChild), dispatchEvent(Boolean=true) 	                    | Remove a component from the parent.	                |
+
+## Relevant Events
+
+The most important event is `initComplete`, which indicates that the initialization of the container is complete.
+
+Is needed when some action coded in a callback function need to be triggered as the data container is ready to use after initialization.
+
+You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
+
+```mxml
+<j:DataContainer initComplete="initCompleteHandler(event)"/>
+```
+
+the _initComplete_ event will use the `initCompleteHandler` callback function you provide in __ActionScript__:
+
+```mxml
+<fx:Script>
+    <![CDATA[      
+        private function initCompleteHandler(event:Event):void {
+            trace("Container is ready!");
+        }
+    ]]>
+</fx:Script>
+```
+
+When the data container is initialized the message _"Container is ready!"_ appears in the console log.
+
+In __ActionScript__ we can add an event handler this way: 
+
+```as3
+var dc:DataContainer = new DataContainer();
+dc.addEventListener('initComplete', initCompleteHandler);
+parent.addElement(dc);
+```
+
+## Relevant Beads
+
+| Bead Type       	| Implementation                               	  | Description                                     |
+|-----------------	|------------------------------------------------ |------------------------------------------------	|
+| [DataProviderModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/DataProviderModel){:target='_blank'}      	| [org.apache.royale.core.IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'} | This is the default model bead.	|
+| [DataContainerView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/DataContainerView){:target='_blank'}      	| [org.apache.royale.core.IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'} | This is the default view bead.	|
+| [VerticalLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/VerticalLayout){:target='_blank'}      	| [org.apache.royale.core.IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'} | This is the default layout bead.	|
+| [DataItemRendererFactoryForCollectionView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/DataItemRendererFactoryForCollectionView){:target='_blank'}      	| [org.apache.royale.core.IDataProviderItemRendererMapper](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IDataProviderItemRendererMapper){:target='_blank'} | Map data to itemrenders.	|
+| [ItemRendererClassFactory](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/ItemRendererClassFactory){:target='_blank'}      	| [org.apache.royale.core.IItemRendererClassFactory](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IItemRendererClassFactory){:target='_blank'} | The factory of itemrenders.	|
+| [StringItemRenderer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.itemRenderers/StringItemRenderer){:target='_blank'}      	| [org.apache.royale.core.IItemRenderer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IItemRenderer){:target='_blank'} | The itemrenders class to instantiate.	|
+| [DataContainerItemRendererInitializer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.itemRenderers/StringItemRenderer){:target='_blank'}      	| [org.apache.royale.core.IItemRendererInitializer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IItemRendererInitializer){:target='_blank'} | Configuration of itemrenders to instantiate.	|
+| [Viewport](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses/Viewport){:target='_blank'}      	| [org.apache.royale.core.IViewport](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IViewport){:target='_blank'} | Define the area that display content.	|
+
+### Common Beads
+
+Jewel `DataContainer` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/container.html#related-controls) section to see some advanced or preconfigured data containers.
+
+## More examples
+
+* [Adding an item to a Jewel List](https://royale.codeoscopic.com/adding-an-item-to-a-jewel-list/){:target='_blank'}
+* [Using an Item Renderer with a List](https://royale.codeoscopic.com/using-an-item-renderer-with-a-list/){:target='_blank'}
+* [Using Jewel TileHorizontalLayout](https://royale.codeoscopic.com/using-jewel-tilehorizontallayout/){:target='_blank'}
+
+## Related controls {#related-controls}
+
+Other useful Jewel containers components are:
+
+* [DataGroup](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DataGroup){:target='_blank'}
+* [List](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/List){:target='_blank'}
+* [DropDownList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DropDownList){:target='_blank'}
+* [Table](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Table){:target='_blank'}
+
 
