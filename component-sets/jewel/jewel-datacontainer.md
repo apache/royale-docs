@@ -38,7 +38,7 @@ Available since version __0.9.4__.
 
 The Jewel DataContainer class is a component that displays multiple data items.
 
-This component gets the data through its `dataProvider` property that receives an `ArrayList` of data objects. To represent each item the component use an [ItemRenderer](/features/item-renderers) class that can be configured and customized. The component generate dynamically as many instances of ItemRenderer as items in the data provider array and fill each instance with the appropiate data. By default it uses `StringItemRenderer` as the item renderer.
+This component gets the data through its `dataProvider` property that receives an `ArrayList` of data objects. To represent each item the component use an [ItemRenderer](features/item-renderers) class that can be configured and customized. The component generate dynamically as many instances of ItemRenderer as items in the data provider array and fill each instance with the appropiate data. By default it uses `StringItemRenderer` as the item renderer.
 
 By default items are layout vertically using Jewel `VerticalLayout`. This component has a `Viewport` that clip generated items.
 
@@ -132,15 +132,15 @@ parent.addElement(dc);
 | [DataProviderModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/DataProviderModel){:target='_blank'}      	| [org.apache.royale.core.IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'} | This is the default model bead.	|
 | [DataContainerView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/DataContainerView){:target='_blank'}      	| [org.apache.royale.core.IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'} | This is the default view bead.	|
 | [VerticalLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/VerticalLayout){:target='_blank'}      	| [org.apache.royale.core.IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'} | This is the default layout bead.	|
-| [DataItemRendererFactoryForCollectionView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/DataItemRendererFactoryForCollectionView){:target='_blank'}      	| [org.apache.royale.core.IDataProviderItemRendererMapper](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IDataProviderItemRendererMapper){:target='_blank'} | Map data to itemrenders.	|
+| [DataItemRendererFactoryForCollectionView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/DataItemRendererFactoryForCollectionView){:target='_blank'}      	| [IDataProviderItemRendererMapper](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IDataProviderItemRendererMapper){:target='_blank'} | Map data to itemrenders.	|
 | [ItemRendererClassFactory](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/ItemRendererClassFactory){:target='_blank'}      	| [org.apache.royale.core.IItemRendererClassFactory](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IItemRendererClassFactory){:target='_blank'} | The factory of itemrenders.	|
 | [StringItemRenderer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.itemRenderers/StringItemRenderer){:target='_blank'}      	| [org.apache.royale.core.IItemRenderer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IItemRenderer){:target='_blank'} | The itemrenders class to instantiate.	|
-| [DataContainerItemRendererInitializer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.itemRenderers/StringItemRenderer){:target='_blank'}      	| [org.apache.royale.core.IItemRendererInitializer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IItemRendererInitializer){:target='_blank'} | Configuration of itemrenders to instantiate.	|
+| [DataContainerItemRendererInitializer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.itemRenderers/DataContainerItemRendererInitializer){:target='_blank'}      	| [org.apache.royale.core.IItemRendererInitializer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IItemRendererInitializer){:target='_blank'} | Configuration of itemrenders to instantiate.	|
 | [Viewport](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses/Viewport){:target='_blank'}      	| [org.apache.royale.core.IViewport](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IViewport){:target='_blank'} | Define the area that display content.	|
 
 ### Common Beads
 
-Jewel `DataContainer` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/container.html#related-controls) section to see some advanced or preconfigured data containers.
+Jewel `DataContainer` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/datacontainer.html#related-controls) section to see some advanced or preconfigured data containers.
 
 ## More examples
 
