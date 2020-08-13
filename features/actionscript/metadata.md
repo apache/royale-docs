@@ -53,13 +53,31 @@ Bindable
 
 Event
 
-### DefaultProperty
+### DefaultProperty {#default-property}
 
-DefaultProperty
+The default property used when additional MXML content appears within an element's definition in an MXML file.
+
+For example, [Jewel Group](component-sets/jewel/group) define `[DefaultProperty("mxmlContent")]` in its class code. When using this component, instead of writting:
+
+```mxml
+<j:Group>
+    <j:mxmlContent>
+        <j:Button/>
+    </j:mxmlContent>
+</j:Group>
+```
+
+we can simplify declaration removing `mxmlContent` tags saving several lines of code:
+
+```mxml
+<j:Group>
+    <j:Button/>
+</j:Group>
+```
 
 ### RemoteObject
 
-DefaultProperty
+RemoteObject
 
 ### Managed
 

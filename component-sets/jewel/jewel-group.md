@@ -77,7 +77,7 @@ where `parent` is the container where the control will be added.
 | PROPERTY 	    | Type   	| Description                                                                   |
 |--------------	|----------	| -----------------------------------------------------------------------------	|
 | __currentState__    | _String_ 	| The name of the current state. |
-| __mxmlContent__    | _Array_ 	| The array of childs for this group. Is the `DefaultProperty`. |
+| __mxmlContent__    | _Array_ 	| The array of childs for this group. Is the [DefaultProperty](features/as3/metadata#default-property). |
 | __states__    | _Array_ 	| The array of view states. These should be instances of [org.apache.royale.states.State](https://royale.apache.org/asdoc/index.html#!org.apache.royale.states/State){:target='_blank'}|
 
 ### Methods
