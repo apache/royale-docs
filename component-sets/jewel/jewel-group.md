@@ -77,7 +77,7 @@ where `parent` is the container where the control will be added.
 | PROPERTY 	    | Type   	| Description                                                                   |
 |--------------	|----------	| -----------------------------------------------------------------------------	|
 | __currentState__    | _String_ 	| The name of the current state. |
-| __mxmlContent__    | _Array_ 	| The array of childs for this group. id the `DefaultProperty`. |
+| __mxmlContent__    | _Array_ 	| The array of childs for this group. Is the `DefaultProperty`. |
 | __states__    | _Array_ 	| The array of view states. These should be instances of [org.apache.royale.states.State](https://royale.apache.org/asdoc/index.html#!org.apache.royale.states/State){:target='_blank'}|
 
 ### Methods
@@ -131,7 +131,7 @@ parent.addElement(g);
 
 ### Common Beads
 
-Jewel `Group` can use any of the layout beads available in Jewel library. Also you can check Related controls section to see some preconfigured groups with specific layouts.
+Jewel `Group` can use any of the layout beads available in Jewel library. Also you can check [Related controls](#related-controls) section to see some preconfigured groups with specific layouts.
 
 
 ## More examples
@@ -140,7 +140,7 @@ Jewel `Group` can use any of the layout beads available in Jewel library. Also y
 * [Using View States to show or hide content](https://royale.codeoscopic.com/using-view-states-to-show-or-hide-content/){:target='_blank'}
 * [Customization through the Royale API](https://royale.codeoscopic.com/customization-through-the-royale-api/){:target='_blank'}
 
-## Related controls
+## Related controls {#related-controls}
 
 Other useful Jewel group components are:
 
