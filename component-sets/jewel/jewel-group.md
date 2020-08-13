@@ -82,11 +82,11 @@ where `parent` is the container where the control will be added.
 
 ### Methods
 
-| Method    	| Parameters                                                    	| Description                                                                                                                      	|
-|-----------	|---------------------------------------------------------------	|----------------------------------------------------------------------------------------------------------------------------------	|
-| __addElement__   	| _c(IChild), dispatchEvent(Boolean=true) 	| Add a component to the parent.	|
-| __addElementAt__   	| _c(IChild), index(int), dispatchEvent(Boolean=true) 	| Add a component to the parent at the specified index.	|
-| __removeElement__   	| _c(IChild), dispatchEvent(Boolean=true) 	| Remove a component from the parent.	|
+| Method    	    | Parameters                                                    |Description                                                                                      	|
+|------------------	|-------------------------------------------------------------- |---------------------------------------------------------------------------------------------------|
+| __addElement__   	| c(IChild), dispatchEvent(Boolean=true) 	                    | Add a component to the parent.	                    |
+| __addElementAt__  | c(IChild), index(int), dispatchEvent(Boolean=true) 	        | Add a component to the parent at the specified index.	|
+| __removeElement__ | c(IChild), dispatchEvent(Boolean=true) 	                    | Remove a component from the parent.	                |
 
 ## Relevant Events
 
