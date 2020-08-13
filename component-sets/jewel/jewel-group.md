@@ -40,7 +40,9 @@ The Jewel Group class provides a light-weight container for visual elements. By 
 
 The Jewel Group class provides a light-weight container for visual elements. By default Group have a Basiclayout, allowing its children to be positioned using absolute values (Notice Basic version doesn't provide any layout at all). Group doesn't clip content so elements inside the group aren't hidden far beyond group boundaries. Group doesn't have any chrome or visuals just position inner childs. 
 
-Also, no scrolling support is built in Group. For scrolling and clipping you can use Jewel Container
+Also, no scrolling support is built in Group. For scrolling and clipping you can use [Jewel Container](component-sets/jewel/container).
+
+While the container is relatively lightweight, it should generally not be used as the base class for other controls, even if those controls are composed of children.  That's because the fundamental API of Container is to support an arbitrary set of children, and most controls only support a specific set of children.
 
 ## Example of use
 
@@ -74,19 +76,22 @@ where `parent` is the container where the control will be added.
 
 ### Properties
 
-| PROPERTY 	    | Type   	| Description                                                                   |
-|--------------	|----------	| -----------------------------------------------------------------------------	|
-| __currentState__    | _String_ 	| The name of the current state. |
-| __mxmlContent__    | _Array_ 	| The array of childs for this group. Is the [DefaultProperty](features/as3/metadata#default-property). |
-| __states__    | _Array_ 	| The array of view states. These should be instances of [org.apache.royale.states.State](https://royale.apache.org/asdoc/index.html#!org.apache.royale.states/State){:target='_blank'}|
+| PROPERTY 	         | Type   	    | Description                                                                                           |
+|------------------- |--------------| ------------------------------------------------------------------------------------------------------|
+| __currentState__   | _String_ 	| The name of the current state.                                                                        |
+| __numElements__    | _int_ 	    | The number of element children that can be laid out.                                                  |
+| __mxmlContent__    | _Array_ 	    | The array of childs for this group. Is the [DefaultProperty](features/as3/metadata#default-property). |
+| __states__         | _Array_ 	    | The array of view states. These should be instances of [org.apache.royale.states.State](https://royale.apache.org/asdoc/index.html#!org.apache.royale.states/State){:target='_blank'}|
 
 ### Methods
 
-| Method    	    | Parameters                                                    |Description                                                                                      	|
-|------------------	|-------------------------------------------------------------- |---------------------------------------------------------------------------------------------------|
-| __addElement__   	| c(IChild), dispatchEvent(Boolean=true) 	                    | Add a component to the parent.	                    |
-| __addElementAt__  | c(IChild), index(int), dispatchEvent(Boolean=true) 	        | Add a component to the parent at the specified index.	|
-| __removeElement__ | c(IChild), dispatchEvent(Boolean=true) 	                    | Remove a component from the parent.	                |
+| Method    	       | Parameters                                                     |Description                                            |
+|----------------------|----------------------------------------------------------------|-------------------------------------------------------|
+| __addElement__   	   | c(IChild), dispatchEvent(Boolean=true) 	                    | Add a component to the parent.	                    |
+| __addElementAt__     | c(IChild), index(int), dispatchEvent(Boolean=true) 	        | Add a component to the parent at the specified index.	|
+| __getElementIndex__  | c(IChild)                                           	        | Gets the index of this subcomponent.	                |
+| __getElementAt__     | index(int)                                         	        | Get a component from the parent at specified index.	|
+| __removeElement__    | c(IChild), dispatchEvent(Boolean=true) 	                    | Remove a component from the parent.	                |
 
 ## Relevant Events
 
@@ -132,7 +137,6 @@ parent.addElement(g);
 ### Common Beads
 
 Jewel `Group` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/group.html#related-controls) section to see some preconfigured groups with specific layouts.
-
 
 ## More examples
 
