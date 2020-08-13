@@ -55,13 +55,13 @@ For the browsers, Apache Royale generates [ECMAScript version 5 (ES5)](https://e
 ## Components
 If the component name is a link, you can click it to see more information about the component. We will update this list as we add information.
 
-| Type          	| Name                                          | Description                                                                      | Available SDK 	   | State     	   |
-|------------------	|---------------------------------------------- |--------------------------------------------------------------------------------- |------------------ |-------------- |
-| __Containers__  	| ButtonBar                                     | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
-|   	            | Card                  	                    | Container that surrounds other components                                        | 0.9.4             |          	   |
-|   	            | [Container](component-sets/jewel/container)   | Container that surrounds other components                                        | 0.9.4             |          	   |
-|   	            | [DataContainer](component-sets/jewel/datacontainer)| A Container that generates child elements based on a data provider | 0.9.4           	 |          	 |
-|   	            | [Group](component-sets/jewel/group) | The most simple container that groups other components                 	         | 0.9.4             |          	 |
+| Type          	| Name                                                  | Description                                                                      | Available SDK 	   | State     	   |
+|------------------	|------------------------------------------------------ |--------------------------------------------------------------------------------- |------------------ |-------------- |
+| __Containers__  	| ButtonBar                                             | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
+|   	            | Card                  	                            | Content (text, images,...) container with optional title and actions zones       | 0.9.4             | Complete      |
+|   	            | [Container](component-sets/jewel/container)           | Container that surrounds other components                                        | 0.9.4             | Complete      |
+|   	            | [DataContainer](component-sets/jewel/datacontainer)   | A Container that creates child elements dynamically based on a data provider     | 0.9.4             | Complete      |
+|   	            | [Group](component-sets/jewel/group)                   | The most simple container that groups other components                 	       | 0.9.4             | Complete      |
 |                	| Grid              	     | Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	| 0.9.4    	| Complete |
 |                	| SimpleTable	    | A basic HTML table that can be declared in MXML                                                     	| 0.9.4              	| Complete      |
 |                	| Table                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	| 0.9.4              	| In Progress   |

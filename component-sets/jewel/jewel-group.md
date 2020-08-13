@@ -36,9 +36,11 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel Group class provides a light-weight container for visual elements. By default the Group does not have a layout, allowing its children to be sized and positioned allowing its children to be sized and positioned using absolute positioning.
+The Jewel Group class provides a light-weight container for visual elements. By default the Group does not have a layout, allowing its children to be sized and positioned allowing its children to be sized and positioned using absolute positioning. You can swap the layout for any other one available making children arrange in different ways (i.e: horizontal, vertical,...)
 
-Group doesn't have any chrome or visuals just position inner childs. You can swap the layout for any other one available making children arrange in different ways (i.e: horizontal, vertical,...)
+The Jewel Group class provides a light-weight container for visual elements. By default Group have a Basiclayout, allowing its children to be positioned using absolute values (Notice Basic version doesn't provide any layout at all). Group doesn't clip content so elements inside the group aren't hidden far beyond group boundaries. Group doesn't have any chrome or visuals just position inner childs. 
+
+Also, no scrolling support is built in Group. For scrolling and clipping you can use Jewel Container
 
 ## Example of use
 
