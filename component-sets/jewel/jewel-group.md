@@ -28,9 +28,9 @@ permalink: /component-sets/jewel/group
 
 Available since version __0.9.4__.
 
-| Class                 	    | Extends                           |
-|------------------------------	|----------------------------------	|
-| [org.apache.royale.jewel.Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Group){:target='_blank'} | [org.apache.royale.jewel.supportClasses.group.GroupBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.group/GroupBase){:target='_blank'} |
+| Class                 	    | Extends                           | Implements	                    |
+|------------------------------	|----------------------------------	|---------------------------------  |
+| [org.apache.royale.jewel.Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Group){:target='_blank'} | [org.apache.royale.jewel.supportClasses.group.GroupBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.group/GroupBase){:target='_blank'} | [org.apache.royale.core.IMXMLDocument](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IMXMLDocument){:target='_blank'} 	|
 
 <sup>_Note: This component is currently only available for JavaScript._</sup>
 
