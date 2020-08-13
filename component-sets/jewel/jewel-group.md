@@ -131,7 +131,7 @@ parent.addElement(g);
 
 ### Common Beads
 
-Jewel `Group` can use any of the layout beads available in Jewel library. Also you can check [Related controls](#related-controls) section to see some preconfigured groups with specific layouts.
+Jewel `Group` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/group.html#related-controls) section to see some preconfigured groups with specific layouts.
 
 
 ## More examples
