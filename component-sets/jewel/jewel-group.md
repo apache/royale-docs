@@ -126,8 +126,8 @@ parent.addElement(g);
 
 | Bead Type       	| Implementation                               	  | Description                                     |
 |-----------------	|------------------------------------------------ |------------------------------------------------	|
-| [GroupView] (https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/GroupView){:target='_blank'}      	| [org.apache.royale.core.IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLView){:target='_blank'} | This is the default view bead.	|
-| [BasicLayout] (https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/BasicLayout){:target='_blank'}      	| [org.apache.royale.core.IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'} | This is the default layout bead.	|
+| [GroupView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/GroupView){:target='_blank'}      	| [org.apache.royale.core.IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLView){:target='_blank'} | This is the default view bead.	|
+| [BasicLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/BasicLayout){:target='_blank'}      	| [org.apache.royale.core.IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'} | This is the default layout bead.	|
 
 ### Common Beads
 
