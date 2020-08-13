@@ -30,7 +30,7 @@ Available since version __0.9.4__.
 
 | Class                 	    | Extends                           | Implements	                    |
 |------------------------------	|----------------------------------	|---------------------------------  |
-| [org.apache.royale.jewel.Container](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Container){:target='_blank'} | [Jewel ContainerBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.group/ContainerBase){:target='_blank'} | [org.apache.royale.core.IMXMLDocument](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IMXMLDocument){:target='_blank'} 	|
+| [org.apache.royale.jewel.Container](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Container){:target='_blank'} | [Jewel ContainerBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.container/ContainerBase){:target='_blank'} | [org.apache.royale.core.IMXMLDocument](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IMXMLDocument){:target='_blank'} 	|
 
 <sup>_Note: This component is currently only available for JavaScript._</sup>
 
@@ -64,12 +64,12 @@ In __MXML__ declare a `Container` like this:
 In __ActionScript__ we can do the same in the following way: 
 
 ```as3
-var Container:Container = new Container();
+var container:Container = new Container();
 // add a button to the Container
 var button:Button = new Button();
-Container.addElement(button);
+container.addElement(button);
 // add the Container to the parent
-parent.addElement(Container);
+parent.addElement(container);
 ```
 
 where `parent` is the container where the control will be added.
