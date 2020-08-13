@@ -23,6 +23,125 @@ permalink: /component-sets/jewel/group
 
 # Jewel Group
 
-subtitle
 
-text
+## Reference
+
+Available since version __0.9.4__.
+
+| Class                 	    | Extends                           |
+|------------------------------	|----------------------------------	|
+| [org.apache.royale.jewel.Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Group){:target='_blank'} | [org.apache.royale.jewel.supportClasses.group.GroupBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.group/GroupBase){:target='_blank'} |
+
+<sup>_Note: This component is currently only available for JavaScript._</sup>
+
+## Overview
+
+The Jewel Group class provides a light-weight container for visual elements. By default the Group does not have a layout, allowing its children to be sized and positioned allowing its children to be sized and positioned using absolute positioning.
+
+Group doesn't have any chrome or visuals just position inner childs. You can swap the layout for any other one available making children arrange in different ways (i.e: horizontal, vertical,...)
+
+## Example of use
+
+In __MXML__ declare a `Group` like this:
+
+```mxml
+<j:Group width="200" height="200" className="wrapper">
+    <j:Button text="Origin"/>
+    <j:Button text="x:30,y:30" x="30" y="30"/>
+    <j:Button text="x:60,y:60" x="60" y="60"/>
+    <j:Button text="bottom/right" style="bottom:0;right:0"/>
+</j:Group>
+```
+
+In __ActionScript__ we can do the same in the following way: 
+
+```as3
+var group:Group = new Group();
+// add a button to the group
+var button:Button = new Button();
+group.addElement(button);
+// add the group to the parent
+parent.addElement(group);
+```
+
+where `parent` is the container where the control will be added.
+
+## Relevant Properties and Methods
+
+> Check the Reference of [org.apache.royale.jewel.Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Group){:target='_blank'} for a more detailed list of properties and methods.
+
+### Properties
+
+| PROPERTY 	    | Type   	| Description                                                                   |
+|--------------	|----------	| -----------------------------------------------------------------------------	|
+| __currentState__    | _String_ 	| The name of the current state. |
+| __mxmlContent__    | _Array_ 	| The array of childs for this group. id the `DefaultProperty`. |
+| __states__    | _Array_ 	| The array of view states. These should be instances of [org.apache.royale.states.State](https://royale.apache.org/asdoc/index.html#!org.apache.royale.states/State){:target='_blank'}|
+
+### Methods
+
+| Method    	| Parameters                                                    	| Description                                                                                                                      	|
+|-----------	|---------------------------------------------------------------	|----------------------------------------------------------------------------------------------------------------------------------	|
+| __addElement__   	| _c(IChild), dispatchEvent(Boolean=true) 	| Add a component to the parent.	|
+| __addElementAt__   	| _c(IChild), index(int), dispatchEvent(Boolean=true) 	| Add a component to the parent at the specified index.	|
+| __removeElement__   	| _c(IChild), dispatchEvent(Boolean=true) 	| Remove a component from the parent.	|
+
+## Relevant Events
+
+The most important event is `initComplete`, which indicates that the initialization of the group is complete.
+
+Is needed when some action coded in a callback function need to be triggered as the group is ready to use after initialization.
+
+You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
+
+```mxml
+<j:Group initComplete="initCompleteHandler(event)"/>
+```
+
+the _initComplete_ event will use the `initCompleteHandler` callback function you provide in __ActionScript__:
+
+```mxml
+<fx:Script>
+    <![CDATA[      
+        private function initCompleteHandler(event:Event):void {
+            trace("Group is ready!");
+        }
+    ]]>
+</fx:Script>
+```
+
+When the group is initialized the message _"Group is ready!"_ appears in the console log.
+
+In __ActionScript__ we can add an event handler this way: 
+
+```as3
+var g:Group = new Group();
+g.addEventListener('initComplete', initCompleteHandler);
+parent.addElement(g);
+```
+
+## Relevant Beads
+
+| Bead Type       	| Implementation                               	  | Description                                     |
+|-----------------	|------------------------------------------------ |------------------------------------------------	|
+| [GroupView] (https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/GroupView){:target='_blank'}      	| [org.apache.royale.core.IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLView){:target='_blank'} | This is the default view bead.	|
+| [BasicLayout] (https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/BasicLayout){:target='_blank'}      	| [org.apache.royale.core.IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'} | This is the default layout bead.	|
+
+### Common Beads
+
+Jewel `Group` can use any of the layout beads available in Jewel library. Also you can check Related controls section to see some preconfigured groups with specific layouts.
+
+
+## More examples
+
+* [Using Jewel TileHorizontalLayout](https://royale.codeoscopic.com/using-jewel-tilehorizontallayout/){:target='_blank'}
+* [Using View States to show or hide content](https://royale.codeoscopic.com/using-view-states-to-show-or-hide-content/){:target='_blank'}
+* [Customization through the Royale API](https://royale.codeoscopic.com/customization-through-the-royale-api/){:target='_blank'}
+
+## Related controls
+
+Other useful Jewel group components are:
+
+* [HGroup](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/HGroup){:target='_blank'}
+* [VGroup](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/VGroup){:target='_blank'}
+* [Container](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Container){:target='_blank'}
