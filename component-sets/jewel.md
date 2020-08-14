@@ -57,7 +57,8 @@ If the component name is a link, you can click it to see more information about 
 
 | Type          	| Name                                                  | Description                                                                      | Available SDK 	   | State     	   |
 |------------------	|------------------------------------------------------ |--------------------------------------------------------------------------------- |------------------ |-------------- |
-| __Containers__  	| ButtonBar                                             | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
+| __Containers__  	| [Aplication](component-sets/jewel/application)                                             | The root container of a Jewel Application                                      | 0.9.4             | Complete      |
+|                 	| ButtonBar                                             | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
 |   	            | Card                  	                            | Content (text, images,...) container with optional title and actions zones       | 0.9.4             | Complete      |
 |   	            | [Container](component-sets/jewel/container)           | Container that surrounds other components                                        | 0.9.4             | Complete      |
 |   	            | [DataContainer](component-sets/jewel/datacontainer)   | A Container that creates child elements dynamically based on a data provider     | 0.9.4             | Complete      |
