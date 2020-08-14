@@ -19,7 +19,7 @@ title: Jewel Application
 description: The Jewel Application
 permalink: /component-sets/jewel/application
 ---
-[< Jewel Components list](component-sets/jewel/application)
+[< Jewel Components list](component-sets/jewel)
 
 # Jewel Application
 
@@ -51,7 +51,7 @@ In __MXML__ declare a `Application` as the root tag of the main application file
 </j:Application>
 ```
 
-If the filaname is `App.mxml`, building the application will generate the following code in the `index.html` file: 
+If the filename is `App.mxml`, building the application will generate the following code in the `index.html` file: 
 
 ```javascript
 <script type="text/javascript">
