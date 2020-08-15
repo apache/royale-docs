@@ -59,7 +59,7 @@ If the component name is a link, you can click it to see more information about 
 |------------------	|------------------------------------------------------ |--------------------------------------------------------------------------------- |------------------ |-------------- |
 | __Containers__  	| [Application](component-sets/jewel/application)                                             | The root container of a Jewel Application                                      | 0.9.4             | Complete      |
 |                 	| ButtonBar                                             | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
-|   	            | Card                  	                            | Content (text, images,...) container with optional title and actions zones       | 0.9.4             | Complete      |
+|   	            | [Card](component-sets/jewel/card)                     | Content (text, images,...) container with optional title and actions zones       | 0.9.4             | Complete      |
 |   	            | [Container](component-sets/jewel/container)           | Container that surrounds other components                                        | 0.9.4             | Complete      |
 |   	            | [DataContainer](component-sets/jewel/datacontainer)   | A Container that creates child elements dynamically based on a data provider     | 0.9.4             | Complete      |
 |   	            | [Drawer](component-sets/jewel/drawer)   | A container used for main navigation that can optionaly be hidden to the side of screen    | 0.9.4             | Complete      |
@@ -67,7 +67,6 @@ If the component name is a link, you can click it to see more information about 
 |                	| Grid              	     | Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	| 0.9.4    	| Complete |
 |                	| SimpleTable	    | A basic HTML table that can be declared in MXML                                                     	| 0.9.4              	| Complete      |
 |                	| Table                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	| 0.9.4              	| In Progress   |
-|               	| TabBar  	            |                                                                                                      	| 0.9.4    	| Complete |
 |                	| TabBarContent    | A container to use with TabBar and capable of presenting organized content                            	| 0.9.4    	| Complete |
 |                	| Wizard             	    | 11.0+                                                                                                	| 0.9.4    	| Complete |
 | __Components__ 	| [Alert](component-sets/jewel/alert)            	    | Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
@@ -90,6 +89,7 @@ If the component name is a link, you can click it to see more information about 
 |               	| HSlider                  |                                                                                                      	| 0.9.4    	| Complete |
 |               	| VSlider                  |                                                                                                      	| 0.9.6    	| Complete |
 |               	| SnackBar  	   	    |                                                                                                      	| 0.9.4    	| Complete |
+|               	| TabBar  	            |                                                                                                      	| 0.9.4    	| Complete |
 |               	| [TextInput](component-sets/jewel/textinput)        	| A control for single-line text field. 	| 0.9.4         	| Complete  	|
 
 ## Jewel Themes

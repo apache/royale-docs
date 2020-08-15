@@ -46,7 +46,7 @@ Drawer has other complementary components:
 
 | Component 	     | Description                                                                                           |
 |------------------- | ------------------------------------------------------------------------------------------------------|
-| __DrawerHeader__   | a container to hold drawer heeader content (i.e: a title or an image icon logo)       				 |
+| __DrawerHeader__   | a container to hold drawer header content (i.e: a title or an image icon logo)       				 |
 | __DrawerContent__  | a container to hold drawer main content like navigation, icons, or text       						 |
 | __DrawerFooter__   | a [BarRow](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.bar/BarRow){:target='_blank'} to use as the last content. Styling use to be similar to the [FooterBar](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/FooterBar){:target='_blank'}  		 |
 
