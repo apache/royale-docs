@@ -58,7 +58,7 @@ If the component name is a link, you can click it to see more information about 
 | Type          	| Name                                                  | Description                                                                      | Available SDK 	   | State     	   |
 |------------------	|------------------------------------------------------ |--------------------------------------------------------------------------------- |------------------ |-------------- |
 | __Containers__  	| [Application](component-sets/jewel/application)                                             | The root container of a Jewel Application                                      | 0.9.4             | Complete      |
-|                 	| ButtonBar                                             | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
+|                 	| [ButtonBar](component-sets/jewel/buttonbar)                                             | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
 |   	            | [Card](component-sets/jewel/card)                     | Content (text, images,...) container with optional title and actions zones       | 0.9.4             | Complete      |
 |   	            | [Container](component-sets/jewel/container)           | Container that surrounds other components                                        | 0.9.4             | Complete      |
 |   	            | [DataContainer](component-sets/jewel/datacontainer)   | A Container that creates child elements dynamically based on a data provider     | 0.9.4             | Complete      |
@@ -82,7 +82,7 @@ If the component name is a link, you can click it to see more information about 
 |                	| Icon                	    |                                                                                                      	| 0.9.4    	| Complete |
 |               	| Image                    |                                                                                                      	| 0.9.4    	| Complete |
 |               	| [Label](component-sets/jewel/label)               	    |  Used for single or multi lined text labels                                  	| 0.9.4    	| Complete	|
-|               	| List               	    |                                                                                                      	| 0.9.4    	| Complete |
+|               	| [List](component-sets/jewel/list) | A data container that support selection of items                                                                                                      	| 0.9.4    	| Complete |
 |               	| NumericStepper  |                                                                                                      	| 0.9.4               	|           	|
 |               	| PopUp                    |                                                                                                      	| 0.9.4    	| Complete |
 |               	| [RadioButton](component-sets/jewel/radiobutton)  	    | Lets the user make a single choice within a set of mutually exclusive choices	| 0.9.4         	| Complete  	|

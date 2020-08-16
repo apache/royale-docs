@@ -23,6 +23,18 @@ permalink: /component-sets/jewel/list
 
 # Jewel List
 
-subtitle
+Available since version __0.9.4__.
 
-text
+| Class                 	    | Extends                           | Implements	                    |
+|------------------------------	|----------------------------------	|---------------------------------  |
+| [org.apache.royale.jewel.List](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/List){:target='_blank'} | [DataContainer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DataContainer){:target='_blank'} | [IStrand](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IStrand){:target='_blank'}, [IVariableRowHeight](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/IVariableRowHeight){:target='_blank'} |
+
+<sup>_Note: This component is currently only available for JavaScript._</sup>
+
+## Overview
+
+The List class is a component that displays multiple data items and provides selection.
+
+## Relevant Properties and Methods
+
+> Check the Reference of [org.apache.royale.jewel.List](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/List){:target='_blank'} for a more detailed list of properties and methods.

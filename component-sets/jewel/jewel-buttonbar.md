@@ -23,6 +23,18 @@ permalink: /component-sets/jewel/buttonbar
 
 # Jewel ButtonBar
 
-subtitle
+Available since version __0.9.4__.
 
-text
+| Class                 	    | Extends                           |
+|------------------------------	|----------------------------------	|
+| [org.apache.royale.jewel.ButtonBar](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/ButtonBar){:target='_blank'} | [org.apache.royale.jewel.List](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/List){:target='_blank'} |
+
+<sup>_Note: This component is currently only available for JavaScript._</sup>
+
+## Overview
+
+The Jewel ButtonBar class is a component that displays a set of Buttons. The ButtonBar is actually a List with a default horizontal layout and an itemRenderer that produces Jewel Buttons.
+
+## Relevant Properties and Methods
+
+> Check the Reference of [org.apache.royale.jewel.ButtonBar](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/ButtonBar){:target='_blank'} for a more detailed list of properties and methods.
