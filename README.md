@@ -86,7 +86,7 @@ Search is done thanks to [Algolia DocSearch](https://community.algolia.com/docse
 4. To build the docs, run the following command:
 
     ```sh
-    jekyll build --config local_config.yml
+    jekyll build --watch --config _config.yml
     ```
     
     The website will be rendered inside the `_site` folder.
@@ -95,5 +95,10 @@ Search is done thanks to [Algolia DocSearch](https://community.algolia.com/docse
    ```sh
    jekyll serve
    ```
-   
+   You might need the following for automatic regeneration:
+
+   ```sh
+   jekyll serve --force_polling
+   ```
+
    The website will be available at `http://127.0.0.1:4000/royale-docs/`.
