@@ -5,7 +5,7 @@
 
 We have three main audiences:
 
-1. Folks who have previously developed applications using [Apache Flex](https://flex.apache.org){:target='_blank'}, and who want to learn whether and how to migrate their apps to Apache Royale.
+1. Folks who have previously developed applications using [Apache Flex](https://flex.apache.org), and who want to learn whether and how to migrate their apps to Apache Royale.
 2. People who are new to AS3 and MXML, and possibly new to developing applications altogether, and want to know how to get started.
 3. Experienced developers who want to see if Royale will give a better experience both in code development and through the application's lifecycle than what they have been using.
 
@@ -17,8 +17,8 @@ We produce four flavors of documentation:
 
 1. *Tutorials* to show how to do a complete thing, with source code a reader can copy and learn from. These generally appear on the website blog at the moment.
 2. *How-to guides* that explain how to achieve something in Royale that is either of a general nature ("How to find the bead you need") or does not merit a full tutorial ("How to disable an input field"). This material should be in the user documentation.
-3. *Explanations* that explain the "why" of Royale features--why we do it this way, or avoid doing it that way. This appears in the [High Level View](welcome/high-level-view){:target='_blank'} pages of the user documentation.
-4. *Technical references* are all the gritty details of what each Royale component, bead, and feature requires, produces, and can do. This material would normally be in the [ASDoc reference](https://royale.apache.org/asdoc/){:target='_blank'}, the [framework wiki](https://github.com/apache/royale-asjs/wiki){:target='_blank'}, or the [compiler wiki](https://github.com/apache/royale-compiler/wiki){:target='_blank'}.
+3. *Explanations* that explain the "why" of Royale features--why we do it this way, or avoid doing it that way. This appears in the [High Level View](welcome/high-level-view) pages of the user documentation.
+4. *Technical references* are all the gritty details of what each Royale component, bead, and feature requires, produces, and can do. This material would normally be in the [ASDoc reference](https://royale.apache.org/asdoc/), the [framework wiki](https://github.com/apache/royale-asjs/wiki), or the [compiler wiki](https://github.com/apache/royale-compiler/wiki).
 
 No one flavor is better in all circumstances than the others. All contributions strengthen Royale by expanding the number of people who can find the answers they need to create applications.
 
@@ -35,7 +35,7 @@ Each `.md` page starts with "front matter" structured like this:
 # Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 layout: docpage
 title: README
-description: short description of the page that will help social networks to show appropiate info
+description: short description of the page that will help social networks to show appropriate info
 permalink: /friendly-url
 ---
 
@@ -70,18 +70,18 @@ without the leading "/". Links are case-sensitive, and you need to insert `%20` 
 
 When linking to locations not in the help-docs stack, including other pages in the Royale website, clicking the link should open a new browser window or tab so the reader does not lose their place in the help docs:
 
-`[Apache Flex](https://flex.apache.org){:target='_blank'}`
+`[Apache Flex](https://flex.apache.org)`
 
 ## About Search
 
-Search is done thanks to [Algolia DocSearch](https://community.algolia.com/docsearch/){:target='_blank'}.
+Search is done thanks to [Algolia DocSearch](https://community.algolia.com/docsearch/).
 
-    * [Algolia DocSearch Docs](https://community.algolia.com/docsearch/what-is-docsearch.html){:target='_blank'}
+    * [Algolia DocSearch Docs](https://community.algolia.com/docsearch/what-is-docsearch.html)
 
 ## Build Locally
 
-1. Install [Ruby+Devkit](https://rubyinstaller.org/downloads/){:target='_blank'}. Ruby is required to run Jekyll.
-2. Install [Jekyll](https://jekyllrb.com/){:target='_blank'}.
+1. Install [Ruby+Devkit](https://rubyinstaller.org/downloads/). Ruby is required to run Jekyll.
+2. Install [Jekyll](https://jekyllrb.com/).
 3. If you want to provide a local configuration, copy `_config.yml` to `local_config.yml`.
 4. To build the docs, run the following command:
 
