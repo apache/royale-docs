@@ -31,7 +31,7 @@ Available since version __0.9.4__
 |------------------------------	|----------------------------------	|---------------------------------  |
 | [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'} | [org.apache.royale.jewel.Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Group){:target='_blank'} | [org.apache.royale.core.IPopUp](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IPopUp){:target='_blank'} 	|
 
-<sup>_Note: This component is currently only available in JavaScript_</sup>.
+<sup>_Note: This component is currently only available in JavaScript._</sup>
 
 ## Overview
 
@@ -56,7 +56,7 @@ Click the following button to see an example of `Alert`:
 width="100%" height="300" 
 src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>
 
-To close the window, click one of the buttons on the bottom `ControlBar`, or programatically call the `Alert.close()` method on the instance.
+To close the window, click one of the buttons on the bottom `ControlBar`, or programmatically call the `Alert.close()` method on the instance.
 
 ## Relevant Properties and Methods
 
@@ -74,7 +74,7 @@ To close the window, click one of the buttons on the bottom `ControlBar`, or pro
 
 | Method    	| Parameters                                                    	| Description                                                                                                                      	|
 |-----------	|---------------------------------------------------------------	|----------------------------------------------------------------------------------------------------------------------------------	|
-| __show__   	| _message(String), title(String), flags(uint), parent(Object)_ 	| Shows the Alert non modal anchored to the given parent object, which is usally a root component such as *, as a UIView or body if null.	|
+| __show__   	| _message(String), title(String), flags(uint), parent(Object)_ 	| Shows the Alert non modal anchored to the given parent object, which is usually a root component such as *, as a UIView or body if null.	|
 | __close__  	| buttonFlag:uint = 0x000004                                    	| Closes the dialog element.                                                                                                       	|
 
 ## Relevant Events
@@ -107,7 +107,7 @@ The `Alert` component uses the following beads:
 | [IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'}      	| [org.apache.royale.jewel.beads.models.AlertModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/AlertModel){:target='_blank'}           	| The data model for the Alert.                   	|
 | [IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'}       	| [org.apache.royale.jewel.beads.views.AlertView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.views/AlertView){:target='_blank'}           	| The bead used to create the elements of the Alert. 	|
 | [IBeadController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadController){:target='_blank'} 	| [org.apache.royale.jewel.beads.controllers.AlertController](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controllers/AlertController){:target='_blank'} 	| The bead used to handle input events.           	|
-| [IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'}     	| [org.apache.royale.jewel.beads.layouts.NullLayout](){:target='_blank'}<sup>_(*)_</sup>  | The bead used to postion the elements of the Alert.       |
+| [IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'}     	| [org.apache.royale.jewel.beads.layouts.NullLayout](){:target='_blank'}<sup>_(*)_</sup>  | The bead used to position the elements of the Alert.       |
 
 <sup>_(*) NullLayout is used temporarily_.</sup>
 
