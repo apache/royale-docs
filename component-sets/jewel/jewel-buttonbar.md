@@ -33,7 +33,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel ButtonBar class is a component that displays a set of Buttons. The ButtonBar is actually a List with a default horizontal layout and an itemRenderer that produces Jewel Buttons.
+The Jewel ButtonBar class is a [List](component-sets/jewel/list) that displays a set of Buttons. The ButtonBar is actually a List with a default horizontal layout and an itemRenderer that produces Jewel Buttons.
 
 ## Relevant Properties and Methods
 
