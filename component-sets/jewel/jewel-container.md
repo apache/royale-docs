@@ -84,7 +84,7 @@ where `parent` is the container where the control will be added.
 |------------------- |--------------| ------------------------------------------------------------------------------------------------------|
 | __currentState__   | _String_ 	| The name of the current state.                                                                        |
 | __numElements__    | _int_ 	    | The number of element children that can be laid out.                                                  |
-| __mxmlContent__    | _Array_ 	    | The array of childs for this group. Is the [DefaultProperty](features/as3/metadata#default-property). |
+| __mxmlContent__    | _Array_ 	    | The array of childs for this container. Is the [DefaultProperty](features/as3/metadata#default-property). |
 | __states__         | _Array_ 	    | The array of view states. These should be instances of [org.apache.royale.states.State](https://royale.apache.org/asdoc/index.html#!org.apache.royale.states/State){:target='_blank'}|
 | __strandChildren__ | _[IParent](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IParent){:target='_blank'}_ 	| An object to access the immediate children of the strand. |
 
