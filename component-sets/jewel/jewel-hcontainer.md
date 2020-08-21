@@ -15,124 +15,60 @@
 # limitations under the License.
 
 layout: docpage
-title: Jewel Card
-description: The Jewel Card
-permalink: /component-sets/jewel/card
+title: Jewel HContainer
+description: The Jewel HContainer
+permalink: /component-sets/jewel/hcontainer
 ---
 [< Jewel Components list](component-sets/jewel)
 
-# Jewel Card
+# Jewel HContainer
 
 ## Reference
 
-Available since version __0.9.4__.
+Available since version __0.9.7__.
 
 | Class                 	    | Extends                           |
 |------------------------------	|----------------------------------	|
-| [org.apache.royale.jewel.Card](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Card){:target='_blank'} | [org.apache.royale.jewel.VContainer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/VContainer){:target='_blank'} |
+| [org.apache.royale.jewel.HContainer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/HContainer){:target='_blank'} | [org.apache.royale.jewel.supportClasses.container.AlignmentItemsContainerWithGap](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.container/AlignmentItemsContainerWithGap){:target='_blank'} |
 
 <sup>_Note: This component is currently only available for JavaScript._</sup>
 
 ## Overview
 
-The Jewel Card class is a [Container](component-sets/jewel/container) for content like text or images that support optional parts like title and actions (mostly buttons) zones.
-
-Card is a vertical container with a default "panel" styling that adds up to the features already provided by `VContainer`.
-
-It can be use alone or with other complementary components listed below:
-
-| Component 	             | Description                                                                                           |
-|--------------------------- | ------------------------------------------------------------------------------------------------------|
-| __CardHeader__             | a container to hold drawer header content (i.e: a title, image icon logo, or header actions)       	 |
-| __CardTitle__              | a title label to use in the Card or inside the drawer header with specific styling        		     |
-| __CardPrimaryContent__     | a container to hold card main content       						                                     |
-| __CardExpandedContent__    | a container for content that need to remove all paddings and gaps with the surrounding Card           |
-| __CardActions__            | a footer container to hold actions like buttons, icons or navigation       						     |
+The Jewel HContainer class is a [Container](component-sets/jewel/container) that layout elements horizontaly and provide some properties to allow more flexibility like `gap` to define some spacing between items, or `itemsHorizontalAlign` and `itemsVerticalAlign`, to distribute elements in different ways along horizontal and vertical axis respectively.
 
 ## Example of use
 
-In __MXML__ declare a `Card` like this:
-
-### Simple Card
-
-This is the most basic jewel card that can be declared. Elements are layout vertically and with a default gap predefined in Jewel Theme.
+In __MXML__ declare a `HContainer` like this:
 
 ```mxml
-<j:Card>
-    <j:CardTitle text="Jewel Simple Card"/>
-
-    <j:Label text="This is the content"/>
-
-    <j:Button text="Action" emphasis="primary"/>
-</j:Card>
+<j:HContainer width="100%" height="300" gap="3" itemsHorizontalAlign="itemsCenter">
+	<j:Card width="100" height="50%">
+		<j:Label text="horz center"/>
+	</j:Card>
+	<j:Card width="100" height="50%">
+		<j:Label text="horz center"/>
+	</j:Card>
+</j:HContainer>
 ```
 
-### Card with optional components
-
-For advanced card layouts the next example shows how to use optional Card components.
-
-First, we add a `CardHeader` with two `BarSection` components to separate the header content. In the left section we add the `CardTitle`and in the right one we add an `IconButton` (that provides an action, in the example we describe the actions as "Assign new data").
-
-Next, we have a `CardPrimaryContent` with the main content. In this case some text description and a `ComboBox` component. Those elements are layout vertically with some gap between them.
-
-Finally a `CardActions` with two `BarSection` (similar to card header). In the left we have a `Label` and in the right a `NumericStepper`.
-
-```mxml
-<j:Card>
-	<j:CardHeader>
-		<j:BarSection>
-			<j:CardTitle text="Object Collection" className="secondary-normal"/>
-		</j:BarSection>
-		<j:BarSection itemsHorizontalAlign="itemsRight">
-			<j:IconButton unboxed="true" click="assignNewData(avengersComboBox)">
-				<j:icon>
-					<js:MaterialIcon text="{MaterialIconType.SETTINGS_BACKUP_RESTORE}" />
-				</j:icon>
-				<j:beads>
-					<j:ToolTip toolTip="Assign new data"/>
-				</j:beads>
-			</j:IconButton>
-		</j:BarSection>
-	</j:CardHeader>
-	<j:CardPrimaryContent>
-		<j:Label multiline="true">
-			<j:html><![CDATA[<p>This <b>ComboBox</b> is using an object collection as <i>dataProvider</i>. Use <i>labelField</i> to indicate the object property to use as label. A <b>ComboBoxTextPrompt</b> bead is used to show a prompt message.</p>]]></j:html>
-		</j:Label>
-		<j:ComboBox localId="avengersComboBox" labelField="label" dataProvider="{listModel.avengers}">
-			<j:beads>
-				<j:ComboBoxTextPrompt prompt="Avengers Team..."/>
-			</j:beads>
-		</j:ComboBox>
-	</j:CardPrimaryContent>
-	<j:CardActions itemsVerticalAlign="itemsCenter">
-		<j:BarSection>
-			<j:Label localId="avengersComboBoxResult" html="{describeItem(avengersComboBox.selectedItem)}"/>
-		</j:BarSection>
-		<j:BarSection gap="3" itemsHorizontalAlign="itemsRight">
-			<j:Label text="Select Index: "/>
-			<j:NumericStepper valueChange="avengersComboBox.selectedIndex = event.target.value" minimum="0" maximum="8"/>
-		</j:BarSection>
-	</j:CardActions>
-</j:Card>
-```
-
-In __ActionScript__ we can do the same in the following way. In this case we declare just the Card and a Label inside the card to keep it simple, otherwise these will be too verbose: 
+In __ActionScript__ we can do the same in the following way. 
 
 ```as3
-var card:Card = new Card();
-// add a label to the Card
+var hc:HContainer = new HContainer();
+// add a label to the HContainer
 var label:Label = new Label();
 label.text = "Some text";
-card.addElement(label);
-// add the Container to the parent
-parent.addElement(card);
+hc.addElement(label);
+// add the HContainer to the parent
+parent.addElement(hc);
 ```
 
-where `parent` is the container where the control will be added.
+where `parent` is the container where the HContainer will be added.
 
 ## Relevant Properties and Methods
 
-> Check the Reference of [org.apache.royale.jewel.Card](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Card){:target='_blank'} for a more detailed list of properties and methods.
+> Check the Reference of [org.apache.royale.jewel.HContainer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/HContainer){:target='_blank'} for a more detailed list of properties and methods.
 
 ### Properties
 
@@ -161,14 +97,14 @@ where `parent` is the container where the control will be added.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that the initialization of the card is complete.
+The most important event is `initComplete`, which indicates that the initialization of the container is complete.
 
-Is needed when some action coded in a callback function need to be triggered as the card is ready to use after initialization.
+Is needed when some action coded in a callback function need to be triggered as the container is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
 ```mxml
-<j:Card initComplete="initCompleteHandler(event)"/>
+<j:HContainer initComplete="initCompleteHandler(event)"/>
 ```
 
 the _initComplete_ event will use the `initCompleteHandler` callback function you provide in __ActionScript__:
@@ -177,20 +113,20 @@ the _initComplete_ event will use the `initCompleteHandler` callback function yo
 <fx:Script>
     <![CDATA[      
         private function initCompleteHandler(event:Event):void {
-            trace("Card is ready!");
+            trace("HContainer is ready!");
         }
     ]]>
 </fx:Script>
 ```
 
-When the container is initialized the message _"Card is ready!"_ appears in the console log.
+When the container is initialized the message _"HContainer is ready!"_ appears in the console log.
 
 In __ActionScript__ we can add an event handler this way: 
 
 ```as3
-var c:Card = new Card();
-c.addEventListener('initComplete', initCompleteHandler);
-parent.addElement(c);
+var hc:HContainer = new HContainer();
+hc.addEventListener('initComplete', initCompleteHandler);
+parent.addElement(hc);
 ```
 
 ## Relevant Beads
@@ -198,12 +134,8 @@ parent.addElement(c);
 | Bead Type       	| Implementation                               	  | Description                                     |
 |-----------------	|------------------------------------------------ |------------------------------------------------	|
 | [ContainerView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/ContainerView){:target='_blank'}      	| [org.apache.royale.core.IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'} | This is the default view bead.	|
-| [VerticalLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/VerticalLayout){:target='_blank'}      	| [org.apache.royale.core.IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'} | This is the default layout bead.	|
+| [HorizontalLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/HorizontalLayout){:target='_blank'}      	| [org.apache.royale.core.IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'} | This is the default layout bead.	|
 | [Viewport](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses/Viewport){:target='_blank'}      	| [org.apache.royale.core.IViewport](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IViewport){:target='_blank'} | Define the area that display content.	|
-
-### Common Beads
-
-Jewel `Card` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/card.html#related-controls) section to see some preconfigured containers with specific layouts.
 
 ## More examples
 
@@ -215,12 +147,13 @@ Jewel `Card` can use any of the layout beads available in Jewel library. Also yo
 
 Other useful Jewel containers components are:
 
+* [Card](component-sets/jewel/card)
 * [Container](component-sets/jewel/container)
-* [HContainer](component-sets/jewel/hcontainer)
 * [VContainer](component-sets/jewel/vcontainer)
 * [Group](component-sets/jewel/group)
 * [HGroup](component-sets/jewel/hgroup)
 * [VGroup](component-sets/jewel/vgroup)
+
 
 
 

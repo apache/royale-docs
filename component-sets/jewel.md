@@ -64,10 +64,14 @@ If the component name is a link, you can click it to see more information about 
 |   	            | [DataContainer](component-sets/jewel/datacontainer)   | A Container that creates child elements dynamically based on a data provider     | 0.9.4             | Complete      |
 |   	            | [Drawer](component-sets/jewel/drawer)   | A container used for main navigation that can optionaly be hidden to the side of screen    | 0.9.4             | Complete      |
 |   	            | [Group](component-sets/jewel/group)                   | The most simple container that groups other components                 	       | 0.9.4             | Complete      |
+|   	            | [HContainer](component-sets/jewel/hcontainer)           | Container that layout other components horizontaly                                        | 0.9.7             | Complete      |
+|   	            | [HGroup](component-sets/jewel/hgroup)           | Group that layout other components horizontaly                                        | 0.9.7             | Complete      |
 |                	| Grid              	     | Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	| 0.9.4    	| Complete |
 |                	| SimpleTable	    | A basic HTML table that can be declared in MXML                                                     	| 0.9.4              	| Complete      |
 |                	| Table                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	| 0.9.4              	| In Progress   |
 |                	| TabBarContent    | A container to use with TabBar and capable of presenting organized content                            	| 0.9.4    	| Complete |
+|   	            | [VContainer](component-sets/jewel/vcontainer)           | Container that layout other components verticaly                                          | 0.9.7             | Complete      |
+|   	            | [VGroup](component-sets/jewel/vgroup)           | Group that layout other components verticaly                                        | 0.9.7             | Complete      |
 |                	| Wizard             	    | 11.0+                                                                                                	| 0.9.4    	| Complete |
 | __Components__ 	| [Alert](component-sets/jewel/alert)            	    | Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
 |               	| [Button](component-sets/jewel/button)          	    | A commonly-used rectangular button with a text label. Users can click or tap it to take an action. 	| 0.9.4         	| Complete  	|

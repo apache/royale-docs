@@ -148,6 +148,8 @@ Jewel `Group` can use any of the layout beads available in Jewel library. Also y
 
 Other useful Jewel group components are:
 
-* [HGroup](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/HGroup){:target='_blank'}
-* [VGroup](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/VGroup){:target='_blank'}
-* [Container](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Container){:target='_blank'}
+* [HGroup](component-sets/jewel/hgroup)
+* [VGroup](component-sets/jewel/vgroup)
+* [Container](component-sets/jewel/container)
+* [HContainer](component-sets/jewel/hcontainer)
+* [VContainer](component-sets/jewel/vcontainer)

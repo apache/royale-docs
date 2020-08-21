@@ -152,9 +152,9 @@ Jewel `DataContainer` can use any of the layout beads available in Jewel library
 
 Other useful Jewel containers components are:
 
-* [DataGroup](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DataGroup){:target='_blank'}
-* [List](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/List){:target='_blank'}
-* [DropDownList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DropDownList){:target='_blank'}
-* [Table](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Table){:target='_blank'}
+* [DataGroup](component-sets/jewel/datagroup)
+* [List](component-sets/jewel/list)
+* [DropDownList](component-sets/jewel/dropdownlist)
+* [Table](component-sets/jewel/table)
 
 

@@ -153,8 +153,10 @@ Jewel `Container` can use any of the layout beads available in Jewel library. Al
 
 Other useful Jewel containers components are:
 
-* [HContainer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/HContainer){:target='_blank'}
-* [VContainer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/VContainer){:target='_blank'}
-* [Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Group){:target='_blank'}
+* [HContainer](component-sets/jewel/hcontainer)
+* [VContainer](component-sets/jewel/vcontainer)
+* [Group](component-sets/jewel/group)
+* [HGroup](component-sets/jewel/hgroup)
+* [VGroup](component-sets/jewel/vgroup)
 
 
