@@ -94,4 +94,4 @@ If the component name is a link, you can click it to see more information about 
 
 ## Jewel Themes
 
-[Jewel Themes](component-sets/jewel/jewel-themes)
+The look and feel of the jewel component set are managed by [Jewel Themes](component-sets/jewel/themes).
