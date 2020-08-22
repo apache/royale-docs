@@ -58,6 +58,7 @@ If the component name is a link, you can click it to see more information about 
 | Type          	| Name                                                  | Description                                                                      | Available SDK 	   | State     	   |
 |------------------	|------------------------------------------------------ |--------------------------------------------------------------------------------- |------------------ |-------------- |
 | __Containers__  	| [Application](component-sets/jewel/application)                                             | The root container of a Jewel Application                                      | 0.9.4             | Complete      |
+|                 	| [ApplicationMainContent](component-sets/jewel/applicationmaincontent)                                             | Container for ISelectableContent                                      | 0.9.4             | Complete      |
 |                 	| [ButtonBar](component-sets/jewel/buttonbar)                                             | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
 |   	            | [Card](component-sets/jewel/card)                     | Content (text, images,...) container with optional title and actions zones       | 0.9.4             | Complete      |
 |   	            | [Container](component-sets/jewel/container)           | Container that surrounds other components                                        | 0.9.4             | Complete      |
@@ -66,13 +67,15 @@ If the component name is a link, you can click it to see more information about 
 |   	            | [Group](component-sets/jewel/group)                   | The most simple container that groups other components                 	       | 0.9.4             | Complete      |
 |   	            | [HContainer](component-sets/jewel/hcontainer)           | Container that layout other components horizontaly                                        | 0.9.7             | Complete      |
 |   	            | [HGroup](component-sets/jewel/hgroup)           | Group that layout other components horizontaly                                        | 0.9.7             | Complete      |
-|                	| Grid              	     | Container that uses Grid Layout and needs other immediate children to work as cells and host content. 	| 0.9.4    	| Complete |
-|                	| SimpleTable	    | A basic HTML table that can be declared in MXML                                                     	| 0.9.4              	| Complete      |
-|                	| Table                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	| 0.9.4              	| In Progress   |
+|                	| [Grid](component-sets/jewel/grid)              	     | Container for responsive layout of childrens. 	| 0.9.4    	| Complete |
+|   	            | [ResponsiveView](component-sets/jewel/responsiveview)           | The main view for a responsive Application                                        | 0.9.4             | Complete      |
 |                	| TabBarContent    | A container to use with TabBar and capable of presenting organized content                            	| 0.9.4    	| Complete |
+|                	| SectionContent    | A container to separate content and present to the user   	| 0.9.4    	| Complete |
+|                	| ScrollableSectionContent    | A scrollable container to separate content and present to the user   	| 0.9.4    	| Complete |
 |   	            | [VContainer](component-sets/jewel/vcontainer)           | Container that layout other components verticaly                                          | 0.9.7             | Complete      |
+|   	            | [View](component-sets/jewel/view)           | The main view in the Application                                        | 0.9.4             | Complete      |
 |   	            | [VGroup](component-sets/jewel/vgroup)           | Group that layout other components verticaly                                        | 0.9.7             | Complete      |
-|                	| Wizard             	    | 11.0+                                                                                                	| 0.9.4    	| Complete |
+|                	| Wizard             	    | A container that navigates from one content to the next.                                                                  	| 0.9.4    	| Complete |
 | __Components__ 	| [Alert](component-sets/jewel/alert)            	    | Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
 |               	| [Button](component-sets/jewel/button)          	    | A commonly-used rectangular button with a text label. Users can click or tap it to take an action. 	| 0.9.4         	| Complete  	|
 |                 	| [CheckBox](component-sets/jewel/checkbox)        	    | Consists of a box that can contain a check mark and an optional label.	| 0.9.4         	| Complete  	|
@@ -83,6 +86,7 @@ If the component name is a link, you can click it to see more information about 
 |               	| DropDownList      |                                                                                                      	| 0.9.4    	| Complete |
 |               	| Form                      |                                                                                                      	| 0.9.4    	| Complete |
 |               	| FormItem      	    |                                                                                                      	| 0.9.4    	| Complete |
+|               	| HSlider                  |                                                                                                      	| 0.9.4    	| Complete |
 |                	| Icon                	    |                                                                                                      	| 0.9.4    	| Complete |
 |               	| Image                    |                                                                                                      	| 0.9.4    	| Complete |
 |               	| [Label](component-sets/jewel/label)               	    |  Used for single or multi lined text labels                                  	| 0.9.4    	| Complete	|
@@ -90,9 +94,10 @@ If the component name is a link, you can click it to see more information about 
 |               	| NumericStepper  |                                                                                                      	| 0.9.4               	|           	|
 |               	| PopUp                    |                                                                                                      	| 0.9.4    	| Complete |
 |               	| [RadioButton](component-sets/jewel/radiobutton)  	    | Lets the user make a single choice within a set of mutually exclusive choices	| 0.9.4         	| Complete  	|
-|               	| HSlider                  |                                                                                                      	| 0.9.4    	| Complete |
 |               	| VSlider                  |                                                                                                      	| 0.9.6    	| Complete |
 |               	| SnackBar  	   	    |                                                                                                      	| 0.9.4    	| Complete |
+|                	| SimpleTable	    | A basic HTML table that can be declared in MXML                                                     	| 0.9.4              	| Complete      |
+|                	| Table                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	| 0.9.4              	| In Progress   |
 |               	| TabBar  	            |                                                                                                      	| 0.9.4    	| Complete |
 |               	| [TextInput](component-sets/jewel/textinput)        	| A control for single-line text field. 	| 0.9.4         	| Complete  	|
 

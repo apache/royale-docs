@@ -88,11 +88,11 @@ var dc:DrawerContent = new DrawerContent();
 // add elements to DrawerContent like Navigation, Divider...
 // ...and add the DrawerContent to the Drawer
 d.addElement(dc);
-// finally add the Drawer to the parent (usually ApplicationResponsiveView)
+// finally add the Drawer to the parent (usually a ResponsiveView)
 parent.addElement(d);
 ```
 
-where `parent` is the container where the control will be added. Usually parent is [Jewel ApplicationResponsiveView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/ApplicationResponsiveView){:target='_blank'}, since Drawers are used on responsive applications.
+where `parent` is the container where the control will be added. Usually parent is [Jewel ResponsiveView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/ResponsiveView){:target='_blank'}, since Drawers are used on responsive applications.
 
 
 ## Relevant Properties and Methods
