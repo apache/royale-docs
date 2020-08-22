@@ -134,6 +134,12 @@ parent.addElement(g);
 | [GroupView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html.beads/GroupView){:target='_blank'}      	| [org.apache.royale.core.IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'} | This is the default view bead.	|
 | [BasicLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/BasicLayout){:target='_blank'}      	| [org.apache.royale.core.IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'} | This is the default layout bead.	|
 
+## Optional Beads
+
+| Bead Type       	| Implementation                               	  | Description                                     |
+|-----------------	|------------------------------------------------ |------------------------------------------------	|
+| [ContainerDataBinding](https://royale.apache.org/asdoc/index.html#!org.apache.royale.binding/ContainerDataBinding){:target='_blank'}      	| [org.apache.royale.binding.DataBindingBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.binding/DataBindingBase){:target='_blank'} | Provide binding capabilities to the group.	|
+
 ### Common Beads
 
 Jewel `Group` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/group.html#related-controls) section to see some preconfigured groups with specific layouts.

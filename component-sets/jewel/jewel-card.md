@@ -201,6 +201,12 @@ parent.addElement(c);
 | [VerticalLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.layouts/VerticalLayout){:target='_blank'}      	| [org.apache.royale.core.IBeadLayout](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadLayout){:target='_blank'} | This is the default layout bead.	|
 | [Viewport](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses/Viewport){:target='_blank'}      	| [org.apache.royale.core.IViewport](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IViewport){:target='_blank'} | Define the area that display content.	|
 
+## Optional Beads
+
+| Bead Type       	| Implementation                               	  | Description                                     |
+|-----------------	|------------------------------------------------ |------------------------------------------------	|
+| [ContainerDataBinding](https://royale.apache.org/asdoc/index.html#!org.apache.royale.binding/ContainerDataBinding){:target='_blank'}      	| [org.apache.royale.binding.DataBindingBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.binding/DataBindingBase){:target='_blank'} | Provide binding capabilities to the container.	|
+
 ### Common Beads
 
 Jewel `Card` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/card.html#related-controls) section to see some preconfigured containers with specific layouts.
