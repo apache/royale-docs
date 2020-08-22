@@ -153,8 +153,3 @@ Other useful Jewel containers components are:
 * [HGroup](component-sets/jewel/hgroup)
 * [VGroup](component-sets/jewel/vgroup)
 * [Card](component-sets/jewel/card)
-
-
-
-
-

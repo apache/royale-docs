@@ -47,7 +47,14 @@ In __MXML__ declare a `Application` as the root tag of the main application file
 <j:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
 	xmlns:j="library://ns.apache.org/royale/jewel">
 
-    <!-- Application code goes here -->
+    <j:valuesImpl>
+		<js:SimpleCSSValuesImpl />
+	</j:valuesImpl>
+
+	<j:initialView>
+		<!-- add a View or ResponsiveView -->
+		<j:View width="100%" height="100%"/>
+	</j:initialView>
 </j:Application>
 ```
 
