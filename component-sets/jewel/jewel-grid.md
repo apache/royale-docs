@@ -23,6 +23,17 @@ permalink: /component-sets/jewel/grid
 
 # Jewel Grid
 
-subtitle
+## Reference
 
-text
+Available since version __0.9.4__.
+
+| Class                 	    | Extends                           |
+|------------------------------	|----------------------------------	|
+| [org.apache.royale.jewel.Grid](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Grid){:target='_blank'} | [org.apache.royale.jewel.supportClasses.container.AlignmentItemsContainer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.container/AlignmentItemsContainer){:target='_blank'} |
+
+<sup>_Note: This component is currently only available for JavaScript._</sup>
+
+## Overview
+
+The Jewel Grid class is a [Container](component-sets/jewel/container) for responsive layout of childrens.
+

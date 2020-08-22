@@ -58,20 +58,23 @@ If the component name is a link, you can click it to see more information about 
 | Type          	| Name                                                  | Description                                                                      | Available SDK 	   | State     	   |
 |------------------	|------------------------------------------------------ |--------------------------------------------------------------------------------- |------------------ |-------------- |
 | __Containers__  	| [Application](component-sets/jewel/application)                                             | The root container of a Jewel Application                                      | 0.9.4             | Complete      |
-|                 	| [ApplicationMainContent](component-sets/jewel/applicationmaincontent)                                             | Container for ISelectableContent                                      | 0.9.4             | Complete      |
+|                 	| ApplicationMainContent                                             | Container for ISelectableContent                                      | 0.9.4             | Complete      |
 |                 	| [ButtonBar](component-sets/jewel/buttonbar)                                             | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
 |   	            | [Card](component-sets/jewel/card)                     | Content (text, images,...) container with optional title and actions zones       | 0.9.4             | Complete      |
 |   	            | [Container](component-sets/jewel/container)           | Container that surrounds other components                                        | 0.9.4             | Complete      |
 |   	            | [DataContainer](component-sets/jewel/datacontainer)   | A Container that creates child elements dynamically based on a data provider     | 0.9.4             | Complete      |
+|   	            | DataGroup   | The DataContainer used internally by the Jewel [List](component-sets/jewel/list)     | 0.9.4             | Complete      |
 |   	            | [Drawer](component-sets/jewel/drawer)   | A container used for main navigation that can optionaly be hidden to the side of screen    | 0.9.4             | Complete      |
+|               	| FooterBar        	| The bottom container for main application navigation actions. 	| 0.9.4         	| Complete  	|
 |   	            | [Group](component-sets/jewel/group)                   | The most simple container that groups other components                 	       | 0.9.4             | Complete      |
 |   	            | [HContainer](component-sets/jewel/hcontainer)           | Container that layout other components horizontaly                                        | 0.9.7             | Complete      |
 |   	            | [HGroup](component-sets/jewel/hgroup)           | Group that layout other components horizontaly                                        | 0.9.7             | Complete      |
 |                	| [Grid](component-sets/jewel/grid)              	     | Container for responsive layout of childrens. 	| 0.9.4    	| Complete |
 |   	            | [ResponsiveView](component-sets/jewel/responsiveview)           | The main view for a responsive Application                                        | 0.9.4             | Complete      |
-|                	| TabBarContent    | A container to use with TabBar and capable of presenting organized content                            	| 0.9.4    	| Complete |
 |                	| SectionContent    | A container to separate content and present to the user   	| 0.9.4    	| Complete |
 |                	| ScrollableSectionContent    | A scrollable container to separate content and present to the user   	| 0.9.4    	| Complete |
+|                	| TabBarContent    | A container to use with TabBar and capable of presenting organized content                            	| 0.9.4    	| Complete |
+|               	| TopAppBar        	| The top container for main application title, navigation actions. 	| 0.9.4         	| Complete  	|
 |   	            | [VContainer](component-sets/jewel/vcontainer)           | Container that layout other components verticaly                                          | 0.9.7             | Complete      |
 |   	            | [View](component-sets/jewel/view)           | The main view in the Application                                        | 0.9.4             | Complete      |
 |   	            | [VGroup](component-sets/jewel/vgroup)           | Group that layout other components verticaly                                        | 0.9.7             | Complete      |
@@ -100,6 +103,7 @@ If the component name is a link, you can click it to see more information about 
 |                	| Table                    | A complex HTML table element filled from a data source. Cells are ItemRenderers.                    	| 0.9.4              	| In Progress   |
 |               	| TabBar  	            |                                                                                                      	| 0.9.4    	| Complete |
 |               	| [TextInput](component-sets/jewel/textinput)        	| A control for single-line text field. 	| 0.9.4         	| Complete  	|
+
 
 ## Jewel Themes
 
