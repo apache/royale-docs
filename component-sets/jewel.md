@@ -59,6 +59,8 @@ If the component name is a link, you can click it to see more information about 
 |------------------	|------------------------------------------------------ |--------------------------------------------------------------------------------- |------------------ |-------------- |
 | __Containers__  	| [Application](component-sets/jewel/application)                                             | The root container of a Jewel Application                                      | 0.9.4             | Complete      |
 |                 	| ApplicationMainContent                                             | Container for ISelectableContent                                      | 0.9.4             | Complete      |
+|               	| BarRow        	| A container to organize content in a row. 	| 0.9.4         	| Complete  	|
+|               	| BarSection        	| A container to separate content and present to the user in a row 	| 0.9.4         	| Complete  	|
 |                 	| [ButtonBar](component-sets/jewel/buttonbar)                                             | Container that displays a series of buttons                                      | 0.9.7             | Complete      |
 |   	            | [Card](component-sets/jewel/card)                     | Content (text, images,...) container with optional title and actions zones       | 0.9.4             | Complete      |
 |   	            | [Container](component-sets/jewel/container)           | Container that surrounds other components                                        | 0.9.4             | Complete      |
@@ -66,6 +68,7 @@ If the component name is a link, you can click it to see more information about 
 |   	            | DataGroup   | The DataContainer used internally by the Jewel [List](component-sets/jewel/list)     | 0.9.4             | Complete      |
 |   	            | [Drawer](component-sets/jewel/drawer)   | A container used for main navigation that can optionaly be hidden to the side of screen    | 0.9.4             | Complete      |
 |               	| FooterBar        	| The bottom container for main application navigation actions. 	| 0.9.4         	| Complete  	|
+|   	            | Form                   | A container to present forms to the user                 	       | 0.9.4             | Complete      |
 |   	            | [Group](component-sets/jewel/group)                   | The most simple container that groups other components                 	       | 0.9.4             | Complete      |
 |   	            | [HContainer](component-sets/jewel/hcontainer)           | Container that layout other components horizontaly                                        | 0.9.7             | Complete      |
 |   	            | [HGroup](component-sets/jewel/hgroup)           | Group that layout other components horizontaly                                        | 0.9.7             | Complete      |
@@ -80,12 +83,14 @@ If the component name is a link, you can click it to see more information about 
 |   	            | [VGroup](component-sets/jewel/vgroup)           | Group that layout other components verticaly                                        | 0.9.7             | Complete      |
 |                	| Wizard             	    | A container that navigates from one content to the next.                                                                  	| 0.9.4    	| Complete |
 | __Components__ 	| [Alert](component-sets/jewel/alert)            	    | Displays a message and one or more buttons in a view that pops up over all other controls and views. 	| 0.9.4         	| Complete  	|
+|                	| BinaryImage            |                                                                                                      	| 0.9.7    	| Complete	|
 |               	| [Button](component-sets/jewel/button)          	    | A commonly-used rectangular button with a text label. Users can click or tap it to take an action. 	| 0.9.4         	| Complete  	|
 |                 	| [CheckBox](component-sets/jewel/checkbox)        	    | Consists of a box that can contain a check mark and an optional label.	| 0.9.4         	| Complete  	|
 |                	| ComboBox            |                                                                                                      	| 0.9.4    	| Complete	|
 |                	| DataGrid        |                                                                                                      	|  0.9.7             	|           	|
 |                	| DateChooser        |                                                                                                      	| 0.9.4    	| Complete |
 |                	| DateField            |                                                                                                      	| 0.9.4    	| Complete |
+|                	| Divider            |                                                                                                      	| 0.9.4    	| Complete |
 |               	| DropDownList      |                                                                                                      	| 0.9.4    	| Complete |
 |               	| Form                      |                                                                                                      	| 0.9.4    	| Complete |
 |               	| FormItem      	    |                                                                                                      	| 0.9.4    	| Complete |
