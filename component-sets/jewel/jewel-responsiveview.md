@@ -15,13 +15,13 @@
 # limitations under the License.
 
 layout: docpage
-title: Jewel View
-description: The Jewel View
+title: Jewel ResponsiveView
+description: The Jewel ResponsiveView
 permalink: /component-sets/jewel/responsiveview
 ---
 [< Jewel Components list](component-sets/jewel)
 
-# Jewel View
+# Jewel ResponsiveView
 
 ## Reference
 
