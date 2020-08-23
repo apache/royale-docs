@@ -56,7 +56,7 @@ Click the following button to see an example of `Alert`:
 width="100%" height="300" 
 src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>
 
-To close the window, click one of the buttons on the bottom `ControlBar`, or programmatically call the `Alert.close()` method on the instance.
+To close the window, click one of the buttons on the bottom `controlBar`, or programmatically call the `Alert.close()` method on the instance.
 
 ## Relevant Properties and Methods
 
