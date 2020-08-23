@@ -65,7 +65,6 @@ If the component name is a link, you can click it to see more information about 
 |   	            | [Card](component-sets/jewel/card)                     | Content (text, images,...) container with optional title and actions zones       | 0.9.4             | Complete      |
 |   	            | [Container](component-sets/jewel/container)           | Container that surrounds other components                                        | 0.9.4             | Complete      |
 |   	            | [DataContainer](component-sets/jewel/datacontainer)   | A Container that creates child elements dynamically based on a data provider     | 0.9.4             | Complete      |
-|   	            | DataGroup   | The DataContainer used internally by the Jewel [List](component-sets/jewel/list)     | 0.9.4             | Complete      |
 |   	            | [Drawer](component-sets/jewel/drawer)   | A container used for main navigation that can optionaly be hidden to the side of screen    | 0.9.4             | Complete      |
 |               	| FooterBar        	| The bottom container for main application navigation actions. 	| 0.9.4         	| Complete  	|
 |   	            | Form                   | A container to present forms to the user                 	       | 0.9.4             | Complete      |

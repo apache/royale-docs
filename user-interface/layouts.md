@@ -110,7 +110,7 @@ Your custom view bead may also need to override some protected functions which a
 
 On the Flash platform, the Container class uses a simple component, ContainerContentArea, for the contentView that holds the elements to be displayed and arranged by the layout. The Royale framework automatically adds any elements specified in MXML to the contentView. If your component needs to generate, or programmatically fill, the content of a container, you may want to consider creating a custom contentView.
 
-The List and chart components are examples of doing this. The List extends Container, but it also provides a special contentView called DataGroup, which is designed to work with item renderers. The List then uses the VerticalLayout to present the item renderer instances.
+The List and chart components are examples of doing this. The List extends Container, but it also provides a special contentView called DataGroup (only on __SWF__ platform), which is designed to work with item renderers. The List then uses the VerticalLayout to present the item renderer instances.
 
 The chart components use ChartDataGroup which is designed to work with the graphic elements of the chart; charts use their own layouts to make each chart type.
 

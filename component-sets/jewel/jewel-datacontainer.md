@@ -152,7 +152,6 @@ Jewel `DataContainer` can use any of the layout beads available in Jewel library
 
 Other useful Jewel containers components are:
 
-* [DataGroup](component-sets/jewel/datagroup)
 * [List](component-sets/jewel/list)
 * [DropDownList](component-sets/jewel/dropdownlist)
 * [Table](component-sets/jewel/table)

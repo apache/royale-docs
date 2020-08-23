@@ -166,7 +166,6 @@ Jewel `List` can use any of the layout beads available in Jewel library. Also yo
 Other useful Jewel containers components are:
 
 * [DataGrid](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DataGrid){:target='_blank'}
-* [DataGroup](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DataGroup){:target='_blank'}
 * [DataContainer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DataContainer){:target='_blank'}
 * [DropDownList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/DropDownList){:target='_blank'}
 * [Table](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Table){:target='_blank'}
