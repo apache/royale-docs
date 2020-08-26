@@ -66,7 +66,7 @@ If the filename is `App.mxml`, building the application will generate the follow
 </script>
 ```
 
-launching the the html file in a browser will execute the Jewel Royale Application.
+launching the html file in a browser will execute the Jewel Royale Application.
 
 ## Relevant Properties and Methods
 
