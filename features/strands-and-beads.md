@@ -68,7 +68,7 @@ In the following example we are using the [Jewel TextInput](component-sets/jewel
 
 ### Adding a bead through CSS
 
-Adding beads through [Cascading Style Sheets (CSS)](https://en.wikipedia.org/wiki/Cascading_Style_Sheets){:target='_blank'} is easy. You declare CSS rules where the the _selector_ is the strand and the declaration block has one or more delarations. Declarations can be _bead declarations_ or _standard CSS declarations_ separated by semicolons.
+Adding beads through [Cascading Style Sheets (CSS)](https://en.wikipedia.org/wiki/Cascading_Style_Sheets){:target='_blank'} is easy. You declare CSS rules where the _selector_ is the strand and the declaration block has one or more delarations. Declarations can be _bead declarations_ or _standard CSS declarations_ separated by semicolons.
 
 A bead declaration has the bead type as the __property__ part (for instance, [IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'}, [IBeadModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadModel){:target='_blank'}, and [IBeadView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBeadView){:target='_blank'}) and a `ClassReference` to the bead we want to assign as the __value__ part.
 
