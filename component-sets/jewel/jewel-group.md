@@ -32,17 +32,15 @@ Available since version __0.9.4__.
 |------------------------------	|----------------------------------	|---------------------------------  |
 | [org.apache.royale.jewel.Group](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Group){:target='_blank'} | [Jewel GroupBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.group/GroupBase){:target='_blank'} | [org.apache.royale.core.IMXMLDocument](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IMXMLDocument){:target='_blank'} 	|
 
-<sup>_Note: This component is currently only available for JavaScript._</sup>
+<sup>_Note: This component is currently only available for applications compiled into JavaScript._</sup>
 
 ## Overview
 
-The Jewel Group class provides a light-weight container for visual elements. By default the Group does not have a layout, allowing its children to be sized and positioned allowing its children to be sized and positioned using absolute positioning. You can swap the layout for any other one available making children arrange in different ways (i.e: horizontal, vertical,...)
+The Jewel Group class provides a light-weight container for visual elements. By default the group has a Basic Layout, so you can size and position its children with absolute positioning (the Basic layout groups the children, but does not provide layout information). You can swap the layout for any other one available (for instance horizontal or vertical) to arrange the children in different ways. The group doesn't clip content, so elements inside the group aren't hidden if they extend beyond the group boundaries. The group doesn't have any chrome or visuals; it just contains the children. 
 
-The Jewel Group class provides a light-weight container for visual elements. By default Group have a Basiclayout, allowing its children to be positioned using absolute values (Notice Basic version doesn't provide any layout at all). Group doesn't clip content so elements inside the group aren't hidden far beyond group boundaries. Group doesn't have any chrome or visuals just position inner childs. 
+Also, the group has no scrolling support. For scrolling and clipping you can use [Jewel Container](component-sets/jewel/container).
 
-Also, no scrolling support is built in Group. For scrolling and clipping you can use [Jewel Container](component-sets/jewel/container).
-
-While the container is relatively lightweight, it should generally not be used as the base class for other controls, even if those controls are composed of children.  That's because the fundamental API of Container is to support an arbitrary set of children, and most controls only support a specific set of children.
+While the container is relatively lightweight, you should generally not use it as the base class for other controls, even if those controls are composed of children.  That's because the fundamental API of Container is to support an arbitrary set of children, and most controls only support a specific set of children.
 
 ## Example of use
 
@@ -95,9 +93,7 @@ where `parent` is the container where the control will be added.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that the initialization of the group is complete.
-
-Is needed when some action coded in a callback function need to be triggered as the group is ready to use after initialization.
+The most important event is `initComplete`, which indicates that the initialization of the group is complete. You can use this when some action coded in a callback functions need to be triggered when the group has initialized and is ready to use.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
