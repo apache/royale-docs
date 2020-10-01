@@ -35,11 +35,11 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The ResponsiveView class is the class used as the `initialView` in a responsive Royale Jewel [Application](component-sets/jewel/application). It is generally used as the root tag of __MXML__ documents and UI controls and containers are added to it.
+ResponsiveView is the class used as the `initialView` in a responsive Royale Jewel [Application](component-sets/jewel/application). It is generally used as the root tag of __MXML__ documents, and UI controls and containers are added to it.
 
 It normaly can host a [TopAppBar](component-sets/jewel/topappbar), [FooterBar](component-sets/jewel/footerbar), [Drawer](component-sets/jewel/drawer) and a [ApplicationMainContent](component-sets/jewel/applicationmaincontent) with other organized content for navigation.
 
-For non responsive applications you can use just a simple [View](component-sets/jewel/view) instead.
+For non-responsive applications you can use just a simple [View](component-sets/jewel/view) instead.
 
 ## Example of use
 
@@ -53,9 +53,9 @@ In __MXML__ declare a `ResponsiveView` like this:
 </j:ResponsiveView>
 ```
 
-> ResponsiveView doesn't need to specify `width` and `height` since are sized 100% in both directions by default. In this way we can use the width of the application container to apply responsive rules on any part of the application.
+> ResponsiveView doesn't need to specify `width` or `height` since they are both sized 100% by default. In this way we can use the width of the application container to apply responsive rules on any part of the application.
 
-or directly in the application mxml fil inside the `initialView`:
+You can also set the ResponsiveView directly in the application mxml file inside the `initialView`:
 
 ```mxml
 <j:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
@@ -108,9 +108,9 @@ where `application` is the Jewel Application.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that the initialization of the view is complete.
+The most important event is `initComplete`, which indicates that initialization of the view is complete.
 
-Is needed when some action coded in a callback function need to be triggered as the view is ready to use after initialization.
+It is needed when some action coded in a callback function needs to be triggered when the view is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
