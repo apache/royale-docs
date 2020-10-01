@@ -35,7 +35,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The View class is the class used as the `initialView` in a Royale Jewel [Application](component-sets/jewel/application). It is generally used as the root tag of __MXML__ documents and UI controls and containers are added to it.
+The View class is used as the `initialView` in a Royale Jewel [Application](component-sets/jewel/application). It is generally used as the root tag of __MXML__ documents and UI controls and containers are added to it.
 
 For responsive applications you can use [ResponsiveView](component-sets/jewel/responsiveview) instead.
 
@@ -107,7 +107,7 @@ where `application` is the Jewel Application.
 
 The most important event is `initComplete`, which indicates that the initialization of the view is complete.
 
-Is needed when some action coded in a callback function need to be triggered as the view is ready to use after initialization.
+It is needed when some action coded in a callback function needs to be triggered when the view is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
@@ -151,7 +151,7 @@ v.addEventListener('initComplete', initCompleteHandler);
 
 ### Common Beads
 
-Jewel `View` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/view.html#related-controls) section to see some preconfigured views with specific layouts.
+Jewel `View` can use any of the layout beads available in the Jewel library. You can also check [Related controls](component-sets/jewel/view.html#related-controls) to see some preconfigured views with specific layouts.
 
 ## More examples
 
