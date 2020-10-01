@@ -14,6 +14,6 @@ description: Presentation slides and videos about Apache Royale
 permalink: /presentations/presentations
 ---
 
-* Presentations
+# Presentations
 
 This page will have links to slide decks and videos about presentations on Apache Royale and Apache ASJS
