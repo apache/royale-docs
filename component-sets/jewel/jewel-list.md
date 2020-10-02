@@ -33,11 +33,11 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The List class is a [DataContainer](component-sets/jewel/datacontainer) component that provides item selection and keyboard navigation through items (check DataContainer for more info about core List functionality). If you just need to show a list of items you can use a `DataContainer` if you need interaction with items then use List.
+The List class is a [DataContainer](component-sets/jewel/datacontainer) component that provides item selection and keyboard navigation through items (check DataContainer for more info about core List functionality). If you just need to show a list of items you can use a `DataContainer`; if you need interaction with items, use `List`.
 
-List default item renderer is [ListItemRenderer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.itemRenderers/ListItemRenderer){:target='_blank'}. When there's a need of any advanced item layout is recommended to extend ListItemRenderer renderer to create a custom render. List uses as well factories and data mappers for renderers that suport selection.
+List default item renderer is [ListItemRenderer](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.itemRenderers/ListItemRenderer){:target='_blank'}. When there's a need of any advanced item, we recommend using layout to extend ListItemRenderer to create a custom renderer. List can also use factories and data mappers for renderers that suport selection.
 
-This component supports scrolling by default and gives you control over roll over and row height for each cell in every column. Also you can programatically scroll to any item by index.  
+This component supports scrolling by default and gives you control over rollover and row height for each cell in every column. You can also programatically scroll to any item by index.  
 
 ## Example of use
 
@@ -49,7 +49,7 @@ In __MXML__ declare a `List` like this:
 </j:List>
 ```
 
-> Notice that we can nest the ArrayList directly to the DataContainer tag because "dataProvider" is its [DefaultProperty](features/as3/metadata#default-property).
+>We can nest the ArrayList directly into the DataContainer tag because "dataProvider" is its [DefaultProperty](features/as3/metadata#default-property).
 
 In __ActionScript__ we can do the same in the following way: 
 
@@ -97,7 +97,7 @@ where `parent` is the container where the control will be added.
 
 ## Relevant Events
 
-The most important event is `change`, which is dispatched whenever the list's selection changes by the user.
+The most important event is `change`, which is dispatched whenever the list's selected item changes.
 
 
 You can attach callback listeners to the _change_ event in __MXML__ as follows:
@@ -120,7 +120,7 @@ the _change_ event will use the `changeHandler` callback function you provide in
 
 When the user selects any item a change event is dispatched and a message appears in the console log showing the "index" and the "item" that correspond to the selection.
 
-> When programatic _change_ event is needed you can use `selectionChanged` event instead to listen for selection changes.
+> When a programmatic _change_ event is needed you can use the `selectionChanged` event instead to listen for selection changes.
 
 In __ActionScript__ we can add an event handler this way: 
 
