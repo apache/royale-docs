@@ -21,15 +21,16 @@ permalink: /tutorials
 ---
 # Tutorials
 
-Articles, examples and how-to guides
+## Presentations, examples and how-to guides
 
 Here you can find links to tutorials and how-to blog articles that will help you get going in Royale and learn how its features can make what you want to do easy and reliable.
 
+  * [Presentation](presentations/presentations) slide decks and videos
   * [Hello World](get-started/hello-world)
   * [Build your first application](create-an-application)
   * [Royale in a Week](tutorials/royale-in-a-week) _not available yet_
   
-Blog articles
+## Blog articles
 
   * [Dividing an Apache Royale application with modules](https://royale.apache.org/dividing-an-apache-royale-application-with-modules){:target='_blank'}
   * [Using external JavaScript libraries in Apache Royale](https://royale.apache.org/using-external-javascript-libraries-in-apache-royale){:target='_blank'}
