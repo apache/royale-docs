@@ -35,5 +35,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel Grid class is a [Container](component-sets/jewel/container) for responsive layout of childrens.
+_THIS FILE IS INCOMPLETE_
+
+The Jewel Grid class is a [Container](component-sets/jewel/container) for responsive layout of children.
 
