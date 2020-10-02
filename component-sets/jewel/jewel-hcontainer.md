@@ -35,7 +35,7 @@ Available since version __0.9.7__.
 
 ## Overview
 
-The Jewel HContainer class is a [Container](component-sets/jewel/container) that layout elements horizontaly and provide some properties to allow more flexibility like `gap` to define some spacing between items, or `itemsHorizontalAlign` and `itemsVerticalAlign`, to distribute elements in different ways along horizontal and vertical axis respectively.
+The Jewel HContainer class is a [Container](component-sets/jewel/container) that lays out elements horizontally and provides some properties to allow more flexibility like `gap` to define spacing between items, and `itemsHorizontalAlign` and `itemsVerticalAlign`, to distribute elements in different ways along the horizontal or vertical axis.
 
 ## Example of use
 
@@ -97,9 +97,9 @@ where `parent` is the container where the HContainer will be added.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that the initialization of the container is complete.
+The most important event is `initComplete`, which indicates that initialization of the container is complete.
 
-Is needed when some action coded in a callback function need to be triggered as the container is ready to use after initialization.
+It is needed when some action coded in a callback function needs to be triggered when the container is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
@@ -107,7 +107,7 @@ You can attach callback listeners to the _initComplete_ event in __MXML__ as fol
 <j:HContainer initComplete="initCompleteHandler(event)"/>
 ```
 
-the _initComplete_ event will use the `initCompleteHandler` callback function you provide in __ActionScript__:
+the _initComplete_ event uses the `initCompleteHandler` callback function you provide in __ActionScript__:
 
 ```mxml
 <fx:Script>
