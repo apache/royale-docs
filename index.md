@@ -41,4 +41,4 @@ The [Tutorials](tutorials) section steps you through projects ranging from a sim
 
 Volunteer contributions of work and wisdom help move Royale forward. [Get Involved](welcome/get-involved) explains how you can contribute to the future of Royale.
 
-<sup>_(*)Note: This material is far from complete. However, the Royale team updates and extends it regularly, with a goal of covering all major Royale features and functions early in 2020._</sup>
+<sup>_(*)Note: This material is far from complete. However, the Royale team updates and extends it regularly._</sup>
