@@ -36,7 +36,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel Group class provides a light-weight container for visual elements. By default the group has a Basic Layout, so you can size and position its children with absolute positioning (the Basic layout groups the children, but does not provide layout information). You can swap the layout for any other one available (for instance horizontal or vertical) to arrange the children in different ways. The group doesn't clip content, so elements inside the group aren't hidden if they extend beyond the group boundaries. The group doesn't have any chrome or visuals; it just contains the children. 
+The Jewel Group class provides a lightweight container for visual elements. By default the group has a Basic Layout, so you can size and position its children with absolute positioning (the Basic layout groups the children, but does not provide layout information). You can swap the layout for any other one available (for instance horizontal or vertical) to arrange the children in different ways. The group doesn't clip content, so elements inside the group aren't hidden if they extend beyond the group boundaries. The group doesn't have any chrome or visuals; it just contains the children. 
 
 Also, the group has no scrolling support. For scrolling and clipping you can use [Jewel Container](component-sets/jewel/container).
 
@@ -93,7 +93,7 @@ where `parent` is the container where the control will be added.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that the initialization of the group is complete. You can use this when some action coded in a callback functions need to be triggered when the group has initialized and is ready to use.
+The most important event is `initComplete`, which indicates that initialization of the group is complete. You can use this when some action coded in a callback function need to be triggered when the group has initialized and is ready to use.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
@@ -101,7 +101,7 @@ You can attach callback listeners to the _initComplete_ event in __MXML__ as fol
 <j:Group initComplete="initCompleteHandler(event)"/>
 ```
 
-the _initComplete_ event will use the `initCompleteHandler` callback function you provide in __ActionScript__:
+the _initComplete_ event uses the `initCompleteHandler` callback function you provide in __ActionScript__:
 
 ```mxml
 <fx:Script>
