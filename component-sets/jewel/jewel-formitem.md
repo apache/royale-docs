@@ -23,6 +23,6 @@ permalink: /component-sets/jewel/formitem
 
 # Jewel FormItem
 
-subtitle
+A component within a form
 
-text
+_Thia material is not yet availabe._
