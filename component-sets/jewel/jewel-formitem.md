@@ -23,6 +23,6 @@ permalink: /component-sets/jewel/formitem
 
 # Jewel FormItem
 
-A component within a form
+A Jewel FormItem holds a component within a form--it could be static content like a label, an image, or instructions; or fields in which the form user makes selections or enters text. The form designer can use FormItem properties like its height and width and whether it is a required field to control the form's layout and appearance.
 
-_Thia material is not yet availabe._
+_This material is not yet availabe._
