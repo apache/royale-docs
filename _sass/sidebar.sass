@@ -113,11 +113,12 @@
             opacity: 0
             will-change: opacity
             transition: opacity 0.4s 0ms
-        &.open
             pointer-events: none
+        &.open
             position: fixed
             &::before
                 opacity: 1       
+                pointer-events: auto
 
     .sidebar-button
         display: inline-block
