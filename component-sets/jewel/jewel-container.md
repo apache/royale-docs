@@ -36,15 +36,15 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel Container class is a container that adds up to the features already provided by [Jewel Group](component-sets/jewel/group).
+The Jewel Container class extends the features already provided by [Jewel Group](component-sets/jewel/group).
 
-The position and size of the children are determined by `BasicLayout` while the size of a Container can either be determined by its children or by specifying an exact size in pixels or as a percentage of the parent element. You can swap the layout for any other one available making children arrange in different ways (i.e: horizontal, vertical,...)
+The position and size of the children are determined by `BasicLayout` while the size of a Container can either be determined by its children or by specifying an exact size in pixels or as a percentage of the parent element. You can swap the layout for any other one available to arrange the children in different ways (i.e: horizontal, vertical,...)
 
-Container clip content by default thanks to its `Viewport` bead. This bead can also manage clipping trough `clipContent` property. To add scrolling functionality Viewport bead can be changed by `ScrollingViewport`.
+Container clips content by default thanks to its `Viewport` bead. This bead can also manage clipping through the `clipContent` property. To add scrolling functionality  replace the `Viewport` bead with `ScrollingViewport`.
 
 Other Container feature are [View States](/features/view-states) to provide state management to show diferent parts of the interface to the user.
 
-Finally Container can add elements directly to the strand (throught `strandChildren` property) instead to its view content unlike the `addElement()` APIs which place children into the `contentView`.
+Finally, Container can add elements directly to the strand (through the `strandChildren` property) instead of adding them to its view content unlike the `addElement()` APIs which place children into the `contentView`.
 
 While the container is relatively lightweight, it should generally not be used as the base class for other controls, even if those controls are composed of children.  That's because the fundamental API of Container is to support an arbitrary set of children, and most controls only support a specific set of children.
 
@@ -100,9 +100,9 @@ where `parent` is the container where the control will be added.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that the initialization of the container is complete.
+The most important event is `initComplete`, which indicates that initialization of the container is complete.
 
-Is needed when some action coded in a callback function need to be triggered as the container is ready to use after initialization.
+It is needed when some action coded in a callback function needs to be triggered when the container is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
@@ -147,7 +147,7 @@ parent.addElement(c);
 
 ### Common Beads
 
-Jewel `Container` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/container.html#related-controls) section to see some preconfigured containers with specific layouts.
+Jewel `Container` can use any of the layout beads available in the Jewel library. Also you can check [Related controls](component-sets/jewel/container.html#related-controls) section to see some preconfigured containers with specific layouts.
 
 ## More examples
 
