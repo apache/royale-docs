@@ -25,14 +25,14 @@ permalink: /component-sets/jewel/themes
 
 The look and feel of the jewel component set
 
-Jewel component set focus on themes. Themes provides the capability of change the appearance of _all_ components at once. 
-A theme is a predefined CSS file (and optionally a other assets like images) that holds the definitions of each Jewel component, its subcomponents and the default [beads](features/strands-and-beads) used to configure that components. 
+The Jewel component set focuses on themes. Themes provides the capability of changing the appearance of _all_ components at once. 
+A theme is a predefined CSS file (and optionally other assets like images) that holds the definitions of each Jewel component, its subcomponents and the default [beads](features/strands-and-beads) used to configure the components. 
 
-Royale use the theme to add the right css selectors to the final compilation so when the user loads the application the required css and other files are loaded and the application shows a concrete look and feel.
+Royale uses the theme to add the right css selectors to the final compilation so when the user loads the application the required css and other files are loaded and the application shows a concrete look and feel.
 
 ## Colors
 
-Jewel comes with predefined themes based on the 12 color wheel below:
+Jewel comes with predefined themes based on the 12-color wheel below:
 
 {:align="center"}
 ![Jewel 12 color wheel](assets/images/apache-royale-jewel-12-color-wheel.jpeg)
@@ -78,17 +78,17 @@ Light/Flat
 <br>
 Dark/Flat
 
-Jewel Themes are a CSS file in the end (`default.css`), with all needed CSS rules predefined. We create this CSSs using the __Jewel SASS Theme framework__ located in __JewelTheme__ project. By udating the rules in this theme project, we can recompile all predefined jewel themes in Apache Royale to update those themes with the latest changes.
+Jewel Themes are delivered by a CSS file (`default.css`), with all needed CSS rules predefined. We create this CSSs using the __Jewel SASS Theme framework__ located in the __JewelTheme__ project. By udating the rules in this theme project, we can recompile all predefined jewel themes in Apache Royale to update with the latest changes.
 
 ## Predefined Jewel Themes
 
-Jewel library has a __master theme__ called JewelTheme and other 144 themes in the `themes` folder that are generated from JewelTheme. You can know more about how this is done in the [Jewel Theme Creation](component-sets/jewel/theme-creation) section.
+Jewel library has a __master theme__ called JewelTheme and 144 themes other in the `themes` folder that are generated from JewelTheme. You can learn more about how this is done in the [Jewel Theme Creation](component-sets/jewel/theme-creation) section.
 
-> Only to name a few examples, `themes/Jewel-Dark-NoFlat-Primary-Violet-Theme` or `themes/Jewel-Light-NoFlat-Secondary-Emerald-Theme` are examples of concrete jewel themes that are part of Apache Royale official distribution. There's 144 unique themes that are the combinations of the 12 colors, dark/light and flat/no-flat options.
+> `themes/Jewel-Dark-NoFlat-Primary-Violet-Theme` or `themes/Jewel-Light-NoFlat-Secondary-Emerald-Theme` are examples of the 144 concrete Jewel themes that are part of the Apache Royale official distribution. The themes are combinations of the 12 colors, dark/light and flat/no-flat options.
 
 ## Using Jewel Themes
 
-Users will use one up to three of the predefined jewel themes in `themes` folder in a normal Application project: one for primary color, one for secondary color and one for emphasized color (i.e: `themes/Jewel-Light-NoFlat-Primary-Blue-Theme`, `themes/Jewel-Light-NoFlat-Secondary-Topaz-Theme` and finally `themes/Jewel-Light-NoFlat-Secondary-Emerald-Theme`).
+Users can use up to three of the predefined jewel themes in the `themes` folder in a normal Application project: one for primary color, one for secondary color and one for emphasized color (i.e: `themes/Jewel-Light-NoFlat-Primary-Blue-Theme`, `themes/Jewel-Light-NoFlat-Secondary-Topaz-Theme` and finally `themes/Jewel-Light-NoFlat-Secondary-Emerald-Theme`).
 
 Example for maven pom.xml configuration:
 
@@ -118,7 +118,7 @@ Example for maven pom.xml configuration:
     </dependency>
 ```
 
-Other option is to use the __Jewel Theme Library__ that provides all styles for primary, secondary and emphasized colors and configure these colors in its `_theme.sass file`.
+Another option is to use the __Jewel Theme Library__ that provides all styles for primary, secondary and emphasized colors and configure these colors in its `_theme.sass file`.
 
 Example for maven pom.xml configuration:
 
