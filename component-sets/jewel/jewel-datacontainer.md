@@ -38,9 +38,9 @@ Available since version __0.9.4__.
 
 The Jewel DataContainer class is a component that displays multiple data items.
 
-This component gets the data through its `dataProvider` property that receives an `ArrayList` of data objects. To represent each item the component use an [ItemRenderer](features/item-renderers) class that can be configured and customized. The component generate dynamically as many instances of ItemRenderer as items in the data provider array and fill each instance with the appropiate data. By default it uses `StringItemRenderer` as the item renderer.
+This component gets the data through its `dataProvider` property that receives an `ArrayList` of data objects. To represent each item the component uses a suitably-configured [ItemRenderer](features/item-renderers) class. The component generates dynamically as many instances of its ItemRenderer as there are items in the data provider array, and fills each instance with the appropiate data. By default it uses `StringItemRenderer` as the item renderer.
 
-By default items are layout vertically using Jewel `VerticalLayout`. This component has a `Viewport` that clip generated items.
+By default items are laid out vertically using Jewel `VerticalLayout`. This component has a `Viewport` that clips generated items.
 
 ## Example of use
 
@@ -52,7 +52,7 @@ In __MXML__ declare a `DataContainer` like this:
 </j:DataContainer>
 ```
 
-> Notice that we can nest the ArrayList directly to the DataContainer tag because "dataProvider" is its [DefaultProperty](features/as3/metadata#default-property).
+> Note that we can nest the ArrayList directly to the DataContainer tag because "dataProvider" is its [DefaultProperty](features/as3/metadata#default-property).
 
 In __ActionScript__ we can do the same in the following way: 
 
@@ -93,9 +93,9 @@ where `parent` is the container where the control will be added.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that the initialization of the container is complete.
+The most important event is `initComplete`, which indicates that initialization of the container is complete.
 
-Is needed when some action coded in a callback function need to be triggered as the data container is ready to use after initialization.
+Is needed when some action coded in a callback function needs to be triggered when the data container is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
@@ -140,7 +140,7 @@ parent.addElement(dc);
 
 ### Common Beads
 
-Jewel `DataContainer` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/datacontainer.html#related-controls) section to see some advanced or preconfigured data containers.
+Jewel `DataContainer` can use any of the layout beads available in the Jewel library. Also you can check the [Related controls](component-sets/jewel/datacontainer.html#related-controls) section to see some advanced or preconfigured data containers.
 
 ## More examples
 
