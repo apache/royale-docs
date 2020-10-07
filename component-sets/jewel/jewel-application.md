@@ -35,13 +35,13 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Application class is the main class and entry point for a Royale application and does not contain user interface elements. Those UI elements go in the view ([Jewel ViewBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.view/ViewBase){:target='_blank'}). This Application class expects there to be a main __model__, a __controller__, and an __initial view__.
+The Application class is the main class and entry point for a Royale application and does not contain user interface elements. Those UI elements go in the view ([Jewel ViewBase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.view/ViewBase){:target='_blank'}). This Application class expects a main __model__, a __controller__, and an __initial view__.
 
-Jewel Application holds specific Jewel needs in a Royale Application. This class extends the standard ApplicationBase and sets up the [AllCSSValuesImpl](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/AllCSSValuesImpl){:target='_blank'} implementation for convenience.
+Jewel Application holds specific elements that Jewel needs. This class extends the standard ApplicationBase and sets up the [AllCSSValuesImpl](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/AllCSSValuesImpl){:target='_blank'} implementation for convenience.
 
 ## Example of use
 
-In __MXML__ declare a `Application` as the root tag of the main application file like this:
+In __MXML__ declare an `Application` as the root tag of the main application file like this:
 
 ```mxml
 <j:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
