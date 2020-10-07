@@ -35,11 +35,11 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel Card class is a [Container](component-sets/jewel/container) for content like text or images that support optional parts like title and actions (mostly buttons) zones.
+The Jewel Card class is a [Container](component-sets/jewel/container) for content like text or images that supports optional parts like title and action (mostly buttons) zones.
 
-Card is a vertical container with a default "panel" styling that adds up to the features already provided by `VContainer`.
+Card is a vertical container with a default "panel" styling that extends the features already provided by `VContainer`.
 
-It can be use alone or with other complementary components listed below:
+It can be used alone or with other complementary components listed below:
 
 | Component 	             | Description                                                                                           |
 |--------------------------- | ------------------------------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ In __MXML__ declare a `Card` like this:
 
 ### Simple Card
 
-This is the most basic jewel card that can be declared. Elements are layout vertically and with a default gap predefined in Jewel Theme.
+This is the most basic Jewel card that can be declared. Elements are laid out vertically and with a default gap predefined in Jewel Theme.
 
 ```mxml
 <j:Card>
@@ -71,11 +71,11 @@ This is the most basic jewel card that can be declared. Elements are layout vert
 
 For advanced card layouts the next example shows how to use optional Card components.
 
-First, we add a `CardHeader` with two `BarSection` components to separate the header content. In the left section we add the `CardTitle`and in the right one we add an `IconButton` (that provides an action, in the example we describe the actions as "Assign new data").
+First, we add a `CardHeader` with two `BarSection` components to separate the header content. In the left section we add the `CardTitle`and in the right one we add an `IconButton` (that provides an action. In the example we describe the action as "Assign new data").
 
-Next, we have a `CardPrimaryContent` with the main content. In this case some text description and a `ComboBox` component. Those elements are layout vertically with some gap between them.
+Next, we have a `CardPrimaryContent` with the main content; in this case, some text description and a `ComboBox` component. Those elements are laid out vertically with some gap between them.
 
-Finally a `CardActions` with two `BarSection` (similar to card header). In the left we have a `Label` and in the right a `NumericStepper`.
+Finally a `CardActions` with two `BarSection`s (similar to card header). In the left we have a `Label` and in the right a `NumericStepper`.
 
 ```mxml
 <j:Card>
@@ -116,7 +116,7 @@ Finally a `CardActions` with two `BarSection` (similar to card header). In the l
 </j:Card>
 ```
 
-In __ActionScript__ we can do the same in the following way. In this case we declare just the Card and a Label inside the card to keep it simple, otherwise these will be too verbose: 
+In __ActionScript__ we can do the same in the following way. In this case we declare just the Card and a Label inside the card to keep it simple: 
 
 ```as3
 var card:Card = new Card();
@@ -161,9 +161,9 @@ where `parent` is the container where the control will be added.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that the initialization of the card is complete.
+The most important event is `initComplete`, which indicates that initialization of the card is complete.
 
-Is needed when some action coded in a callback function need to be triggered as the card is ready to use after initialization.
+It is needed when some action coded in a callback function needs to be triggered when the card is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
@@ -209,7 +209,7 @@ parent.addElement(c);
 
 ### Common Beads
 
-Jewel `Card` can use any of the layout beads available in Jewel library. Also you can check [Related controls](component-sets/jewel/card.html#related-controls) section to see some preconfigured containers with specific layouts.
+Jewel `Card` can use any of the layout beads available in the Jewel library. Also you can check [Related controls](component-sets/jewel/card.html#related-controls) section to see some preconfigured containers with specific layouts.
 
 ## More examples
 
