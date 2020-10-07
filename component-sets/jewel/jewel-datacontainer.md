@@ -95,7 +95,7 @@ where `parent` is the container where the control will be added.
 
 The most important event is `initComplete`, which indicates that initialization of the container is complete.
 
-Is needed when some action coded in a callback function needs to be triggered when the data container is ready to use after initialization.
+It is needed when some action coded in a callback function needs to be triggered when the data container is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
