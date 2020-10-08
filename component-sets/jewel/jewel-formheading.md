@@ -27,7 +27,7 @@ permalink: /component-sets/jewel/formheading
 A Jewel FormHeading component holds the header contents for a Jewel Form. This is usually static content like a label, an image, or instructions.
 
 ## Example of use
-The FormHeading component only appears within a [Jewel Form](component-sets/jewel/jewel-form) component.
+The FormHeading component only appears within a [Jewel Form](component-sets/jewel/form) component.
 
 ## Relevant properties and methods
 
