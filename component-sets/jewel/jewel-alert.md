@@ -50,6 +50,11 @@ Alert.show('This alert shows a label text and the default OK button.', 'Alert Ex
 
 When you use `Alert.show()`, Royale generates a [modal dialog](https://en.wikipedia.org/wiki/Modal_window){:target='_blank'} and adds it, centered in front of the application and on top of all displayed visual elements.
 
+Click the following button to see an example of `Alert`:
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="300" 
+src="assets/BE0002_Using_Jewel_Alert_Control/index.html"></iframe>
+
 To close the window, click one of the buttons on the bottom `controlBar`, or programmatically call the `Alert.close()` method on the instance.
 
 ## Relevant Properties and Methods
