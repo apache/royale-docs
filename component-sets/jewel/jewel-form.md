@@ -75,7 +75,7 @@ _information to come_
 
 ## Related controls {#related-controls}
 
-The Jewel Form contains [FormItems](component-sets/jewel/jewel-formitem) which include other components.
+The Jewel Form contains a [FormHeader](component-sets/jewel/formheader) and [FormItems](component-sets/jewel/formitem) which are wrappers other components.
 
 
 
