@@ -22,7 +22,7 @@ permalink: /features/styling
 
 # Styling
 
-Customizing the Look and Feel of you application
+Customizing the Look and Feel of your application
 
 Apache Royale can plug different style classes that can manage different levels of styling features. Usually a Royale application will compose a Style class at the Application bead level like this:
 
