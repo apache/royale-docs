@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Styling
-description: Customizing the Look and Feel of you application
+description: Customizing the look and feel of your application
 permalink: /features/styling
 ---
 
@@ -24,7 +24,7 @@ permalink: /features/styling
 
 Customizing the Look and Feel of you application
 
-Apache Royale can plug different style classes that can manage diferent levels of styling features. Usually a Royale application will compose a Style class at Application bead level like this:
+Apache Royale can plug different style classes that can manage different levels of styling features. Usually a Royale application will compose a Style class at the Application bead level like this:
 
 ```mxml
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
@@ -38,9 +38,9 @@ Apache Royale can plug different style classes that can manage diferent levels o
 
 ## Implementations
 
-- **SimpleCSSValuesImpl**: The SimpleCSSValuesImpl class implements a minimal set of CSS lookup rules that is sufficient for most applications and is easily implemented for SWFs. It does not support attribute selectors or descendant selectors or id selectors. It will filter on a custom `-royale-swf` media query but not other media queries. It can be replaced with other implementations that handle more complex selector lookups.
+- **SimpleCSSValuesImpl**: The SimpleCSSValuesImpl class implements a minimal set of CSS lookup rules that is sufficient for most applications and is easily implemented for SWFs. It does not support attribute selectors, descendant selectors, or id selectors. It filters on a custom `-royale-swf` media query but not other media queries. You can replace it in your app with other implementations that handle more complex selector lookups.
 
-## Usign Styles
+## Using Styles
 
 - **SimpleCSSStyles**: Brings simple styles to Royale.
 
@@ -68,7 +68,7 @@ Apache Royale can plug different style classes that can manage diferent levels o
 
 ## Themes
 
-In Apache Royale, a theme is a predefined CSS file (and optionally a other assets like images) that holds the definitions of each component, so adding a theme to your application or replace the existing one will make your entire application change all visuals like colors, fonts and drawings that make you components and containers looks in a certain way.
+In Apache Royale, a theme is a predefined CSS file (and optionally other assets like images) that holds the definitions of each component, so adding a theme to your application or replacing the existing one will make your entire application change all visuals like colors, fonts and drawings that make you components and containers looks in a certain way.
 
 In [Jewel](component-sets/jewel) UI Set styling and themeing is one of the key concepts, you can learn more about it here:
 
