@@ -36,7 +36,7 @@ Apache Royale can plug different style classes that can manage different levels 
     ...
 ```
 
-## Implementations
+## Implementations
 
 - **SimpleCSSValuesImpl**: The SimpleCSSValuesImpl class implements a minimal set of CSS lookup rules that is sufficient for most applications and is easily implemented for SWFs. It does not support attribute selectors, descendant selectors, or id selectors. It filters on a custom `-royale-swf` media query but not other media queries. You can replace it in your app with other implementations that handle more complex selector lookups.
 
