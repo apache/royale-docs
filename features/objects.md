@@ -17,7 +17,7 @@
 layout: docpage
 title: Objects
 description: Use Object-Oriented Programming
-permalink: /features/modules
+permalink: /features/objects
 ---
 
 # Objects
