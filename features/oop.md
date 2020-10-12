@@ -15,11 +15,16 @@
 # limitations under the License.
 
 layout: docpage
-title: Objects
-description: Use Object-Oriented Programming
-permalink: /features/objects
+title: Object oriented programming
+description: Use Object-oriented programming in Royale
+permalink: /features/oop
 ---
 
-# Objects
+# Object oriented programming (OOP)
+
+## Example
+
+
+## Further information
 
 _information and examples coming soon_
