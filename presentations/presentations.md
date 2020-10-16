@@ -16,21 +16,21 @@ permalink: /presentations/presentations
 
 # Presentations
 
-This page has links to slide decks and videos of presentations on Apache Royale
+Here are links to videos (and PDFs of the slide decks, when available) of presentations on Apache Royale.
 
 ## ApacheCon 2020
 
-  - [Hello, Royale!](https://youtu.be/YLt85Nee4ks) - A high-level view of the Apache Royale project and what the Royale SDK offers. <a href="https://apache.github.io/royale-docs/presentations/HelloRoyale!-ApacheCon2020.pdf" target="_blank">PDF of the slide presentation</a>
-  - [Moving an App from Flex to Royale](https://youtu.be/O5WJ6nRPX40) - What's involved in migrating a major, business-critical application from Apache Flex to Apache Royale. <a href="https://apache.github.io/royale-docs/presentations/MovingaFlexAppToRoyale-ApacheCon2020.pdf" target="_blank">PDF of the slide presentation</a>
-  - [Starting from a blank file](https://youtu.be/E-Fg5V5DxbY) - How to build a brand-new application using Royale's off-the-shelf resources. <a href="https://apache.github.io/royale-docs/presentations/StartingFromABlankFile-ApacheCon2020.pdf" target="_blank">PDF of the slide presentation</a>
-  - [Tour de Jewel](https://youtu.be/9Wdv-ooku3k) - The Jewel component set is the most feature-rich of the many component sets Royale has available. <a href="https://apache.github.io/royale-docs/presentations/TourDeJewel-ApacheCon2020.pdf" target="_blank">PDF of the slide presentation</a>
+  - <a href="https://youtu.be/YLt85Nee4ks" target="_blank">Hello Royale!</a> - A high-level view of the Apache Royale project and what the Royale SDK offers. <a href="https://apache.github.io/royale-docs/presentations/HelloRoyale!-ApacheCon2020.pdf" target="_blank">PDF of the slide presentation</a>
+  - <a href="https://youtu.be/O5WJ6nRPX40" target="_blank">Moving an app from Flex to Royale</a> - What's involved in migrating a business-critical application from Apache Flex to Apache Royale. <a href="https://apache.github.io/royale-docs/presentations/MovingaFlexAppToRoyale-ApacheCon2020.pdf" target="_blank">PDF of the slide presentation</a>
+  - <a href="https://youtu.be/E-Fg5V5DxbY" target="_blank">Starting from a blank file</a> - How to build a brand-new application using Royale's off-the-shelf resources. <a href="https://apache.github.io/royale-docs/presentations/StartingFromABlankFile-ApacheCon2020.pdf" target="_blank">PDF of the slide presentation</a>
+  - <a href="https://youtu.be/9Wdv-ooku3k" target="_blank">Tour de Jewel</a> - The Jewel component set is the most feature-rich of the many component sets Royale has available. <a href="https://apache.github.io/royale-docs/presentations/TourDeJewel-ApacheCon2020.pdf" target="_blank">PDF of the slide presentation</a>
 
 ## ApacheCon North America 2017
 
-Presentation done when Royale was called FlexJS before get its own name and project.
+Presentations when Royale was called FlexJS, before it got its own name and project.
 
-  - [Apache FlexJS Web Application Development with Visual Studio Code - Josh Tynjala, Bowler Hat LLC](https://youtu.be/cpZ5XT_cLPI)
-  - [Introduction to FlexJS - Yishay Weiss](https://www.youtube.com/watch?v=6wFr4x6xvnk)
-  - [Migrating from Flex to FlexJS - Gabe Harbs](https://youtu.be/-FcLs0O-BWQ)
-  - [Building FlexJS Applications with Maven - Christofer Dutz, codecentric AG](https://youtu.be/Fcq38JDTtNs)
-  - [Testing Apache FlexJS Applications - Justin Mclean, Class Software](https://youtu.be/kWJpFyVSd5Q)
+  - <a href="https://youtu.be/cpZ5XT_cLPI" target="_blank">Apache FlexJS web application development with Visual Studio Code</a> - Josh Tynjala, Bowler Hat LLC
+  - <a href="https://www.youtube.com/watch?v=6wFr4x6xvnk" target="_blank">Introduction to FlexJS</a> - Yishay Weiss
+  - <a href="https://youtu.be/-FcLs0O-BWQ" target="_blank">Migrating from Flex to FlexJS</a> - Gabe Harbs
+  - <a href="https://youtu.be/Fcq38JDTtNs" target="_blank">[Building FlexJS applications with Maven</a> - Christofer Dutz, codecentric AG
+  - <a href="https://youtu.be/kWJpFyVSd5Q" target="_blank">Testing Apache FlexJS applications</a> - Justin Mclean, Class Software
