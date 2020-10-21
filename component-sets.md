@@ -34,6 +34,10 @@ Royale provides its own component sets that support developing simple, small and
 
 - [SparkRoyale](component-sets/sparkroyale) contains emulations of Flex Spark components.
 
-### External Component Sets
+### Incomplete component sets
+
+Participants in the Royale project have started several component sets, such as _Express_, _MDL_, and _HTML5_, but have not built more than one or two components as proofs-of-concept.
+
+### External component sets
 
 Besides the component sets included in Royale, you can use just about any CSS Framework as the basis for your components. One example is [Spectrum-Royale](https://github.com/unhurdle/spectrum-royale) which uses Adobe's [Spectrum System](https://spectrum.adobe.com/).
