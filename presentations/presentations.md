@@ -35,6 +35,6 @@ Presentations when Royale was called FlexJS, before it got its own name and proj
   - <a href="https://youtu.be/Fcq38JDTtNs" target="_blank">Building FlexJS applications with Maven</a> - Christofer Dutz, codecentric AG
   - <a href="https://youtu.be/kWJpFyVSd5Q" target="_blank">Testing Apache FlexJS applications</a> - Justin Mclean, Class Software
   
- ## ApacheCon 2016
+## ApacheCon 2016
   
   - <a href="https://vimeo.com/167857327" target="_blank">ApacheCon 2016 Maven Training</a> - Christofer Dutz, codecentric AG 
