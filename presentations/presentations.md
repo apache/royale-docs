@@ -32,5 +32,9 @@ Presentations when Royale was called FlexJS, before it got its own name and proj
   - <a href="https://youtu.be/cpZ5XT_cLPI" target="_blank">Apache FlexJS web application development with Visual Studio Code</a> - Josh Tynjala, Bowler Hat LLC
   - <a href="https://www.youtube.com/watch?v=6wFr4x6xvnk" target="_blank">Introduction to FlexJS</a> - Yishay Weiss
   - <a href="https://youtu.be/-FcLs0O-BWQ" target="_blank">Migrating from Flex to FlexJS</a> - Gabe Harbs
-  - <a href="https://youtu.be/Fcq38JDTtNs" target="_blank">[Building FlexJS applications with Maven</a> - Christofer Dutz, codecentric AG
+  - <a href="https://youtu.be/Fcq38JDTtNs" target="_blank">Building FlexJS applications with Maven</a> - Christofer Dutz, codecentric AG
   - <a href="https://youtu.be/kWJpFyVSd5Q" target="_blank">Testing Apache FlexJS applications</a> - Justin Mclean, Class Software
+  
+ ## ApacheCon 2016
+  
+  - <a href="https://vimeo.com/167857327" target="_blank">ApacheCon 2016 Maven Training</a> - Christofer Dutz, codecentric AG 
