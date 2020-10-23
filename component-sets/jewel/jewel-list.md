@@ -148,7 +148,7 @@ parent.addElement(list);
 |-----------------	|------------------------------------------------ |------------------------------------------------	|
 | [HorizontalListScroll](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.list/HorizontalListScroll){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Provide horizontal scroll to the list.	|
 | [ListAlternateRowColor](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.list/ListAlternateRowColor){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Provide alternate background color of every row with two colors.	|
-| [ListPresentationModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/ListPresentationModel){:target='_blank'}      	| [IListPresentationModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.list/IListPresentationModel){:target='_blank'} | Provide values used to present visuals.	|
+| [ListPresentationModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.models/ListPresentationModel){:target='_blank'}      	| [EventDispatcher](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/EventDispatcher){:target='_blank'}([IListPresentationModel](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.list/IListPresentationModel){:target='_blank'}) | Provide values used to present visuals.	|
 
 ### Common Beads
 
