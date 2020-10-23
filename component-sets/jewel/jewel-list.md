@@ -77,12 +77,10 @@ where `parent` is the container where the control will be added.
 | __dataProvider__         | _Object_ 	| The data being display by the List. Is the [DefaultProperty](features/as3/metadata#default-property). In Jewel an [ArrayList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.collections/ArrayList){:target='_blank'}                                             |
 | __numElements__          | _int_ 	    | The number of element children that can be laid out.                                                  |
 | __rollOverIndex__        | _int_ 	    | The index of the item currently below the pointer.                                                    |
-| __rowHeight__            | _Number_ 	| The default height of each cell in every column.                                                      |
 | __selectedIndex__        | _int_ 	    | The index of the currently selected item.                                                             |
 | __selectedItem__         | _Object_ 	| The item currently selected.                                                                          |
 | __states__               | _Array_ 	| The array of view states. These should be instances of [org.apache.royale.states.State](https://royale.apache.org/asdoc/index.html#!org.apache.royale.states/State){:target='_blank'}|
 | __strandChildren__       | _[IParent](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IParent){:target='_blank'}_ 	| An object to access the immediate children of the strand. |
-| __variableRowHeight__    | _Boolean_ 	| If false, the actual height of each layout element is the value of rowHeight. The default is true.   |
 
 ### Methods
 
