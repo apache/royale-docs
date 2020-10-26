@@ -43,7 +43,7 @@ public var dispatcher : IEventDispatcher;
  
 private function createNewBean() : void
 {
-    userModel : UserModel = new UserModel();
+    var userModel : UserModel = new UserModel();
      
     // Crux will create a bean for the userModel, and process any metadata in it.
     dispatcher.dispatchEvent( new BeanEvent( BeanEvent.SET_UP_BEAN, userModel ) );
