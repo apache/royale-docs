@@ -22,10 +22,11 @@ permalink: /compiler/compiler-options
 
 # Compiler Options
 
-List of Available Compiler Options
+List of available compiler options
 
 ## Contents
 
+**JavaScript compiler options**
 * [html-output-filename](compiler/compiler-options.html#html-output-filename)
 * [html-template](compiler/compiler-options.html#html-template)
 * [js-compiler-option](compiler/compiler-options.html#js-compiler-option)
@@ -39,8 +40,15 @@ List of Available Compiler Options
 * [warn-public-vars](compiler/compiler-options.html#warn-public-vars)
 * [show-binding-warnings](compiler/compiler-options.html#show-binding-warnings)
 
+**Reduce output size**
+You can use these options to reduce the size of your compiled application:
 
-Royale provides these options for its compiler:
+* [public symbols](compiler/compiler-options.html#public-symbols)
+* [prevent renaming public symbols](compiler/compiler-options.html#prevent-public-symbol-rename)
+* [prevent renaming internal symbols](compiler/compiler-options.html#prevent-internal-symbol-rename)
+* [prevent renaming public static methods](compiler/compiler-options.html#prevent-public-static-method-rename)
+
+
 
 ## JavaScript compiler options
 
@@ -230,3 +238,23 @@ Set to false to remove all binding warnings.
 ```xml
 <additionalCompilerOptions>-show-binding-warnings=false;</additionalCompilerOptions>
 ```
+
+
+## Reduce output size ##
+
+
+### public symbols (#public-symbols)
+information not yet available
+`-export-public-symbols=false`
+
+### prevent renaming public symbols (#prevent-public-symbol-rename)
+information not yet available
+`-prevent-rename-protected-symbols=false`
+
+### prevent renaming internal symbols (#prevent-internal-symbol-rename)
+information not yet available
+`-prevent-rename-internal-symbols=false`
+
+### prevent renaming public static methods (#prevent-public-static-method-rename)
+information not yet available
+`-prevent-rename-public-static-methods=false`
