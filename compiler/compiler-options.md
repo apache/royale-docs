@@ -243,18 +243,18 @@ Set to false to remove all binding warnings.
 ## Reduce output size ##
 
 
-### public symbols (#public-symbols)
+### public symbols {#public-symbols}
 information not yet available
 `-export-public-symbols=false`
 
-### prevent renaming public symbols (#prevent-public-symbol-rename)
+### prevent renaming public symbols {#prevent-public-symbol-rename}
 information not yet available
 `-prevent-rename-protected-symbols=false`
 
-### prevent renaming internal symbols (#prevent-internal-symbol-rename)
+### prevent renaming internal symbols {#prevent-internal-symbol-rename}
 information not yet available
 `-prevent-rename-internal-symbols=false`
 
-### prevent renaming public static methods (#prevent-public-static-method-rename)
+### prevent renaming public static methods {#prevent-public-static-method-rename}
 information not yet available
 `-prevent-rename-public-static-methods=false`
