@@ -27,10 +27,10 @@ List of available compiler options
 ## Contents
 
 **General compiler options**
-* [allow-abstract-classes](#allow-abstract-classes)
-* [allow-private-constructors](#allow-abstract-constructors)
-* [allow-import-aliases](#allow-import-aliases)
-* [strict-identifier-names](#strict-identifier-names)
+* [allow-abstract-classes](compiler/compiler-options.html#allow-abstract-classes)
+* [allow-private-constructors](compiler/compiler-options.html#allow-abstract-constructors)
+* [allow-import-aliases](compiler/compiler-options.html#allow-import-aliases)
+* [strict-identifier-names](compiler/compiler-options.html#strict-identifier-names)
 
 **JavaScript compiler options**
 * [html-output-filename](compiler/compiler-options.html#html-output-filename)
@@ -428,12 +428,12 @@ In a release build, determines if symbols in the `public` namespace may be renam
 
 When `prevent-rename-public-symbols` option is `true`, one or more the following options may be set to `false` to allow renaming of certain specific subsets of public symbols.
 
-- [`prevent-rename-public-static-methods`](#prevent-rename-public-static-methods)
-- [`prevent-rename-public-instance-methods`](#prevent-rename-public-instance-methods)
-- [`prevent-rename-public-static-variables`](#prevent-rename-public-static-variables)
-- [`prevent-rename-public-instance-variables`](#prevent-rename-public-instance-variables)
-- [`prevent-rename-public-static-accessors`](#prevent-rename-public-static-accessors)
-- [`prevent-rename-public-instance-accessors`](#prevent-rename-public-instance-accessors)
+- [`prevent-rename-public-static-methods`](compiler/compiler-options.html#prevent-rename-public-static-methods)
+- [`prevent-rename-public-instance-methods`](compiler/compiler-options.html#prevent-rename-public-instance-methods)
+- [`prevent-rename-public-static-variables`](compiler/compiler-options.html#prevent-rename-public-static-variables)
+- [`prevent-rename-public-instance-variables`](compiler/compiler-options.html#prevent-rename-public-instance-variables)
+- [`prevent-rename-public-static-accessors`](compiler/compiler-options.html#prevent-rename-public-static-accessors)
+- [`prevent-rename-public-instance-accessors`](compiler/compiler-options.html#prevent-rename-public-instance-accessors)
 
 ### Prevent renaming of protected symbols {#prevent-rename-protected-symbols}
 
@@ -453,12 +453,12 @@ In a release build, determines if symbols in the `protected` namespace may be re
 
 When `prevent-rename-protected-symbols` option is `true`, one or more the following options may be set to `false` to allow renaming of certain specific subsets of protected symbols.
 
-- [`prevent-rename-protected-static-methods`](#prevent-rename-protected-static-methods)
-- [`prevent-rename-protected-instance-methods`](#prevent-rename-protected-instance-methods)
-- [`prevent-rename-protected-static-variables`](#prevent-rename-protected-static-variables)
-- [`prevent-rename-protected-instance-variables`](#prevent-rename-protected-instance-variables)
-- [`prevent-rename-protected-static-accessors`](#prevent-rename-protected-static-accessors)
-- [`prevent-rename-protected-instance-accessors`](#prevent-rename-protected-instance-accessors)
+- [`prevent-rename-protected-static-methods`](compiler/compiler-options.html#prevent-rename-protected-static-methods)
+- [`prevent-rename-protected-instance-methods`](compiler/compiler-options.html#prevent-rename-protected-instance-methods)
+- [`prevent-rename-protected-static-variables`](compiler/compiler-options.html#prevent-rename-protected-static-variables)
+- [`prevent-rename-protected-instance-variables`](compiler/compiler-options.html#prevent-rename-protected-instance-variables)
+- [`prevent-rename-protected-static-accessors`](compiler/compiler-options.html#prevent-rename-protected-static-accessors)
+- [`prevent-rename-protected-instance-accessors`](compiler/compiler-options.html#prevent-rename-protected-instance-accessors)
 
 ### Prevent renaming of internal symbols {#prevent-rename-internal-symbols}
 
@@ -478,12 +478,12 @@ In a release build, determines if symbols in the `internal` namespace may be ren
 
 When `prevent-rename-internal-symbols` option is `true`, one or more the following options may be set to `false` to allow renaming of certain specific subsets of internal symbols.
 
-- [`prevent-rename-internal-static-methods`](#prevent-rename-internal-static-methods)
-- [`prevent-rename-internal-instance-methods`](#prevent-rename-internal-instance-methods)
-- [`prevent-rename-internal-static-variables`](#prevent-rename-internal-static-variables)
-- [`prevent-rename-internal-instance-variables`](#prevent-rename-internal-instance-variables)
-- [`prevent-rename-internal-static-accessors`](#prevent-rename-internal-static-accessors)
-- [`prevent-rename-internal-instance-accessors`](#prevent-rename-internal-instance-accessors)
+- [`prevent-rename-internal-static-methods`](compiler/compiler-options.html#prevent-rename-internal-static-methods)
+- [`prevent-rename-internal-instance-methods`](compiler/compiler-options.html#prevent-rename-internal-instance-methods)
+- [`prevent-rename-internal-static-variables`](compiler/compiler-options.html#prevent-rename-internal-static-variables)
+- [`prevent-rename-internal-instance-variables`](compiler/compiler-options.html#prevent-rename-internal-instance-variables)
+- [`prevent-rename-internal-static-accessors`](compiler/compiler-options.html#prevent-rename-internal-static-accessors)
+- [`prevent-rename-internal-instance-accessors`](compiler/compiler-options.html#prevent-rename-internal-instance-accessors)
 
 ### Prevent renaming of public static methods {#prevent-rename-public-static-methods}
 
