@@ -69,5 +69,7 @@ In contrast to other major frameworks for Royale, Crux:
     - This is the same tutorial [here](create-an-application/application-tutorial), but refactored to use Crux. 
   - [TodoMVC](https://github.com/apache/royale-asjs/tree/develop/examples/crux/todomvc-jewel-crux){:target='_blank'}
     -  This is the [TodoMVC Application example](https://github.com/apache/royale-asjs/tree/develop/examples/jewel/todomvc) inspired in the [todomv.com](http://todomvc.com){:target='_blank'} site, done with [Jewel](component-sets/jewel), but refactored to use Crux.
+- **Presentations**
+  - ApacheCon2002: <a href="https://youtu.be/E-Fg5V5DxbY" target="_blank">Starting from a blank file (Youtube presentation)</a> - How to build a brand-new application using Royale's off-the-shelf resources including CRUX. <a href="https://apache.github.io/royale-docs/presentations/StartingFromABlankFile-ApacheCon2020.pdf" target="_blank">PDF of the slide presentation</a>
 
 > This documentation is a migration from the official Swiz Framework docs [here](https://swizframework.jira.com/wiki/spaces/SWIZ/overview){:target='_blank'}. The original documentation was created for the original Flex framework so it's not 100% accurate for Royale.
