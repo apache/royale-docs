@@ -39,11 +39,11 @@ Apache Royale itself is a framework. It can play well with other frameworks to h
 
 ## Libraries
 
-* There are a large number of [ActionScript3](/features/as3) libraries that should "just work" when you import them into your Royale application. Others may need adjustment if they presume that your application will run on Flash, not in a modern browser.
-* Use the [ExternalInterface](/features/external-interface) class to connect with and use external JavaScript libraries in your Royale project.
-* An even more robust method for connecting with and using external JavaScript libraries is [externs](/features/externs).
-* Use Adobe's [Spectrum with Royale](/libraries/spectrum-royale). Spectrum supports large application ecosystems.
-* You can use [Material Design Lite (MDL) with Royale](/libraries/mdl-royale). MDL is a library/CSS structure that follows the Material Design principles that Google developed.
+* There are a large number of [ActionScript3](features/as3) libraries that should "just work" when you import them into your Royale application. Others may need adjustment if they presume that your application will run on Flash, not in a modern browser.
+* Use the [ExternalInterface](features/external-interface) class to connect with and use external JavaScript libraries in your Royale project.
+* An even more robust method for connecting with and using external JavaScript libraries is [externs](features/externs).
+* Use Adobe's [Spectrum with Royale](libraries/spectrum-royale). Spectrum supports large application ecosystems.
+* You can use [Material Design Lite (MDL) with Royale](libraries/mdl-royale). MDL is a library/CSS structure that follows the Material Design principles that Google developed.
 
 See a working example of [Using external JavaScript libraries in Apache Royale](https://royale.apache.org/using-external-javascript-libraries-in-apache-royale/){:target="_blank"}.
 
