@@ -33,6 +33,7 @@ They have no case variation (all lower case, not camel case, for example) and ma
 
 |[Suppress Warnings](create-an-application/optimizations/doc-comment-directives.html#suppress-warnings)  |[@royalesuppresspublicvarwarning](create-an-application/optimizations/doc-comment-directives.html#royalesuppresspublicvarwarning)   |
 |[Output Optimizations](create-an-application/optimizations/doc-comment-directives.html#output-optimizations)  |[@royaleigorecoercion](create-an-application/optimizations/doc-comment-directives.html#royaleigorecoercion)   |
+| |[@royaleemitcoercion](create-an-application/optimizations/doc-comment-directives.html#royaleemitcoercion)  | 
 | |[@royalesuppressresolveuncertain](create-an-application/optimizations/doc-comment-directives.html#royalesuppressresolveuncertain)  | 
 | |[@royalesuppresscompleximplicitcoercion](create-an-application/optimizations/doc-comment-directives.html#royalesuppresscompleximplicitcoercion)  | 
 | |[@royalesuppressvectorindexcheck](create-an-application/optimizations/doc-comment-directives.html#royalesuppressvectorindexcheck)  | 
@@ -80,8 +81,10 @@ public var myImportantVar:String = 'myValue';
 ### @royaleigorecoercion type {#royaleigorecoercion} 
 
 Used for: performance tuning, code size tuning.  
-This is an option to avoid compiler output of coercions of a certain type.  
-It can help avoid unnecessary code and improve performance.
+
+The `as` keyword in ActionScript has two purposes. The first is to tell the compiler to accept a value as a specific type even if it's ambiguous. This is called a compile-time coercion. ActionScript also supports run-time coercion of types. If runtime coercion is enabled, the type of an object is coerced to the specified type. If the object is not of the specified type, the assigned value will be nullified. This runtime check comes with a cost to code size and runtime performance/complexity.
+
+If runtime coercion is not needed, the `@royaleigorecoercion` option can be used. It can help avoid unnecessary code and improve performance.
 
 A simplistic, illustrative example is:
 ```as3
@@ -102,10 +105,14 @@ The following can then be used to avoid the redundant (as described above) javas
 /**
 * @royaleigorecoercion mypackage.MyClass
 * /
-```  
+```
 
 * * *
+### @royaleemitcoercion type {#royaleemitcoercion} 
 
+The flipside of `@royaleigorecoercion` is used to emit `as` coercions even when the `-js-output-optimization=skipAsCoercions` option is enabled. In the Royale framework code we use `@royaleemitcoercion` even though the compiler is set to emit the coercions because it's an explicit statement that coercions are necessary.
+
+* * *
 ### @royalesuppressresolveuncertain optional_arg {#royalesuppressresolveuncertain} 
 
 Used for: performance tuning, code size tuning.  
