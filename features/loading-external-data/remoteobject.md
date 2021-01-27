@@ -42,7 +42,7 @@ In Apache Royale you can write an `mx:RemoteObject` like this:
 
 ```mxml
 <fx:Declarations>
-        <mx:RemoteObject id="serviceResp" fault="onFault(event)"
+        <mx:RemoteObject id="serviceResp" result="onResult(event)" fault="onFault(event)"
             endpoint="http://localhost:8080/messagebroker/websocket-amf"
             destination="exampleService"/>
 </fx:Declarations>
