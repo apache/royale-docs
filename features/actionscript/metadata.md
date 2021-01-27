@@ -33,7 +33,7 @@ An example in **AS3** of a `Bindable` Metadata declaration decorating a variable
 public var someVariable:Boolean = true;
 ```
 
-In **MXML* and example of an `Event` Metadata declared for that MXML file will be the following. Notice that you need to add to the special `fx:Metadata` tag:
+In **MXML* an example of an `Event` Metadata declared for that MXML file will be the following. Notice that you need to add to the special `fx:Metadata` tag:
 
 ```mxml
 <fx:Metadata>
@@ -57,7 +57,7 @@ Event
 
 The default property used when additional MXML content appears within an element's definition in an MXML file.
 
-For example, [Jewel Group](component-sets/jewel/group) define `[DefaultProperty("mxmlContent")]` in its class code. When using this component, instead of writting:
+For example, [Jewel Group](component-sets/jewel/group) defines `[DefaultProperty("mxmlContent")]` in its class code. When using this component, instead of writting:
 
 ```mxml
 <j:Group>
@@ -67,7 +67,7 @@ For example, [Jewel Group](component-sets/jewel/group) define `[DefaultProperty(
 </j:Group>
 ```
 
-we can simplify declaration removing `mxmlContent` tags saving several lines of code:
+we can simplify declarations by removing `mxmlContent` tags saving several lines of code:
 
 ```mxml
 <j:Group>
