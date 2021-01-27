@@ -48,7 +48,7 @@ Proper use of modules can help maintain _"separation of concerns"_ which helps k
 
 ## Compiling modules
 
-Typically, you develop a in a separate folder of source files, and generate the output as a sibling to the other source files, which then cannot be easily accessed by the output of the main app. In JavaScript output, in development mode, the compiler generates lots of files. All these files must be relocated into the main app's output folder so the main app can reference them via the same relative path when the module is compiled into a single output file in production mode.
+Typically, you develop a module in a separate folder of source files, and generate the output as a sibling to the other source files, which then cannot be easily accessed by the output of the main app. In JavaScript output, in development mode, the compiler generates lots of files. All these files must be relocated into the main app's output folder so the main app can reference them via the same relative path when the module is compiled into a single output file in production mode.
 
 The Royale compiler supports a `-module-output=<destination folder>` that redirects where the output goes in order to place the development output in the right place. This is useful in some cases when using module that are in the same source path as the main app as opposed to being in separate projects.
 
