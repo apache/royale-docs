@@ -27,7 +27,7 @@ permalink: /migrate-an-existing-app/migrate-from-flex
 
 New life for your Flex applications
 
-If you have developed applications using [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, or Adobe Flex before it, your applications probably combine [MXML](features/mxml) and [ActionScript](features/as3) files along with resources like images and audio files; and some of the MXML files have <fx:Script> tags with ActionScript snippets inside them. If that is the case, you will find yourself at home working with Apache Royale. The big difference is not so much the code you use, but the output and what it needs to run properly.
+If you have developed applications using the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, or Adobe Flex before it, your applications probably combine [MXML](features/mxml) and [ActionScript](features/as3) files along with resources like images and audio files; and some of the MXML files have <fx:Script> tags with ActionScript snippets inside them. If that is the case, you will find yourself at home working with Apache Royale. The big difference is not so much the code you use, but the output and what it needs to run properly.
 
 It is not yet possible to just import an existing Flex application into Apache Royale and then produce output in JavaScript that will run almost anywhere. However, you may need to do less hands-on conversion than you think to get to where you can use Royale to build your application, transpiled to JavaScript.
 
