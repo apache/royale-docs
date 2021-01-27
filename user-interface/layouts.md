@@ -60,11 +60,11 @@ This fits with Royale's  “just-in-time” instead of “just-in-case” philos
 
 ### When Royale lays out a component
 
-* Components that don’t have any percentage or explicit dimensions, including width and height CSS styles, or both ”left" and “right" CSS styles, or both “top” and “bottom” CSS styles are considered to be in category 2 and sized when the set of children changes. When setting up from MXML, all of the children are added, then a single _childrenAdded_ event is dispatched to kick off the layout. When you use AS APIs, the _childrenAdded_ event is dispatched as children are added. You can suppress the event if you are changing lots of children if you remember to dispatch the event yourself when done.
+* Components that don’t have any percentage or explicit dimensions, including width and height CSS styles, or both ”left" and “right" CSS styles, or both “top” and “bottom” CSS styles are considered to be in category 2 and are sized when the set of children changes. When setting up from MXML, all of the children are added, then a single _childrenAdded_ event is dispatched to kick off the layout. When you use AS APIs, the _childrenAdded_ event is dispatched as children are added. You can suppress the event if you are changing lots of children if you remember to dispatch the event yourself when done.
 * Children that have both an explicitly set width and height are laid out when the children are added.
 * All other children theoretically have at least one dimension that is relative to the parent’s size. 
 
-At the beginning of the application, the default Application class sets the initial view to the size of the Flash Player or browser window. This generally causes a single top-down pass through all of the children that weren’t already sized to content or sized explicitly. When that pass done, if a dimension is sized to content, the layout sets the size of that dimension.
+At the beginning of the application, the default Application class sets the initial view to the size of the Flash Player or browser window. This generally causes a single top-down pass through all of the children that weren’t already sized to content or sized explicitly. When that pass is done, if a dimension is sized to content, the layout sets the size of that dimension.
 
 ### Layout Guidelines
 
