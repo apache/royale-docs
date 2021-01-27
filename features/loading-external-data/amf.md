@@ -28,7 +28,7 @@ AMF is a great way to send data between an Apache Royale client and a backend se
 
 [Action Message Format (AMF)](https://en.wikipedia.org/wiki/Action_Message_Format){:target='_blank'} is a binary format used to serialize object graphs such as ActionScript objects and XML, or send messages between a client and a remote service. The ActionScript 3 language provides classes for encoding and decoding from the AMF format. Backend servers need to know how to encode and decode AMF.
 
-Since 2018, Apache Royale has been able to encode/decode AMF3 for all AS3 data types with the exception of Flash Dictionary and Vector classes. We expect to implement those data types the future. Royale does not support AMF0 at this time. Some applications are currently in production using the Apache Royale AMF implementation.
+Since 2018, Apache Royale has been able to encode/decode AMF3 for all AS3 data types with the exception of Flash Dictionary and Vector classes. We expect to implement those data types in the future. Royale does not support AMF0 at this time. Some applications are currently in production using the Apache Royale AMF implementation.
 
 ## Language back-end servers supporting AMF
 
