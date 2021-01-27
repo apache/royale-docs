@@ -29,19 +29,19 @@ New life for your Flex applications
 
 If you have developed applications using [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, or Adobe Flex before it, your applications probably combine [MXML](features/mxml) and [ActionScript](features/as3) files along with resources like images and audio files; and some of the MXML files have <fx:Script> tags with ActionScript snippets inside them. If that is the case, you will find yourself at home working with Apache Royale. The big difference is not so much the code you use, but the output and what it needs to run properly.
 
-It is not yet possible to just import an existing Flex application into Apache Royale and then produce output in JavaScript that will run almost anywhere. However, you may need to do less hands-on conversion than you think to get to where you can produce your application, transpiled to JavaScript, through Royale.
+It is not yet possible to just import an existing Flex application into Apache Royale and then produce output in JavaScript that will run almost anywhere. However, you may need to do less hands-on conversion than you think to get to where you can use Royale to build your application, transpiled to JavaScript.
 
 - ActionScript syntax is the same for Royale as it was in Flex. Functions, loops, classes, and properties will work as they worked before.
 - Your "business logic", which you built in, or mainly in, ActionScript, probably does not need to change. 
 - Components and their functions that do not rely on Apache Flex or Adobe Flash features will probably work with minor tweaks.
 
-There are areas in your code base that will have to change. One is anywhere that uses **Flash APIs**. You can write a Flex application without importing and using any Flash classes, but most folks found it useful to call directly into Flash. Those calls will have to change.
+There are areas in your code base that will have to change. One is anywhere that uses **Flash APIs**. You can write a Flex application without importing and using any Flash classes, but most folks found it useful to call directly into Flash. Those calls have to change for most applications, as browsers no longer support Flash.
 
 To determine where you may have used Flash APIs, look for "import flash" in your code. If you comment out all the "import flash" lines and re-compile, the compiler will show you every line that uses a Flash API.
 
-Royale is creating a set of [emulation](/migrate-an-existing-app/emulation) components that will eventually deliver most, if not all, of the Flex APIs. These components do not promise 100% backward compatibility. Nor do they promise the same class hierarchy as Flex. They just try to approximate what Flex did.
+Royale is creating a set of [emulation](/migrate-an-existing-app/emulation) components that deliver most, if not all, of the Flex APIs. These components do not promise 100% backward compatibility. Nor do they promise the same class hierarchy as Flex. They just try to approximate the functions their equivalents provided in Flex.
 
-Some popular Flash APIs have been added to the Royale emulation of UIComponent, so review the documentation for UIComponent to see if it has a replacement for a Flash API your old app uses. If a replacement doesn't exist, it either hasn't been implemented yet in the emulation components or we have a good reason why it shouldn't be. Ask on the users@royale.apache.org mailing list if you want to know more about an emulation for a particular API.
+Some popular Flash APIs have been added to the Royale emulation of UIComponent, so review the documentation for UIComponent to see if it has a replacement for a Flash API your old app uses. If a replacement doesn't exist, it either hasn't been implemented yet in the emulation components or we have a good reason why it shouldn't be. Ask on the `users@royale.apache.org` mailing list if you want to know more about an emulation for a particular API.
 
 Another category of changes is **namespaces**. In every MXML file you probably have one or both of:
 
@@ -61,13 +61,13 @@ xmlns:mx="library://ns.apache.org/royale/mx"
 
 Making these changes will help us and you track what code is not using emulation components in MXML files.
 
-Another category of changes is **API conflicts**. For example, in Flex, UIComponent (and thus all components and MXML files) had a 'document' property. The 'document' property conflicts with the 'document' object in the browser, so in the Royale emulation UIComponent had 'document' renamed to 'component'. Look for uses of 'document' and 'parentDocument' and change them to 'component' and 'parentComponent'.
+Another category of changes is **API conflicts**. For example, in Flex, UIComponent (and thus all components and MXML files) had a 'document' property. The 'document' property conflicts with the 'document' object in the browser, so in the Royale emulation UIComponent we renamed 'document' to 'component'. Look for uses of 'document' and 'parentDocument' and change them to 'component' and 'parentComponent'.
 
 Yet another category of changes is for **non-Flex SWCs**. If you used third-party libraries, you need to find Royale equivalents for them.  Royale is not developing emulations for any non-Apache Flex libraries at this time. Some third-party libraries may not have Flash dependencies and can just be transpiled with the Royale compiler. Others would take some effort to make Royale-compatible, and you may prefer to find a replacement SWC that Royale does support instead. Start a discussion on dev@royale.apache.org to find out what your options are.
 
 ## Running the compiler
 
-The Royale compiler supports every options the Flex compiler supports. There are also some new options for controlling JavaScript output. Royale has an Ant task just as Flex does. It supports all the options that the Flex Ant task supports, plus some new options for controlling JavaScript output. You should be able to use the same options on the Royale compiler that you used when compiling your Flex app. The only thing you must add is the compiler option
+The Royale compiler supports every option the Flex compiler supports. There are also some new options for controlling JavaScript output. Royale has an Ant task just as Flex does. It supports all the options that the Flex Ant task supports, plus some new options for controlling JavaScript output. You should be able to use the same options on the Royale compiler that you used when compiling your Flex app. The only thing you must add is the compiler option
 
 `+configname=flex`
 
