@@ -115,7 +115,7 @@ It is good to add, just under the XML declaration line, a **comments block** tha
 
 ### What your file _may_ have ###
 
-A lot happens inside the main tag, and things can get complicated. The following elements to not all have to appear in every app or module, and do not have to appear in a specific order for the app to compile and run. But it's good to have a pattern you follow, especially if you are working as part of a team, so you can avoid wasting time trying to find something, forgetting to add something, or adding it twice.
+A lot happens inside the main tag, and things can get complicated. The following elements do not all have to appear in every app or module, and do not have to appear in a specific order for the app to compile and run. But it's good to have a pattern you follow, especially if you are working as part of a team, so you can avoid wasting time trying to find something, forgetting to add something, or adding it twice.
 
 **Declarations**: Define things like effects, validators, and formatters, and send and request data, inside the `<fx:Declarations>...</fx:Declarations>` tag.
 
