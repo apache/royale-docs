@@ -44,11 +44,11 @@ PAYG takes the opposite approach. Classes only contain the code necessary for th
 
 To target JavaScript, the Royale SDK and components needed to be substantially different from the legacy Flex 4 SDK and components, which were designed to compile into Flash applications and libraries. Since we had to make substantial changes throughout the code base, we took the opportunity to review how we could make general improvements to the SDK component architecture to address some common criticisms of the Flex 4 component set. One of those criticisms (the size of compiled applications) relates to the size of some of the Flex 4 base classes, which are very much 'Just in Case'. 
 
-Implementing PAYG in Royale has the goal of maintaining the possibility of a full range of functions while keeping application size and the cost of runnin an app as small as possible.
+Implementing PAYG in Royale has the goal of maintaining the possibility of a full range of functions while keeping application size and the cost of running an app as small as possible.
 
 ## How we define default functionality
 
-Determining whether something should be in a component's default functionality or should be added ‘as you go’ is dynamic conversation the team engages in. You are welcome to [join in and add your insights](https://royale.apache.org/mailing-lists/){:target='_blank'}!
+Determining whether something should be in a component's default functionality or should be added ‘as you go’ is a dynamic conversation the team engages in. You are welcome to [join in and add your insights](https://royale.apache.org/mailing-lists/){:target='_blank'}!
 
 ## What are we 'Paying' in PAYG?
 
