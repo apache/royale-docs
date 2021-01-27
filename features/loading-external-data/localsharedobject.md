@@ -39,7 +39,7 @@ Instead of using cookies, your Royale application can use Local Shared Objects (
 
 ## Implementations
 
-Apache Royalecurrently has two implementations of Local Shared Object:
+Apache Royale currently has two implementations of Local Shared Object:
 
 - **SharedObject**: An emulation class to support the swf based Local Shared Object. This implementation supports AMF encoded content (requires `[RemoteClass]` or `registerClassAlias` before reading and writing to roundtrip instances of custom classes).
 
@@ -82,7 +82,7 @@ The `getLocal()` method has three parameters:
 | Parameter     | Required  | Description                                                                   |
 |--------------	|----------	| -----------------------------------------------------------------------------	|
 | __name__    	| Yes       | Assigns a name to the Local Shared Object.                                    |
-| __localPath__ | No        | You can use it if many components in the same application may be accessing the same Local Shared Object, rather than accessing the object your created in the app. |
+| __localPath__ | No        | You can use it if many components in the same application may be accessing the same Local Shared Object, rather than accessing the object you created in the app. |
 | __secure__    | No        | If you create it, future calls to this Local Shared Object must use HTTPS.    |
 
 ## Access and update Local Shared Object values
