@@ -28,7 +28,7 @@ Royale provides its own component sets that support developing simple, small and
 
 - [Basic](component-sets/basic) is the smallest, fastest and most [PAYG](features/payg) set of components possible in Royale, and is used by other sets like Jewel as its base.
 
-- [Jewel](component-sets/jewel) is focused in look and feel and new practices present in modern development like responsivness and multiplatform. Jewel support Themes and diferent kind of desktop and mobile devices.
+- [Jewel](component-sets/jewel) is focused in look and feel and new practices present in modern development like responsivness and multiplatform support. Jewel supports Themes and works well on a wide range of desktop and mobile devices.
 
 - [MXRoyale](component-sets/mxroyale) contains emulations of Flex's UIComponent and other MX components.
 
