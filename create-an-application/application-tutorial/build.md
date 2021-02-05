@@ -90,7 +90,7 @@ The main *MXML* file should now look like this:
     <js:HTTPService id="commitsService" />
 
     <js:initialView>
-        <js:VView>
+        <js:View>
             <js:Label text="{projectName} Commits Log"/>
             <js:DataGrid id="dg">
                 <js:columns>
@@ -101,7 +101,7 @@ The main *MXML* file should now look like this:
             </js:DataGrid>
             <js:Label text="Selected Message:"/>
             <js:MultilineLabel text="{commits[dg.selectedIndex].message}" />
-        </js:VView>
+        </js:View>
     </js:initialView>
 </js:Application>
 ```
