@@ -84,7 +84,7 @@ private var currentIndex:int = 0;
 private function fetchCommits():void
 {
   commitsService.addEventListener("complete", gotCommits);
-  commitsService.source = repos[currentIndex];
+  commitsService.url = "https://api.github.com/repos/" + repos[currentIndex] + "/commits";
   commitsService.send();
 }
 
