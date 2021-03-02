@@ -80,4 +80,4 @@ _More information on skinning, with examples, is coming soon._
 
 In Apache Royale, a theme is a predefined CSS file (and optionally other assets like images) that holds the definitions of each component. When you add a theme to your application or replace the existing one, all the visuals (colors, fonts, lines, and drawings) in your your entire application change to the new theme at once.
 
-In the [Jewel](component-sets/jewel) UI Set, themeing is one of the key concepts. You can learn more about it here: [Jewel Themes](component-sets/jewel/jewel-themes).
+In the [Jewel](component-sets/jewel) UI Set, themeing is one of the key concepts. You can learn more about it here: [Jewel Themes](component-sets/jewel/themes).
