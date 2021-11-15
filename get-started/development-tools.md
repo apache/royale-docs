@@ -56,6 +56,10 @@ You can use Apache Maven to compile your Royale application. Visit the [Apache M
 
 You can use Apache Ant to compile your Royale application. Visit the [Apache Ant Project](https://ant.apache.org){:target='_blank'} to learn more about Ant. Each of the examples in the examples folder is set up to be built with Ant.
 
+### asconfigc
+
+You can use asconfigc to compile your Royale application. Visit the [asconfigc github project](https://github.com/BowlerHatLLC/asconfigc){:target='_blank'} to learn more about asconfigc. Each of the examples in the examples folder is set up to be built with asconfigc.
+
 ## Apache Cordova
 
 Apache Cordova enables Royale applications to run on mobile devices, tablets, and even desktops. The MobileTrader example in examples/royale/MobileTrader and a few other examples use Cordova. Visit the [Apache Cordova project](https://cordova.apache.org){:target='_blank'} to learn more about using Cordova.
