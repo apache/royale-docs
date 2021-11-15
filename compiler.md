@@ -34,7 +34,7 @@ The code is based on the <a href="https://www.adobe.com/content/dam/acom/en/devn
 
 ## User Guide
 
-The Royale Compiler does many things besides compile **MXML** and **ActionScript** into **JavaScript** and/or **SWF**. But if that's all you want to do, you can use the compiler with <a href="https://maven.apache.org/" target="_blank">Apache Maven</a>, <a href="https://ant.apache.org/" target="_blank">Apache Ant</a>, several [IDEs](get-started/development-tools), <a href="https://www.npmjs.com/" target="_blank">npm</a> and through the command-line. Below are some pointers to getting started:
+The Royale Compiler does many things besides compile **MXML** and **ActionScript** into **JavaScript** and/or **SWF**. But if that's all you want to do, you can use the compiler with <a href="https://maven.apache.org/" target="_blank">Apache Maven</a>, <a href="https://ant.apache.org/" target="_blank">Apache Ant</a>, <a href="https://github.com/BowlerHatLLC/asconfigc" target="_blank">asconfigc</a>, several [IDEs](get-started/development-tools), <a href="https://www.npmjs.com/" target="_blank">npm</a> and through the command-line. Below are some pointers to getting started:
 
 ### Apache Maven
 
@@ -43,6 +43,10 @@ There are some examples in the `apache/royale-asjs` repo in the `examples` folde
 ### Apache Ant
 
 In an Apache Royale distribution, there is a `compiler-royaleTasks.jar` in the `js/lib` folder that contains Ant tasks for the Royale Compiler. There is an mxmlc task for creating applications and a compc task for creating libraries.
+
+### asconfigc
+
+asconfigc is a command line tool for compiling ActionScript projects and is arguably the easiest way to compile -- especially if you are not familiar with Apache Ant or Maven. asconfigc can be run a stand-alone command line tool, or as part of a VS Code extension. To run it, you would either feed arguments into the tool or more likely create a <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">asconfig.json<a/> file at the base of your project. Refer to the <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">documentation<a/> for the full list of options.
 
 ### IDEs
 
