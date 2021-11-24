@@ -76,4 +76,4 @@ The currently supported beads are the following:
 
 *Instructions and sample code will appear here soon to show how you can map URL parameters to different initial values in the application, and vice versa.*
 
-[An open source application using browsing can be examined here.](https://github.com/unhurdle/spectrum-royale/blob/master/SpectrumBrowser/src/view/BrowserRouter.mxml){:target='_blank'}.
+[An open source application using routing can be examined here.](https://github.com/unhurdle/spectrum-royale/blob/master/SpectrumBrowser/src/view/BrowserRouter.mxml){:target='_blank'}.
