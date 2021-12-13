@@ -26,6 +26,8 @@ Pre-written sets of code which allows for easier development of Royale-based app
 
 Frameworks provide reliable templates to help you develop complex projects more easily and sustainably. Libraries are generally collections of modules and functions that focus on a particular task or theme--you might find a library to help you with scientific calculations, and another library for manipulating graphics.
 
+## Library Basics
+Are you new to Royale libraries? [Read what they are and how to use them.](libraries/library-basics) 
 ## Frameworks
 Apache Royale itself is a framework. It can play well with other frameworks to help simplify development, especially when many people are working on the same project.
 
