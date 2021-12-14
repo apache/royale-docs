@@ -20,38 +20,38 @@ description: What are libraries in Royale
 permalink: /libraries/library-basics
 ---
 
-# Royale Libraries
+# Royale libraries
 
 A bit about Royale libraries. What they are, how to use them and how to create them.
 
 Royale libraries are packaged in `swc` files. A `swc` file is a zipped archive which contains the following:
 1. A `catalog.xml` which describes what is in the archive.
-2. A `library.swf` file which is binary representation of the code structure in Flash format. This is read by the compiler to determine type information and code flow.
-3. Optionally, a `js` folder which contains compiled javascript code which can be run by a javascript runtime
+2. A `library.swf` file which is binary representation of the code structure in Flash format. The compiler reads this file to determine type information and code flow.
+3. Optionally, a `js` folder which contains compiled JavaScript code which a JavaScript runtime can run.
 
-## Types of Libraries
+## Types of libraries
 There are two basic library types:
-1. Compiled Code Libraries
+1. Compiled Code libraries
 2. Typedef libraries
 
-There is no obvious way to tell the difference. Both have a `.swc` extension, although typedef libraries will not have any `js` code included and will generally be smaller.
+There is no obvious way to tell the difference. Both have a `.swc` extension, although typedef libraries do not have any `js` code included and will generally be smaller.
 
-### Compiled Code Libraries
-Compiled code libraries are libraries which contain code that will end up in your compiled application (assuming you use that code). These can be code that you might use internally across multiple projects, or it can be a library that was compiled by someone else. Much of the Royale framework is compiled into `swc` files that are used in applications.
+### Compiled Code libraries
+Compiled code libraries contain code that will end up in your compiled application (assuming you use that code). A library can contain code that you might use internally across multiple projects, or it can be a library that someone else compiled, and that provides functions that some part of your application needs. Much of the Royale framework is compiled into `swc` files that applications use.
 
-Compiled code libraries are created using the `compc` compiler. [See here for detailed instructions on how to create one.](libraries/compiled-code-libraries)
+Compiled code libraries are created using the `compc` compiler. See [detailed instructions on how to create one](libraries/compiled-code-libraries).
 
 ### Typedef libraries
-Typedef libraries are libraries which define the types of different classes, but contain no code that would be added to an application. Typedef libraries are used for core Web APIs and third party javascript libraries which could be included in applications as separate javascript files (such as jQuery). Typedef libraries are similar to Typescript `d.ts` files.
+Typedef libraries define the types of different classes, but contain no code that would be added to an application. Typedef libraries hold core Web APIs and third party JavaScript libraries which could be included in applications as separate JavaScript files (such as jQuery). Typedef libraries are similar to Typescript `d.ts` files.
 
-Typedef libraries are created using the `externc` compiler. (TODO add sample configs for doing this)
+Typedef libraries are created using the `externc` compiler. (TODO add sample configs for doing this.)
 
-For completeness sake: There's a third class of libraries which you would generally not need to deal with. That's the GCL library included in Royale. It has the type definitions for Google Closure Library, but the actual code that might be used comes from the Google Closure Library javascript files. (TODO -- edit this for accuracy)
+For completeness' sake: There's a third class of libraries which you would generally not need to deal with. That's the `GCL library` included in Royale. It has the type definitions for Google Closure Library, but the actual code that your application might use comes from the Google Closure Library JavaScript files. (TODO -- edit this for accuracy)
 
-## Using SWC Libraries
+## Using SWC libraries
 
-To use `swc` libraries, you include the `swc` file in your project. Royale framework `swc`s are made available automatically, but you can include any `swc` you want by adding the file. To use compiled code libraries, you should specify the containing folder using `library-path` and/or `js-library-path`. (TODO add links to compiler arguments)
+To use a `swc` library, include the `swc` file in your project. Royale framework `swc`s are available automatically, but you can include any `swc` you want by adding the file. To use compiled code libraries, specify the containing folder using `library-path` and/or `js-library-path`. (TODO add links to compiler arguments)
 
-## Creating SWC Libraries
+## Creating SWC libraries
 
 TODO fill this out
