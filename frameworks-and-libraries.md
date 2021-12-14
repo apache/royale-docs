@@ -26,9 +26,6 @@ Pre-written sets of code which allows for easier development of Royale-based app
 
 Frameworks provide reliable templates to help you develop complex projects more easily and sustainably. Libraries are generally collections of modules and functions that focus on a particular task or theme--you might find a library to help you with scientific calculations, and another library for manipulating graphics.
 
-## Royale Libraries 101
-Are you new to Royale libraries? [Read what they are and how to use them.](libraries/library-basics)
-
 ## Frameworks
 Apache Royale itself is a framework. It can play well with other frameworks to help simplify development, especially when many people are working on the same project.
 
@@ -41,6 +38,8 @@ Apache Royale itself is a framework. It can play well with other frameworks to h
 * [PureMVC](https://github.com/PureMVC/puremvc-as3-multicore-framework/wiki){:target='_blank'} is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. Is part of [The PureMVC Framework](https://puremvc.org){:target='_blank'} that implements the same library in many other popular languages and technologies.
 
 ## Libraries
+
+Are you new to Royale libraries? [Read what they are and how to use them](libraries/library-basics).
 
 * There are a large number of [ActionScript3](features/as3) libraries that should "just work" when you import them into your Royale application. Others may need adjustment if they presume that your application will run on Flash, not in a modern browser.
 * Use the [ExternalInterface](features/external-interface) class to connect with and use external JavaScript libraries in your Royale project.
