@@ -47,6 +47,8 @@ There are several files you will likely use for creating libraries.
 5. js-compile-config.xml
 6. asconfig.json
 
+Of these files, `manifest.xml` and `defaults.css` are optional. `compile-config.xml` and `js-compile-config.xml` are technically not needed either, but using them makes it easier to compile your library.
+
 ## The Manifest
 The manifest file (in our example named `manifest.xml`) is the file where you declare the components you want to make available to MXML using your namespace.
 
