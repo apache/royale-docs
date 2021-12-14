@@ -103,6 +103,7 @@ The notable difference between the two files:
 1. `compile-config.xml` has `playerglobal.swc` referenced in the `external-library-path`.
 2. `compile-config.xml` has `COMPILE::SWF` as `true` while `js-compile-config.xml` has `COMPILE::JS` as `true`.
 3. If you have a `lib/Foo.swc` JS typedef dependency that you want to include, you should add the following to the `js-compile-config.xml`:
+
 ```
         <js-external-library-path append="true">
             <path-element>lib/Foo.swc</path-element>
@@ -112,6 +113,7 @@ The notable difference between the two files:
 
 
 `compile-config.xml`:
+
 ```
 <royale-config>
     <compiler>
