@@ -111,6 +111,12 @@ The notable difference between the two files:
 
 ```
 
+Note the important pieces in the config:
+
+1. In the namespaces section, you need to list all the namespaces you are using. Each namespace has to have a uri and a reference to the manifest file that is associated with that uri. In our case, the components will be used with the namespace `library://ns.somesite.com/kapow`.
+2. You need to include your css file using the `include-file` section. Any other accompanying files you want to include should be added there.
+3. You need to reference your main class using `include-classes`.
+4. You need to include the namespace(s) used with `include-namespaces`.
 
 `compile-config.xml`:
 
