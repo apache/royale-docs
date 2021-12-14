@@ -50,16 +50,16 @@
                     "path": "features/as3.md",
                     "children": [
                         {
-                            "path": "features/actionscript/code-conventions.md"
+                            "path": "features/as3/code-conventions.md"
                         },
                         {
-                            "path": "features/actionscript/metadata.md"
+                            "path": "features/as3/metadata.md"
                         },
                         {
-                            "path": "features/actionscript/abstract-classes.md"
+                            "path": "features/as3/abstract-classes.md"
                         },
                         {
-                            "path": "features/actionscript/private-constructors.md"
+                            "path": "features/as3/private-constructors.md"
                         }
                     ]
                 },

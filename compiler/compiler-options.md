@@ -85,7 +85,7 @@ You can use these options to reduce the size of your compiled application:
 
 ### allow-abstract-classes {#allow-abstract-classes}
 
-Determines if the `abstract` modifier may be used with classes. For more details, see [Abstract Classes in ActionScript](features/actionscript/abstract-classes.html).
+Determines if the `abstract` modifier may be used with classes. For more details, see [Abstract Classes in ActionScript](features/as3/abstract-classes).
 
 ```sh
 -allow-abstract-classes
@@ -101,7 +101,7 @@ Determines if alias syntax for for imported symbols is allowed or not.
 
 ### allow-private-constructors {#allow-private-constructors}
 
-Determines if the `private` namespace may be used with class constructors. For more details, see [Private Constructors in ActionScript](features/actionscript/private-constructors.html).
+Determines if the `private` namespace may be used with class constructors. For more details, see [Private Constructors in ActionScript](features/as3/private-constructors).
 
 ```sh
 -allow-private-constructors
