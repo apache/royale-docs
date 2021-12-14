@@ -168,6 +168,9 @@
                     "path": "libraries/library-basics.md"
                 },
                 {
+                    "path": "libraries/compiled-code-libraries.md"
+                },
+                {
                     "path": "libraries/crux.md",
                     "children": [
                         {
