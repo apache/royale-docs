@@ -27,9 +27,9 @@ List of recent commonly used available compiler options
 ## Contents
 
 **General compiler options**
-* [allow-abstract-classes](compiler/compiler-options.html#allow-abstract-classes)
-* [allow-import-aliases](compiler/compiler-options.html#allow-import-aliases)
-* [allow-private-constructors](compiler/compiler-options.html#allow-abstract-constructors)
+* [allow-abstract-classes](#allow-abstract-classes)
+* [allow-import-aliases](#allow-import-aliases)
+* [allow-private-constructors](#allow-private-constructors)
 * [strict-identifier-names](compiler/compiler-options.html#strict-identifier-names)
 
 **JavaScript compiler options**
