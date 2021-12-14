@@ -39,7 +39,7 @@ There is no obvious way to tell the difference. Both have a `.swc` extension, al
 ### Compiled Code Libraries
 Compiled code libraries are libraries which contain code that will end up in your compiled application (assuming you use that code). These can be code that you might use internally across multiple projects, or it can be a library that was compiled by someone else. Much of the Royale framework is compiled into `swc` files that are used in applications.
 
-Compiled code libraries are created using the `compc` compiler. (TODO add sample configs for doing this)
+Compiled code libraries are created using the `compc` compiler. [See here for detailed instructions on how to create one.](compiled-code-libraries)
 
 ### Typedef libraries
 Typedef libraries are libraries which define the types of different classes, but contain no code that would be added to an application. Typedef libraries are used for core Web APIs and third party javascript libraries which could be included in applications as separate javascript files (such as jQuery). Typedef libraries are similar to Typescript `d.ts` files.
