@@ -67,3 +67,9 @@ Royale provides several compiler options to customize the use. You can check the
 - [Compiler Options](compiler/compiler-options)
 
 > Read about <a href="https://github.com/apache/royale-compiler/wiki/Developer-Guide" target="_blank">how to contribute to the Apache Royale Compiler</a>.
+
+## Compiler Arguments
+
+There are a lot of compiler arguments that can be used when running `mxmlc`. You can see the full list here:
+
+- [Compiler Arguments](compiler/compiler-arguments)

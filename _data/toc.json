@@ -215,6 +215,9 @@
             "children": [
                 {
                     "path": "compiler/compiler-options.md"
+                },
+                {
+                    "path": "compiler/compiler-arguments.md"
                 }
             ]
         },

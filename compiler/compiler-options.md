@@ -22,7 +22,7 @@ permalink: /compiler/compiler-options
 
 # Compiler Options
 
-List of available compiler options
+List of recent commonly used available compiler options
 
 ## Contents
 
