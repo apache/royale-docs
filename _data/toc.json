@@ -50,6 +50,9 @@
                     "path": "features/as3.md",
                     "children": [
                         {
+                            "path": "features/as3/language-basics.md"
+                        },
+                        {
                             "path": "features/as3/packages.md"
                         },
                         {
