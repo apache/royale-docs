@@ -23,3 +23,30 @@ permalink: /features/as3/classes-and-functions
 # Classes and Functions
 
 Classes and functions in ActionScript 3
+
+## File Structure
+As mentioned in [packages](features/as3/packages), each file in ActionScript needs a `package` declaration. Similarly, there must be exactly one file for each externally visible Class (or function). Additionally, the class name must match the class name exactly. By convention, class names start with an uppercase character.
+
+## Inheritance and interfaces
+ActionScript classes can only inherit from a single `super` class, but you can declare multiple interfaces. So if you need a class to be more than one unrelated types, you should use interfaces to declare your types rather than classes. Sub-classing and declaring interfaces looks like this:
+
+```
+public class SubClass extends SuperClass implements IFoo, IBaz, IBar
+```
+
+## Constructors
+Constructors in ActionScript are optional. If you need to initialize something in your class you should always declare a constructor and you can define at which point the `super` class is instantiated by calling `super()` inside the constructor. Subclasses and super-classes do not need to have the same number of arguments so the following is perfectly valid:
+
+```
+package{
+	public class SubClass(){
+		foo = "foo";
+		super("baz")
+	}
+	private var foo:String
+}
+```
+
+## Static accessors
+By default
+## Using `this`
