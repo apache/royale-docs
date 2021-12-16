@@ -50,6 +50,12 @@
                     "path": "features/as3.md",
                     "children": [
                         {
+                            "path": "features/as3/packages.md"
+                        },
+                        {
+                            "path": "features/as3/classes-and-functions.md"
+                        },
+                        {
                             "path": "features/as3/code-conventions.md"
                         },
                         {
