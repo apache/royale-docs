@@ -24,6 +24,9 @@ permalink: /features/as3/language-basics
 
 Language basics in ActionScript 3
 
+ActionScript is a superset of the ecma 4 spec. That gives it the same roots as Javascript and code will look very similar. The biggest difference is the optionally typed quality of ActionScript, and classes. Ecma 6 added classes to Javascript as well, but Javascript classes are less structured that ActionScript classes.
+
+Because ActionScript was forked from the ecma spec at version 4, there are features that Javascript has which are missing from ActionScript and vice versa. Below is an overview of the main ActionScript features.
 ## Scope
 
 There are four levels of access scope in ActionScript:
