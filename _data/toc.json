@@ -59,6 +59,9 @@
                             "path": "features/as3/classes-and-functions.md"
                         },
                         {
+                            "path": "features/as3/interfaces.md"
+                        },
+                        {
                             "path": "features/as3/code-conventions.md"
                         },
                         {
