@@ -20,11 +20,11 @@ description: Classes and functions in ActionScript 3
 permalink: /features/as3/classes-and-functions
 ---
 
-# Classes and Functions
+# Classes and functions
 
 Classes and functions in ActionScript 3
 
-## File Structure
+## File structure
 As mentioned in [packages](features/as3/packages), each file in ActionScript needs a `package` declaration. Similarly, there must be exactly one file for each externally visible Class (or function). Additionally, the class name must match the class name exactly. By convention, class names start with an uppercase character.
 
 ## Inheritance and interfaces
@@ -47,6 +47,42 @@ package{
 }
 ```
 
-## Static accessors
-By default
+## Static accessors {#static-accessors}
+By default any accessors of a class are instance accessors. For class-level methods, vars and const, you need to add the `static` modifier. The order of the modifiers do not matter, so `public static var` is the same as `static public var`.
+
+Class accessors are not inherited by their subclasses.
+
+Instance and class accessors must have unique names, so you cannot have both `public var foo` and `public static var foo`.
+
 ## Using `this`
+Using `this` is usually optional in ActionScript. If there is no local variable (or function) of the specified name, an instance accessor will be used. The only time you will need `this` is when you have a local variable or function and an instance variable or method of the same name.
+
+## Using static accessors
+Similarly, static accessors and methods can be referenced without using the class name, so `baz()` will be resolved to `Foo.baz()` automatically. If you are using a public static method (or accessor) outside the class that you will need to explicitly call `Foo.baz()`.
+
+## Using `this` inside functions
+A common problem in Javascript is that `this` is lost within functions. ActionScript does not have this issue. You can freely use `this` inside both instance methods and nested anonymous functions. The compiler will automatically wrap the function to resolve `this` at runtime.
+
+## Package level functions
+You don't need to declare a class to use code. You can have "utility" functions as first class citizens. To create a public function you create a file similar to a class (but name it camel-case). Assuming your file structure is like so: `src/com/acme/doAwesome.as` Inside the file you declare the function like this:
+
+```
+package com.acme{
+	public function doAwesome(notSoAwesome:Object):Awesome{
+		return new Awesome(
+			doSomethingComplicatedInTheSamePackage(notSoAwesome)
+		);
+	}
+}
+```
+
+Then `doAwesome()` is available anywhere in your project. Your IDE should `import com.acme.doAwesome` if you use it.
+
+## Static classes and singletons
+One of the cool new features in ActionScript is [private constructors](features/as3/private-constructors). Use that if you have a class that you want to use as static-only class or as a [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern)
+## Instance, static and utility functions
+The question is then when to use which.
+- For OOP programming, you generally want to use instantiated classes.
+- Static-only classes are useful for keeping state -- especially when using simple data types.
+- Singletons are useful for keeping state when you need finer control over instantiation and/or the data types are more complex.
+- When you are not keeping state, utility functions are generally a better choice. They are easier to unit test. They lend themselves more to functional programming, and they generally carry less excess weight associated with classes.

@@ -45,11 +45,7 @@ There are three basic accessor types in ActionScript
 ActionScript does not support arrow functions or `let`. The use of the three accessor types are similar to Javascript.
 
 ## Instance and Class Accessors
-By default any accessors of a class are instance accessors. For class-level methods, vars and const, you need to add the `static` modifier. The order of the modifiers do not matter, so `public static var` is the same as `static public var`.
-
-Class accessors are not inherited by their subclasses.
-
-Instance and class accessors must have unique names, so you cannot have both `public var foo` and `public static var foo`.
+By default any accessors of a class are instance accessors. For class-level methods, vars and const, you need to add the `static` modifier. For more details [read about static accessors in classes](features/as3/classes-and-functions#static-accessors).
 
 ## Primitive Types
 TODO
