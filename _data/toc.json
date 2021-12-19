@@ -68,6 +68,9 @@
                             "path": "features/as3/xml.md"
                         },
                         {
+                            "path": "features/as3/actionscript-vs-typescript.md"
+                        },
+                        {
                             "path": "features/as3/code-conventions.md"
                         },
                         {
