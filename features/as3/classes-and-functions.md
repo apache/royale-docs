@@ -28,7 +28,7 @@ Classes and functions in ActionScript 3
 As mentioned in [packages](features/as3/packages), each file in ActionScript needs a `package` declaration. Similarly, there must be exactly one file for each externally visible Class (or function). Additionally, the class name must match the class name exactly. By convention, class names start with an uppercase character.
 
 ## Inheritance and interfaces
-ActionScript classes can only inherit from a single `super` class, but you can declare multiple interfaces. So if you need a class to be more than one unrelated types, you should use interfaces to declare your types rather than classes. Sub-classing and declaring interfaces looks like this:
+ActionScript classes can only inherit from a single `super` class, but you can declare multiple interfaces. So if you need a class to be more than one unrelated types, you should use [interfaces](features/as3/interfaces) to declare your types rather than classes. Interfaces is very often a better design choice that classes for types either way. Sub-classing and declaring interfaces looks like this:
 
 ```
 public class SubClass extends SuperClass implements IFoo, IBaz, IBar
@@ -61,7 +61,9 @@ Using `this` is usually optional in ActionScript. If there is no local variable 
 Similarly, static accessors and methods can be referenced without using the class name, so `baz()` will be resolved to `Foo.baz()` automatically. If you are using a public static method (or accessor) outside the class that you will need to explicitly call `Foo.baz()`.
 
 ## Using `this` inside functions
-A common problem in Javascript is that `this` is lost within functions. ActionScript does not have this issue. You can freely use `this` inside both instance methods and nested anonymous functions. The compiler will automatically wrap the function to resolve `this` at runtime.
+A common problem in Javascript is that `this` is lost within functions. ActionScript does not have this issue. You can freely use `this` inside instance methods. If the function is used as a callback, the compiler will automatically wrap the function to resolve `this` at runtime.
+
+In Royale, it's generally not recommended to use `this` inside non-instance methods and functions. In fact that compiler will warn you by default if you do. Generally, the only case where it's necessary to use `this` inside a function in Royale is if you need `Object.defineProperty` for some reason, and even that should be very rare. The `org.apache.royale.utils.object` package has a number of utility functions for helping to define properties without using `this`. Namely: `defineGetter`, `defineProperty`, `defineSimpleGetter` and `defineSimpleProperty`. If you do find yourself looking to use these functions often, you should probably examine your architecture because there's almost guaranteed to be a better way of designing the architecture in Royale.
 
 ## Package level functions
 You don't need to declare a class to use code. You can have "utility" functions as first class citizens. To create a public function you create a file similar to a class (but name it camel-case). Assuming your file structure is like so: `src/com/acme/doAwesome.as` Inside the file you declare the function like this:
