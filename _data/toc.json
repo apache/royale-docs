@@ -62,6 +62,12 @@
                             "path": "features/as3/interfaces.md"
                         },
                         {
+                            "path": "features/as3/vectors.md"
+                        },
+                        {
+                            "path": "features/as3/xml.md"
+                        },
+                        {
                             "path": "features/as3/code-conventions.md"
                         },
                         {
