@@ -24,6 +24,8 @@ permalink: /features/as3/vectors
 
 Vectors in ActionScript 3
 
+*Warning: This document is a work-in-progress/undergoing review.*
+
 ## Vectors and Arrays
 Why use vectors. Differences between vectors and arrays...
 

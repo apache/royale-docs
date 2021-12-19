@@ -24,6 +24,7 @@ permalink: /features/as3/xml
 
 XML in ActionScript 3
 
+*Warning: This document is a work-in-progress/undergoing review.*
 ## XML: a first class citizen
 ActionScript has support for XML as a native type.
 
