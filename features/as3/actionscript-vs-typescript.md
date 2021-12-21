@@ -27,7 +27,11 @@ Differences between ActionScript and Typescript
 *Warning: This document is a work-in-progress/undergoing review.*
 
 ## ActionScript has a different goal than Typescript
-[Link to Typescript goals](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Design-Goals) and compare to Royale goals. Compile time and runtime type safety...
+Typescript [states their goals](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Design-Goals) as providing compile type type safety and conforming to the Javascript spec supporting all features. Typescript does not provide runtime type safety or any tools beyond compile time types.
+
+Royale's goals are different. It provides a complete development environment. That includes the ActionScript language, debugging tools, a complete UI framework and both debug and deployment compiling.
+
+While Royale give very high priority to performance, our philosophy is that besides compile time type safety, runtime type safety is important too. By providing certain runtime guarantees, a certain class of Javascript bugs disappear. (More details to follow...)
 
 ## Testing equality
 Details about strict equality...
