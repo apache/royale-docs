@@ -41,7 +41,9 @@ Royale generally does not have these problems and bugs caused by using `==` is e
 The exception to this rule is if you are using untyped variables (i.e. `*`) and need to test for `undefined` to the exclusion of `null`. In that case you need `foo.baz === undefined`.
 
 ## Strings and Numbers
-Differences there
+Strings and numbers in Javascript can either be literal primitives (i.e. `foo`, `3.14`) or classes (i.e. `new String("foo")`, `new Number(3.14)`). These are two distinct types in Javascript and in turn in Typescript. In Typescript, you would declare the former using `string` and `number`, while the latter would be `String` and `Number`. Trying to mix the two in Typescript will cause warnings.
+
+ActionScript does not differentiate between the two types. Both types use the Uppercase notation, so you have `String` and `Number`, but no `string` or `number` `'foo' is String` and `new String("foo") is String` both resolve to true in ActionScript. If you try to use strict equality on the two (i.e. `===`), it will fail, but if you use the standard ActionScript practices, you don't need to worry about whether strings and numbers are literals or not.
 
 ## Arrays and Vectors
 Link to that page and basic difference...
