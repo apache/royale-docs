@@ -34,7 +34,11 @@ Royale's goals are different. It provides a complete development environment. Th
 While Royale give very high priority to performance, our philosophy is that besides compile time type safety, runtime type safety is important too. By providing certain runtime guarantees, a certain class of Javascript bugs disappear. (More details to follow...)
 
 ## Testing equality
-Details about strict equality...
+In Javascript, strict equality is recommended (i.e. `===`) instead of "normal" equality (i.e. `==`). That's because Javascript automatically does a type coercion before comparing equality and can cause unexpected results.
+
+Royale generally does not have these problems and bugs caused by using `==` is extremely rare. That's because types are enforced at compile time and uncertain values are automatically coerced when assigning the values. Normal equality has advantages and can be used for automatically evaluating certain types (such as `XML`). Therefore the general recommendation in ActionScript and Royale is to use `==` instead of `===`.
+
+The exception to this rule is if you are using untyped variables (i.e. `*`) and need to test for `undefined` to the exclusion of `null`. In that case you need `foo.baz === undefined`.
 
 ## Strings and Numbers
 Differences there
