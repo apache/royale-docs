@@ -17,7 +17,7 @@
 layout: docpage
 title: Compiler configuration settings
 description: Compiler configuration settings
-permalink: create-an-application/optimizations/compiler-configuration-settings
+permalink: /create-an-application/optimizations/compiler-configuration-settings
 ---
   
 # Compiler configuration settings  

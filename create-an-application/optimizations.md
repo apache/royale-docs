@@ -21,18 +21,18 @@ permalink: /create-an-application/optimizations
 ---
 # Optimizations
 
-Compiler settings and doc comments directives that can be used to improve generated output
-
-*Warning:  This document is a work-in-progress/undergoing review.*
+Strategies to use when optimizing your document output
 
 ## Optimization options
 
-The following content explains optimizations for javascript output that you can use when configuring the Royale compiler directly or by using doc-comment directives in your actionscript code.  
+The following content explains optimizations for javascript output that you can use when configuring the Royale compiler directly or by using doc-comment directives in your ActionScript code.  
 Many settings have corresponding approaches between the over-arching compiler level influence of compilation settings and those with more specificity at the code level, so to avoid repetition, it is recommended that you get familiar with the Compiler settings first.
 
-[Compiler Configuration Settings](create-an-application/optimizations/compiler-configuration-settings.html) These are settings that affect the output of the current compilation based on compiler configuration settings.
+[Minification](create-an-application/optimizations/minification) What options you have for minifying your app for release and considerations when customizing the minified output.
 
-[Doc-Comment Compiler Directives](create-an-application/optimizations/doc-comment-directives.html) These are settings that affect the output of the current compilation by using doc-comment compiler directives in your actionscript code.
+[Compiler Configuration Settings](create-an-application/optimizations/compiler-configuration-settings) These are settings that affect the output of the current compilation based on compiler configuration settings.
+
+[Doc-Comment Compiler Directives](create-an-application/optimizations/doc-comment-directives) These are settings that affect the output of the current compilation by using doc-comment compiler directives in your actionscript code.
 
 
 

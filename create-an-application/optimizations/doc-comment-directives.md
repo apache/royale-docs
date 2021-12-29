@@ -16,6 +16,8 @@
 
 layout: docpage
 title: Doc-Comment Directives
+description: Comment-style directives for overriding compiler options
+permalink: /create-an-application/optimizations/doc-comment-directives
 ---
 ## (Optimization options)  
 # Doc-Comment Directives  
