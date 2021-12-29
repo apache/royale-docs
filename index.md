@@ -33,7 +33,7 @@ With Royale, you can create a single code base that can be compiled to work like
 
 This is the main documentation for Apache Royale. If you are looking for the API Reference, [click here](http://royale.apache.org/asdoc/index.html){:target='_blank'}.
 
-The documentation ranges from a [high-level view](welcome/high-level-view) that gives an overview of Royale, through a review of Royale's [features and concepts](features-and-concepts) to help you be more productive. 
+The documentation ranges from an [intro](welcome/what-is-royale) and a [high-level view](welcome/high-level-view) that gives an overview of Royale, through a review of Royale's [features and concepts](features-and-concepts) to help you be more productive. 
 
 Use the table of contents to learn how to lay out your application's [user interface](user-interface), how to [work with data](working-with-data), and how to [unit-test](testing) your application. 
 

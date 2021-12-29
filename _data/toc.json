@@ -5,6 +5,9 @@
             "path": "index.md",
             "children": [
                 {
+                    "path": "welcome/what-is-royale.md"
+                },
+                {
                     "path": "welcome/high-level-view.md"
                 },
                 {
