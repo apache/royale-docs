@@ -74,7 +74,7 @@ Before considering using advanced minification options, you need to consider you
 4. Do you access static class members without knowing the specific class? (i.e. `classVar.fooBaz()`)
 
 ## Solutions
-If you answer no to all of the above questions, you can use the [smallest size options](#smallest-size).
+If you answer no to all of the above questions, you can use the [smallest size options](create-an-application/optimizations/minification#smallest-size).
 
 If you answered yes to #1 and #2 above, you will need to ensure that your dynamic object access is not renamed. Otherwise you will end up with `myJSON.a` instead of `myJSON.thumbnail` and you will get unexpected `undefined` values. There are two ways to do this.
 1. Manually quote every case of dynamic access (i.e. `myJSON["thumbnail"]` instead of `myJSON.thumbnail` and `{"name":"foo","age":20}` instead of `{name:"foo",age:20}`)
