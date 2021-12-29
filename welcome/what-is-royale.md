@@ -35,7 +35,7 @@ Royale compiles ActionScript for multiple run-times. The ActionScript compiler i
 You might compare Royale to Webpack, ES Build or Parcel. Royale compiles your app both for debugging and into a single JS file for deployment.
 
 ## It's a toolbox
-Royale has a huge library of functionality. Because Royale is very smart about only including in your application parts actually used, Royale is able to include a very large library of functionality.
+Royale has a huge library of functionality. Because Royale is very smart about only including in your application parts actually used, Royale is able to include a very large library of functionality without effecting application size.
 
 ## It's an ecosystem
 Royale does not use npm. That's both an advantage and a disadvantage. npm give you access to a huge amount of code. That's both a blessing and a curse. If you've ever tried to stay on top of auditing npm modules and keeping them up to date, you know it's a nightmare of dependencies. Even knowing what your code depends on is very difficult with npm.
