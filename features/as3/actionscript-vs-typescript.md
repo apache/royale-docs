@@ -46,11 +46,17 @@ Strings and numbers in Javascript can either be literal primitives (i.e. `foo`, 
 ActionScript does not differentiate between the two types. Both types use the Uppercase notation, so you have `String` and `Number`, but no `string` or `number` `'foo' is String` and `new String("foo") is String` both resolve to true in ActionScript. If you try to use strict equality on the two (i.e. `===`), it will fail, but if you use the standard ActionScript practices, you don't need to worry about whether strings and numbers are literals or not.
 
 ## Arrays and Vectors
-Link to that page and basic difference...
+Typed arrays is an important piece in declaring types. ActionScript does not currently have typed Arrays. All Arrays are untyped with the exception of cases where [implicit coercions are detected](create-an-application/optimizations/compiler-configuration-settings.html#implicit-complex-coercions). For "typed arrays" in ActionScript you use [Vectors](features/as3/vectors). Vectors are similar to Arrays, but have some differences. Vectors has some features which can be enforced at runtime. See the page about [Vectors](features/as3/vectors) for full details.
+
 
 ## XML
-Basics about XML and link to that page
+Dealing with XML in Javascript is difficult at best. Many people try to bash XML in defence of Javascript's XML support. That's not very helpful if you have a legitimate use for XML.
 
+In 2004 and 2005, [Ecma published ECMA-357](https://www.ecma-international.org/publications-and-standards/standards/ecma-357/) which was a spec for handling XML in Javascript. The spec was called E4X (Ecmascript for XML). This was adopted by Firefox and ActionScript. Unfortunately it was not adopted by Chrome, so it never became a Javascript standard. Royale supports the full E4X spec and XML is treated as a first class citizen in Royale. This makes dealing with XML **much** easier. Read the [page on XML](features/as3/xml) for full details.
+
+Royale also has a lightweight [JXON](https://royale.apache.org/asdoc/#!org.apache.royale.utils/JXON) class which can be useful for simple reading of XML if you don't need all the functionality of E4X.
+
+## Interfaces
 ## Type casting
 Basics about type casting...
 
