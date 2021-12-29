@@ -19,9 +19,9 @@ title: Minification
 description: Options and considerations for minimized Javascript output
 permalink: /create-an-application/optimizations/minification
 ---
-# Optimizations
+# Minification
 
-Compiler settings and doc comments directives that can be used to improve generated output
+Options and considerations for minimized Javascript output
 
 ## Default behavior
 By default, Royale outputs a single minified Javascript file for deployment of the application. The minified file contains all the code needed for running your application. The code contains the necessary pieces of Framework code as well as your application code. The minification is done using Google's Closure Compiler. The goal for the default release output is that it should always work without consideration for how the code was written.
