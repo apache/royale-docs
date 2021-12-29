@@ -50,7 +50,7 @@ Typed arrays is an important piece in declaring types. ActionScript does not cur
 
 
 ## XML
-Dealing with XML in Javascript is difficult at best. Many people try to bash XML in defence of Javascript's XML support. That's not very helpful if you have a legitimate use for XML.
+Dealing with XML in Javascript is difficult at best. Many people try to bash XML in defence of Javascript's poor XML support. That's not very helpful if you have a legitimate use for XML.
 
 In 2004 and 2005, [Ecma published ECMA-357](https://www.ecma-international.org/publications-and-standards/standards/ecma-357/) which was a spec for handling XML in Javascript. The spec was called E4X (Ecmascript for XML). This was adopted by Firefox and ActionScript. Unfortunately it was not adopted by Chrome, so it never became a Javascript standard. Royale supports the full E4X spec and XML is treated as a first class citizen in Royale. This makes dealing with XML **much** easier. Read the [page on XML](features/as3/xml) for full details.
 
