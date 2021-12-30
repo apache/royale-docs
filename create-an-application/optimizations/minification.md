@@ -108,3 +108,9 @@ Sometimes you are going to have to run your minified code and find what broke. P
 
 ### Run your app in release mode often
 Constantly checking that your app works both in debug and release mode is important for finding where you might break your app.
+
+## Features which effect file size
+In general, only dependencies you need are included in your app when using Royale. Usually this means additional classes and the associated code. In certain cases, using features will effect the size of *all* your classes because more information will be needed at runtime.
+1. Reflection classes and functions. (To do -- needs a page) (i.e. `getDefinitionByName`, `getQualifiedClassName`, etc.) If you use reflection, information about your classes and accessors is needed at runtime. This adds significantly to the size of your runtime output. If you just need to get the class from an instance you **do not** need reflection (unlike in Flash). There is `org.apache.royale.utils.object.classFromInstance()` which helps for this without a reflection dependency.
+2. [AMF](features/loading-external-data/amf). AMF uses Reflection under the hood to recreate classes from data at runtime. If AMF is important to you, the extra weight might be justified, but make an informed decision.
+3. [Crux](libraries/crux). Crux uses Reflection as well. If Dependency Injection is your thing, then Crux is a solution, but you should be aware of the cost it brings.
