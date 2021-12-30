@@ -44,7 +44,19 @@ A `Module` can contain code that doesn't have a UI, or it can be mostly UI. Modu
 
 There is an example for [Basic](component-sets/basic) UI Set [here](https://github.com/apache/royale-asjs/tree/develop/examples/royale/ModuleExample){:target='_blank'} and other for [Jewel](component-sets/jewel) UI Set can be found [here](https://github.com/apache/royale-asjs/tree/develop/examples/blog/BE0013_Dividing_an_Apache_Royale_application_with_modules){:target='_blank'}.
 
-Proper use of modules can help maintain _"separation of concerns"_ which helps keep you from writing _"spaghetti code"_. If only the code in one module changes, only that module needs to be recompiled. And if that code isn't needed to show the first screen, then the application will start up faster if that module is loaded only when it is needed.
+Proper use of modules can help maintain _"separation of concerns"_ which helps keep you from writing _"spaghetti code"_. If only the code in one module changes, only that module needs to be recompiled. And if that code isn't needed to show the first screen, then the application might start up faster if that module is loaded only when it is needed.
+
+## Why not modules? {#why-not-modules}
+In Flash, modules was very important. That's because application size and compilation time grew very rapidly. Flash applications were slow to load and modules were a good tool to help with that. The aggressive use of PAYG in Royale along with browser features for loading Javascript made Royale applications much smaller and load times generally nearly instant. In many (most?) use cases of modules for Flex applications in Flash, Royale renders them unnecessary.
+
+Using modules can make development more difficult and in some cases cause your application to actually load _*slower*_. Before using modules, consider the following points:
+
+* You will see huge drops in compilation speed when switching from Flash to HTML Royale for the same application.
+* The application size dropped drastically as well, and the whole application will often become about the size of a single module.
+* Network speeds have improved drastically over the last 10 years so many of the considerations have changed.
+* JS caching in the browser is much better than Flash caching was. You can setup your deployments so your application resource files (js, css, etc.) are cached for 30 days and when deploying a new version, the cache is automatically invalidated.
+* Using modules limits how aggressively code can be minified. Improved minification helps both in deployed code size and speed of code execution.
+* A large part of application and module size in Flash was caused by embedded assets. In HTML, assets are stored externally and only loaded when/if they are actually needed.
 
 ## Compiling modules
 
@@ -56,6 +68,47 @@ The Royale compiler supports a `-module-output=<destination folder>` that redire
 
 For complex scenarios (i.e: each module is a separate project), the user can automate copying files to other locations as we do in this [example](https://github.com/apache/royale-asjs/tree/develop/examples/blog/BE0013_Dividing_an_Apache_Royale_application_with_modules){:target='_blank'}.
 
+## Minification and modules {#minification}
+When code is deployed, the code is minified and parts are renamed in an unpredictable way. This means that you can't know ahead of time what things will actually be called in your application.
+
+For normal applications this is generally not an issue unless you want to enable [advanced minification options](create-an-application/optimizations/minification).
+
+For modules, this is a very big issue because the modules are compiled in a separate session than the main application and each other. To make modules work correctly you need to use special compiler options while compiling both your main application and your modules. There are four compiler options that are relevant to this which are all specified in the `js-compiler-option` section of the compiler arguments:
+
+```
+--variable_map_input_file [path to unique file name]
+--property_map_input_file [path to unique file name]
+--variable_map_output_file [path to unique file name]
+--property_map_output_file [path to unique file name]
+```
+
+The `*output_file` options must be used when compiling your main application. The `*input_file` options must be used when compiling your modules. If you have multiple modules that might depend on each other, you will need the `*output_file` options for the modules as well.
+
+[CLARIFY -- Is a separate file needed for each module, or can a single output file be used for the whole application?]
+
+Here is what the config file for the main app example modules project:
+
+```
+<royale-config>
+    <js-compiler-option>
+        <option>--variable_map_output_file gccvars.txt</option>
+        <option>--property_map_output_file gccprops.txt</option>
+    </js-compiler-option>
+</royale-config>
+```
+
+Here's the config for the module:
+
+```
+<royale-config>
+    <js-compiler-option>
+        <option>--variable_map_input_file ../../../MainApp/bin/js-release/gccvars.txt</option>
+        <option>--property_map_input_file ../../../MainApp/bin/js-release/gccprops.txt</option>
+        <option>--variable_map_output_file modgccvars.txt</option>
+        <option>--property_map_output_file modgccprops.txt</option>
+    </js-compiler-option>
+</royale-config>
+```
 ## Using modules
 
 `Modules` are loaded by specifying the path to the main JavaScript file for the module. If you are also working with Flash/AIR output, you can specify the .swf suffix and the Royale `ModuleLoader` will replace that with .js as needed.
