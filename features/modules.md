@@ -49,10 +49,10 @@ Proper use of modules can help maintain _"separation of concerns"_ which helps k
 ## Why not modules? {#why-not-modules}
 In Flash, modules was very important. That's because application size and compilation time grew very rapidly. Flash applications were slow to load and modules were a good tool to help with that. The aggressive use of PAYG in Royale along with browser features for loading Javascript made Royale applications much smaller and load times generally nearly instant. In many (most?) use cases of modules for Flex applications in Flash, Royale renders them unnecessary.
 
-Using modules can make development more difficult and in some cases cause your application to actually load _**slower**_. Before using modules, consider the following points:
+Using modules can make development more difficult and in many cases cause your application to actually load _**slower**_. Before using modules, consider the following points:
 
 * You will see huge drops in compilation speed when switching from Flash to HTML Royale for the same application.
-* The application size dropped drastically as well, and the whole application will often become about the size of a single module.
+* The application size drops drastically as well, and the whole application will often become about the size of a single module.
 * Network speeds have improved drastically over the last 10 years so many of the considerations have changed.
 * JS caching in the browser is much better than Flash caching was. You can setup your deployments so your application resource files (js, css, etc.) are cached for 30 days and when deploying a new version, the cache is automatically invalidated.
 * Using modules limits how aggressively code can be minified. Improved minification helps both in deployed code size and speed of code execution.
