@@ -87,7 +87,7 @@
                         },
                         {
                             "path": "features/as3/private-constructors.md"
-                        }
+                        },
                          {
                             "path": "features/reflection-introspection.md"
                         }
