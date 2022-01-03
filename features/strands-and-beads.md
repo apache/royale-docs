@@ -115,6 +115,15 @@ alertView.content.addBead(verticalLayout);
 ```
 See a full example of the code above in the [Customization through the Royale API](https://royale.apache.org/customization-through-the-royale-api/){:target='_blank'} example.
 
+### Accessing a bead from a strand
+There are many cases where you need to find a specific bead without necessarily knowing the implementation. The two most common cases are accessing a strand's view and model.
+
+For these two cases, any class which implements `IStrandWithModelAndView` or inherits from `UIBase` (which is pretty much every visual component) has direct access to the `view` and `model` getters on the strand. These getters should always be used for views and models. 
+
+Sometimes, a component might have more than one model and you might not be sure if the one you want is the main one. In that case you should use the `getModelByType(strand,classOrInterface)` function in the `org.apache.royale.html.util` package. It will find the correct bead in the most efficient way it can.
+
+For other bead types, you can use `strand.getBeadByType(classOrInterface)`. It will find the bead you need from the beads which belong to the strand. You can use this for views although it's less efficient than accessing the view directly. You _should not_ use this for models because models are only loaded the first time they are accessed and if you use `strand.getBeadByType(IBeadModel)` you will get null if the model has not yet been accessed.
+
 ## Creating a bead
 
 The following piece of code shows the most basic bead structure to use when you create a bead:
