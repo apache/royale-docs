@@ -23,39 +23,43 @@ permalink: /welcome/why-royale
 
 The advantages of using Royale
 
-Let's face it. There are lots of frameworks out there and each one claims to be the best. What does Royale give you that you don't get with other frameworks?
+Let's face it: there are lots of application frameworks out there and each one claims to be the best. What does Royale give you that you don't get with other frameworks?
 
 ## Time Proven
-Royale takes the best parts of Flex which was the first major web application framework. Flex was developed by the best in the field and Royale was designed by one of the lead architects of Flex.
+Royale takes the best parts of Flex, which was the first major web application framework. The best minds in the field developed Flex, and one of the lead architects of Flex led the design of Royale.
 
 ## Battle Tested
-Flex has run huge enterprise applications and Royale sits on the experience of that. Royale is being used to continue to run these applications which were originally developed in Flex.
+Flex has run huge enterprise applications and Royale sits on that experience. Organizations are using Royale to continue to develop and run applications which were originally developed in Flex.
 
 ## Safe
 Royale is backed by Apache and offers the peace of mind knowing that Apache processes govern Royale's releases.
 
 ## Unopinionated
-If you are using a framework, chances are you have been fighting with the framework to do what you want. You searched Stack Overflow to be told "you're doing it wrong". You need to use Framework "x" exactly like so!
+If you are using a framework, chances are you have been fighting to get the framework to do what you want. You searched Stack Overflow, only to be told, "You're doing it wrong. You need to use Framework "x" exactly like so!"
 
-In Royale, we don't tell you how to build your applications. You like OOP? Great! You like FP? Great! How to manage your state? However you like! You don't like dealing with async rendering loops? Great. Royale doesn't have them. You want to control exactly how and when something is rendered? You are in the driver seat.
+In Royale, we don't tell you how to build your applications.
 
-You want to use dependency injection? Check. Don't like it? You don't need to use it.
+  - You like OOP? Great! 
+  - You like FP? Great! 
+  - How should you manage your application's state? However you like! 
+  - You don't like dealing with async rendering loops? Great: Royale doesn't have them. You want to control exactly how and when something is rendered? You are in the driver's seat.
+  - You want to use dependency injection? Check. Don't like it? You don't need to use it.
 
-In short, Royale gives you the tools you need and doesn't tell you have to use them.
+In short, Royale gives you the tools you need and gives you some examples of what they can do, but doesn't tell you how you have to use them.
 
 ## Fast!
-Most frameworks try to get as close to vanilla javascript as they can. In Royale we try to be _faster_ than vanilla javascript. In most cases Royale will _beat_ the best performance you can squeeze out of native HTML and Javascript. That's because the DOM is only used when necessary and we never do any kind of DOM syncing or traversal.
+Most frameworks try to get as close to vanilla JavaScript as they can. In Royale we try to be _faster_ than vanilla JavaScript. In most cases Royale will _beat_ the best performance you can squeeze out of native HTML and Javascript. That's because Royale only uses the DOM when necessary and we never do any kind of DOM syncing or traversal.
 
 ## Zero configuration necessary
 Out of the box, Royale will build both debug and release builds of your application. You don't need any external tools to package "tree shake" or what-have-you.
 
 ## Small and speedy deployments
-Royale compiles your entire application into a single JS file, a single minified CSS file and a tiny HTML file. Your _entire deployment_ can often be smaller than 100KB. Because Royale knows a lot about your application, it can be very smart about what's included and what can be minified.
+Royale compiles your entire application into a single JS file, a single minified CSS file and a tiny HTML file. Your _entire deployment_ can often be smaller than 100KB. Because Royale knows a lot about your application, it can be very smart about what it includes and what it can minify.
 
-With Royale, the need for breaking your app into pieces and doing server side rendering to improve performance can be a thing of the past. You can get better performance out of Royale without any of those steps.
+With Royale, the need to break your app into pieces and do server-side rendering to improve performance can be a thing of the past. You can get better performance out of Royale without any of those steps.
 
 ## The kitchen sink
-Royale has a lot of functionality built in that you might otherwise look for elsewhere.
+Royale has a lot of functionality built in that you might otherwise have to look for elsewhere.
 
 ## Open
-The Royale community is truly open. We're not run by some big company with an agenda. We don't care about politics. We're just little folk like you trying to build great software. We're waiting for you to join and help us build upon the best framework on earth!
+The Royale community is truly open. We're not run by some big company with an agenda. We don't care about politics. We aren't trying to make a profit. We're just little folk like you trying to build great software. We're waiting for you to join and help us build upon the best framework on earth!
