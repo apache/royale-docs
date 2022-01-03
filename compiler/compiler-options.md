@@ -54,6 +54,9 @@ List of recent commonly used available compiler options
 * [warn-public-vars](compiler/compiler-options#warn-public-vars)
 
 **Reduce output size**
+
+Note: These options apply only to compiling applications using `mxmlc`. If you are compiling a library (using `compc`), the following options do not exist and you will get a warning if you try to use them. The library code will be output using whatever options are used in the final application.
+
 You can use these options to reduce the size of your compiled application:
 
 * [export-public-symbols](compiler/compiler-options#export-public-symbols)
