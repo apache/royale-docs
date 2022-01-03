@@ -16,13 +16,13 @@
 
 layout: docpage
 title: View States
-description: Page-level state management for show diferent parts to the user
+description: State-related management of the UI
 permalink: /features/view-states
 ---
 
 # View States
 
-Page-level state management to manage UI display
+State-related management of the UI
 
 The View States feature is a way of putting different filters over parts of your application so that different things appear depending on what the app is doing, what permissions the user has, what the user just did, or some other condition. You create a series of “states” and associate components of your application with one or more of the states. When the current state of the application is "loggedIn", for example, the user only sees components and containers set to be visible in the "loggedIn" state. 
 
