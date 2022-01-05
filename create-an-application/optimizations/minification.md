@@ -21,7 +21,7 @@ permalink: /create-an-application/optimizations/minification
 ---
 # Minification
 
-Minification is the process of minimizing code and markup in your application. It’s one of the main methods reduce load times and improve application performance.
+Minification is the process of minimizing code and markup in your application. It’s one of the main methods to reduce load times and improve application performance.
 
 Here are options and considerations for minimizing JavaScript output in your Royale application.
 
