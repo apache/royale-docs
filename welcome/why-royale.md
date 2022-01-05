@@ -34,6 +34,16 @@ Flex has run huge enterprise applications and Royale sits on that experience. Or
 ## Safe
 Royale is backed by Apache and offers the peace of mind knowing that Apache processes govern Royale's releases.
 
+## Javascript. Fixed!
+Javascript is great, but it has a lot of weird parts. ActionScript and Royale fixes the problematic parts of Javascript:
+
+- Unexpected type conversions are a thing of the past. Royale offers runtime type safety you will not find anywhere else.
+- You don't need to be concerned with scope of "this". Functions are automatically bound to the correct scope and behave predictably.
+- Inspectable types at runtime. Do you need to check for classes and interfaces at runtime? With Royale you can!
+- Runtime type casting. Do you want your code to fail early if an unexpected type is used? With Royale you can.
+- No more Number problems. Royale has true ints and uints. By declaring your types, you can be sure that your variables will not be converted to floating point numbers at runtime.
+- Native XML support. Royale applications support the full ECMA E4X spec not generally supported by modern browsers today.
+
 ## Unopinionated
 If you are using a framework, chances are you have been fighting to get the framework to do what you want. You searched Stack Overflow, only to be told, "You're doing it wrong. You need to use Framework "x" exactly like so!"
 
