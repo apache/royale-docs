@@ -20,15 +20,15 @@ description: Visual representation of data items in lists and other collection c
 permalink: /features/item-renderers
 ---
 
-# ItemRenderers
+# Item Renderers
 
 Visual representation of data items in lists and other collection components
 
-Collections of data are composed by objects or items. Several components in Royale can show collections of data to the user like _List_, _DataGrid_, _TabBar_ or _ButtonBar_. Those components need to describe each item and adapt the visaluzation to the data inside each object. Apache Royale uses Item Renderers components along with the before mentioned collection components to realize the visualization of each piece of data stored in each collection object.
+Collections of data contain objects or items. Several components in Royale, like _List_, _DataGrid_, _TabBar_ or _ButtonBar_, can show collections of data to the user in different ways. Those components need to describe each item and adapt the visaluzation to the data inside each object. Apache Royale uses **Item Renderer** components to render, or visualize, each piece of data in each collection object in a collection component.
 
 ## Inline
 
-Although Item Renders use to be declared in a separate file (and this is the recommended way), you can also declare an item renderer inline for convenience:
+The standard method is to declare an item renderer in a separate file which you then import into the component where you will be displaying the rendered data, but you can also declare an item renderer inline for convenience:
 
 ```mxml
 <j:DataContainer width="100%" labelField="name" dataProvider="{dataList}">
@@ -69,6 +69,6 @@ Although Item Renders use to be declared in a separate file (and this is the rec
 </j:DataContainer>
 ```
 
-## Examples
+## Example
 
 - [Using an item renderer with a list](https://royale.apache.org/using-an-item-renderer-with-a-list){:target='_blank'}
