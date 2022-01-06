@@ -42,6 +42,7 @@ Javascript is great, but it has a lot of weird parts. ActionScript and Royale fi
 - Inspectable types at runtime. Do you need to check for classes and interfaces at runtime? With Royale you can!
 - Runtime type casting. Do you want your code to fail early if an unexpected type is used? With Royale you can.
 - No more Number problems. Royale has true ints and uints. By declaring your types, you can be sure that your variables will not be converted to floating point numbers at runtime.
+- Improved loops. Don't like writing loops in Javascript? Find it hard to remember the difference between `for in` and `for of`? Royale has a more intuitive loop syntax: `for each(item in array)`. While this is similar to `for of`, this syntax supports all Javascript run-times including Internet Explorer.
 - Native XML support. Royale applications support the full ECMA E4X spec not generally supported by modern browsers today.
 
 ## Unopinionated
