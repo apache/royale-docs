@@ -102,6 +102,9 @@ var className:String = getQualifiedSuperclassName(loader);
 trace(className); // Displays flash.events::EventDispatcher
 ```
 
+### hasDefinitionWithName
+Checks if a name is defined and will return a valid result when calling `getDefinitionByName`.
+
 ### getDefinitionByName
 
 If you have a class or function name, you can retrieve a reference to it with `getDefinitionByName()`. Provide a string parameter specifying a fully qualified class or function name and the function and `getDefinitionByName()` returns its Object type.
