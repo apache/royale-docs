@@ -17,7 +17,7 @@
 layout: docpage
 title: Reflection and introspection
 description: Finding the class and details of an object
-permalink: /features/reflection-introspection
+permalink: /features/as3/reflection-introspection
 ---
 # Reflection and introspection
 

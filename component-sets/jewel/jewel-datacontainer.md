@@ -38,7 +38,7 @@ Available since version __0.9.4__.
 
 The Jewel DataContainer class is a component that displays multiple data items.
 
-This component gets the data through its `dataProvider` property that receives an `ArrayList` of data objects. To represent each item the component uses a suitably-configured [ItemRenderer](features/item-renderers) class. The component generates dynamically as many instances of its ItemRenderer as there are items in the data provider array, and fills each instance with the appropiate data. By default it uses `StringItemRenderer` as the item renderer.
+This component gets the data through its `dataProvider` property that receives an `ArrayList` of data objects. To represent each item the component uses a suitably-configured [ItemRenderer](working-with-data/item-renderers) class. The component generates dynamically as many instances of its ItemRenderer as there are items in the data provider array, and fills each instance with the appropiate data. By default it uses `StringItemRenderer` as the item renderer.
 
 By default items are laid out vertically using Jewel `VerticalLayout`. This component has a `Viewport` that clips generated items.
 

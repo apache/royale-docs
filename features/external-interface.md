@@ -24,12 +24,12 @@ permalink: /features/external-interface
 
 Calling to/from External JavaScript
 
-In Flash, there is a class, [ExternalInterface](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/external/ExternalInterface.html){:target='_blank'},
+In Flash, there is a class, [ExternalInterface](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/loading-external-data/ExternalInterface.html){:target='_blank'},
 that lets your Flex (or Flash) application call other JavaScript code that has been embedded on the hosting web page,
 and lets external JavaScript code call a function within the Flex application. When you port a Flex application to Royale,
 you may need to replicate this functionality.
 
-> To make this easier, there is an implementation of the same API available as [mx.external.ExternalInterface](https://github.com/apache/royale-asjs/blob/develop/frameworks/projects/MXRoyale/src/main/royale/mx/external/ExternalInterface.as){:target='_blank'}. You should be able to just rename your imports from `flash.external.ExternalInterface` to `mx.external.ExternalInterface`.
+> To make this easier, there is an implementation of the same API available as [mx.external.ExternalInterface](https://github.com/apache/royale-asjs/blob/develop/frameworks/projects/MXRoyale/src/main/royale/mx/loading-external-data/ExternalInterface.as){:target='_blank'}. You should be able to just rename your imports from `flash.external.ExternalInterface` to `mx.external.ExternalInterface`.
 
 For new code, it would be preferable to create an ActionScript wrapper API into the required JavaScript.
 This allows you to define a typed interface and the compiler would then pick up any issues around incompatible types

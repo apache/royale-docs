@@ -17,7 +17,7 @@
 layout: docpage
 title: Loading External Data
 description: Dynamic sites and real-time updates lead to good user experiences
-permalink: /features/loading-external-data
+permalink: /working-with-data/loading-external-data
 ---
 
 # Loading External Data
@@ -26,10 +26,26 @@ Dynamic sites and real-time updates lead to good user experiences
 
 Unless you are building a brochure-style website that makes a statement and provides contact information, you are going to be working with _data_. You will get some of that data from your site or application users, but you will probably also get a lot from outside your app or website.
 
-Royale provides reliable, fast, and secure ways to get data from remote sources, and also to send data when you need to:
+Royale provides reliable, fast, and secure ways to get data from remote sources, and also to send data.
 
-* [JSON](features/loading-external-data/json)
-* [LocalSharedObject](features/loading-external-data/localsharedobject)
-* [HTTPService](features/loading-external-data/httpservice)
-* [RemoteObject](features/loading-external-data/remoteobject)
+The following data types have built-in support:
+
+* Raw Strings
+* JSON
+* Binary
+* [XML](features/as3/xml)
+* [AMF](working-with-data/loading-external-data/amf)
+
+AMF is supported using either of:
+* [LocalSharedObject](working-with-data/loading-external-data/localsharedobject)
+* [RemoteObject](working-with-data/loading-external-data/remoteobject)
+
+Classes which can be used for loading external data include:
+* [HTTPService](working-with-data/loading-external-data/httpservice)
+* URLBinaryLoader for loading of any kind of binary data
+* HttpRequestTask
+* HttpDownloadTask
+
+and others
+
 

@@ -45,7 +45,7 @@ public var repos:Array;
 public var projectName:String;
 ```
 
-Next, we need to get the values for these arrays. Let's use a [JSON](features/loading-external-data/json) file, called `project.json`, to configure which repos to use and the project name. The file contents look like:
+Next, we need to get the values for these arrays. Let's use a JSON file, called `project.json`, to configure which repos to use and the project name. The file contents look like:
 
 ```json
 { 

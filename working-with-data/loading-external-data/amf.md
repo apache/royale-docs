@@ -17,7 +17,7 @@
 layout: docpage
 title: AMF
 description: ActionScript Message Format binary protocol
-permalink: /features/loading-external-data/amf
+permalink: /working-with-data/loading-external-data/amf
 ---
 
 # AMF
@@ -50,6 +50,6 @@ Here's a list of languages used to create backend servers that support AMF and c
 
 Apache Royale supports the AMF protocol through these implementations:
 
-- [RemoteObject](features/loading-external-data/remoteobject)
-- [LocalSharedObject](features/loading-external-data/localsharedobject)
+- [RemoteObject](working-with-data/loading-external-data/remoteobject)
+- [LocalSharedObject](working-with-data/loading-external-data/localsharedobject)
 

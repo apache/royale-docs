@@ -106,9 +106,6 @@
                     "path": "features/data-binding.md"
                 },
                 {
-                    "path": "features/loading-external-data/amf.md"
-                },
-                {
                     "path": "features/external-interface.md"
                 },
                 {
@@ -118,9 +115,6 @@
                     "path": "features/view-states.md"
                 },
                 {   "path": "features/routing.md"
-                },
-                {
-                    "path": "features/item-renderers.md"
                 },
                 {
                     "path": "features/modules.md"
@@ -141,6 +135,32 @@
                             "path": "features/nodejs/external-modules.md"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "path": "working-with-data.md",
+            "children": [
+                {
+                    "path": "working-with-data/loading-external-data.md",
+                    "children": [
+                        {
+                            "path": "working-with-data/loading-external-data/amf.md"
+                        },
+                        {
+                            "path": "working-with-data/loading-external-data/localsharedobject.md"
+                        },
+                        {
+                            "path": "working-with-data/loading-external-data/httpservice.md"
+                        },
+                        {
+                            "path": "working-with-data/loading-external-data/remoteobject.md"
+                        }
+
+                    ]
+                },
+                {
+                    "path": "working-with-data/item-renderers.md"
                 }
             ]
         },
@@ -167,28 +187,6 @@
               {
                     "path": "user-interface/layouts.md"
               }
-            ]
-        },
-        {
-            "path": "working-with-data.md",
-            "children": [
-                {
-                    "path": "features/loading-external-data.md",
-                    "children": [
-                        {
-                            "path": "features/loading-external-data/json.md"
-                        },
-                        {
-                            "path": "features/loading-external-data/localsharedobject.md"
-                        },
-                        {
-                            "path": "features/loading-external-data/httpservice.md"
-                        },
-                        {
-                            "path": "features/loading-external-data/remoteobject.md"
-                        }
-                    ]
-                }
             ]
         },
         {

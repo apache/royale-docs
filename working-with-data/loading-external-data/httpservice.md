@@ -17,7 +17,7 @@
 layout: docpage
 title: HTTPService
 description: Loading external data through REST services
-permalink: /features/loading-external-data/httpservice
+permalink: /working-with-data/loading-external-data/httpservice
 ---
 
 # HTTPService

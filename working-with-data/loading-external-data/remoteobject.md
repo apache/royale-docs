@@ -17,14 +17,14 @@
 layout: docpage
 title: RemoteObject
 description: Remote procedure calls with the AMF binary protocol
-permalink: /features/loading-external-data/remoteobject
+permalink: /working-with-data/loading-external-data/remoteobject
 ---
 
 # RemoteObject
 
 Remote procedure calls with the AMF binary protocol
 
-RemoteObject lets Apache Royale applications make [Remote Procedure Calls (RPCs)](https://en.wikipedia.org/wiki/Remote_procedure_call){:target='_blank'} to a back-end server using the [ActionScript Message Format (AMF) protocol](features/loading-external-data/amf). The server can be written in Java, PHP, ColdFusion, .NET, Ruby, Python or many other back-end technologies.
+RemoteObject lets Apache Royale applications make [Remote Procedure Calls (RPCs)](https://en.wikipedia.org/wiki/Remote_procedure_call){:target='_blank'} to a back-end server using the [ActionScript Message Format (AMF) protocol](working-with-data/loading-external-data/amf). The server can be written in Java, PHP, ColdFusion, .NET, Ruby, Python or many other back-end technologies.
 
 ## Implementations
 

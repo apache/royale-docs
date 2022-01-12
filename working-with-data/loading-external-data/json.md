@@ -17,7 +17,7 @@
 layout: docpage
 title: JSON
 description: A plain object or array often referencing other plain objects and arrays
-permalink: /features/loading-external-data/json
+permalink: /working-with-data/loading-external-data/json
 ---
 
 # JSON

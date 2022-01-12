@@ -17,7 +17,7 @@
 layout: docpage
 title: ItemRenderers
 description: Visual representation of data items in lists and other collection components
-permalink: /features/item-renderers
+permalink: /working-with-data/item-renderers
 ---
 
 # Item Renderers

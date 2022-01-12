@@ -24,7 +24,7 @@ permalink: /create-an-application/application-tutorial/value-objects
 
 Plain ActionScript Objects with properties or arrays
 
-Queries for data to many servers return [JSON](features/loading-external-data/json), which is a plain object or array often referencing other plain objects and arrays. In ActionScript there are advantages to using something called "data classes" or "value objects" (also sometimes "ValueObjects").
+Queries for data to many servers return JSON, which is a plain object or array often referencing other plain objects and arrays. In ActionScript there are advantages to using something called "data classes" or "value objects" (also sometimes "ValueObjects").
 
 Value Objects tell the compiler that your data has a fixed set of properties of a given type. If you misspell the name of a field in the data, the compiler will catch it. Some [IDEs](get-started/development-tools) know how to complete the field name as you type it and only offer completions for that data object instead of all strings used in the file.
 

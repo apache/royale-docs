@@ -24,7 +24,7 @@ permalink: /libraries/crux/client-persistence
 
 Learn about how to persist data in the client using Crux
 
-Crux provides a bean to help with client persistence: `AMFStorageBean`. This bean the `AMFStorage` clasx under the hood that uses [AMF](features/loading-external-data/amf) to encode/decode data in browser's local storage.
+Crux provides a bean to help with client persistence: `AMFStorageBean`. This bean the `AMFStorage` clasx under the hood that uses [AMF](working-with-data/loading-external-data/amf) to encode/decode data in browser's local storage.
 
 > Using AMF simplifies development since you don't need to code additional methods for encode and decode your objects from/to the browser local storage, also it provides strong typing. Using JSON instead, will need more work from your side, while AMF does the heavy duty for you under the hood.
 

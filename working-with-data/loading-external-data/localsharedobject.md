@@ -17,7 +17,7 @@
 layout: docpage
 title: Local Shared Object
 description: Use LocalSharedObject to store user or session data
-permalink: /features/loading-external-data/localsharedobject
+permalink: /working-with-data/loading-external-data/localsharedobject
 ---
 
 # Local Shared Object (LSO)
@@ -35,7 +35,7 @@ Instead of using cookies, your Royale application can use Local Shared Objects (
 * can even store instances of a custom class, if the class is registered using the _RemoteCass_ -metadata tag.
 * have whatever name you give them, with the _.sol_ file type
 
-> Storing data types and instances of a custom class use [AMF](features/loading-external-data/amf) encoding, which [RemoteObject](features/loading-external-data/remoteobject) also uses.
+> Storing data types and instances of a custom class use [AMF](working-with-data/loading-external-data/amf) encoding, which [RemoteObject](features/loading-external-data/remoteobject) also uses.
 
 ## Implementations
 
