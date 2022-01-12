@@ -32,7 +32,7 @@ The following data types have built-in support:
 
 * Raw Strings
 * JSON
-* Binary
+* [Binary](https://royale.apache.org/asdoc/#!org.apache.royale.utils/BinaryData)
 * [XML](features/as3/xml)
 * [AMF](working-with-data/loading-external-data/amf)
 
@@ -42,7 +42,7 @@ AMF is supported using either of:
 
 Classes which can be used for loading external data include:
 * [HTTPService](working-with-data/loading-external-data/httpservice)
-* URLBinaryLoader for loading of any kind of binary data
+* [URLBinaryLoader](https://royale.apache.org/asdoc/#!org.apache.royale.net/URLBinaryLoader) for loading of any kind of binary data
 * HttpRequestTask
 * HttpDownloadTask
 
