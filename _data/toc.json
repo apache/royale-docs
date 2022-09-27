@@ -255,6 +255,14 @@
             ]
         },
         {
+            "path": "linter.md",
+            "children": [
+                {
+                    "path": "linter/linter-options.md"
+                }
+            ]
+        },
+        {
             "path": "create-an-application.md",
             "children": [
                 {
