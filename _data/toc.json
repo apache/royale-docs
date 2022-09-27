@@ -243,9 +243,14 @@
             "children": [
                 {
                     "path": "compiler/compiler-options.md"
-                },
+                }
+            ]
+        },
+        {
+            "path": "formatter.md",
+            "children": [
                 {
-                    "path": "compiler/compiler-arguments.md"
+                    "path": "formatter/formatter-options.md"
                 }
             ]
         },
