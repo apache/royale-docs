@@ -38,15 +38,15 @@ The Royale Compiler does many things besides compile **MXML** and **ActionScript
 
 ### Apache Maven
 
-There are some examples in the `apache/royale-asjs` repo in the `examples` folder. The `pom.xml` files should be useful as a starting point. There are also **Maven archetypes** available in Apache Royale releases.
+There are some examples in the **apache/royale-asjs** repo in the _examples_ folder. The _pom.xml_ files should be useful as a starting point. There are also **Maven archetypes** available in Apache Royale releases.
 
 ### Apache Ant
 
-In an Apache Royale distribution, there is a `compiler-royaleTasks.jar` in the `js/lib` folder that contains Ant tasks for the Royale Compiler. There is an mxmlc task for creating applications and a compc task for creating libraries.
+In an Apache Royale distribution, there is a _compiler-royaleTasks.jar_ in the _js/lib_ folder that contains Ant tasks for the Royale Compiler. There is an mxmlc task for creating applications and a compc task for creating libraries.
 
 ### asconfigc
 
-asconfigc is a command line tool for compiling ActionScript projects and is arguably the easiest way to compile -- especially if you are not familiar with Apache Ant or Maven. asconfigc can be run a stand-alone command line tool, or as part of a VS Code extension. To run it, you would either feed arguments into the tool or more likely create a <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">asconfig.json<a/> file at the base of your project. Refer to the <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">documentation<a/> for the full list of options.
+asconfigc is a command line tool for compiling ActionScript projects and is arguably the easiest way to compile -- especially if you are not familiar with Apache Ant or Maven. asconfigc can be run a stand-alone command line tool, or as part of a VS Code extension. To run it, you would either feed arguments into the tool or more likely create a <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">_asconfig.json_</a> file at the base of your project. Refer to the <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">documentation</a> for the full list of options.
 
 ### IDEs
 
@@ -54,11 +54,11 @@ Consult your IDE documentation for how to launch the Royale Compiler. You can ge
 
 ### NPM
 
-You should be able to run `mxmlc` or `compc` from the command line after installing Royale via npm. Use `mxmlc --help` to see the latest list of options.
+Both **mxmlc** or **compc** should be available on the system path to run from the command line after installing Royale via npm. Use `mxmlc --help` to see the [list of available compiler options](compiler/compiler-options).
 
 ### Command line
 
-The `js/bin` folder should contain `mxmlc` and `compc` scripts that will launch the compiler. Use `mxmlc --help` to see the latest list of options.
+The _js/bin_ folder should contain **mxmlc** and **compc** scripts that will launch the compiler. Use `mxmlc --help` to see the [list of available compiler options](compiler/compiler-options).
 
 ## Compiler Options
 
@@ -67,9 +67,3 @@ Royale provides several compiler options to customize the use. You can check the
 - [Compiler Options](compiler/compiler-options)
 
 > Read about <a href="https://github.com/apache/royale-compiler/wiki/Developer-Guide" target="_blank">how to contribute to the Apache Royale Compiler</a>.
-
-## Compiler Arguments
-
-There are a lot of compiler arguments that can be used when running `mxmlc`. You can see the full list here:
-
-- [Compiler Arguments](compiler/compiler-arguments)
