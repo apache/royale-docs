@@ -30,14 +30,39 @@ Below are some pointers to help you get started with the Royale formatter in var
 
 ### Command line
 
-The _bin_ directory of the Royale SDK should contain the **asformat** script that will launch the formatter. Use `asformat --help` to see the [list of available formatter options](formatter/formatter-options).
+The _bin_ directory of the Royale SDK should contain the **asformat** script that will launch the formatter. Use `asformat --help` to see a [list of available formatter options](formatter/formatter-options).
 
-### IDEs
+To use the default formatting options, simply pass in the path to a _.as_ or _.mxml_ file as an argument.
 
-Consult your IDE documentation for how to use the Royale formatter.
+```sh
+asformat src/com/example/MyClass.as
+```
 
-## Formatter Options
+The formatted file contents will be printed to the standard output only, and the original file will remain unmodified. To save the formatting changes, use the `--write-files` option (or its shorter `-w` alias).
 
-The Royale formatter provides a number of command line options to customize its use. You can find the list of formatter options here:
+```sh
+asformat --write-files src/com/example/MyClass.as
+```
 
-- [Formatter Options](formatter/formatter-options)
+To format multiple files, pass in a directory path. The formatter will search this directory recursively for _.as_ and _.mxml_ files, and it will format every one that it finds.
+
+```sh
+asformat --write-files src
+```
+
+To see which files were changed by the formatter, use the `--list-files` option (or its shorter `-l` alias).
+
+```sh
+asformat --write-files --list-files src
+```
+
+### Editors and IDEs
+
+Consult your editor or IDE documentation to see whether it integrates the Royale formatter or not. Many development environments have the ability to run external command line programs, even if the Royale formatter is not directly integrated.
+
+## Formatter configuration
+
+The Royale formatter provides a number of command line options to customize its use. You can also save a list of the options for your project in a local configuration file that will be detected automatically.
+
+- [List of formatter options](formatter/formatter-options)
+- [_asformat-config.xml_](formatter/asformat-config-file)

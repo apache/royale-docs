@@ -250,6 +250,9 @@
             "path": "formatter.md",
             "children": [
                 {
+                    "path": "formatter/asformat-config-file.md"
+                },
+                {
                     "path": "formatter/formatter-options.md"
                 }
             ]
@@ -257,6 +260,9 @@
         {
             "path": "linter.md",
             "children": [
+                {
+                    "path": "linter/aslint-config-file.md"
+                },
                 {
                     "path": "linter/linter-options.md"
                 }
