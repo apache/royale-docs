@@ -259,6 +259,7 @@ The [**mxmlc** and **compc** compilers](compiler) have a number of useful config
 - [`-warn-public-vars`](compiler/compiler-options#warn-public-vars) -- Controls a compile-time warning for public variables that are not accessors.
 - `-warning-problems` `[class]` `[...]`  
 - `-warnings` -- Determines if compile-time warnings are enabled.
+- [`-watch`](compiler/compiler-options#watch) -- Watch for source file changes and rebuild incrementally
 
 ### allow-abstract-classes {#allow-abstract-classes}
 
@@ -1035,4 +1036,18 @@ Enables or disables warnings about using public variables when it may be conside
 
 ```xml
 <additionalCompilerOptions>-warn-public-vars=true;</additionalCompilerOptions>
+```
+
+### watch {#watch}
+
+After initial compilation completes, the compiler keeps running to watch for source file changes. When _.as_ or _.mxml_ files are changed, the compiler runs a fast incremental build. Use Ctrl+C to exit the compiler.
+
+```sh
+-watch
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-watch=true;</additionalCompilerOptions>
 ```
