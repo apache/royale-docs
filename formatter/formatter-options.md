@@ -27,26 +27,26 @@ List of all available formatter options
 The [**asformat**](formatter) tool has a number of useful configuration options
 . The list below is also available by running `asformat -help advanced` in a terminal.
 
-- `-collapse-empty-blocks` -- Determines if empty blocks containing no statements will be collapsed to a single line, or if the closing curly brace should still appear on a new line.
+- `-collapse-empty-blocks` -- Determines if empty blocks containing no statements will be collapsed to a single line, or if the closing curly brace should still appear on a new line. Default: `false`
 - `-help` `[keyword]` `[...]` -- Displays formatter usage instructions.
-- `-ignore-parsing-problems` -- If enabled, parsing errors will be ignored. This may result in undesirable effects on formatting.
-- `-insert-final-new-line` -- Determines if the file must have at least one final new line.
-- `-insert-space-anonymous-function-keyword` -- Determines if a space should appear between `function` and the opening parenthesis.
-- `-insert-space-binary-operators` -- Determines if spaces should appear before and after binary operators, such as `+`, `==`, and `&&`.
-- `-insert-space-comma-delimiter` -- Determines if a space should be inserted after a comma when used as a delimter (such as an object and array literals).
-- `-insert-space-control-flow-keywords` -- Determines if a space should appear between control flow keywords, such as `if`, `for` and `while`, and the opening parenthesis.
-- `-insert-space-for-loop-semicolon` -- Determines if a space should appear after each semicolon in a `for` loop.
-- `-insert-space-line-comment` -- Determines if a single space should appear at the beginning of a line comment.
-- `-insert-space-meta-attributes` -- Determines if a space should appear after metadata attributes.
-- `-insert-spaces` -- Insert spaces for indentation.
-- `-list-files` -- List files to standard output if they have formatting changes.
+- `-ignore-parsing-problems` -- If enabled, parsing errors will be ignored. This may result in undesirable effects on formatting. Default: `false`
+- `-insert-final-new-line` -- Determines if the file must have at least one final new line. Default: `false`
+- `-insert-space-anonymous-function-keyword` -- Determines if a space should appear between `function` and the opening parenthesis. Default: `false`
+- `-insert-space-binary-operators` -- Determines if spaces should appear before and after binary operators, such as `+`, `==`, and `&&`. Default: `true`
+- `-insert-space-comma-delimiter` -- Determines if a space should be inserted after a comma when used as a delimter (such as an object and array literals). Default: `true`
+- `-insert-space-control-flow-keywords` -- Determines if a space should appear between control flow keywords, such as `if`, `for` and `while`, and the opening parenthesis. Default: `true`
+- `-insert-space-for-loop-semicolon` -- Determines if a space should appear after each semicolon in a `for` loop. Default: `true`
+- `-insert-space-line-comment` -- Determines if a single space should appear at the beginning of a line comment. Default: `true`
+- `-insert-space-meta-attributes` -- Determines if a space should appear after metadata attributes. Default: `true`
+- `-insert-spaces` -- Insert spaces for indentation. Default: `false`
+- `-list-files` -- List files to standard output if they have formatting changes. Default: `false`
 - `-load-config` `<filename>` -- Loads an XML configuration file with more formatter options.
-- `-max-preserve-new-lines` `<int>` -- The maximum number of empty new lines to preserve between lines of code.
-- `-mxml-align-attributes` -- When MXML attributes are on separate lines, align them at the start.
-- `-mxml-insert-new-line-attributes` -- Determines if each MXML attribute should appear on a new line.
-- `-open-brace-new-line` -- Determines if an opening curly brace should appear on a new line or not.
-- `-semicolons` `<string>` -- Determines how to handle semicolons at the end of statements. Possible values are `ignore`, `insert`, or `remove`
-- `-skip-local-config-file` -- Ignores _asformat-config.xml_ in the current working directory, if it exists.
-- `-tab-size` `<int>` -- Sets the width of tab characters.
+- `-max-preserve-new-lines` `<int>` -- The maximum number of empty new lines to preserve between lines of code. Default: `2`
+- `-mxml-align-attributes` -- When MXML attributes are on separate lines, align them at the start. Default: `false`
+- `-mxml-insert-new-line-attributes` -- Determines if each MXML attribute should appear on a new line. Default: `false`
+- `-open-brace-new-line` -- Determines if an opening curly brace should appear on a new line or not. Default: `true`
+- `-semicolons` `<string>` -- Determines how to handle semicolons at the end of statements. Supported values: `ignore`, `insert`, or `remove`. Default: `insert`
+- `-skip-local-config-file` -- Ignores _asformat-config.xml_ in the current working directory, if it exists. Default: `false`
+- `-tab-size` `<int>` -- Sets the width of tab characters. Default: `4`
 - `-version` -- Displays the version number of the formatter tool.
-- `-write-files` -- Write changes to files that have been formatted.
+- `-write-files` -- Write changes to files that have been formatted. Default: `false`
