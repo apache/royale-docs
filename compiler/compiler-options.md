@@ -24,7 +24,7 @@ permalink: /compiler/compiler-options
 
 List of all available compiler options
 
-The [**mxmlc** and **compc** compilers](compiler/) have a number of useful configuration options. The list below is also available by running `mxmlc -help advanced` in a terminal.
+The [**mxmlc** and **compc** compilers](compiler) have a number of useful configuration options. The list below is also available by running `mxmlc -help advanced` in a terminal.
 
 - `-allow-dynamic-bindings` -- Controls whether data binding may use reflection for dynamic access.
 - `-api-report` `<filename>` -- Used to generate a report of APIs used in a project.  
@@ -506,17 +506,7 @@ Determines if asdoc comment annotations are kept in the generated JavaScript.
 <additionalCompilerOptions>-keep-asdoc=false;</additionalCompilerOptions>
 ```
 
-## Reduce size of release builds
-
-The following compiler options may be used to reduce the output size of JavaScript release builds. However, using these options may also prevent certain coding patterns in ActionScript and JavaScript from working correctly, so use with caution.
-
-There are two main ways to reduce the size of a release build:
-
-- **Disable exported symbols.**  When a symbol is _exported_, it may be accessed by external JavaScript `<script>` elements in the same page. If a symbol is not exported, and it is not referenced elsewhere in the Royale project, the compiler may determine that it is "dead code" that should be removed from a release build.
-
-- **Allow renaming of symbols.** When a symbol is not allowed to be renamed in a release build, it may be accessed using dynamic string access, such as `object["myProperty"]`. If a symbol is not prevented from being renamed, the compiler may determine that it can change the name of the symbol to a shorter value to reduce the size of the release build. If a symbol is renamed, dynamic string access will not be possible without knowing the new name of the symbol.
-
-### Export public symbols {#export-public-symbols}
+### export-public-symbols {#export-public-symbols}
 
 In a release build, determines if symbols in the `public` namespace will be exported or not. The default value is `true`.
 
@@ -532,7 +522,7 @@ In a release build, determines if symbols in the `public` namespace will be expo
 <additionalCompilerOptions>-export-public-symbols=false;</additionalCompilerOptions>
 ```
 
-### Export protected symbols {#export-protected-symbols}
+### export-protected-symbols {#export-protected-symbols}
 
 In a release build, determines if symbols in the `protected` namespace will be exported. The default value is `false`.
 
@@ -548,7 +538,7 @@ In a release build, determines if symbols in the `protected` namespace will be e
 <additionalCompilerOptions>-export-protected-symbols=true;</additionalCompilerOptions>
 ```
 
-### Export internal symbols {#export-internal-symbols}
+### export-internal-symbols {#export-internal-symbols}
 
 In a release build, determines if symbols in the `internal` namespace will be exported. The default value is `false`.
 
@@ -564,7 +554,7 @@ In a release build, determines if symbols in the `internal` namespace will be ex
 <additionalCompilerOptions>-export-internal-symbols=true;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of public symbols {#prevent-rename-public-symbols}
+### prevent-rename-public-symbols {#prevent-rename-public-symbols}
 
 In a release build, determines if symbols in the `public` namespace may be renamed or not. The default value is `true`.
 
@@ -591,7 +581,7 @@ When `prevent-rename-public-symbols` option is `true`, one or more the following
 - [`prevent-rename-public-static-accessors`](compiler/compiler-options.html#prevent-rename-public-static-accessors)
 - [`prevent-rename-public-instance-accessors`](compiler/compiler-options.html#prevent-rename-public-instance-accessors)
 
-### Prevent renaming of protected symbols {#prevent-rename-protected-symbols}
+### prevent-rename-protected-symbols {#prevent-rename-protected-symbols}
 
 In a release build, determines if symbols in the `protected` namespace may be renamed or not. The default value is `true`.
 
@@ -618,7 +608,7 @@ When `prevent-rename-protected-symbols` option is `true`, one or more the follow
 - [`prevent-rename-protected-static-accessors`](compiler/compiler-options.html#prevent-rename-protected-static-accessors)
 - [`prevent-rename-protected-instance-accessors`](compiler/compiler-options.html#prevent-rename-protected-instance-accessors)
 
-### Prevent renaming of internal symbols {#prevent-rename-internal-symbols}
+### prevent-rename-internal-symbols {#prevent-rename-internal-symbols}
 
 In a release build, determines if symbols in the `internal` namespace may be renamed or not. The default value is `true`.
 
@@ -645,7 +635,7 @@ When `prevent-rename-internal-symbols` option is `true`, one or more the followi
 - [`prevent-rename-internal-static-accessors`](compiler/compiler-options.html#prevent-rename-internal-static-accessors)
 - [`prevent-rename-internal-instance-accessors`](compiler/compiler-options.html#prevent-rename-internal-instance-accessors)
 
-### Prevent renaming of public static methods {#prevent-rename-public-static-methods}
+### prevent-rename-public-static-methods {#prevent-rename-public-static-methods}
 
 In a release build, determines if static methods in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
@@ -661,7 +651,7 @@ In a release build, determines if static methods in the `public` namespace may b
 <additionalCompilerOptions>-prevent-rename-static-methods=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of public instance methods {#prevent-rename-public-instance-methods}
+### prevent-rename-public-instance-methods {#prevent-rename-public-instance-methods}
 
 In a release build, determines if instance (non-static) methods in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
@@ -677,7 +667,7 @@ In a release build, determines if instance (non-static) methods in the `public` 
 <additionalCompilerOptions>-prevent-rename-public-instance-methods=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of public static variables {#prevent-rename-public-static-variables}
+### prevent-rename-public-static-variables {#prevent-rename-public-static-variables}
 
 In a release build, determines if static variables in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
@@ -693,7 +683,7 @@ In a release build, determines if static variables in the `public` namespace may
 <additionalCompilerOptions>-prevent-rename-static-variables=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of public instance variables {#prevent-rename-public-instance-variables}
+### prevent-rename-public-instance-variables {#prevent-rename-public-instance-variables}
 
 In a release build, determines if instance (non-static) variables in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
@@ -709,7 +699,7 @@ In a release build, determines if instance (non-static) variables in the `public
 <additionalCompilerOptions>-prevent-rename-public-instance-variables=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of public static accessors {#prevent-rename-public-static-accessors}
+### prevent-rename-public-static-accessors {#prevent-rename-public-static-accessors}
 
 In a release build, determines if static accessors (getters and setters) in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
@@ -725,7 +715,7 @@ In a release build, determines if static accessors (getters and setters) in the 
 <additionalCompilerOptions>-prevent-rename-static-accessors=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of public instance accessors {#prevent-rename-public-instance-accessors}
+### prevent-rename-public-instance-accessors {#prevent-rename-public-instance-accessors}
 
 In a release build, determines if instance (non-static) accessors (getters and setters) in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
@@ -741,7 +731,7 @@ In a release build, determines if instance (non-static) accessors (getters and s
 <additionalCompilerOptions>-prevent-rename-public-instance-accessors=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of protected static methods {#prevent-rename-protected-static-methods}
+### prevent-rename-protected-static-methods {#prevent-rename-protected-static-methods}
 
 In a release build, determines if static methods in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
@@ -757,7 +747,7 @@ In a release build, determines if static methods in the `protected` namespace ma
 <additionalCompilerOptions>-prevent-rename-static-methods=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of protected instance methods {#prevent-rename-protected-instance-methods}
+### prevent-rename-protected-instance-methods {#prevent-rename-protected-instance-methods}
 
 In a release build, determines if instance (non-static) methods in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
@@ -773,7 +763,7 @@ In a release build, determines if instance (non-static) methods in the `protecte
 <additionalCompilerOptions>-prevent-rename-protected-instance-methods=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of protected static variables {#prevent-rename-protected-static-variables}
+### prevent-rename-protected-static-variables {#prevent-rename-protected-static-variables}
 
 In a release build, determines if static variables in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
@@ -789,7 +779,7 @@ In a release build, determines if static variables in the `protected` namespace 
 <additionalCompilerOptions>-prevent-rename-static-variables=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of protected instance variables {#prevent-rename-protected-instance-variables}
+### prevent-rename-protected-instance-variables {#prevent-rename-protected-instance-variables}
 
 In a release build, determines if instance (non-static) variables in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
@@ -805,7 +795,7 @@ In a release build, determines if instance (non-static) variables in the `protec
 <additionalCompilerOptions>-prevent-rename-protected-instance-variables=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of protected static accessors {#prevent-rename-protected-static-accessors}
+### prevent-rename-protected-static-accessors {#prevent-rename-protected-static-accessors}
 
 In a release build, determines if static accessors (getters and setters) in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
@@ -821,7 +811,7 @@ In a release build, determines if static accessors (getters and setters) in the 
 <additionalCompilerOptions>-prevent-rename-static-accessors=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of protected instance accessors {#prevent-rename-protected-instance-accessors}
+### prevent-rename-protected-instance-accessors {#prevent-rename-protected-instance-accessors}
 
 In a release build, determines if instance (non-static) accessors (getters and setters) in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
@@ -837,7 +827,7 @@ In a release build, determines if instance (non-static) accessors (getters and s
 <additionalCompilerOptions>-prevent-rename-protected-instance-accessors=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of internal static methods {#prevent-rename-internal-static-methods}
+### prevent-rename-internal-static-methods {#prevent-rename-internal-static-methods}
 
 In a release build, determines if static methods in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
@@ -853,7 +843,7 @@ In a release build, determines if static methods in the `internal` namespace may
 <additionalCompilerOptions>-prevent-rename-static-methods=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of internal instance methods {#prevent-rename-internal-instance-methods}
+### prevent-rename-internal-instance-methods {#prevent-rename-internal-instance-methods}
 
 In a release build, determines if instance (non-static) methods in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
@@ -869,7 +859,7 @@ In a release build, determines if instance (non-static) methods in the `internal
 <additionalCompilerOptions>-prevent-rename-internal-instance-methods=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of internal static variables {#prevent-rename-internal-static-variables}
+### prevent-rename-internal-static-variables {#prevent-rename-internal-static-variables}
 
 In a release build, determines if static variables in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
@@ -885,7 +875,7 @@ In a release build, determines if static variables in the `internal` namespace m
 <additionalCompilerOptions>-prevent-rename-static-variables=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of internal instance variables {#prevent-rename-internal-instance-variables}
+### prevent-rename-internal-instance-variables {#prevent-rename-internal-instance-variables}
 
 In a release build, determines if instance (non-static) variables in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
@@ -901,7 +891,7 @@ In a release build, determines if instance (non-static) variables in the `intern
 <additionalCompilerOptions>-prevent-rename-internal-instance-variables=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of internal static accessors {#prevent-rename-internal-static-accessors}
+### prevent-rename-internal-static-accessors {#prevent-rename-internal-static-accessors}
 
 In a release build, determines if static accessors (getters and setters) in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
@@ -917,7 +907,7 @@ In a release build, determines if static accessors (getters and setters) in the 
 <additionalCompilerOptions>-prevent-rename-static-accessors=false;</additionalCompilerOptions>
 ```
 
-### Prevent renaming of internal instance accessors {#prevent-rename-internal-instance-accessors}
+### prevent-rename-internal-instance-accessors {#prevent-rename-internal-instance-accessors}
 
 In a release build, determines if instance (non-static) accessors (getters and setters) in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 

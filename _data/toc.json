@@ -243,6 +243,9 @@
             "children": [
                 {
                     "path": "compiler/compiler-options.md"
+                },
+                {
+                    "path": "compiler/release-build-file-size-optimization.md"
                 }
             ]
         },
