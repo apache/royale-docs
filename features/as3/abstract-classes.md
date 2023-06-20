@@ -26,9 +26,9 @@ permalink: /features/as3/abstract-classes
 
 [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for declaring `abstract` classes in [ActionScript](features/as3). An abstract class cannot be instantiated using the `new` keyword, meaning that it must be subclassed. Additionally, an abstract class may declare `abstract` methods that do not have a function body. Abstract methods must be implemented by the concrete subclass, similar to how the methods of an interface must also be implemented.
 
-## Enable abstract classes
+## Compiler option
 
-Like other [new ActionScript language features](features/as3#new-actionscript-language-features-in-royale) that Royale adds, abstract classes are enabled by default. To disable abstract classes in your application, use the `-allow-abstract-classes` compiler option.
+Royale enables abstract classes by default. To disable abstract classes in your application, use the `-allow-abstract-classes` compiler option.
 
 ```sh
 mxmlc -allow-abstract-classes=false MyApp.mxml
