@@ -88,8 +88,11 @@
                         {
                             "path": "features/as3/private-constructors.md"
                         },
-                         {
+                        {
                             "path": "features/reflection-introspection.md"
+                        },
+                        {
+                            "path": "features/as3/type-inference.md"
                         }
                     ]
                 },

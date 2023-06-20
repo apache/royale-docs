@@ -66,6 +66,7 @@ The following new ActionScript features are available with the Royale compiler:
 
 * [Abstract Classes](features/as3/abstract-classes)
 * [Private Constructors](features/as3/private-constructors)
+* [Type Inference](features/as3/type-inference)
 
 ### Limitations of ActionScript language extensions
 
