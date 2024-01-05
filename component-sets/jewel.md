@@ -32,7 +32,7 @@ It's based by design on [Basic](component-sets/basic) components. But while Basi
 
 Jewel works on the following browser and device versions:
 
-|         	    | Browser             	| Minimun Version 	| Release Date   |
+|         	    | Browser             	| Minimum Version 	| Release Date   |
 |-----------	|-------------------	|-----------------	| -------------- |
 | __Desktop__ 	| Google Chrome        	| 44+     	        | July,21, 2015  |
 |           	| Mozilla Firefox      	| 34+     	        | Dec, 1, 2014   |
