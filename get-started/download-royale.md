@@ -42,7 +42,7 @@ If you want SWF output, as well as JavaScript output, install the following pack
 npm install -g @apache-royale/royale-js-swf --foreground-scripts
 ```
 
-If the install completes successfully, you are ready to compile your application with Royale by using the mxmlcnpm tool from the command-line.  The NPM install should have put mxmlcnpm in your path.
+If the install completes successfully, you are ready to compile your application with Royale by using the **mxmlc** tool, or compile your library using the **compc** tool, from the command-line.  The NPM install should have added **mxmlc**, **compc**, and several other tools to your path.
 
 > If you cannot install Apache Royale with the `-g` flag due to an `EACCES` permissions error, please take a look at [npm Docs: Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally).
 

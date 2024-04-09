@@ -68,7 +68,7 @@ In the `src` folder, create a file called `HelloWorld.mxml` and use your favorit
 If you used [NPM](https://www.npmjs.com/){:target='_blank'} to install Royale, run from your project folder:
 
 ```sh
-mxmlcnpm src/HelloWorld.mxml
+mxmlc src/HelloWorld.mxml
 ```
 
 If you didn't use npm, run:
@@ -76,6 +76,8 @@ If you didn't use npm, run:
 ```sh
 <path to SDK folder>/js/bin/mxmlc src/HelloWorld.mxml
 ```
+
+> If you manually add _<path to SDK folder>/js/bin_ to your `PATH` environment variable, and restart your terminal, you can use **mxmlc** without the absolute path.
 
 ## Run the output
 
