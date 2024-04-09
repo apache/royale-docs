@@ -48,20 +48,11 @@ If the install completes successfully, you are ready to compile your application
 
 ## Apache Mirrors
 
-Use the following links to get a choice of mirrors to use for your download.
+To download Apache Royale source or binary distributions from Apache mirrors, please visit the following URL:
 
-[tar.gz (for Mac)](http://www.apache.org/dyn/closer.lua/royale/0.9.1/binaries/apache-royale-0.9.1-bin-js.tar.gz){:target='_blank'}
+[https://royale.apache.org/download/](https://royale.apache.org/download/)
 
-[zip (for Windows)](http://www.apache.org/dyn/closer.lua/royale/0.9.1/binaries/apache-royale-0.9.1-bin-js.zip){:target='_blank'}
-
-
-If you want SWF output as well as JavaScript output, download one of these packages instead.
-
-[tar.gz (for Mac)](http://www.apache.org/dyn/closer.lua/royale/0.9.1/binaries/apache-royale-0.9.1-bin-js-swf.tar.gz){:target='_blank'}
-
-[zip (for Windows)](http://www.apache.org/dyn/closer.lua/royale/0.9.1/binaries/apache-royale-0.9.1-bin-js-swf.zip){:target='_blank'}
-
-Once downloaded, uncompress the file into a folder somewhere.  This folder will be referred to as the SDK folder throughout the documentation.  If you chose the package with SWF support, you will need to follow the instructions in the README to install libraries from Adobe System Inc or use the Apache Ant script `InstallAdobeSDKs.xml` by running from the SDK folder:
+Once downloaded, uncompress the file into a folder somewhere.  This folder will be referred to as the SDK folder throughout the documentation.  If you chose the package with SWF support, you will need to follow the instructions in the _README_ file to install third-party libraries from Adobe Systems, Inc., or you can use the [Apache Ant](https://ant.apache.org/) script `InstallAdobeSDKs.xml` by running from the SDK folder:
 
 ```sh
 ant -f InstallAdobeSDKs.xml
