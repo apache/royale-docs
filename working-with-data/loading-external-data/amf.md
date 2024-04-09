@@ -24,7 +24,7 @@ permalink: /working-with-data/loading-external-data/amf
 
 ActionScript Message Format binary protocol
 
-AMF is a great way to send data between an Apache Royale client and a backend server. The server could be written in Java, PHP, ColdFusion, .NET, Ruby, Python or many other backend technologies.
+AMF is a great way to send data between an [Apache Royale](https://royale.apache.org/) client and a backend server. The server could be written in Java, PHP, ColdFusion, .NET, Ruby, Python or many other backend technologies.
 
 [Action Message Format (AMF)](https://en.wikipedia.org/wiki/Action_Message_Format){:target='_blank'} is a binary format used to serialize object graphs such as ActionScript objects and XML, or send messages between a client and a remote service. The ActionScript 3 language provides classes for encoding and decoding from the AMF format. Backend servers need to know how to encode and decode AMF.
 

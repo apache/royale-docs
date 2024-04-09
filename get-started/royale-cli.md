@@ -28,7 +28,7 @@ Royale CLI is a command-line tool that makes creating and compiling applications
 
 ## Installing Royale CLI
 
-If you have not installed Royale already, use this command in the command window:
+If you have not installed [Apache Royale](https://royale.apache.org/) already, use this command in the command window:
 
 ```sh
 npm install @apache-royale/royale-js -g

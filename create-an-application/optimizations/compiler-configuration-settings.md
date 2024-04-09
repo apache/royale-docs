@@ -24,7 +24,7 @@ permalink: /create-an-application/optimizations/compiler-configuration-settings
 
 Optimization options
 
-This page explains optimizations for JavaScript output that you can use when configuring the Royale compiler directly. Often these settings involve removing some JavaScript emulations of runtime type-safety that are present in AVM. This can help to improve application performance and/or reduce the size of your final application build.
+This page explains optimizations for JavaScript output that you can use when configuring the [Apache Royale](https://royale.apache.org/) compiler directly. Often these settings involve removing some JavaScript emulations of runtime type-safety that are present in AVM. This can help to improve application performance and/or reduce the size of your final application build.
 
 It can be useful to develop your application with these settings 'on' and then consider switching them to 'off' for your release build, when you have assured yourself it is safe to do so.
 

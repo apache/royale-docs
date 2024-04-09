@@ -24,7 +24,7 @@ permalink: /create-an-application/security
 
 Target environment security rules
 
-Royale can output a SWF that runs on the Adobe Flash/AIR runtimes or HTML/JS/CSS that run in browsers and other environments that support JavaScript, such as Node.
+[Apache Royale](https://royale.apache.org/) can output a SWF that runs on the Adobe Flash/AIR runtimes or HTML/JS/CSS that run in browsers and other environments that support JavaScript, such as Node.js.
 
 Each runtime environment has its own security rules. Here are links to security documentation for these runtimes:
 

@@ -15,7 +15,7 @@ permalink: /welcome/get-involved
 
 Join us to make Apache Royale better!
 
-Apache Royale is a non-profit, open-source project. It grows and thrives on contributions, insights, and efforts by people like you. It would be stronger with your participation.
+[Apache Royale](https://royale.apache.org/) is a non-profit, open-source project. It grows and thrives on contributions, insights, and efforts by people like you. It would be stronger with your participation.
 
 ## The Royale team
 

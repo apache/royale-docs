@@ -24,7 +24,7 @@ permalink: /working-with-data/loading-external-data/httpservice
 
 Loading external data through REST services
 
-You can load external data in Apache Royale using the `HTTPService` class. Use `HTTPService` to make _POST_, _GET_, _PUT_ and _DELETE_ operations for requests on external data for [REST](https://en.wikipedia.org/wiki/Representational_state_transfer){:target='_blank'} services.
+You can load external data in [Apache Royale](https://royale.apache.org/) using the `HTTPService` class. Use `HTTPService` to make _POST_, _GET_, _PUT_ and _DELETE_ operations for requests on external data for [REST](https://en.wikipedia.org/wiki/Representational_state_transfer){:target='_blank'} services.
 
 ## Implementations
 

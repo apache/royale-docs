@@ -15,7 +15,7 @@ permalink: /migrate-an-existing-app/emulation
 
 Create in Royale the Flex components you need
 
-Apache Royale offers a growing list of components that let you build your application and deploy it almost anywhere. However, there are still many features that were available in Adobe and Apache Flex and are "coming soon" in Royale. Most of these components relied on Flex APIs and either Adobe Flash or Adobe AIR, which a Royale application compiled into JavaScript and running on a browser cannot do.
+[Apache Royale](https://royale.apache.org/) offers a growing list of components that let you build your application and deploy it almost anywhere. However, there are still many features that were available in Adobe and Apache Flex and are "coming soon" in Royale. Most of these components relied on Flex APIs and either Adobe Flash or Adobe AIR, which a Royale application compiled into JavaScript and running on a browser cannot do.
 
 Royale is creating a set of **emulation** components to replace the Flex components that depended on Flash features. These components do not promise 100% backward compatibility and may not use the same class hierarchy as Flex. But they do approximate what the equivalent components in Flex did.
 

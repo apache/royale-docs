@@ -21,9 +21,9 @@ permalink: /create-an-application/optimizations/minification
 ---
 # Minification
 
-Minification is the process of minimizing code and markup in your application. It’s one of the main methods to reduce load times and improve application performance.
+Minification is the process of minimizing code and markup in your application. It's one of the main methods to reduce load times and improve application performance.
 
-Here are options and considerations for minimizing JavaScript output in your Royale application.
+Here are options and considerations for minimizing JavaScript output in your [Apache Royale](https://royale.apache.org/) application.
 
 ## Default behavior
 By default, Royale outputs a single minified JavaScript file for deployment of the application. The minified file contains all the code needed for running your application. The code contains the necessary pieces of framework code as well as your application code. The minification uses Google's Closure Compiler. The goal for the default release output is that it should always work without consideration for how the code was written.

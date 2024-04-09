@@ -24,7 +24,7 @@ permalink: /features/as3/metadata
 
 Decorate classes, properties and methods with extra information that can be used at compile or run time
 
-Metadata decorate classes, properties and methods to give extra data to the compiler that can be used to generate code at compile time that depends on that metadata values, or can be used at runtime for code that can interpret that data to perform some specific functionality. You can use it in [AS3](features/as3) & [MXML](features/mxml).
+Metadata decorate classes, properties and methods to give extra data to the compiler that can be used to generate code at compile time that depends on that metadata values, or can be used at runtime for code that can interpret that data to perform some specific functionality. With [Apache Royale](https://royale.apache.org/), you can use meta in both [AS3](features/as3) and [MXML](features/mxml).
 
 An example in **AS3** of a `Bindable` Metadata declaration decorating a variable is the following:
 

@@ -24,7 +24,7 @@ permalink: /component-sets/sparkroyale
 
 Emulations of Flex Spark components
 
-This component set includes Royale components that reproduce the functions of some UI components many applications used in Flex. These components do not promise 100% backward compatibility and may not use the same class hierarchy as Flex.
+This component set includes [Apache Royale](https://royale.apache.org/) components that reproduce the functions of some UI components many applications used in Flex. These components do not promise 100% backward compatibility and may not use the same class hierarchy as Flex.
 
 The source code for these emulations is in the SDK at frameworks/projects/SparkRoyale/src/main/royale.
 

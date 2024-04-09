@@ -23,7 +23,7 @@ permalink: /features/as3/reflection-introspection
 
 Finding the class and details of an object
 
-Reflection and introspection are in the Royale `Reflection` library.
+Reflection and introspection are in the [Apache Royale](https://royale.apache.org/) `Reflection` library.
 
 Royale supports class reflection and introspection using the following functions in the `org.apache.royale.reflection` package:
 

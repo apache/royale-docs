@@ -25,6 +25,6 @@ At the end of 2011, Adobe changed its business focus and decided to stop releasi
 
 Part of [Apache Flex](https://flex.apache.org/){:target='_blank'} work involved making it possible to create applications in Flex and then compile and distribute them in ways that did not require the Flash Player or Adobe AIR as a platform. These efforts, under the code name _"FlexJS"_, made good progress. 
 
-In 2017 it was agreed to split this work into a new Apache project, which reached back to the early history of the project for a name. That is how we have arrived at "Apache Royale".
+In 2017 it was agreed to split this work into a new Apache project, which reached back to the early history of the project for a name. That is how we have arrived at ["Apache Royale"](https://royale.apache.org/).
 
 This is a young project, with much to do. Your participation would be very [welcome](https://royale.apache.org/get-involved){:target='_blank'}!

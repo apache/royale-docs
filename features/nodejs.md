@@ -24,7 +24,7 @@ permalink: /features/nodejs
 
 Compile AS3 code to JS and run on Node.js
 
-Apache Royale can transpile [ActionScript](features/as3) to JavaScript and run on [Node.js](https://nodejs.org/). In this way you get all the benefits of AS3 language in Node. Check the following topics to get started:
+[Apache Royale](https://royale.apache.org/) can transpile [ActionScript](features/as3) to JavaScript and run on [Node.js](https://nodejs.org/). In this way you get all the benefits of AS3 language in Node. Check the following topics to get started:
 
  * [Command line scripting](features/nodejs/scripting) explains how to call Node.js APIs from ActionScript, compile to JavaScript, and run the generated script from the command line.
 

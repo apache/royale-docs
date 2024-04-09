@@ -24,7 +24,7 @@ permalink: /formatter/asformat-config-file
 
 Configure the Royale formatter for a specific project
 
-If the current working directory contains an _asformat-config.xml_ file, the [**asformat**](formatter/) tool will conveniently load this file automatically to configure its options.
+If the current working directory contains an _asformat-config.xml_ file, the [**asformat**](formatter/) tool included with [Apache Royale](https://royale.apache.org/) will conveniently load this file automatically to configure its options.
 
 The root of this file is an `<asformat-config>` element. To specify a [formatter option](formatter/formatter-options), add it as a child element.
 

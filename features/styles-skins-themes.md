@@ -24,7 +24,7 @@ permalink: /features/styles-skins-themes
 
 Customizing the look and feel of your application
 
-Royale provides three features for adjusting the look and feel of your application: styles, skins, and themes.
+[Apache Royale](https://royale.apache.org/) provides three features for adjusting the look and feel of your application: styles, skins, and themes.
 
 ## Styles
 

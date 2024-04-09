@@ -24,7 +24,7 @@ permalink: /compiler/compiler-options
 
 List of all available compiler options
 
-The [**mxmlc** and **compc** compilers](compiler) have a number of useful configuration options. The list below is also available by running `mxmlc -help advanced` in a terminal.
+The [**mxmlc** and **compc** compilers](compiler) bundled with [Apache Royale](https://royale.apache.org/) have a number of useful configuration options. The list below is also available by running `mxmlc -help advanced` in a terminal.
 
 - `-allow-dynamic-bindings` -- Controls whether data binding may use reflection for dynamic access.
 - `-api-report` `<filename>` -- Used to generate a report of APIs used in a project.  

@@ -26,7 +26,7 @@ Dynamic sites and real-time updates lead to good user experiences
 
 Unless you are building a brochure-style website that makes a statement and provides contact information, you are going to be working with _data_. You will get some of that data from your site or application users, but you will probably also get a lot from outside your app or website.
 
-Royale provides reliable, fast, and secure ways to get data from remote sources, and also to send data.
+[Apache Royale](https://royale.apache.org/) provides reliable, fast, and secure ways to get data from remote sources, and also to send data.
 
 The following data types have built-in support:
 

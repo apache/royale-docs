@@ -24,7 +24,7 @@ permalink: /libraries/crux
 
 An Apache Royale library based on Swiz Framework
 
-Apache Royale Crux provides:
+The Crux framework for [Apache Royale](https://royale.apache.org/) provides:
 
 - [Inversion of Control (IoC) and Dependency Injection (DI)](https://www.codeproject.com/articles/592372/dependency-injection-di-vs-inversion-of-control-io){:target='_blank'} with **Metadata**
 - [Event handling](https://en.wikipedia.org/wiki/Event_(computing)){:target='_blank'} with **Metadata**

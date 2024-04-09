@@ -24,7 +24,7 @@ permalink: /features-and-concepts
 
 Key points about Apache Royale
 
-Here are some things that will help you be more productive with Royale, although some folks get pretty far by just following the tutorial in [Create an Application](create-an-application) and extending it.
+Here are some things that will help you be more productive with [Apache Royale](https://royale.apache.org/), although some folks get pretty far by just following the tutorial in [Create an Application](create-an-application) and extending it.
 
 ## AS3 and MXML Languages
 

@@ -25,7 +25,7 @@ permalink: /welcome/high-level-view
 
 Where we come from
 
-Apache Royale began as _"FlexJS"_, a branch of the [Apache Flex project](https://flex.apache.org){:target='_blank'}. The goal was to make a way for the many existing Flex applications users have developed to be deployable outside of the Adobe Flash and Adobe AIR enviromments.
+[Apache Royale](https://royale.apache.org/) began as _"FlexJS"_, a branch of the [Apache Flex project](https://flex.apache.org){:target='_blank'}. The goal was to make a way for the many existing Flex applications users have developed to be deployable outside of the Adobe Flash and Adobe AIR enviromments.
 
 While Flex may work using Flash in browsers or within AIR on computers with traditional keyboards for years to come, Flex developers need to make their apps available on mobile devices, which for many end users are now the primary computer. The cost of migrating an application to a new coding language is high, and the risks around quality control are significant, especially when migrating to a less-strict language like JavaScript. Royale helps to minimize the cost and the risk of migration, while reusing much of the Flex code base without significant changes.
 

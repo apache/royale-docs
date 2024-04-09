@@ -24,7 +24,7 @@ permalink: /features/nodejs/external-modules
 
 Expose Node.js modules installed from the npm registry to ActionScript
 
-By creating [type definitions](features/externs) with special metadata, developers can use [Node.js](features/nodejs) modules from [ActionScript](features/as3) code.
+By creating [type definitions](features/externs) with special metadata, developers can use [Node.js](features/nodejs) modules from [ActionScript](features/as3) code using [Apache Royale](https://royale.apache.org/).
 
 Let's try to use the [boxen](https://www.npmjs.com/package/boxen) module from [the npm registry](https://www.npmjs.com/) in ActionScript. This module draws a box around a string to display in the console, and it exposes many styling options like colors, borders, and alignment.
 

@@ -26,7 +26,7 @@ Format your _.as_ and _.mxml_ source files
 
 ## User Guide
 
-Below are some pointers to help you get started with the Royale formatter in various environments.
+Below are some pointers to help you get started with the [Apache Royale](https://royale.apache.org/) formatter in various environments.
 
 ### Command line
 

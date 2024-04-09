@@ -27,7 +27,7 @@ Designed for the future. Code Once. Run Everywhere.
 {:align="center"}
 ![Apache Royale Logo](assets/images/apache-royale-main-logo-1000x1000.png){:height="33%" width="33%"}
 
-Apache Royale is the new SDK, built on the solid foundation developed by the Flex universe, that lets you create applications in MXML and ActionScript that will run almost anywhere without heavy plugins like Flash or Adobe AIR.
+[Apache Royale](https://royale.apache.org/) is the new SDK, built on the solid foundation developed by the Flex universe, that lets you create applications in MXML and ActionScript that will run almost anywhere without heavy plugins like Flash or Adobe AIR.
 
 With Royale, you can create a single code base that can be compiled to work like a native app on Windows or Apple systems, on Android phones, on tablets of all systems and sizes, in browsers, or on embedded JavaScript environments like Chromium Embedded Framework. 
 

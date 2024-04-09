@@ -29,7 +29,7 @@ The Jewel component set focuses on themes. When you set the theme of an applicat
 
 A theme is a predefined CSS file (and optionally other assets like images) that holds the definitions of each Jewel component, its subcomponents and the default [beads](features/strands-and-beads) used to configure the components. 
 
-Royale uses a theme to add the right css selectors to the final compilation so when the user loads the application the required css and other files are loaded and the application shows a concrete look and feel.
+[Apache Royale](https://royale.apache.org/) uses a theme to add the right css selectors to the final compilation so when the user loads the application the required css and other files are loaded and the application shows a concrete look and feel.
 
 ## Colors
 

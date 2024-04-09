@@ -24,7 +24,7 @@ permalink: /create-an-application/application-structure
 
 All about the organization of your project files and folders
 
-Royale applications usually include many files. If you are in rapid-prototyping or proof-of-concept "get something small running quickly" mode, you can cram everything into one file. But breaking things into multiple pieces often helps you organize your code and create "separation of concerns"; and as your project and team grows, you and your teammates can work on individual pieces independently without stepping on each other's work. Finally, you can more easily re-use coherent pieces that perform some standard function or provide a common user experience (like a login form and its related logic) in other applications.
+[Apache Royale](https://royale.apache.org/) applications usually include many files. If you are in rapid-prototyping or proof-of-concept "get something small running quickly" mode, you can cram everything into one file. But breaking things into multiple pieces often helps you organize your code and create "separation of concerns"; and as your project and team grows, you and your teammates can work on individual pieces independently without stepping on each other's work. Finally, you can more easily re-use coherent pieces that perform some standard function or provide a common user experience (like a login form and its related logic) in other applications.
 
 There are multiple popular ways of dividing an application into coherent and reusable pieces: Model-View (MV), Model-View-Controller (MVC), and other alphabet soup like MVP, MVVM, HMVC and more. This documentation will not address these patterns in detail. You can read more about them on the internet.
 

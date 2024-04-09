@@ -37,4 +37,4 @@ Over time we will add pointers to general testing guides, and tips and tricks mo
 
 ## Unit tests
 
-Apache Royale includes the [RoyaleUnit](testing/royaleunit) library for unit testing.
+[Apache Royale](https://royale.apache.org/) includes the [RoyaleUnit](testing/royaleunit) library for unit testing.

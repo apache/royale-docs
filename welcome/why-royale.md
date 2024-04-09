@@ -23,7 +23,7 @@ permalink: /welcome/why-royale
 
 The advantages of using Royale
 
-Let's face it: there are lots of application frameworks out there and each one claims to be the best. What does Royale give you that you don't get with other frameworks?
+Let's face it: there are lots of application frameworks out there and each one claims to be the best. What does [Apache Royale](https://royale.apache.org/) give you that you don't get with other frameworks?
 
 ## Time Proven
 Royale takes the best parts of Flex, which was the first major web application framework. The best minds in the field developed Flex, and one of the lead architects of Flex led the design of Royale.

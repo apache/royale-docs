@@ -26,7 +26,7 @@ A unit testing library for Apache Royale
 
 ## What RoyaleUnit does
 
-RoyaleUnit is an extensible testing framework for ActionScript classes and provides extensions for working with the Royale Framework. The RoyaleUnit framework is used to automate unit and integration testing.
+RoyaleUnit is an extensible testing framework for ActionScript classes and provides extensions for working with the [Apache Royale](https://royale.apache.org/) Framework. The RoyaleUnit framework is used to automate unit and integration testing.
 
 ## Requirements
 

@@ -24,7 +24,7 @@ permalink: /get-started/download-royale
 
 know how you can grab your bits
 
-You can download Apache Royale via [Node Package Manager (npm)](https://www.npmjs.com/){:target='_blank'}, or from mirrors of Apache releases. NPM is typically simpler, especially if you have Node.js installed already.
+You can download [Apache Royale](https://royale.apache.org/) via [Node Package Manager (npm)](https://www.npmjs.com/){:target='_blank'}, or from mirrors of Apache releases. NPM is typically simpler, especially if you have Node.js installed already.
 
 ## NPM
 

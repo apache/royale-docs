@@ -24,7 +24,7 @@ permalink: /features/modules
 
 Break your application in parts
 
-Royale supports a distributed development model called **modules**. Those familiar with [Apache Flex](https://flex.apache.org/){:target='_blank'} SDK will recognize the term. Royale modules work almost identically to Flex modules with a few differences.
+[Apache Royale](https://royale.apache.org/) supports a distributed development model called **modules**. Those familiar with [Apache Flex](https://flex.apache.org/){:target='_blank'} SDK will recognize the term. Royale modules work almost identically to Flex modules with a few differences.
 
 An example of an Application loading a Module can be seen below:
 

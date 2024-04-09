@@ -24,7 +24,7 @@ permalink: /get-started/hello-world
 
 Try the simplest piece of code possible
 
-To verify that the Royale SDK is set up correctly, we recommend you create and build a ["Hello World"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program){:target='_blank'} example. If that works, you can move on to [Create an Application](create-an-application) and work through the tutorial on building a more substantial application.
+To verify that the [Apache Royale](https://royale.apache.org/) SDK is set up correctly, we recommend you create and build a ["Hello World"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program){:target='_blank'} example. If that works, you can move on to [Create an Application](create-an-application) and work through the tutorial on building a more substantial application.
 
 These instructions presume you are not using an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment){:target='_blank'}, but are creating files in a text editor and compiling using command-line scripts or similar controls. [Development tools](get-started/development-tools) that fully support Royale provide their own instructions for building your first Royale applications.
 

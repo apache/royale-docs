@@ -23,7 +23,7 @@ permalink: /compiler/release-build-file-size-optimization
 
 Reduce the size of release builds
 
-A number of [compiler options](compiler/compiler-options) are available for Royale that allow you to reduce the output size of JavaScript release builds. However, using these options may also prevent certain coding patterns in ActionScript and JavaScript (such as reflection capabilities) from working correctly, so read carefully to understand what the tradeoffs are for enabling these options and whether it will affect how you must write your code.
+A number of [compiler options](compiler/compiler-options) are available for [Apache Royale](https://royale.apache.org/) that allow you to reduce the output size of JavaScript release builds. However, using these options may also prevent certain coding patterns in ActionScript and JavaScript (such as reflection capabilities) from working correctly, so read carefully to understand what the tradeoffs are for enabling these options and whether it will affect how you must write your code.
 
 There are two main ways to reduce the size of a release build:
 

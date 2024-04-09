@@ -16,7 +16,7 @@ About Apache Royale licenses and policies
 
 ## Apache License v2.0
 
-Apache Royale is under __Apache License v2.0__. See:
+[Apache Royale](https://royale.apache.org/) is released under the terms of __Apache License v2.0__. See:
 [ttp://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0){:target='_blank'}
 
 The Apache Royale SDK includes a number of subcomponents with separate copyright notices and license terms.

@@ -22,7 +22,7 @@ permalink: /libraries/library-basics
 
 # Royale libraries
 
-A bit about Royale libraries. What they are, how to use them and how to create them.
+A bit about [Apache Royale](https://royale.apache.org/) libraries. What they are, how to use them and how to create them.
 
 Royale libraries are packaged in `swc` files. A `swc` file is a zipped archive which contains the following:
 1. A `catalog.xml` which describes what is in the archive.

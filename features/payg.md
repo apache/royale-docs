@@ -24,7 +24,7 @@ permalink: /features/payg
 
 Pay as you go
 
-_Pay as you go (PAYG)_ is a general principle for Royale. The SDK framework code (the _ActionScript_ codebase used to create Royale SDK libraries) supports incremental functionality in components. The goal is to provide components that, used just as they are, require very little memory to provide the component's most basic functions; and that can be extended to support functions that are needed sometimes, but not always. 
+_Pay as you go (PAYG)_ is a general principle for [Apache Royale](https://royale.apache.org/). The SDK framework code (the _ActionScript_ codebase used to create Royale SDK libraries) supports incremental functionality in components. The goal is to provide components that, used just as they are, require very little memory to provide the component's most basic functions; and that can be extended to support functions that are needed sometimes, but not always. 
 
 For example, the most basic thing a text-input component needs to do is accept text the user provides. You might have lots and lots of instances of this component in your application, and only a handful of them have to be able to support entering _passwords_ by displaying as dots the characters the user enters. For those instances only, we PAYG by extending the base component's functionality and its "cost" in memory use and impact on the application's performance.
 

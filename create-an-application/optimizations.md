@@ -25,7 +25,7 @@ Strategies to use when optimizing your document output
 
 ## Optimization options
 
-The following content explains optimizations for javascript output that you can use when configuring the Royale compiler directly or by using doc-comment directives in your ActionScript code.  
+The following content explains optimizations for javascript output that you can use when configuring the [Apache Royale](https://royale.apache.org/) compiler directly or by using doc-comment directives in your ActionScript code.  
 Many settings have corresponding approaches between the over-arching compiler level influence of compilation settings and those with more specificity at the code level, so to avoid repetition, it is recommended that you get familiar with the Compiler settings first.
 
 [Minification](create-an-application/optimizations/minification) What options you have for minifying your app for release and considerations when customizing the minified output.

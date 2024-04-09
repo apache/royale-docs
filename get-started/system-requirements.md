@@ -24,7 +24,7 @@ permalink: get-started/system-requirements
 
 The minimum hardware needed to work in Apache Royale
 
-Apache Royale is designed for use on Mac or PC computers. We would love to know your experience with it on a Linux machine!
+[Apache Royale](https://royale.apache.org/) is designed for use on macOS or Windows computers. We would love to know your experience with it on a Linux machine!
 
 Since developers often use Royale in the IDE of their choice, the system needs to satisfy the minimum requirements for that IDE. You do not need Internet access to work with Royale unless that is required by the IDE you are using. Royale provides scripts you can run if you want to compile your application using the command line, without an IDE.
 

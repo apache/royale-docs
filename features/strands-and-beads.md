@@ -24,7 +24,7 @@ permalink: /features/strands-and-beads
 
 Adding functionality to a component through composition
 
-Strands and beads are key concepts in Royale, related to the [PAYG](features/payg)  (pay as you go) concept. The idea is to keep component code as lightweight as possible, and to add functionality and complexity only to the components that need it.
+Strands and beads are key concepts in [Apache Royale](https://royale.apache.org/), related to the [PAYG](features/payg)  (pay as you go) concept. The idea is to keep component code as lightweight as possible, and to add functionality and complexity only to the components that need it.
 
 {:align="center"}
 ![Fig 1: MVC with Strands and Beads](assets/images/strand-beads/strand-bead-1.jpg){:height="70%" width="70%"}

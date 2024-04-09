@@ -26,7 +26,7 @@ How Royale fits into the Javascript ecosystem
 When evaluating a framework or project, the first question you might ask is how is it the same or different as "x". How does this relate to other options? This document attempts to answer those questions.
 
 ## It's a language
-At the heart of Royale, it's a language. Royale is the current shepherd of the ActionScript programming language. The most obvious language you would compare ActionScript to would be Typescript. The general goals of both are similar -- to add type protection for an ECMA language. There are differences between the approach taken by Typescript and ActionScript [which are discussed on a dedicated page](features/as3/actionscript-vs-typescript).
+At the heart of [Apache Royale](https://royale.apache.org/), it's a language. Royale is the current shepherd of the ActionScript programming language. The most obvious language you would compare ActionScript to would be Typescript. The general goals of both are similar -- to add type protection for an ECMA language. There are differences between the approach taken by Typescript and ActionScript [which are discussed on a dedicated page](features/as3/actionscript-vs-typescript).
 
 ## It's a compiler
 Royale compiles ActionScript for multiple run-times. The ActionScript compiler is an important piece of Royale. Currently, the targets are for Flash (mostly AIR applications today) and Javascript applications. However the architecture was designed to be platform agnostic and other native platforms can be targeted in the future.

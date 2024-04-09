@@ -23,7 +23,7 @@ permalink: /user-interface/alerts
 
 Send messages to your app users
 
-When a user is working with your application, you may need to get their attention to ask them a question, remind them of something they need to do, or update them about some app process that just completed (or broke!). Apache Royale provides several components that let you get your message out, and one of them lets your app user respond.
+When a user is working with your application, you may need to get their attention to ask them a question, remind them of something they need to do, or update them about some app process that just completed (or broke!). [Apache Royale](https://royale.apache.org/) provides several components that let you get your message out, and one of them lets your app user respond.
 
 ## Alert
 

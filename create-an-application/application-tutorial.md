@@ -24,7 +24,7 @@ permalink: /create-an-application/application-tutorial
 
 A complete tutorial on how to build a simple Royale application
 
-This tutorial will take you through building an app that displays the commit logs for the Apache Royale project by connecting to its [GitHub](https://github.com){:target='_blank'} repository on the Apache servers.
+This tutorial will take you through building an app that displays the commit logs for the [Apache Royale](https://royale.apache.org/) project by connecting to its [GitHub](https://github.com){:target='_blank'} repository on the Apache servers.
 
 At the end of this tutorial we'll get the following:
 

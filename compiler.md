@@ -24,7 +24,7 @@ permalink: /compiler
 
 Turn your source code into compiled output
 
-Royale provides a compiler (some call it a transpiler or cross-compiler) and a command-line debugger to turn your source code into compiled output you can share with users. The compiler takes [AS3](features/as3), [MXML](features/mxml), and CSS as inputs. 
+[Apache Royale](https://royale.apache.org/) provides a compiler (some call it a transpiler or cross-compiler) and a command-line debugger to turn your source code into compiled output you can share with users. The compiler takes [AS3](features/as3), [MXML](features/mxml), and CSS as inputs. 
 
 The main output of the compiler is **JavaScript**. The compiler can also output **SWF**s for the **Adobe Flash** and **AIR** runtimes. There is some initial work on **Web Assembly** output.
 

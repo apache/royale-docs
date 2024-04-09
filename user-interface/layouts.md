@@ -23,7 +23,7 @@ permalink: /user-interface/layouts
 
 Organize the components in your UI
 
-Laying out components in Royale works a bit differently than in the Adobe or Apache Flex SDKs. If you don’t care about the _why_ and want to get to the _how_, skip ahead to the “Royale Layouts" section.
+Laying out components in [Apache Royale](https://royale.apache.org/) works a bit differently than in the Adobe or Apache Flex SDKs. If you don’t care about the _why_ and want to get to the _how_, skip ahead to the “Royale Layouts" section.
 
 The traditional Flex SDKs used a three-phase, optionally frame-delayed, validation mechanism. Two phases were top-down; one phase was bottom up. The idea was to handle any change anywhere. Also percentages were defined as a percentage of the non-fixed area of the container. Just about every object that didn’t have explicit widths and heights got measured because measurements helped define the minimum sizes for things with percentage widths and heights.
 

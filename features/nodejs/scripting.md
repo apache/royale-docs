@@ -24,7 +24,7 @@ permalink: /features/nodejs/scripting
 
 Write command line scripts for Node.js using ActionScript
 
-Much of the JavaScript development ecosystem is powered by [Node.js](https://nodejs.org/). This runtime is used for simple command line scripts, web servers, and more. With the help of Apache Royale, developers can use [ActionScript](features/as3) to create their own tools that run on Node.js.
+Much of the JavaScript development ecosystem is powered by [Node.js](https://nodejs.org/). This runtime is used for simple command line scripts, web servers, and more. With the help of [Apache Royale](https://royale.apache.org/), developers can use [ActionScript](features/as3) to create their own tools that run on Node.js.
 
 ## Hello, Node.js
 

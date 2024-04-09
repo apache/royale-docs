@@ -24,7 +24,7 @@ permalink: /working-with-data
 
 Getting, sending, and displaying data in your app
 
-These pages can help you get, send, and display data smoothly and efficiently in your Apache Royale apps.
+These pages can help you get, send, and display data smoothly and efficiently in your [Apache Royale](https://royale.apache.org/) apps.
 
 * Getting, storing and sending data
   * [Loading external data](working-with-data/loading-external-data)

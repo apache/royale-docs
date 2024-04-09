@@ -22,9 +22,9 @@ permalink: /component-sets
 
 # Component Sets
 
-Sets of components and containers designed in Apache Royale.
+Sets of components and containers designed in [Apache Royale](https://royale.apache.org/).
 
-Royale provides its own component sets that support developing simple, small and fast applications for prototyping and as the basis of complete application user interfaces:
+[Apache Royale](https://royale.apache.org/) provides its own component sets that support developing simple, small and fast applications for prototyping and as the basis of complete application user interfaces:
 
 - [Basic](component-sets/basic) is the smallest, fastest and most [PAYG](features/payg) set of components possible in Royale, and is used by other sets like Jewel as its base.
 

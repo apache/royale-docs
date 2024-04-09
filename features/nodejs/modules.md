@@ -24,7 +24,7 @@ permalink: /features/nodejs/modules
 
 Write modules with ActionScript that can be loaded with `require()` in Node.js
 
-One of the reasons why the [Node.js](features/nodejs) ecosystem is so vibrant is the massive number of open source modules available to install from [the npm registry](https://www.npmjs.com/). Those modules are all deployed as JavaScript, but they can be written in a variety of languages that can compile to JavaScript, including [ActionScript](features/as3).
+One of the reasons why the [Node.js](features/nodejs) ecosystem is so vibrant is the massive number of open source modules available to install from [the npm registry](https://www.npmjs.com/). Those modules are all deployed as JavaScript, but they can be written in a variety of languages that can compile to JavaScript, including [ActionScript](features/as3) with [Apache Royale](https://royale.apache.org/).
 
 ## A simple module
 

@@ -26,7 +26,7 @@ Calling to/from External JavaScript
 
 In Flash, there is a class, [ExternalInterface](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/loading-external-data/ExternalInterface.html){:target='_blank'},
 that lets your Flex (or Flash) application call other JavaScript code that has been embedded on the hosting web page,
-and lets external JavaScript code call a function within the Flex application. When you port a Flex application to Royale,
+and lets external JavaScript code call a function within the Flex application. When you port a Flex application to [Apache Royale](https://royale.apache.org/),
 you may need to replicate this functionality.
 
 > To make this easier, there is an implementation of the same API available as [mx.external.ExternalInterface](https://github.com/apache/royale-asjs/blob/develop/frameworks/projects/MXRoyale/src/main/royale/mx/loading-external-data/ExternalInterface.as){:target='_blank'}. You should be able to just rename your imports from `flash.external.ExternalInterface` to `mx.external.ExternalInterface`.

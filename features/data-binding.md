@@ -23,7 +23,7 @@ permalink: /features/data-binding
 
 Update the UI in real time as data changes
 
-Royale, like Flex before it, makes it easy to pass data around your application. A change to data can automatically update the display of that data in the user interface, and potentially in calculations or other functions that use that data. The feature that makes this possible without having to write lots of code is *data binding*.
+[Apache Royale](https://royale.apache.org/), like Flex before it, makes it easy to pass data around your application. A change to data can automatically update the display of that data in the user interface, and potentially in calculations or other functions that use that data. The feature that makes this possible without having to write lots of code is *data binding*.
 
 Data binding requires
  - a **data binding bead** that adds this functionality to the whole application, or to the container in which the data binding happens. If you enable data binding for a container, it only applies to the componenents within that container; if you enable it at the application level, all application components inherit the ability to use data binding.

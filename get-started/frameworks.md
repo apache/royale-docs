@@ -26,7 +26,7 @@ Sets of code libraries availables in Royale
 
 A framework is a set of code that provides support for application development by offering templates, components and examples. Developers using Adobe and Apache Flex benefitted from a number of frameworks, including: Tide, Swiz, Parsley, Cairngorm, PureMVC, DropAS3, Fabrication, Mate, and RobotLegs.
 
-Royale provides its own framework for making simple, small and fast applications, but also offers support for deploying additional Royale frameworks and using popular JavaScript frameworks.
+[Apache Royale](https://royale.apache.org/) provides its own framework for making simple, small and fast applications, but also offers support for deploying additional Royale frameworks and using popular JavaScript frameworks.
 
 ## Apache Royale frameworks
 
