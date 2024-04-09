@@ -24,7 +24,7 @@ permalink: /get-started/development-tools
 
 Software tools to help you while developing Royale code
 
-You can just use any standard text editor to write [Apache Royale](https://royale.apache.org/) applications and the command-line to compile them, but you may find that an Interactive Development Environment (IDE) can make you even more productive.
+You can just use any standard text editor to write [Apache Royale](https://royale.apache.org/) applications and the command-line to compile them, but you may find that an Integrated Development Environment (IDE) can make you even more productive.
 
 ## IDEs
 
