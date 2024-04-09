@@ -24,39 +24,27 @@ permalink: /get-started/download-royale
 
 know how you can grab your bits
 
-You can download Apache Royale via [Node Package Manager(NPM)](https://www.npmjs.com/){:target='_blank'} or from mirrors of Apache releases. NPM is simpler.
+You can download Apache Royale via [Node Package Manager (npm)](https://www.npmjs.com/){:target='_blank'}, or from mirrors of Apache releases. NPM is typically simpler, especially if you have Node.js installed already.
 
 ## NPM
 
-To use NPM to install Royale, use the following command line for your operating system.
+To install Royale globally with NPM, run the following command in a terminal.
 
 ### Mac
 
 ```sh
-sudo npm install @apache-royale/royale-js -g
+npm install -g @apache-royale/royale-js
 ```
 
-### Windows
+If you want SWF output, as well as JavaScript output, install the following package instead.
 
 ```sh
-npm install @apache-royale/royale-js -g
-```
-
-If you want SWF output as well as JavaScript output, install these packages instead.
-
-### Mac
-
-```sh
-sudo npm install @apache-royale/royale-js-swf -g --foreground-scripts
-```
-
-### Windows
-
-```sh
-npm install @apache-royale/royale-js-swf -g --foreground-scripts
+npm install -g @apache-royale/royale-js-swf --foreground-scripts
 ```
 
 If the install completes successfully, you are ready to compile your application with Royale by using the mxmlcnpm tool from the command-line.  The NPM install should have put mxmlcnpm in your path.
+
+> If you cannot install Apache Royale with the `-g` flag due to an `EACCES` permissions error, please take a look at [npm Docs: Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally).
 
 ## Apache Mirrors
 
