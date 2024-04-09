@@ -47,13 +47,13 @@ If you want SWF output as well as JavaScript output, install these packages inst
 ### Mac
 
 ```sh
-sudo npm install @apache-royale/royale-js-swf -g
+sudo npm install @apache-royale/royale-js-swf -g --foreground-scripts
 ```
 
 ### Windows
 
 ```sh
-npm install @apache-royale/royale-js-swf -g
+npm install @apache-royale/royale-js-swf -g --foreground-scripts
 ```
 
 If the install completes successfully, you are ready to compile your application with Royale by using the mxmlcnpm tool from the command-line.  The NPM install should have put mxmlcnpm in your path.
