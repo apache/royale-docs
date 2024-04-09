@@ -26,6 +26,6 @@ The minimum hardware needed to work in Apache Royale
 
 [Apache Royale](https://royale.apache.org/) is designed for use on macOS or Windows computers. We would love to know your experience with it on a Linux machine!
 
-Since developers often use Royale in the IDE of their choice, the system needs to satisfy the minimum requirements for that IDE. You do not need Internet access to work with Royale unless that is required by the IDE you are using. Royale provides scripts you can run if you want to compile your application using the command line, without an IDE.
+Since developers often use Royale in the [IDE of their choice](get-started/development-tools), the system needs to satisfy the minimum requirements for that IDE. You do not need Internet access to work with Royale, unless that is required by the IDE you are using. Royale provides scripts you can run if you want to compile your application using the command line, without an IDE.
 
 Royale requires Java SDK 1.8 or greater to be installed on your computer. You can access the latest Java SDK from [Oracle's OpenJDK download site](https://jdk.java.net/){:target='_blank'}, or from your favorite OpenJDK vendor. If you're interested in learning more about OpenJDKs from vendors besides Oracle, [SDKMAN provides a list of popular OpenJDK distributions](https://sdkman.io/jdks)
