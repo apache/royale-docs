@@ -30,8 +30,6 @@ You can download [Apache Royale](https://royale.apache.org/) via [Node Package M
 
 To install Royale globally with NPM, run the following command in a terminal.
 
-### Mac
-
 ```sh
 npm install -g @apache-royale/royale-js
 ```
