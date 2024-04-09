@@ -73,7 +73,7 @@ With true (the default setting), the above example will behave the same in javas
 
 In most cases this extra code can be eliminated in the output after the application has been validated to be error-free at runtime. There may however be cases with legacy actionscript that depend on error-handling for these situations and where refactoring that aspect is not a priority. In these cases it can be left on in the release build, or there is also the option to switch it off in general but force it to remain on for specific code scope, for example, using [@royalesuppresscompleximplicitcoercion](create-an-application/optimizations/doc-comment-directives.html#royalesuppresscompleximplicitcoercion).  
 
-Does this feature always catch implicit complex coercions? No, currently there can still be cases which are missing this level of runtime type safety. Notably this can occur in the processing of mxml instances or binding support.
+Does this feature always catch implicit complex coercions? No, currently there can still be cases which are missing this level of runtime type safety. Notably this can occur in the processing of MXML instances or [data binding](features/data-binding) support.
 
 **Pro tip:** How do I know how much of my code is being affected by this setting? In the javascript **js&#x2011;debug** output, you can do a ***search in files*** for the string **/* implicit cast */** which precedes the compiler-generated code the to support this parity with AVM. That will show you all the sites where it is being output. As with all other code, this can be minimized in the js-release output, but as mentioned earlier, if the application does not have runtime errors, then the performance of the application could be optimized by eliminating these checks.  
 

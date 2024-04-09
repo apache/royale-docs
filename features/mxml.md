@@ -24,7 +24,7 @@ permalink: /features/mxml
 
 The declarative XML-based user interface markup language
 
-MXML is an XML-based language introduced in 2004 by Macromedia. In [Apache Royale](https://royale.apache.org/) you use it to lay out user-interface components. You can create an application in Royale using only [ActionScript](features/as3), but it takes a lot more work.
+MXML is an XML-based language introduced in 2004 by Macromedia. In [Apache Royale](https://royale.apache.org/) you use it to lay out [user interface](user-interface) components. You can create an application in Royale using only [ActionScript](features/as3), but it takes a lot more work.
 
 Most Royale applications have an MXML file as the main file. It provides the structure of the application. The main MXML file from our very simple <a href="https://apache.github.io/royale-docs/get-started/hello-world" target="_blank">hello world example</a> looks a bit like this:
 

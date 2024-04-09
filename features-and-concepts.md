@@ -42,7 +42,7 @@ The underlying component patterns in most Royale components rely on a plug-in mo
 
 Sometimes you may want your Royale application to call an external piece of JavaScript that is also hosted in your web page, or even for some extenal JavaScript from your page to call into the Royale application. In the Flex (and Flash) world, there was the possibility to use the `ExternalInterface` class to achieve this functionality. If you want this in Royale, there are some options available that you can [read about here](features/external-interface).
 
-Another option is externs, which use [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler){:target='_blank'} to declare that a name for a class, property or function is defined in external code and so should not be renamed when your application code is compiled. Apache Royale can use the properties of the external library, and you can even see them as options if you are using an __IDE__, with _code intelligence_ enabled. [Learn more about externs](features/externs).
+Another option is [externs](features/externs), which use [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler){:target='_blank'} to declare that a name for a class, property or function is defined in external code and so should not be renamed when your application code is compiled. Apache Royale can use the properties of the external library, and you can even see them as options if you are using an __IDE__, with _code intelligence_ enabled. [Learn more about externs](features/externs).
 
 ## Data Binding
 

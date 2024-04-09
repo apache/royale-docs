@@ -48,7 +48,7 @@ Projects/HelloWorld/src
 
 ## Create the source file
 
-In the `src` folder, create a file called `HelloWorld.mxml` and use your favorite text editor to give that file the following contents:
+In the `src` folder, create an [MXML](features/mxml) file called `HelloWorld.mxml` and use your favorite text editor to give that file the following contents:
 
 ```mxml
 <?xml version="1.0" encoding="utf-8"?>

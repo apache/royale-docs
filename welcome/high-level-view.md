@@ -45,7 +45,7 @@ These features help you make fewer mistakes when writing code, and that saves ti
 
 Because both [ActionScript](features/as3) and JavaScript are based on the same language, ECMAScript, most code you write in AS translates well to JS. One significant difference is that AS uses the concepts of classes and objects to structure how your code functions, while pure JavaScript does not have those concepts. When you get ready to compile and run your application, the Royale compiler translates AS-specific code into JS code organized into pseudo-classes, which then run just fine in a JavaScript world.
 
-That takes care of pretty much everything except the user interface. For that, Royale provides a set of UI containers and controls that do the work that the pure Flex containers and controls required the Flash engine to do.
+That takes care of pretty much everything except the [user interface](user-interface). For that, Royale provides a set of UI containers and controls that do the work that the pure Flex containers and controls required the Flash engine to do.
 
 ## Status
 

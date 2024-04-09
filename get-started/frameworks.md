@@ -42,7 +42,7 @@ Documentation for Crux will be available soon.
 
 ## Apache Royale Component Sets
 
-Apache Royale supports its own [component sets](component-sets) of controls, options for grouping controls, and other elements designed to help developers get the most of the technology.
+Apache Royale supports its own [component sets](component-sets) of [user interface](user-interface) controls, options for grouping and layouting out controls, and other elements designed to help developers get the most of the technology.
 
 - [Basic](component-sets/basic) is the most smallest, fastest and most PAYG set of components possible in Royale, and is used by other sets like Jewel as their base.
 

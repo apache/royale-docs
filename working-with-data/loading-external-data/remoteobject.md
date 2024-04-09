@@ -32,7 +32,7 @@ In Apache Royale we have two `RemoteObject` implementations:
 
 * **MXRoyale**: Is an emulation of the implementation that Flex applications use. It is the best option if you're migrating from Flex since it supports the same API that the Flex framework uses.
 
-* **Network**: Is a newer bead implementation. This is still under development, so you may run into some issues that will need to be resolved.
+* **Network**: Is a newer [bead](features/strands-and-beads) implementation. This is still under development, so you may run into some issues that will need to be resolved.
 
 > We recommend using `MXRoyale` instead of the `Network` version for now, since it is closer to the Flex implementation and is already in use in Apache Royale applications currently in production.
 

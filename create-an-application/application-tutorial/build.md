@@ -24,7 +24,7 @@ permalink: /create-an-application/application-tutorial/build
 
 Building the application
 
-In many other *HTML/JS/CSS* development models, you write the *JS* and then just view it in the browser. [Apache Royale](https://royale.apache.org/) uses a compiler to convert your *MXML* and *ActionScript* code into *HTML/JS/CSS*. Why? Because there is a philosophy that the sooner you catch a bug, the less expensive it is to fix it. The compiler scans your source code to make sure that it makes sense. The compiler checks that there aren't typos in property names, that if you are expecting a `String` you'll probably get one, and more.  
+In many other *HTML/JS/CSS* development models, you write the *JS* and then just view it in the browser. [Apache Royale](https://royale.apache.org/) uses a compiler to convert your [*MXML*](features/mxml) and [*ActionScript*](features/as3) code into *HTML/JS/CSS*. Why? Because there is a philosophy that the sooner you catch a bug, the less expensive it is to fix it. The compiler scans your source code to make sure that it makes sense. The compiler checks that there aren't typos in property names, that if you are expecting a `String` you'll probably get one, and more.  
 
 The main *MXML* file should now look like this:
 

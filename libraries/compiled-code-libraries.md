@@ -26,9 +26,9 @@ Instructions on creating your own SWC libraries
 
 ## Concepts
 
-On the most basic level, SWC libraries are just compiled ActionScript classes. You need to include the necessary classes and the code will be included in your compiled SWC.
+On the most basic level, SWC libraries are just compiled [ActionScript](features/as3) classes. You need to include the necessary classes and the code will be included in your compiled SWC.
 
-Libraries can also declare components that can be used in MXML files by referencing a namespace.
+Libraries can also declare components that can be used in [MXML](features/MXML) files by referencing a namespace.
 
 In this example, we're going to assume that you have both code and components to include.
 
@@ -81,7 +81,7 @@ package {
 Just referencing the classes like that is enough to have them included.
 
 ## The CSS file
-`defaults.css` is where you declare any HTML or Royale CSS that's needed for your library. This is where you declare default beads and the like. Make sure you declare your namespace that's used for the MXML declarations of you components.
+`defaults.css` is where you declare any HTML or Royale CSS that's needed for your library. This is where you declare default [beads](features/strands-and-beads) and the like. Make sure you declare your namespace that's used for the MXML declarations of you components.
 
 ```
 @namespace "library://ns.somesite.com/kapow";
@@ -101,7 +101,7 @@ The config file is a convenience file for loading compiler options. It's very he
 The notable difference between the two files:
 1. `compile-config.xml` has `playerglobal.swc` referenced in the `external-library-path`.
 2. `compile-config.xml` has `COMPILE::SWF` as `true` while `js-compile-config.xml` has `COMPILE::JS` as `true`.
-3. If you have a `lib/Foo.swc` JS typedef dependency that you want to include, you should add the following to the `js-compile-config.xml`:
+3. If you have a `lib/Foo.swc` JS [typedef (sometimes also called externs)](features/externs) dependency that you want to include, you should add the following to the `js-compile-config.xml`:
 
 ```
         <js-external-library-path append="true">

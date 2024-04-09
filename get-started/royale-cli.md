@@ -56,7 +56,7 @@ Navigate in the command window to the directory where you want to create the new
 royale new my-royale-app
 ```
 
-This creates a new directory structure using the name of the application, and creates a basic app with one main file: `my-royale-app/src/Main.mxml`.
+This creates a new directory structure using the name of the application, and creates a basic app with one main [MXML](features/mxml) file: `my-royale-app/src/Main.mxml`.
 
 To review the app structure so far, navigate into the new direcctory:
 

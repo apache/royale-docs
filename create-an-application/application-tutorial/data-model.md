@@ -24,7 +24,7 @@ permalink: /create-an-application/application-tutorial/data-model
 
 Abstract model that organizes elements of data for easy use in the application
 
-Since the goal of this application is to display a list of commits to the [Apache Royale](https://royale.apache.org/) GitHub repositories (repos), the data the application will work with must include that list of commits. The application will query GitHub for the information, place what GitHub provides in a data structure, and then connect that data structure to components in the user interface that can display it.
+Since the goal of this application is to display a list of commits to the [Apache Royale](https://royale.apache.org/) GitHub repositories (repos), the data the application will work with must include that list of commits. The application will query GitHub for the information, place what GitHub provides in a data structure, and then connect that data structure to components in the [user interface](user-interface) that can display it.
 
 > For large projects, the model is often built in a separate class and source file so it can be separately developed, documented, and maintained (maybe by other team members). But to get something up quickly, we are going to just stick a few variables in the main application file in a script block.
 

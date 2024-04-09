@@ -69,7 +69,7 @@ If the value of the `result` variable is not equal to `5`, the test will fail.
 
 ## Run unit tests
 
-Create a simple Apache Royale application and name it *MyTests.mxml*:
+Create a simple Apache Royale application in an [MXML](features/mxml) file with the name *MyTests.mxml*:
 
 ```mxml
 <?xml version="1.0" encoding="utf-8"?>

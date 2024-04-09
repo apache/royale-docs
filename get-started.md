@@ -28,7 +28,7 @@ All you need to know to start developing with Apache Royale
 
 [Apache Royale](https://royale.apache.org/) is an open source project. You can get the [source code](http://royale.apache.org/source-code){:target='_blank'} and build Royale, or, if you are in a hurry, you can [click here](https://royale.apache.org/download){:target='_blank'} to find out how to download pre-compiled code and get going quickly.
 
-In Apache Royale you develop your applications using ActionScript 3 (AS3) and MXML languages. Your source code is build with the Royale compiler to generate the final Application that will run on the chosen platform.
+In Apache Royale you develop your applications using [ActionScript 3 (AS3)](features/as3) and [MXML](features/mxml) languages. Your source code is build with the Royale compiler to generate the final Application that will run on the chosen platform.
 
 
 ## Getting Royale

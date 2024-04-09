@@ -28,7 +28,7 @@ Customizing the look and feel of your application
 
 ## Styles
 
-You can plug different style classes into your Royale app that can manage different levels of styling features. Usually a Royale application will include a Style class at the Application bead level like this:
+You can plug different style classes into your Royale app that can manage different levels of styling features. Usually a Royale application will include a Style class at the Application [bead](features/strands-and-beads) level like this:
 
 ```mxml
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"

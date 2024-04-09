@@ -32,7 +32,7 @@ Royale libraries are packaged in `swc` files. A `swc` file is a zipped archive w
 ## Types of libraries
 There are two basic library types:
 1. Compiled Code libraries
-2. Typedef libraries
+2. Typedef libraries (sometimes called Externs libraries)
 
 There is no obvious way to tell the difference. Both have a `.swc` extension, although typedef libraries do not have any `js` code included and will generally be smaller.
 
@@ -42,7 +42,7 @@ Compiled code libraries contain code that will end up in your compiled applicati
 Compiled code libraries are created using the `compc` compiler. See [detailed instructions on how to create one](libraries/compiled-code-libraries).
 
 ### Typedef libraries
-Typedef libraries define the types of different classes, but contain no code that would be added to an application. Typedef libraries hold core Web APIs and third party JavaScript libraries which could be included in applications as separate JavaScript files (such as jQuery). Typedef libraries are similar to Typescript `d.ts` files.
+Typedef libraries define the types of different classes, but contain no code that would be added to an application. [Typedef (sometimes called externs)](features/externs) libraries hold core Web APIs and third party JavaScript libraries which could be included in applications as separate JavaScript files (such as jQuery). Typedef libraries are similar to Typescript `d.ts` files.
 
 Typedef libraries are created using the `externc` compiler. (TODO add sample configs for doing this.)
 

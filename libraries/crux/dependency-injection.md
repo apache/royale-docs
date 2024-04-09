@@ -49,7 +49,7 @@ Due to restrictions imposed by runtimes, Crux cannot inject into `private`, `pro
 
 By default, injections in view components happen during the `ADDED_TO_STAGE` event. <!--This behavior can be modified by changing the Crux configuration.--> It is important to understand that this means that injections occur after the <!--CREATION_COMPLETE-->`initComplete` event. If you need to trigger logic during creation that depends on injections, use a `[PostConstruct]` method.
 
-> Note: `ADDED_TO_STAGE` is a SWF event. In __Javascript__ you need to add a bead to your Application beads called `JSStageEvents` to simulated stage events like `ADDED_TO_STAGE` or 'REMOVED_FROM_STAGE`
+> Note: `ADDED_TO_STAGE` is a SWF event. In __Javascript__ you need to add a [bead](features/strands-and-beads) to your Application beads called `JSStageEvents` to simulated stage events like `ADDED_TO_STAGE` or 'REMOVED_FROM_STAGE`
 
 ## Inject by type {#inject-by-type}
 

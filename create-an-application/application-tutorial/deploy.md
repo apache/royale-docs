@@ -24,7 +24,7 @@ permalink: /create-an-application/application-tutorial/deploy
 
 Running the application in a browser
 
-Assuming you followed the typical directory and file pattern, and the MXML file was in a `src` directory, next to the `src` directory should be a `bin` directory with a `js-debug` directory inside it.
+Assuming you followed the typical directory and file pattern, and the [MXML](features/mxml) file was in a `src` directory, next to the `src` directory should be a `bin` directory with a `js-debug` directory inside it.
 
 Inside the `js-debug` directory is an `index.html` file. You can open it in your browser and you should see the list of commits appear.
 

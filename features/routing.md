@@ -44,7 +44,7 @@ On the most basic level, routers (whether hash based or path browser based) can 
 
 In the above examples, any time the route changes, the `stateChanged` function will be called.
 
-The state of the router can likewise be changed directly by modifying the `router.routeState` and calling `router.setState()` `router.renderState()` is a similar method, but it will dispatch the `stateChanged` event as well and cause any attached beads to react to the state change.
+The state of the router can likewise be changed directly by modifying the `router.routeState` and calling `router.setState()` `router.renderState()` is a similar method, but it will dispatch the `stateChanged` event as well and cause any attached [beads](features/strands-and-beads) to react to the state change.
 
 ## Router Beads
 The full power of the Router becomes apparent when you use beads. Router can automatically sync the route state with the component's state. It can change which component is shown by creating and removing components. It can handle parameters, etc. Here are some examples:

@@ -116,7 +116,7 @@ parent.addElement(checkBox);
 
 ## Relevant Beads
 
-Unlike other components in Royale, the Jewel `CheckBox` does not have beads for _View_, _Controller_ or _Model_ in the JavaScript platform.
+Unlike other components in Royale, the Jewel `CheckBox` does not have [beads](features/strands-and-beads) for _View_, _Controller_ or _Model_ in the JavaScript platform.
 
 On the other hand, you can add to it other common Jewel control beads to provide more functionality. Many Jewel controls share these beads.
 

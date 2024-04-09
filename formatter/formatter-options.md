@@ -24,7 +24,7 @@ permalink: /formatter/formatter-options
 
 List of all available formatter options
 
-The [**asformat**](formatter) tool has a number of useful configuration options
+The [**asformat**](formatter) tool included with [Apache Royale](https://royale.apache.org/) has a number of useful configuration options
 . The list below is also available by running `asformat -help advanced` in a terminal.
 
 - `-collapse-empty-blocks` -- Determines if empty blocks containing no statements will be collapsed to a single line, or if the closing curly brace should still appear on a new line. Default: `false`

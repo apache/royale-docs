@@ -24,7 +24,7 @@ permalink: /linter/linter-options
 
 List of all available linter options
 
-The [**aslint**](linter) tool has a number of useful configuration options. The list below is also available by running `aslint -help advanced` in a terminal.
+The [**aslint**](linter) tool included with [Apache Royale](https://royale.apache.org/) has a number of useful configuration options. The list below is also available by running `aslint -help advanced` in a terminal.
 
 - `-class-name` -- Ensures that class names match the pattern `^[A-Z][a-zA-Z0-9]*$`. Default: `false`
 - `-constant-name` -- Ensures that constant names match the pattern `^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$`. Default: `false`

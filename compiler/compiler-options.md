@@ -26,7 +26,7 @@ List of all available compiler options
 
 The [**mxmlc** and **compc** compilers](compiler) bundled with [Apache Royale](https://royale.apache.org/) have a number of useful configuration options. The list below is also available by running `mxmlc -help advanced` in a terminal.
 
-- `-allow-dynamic-bindings` -- Controls whether data binding may use reflection for dynamic access.
+- `-allow-dynamic-bindings` -- Controls whether [data binding](features/data-binding) may use reflection for dynamic access.
 - `-api-report` `<filename>` -- Used to generate a report of APIs used in a project.  
 - `-closure-lib` `<string>`  -- Customize the version of Google Closure Library used by the framework.
 - `-compiler.accessible`  -- Controls whether accessibility is enabled for a generated _.swf_ file.
@@ -97,7 +97,7 @@ The [**mxmlc** and **compc** compilers](compiler) bundled with [Apache Royale](h
 - `-compiler.report-missing-required-skin-parts-as-warnings`  
 - `-compiler.services` `<filename>`  
 - `-compiler.show-actionscript-warnings`  
-- [`-compiler.show-binding-warnings`](compiler/compiler-options#show-binding-warnings)
+- [`-compiler.show-binding-warnings`](compiler/compiler-options#show-binding-warnings) -- Determines if [data binding](features/data-binding) warnings are displayed or not
 - `-compiler.show-invalid-css-property-warnings`  
 - `-compiler.show-multiple-definition-warnings`  
 - `-compiler.show-shadowed-device-font-warnings`  
@@ -955,7 +955,7 @@ Tells the Apache Royale compiler to remove circular dependencies in the generate
 
 ### show-binding-warnings {#show-binding-warnings}
 
-Set to false to remove all binding warnings.
+Set to false to remove all [data binding](features/data-binding) warnings.
 
 ```sh
 -show-binding-warnings=false

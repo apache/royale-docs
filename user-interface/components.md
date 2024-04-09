@@ -23,7 +23,7 @@ permalink: /user-interface/components
 
 Meet the UI building blocks.
 
-[Apache Royale](https://royale.apache.org/) provides a wide range of components to help you design a user interface that presents your material clearly and offers a pleasing user experience. As with Flex, these include:
+[Apache Royale](https://royale.apache.org/) provides a wide range of components to help you design a [user interface](user-interface) that presents your material clearly and offers a pleasing user experience. As with Flex, these include:
 
   * Layout aids (groups, cards, grids, forms)
   * Ways to display data (lists, text boxes, tables, charts, repeating components)
@@ -32,7 +32,7 @@ Meet the UI building blocks.
   * Usability features (alerts, snackbar pop-ups, localization features, dynamic displays depending on the user's metadata)
   * Rich content (images, videos, audio, transitions)
 
-Developers who have worked in Flex will quickly feel at home with Royale components, although they will need to pay attention to the ["Pay as you go"](features/payg) concept that is a Royale hallmark. Components do well the basic functions associated with their names, but to add features (for instance, you want to force the text the user enters to lower case), you need to add the appropriate bead to the strand of the component:
+Developers who have worked in Flex will quickly feel at home with Royale components, although they will need to pay attention to the ["Pay as you go"](features/payg) concept that is a Royale hallmark. Components do well the basic functions associated with their names, but to add features (for instance, you want to force the text the user enters to lower case), you need to add the appropriate [bead](features/strands-and-beads) to the strand of the component:
 
 ```as3 
 <j:TextInput text="Your entry will appear in LOWER case">

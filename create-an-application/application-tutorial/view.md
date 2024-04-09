@@ -24,7 +24,7 @@ permalink: /create-an-application/application-tutorial/view
 
 Contains the user interface elements that display data and accept user input
 
-In an [MVC](https://en.wikipedia.org/wiki/Model–view–controller){:target='_blank'} application the **View** contains the user interface elements that display data and accept user input. We want a way to display the list of commits and also some useful information about those commits. In [Apache Royale](https://royale.apache.org/) a popular way to do that is with a [DataGrid](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html/DataGrid){:target='_blank'}.
+In an [MVC](https://en.wikipedia.org/wiki/Model–view–controller){:target='_blank'} application the **View** contains the [user interface](user-interface) elements that display data and accept user input. We want a way to display the list of commits and also some useful information about those commits. In [Apache Royale](https://royale.apache.org/) a popular way to do that is with a [DataGrid](https://royale.apache.org/asdoc/index.html#!org.apache.royale.html/DataGrid){:target='_blank'}.
 
 The main or initial view of an application is identified as its `initialView` property. We want our user interface elements to appear vertically so we use [VView](https://royale.apache.org/asdoc/index.html#!org.apache.royale.express/VView){:target='_blank'} as the view:
 
