@@ -23,6 +23,10 @@ permalink: /css
 
 Cascading Style Sheets reference.
 
+*Note: most explanations in this reference were taken from the "Using Flex 4.6" document and this article:*
+
+* [Using Cascading Style Sheets](https://web.archive.org/web/20120207085203/http://www.dremsus.com/index.php/category/flex-air/using-cascading-style-sheets/)
+
 Cascading Style Sheet (CSS) in Apache Flex is a dialect of the [CSS3 standard](https://www.w3.org/TR/css-2023/). CSS appears either in an external file or as a local CSS definition in a MXML component.
 
 Compared to the CSS standard:
@@ -35,10 +39,6 @@ Compared to the CSS standard:
 * The CSS 3 wildcard namespace prefix syntax of `*|` that matches any namespace is not supported.
 * The universal selector scoped to a particular CSS namespace is not supported. Namespaces are not known at runtime in Flex and as such the universal selector remains universal no matter what namespace it is scoped to in CSS.
 * If you apply multiple class selectors to a component, the order of preference that the styles is applied is the order in which they appear in the `styleName` property’s space-delimited list, not the order in which they are defined in the CSS block or external style sheet.
-
-Certain explanations in this reference were taken from the "Using Flex 4.6" document and this article:
-
-* [Using Cascading Style Sheets](https://web.archive.org/web/20120207085203/http://www.dremsus.com/index.php/category/flex-air/using-cascading-style-sheets/)
 
 ## Coding Conventions
 
