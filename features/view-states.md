@@ -28,5 +28,5 @@ The View States feature is a way of putting different filters over parts of your
 
 Learn how to use View States in your app:
 
-* [A tutorial on View States](https://royale.apache.org/using-view-states-to-show-or-hide-content){:target='_blank'} on the Royale blog.
+* [A tutorial on View States](https://royale.apache.org/blog/using-view-states-to-show-or-hide-content){:target='_blank'} on the Royale blog.
 * The [Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} page, which has a wealth of examples of using Royale's [Jewel component set](/component-sets/jewel), has an interactive demonstration of using View States with both "includeIn" and dot notation, with downloadable code you can adapt to your app's needs.
