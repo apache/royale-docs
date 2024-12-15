@@ -36,9 +36,9 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel TextInput implements the jewel control for single-line text field. It dispatches a change event when the user input text.
+The Jewel TextInput control implements the Jewel control for a single-line text field. It dispatches a change event when the user inputs text.
 
-> For multi line text input control see [TextArea](component-sets/jewel/textarea)
+> For a multi-line text input control see [TextArea](component-sets/jewel/textarea)
 
 ## Example of use
 
@@ -67,7 +67,7 @@ src="assets/jewel/jewel_textinput/index.html"></iframe>
 
 ## Relevant Properties and Methods
 
-> Check the Reference of [org.apache.royale.jewel.TextInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/TextInput){:target='_blank'} for a more detailed list of properties and methods.
+> Check the reference of [org.apache.royale.jewel.TextInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/TextInput){:target='_blank'} for a more detailed list of properties and methods.
 
 ### Properties
 
@@ -82,7 +82,7 @@ None.
 
 ## Relevant Events
 
-The `TextInput` has _change_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when text in the control changes through user input. Notice that programatic changes will not trigger this event.
+The `TextInput` component has _change_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when text in the component changes through user input. Note that programatic changes do not trigger this event.
 
 You can attach callback listeners to the _change_ event in __MXML__ as follows:
 
@@ -90,7 +90,7 @@ You can attach callback listeners to the _change_ event in __MXML__ as follows:
 <j:TextInput change="changeHandler(event)"/>
 ```
 
-the _change_ event will use the `changeHandler` callback function you provide in __ActionScript__:
+the _change_ event uses the `changeHandler` callback function you provide in __ActionScript__:
 
 ```mxml
 <fx:Script>
@@ -102,7 +102,7 @@ the _change_ event will use the `changeHandler` callback function you provide in
 </fx:Script>
 ```
 
-When the user introduce text in the input field, the message _"new text is: "_ plus the text introduced will appear in the console log.
+When the user adds text to the input field, the message _"new text is: "_ plus the text added appears in the console log.
 
 In __ActionScript__ we can add an event handler this way: 
 
@@ -114,21 +114,21 @@ parent.addElement(textInput);
 
 ## Relevant Beads
 
-Unlike other components in Royale, the Jewel `TextInput` does not have beads for _View_, _Controller_ or _Model_ in the Javascript platform.
+Unlike other components in Royale, the Jewel `TextInput` component does not have beads for _View_, _Controller_ or _Model_ in the JavaScript platform.
 
-On the other hand, you can add to it beads specialy crafted for this control or other common Jewel control beads (shared with other controls) to provide more functionality.
+On the other hand, you can add to it beads specially crafted for this control, or other common Jewel control beads (shared with other controls) to provide more functionality.
 
 ### TextInput Beads
 
 | Bead Type       	| Implementation                               	  | Description                                     |
 |-----------------	|------------------------------------------------ |------------------------------------------------	|
-| [LowerCase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/LowerCase){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to makes all text change to lower case.           	|
+| [LowerCase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/LowerCase){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to make all text change to lower case.           	|
 | [MaxNumberCharacters](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/MaxNumberCharacters){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to set the maximun number of characters the text field can hold.           	|
-| [PasswordInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/PasswordInput){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to secures the text field by masking the input as it is typed. 	|
-| [Restrict](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/Restrict){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to use a regular expresion pattern to validate input from user. |
-| [SearchFilterForList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/SearchFilterForList){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to filter options in other [Jewel List](component-sets/jewel/list) component used in combo with the text input.	|
+| [PasswordInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/PasswordInput){:target='_blank'} 	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to secure the text field by masking the input as it is typed. 	|
+| [Restrict](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/Restrict){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to use a regular expresion pattern to validateo user input. |
+| [SearchFilterForList](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/SearchFilterForList){:target='_blank'}      	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to filter options in other [Jewel List](component-sets/jewel/list) components used in combination with the text input component.	|
 | [TextPrompt](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/TextPrompt){:target='_blank'}     	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to place a string into the input field when there is no value associated with the text property. |
-| [UpperCase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/UpperCase){:target='_blank'}       	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to makes all text change to upper case.  	|
+| [UpperCase](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/UpperCase){:target='_blank'}       	| [org.apache.royale.core.IBead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.core/IBead){:target='_blank'} | Add this bead to make all text change to upper case.  	|
 
 ### Common Beads
 
@@ -146,6 +146,6 @@ On the other hand, you can add to it beads specialy crafted for this control or 
 
 ## Related controls
 
-Other related Jewel components are:
+Related Jewel components are:
 
 * [TextArea](component-sets/jewel/textarea)
