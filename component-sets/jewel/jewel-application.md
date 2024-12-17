@@ -48,13 +48,14 @@ In __MXML__ declare an `Application` as the root tag of the main application fil
 	xmlns:j="library://ns.apache.org/royale/jewel">
 
     <j:valuesImpl>
-		<js:SimpleCSSValuesImpl />
-	</j:valuesImpl>
+         <js:SimpleCSSValuesImpl />
+    </j:valuesImpl>
 
-	<j:initialView>
-		<!-- add a View or ResponsiveView -->
-		<j:View width="100%" height="100%"/>
-	</j:initialView>
+    <j:initialView>
+         <!-- add a View or ResponsiveView -->
+         <j:View width="100%" height="100%"/>
+    </j:initialView>
+
 </j:Application>
 ```
 
@@ -70,5 +71,5 @@ launching the html file in a browser will execute the Jewel Royale Application.
 
 ## Relevant Properties and Methods
 
-> Check the Reference of [org.apache.royale.jewel.Application](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Application){:target='_blank'} for a more detailed list of properties and methods.
+> Check the Reference of [org.apache.royale.jewel.Application](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Application){:target='_blank'} for a detailed list of properties and methods.
 
