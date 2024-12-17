@@ -45,7 +45,7 @@ It can be used alone or with other complementary components listed below:
 |--------------------------- | ------------------------------------------------------------------------------------------------------|
 | __CardHeader__             | a container to hold drawer header content (i.e: a title, image icon logo, or header actions)       	 |
 | __CardTitle__              | a title label to use in the Card or inside the drawer header with specific styling        		     |
-| __CardPrimaryContent__     | a container to hold card main content       						                                     |
+| __CardPrimaryContent__     | a container to hold the Card's main content       						                                     |
 | __CardExpandedContent__    | a container for content that need to remove all paddings and gaps with the surrounding Card           |
 | __CardActions__            | a footer container to hold actions like buttons, icons or navigation       						     |
 
@@ -55,7 +55,7 @@ In __MXML__ declare a `Card` like this:
 
 ### Simple Card
 
-This is the most basic Jewel card that can be declared. Elements are laid out vertically and with a default gap predefined in Jewel Theme.
+This is the most basic Jewel Card that can be declared. Elements are laid out vertically and with a default gap predefined in Jewel Theme.
 
 ```mxml
 <j:Card>
@@ -69,13 +69,13 @@ This is the most basic Jewel card that can be declared. Elements are laid out ve
 
 ### Card with optional components
 
-For advanced card layouts the next example shows how to use optional Card components.
+For advanced Card layouts, the next example shows how to use optional Card components.
 
-First, we add a `CardHeader` with two `BarSection` components to separate the header content. In the left section we add the `CardTitle`and in the right one we add an `IconButton` (that provides an action. In the example we describe the action as "Assign new data").
+First, add a `CardHeader` with two `BarSection` components to separate the header content. In the left section, add the `CardTitle`and in the right one add an `IconButton` that provides an action. In the example the action is "Assign new data".
 
-Next, we have a `CardPrimaryContent` with the main content; in this case, some text description and a `ComboBox` component. Those elements are laid out vertically with some gap between them.
+Next, there is a `CardPrimaryContent` with the main content; in this case, some text description and a `ComboBox` component. Those elements are laid out vertically with some gap between them.
 
-Finally a `CardActions` with two `BarSection`s (similar to card header). In the left we have a `Label` and in the right a `NumericStepper`.
+Finally a `CardActions` with two `BarSection`s (similar to card header). In the left there is e a `Label` and in the right a `NumericStepper`.
 
 ```mxml
 <j:Card>
@@ -116,7 +116,7 @@ Finally a `CardActions` with two `BarSection`s (similar to card header). In the 
 </j:Card>
 ```
 
-In __ActionScript__ we can do the same in the following way. In this case we declare just the Card and a Label inside the card to keep it simple: 
+In __ActionScript__ you can do the same in the following way. In this case, declare just the Card and a Label inside the card to keep it simple: 
 
 ```as3
 var card:Card = new Card();
@@ -161,9 +161,9 @@ where `parent` is the container where the control will be added.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that initialization of the card is complete.
+The most important event is `initComplete`, which indicates that initialization of the Card is complete.
 
-It is needed when some action coded in a callback function needs to be triggered when the card is ready to use after initialization.
+It is needed when some action coded in a callback function needs to be triggered when the Card is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
