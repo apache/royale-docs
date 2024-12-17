@@ -36,7 +36,7 @@ Available since version __0.9.4__
 ## Overview
 
 The `Alert` component displays a message and one or more buttons in a window that pops up over all other controls and views. 
-It uses the `AlertView` [beads](features/strands-and-beads) to display a [modal dialog](https://en.wikipedia.org/wiki/Modal_window){:target='_blank'} with a title and a variety of buttons configured through the flag property of its `show` static function.
+It uses the `AlertView` [beads](features/strands-and-beads) to display a [modal dialog](https://en.wikipedia.org/wiki/Modal_window){:target='_blank'} with a title and a variety of buttons configured through the flag property of its `show` static function. The user cannot use the rest of the interface without first engaging with the modal dialog.
 
 > `Alert` uses the HTML dialog element, which currently has very limited cross-browser support. To ensure support across all modern browsers, we use the dialogPolyfill [externs](features/externs).
 
@@ -59,7 +59,7 @@ To close the window, click one of the buttons on the bottom `controlBar`, or pro
 
 ## Relevant Properties and Methods
 
-> Check the Reference of [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'} for a more detailed list of properties and methods.
+> Check the reference of [org.apache.royale.jewel.Alert](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/Alert){:target='_blank'} for a more detailed list of properties and methods.
 
 ### Properties
 
