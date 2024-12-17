@@ -37,4 +37,4 @@ The Jewel ButtonBar class is a [List](component-sets/jewel/list) that displays a
 
 ## Relevant Properties and Methods
 
-> Check the Reference of [org.apache.royale.jewel.ButtonBar](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/ButtonBar){:target='_blank'} for a more detailed list of properties and methods.
+> Check the Reference of [org.apache.royale.jewel.ButtonBar](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel/ButtonBar){:target='_blank'} for a detailed list of properties and methods.
