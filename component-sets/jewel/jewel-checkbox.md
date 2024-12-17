@@ -35,7 +35,7 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel CheckBox consists of a selectable box that can contain a check mark and an optional label. When a user clicks or touches this control or its associated text, the CheckBox changes its state from checked to unchecked or from unchecked to checked, communicating clearly a binary condition. Checkboxes can appear alone or in groups, and can be selected and deselected individually.
+The Jewel CheckBox consists of a selectable box that can contain a check mark and an optional label. When a user clicks or touches this control or its associated text, the CheckBox changes its state from checked to unchecked or from unchecked to checked, communicating clearly a binary condition. CheckBoxes can appear alone or in groups, and can be selected and deselected individually.
 
 ## Example of use
 
@@ -80,7 +80,7 @@ None.
 
 ## Relevant Events
 
-The `CheckBox` has a _change_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when the control is selected or deselected by the user. Notice that Programmatic changes will not trigger this event.
+The `CheckBox` has a _change_ event of type [org.apache.royale.events.Event](https://royale.apache.org/asdoc/index.html#!org.apache.royale.events/Event){:target='_blank'}. This event is dispatched when the control is selected or deselected by the user. Notice that programmatic changes will not trigger this event.
 
 Since this component is in essence a button, it has a _click_ event as well. When the user clicks the control it dispatches a normal _click_ event.
 
