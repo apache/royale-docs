@@ -42,11 +42,11 @@ The Jewel Button can have different looks and feels. By default it appears with 
 
 When a user interacts with the button (mouse over, long-press, double-click...) the button calls an event listener that can perform an action. When a user clicks the mouse on the button or taps the button on a touch screen, the button dispatches a click event.
 
-> If you don't need a custom label on your button consider using Jewel's [SimpleButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.button/SimpleButton){:target='_blank'}, located in the Jewel `supportClasses` package, since it is more lightweight and will save you some bytes if it fits your use case.
+> If you don't need a custom label on your button, consider using Jewel's [SimpleButton](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.supportClasses.button/SimpleButton){:target='_blank'}, located in the Jewel `supportClasses` package, since it is more lightweight and will save you some bytes if it fits your use case.
 
 ## Example of use
 
-In __MXML__ declare a `Button` with a default look like this:
+In __MXML__ declare a `Button` with a default look and text like this:
 
 ```mxml
 <j:Button text="Button"/>
