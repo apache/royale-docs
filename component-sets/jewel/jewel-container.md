@@ -36,15 +36,15 @@ Available since version __0.9.4__.
 
 ## Overview
 
-The Jewel Container class extends the features already provided by [Jewel Group](component-sets/jewel/group).
+The Jewel Container class extends the features provided by [Jewel Group](component-sets/jewel/group).
 
-The position and size of the children are determined by `BasicLayout` while the size of a Container can either be determined by its children or by specifying an exact size in pixels or as a percentage of the parent element. You can swap the layout for any other one available to arrange the children in different ways (i.e: horizontal, vertical,...)
+The position and size of the children are determined by `BasicLayout`, while the size of a Container can either be determined by its children or by specifying an exact size in pixels or as a percentage of the parent element. You can swap the layout for any other one available to arrange the children in different ways (i.e: horizontal, vertical,...)
 
-Container clips content by default thanks to its `Viewport` bead. This bead can also manage clipping through the `clipContent` property. To add scrolling functionality  replace the `Viewport` bead with `ScrollingViewport`.
+Container clips content by default, thanks to its `Viewport` bead. This bead can also manage clipping through the `clipContent` property. To add scrolling functionality,  replace the `Viewport` bead with `ScrollingViewport`.
 
-Other Container feature are [View States](/features/view-states) to provide state management to show diferent parts of the interface to the user.
+Another Container feature is [View States](/features/view-states), which provides state management to show different parts of the interface to the user depending on the current state of the Container.
 
-Finally, Container can add elements directly to the strand (through the `strandChildren` property) instead of adding them to its view content unlike the `addElement()` APIs which place children into the `contentView`.
+Finally, Container can add elements directly to the strand (through the `strandChildren` property) instead of adding them to its view content, unlike the `addElement()` APIs which place children into the `contentView`.
 
 While the container is relatively lightweight, it should generally not be used as the base class for other controls, even if those controls are composed of children.  That's because the fundamental API of Container is to support an arbitrary set of children, and most controls only support a specific set of children.
 
@@ -72,7 +72,7 @@ container.addElement(button);
 parent.addElement(container);
 ```
 
-where `parent` is the container where the control will be added.
+where `parent` is the container to which the control will be added.
 
 ## Relevant Properties and Methods
 
@@ -100,9 +100,7 @@ where `parent` is the container where the control will be added.
 
 ## Relevant Events
 
-The most important event is `initComplete`, which indicates that initialization of the container is complete.
-
-It is needed when some action coded in a callback function needs to be triggered when the container is ready to use after initialization.
+The most important event is `initComplete`, which indicates that initialization of the Container is complete. It is needed when some action coded in a callback function needs to be triggered when the Container is ready to use after initialization.
 
 You can attach callback listeners to the _initComplete_ event in __MXML__ as follows:
 
@@ -110,7 +108,7 @@ You can attach callback listeners to the _initComplete_ event in __MXML__ as fol
 <j:Container initComplete="initCompleteHandler(event)"/>
 ```
 
-the _initComplete_ event will use the `initCompleteHandler` callback function you provide in __ActionScript__:
+the _initComplete_ event uses the `initCompleteHandler` callback function you provide in __ActionScript__:
 
 ```mxml
 <fx:Script>
@@ -122,7 +120,7 @@ the _initComplete_ event will use the `initCompleteHandler` callback function yo
 </fx:Script>
 ```
 
-When the container is initialized the message _"Container is ready!"_ appears in the console log.
+When the Container is initialized, the message _"Container is ready!"_ appears in the console log.
 
 In __ActionScript__ we can add an event handler this way: 
 
@@ -147,7 +145,7 @@ parent.addElement(c);
 
 ### Common Beads
 
-Jewel `Container` can use any of the layout beads available in the Jewel library. Also you can check [Related controls](component-sets/jewel/container.html#related-controls) section to see some preconfigured containers with specific layouts.
+Jewel Container can use any of the layout beads available in the Jewel library. Also you can check the [Related controls](component-sets/jewel/container.html#related-controls) section to see some preconfigured containers with specific layouts.
 
 ## More examples
 
