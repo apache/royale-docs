@@ -24,7 +24,7 @@ permalink: /linter/aslint-config-file
 
 Configure the Royale linter for a specific project
 
-If the current working directory contains an _aslint-config.xml_ file, the [**aslint**](/linter/) tool included with [Apache Royale](https://royale.apache.org/) will conveniently load this file automatically to configure its options.
+If the current working directory contains an _aslint-config.xml_ file, the [**aslint**](linter) tool included with [Apache Royale](https://royale.apache.org/) will conveniently load this file automatically to configure its options.
 
 The root of this file is an `<aslint-config>` element. To specify a [linter option](linter/linter-options), add it as a child element.
 
