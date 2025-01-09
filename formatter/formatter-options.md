@@ -31,6 +31,7 @@ The [**asformat**](formatter) tool included with [Apache Royale](https://royale.
 - `-help` `[keyword]` `[...]` -- Displays formatter usage instructions.
 - `-ignore-parsing-problems` -- If enabled, parsing errors will be ignored. This may result in undesirable effects on formatting. Default: `false`
 - `-insert-final-new-line` -- Determines if the file must have at least one final new line. Default: `false`
+- `-insert-new-line-else` -- Determines if a new line is inserted before `else` when open braces are on new lines. Default: `true`
 - `-insert-space-anonymous-function-keyword` -- Determines if a space should appear between `function` and the opening parenthesis. Default: `false`
 - `-insert-space-binary-operators` -- Determines if spaces should appear before and after binary operators, such as `+`, `==`, and `&&`. Default: `true`
 - `-insert-space-comma-delimiter` -- Determines if a space should be inserted after a comma when used as a delimter (such as an object and array literals). Default: `true`
