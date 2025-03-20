@@ -60,15 +60,12 @@
 
 	
 .topbar-center
-	display: inline-flex
-	flex: 1 1 auto
-	justify-content: center
-	padding: 0px 20px
 
 .topbar-right
 	display: inline-flex
-	// flex: 1 1 auto
+	flex: 1 1 auto
 	justify-content: flex-end
+	padding: 0px 20px
 
 .dropdown-wrapper
 	display: flex
@@ -93,34 +90,39 @@
 	height: 40px
 
 @media screen and (max-width: 1160px)
-	.topbar-center
-		align-items: center
+	.topbar-right
+		align-items: right
 
 	.topMenu-dropbtn
-		display: flex
+		display: block
 		z-index: 100
 
 	.topMenu 
 		display: none
 		flex-direction: column
 		position: absolute
-		z-index: 1
+		z-index: 200
+		right: 25px
 
 	.topMenu_li
 		background-color: #f7f7f7
-		padding: 6px 18px
 		margin: 0px
 		box-shadow: 0px 18px 16px 0px rgba(0,0,0,0.2)
 		line-height: 1em
 		
 	.topMenu_li_a
+		padding: 6px 18px
 		font-family: "Hind Siliguri", sans-serif
 		color: #4393c3 !important
 		font-size: 16px
 		line-height: 28px
 		letter-spacing: 0px
+		display: block;
 
-	.topbar-center:hover .topMenu
+	.topMenu_li_a:hover
+		background-color: #e7e7e7
+
+	.topbar-right:hover .topMenu
 		display: flex
 		
 .topMenu_li

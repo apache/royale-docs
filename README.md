@@ -72,12 +72,6 @@ When linking to locations not in the help-docs stack, including other pages in t
 
 `[Apache Flex](https://flex.apache.org)`
 
-## About Search
-
-Search is done thanks to [Algolia DocSearch](https://community.algolia.com/docsearch/).
-
-    * [Algolia DocSearch Docs](https://community.algolia.com/docsearch/what-is-docsearch.html)
-
 ## Build Locally
 
 1. Install [Ruby+Devkit](https://rubyinstaller.org/downloads/). Ruby is required to run Jekyll.
