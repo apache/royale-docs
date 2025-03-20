@@ -17,6 +17,11 @@ limitations under the License.
 {% endcomment %}
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob: 'unsafe-inline' https://www.apachecon.com/ https://www.communityovercode.org/ https://analytics.apache.org/; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://analytics.apache.org/ https://www.apachecon.com/; style-src 'self' 'unsafe-inline' data:; frame-ancestors 'self'; frame-src 'self' data: blob:; img-src 'self' data: https://*.apache.org/ https://www.apachecon.com/; worker-src 'self' data: blob:;">
+  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -29,10 +34,6 @@ limitations under the License.
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" />
   <link rel="shortcut icon" href="favicon.ico"/>
-  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   {% include open-graph.html %}
 
