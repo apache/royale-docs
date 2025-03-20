@@ -24,8 +24,6 @@ limitations under the License.
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/fnt/font-awesome/font-awesome.min.css" />
-  <script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" />
   <link rel="shortcut icon" href="favicon.ico"/>
 
@@ -56,7 +54,7 @@ limitations under the License.
         <div class="sidebar">
           {% include toc.html %}
         </div>
-        <div id="sbButton" onclick="showSideBar()" role="button" tabindex="0" class="sidebar-button titanic titanic-forward-arrow"/>
+        <div id="sbButton" onclick="showSideBar()" role="button" tabindex="0" class="sidebar-button fa fa-arrow-right">
         </div>
       </div>
     </div>
@@ -66,24 +64,21 @@ limitations under the License.
   {% include docsearch.html %}
 
   <script>
-    var titanic = new Titanic({
-      hover: false, // auto animated on hover (default true)
-      click: false  // auto animated on click/tap (default false)
-    });
-
     function showSideBar()
     {
-      if(toc.classList.contains("open"))
+      if(sbButton.classList.contains("fa-arrow-right"))
       {
-        titanic.items[0].off();
-        main.classList.remove("open");
-        toc.classList.remove("open");
+        main.classList.add("open");
+        toc.classList.add("open");
+        sbButton.classList.remove("fa-arrow-right");
+        sbButton.classList.add("fa-arrow-left");
       }
       else
       {
-        titanic.items[0].on();
-        main.classList.add("open");
-        toc.classList.add("open");
+        main.classList.remove("open");
+        toc.classList.remove("open");
+        sbButton.classList.remove("fa-arrow-left");
+        sbButton.classList.add("fa-arrow-right");
       }
     }
   </script>
