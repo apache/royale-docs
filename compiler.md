@@ -26,11 +26,11 @@ Turn your source code into compiled output
 
 [Apache Royale](https://royale.apache.org/) provides a compiler (some call it a transpiler or cross-compiler) and a command-line debugger to turn your source code into compiled output you can share with users. The compiler takes [AS3](features/as3), [MXML](features/mxml), and CSS as inputs. 
 
-The main output of the compiler is **JavaScript**. The compiler can also output **SWF**s for the **Adobe Flash** and **AIR** runtimes. There is some initial work on **Web Assembly** output.
+The main output of the compiler is **JavaScript**. The compiler can also output the **SWF** format for the **Adobe AIR** and **Adobe Flash Player** runtimes. There is some initial work on **Web Assembly** output.
 
-> It is relatively straightforward to add additional output formats to the compiler.
+> The compiler is architected in a way to make it possible to add additional output formats in the future.
 
-The code is based on the <a href="https://www.adobe.com/content/dam/acom/en/devnet/air/pdfs/adobe-actionscript-compiler-20-release-notes.pdf" target="_blank">ActionScript Compiler 2.0</a> that Adobe donated to Apache. The SWF output was pretty much working at the time of donation. Volunteers working on the Apache Flex and Royale projects have created the JavaScript output code.
+The code is based on the <a href="https://web.archive.org/web/20171025115551/https://www.adobe.com/content/dam/acom/en/devnet/air/pdfs/adobe-actionscript-compiler-20-release-notes.pdf" target="_blank">ActionScript Compiler 2.0</a> that Adobe donated to Apache. The SWF output was pretty much working at the time of donation. Volunteers working on the Apache Flex and Royale projects have created the JavaScript output code.
 
 ## User Guide
 
@@ -38,27 +38,53 @@ The Royale Compiler does many things besides compile **MXML** and **ActionScript
 
 ### Apache Maven
 
-There are some examples in the **apache/royale-asjs** repo in the _examples_ folder. The _pom.xml_ files should be useful as a starting point. There are also **Maven archetypes** available in Apache Royale releases.
+<a href="https://maven.apache.org/" target="_blank">Apache Maven</a> is a command line tool for automating builds, and a plugin is available for compiling for Royale projects. There are some examples in the **apache/royale-asjs** repo in the _examples_ folder. The _pom.xml_ files should be useful as a starting point. There are also **Maven archetypes** available in Apache Royale releases.
 
 ### Apache Ant
 
-In an Apache Royale distribution, there is a _compiler-royaleTasks.jar_ in the _js/lib_ folder that contains Ant tasks for the Royale Compiler. There is an mxmlc task for creating applications and a compc task for creating libraries.
+<a href="https://ant.apache.org/" target="_blank">Apache Ant</a> is a command line tool for automating builds, and custom tasks are available for compiling Royale projects. In an Apache Royale distribution, there is a _compiler-royaleTasks.jar_ in the _js/lib_ folder that contains Ant tasks for the Royale compiler. There is an **`<mxmlc>`** task for compiling applications and a **`<compc>`** task for compiling SWC libraries.
+
+Add the following to your Ant build script to load the custom Ant tasks for the Royale compiler:
+
+```xml
+<taskdef resource="flexTasks.tasks" classpath="${env.ROYALE_HOME}/js/lib/compiler-royaleTasks.jar"/>
+```
+
+If you don't have the `ROYALE_HOME` environment variable defined, replace `${env.ROYALE_HOME}` with the path to your SDK.
+
+Then, you can use the **`<mxmlc>`** and **`<compc>`** tasks in your Ant build script.
 
 ### asconfigc
 
-asconfigc is a command line tool for compiling ActionScript projects and is arguably the easiest way to compile -- especially if you are not familiar with Apache Ant or Maven. asconfigc can be run a stand-alone command line tool, or as part of a VS Code extension. To run it, you would either feed arguments into the tool or more likely create a <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">_asconfig.json_</a> file at the base of your project. Refer to the <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">documentation</a> for the full list of options.
+[**asconfigc**](https://www.npmjs.com/package/asconfigc) is a command line tool for compiling ActionScript and MXML projects configured with an <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">_asconfig.json_</a> file.
+
+The <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">_asconfig.json_</a> file format was originally designed for the [ActionScript & MXML language extension for Visual Studio Code](https://github.com/BowlerHatLLC/vscode-as3mxml/wiki), as a way to enable code intelligence features and run build tasks. Later, **asconfigc** was released as a separate command line tool that could read <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">_asconfig.json_</a> configuration files and launch the compiler with appropriate options outside of Visual Studio Code.
+
+Refer to the <a href="https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/asconfig.json" target="_blank">_asconfig.json_ documentation</a> for the full list of project configuration options.
 
 ### IDEs
 
-Consult your IDE documentation for how to launch the Royale Compiler. You can generate an IDE distribution from Apache Maven and/or Apache ANT.
+Consult the documentation for your [IDE or editor](getting-started/development-environment) to learn how how to launch the Royale compilers. If [building the SDK from source](https://github.com/apache/royale-asjs/wiki/Building-From-Source), you can generate a distribution compatible with IDEs using either Apache Maven or Apache Ant.
 
 ### NPM
 
-Both **mxmlc** or **compc** should be available on the system path to run from the command line after installing Royale via npm. Use `mxmlc --help` to see the [list of available compiler options](compiler/compiler-options).
+Both the **mxmlc** application compiler and the **compc** library compiler will be available on the system path to run from the command line after [installing Royale via npm](get-started/download-royale#npm) with the `-g` flag. Use `mxmlc --help` or `compc --help` to see the [list of available compiler options](compiler/compiler-options).
 
 ### Command line
 
-The _js/bin_ folder should contain **mxmlc** and **compc** scripts that will launch the compiler. Use `mxmlc --help` to see the [list of available compiler options](compiler/compiler-options).
+The _js/bin_ directory in the SDK contains the **mxmlc** and **compc** scripts that will launch the compilers. Use `mxmlc --help` or `compc --help` to see the [list of available compiler options](compiler/compiler-options).
+
+To use **mxmlc** to compile a Royale application, pass the path to the target file that will be the application's entry point.
+
+```sh
+mxmlc src/MyApp.mxml
+```
+
+Additional [compiler options](compiler/compiler-options) may be specified as well. The following options specify that the app should be built for JavaScript only, it should be a debug build, and that source maps should be generated for debugging.
+
+```sh
+mxmlc -targets=JSRoyale -debug=true -source-map=true src/MyApp.mxml
+```
 
 ## Compiler Options
 
