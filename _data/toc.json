@@ -245,6 +245,9 @@
             "path": "compiler.md",
             "children": [
                 {
+                    "path": "compiler/command-line-compiler-usage.md"
+                },
+                {
                     "path": "compiler/compiler-options.md"
                 },
                 {

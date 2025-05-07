@@ -86,6 +86,10 @@ Additional [compiler options](compiler/compiler-options) may be specified as wel
 mxmlc -targets=JSRoyale -debug=true -source-map=true src/MyApp.mxml
 ```
 
+To learn more about using the command line compilers, you can check the detailed compiler usage instructions here:
+
+- [Command line compiler usage](compiler/command-line-compiler-usage)
+
 ## Compiler Options
 
 Royale provides several compiler options to customize the use. You can check the list of compiler options here:
