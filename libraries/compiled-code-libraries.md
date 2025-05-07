@@ -54,8 +54,8 @@ A manifest file is a very simple xml file with the following structure:
 ```
 <?xml version="1.0"?>
 <componentPackage>
-    <component id="MyComponent1" class="com.somesite.MyComponent1"/>
-    <component id="MyComponent2" class="com.somesite.MyComponent2"/>
+    <component id="MyComponent1" class="com.example.MyComponent1"/>
+    <component id="MyComponent2" class="com.example.MyComponent2"/>
 </componentPackage>
 
 ```
@@ -70,10 +70,10 @@ In order for classes to be included in your SWC, you need to actually use them s
 package {
 	
 	internal class MyLibrary {
-		import com.somesite.ClassA;ClassA;
-		import com.somesite.ClassB;ClassB;
-		import com.somesite.ClassC;ClassC;
-		import com.somesite.ClassD;ClassD;
+		import com.example.ClassA;ClassA;
+		import com.example.ClassB;ClassB;
+		import com.example.ClassC;ClassC;
+		import com.example.ClassD;ClassD;
 	}
 }
 
@@ -84,14 +84,14 @@ Just referencing the classes like that is enough to have them included.
 `defaults.css` is where you declare any HTML or Royale CSS that's needed for your library. This is where you declare default [beads](features/strands-and-beads) and the like. Make sure you declare your namespace that's used for the MXML declarations of you components.
 
 ```
-@namespace "library://ns.somesite.com/kapow";
+@namespace "library://ns.example.com/kapow";
 @namespace js "library://ns.apache.org/royale/basic";
 
 MyComponent1
 {
-	IBeadModel: ClassReference("com.somesite.ComponentModel");
-	IBeadView:  ClassReference("com.somesite.ComponentView");			
-	IBeadController: ClassReference("com.somesite.ComponentController");	
+	IBeadModel: ClassReference("com.example.ComponentModel");
+	IBeadView:  ClassReference("com.example.ComponentView");			
+	IBeadController: ClassReference("com.example.ComponentController");	
 }
 
 ```
@@ -112,7 +112,7 @@ The notable difference between the two files:
 
 Note the important pieces in the config:
 
-1. In the namespaces section, you need to list all the namespaces you are using. Each namespace has to have a uri and a reference to the manifest file that is associated with that uri. In our case, the components will be used with the namespace `library://ns.somesite.com/kapow`.
+1. In the namespaces section, you need to list all the namespaces you are using. Each namespace has to have a uri and a reference to the manifest file that is associated with that uri. In our case, the components will be used with the namespace `library://ns.example.com/kapow`.
 2. You need to include your css file using the `include-file` section. Any other accompanying files you want to include should be added there.
 3. You need to reference your main class using `include-classes`.
 4. You need to include the namespace(s) used with `include-namespaces`.
@@ -159,7 +159,7 @@ Note the important pieces in the config:
 
         <namespaces>
             <namespace>
-                <uri>library://ns.somesite.com/kapow</uri>
+                <uri>library://ns.example.com/kapow</uri>
                 <manifest>manifest.xml</manifest>
             </namespace>
         </namespaces>
@@ -180,7 +180,7 @@ Note the important pieces in the config:
     </include-classes>
 
     <include-namespaces>
-        <uri>library://ns.somesite.com/kapow</uri>
+        <uri>library://ns.example.com/kapow</uri>
     </include-namespaces>
 
 </royale-config>
@@ -229,7 +229,7 @@ Note the important pieces in the config:
 
         <namespaces>
             <namespace>
-                <uri>library://ns.somesite.com/kapow</uri>
+                <uri>library://ns.example.com/kapow</uri>
                 <manifest>manifest.xml</manifest>
             </namespace>
         </namespaces>
@@ -250,7 +250,7 @@ Note the important pieces in the config:
     </include-classes>
 
     <include-namespaces>
-        <uri>library://ns.somesite.com/kapow</uri>
+        <uri>library://ns.example.com/kapow</uri>
     </include-namespaces>
 
 </royale-config>
