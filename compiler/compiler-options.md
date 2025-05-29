@@ -153,7 +153,7 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 - `-compiler.warn-number-from-string-changes` -- In ActionScript 3.0, white space is ignored and '' returns 0. Number() returns NaN in ActionScript 2.0 when the parameter is '' or contains white space.
 - `-compiler.warn-scoping-change-in-this` -- Change in scoping for the this keyword. Class methods extracted from an instance of a class will always resolve this back to that instance. In ActionScript 2.0 this is looked up dynamically based on where the method is invoked from.
 - `-compiler.warn-slow-text-field-addition` -- Inefficient use of += on a TextField.  
-- `-compiler.warn-this-within-closure` -- Use of `this` within a closure may not point to expected object.
+- [`-compiler.warn-this-within-closure`](compiler/compiler-options#warn-this-within-closure) -- Use of `this` within a closure may not point to expected object.
 - `-compiler.warn-unlikely-function-value` -- Possible missing parentheses.
 - `-compiler.warn-xml-class-has-changed` -- Possible usage of the ActionScript 2.0 XML class.
 - `-debug-password` `<string>` -- With the SWF target, the password to include in debuggable _.swf_ files.
@@ -191,7 +191,7 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 - `-js-complex-implicit-coercions`  
 - [`-js-default-initializers`](compiler/compiler-options#js-default-initializers) -- With JavaScript targets, determines if uninitialized variables are automatically initialized with default values.
 - [`-js-dynamic-access-unknown-members`](compiler/compiler-options#js-dynamic-access-unknown-members) - With JavaScript targets, replaces `.memberName` member access with `["memberName"]` dynamic access, if the member is unrecognized to prevent Google Closure Compiler from renaming the member.
-- `-js-getter-prefix` `<string>` -- Sets the string used as a prefix for getter functions in the generated _.js_ files.
+- [`-js-getter-prefix` `<string>`](compiler/compiler-options/#js-getter-prefix) -- Sets the string used as a prefix for getter functions in the generated _.js_ files.
 - [`-js-include-asset` `<string>`](compiler/compiler-options/#js-include-asset) -- Copies an asset file to the output directory.
 - [`-js-include-css` `<string>`](compiler/compiler-options/#js-include-css) -- Copies a _.css_ file to the output directory and adds a `<link rel="stylesheet">` element to the HTML.
 - [`-js-include-script` `<string>`](compiler/compiler-options/#js-include-script) -- Copies a _.js_ file to the output directory and adds a `<script>` element to the HTML.
@@ -200,7 +200,7 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 - `-js-output-optimization` `[optimization]` `[...]`  
 - `-js-output-type` `<string>` -- No longer used.
 - `-js-resolve-uncertain`  
-- `-js-setter-prefix` `<string>` -- Sets the string used as a prefix for setter functions in the generated _.js_ files. 
+- [`-js-setter-prefix` `<string>`](compiler/compiler-options/#js-getter-prefix) -- Sets the string used as a prefix for setter functions in the generated _.js_ files. 
 - [`-js-vector-emulation-class` `<string>`](compiler/compiler-options#js-vector-emulation-class) -- Sets the type used to emulate the ActionScript 3.0 `Vector` class in the generated _.js_ files.
 - `-js-vector-index-checks`  
 - [`-jsx-factory` `<string>`](compiler/compiler-options#jsx-factory)
@@ -258,6 +258,7 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 - [`-source-map`](compiler/compiler-options#source-map) -- Generate source maps for JavaScript debugging.
 - [`-source-map-source-root` `<string>`](compiler/compiler-options#source-map-source-root) -- Set the source root to use for source maps used for JavaScript debugging.
 - `-static-link-runtime-shared-libraries` -- Statically link the libraries specified by the `-runtime-shared-libraries-path` option.
+- [`-strict-flex-css`](compiler/compiler-options#strict-flex-css) -- Specifies whether to use Flex's CSS parsing rules instead of Royale's CSS parsing rules.
 - `-strict-publish`  
 - `-swf-debugfile-alias` `<filename>`  
 - `-swf-version` `<int>` -- Specifies the version of the compiled SWF file.
@@ -267,6 +268,7 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 - `-use-flashbuilder-project-files`  
 - `-use-gpu` -- With the SWF target, use GPU compositing features when drawing graphics, where such acceleration is available.
 - `-use-network` -- Toggle whether the SWF is flagged for access to network resources.
+- [`-verbose`](compiler/compiler-options#verbose) -- Display more detailed compiler output.
 - `-verify-digests` -- Verifies the libraries loaded at runtime are the correct ones.
 - `-version` -- Display the build version of the program
 - [`-warn-public-vars`](compiler/compiler-options#warn-public-vars) -- Warn for public variables that are not accessors.
@@ -276,13 +278,23 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 
 ### allow-abstract-classes {#allow-abstract-classes}
 
+_Available since Royale 0.9.6_
+
 Determines if the `abstract` modifier may be used with classes. For more details, see [Abstract Classes in ActionScript](features/as3/abstract-classes).
 
 ```sh
 -allow-abstract-classes
 ```
 
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-allow-abstract-classes=true;</additionalCompilerOptions>
+```
+
 ### allow-import-aliases {#allow-import-aliases}
+
+_Available since Royale 0.9.6_
 
 Determines if alias syntax for for imported symbols is allowed or not.
 
@@ -290,12 +302,26 @@ Determines if alias syntax for for imported symbols is allowed or not.
 -allow-import-aliases
 ```
 
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-allow-import-aliases=true;</additionalCompilerOptions>
+```
+
 ### allow-private-constructors {#allow-private-constructors}
+
+_Available since Royale 0.9.6_
 
 Determines if the `private` namespace may be used with class constructors. For more details, see [Private Constructors in ActionScript](features/as3/private-constructors).
 
 ```sh
 -allow-private-constructors
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-allow-private-constructors=true;</additionalCompilerOptions>
 ```
 
 ### closure-lib {#closure-lib}
@@ -304,6 +330,12 @@ Sets the path to a custom distribution of Google's Closure library, instead of t
 
 ```sh
 -closure-lib path/to/closure
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-closure-lib=path/to/closure;</additionalCompilerOptions>
 ```
 
 ### js-define {#js-define}
@@ -349,6 +381,12 @@ Specifies the file name of the HTML file generated by the compiler to load the A
 -html-output-filename custom.html
 ```
 
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-html-output-filename=custom.html;</additionalCompilerOptions>
+```
+
 ### html-template {#html-template}
 
 Specifies the path to an optional template for the HTML file generated by the compiler to load the Apache Royale application in the browser.
@@ -365,6 +403,8 @@ Specifies the path to an optional template for the HTML file generated by the co
 
 ## infer-types {#infer-types}
 
+_Available since Royale 0.9.12_
+
 Specifies that types of variables, fields, and function returns, if omitted, should be inferred from the initializer or return statements. For more details, see [Type Inference in ActionScript](features/as3/type-inference).
 
 ```sh
@@ -378,6 +418,8 @@ Specifies that types of variables, fields, and function returns, if omitted, sho
 ```
 
 ## inline-constants {#inline-constants}
+
+_Available since Royale 0.9.7_
 
 Determines if primitive constant values (such as numbers, booleans, and strings) will be inlined.
 
@@ -458,6 +500,8 @@ private static var _projectVersion:String = BUILD::buildVersion;
 
 ### js-dynamic-access-unknown-members {#js-dynamic-access-unknown-members}
 
+_Available since Royale 0.9.4_
+
 If the definition of a member cannot be resolved at compile time, emit dynamic access instead of normal member access. Ensures that dynamic members aren't renamed.
 
 ```sh
@@ -468,6 +512,22 @@ If the definition of a member cannot be resolved at compile time, emit dynamic a
 
 ```xml
 <additionalCompilerOptions>-js-dynamic-access-unknown-members=true;</additionalCompilerOptions>
+```
+
+### js-getter-prefix {#js-getter-prefix}
+
+_Available since Royale 0.9.9_
+
+Sets the string used as a prefix for getter functions in the generated _.js_ files. Defaults to `get__`.
+
+```sh
+-js-getter-prefix=get_
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-js-getter-prefix=get_;</additionalCompilerOptions>
 ```
 
 ### js-include-asset {#js-include-asset}
@@ -534,6 +594,12 @@ Specifies the locations of XML configuration files that define extra compiler op
 
 #### Maven configuration:
 
+```xml
+<additionalCompilerOptions>-js-load-config+=path/to/project-config.xml;</additionalCompilerOptions>
+```
+
+#### Maven configuration:
+
 ### js-output {#js-output}
 
 The path where the generated JavaScript output should be saved, if your are also using it for the .swf output path.
@@ -544,7 +610,23 @@ The path where the generated JavaScript output should be saved, if your are also
 
 #### Maven configuration:
 
-Use instead `outputDirectory` in `configuration` xml node
+Use `outputDirectory` within `configuration` XML node instead.
+
+### js-setter-prefix {#js-setter-prefix}
+
+_Available since Royale 0.9.9_
+
+Sets the string used as a prefix for setter functions in the generated _.js_ files. Defaults to `set__`.
+
+```sh
+-js-setter-prefix=set_
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-js-setter-prefix=set_;</additionalCompilerOptions>
+```
 
 ### js-vector-emulation-class {#js-vector-emulation-class}
 
@@ -561,6 +643,8 @@ A custom implemention to use instead of default emulation of the AVM2 `Vector` t
 ```
 
 ### jsx-factory {#jsx-factory}
+
+_Available since Royale 0.9.7_
 
 Customize the factory to use for JSX syntax. Defaults to `React.createElement`.
 
@@ -638,6 +722,8 @@ In a release build, determines if symbols in the `internal` namespace will be ex
 
 ### prevent-rename-public-symbols {#prevent-rename-public-symbols}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if symbols in the `public` namespace may be renamed or not. The default value is `true`.
 
 ```sh
@@ -664,6 +750,8 @@ When `prevent-rename-public-symbols` option is `true`, one or more the following
 - [`prevent-rename-public-instance-accessors`](compiler/compiler-options.html#prevent-rename-public-instance-accessors)
 
 ### prevent-rename-protected-symbols {#prevent-rename-protected-symbols}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if symbols in the `protected` namespace may be renamed or not. The default value is `true`.
 
@@ -692,6 +780,8 @@ When `prevent-rename-protected-symbols` option is `true`, one or more the follow
 
 ### prevent-rename-internal-symbols {#prevent-rename-internal-symbols}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if symbols in the `internal` namespace may be renamed or not. The default value is `true`.
 
 ```sh
@@ -719,6 +809,8 @@ When `prevent-rename-internal-symbols` option is `true`, one or more the followi
 
 ### prevent-rename-public-static-methods {#prevent-rename-public-static-methods}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if static methods in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
 ```sh
@@ -734,6 +826,8 @@ In a release build, determines if static methods in the `public` namespace may b
 ```
 
 ### prevent-rename-public-instance-methods {#prevent-rename-public-instance-methods}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if instance (non-static) methods in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
@@ -751,6 +845,8 @@ In a release build, determines if instance (non-static) methods in the `public` 
 
 ### prevent-rename-public-static-variables {#prevent-rename-public-static-variables}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if static variables in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
 ```sh
@@ -766,6 +862,8 @@ In a release build, determines if static variables in the `public` namespace may
 ```
 
 ### prevent-rename-public-instance-variables {#prevent-rename-public-instance-variables}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if instance (non-static) variables in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
@@ -783,6 +881,8 @@ In a release build, determines if instance (non-static) variables in the `public
 
 ### prevent-rename-public-static-accessors {#prevent-rename-public-static-accessors}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if static accessors (getters and setters) in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
 ```sh
@@ -798,6 +898,8 @@ In a release build, determines if static accessors (getters and setters) in the 
 ```
 
 ### prevent-rename-public-instance-accessors {#prevent-rename-public-instance-accessors}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if instance (non-static) accessors (getters and setters) in the `public` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-public-symbols` compiler option is `false`.
 
@@ -815,6 +917,8 @@ In a release build, determines if instance (non-static) accessors (getters and s
 
 ### prevent-rename-protected-static-methods {#prevent-rename-protected-static-methods}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if static methods in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
 ```sh
@@ -830,6 +934,8 @@ In a release build, determines if static methods in the `protected` namespace ma
 ```
 
 ### prevent-rename-protected-instance-methods {#prevent-rename-protected-instance-methods}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if instance (non-static) methods in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
@@ -847,6 +953,8 @@ In a release build, determines if instance (non-static) methods in the `protecte
 
 ### prevent-rename-protected-static-variables {#prevent-rename-protected-static-variables}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if static variables in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
 ```sh
@@ -862,6 +970,8 @@ In a release build, determines if static variables in the `protected` namespace 
 ```
 
 ### prevent-rename-protected-instance-variables {#prevent-rename-protected-instance-variables}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if instance (non-static) variables in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
@@ -879,6 +989,8 @@ In a release build, determines if instance (non-static) variables in the `protec
 
 ### prevent-rename-protected-static-accessors {#prevent-rename-protected-static-accessors}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if static accessors (getters and setters) in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
 ```sh
@@ -894,6 +1006,8 @@ In a release build, determines if static accessors (getters and setters) in the 
 ```
 
 ### prevent-rename-protected-instance-accessors {#prevent-rename-protected-instance-accessors}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if instance (non-static) accessors (getters and setters) in the `protected` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-protected-symbols` compiler option is `false`.
 
@@ -911,6 +1025,8 @@ In a release build, determines if instance (non-static) accessors (getters and s
 
 ### prevent-rename-internal-static-methods {#prevent-rename-internal-static-methods}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if static methods in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
 ```sh
@@ -926,6 +1042,8 @@ In a release build, determines if static methods in the `internal` namespace may
 ```
 
 ### prevent-rename-internal-instance-methods {#prevent-rename-internal-instance-methods}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if instance (non-static) methods in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
@@ -943,6 +1061,8 @@ In a release build, determines if instance (non-static) methods in the `internal
 
 ### prevent-rename-internal-static-variables {#prevent-rename-internal-static-variables}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if static variables in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
 ```sh
@@ -958,6 +1078,8 @@ In a release build, determines if static variables in the `internal` namespace m
 ```
 
 ### prevent-rename-internal-instance-variables {#prevent-rename-internal-instance-variables}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if instance (non-static) variables in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
@@ -975,6 +1097,8 @@ In a release build, determines if instance (non-static) variables in the `intern
 
 ### prevent-rename-internal-static-accessors {#prevent-rename-internal-static-accessors}
 
+_Available since Royale 0.9.8_
+
 In a release build, determines if static accessors (getters and setters) in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
 ```sh
@@ -990,6 +1114,8 @@ In a release build, determines if static accessors (getters and setters) in the 
 ```
 
 ### prevent-rename-internal-instance-accessors {#prevent-rename-internal-instance-accessors}
+
+_Available since Royale 0.9.8_
 
 In a release build, determines if instance (non-static) accessors (getters and setters) in the `internal` namespace may be renamed or not. The default value is `true`. This option will be ignored if the `prevent-rename-internal-symbols` compiler option is `false`.
 
@@ -1049,10 +1175,18 @@ Set to false to remove all [data binding](features/data-binding) warnings.
 
 ### strict-identifier-names {#strict-identifier-names}
 
+_Available since Royale 0.9.7_
+
 Determines if names of identifiers must follow the strict rules of ActionScript 3.0, or if they may use the looser rules introduced in ECMAScript 5. Defaults to `false`.
 
 ```sh
 -strict-identifier-names
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-strict-identifier-names=true;</additionalCompilerOptions>
 ```
 
 ### source-map {#source-map}
@@ -1071,6 +1205,8 @@ Emits a source map in the debug build for each ActionScript file. The default va
 
 ### source-map-source-root {#source-map-source-root}
 
+_Available since Royale 0.9.8_
+
 Sets a custom value for the `sourceRoot` property in the generated source map files. This option will be ignored if the `source-map` compiler option is `false`.
 
 ```sh
@@ -1083,6 +1219,22 @@ Sets a custom value for the `sourceRoot` property in the generated source map fi
 <additionalCompilerOptions>-source-map-source-root=my/custom/path;</additionalCompilerOptions>
 ```
 
+### strict-flex-css {#strict-flex-css}
+
+_Available since Royale 0.9.12_
+
+Specifies whether to use Flex's CSS parsing rules instead of Royale's CSS parsing rules.
+
+```sh
+-strict-flex-css=true
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-strict-flex-css=true;</additionalCompilerOptions>
+```
+
 ### targets {#targets}
 
 Specifies the target format of the code generated by the Apache Royale compiler. You can specify multiple targets.
@@ -1093,16 +1245,32 @@ Specifies the target format of the code generated by the Apache Royale compiler.
 
 The compiler supports the following values for "targets":
 
-- "JSRoyale"
-- "JS"
-- "JSNode"
-- "JSNodeModule"
-- "SWF"
+- `JSRoyale` generates JavaScript with the Royale framework components.
+- `JS` generates JavaScript without the Royale framework components.
+- `JSNode` generates a complete script that may run with Node.js.
+- `JSNodeModule` generates a CommonJS module that may be loaded with `require()` in Node.js.
+- `SWF` generates a _.swf_ file for Adobe Flash Player or Adobe AIR.
 
 #### Maven configuration:
 
 ```xml
 <targets>JSRoyale</targets>
+```
+
+### verbose {#verbose}
+
+_Available since Royale 0.9.6_
+
+Display more detailed compiler output.
+
+```sh
+-verbose
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-verbose=true;</additionalCompilerOptions>
 ```
 
 ### warn-public-vars {#warn-public-vars}
@@ -1119,7 +1287,25 @@ Enables or disables warnings about using public variables when it may be conside
 <additionalCompilerOptions>-warn-public-vars=true;</additionalCompilerOptions>
 ```
 
+### warn-this-within-closure {#warn-this-within-closure}
+
+_Available since Royale 0.9.7_
+
+Enable warning that use of `this` within a closure may not point to expected object.
+
+```sh
+-warn-this-within-closure
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-warn-this-within-closure=true;</additionalCompilerOptions>
+```
+
 ### watch {#watch}
+
+_Available since Royale 0.9.10_
 
 After initial compilation completes, the compiler keeps running to watch for source file changes. When _.as_ or _.mxml_ files are changed, the compiler runs a fast incremental build. Use Ctrl+C to exit the compiler.
 
