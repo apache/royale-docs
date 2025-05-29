@@ -455,6 +455,49 @@ public function get data():Object;
 
 InstanceType
 
+## JSIncludeAsset
+
+_Available since Royale 0.9.13_
+
+Royale applications that target JavaScript may sometimes rely on third-party libraries and stylesheets. The Royale compiler provides a way to copy any additional asset files required by these _.js_ and _.css_ files to the output directory relative to the generated _index.html_ file. For example, a third-party library might require PNG or JPEG image files, or `@font-face` CSS may reference [web font](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts) files, or the library may load [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON) or [XML](https://developer.mozilla.org/en-US/docs/Glossary/XML) configuration files.
+
+```as3
+[JSIncludeAsset(source="myimage.png")]
+public class MyClass
+```
+
+In the output directory, typically _bin/js-debug_ or _bin/js-release_, the _index.html_ file will be generated in the root, and asset files will be copied into an _assets_ sub-directory.
+
+## JSIncludeCSS
+
+_Available since Royale 0.9.13_
+
+Royale applications that target JavaScript may sometimes rely on third-party stylesheets that don't need to be processed for use in MXML. The Royale compiler provides a way to copy additional _.css_ files to the output directory relative to the generated _index.html_ file, and it will automatically generate `<link rel="stylesheet">` elements in the HTML `<head>` section.
+
+Add `[JSIncludeCSS]` metadata to an ActionScript class, and set the `source` field to the path of a _.css_ file. Relative paths are resolved in relation to the file that contains the metadata.
+
+```as3
+[JSIncludeCSS(source="mystyles.css")]
+public class MyClass
+```
+
+In the output directory, typically _bin/js-debug_ or _bin/js-release_, the _index.html_ file will be generated in the root, and _.css_ files will be copied into a _css_ sub-directory.
+
+## JSIncludeScript
+
+_Available since Royale 0.9.13_
+
+Royale applications that target JavaScript may sometimes rely on third-party libraries or scripts that are not written in ActionScript. The Royale compiler provides a way to copy additional _.js_ files to the output directory relative to the generated _index.html_ file, and it will automatically generate `<script>` elements in the HTML `<head>` section.
+
+Add `[JSIncludeScript]` metadata to an ActionScript class, and set the `source` field to the path of a _.js_ file.Relative paths are resolved in relation to the file that contains the metadata.
+
+```as3
+[JSIncludeScript(source="myscript.js")]
+public class MyClass
+```
+
+In the output directory, typically _bin/js-debug_ or _bin/js-release_, the _index.html_ file will be generated in the root, and _.js_ files will be copied into a _scripts_ sub-directory.
+
 ### Managed
 
 Managed

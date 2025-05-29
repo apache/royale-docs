@@ -192,6 +192,9 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 - [`-js-default-initializers`](compiler/compiler-options#js-default-initializers) -- With JavaScript targets, determines if uninitialized variables are automatically initialized with default values.
 - [`-js-dynamic-access-unknown-members`](compiler/compiler-options#js-dynamic-access-unknown-members) - With JavaScript targets, replaces `.memberName` member access with `["memberName"]` dynamic access, if the member is unrecognized to prevent Google Closure Compiler from renaming the member.
 - `-js-getter-prefix` `<string>` -- Sets the string used as a prefix for getter functions in the generated _.js_ files.
+- [`-js-include-asset` `<string>`](compiler/compiler-options/#js-include-asset) -- Copies an asset file to the output directory.
+- [`-js-include-css` `<string>`](compiler/compiler-options/#js-include-css) -- Copies a _.css_ file to the output directory and adds a `<link rel="stylesheet">` element to the HTML.
+- [`-js-include-script` `<string>`](compiler/compiler-options/#js-include-script) -- Copies a _.js_ file to the output directory and adds a `<script>` element to the HTML.
 - [`-js-load-config` `<filename>`](compiler/compiler-options#js-load-config) -- Overrides `-load-config` for JavaScript targets.
 - [`-js-output` `<filename>`](compiler/compiler-options#js-output) -- Sets the output directory path of the generated _.js_ files.
 - `-js-output-optimization` `[optimization]` `[...]`  
@@ -465,6 +468,60 @@ If the definition of a member cannot be resolved at compile time, emit dynamic a
 
 ```xml
 <additionalCompilerOptions>-js-dynamic-access-unknown-members=true;</additionalCompilerOptions>
+```
+
+### js-include-asset {#js-include-asset}
+
+_Available since Royale 0.9.13_
+
+Copies a custom asset file to the the output directory. Typically combined with `-js-include-css` or `-js-include-script`.
+
+```sh
+-js-include-asset+=path/to/asset-file.png
+```
+
+In the output directory, typically _bin/js-debug_ or _bin/js-release_, the _index.html_ file will be generated in the root, and asset files will be copied into an _assets_ sub-directory.
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-js-include-asset+=path/to/asset-file.png;</additionalCompilerOptions>
+```
+
+### js-include-css {#js-include-css}
+
+_Available since Royale 0.9.13_
+
+Copies a _.css_ file to the output directory and adds a `<link rel="stylesheet">` element to the HTML. If the _.css_ file references any external asset files, this option may be combined with `-js-include-asset`.
+
+```sh
+-js-include-css+=path/to/file.css
+```
+
+In the output directory, typically _bin/js-debug_ or _bin/js-release_, the _index.html_ file will be generated in the root, and _.css_ files will be copied into a _css_ sub-directory.
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-js-include-css+=path/to/file.css;</additionalCompilerOptions>
+```
+
+### js-include-script {#js-include-script}
+
+_Available since Royale 0.9.13_
+
+Copies a _.js_ file to the output directory and adds a `<script>` element to the HTML. If the _.js_ file references any external asset files, this option may be combined with `-js-include-asset`.
+
+```sh
+-js-include-script+=path/to/file.js
+```
+
+In the output directory, typically _bin/js-debug_ or _bin/js-release_, the _index.html_ file will be generated in the root, and _.js_ files will be copied into a _scripts_ sub-directory.
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-js-include-script+=path/to/file.js;</additionalCompilerOptions>
 ```
 
 ### js-load-config {#js-load-config}
