@@ -332,8 +332,8 @@ When adding `[Exclude]` metadata, it should include two fields, `name`, and `kin
 - `property`
 - `method`
 - `event`
-- `style`,
-- `effect`.
+- `style`
+- `effect`
 
 The following example excludes the `alpha` property defined in `UIBase` from a class that extends `UIBase`.
 
