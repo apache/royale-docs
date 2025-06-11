@@ -28,27 +28,27 @@ Coding standards for writing code in ActionScript 3
 
 ## Packages
 
-Packages have lower.case.names separated by periods if needed. Names using mixedCase (starting with lower case) are ok, but short package names are preferred so that you aren't tempted to mixCase.
+Packages have `lower.case.names` separated by periods, if needed. Names using `mixedCase` (starting with lower case) are ok, but short package names are preferred so that you aren't tempted to mixCase.
 
 ## Classes
 
-Classes have MixedCase names starting with a capital letter (and no hyphens).
+Classes have `MixedCase` names starting with a capital letter (and no hyphens). If a name contains an acronym, each letter in the acronym should be entirely capitalized, like HTML in `HTMLElement`.
 
 ## Constants
 
-Constants have CAPITALIZED_NAMES with words separated by underscores '_'.
+Constants have `CAPITALIZED_NAMES` with words separated by underscore (`_`) characters.
 
 ## Properties
 
-Properties have mixedCase names starting with a lower case letter.
+Properties have `mixedCase` names starting with a lower case letter.
 
 ## Events
 
-Events have mixedCase names starting with a lower case letter.
+Event strings have `mixedCase` names starting with a lower case letter.
 
 ## Event Classes
 
-While Apache Flex had lots of event classes, Royale strives to have as few as possible since each class has download overhead. Royale has an Event which has an event name in the "type" field and no other payload. A ValueEvent contains one item that might be of interest to the listener. ValueChangeEvent has oldValue/newValue. There may be a StringEvent and other 'typed' event classes.
+While Apache Flex had lots of event classes, Royale strives to have as few as possible since each class has download overhead. Royale has an `Event` which has an event name in the `type` field and no other payload. A `ValueEvent` contains one item that might be of interest to the listener. `ValueChangeEvent` has `oldValue`/`newValue`. There may be a `StringEvent` and other "typed" event classes.
 
 Event constants go in the class that will dispatch the event. Thus the developer only has to import one class and write the code that uses it.
 
