@@ -26,7 +26,7 @@ Packages in ActionScript 3
 
 Code in ActionScript is structured the same way Java code is structured. Each ActionScript file must declare its package and wrap any externally visible class in the package. A top level package does not need a name. So for a `Foo` class at the top level, it would look like this:
 
-```
+```as3
 package {
 	class Foo {
 		public function Foo() {
@@ -34,9 +34,10 @@ package {
 	}
 }
 ```
+
 You can name your folder structure any way you like, but an accepted convention is to nest it in a unique domain to prevent potential package conflicts. So for a class `MyFoo` you might have a folder structure like this: `src/com/acme/MyFoo.as` and the class would look like this:
 
-```
+```as3
 package com.acme {
 	class MyFoo {
 		public function MyFoo() {

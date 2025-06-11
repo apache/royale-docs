@@ -59,25 +59,32 @@ This is used to suppress warning output by the compiler.
 public variables are not protected from renaming optimizations by javascript in a way that permits them to continue to be accessible via dynamic access.
 This means that for:
 
-class MyThing{  
+```as3
+class MyThing {  
 	public var myImportantVar:String = 'myValue';  
 }
+```
+
 ```as3
 var myThing:MyThing = new MyThing();
 var s:String = myThing.myImportantVar; //this always works
 var fieldName:String = 'myImportantVar';
 s = myThing[fieldName]; //this will work in a js-debug build, but may not work in js-release
 ```
+
 Because of issues like the above, the Royale compiler outputs a warning to alert the developer.
 However in many cases, the dynamic access may not be needed, and using a public var will be fine.
 To prevent the warning from the compiler, the doc comment directive can be used as follows:
+
 ```as3
 /**
-* @royalesuppresspublicvarwarning
-*/
+ * @royalesuppresspublicvarwarning
+ */
 public var myImportantVar:String = 'myValue';
 ```
+
 * * *
+
 ## Output Optimizations
 
 ### @royaleigorecoercion type {#royaleigorecoercion} 
@@ -89,6 +96,7 @@ The `as` keyword in ActionScript has two purposes. The first is to tell the comp
 If runtime coercion is not needed, the `@royaleigorecoercion` option can be used. It can help avoid unnecessary code and improve performance.
 
 A simplistic, illustrative example is:
+
 ```as3
 if (myVar is MyClass) { //this generates code to check if myVar is of type 'MyClass'
 	(myVar as MyClass).myClassMethod(); 
@@ -99,14 +107,16 @@ if (myVar is MyClass) { //this generates code to check if myVar is of type 'MyCl
 	//or a subclass of MyClass, and if it is not, throws an error
 }
 ```
+
 In both the above examples, the outer conditional `myVar is MyClass` check already assures us that myVar resolves to 'MyClass' as a type.  
 So the extra overhead of code that performs `myVar as MyClass` or `MyClass(myVar)` coercions is redundant, because we can already be sure it will resolve successfully.  
 If the definition of MyClass is in a package called mypackage, then its **fully qualified name** is mypackage.MyClass.  
 The following can then be used to avoid the redundant (as described above) javascript output code:
-```
+
+```as3
 /**
-* @royaleigorecoercion mypackage.MyClass
-* /
+ * @royaleigorecoercion mypackage.MyClass
+ */
 ```
 
 * * *
@@ -124,17 +134,19 @@ Please read the [Strict equality comparisons](create-an-application/optimization
 
 How to use:  
 A simplistic example is:
+
 ```as3
 /**
-* setting goes here
-*/
-public function testResolveUncertain():void{
+ * setting goes here
+ */
+public function testResolveUncertain():void {
 	var myClass:Class = int;
 	if (new myClass(30) === 30) trace('it worked!);
 	var myOtherClass:Class = String;
 	if (new myOtherClass('test') === 'test') trace('it worked again!);
 }
 ```
+
 In the above example, both of 'new myClass(30)' and 'new myOtherClass('test')' will have extra code to cover the cases where variations occur in javascript.
 
 **@royalesuppressresolveuncertain false**  
@@ -162,11 +174,12 @@ Please read the [Vector Index Checking](create-an-application/optimizations/comp
 
 How to use:
 A simplistic example is:  
+
 ```as3
 /**
-* setting goes here
-*/
-public function myTest():void{
+ * setting goes here
+ */
+public function myTest():void {
 	var vi:Vector.<int> = new <int>[0, 1, 2, 3, 4];
 	vi[8] = 0; 
 	//index 8 above is too high
@@ -202,15 +215,17 @@ Please read the [Implict Coercions of non-primitive types](create-an-application
 How to use:
 
 A simplistic example is:
+
 ```as3
 /**
-* setting goes here
-*/
-public function testComplexImplicitCoercion():void{
+ * setting goes here
+ */
+public function testComplexImplicitCoercion():void {
 	var something:* = new Cat();
 	var myDog:Dog = something;
 }
 ```
+
 In the above example, the default output will have extra code generated in javascript, that would be similar in actionscript to:  
 `var myDog:Dog = Dog(something);`
 

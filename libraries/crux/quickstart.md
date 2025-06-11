@@ -156,7 +156,7 @@ In addition to injecting a bean, you can inject individual bean properties. In t
 
         //example of setter style binding Injection
         [Inject( source = "userController.currentUser", bind = "true" )]
-        public function setUser(val:User):void{
+        public function setUser(val:User):void {
             this.user = val;
         }
     ]]>

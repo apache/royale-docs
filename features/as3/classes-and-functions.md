@@ -30,16 +30,16 @@ As mentioned in [packages](features/as3/packages), each file in ActionScript nee
 ## Inheritance and interfaces
 ActionScript classes can only inherit from a single `super` class, but you can declare multiple interfaces. So if you need a class to be more than one unrelated types, you should use [interfaces](features/as3/interfaces) to declare your types rather than classes. Interfaces is very often a better design choice that classes for types either way. Sub-classing and declaring interfaces looks like this:
 
-```
+```as3
 public class SubClass extends SuperClass implements IFoo, IBaz, IBar
 ```
 
 ## Constructors
 Constructors in ActionScript are optional. If you need to initialize something in your class you should always declare a constructor and you can define at which point the `super` class is instantiated by calling `super()` inside the constructor. Subclasses and super-classes do not need to have the same number of arguments so the following is perfectly valid:
 
-```
-package{
-	public class SubClass(){
+```as3
+package {
+	public class SubClass() {
 		foo = "foo";
 		super("baz")
 	}
@@ -68,9 +68,9 @@ In Royale, it's generally not recommended to use `this` inside non-instance meth
 ## Package level functions
 You don't need to declare a class to use code. You can have "utility" functions as first class citizens. To create a public function you create a file similar to a class (but name it camel-case). Assuming your file structure is like so: `src/com/acme/doAwesome.as` Inside the file you declare the function like this:
 
-```
-package com.acme{
-	public function doAwesome(notSoAwesome:Object):Awesome{
+```as3
+package com.acme {
+	public function doAwesome(notSoAwesome:Object):Awesome {
 		return new Awesome(
 			doSomethingComplicatedInTheSamePackage(notSoAwesome)
 		);
@@ -82,6 +82,7 @@ Then `doAwesome()` is available anywhere in your project. Your IDE should `impor
 
 ## Static classes and singletons
 One of the cool new features in ActionScript is [private constructors](features/as3/private-constructors). Use that if you have a class that you want to use as static-only class or as a [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern)
+
 ## Instance, static and utility functions
 The question is then when to use which.
 - For OOP programming, you generally want to use instantiated classes.

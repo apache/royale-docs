@@ -66,9 +66,8 @@ The namespace for your manifest is declared in `compile-config.xml` and `js-comp
 ## The main class file
 In order for classes to be included in your SWC, you need to actually use them somewhere. Any classes which are declared in your manifest are considered "used", and they along with all their dependencies will be included. However, there will likely be other classes and utility functions which are not in the manifest that you want to include. The simplest solution for this is to have a Class which references all the classes you want included. To do this, you include `MyLibrary.as` at the root of your `src` folder and it should look like this:
 
-```
+```actionscript
 package {
-	
 	internal class MyLibrary {
 		import com.example.ClassA;ClassA;
 		import com.example.ClassB;ClassB;
@@ -76,8 +75,8 @@ package {
 		import com.example.ClassD;ClassD;
 	}
 }
-
 ```
+
 Just referencing the classes like that is enough to have them included.
 
 ## The CSS file
