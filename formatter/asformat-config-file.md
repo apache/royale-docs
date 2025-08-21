@@ -30,9 +30,9 @@ The root of this file is an `<asformat-config>` element. To specify a [formatter
 
 ```xml
 <asformat-config>
-	<collapse-empty-blocks>true</collapse-empty-blocks>
-	<max-preserve-new-lines>3</max-preserve-new-lines>
-	<semicolons>ignore</semicolons>
+    <collapse-empty-blocks>true</collapse-empty-blocks>
+    <max-preserve-new-lines>3</max-preserve-new-lines>
+    <semicolons>ignore</semicolons>
 </asformat-config>
 ```
 

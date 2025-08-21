@@ -43,17 +43,17 @@ Consider the following code that creates a class named `GraphicsObject`:
 ```as3
 package
 {
-	public abstract class GraphicsObject
-	{
-		public function GraphicsObject()
-		{
-		}
+    public abstract class GraphicsObject
+    {
+        public function GraphicsObject()
+        {
+        }
 
-		public var x:Number;
-		public var y:Number;
+        public var x:Number;
+        public var y:Number;
 
-		public abstract function draw(context:IGraphicsContext):void;
-	}
+        public abstract function draw(context:IGraphicsContext):void;
+    }
 }
 ```
 
@@ -74,26 +74,26 @@ The next code sample shows how to extend the abstract class `GraphicsObject` and
 ```as3
 package
 {
-	public class Rectangle extends GraphicsObject
-	{
-		public function Rectangle(width:Number, height:Number)
-		{
-			this.width = width;
-			this.height = height;
-		}
+    public class Rectangle extends GraphicsObject
+    {
+        public function Rectangle(width:Number, height:Number)
+        {
+            this.width = width;
+            this.height = height;
+        }
 
-		public var width:Number;
-		public var height:Number;
+        public var width:Number;
+        public var height:Number;
 
-		public abstract function draw(context:IGraphicsContext):void
-		{
-			context.moveTo(x, y);
-			context.lineTo(x + width, y);
-			context.lineTo(x + width, y + height);
-			context.lineTo(x, y + height);
-			context.lineTo(x, y);
-		}
-	}
+        public abstract function draw(context:IGraphicsContext):void
+        {
+            context.moveTo(x, y);
+            context.lineTo(x + width, y);
+            context.lineTo(x + width, y + height);
+            context.lineTo(x, y + height);
+            context.lineTo(x, y);
+        }
+    }
 }
 ```
 
@@ -103,13 +103,13 @@ If we extended `GraphicsObject` and did not implement its abstract method, we'd 
 ```as3
 package
 {
-	// Error: Method draw in abstract class GraphicsObject not implemented by class Foobar
-	public class Foobar extends GraphicsObject
-	{
-		public function Foobar()
-		{
-		}
-	}
+    // Error: Method draw in abstract class GraphicsObject not implemented by class Foobar
+    public class Foobar extends GraphicsObject
+    {
+        public function Foobar()
+        {
+        }
+    }
 }
 ```
 

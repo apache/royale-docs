@@ -91,7 +91,7 @@ There are several other component sets that are proofs-of-concept that wrap exis
  ```mxml
  <?xml version="1.0" encoding="utf-8"?>
  <c:MyProjectUsingJewel xmlns:fx="http://ns.adobe.com/mxml/2009" 
-	xmlns:j="library://ns.apache.org/royale/jewel">
+  xmlns:j="library://ns.apache.org/royale/jewel">
  ```
 
 Let's say I want to insert a multi-line label in my app's UI. I use the Label component in the "j" namespace I established for Jewel:

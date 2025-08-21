@@ -45,8 +45,8 @@ In __MXML__ declare a `View` like this:
 
 ```mxml
 <j:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
-	xmlns:j="library://ns.apache.org/royale/jewel"
-	width="100%" height="100%">
+    xmlns:j="library://ns.apache.org/royale/jewel"
+    width="100%" height="100%">
 
     <!-- View code goes here -->
 </j:View>
@@ -56,13 +56,13 @@ or directly in the application mxml file inside the `initialView`:
 
 ```mxml
 <j:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
-	xmlns:j="library://ns.apache.org/royale/jewel">
-	...
-	<j:initialView>
-		<j:View width="100%" height="100%">
-			<!-- View code goes here -->
-		</j:View>
-	</j:initialView>
+    xmlns:j="library://ns.apache.org/royale/jewel">
+    ...
+    <j:initialView>
+        <j:View width="100%" height="100%">
+            <!-- View code goes here -->
+        </j:View>
+    </j:initialView>
 </j:Application>
 ```
 

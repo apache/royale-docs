@@ -130,30 +130,30 @@ The following piece of code shows the most basic bead structure to use when you 
 
 ```as3
 package beads
-{	
-	import org.apache.royale.core.IBead;
-	import org.apache.royale.core.IStrand;
-	import org.apache.royale.core.UIBase;
-	
-	/**
-	 *  sample code for a bead class
-	 */
-	public class SomeBead implements IBead
-	{
-		protected var _strand:IStrand;
-		
-		/**
-		 *  @copy org.apache.royale.core.IBead#strand
-		 *  
-		 *  @royaleignorecoercion org.apache.royale.core.UIBase;
-		 */
-		public function set strand(value:IStrand):void
-		{
-			_strand = value;
+{
+    import org.apache.royale.core.IBead;
+    import org.apache.royale.core.IStrand;
+    import org.apache.royale.core.UIBase;
+    
+    /**
+     *  sample code for a bead class
+     */
+    public class SomeBead implements IBead
+    {
+        protected var _strand:IStrand;
+        
+        /**
+         *  @copy org.apache.royale.core.IBead#strand
+         *  
+         *  @royaleignorecoercion org.apache.royale.core.UIBase;
+         */
+        public function set strand(value:IStrand):void
+        {
+            _strand = value;
 
-			// do something
-		}
-	}
+            // do something
+        }
+    }
 }
 ```
 

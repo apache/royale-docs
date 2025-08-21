@@ -42,10 +42,10 @@ Here's one example
 
 ```as3
 package com.acme {
-	public interface IFoo {
-		function get name():String;
-		function set name(name:String):void;
-		function sayFoo(output:IOutput):void;
-	}
+    public interface IFoo {
+        function get name():String;
+        function set name(name:String):void;
+        function sayFoo(output:IOutput):void;
+    }
 }
 ```

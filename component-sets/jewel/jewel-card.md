@@ -79,40 +79,40 @@ Finally a `CardActions` with two `BarSection`s (similar to card header). In the 
 
 ```mxml
 <j:Card>
-	<j:CardHeader>
-		<j:BarSection>
-			<j:CardTitle text="Object Collection" className="secondary-normal"/>
-		</j:BarSection>
-		<j:BarSection itemsHorizontalAlign="itemsRight">
-			<j:IconButton unboxed="true" click="assignNewData(avengersComboBox)">
-				<j:icon>
-					<js:MaterialIcon text="{MaterialIconType.SETTINGS_BACKUP_RESTORE}" />
-				</j:icon>
-				<j:beads>
-					<j:ToolTip toolTip="Assign new data"/>
-				</j:beads>
-			</j:IconButton>
-		</j:BarSection>
-	</j:CardHeader>
-	<j:CardPrimaryContent>
-		<j:Label multiline="true">
-			<j:html><![CDATA[<p>This <b>ComboBox</b> is using an object collection as <i>dataProvider</i>. Use <i>labelField</i> to indicate the object property to use as label. A <b>ComboBoxTextPrompt</b> bead is used to show a prompt message.</p>]]></j:html>
-		</j:Label>
-		<j:ComboBox localId="avengersComboBox" labelField="label" dataProvider="{listModel.avengers}">
-			<j:beads>
-				<j:ComboBoxTextPrompt prompt="Avengers Team..."/>
-			</j:beads>
-		</j:ComboBox>
-	</j:CardPrimaryContent>
-	<j:CardActions itemsVerticalAlign="itemsCenter">
-		<j:BarSection>
-			<j:Label localId="avengersComboBoxResult" html="{describeItem(avengersComboBox.selectedItem)}"/>
-		</j:BarSection>
-		<j:BarSection gap="3" itemsHorizontalAlign="itemsRight">
-			<j:Label text="Select Index: "/>
-			<j:NumericStepper valueChange="avengersComboBox.selectedIndex = event.target.value" minimum="0" maximum="8"/>
-		</j:BarSection>
-	</j:CardActions>
+    <j:CardHeader>
+        <j:BarSection>
+            <j:CardTitle text="Object Collection" className="secondary-normal"/>
+        </j:BarSection>
+        <j:BarSection itemsHorizontalAlign="itemsRight">
+            <j:IconButton unboxed="true" click="assignNewData(avengersComboBox)">
+                <j:icon>
+                    <js:MaterialIcon text="{MaterialIconType.SETTINGS_BACKUP_RESTORE}" />
+                </j:icon>
+                <j:beads>
+                    <j:ToolTip toolTip="Assign new data"/>
+                </j:beads>
+            </j:IconButton>
+        </j:BarSection>
+    </j:CardHeader>
+    <j:CardPrimaryContent>
+        <j:Label multiline="true">
+            <j:html><![CDATA[<p>This <b>ComboBox</b> is using an object collection as <i>dataProvider</i>. Use <i>labelField</i> to indicate the object property to use as label. A <b>ComboBoxTextPrompt</b> bead is used to show a prompt message.</p>]]></j:html>
+        </j:Label>
+        <j:ComboBox localId="avengersComboBox" labelField="label" dataProvider="{listModel.avengers}">
+            <j:beads>
+                <j:ComboBoxTextPrompt prompt="Avengers Team..."/>
+            </j:beads>
+        </j:ComboBox>
+    </j:CardPrimaryContent>
+    <j:CardActions itemsVerticalAlign="itemsCenter">
+        <j:BarSection>
+            <j:Label localId="avengersComboBoxResult" html="{describeItem(avengersComboBox.selectedItem)}"/>
+        </j:BarSection>
+        <j:BarSection gap="3" itemsHorizontalAlign="itemsRight">
+            <j:Label text="Select Index: "/>
+            <j:NumericStepper valueChange="avengersComboBox.selectedIndex = event.target.value" minimum="0" maximum="8"/>
+        </j:BarSection>
+    </j:CardActions>
 </j:Card>
 ```
 

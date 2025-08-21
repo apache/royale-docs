@@ -151,7 +151,7 @@ Note that static class objects are always dynamic, as are Interface Objects
 
 ```
 if(isDynamicObject(myObject)){
-	trace("yay!);
+    trace("yay!);
 }
 ```
 

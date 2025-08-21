@@ -70,11 +70,11 @@ The property defined below includes both getter and setter functions, and they a
 private var _memberProp = "hello";
 
 public function get memberProp() {
-	return _memberProp;
+    return _memberProp;
 }
 
 public function set memberProp(value) {
-	_memberProp = value;
+    _memberProp = value;
 }
 ```
 
@@ -84,7 +84,7 @@ The return type of the function below is `Number` because the result of the `ret
 
 ```as3
 function add(a:Number, b:Number) {
-	return a + b;
+    return a + b;
 }
 ```
 
@@ -93,14 +93,14 @@ If a function contains no `return` statements, the inferred type is `void`.
 ```as3
 function log(text:String, source:String = null)
 {
-	if (source)
-	{
-		trace("[" + source + "] " + text);
-	}
-	else
-	{
-		trace(text);
-	}
+    if (source)
+    {
+        trace("[" + source + "] " + text);
+    }
+    else
+    {
+        trace(text);
+    }
 }
 ```
 
@@ -109,11 +109,11 @@ If a function contains multiple `return` statements, the common base class of al
 ```as3
 function getResult(a:A, b:B, preferB:Boolean = true)
 {
-	if (preferB)
-	{
-		return b;
-	}
-	return a;
+    if (preferB)
+    {
+        return b;
+    }
+    return a;
 }
 ```
 
@@ -161,12 +161,12 @@ The return type of the function below is `Number` because the function returns a
 
 ```as3
 function round(value:Number) {
-	var integer = int(value);
-	var difference = value - integer;
-	if (difference >= 0.5) {
-		return integer + 1.0;
-	}
-	return integer;
+    var integer = int(value);
+    var difference = value - integer;
+    if (difference >= 0.5) {
+        return integer + 1.0;
+    }
+    return integer;
 }
 ```
 

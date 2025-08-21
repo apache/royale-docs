@@ -33,15 +33,15 @@ Create a file named *leftPad.as* and add the following code:
 ```actionscript
 package
 {
-	public function leftPad(input:String, minLength:int, char:String = " "):String
-	{
-		var result:String = input;
-		while(result.length < minLength)
-		{
-			result = char + result;
-		}
-		return result;
-	}
+    public function leftPad(input:String, minLength:int, char:String = " "):String
+    {
+        var result:String = input;
+        while(result.length < minLength)
+        {
+            result = char + result;
+        }
+        return result;
+    }
 }
 ```
 
@@ -92,9 +92,9 @@ For a project compiled with Apache Royale, the `main` field should point to the 
 
 ```
 {
-	"name": "my-left-pad",
-	"version": "1.0.0",
-	"main": "bin/js-release/index.js"
+    "name": "my-left-pad",
+    "version": "1.0.0",
+    "main": "bin/js-release/index.js"
 }
 ```
 

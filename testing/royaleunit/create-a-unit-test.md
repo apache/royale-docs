@@ -31,24 +31,24 @@ A test case is a class that defines a collection of tests. Each test is written 
 ```as3
 package com.example
 {
-	import org.apache.royale.test.Assert;
+    import org.apache.royale.test.Assert;
 
-	public class MyFirstTests
-	{
-		[Test]
-		public function testSimpleAdd():void
-		{
-			var result:Number = 2 + 3;
-			Assert.assertEquals(result, 5);
-		}
-		
-		[Test]
-		public function testSimpleSubtract():void
-		{
-			var result:Number = 6 - 4;
-			Assert.assertEquals(result, 2);
-		}
-	}
+    public class MyFirstTests
+    {
+        [Test]
+        public function testSimpleAdd():void
+        {
+            var result:Number = 2 + 3;
+            Assert.assertEquals(result, 5);
+        }
+        
+        [Test]
+        public function testSimpleSubtract():void
+        {
+            var result:Number = 6 - 4;
+            Assert.assertEquals(result, 2);
+        }
+    }
 }
 ```
 
@@ -74,28 +74,28 @@ Create a simple Apache Royale application in an [MXML](features/mxml) file with 
 ```mxml
 <?xml version="1.0" encoding="utf-8"?>
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
-				xmlns:js="library://ns.apache.org/royale/basic" 
-				xmlns:test="org.apache.royale.test.*" 
-				applicationComplete="runTests()">
-	<fx:Declarations>
-		<test:RoyaleUnitCore id="core"/>
-	</fx:Declarations>
-	<fx:Script>
-		<![CDATA[
-			import org.apache.royale.test.listeners.TraceListener;
-			import com.example.MyFirstTests;
-			
-			public function runTests():void
-			{
-				core.addListener(new TraceListener());
-				core.runClasses(MyFirstTests);
-			}
-			
-		]]>
-	</fx:Script>
-	<js:valuesImpl>
-		<js:SimpleValuesImpl values="[]"/>
-	</js:valuesImpl>
+                xmlns:js="library://ns.apache.org/royale/basic" 
+                xmlns:test="org.apache.royale.test.*" 
+                applicationComplete="runTests()">
+    <fx:Declarations>
+        <test:RoyaleUnitCore id="core"/>
+    </fx:Declarations>
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.test.listeners.TraceListener;
+            import com.example.MyFirstTests;
+            
+            public function runTests():void
+            {
+                core.addListener(new TraceListener());
+                core.runClasses(MyFirstTests);
+            }
+            
+        ]]>
+    </fx:Script>
+    <js:valuesImpl>
+        <js:SimpleValuesImpl values="[]"/>
+    </js:valuesImpl>
 </js:Application>
 ```
 

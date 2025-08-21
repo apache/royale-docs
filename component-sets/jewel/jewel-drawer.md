@@ -56,25 +56,25 @@ In __MXML__ declare a `Drawer` like this:
 
 ```mxml
 <j:Drawer>
-	<j:beads>
-		<j:ResponsiveDrawer auto="true"/>
-	</j:beads>
+    <j:beads>
+        <j:ResponsiveDrawer auto="true"/>
+    </j:beads>
 
-	<j:DrawerHeader>
-		<j:ImageButton src="assets/apache-royale-jewel-logo-white.svg"/>
-	</j:DrawerHeader>
+    <j:DrawerHeader>
+        <j:ImageButton src="assets/apache-royale-jewel-logo-white.svg"/>
+    </j:DrawerHeader>
 
-	<j:DrawerContent>
-		<j:Navigation/>
-		<j:Divider/>
-		<j:Navigation/>
-	</j:DrawerContent>
+    <j:DrawerContent>
+        <j:Navigation/>
+        <j:Divider/>
+        <j:Navigation/>
+    </j:DrawerContent>
 
-	<j:DrawerFooter>
-		<j:BarSection>
-			<j:Label text="Some Footer Content"/>
-		</j:BarSection>
-	</j:DrawerFooter>
+    <j:DrawerFooter>
+        <j:BarSection>
+            <j:Label text="Some Footer Content"/>
+        </j:BarSection>
+    </j:DrawerFooter>
 
 </j:Drawer>
 ```

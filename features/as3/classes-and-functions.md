@@ -39,11 +39,11 @@ Constructors in ActionScript are optional. If you need to initialize something i
 
 ```as3
 package {
-	public class SubClass() {
-		foo = "foo";
-		super("baz")
-	}
-	private var foo:String
+    public class SubClass() {
+        foo = "foo";
+        super("baz")
+    }
+    private var foo:String
 }
 ```
 
@@ -70,11 +70,11 @@ You don't need to declare a class to use code. You can have "utility" functions 
 
 ```as3
 package com.acme {
-	public function doAwesome(notSoAwesome:Object):Awesome {
-		return new Awesome(
-			doSomethingComplicatedInTheSamePackage(notSoAwesome)
-		);
-	}
+    public function doAwesome(notSoAwesome:Object):Awesome {
+        return new Awesome(
+            doSomethingComplicatedInTheSamePackage(notSoAwesome)
+        );
+    }
 }
 ```
 

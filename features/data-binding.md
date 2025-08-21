@@ -66,48 +66,48 @@ You can bind the value of a property in the user interface to that value of anot
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <j:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
-				xmlns:j="library://ns.apache.org/royale/jewel"
-				pageTitle="Data Binding test">
-	
-	<fx:Script>
-		<![CDATA[
+                xmlns:j="library://ns.apache.org/royale/jewel"
+                pageTitle="Data Binding test">
+    
+    <fx:Script>
+        <![CDATA[
 
-			private function textInputChange(event:Event):void
-			{
-				textToChange.text = event.target.text;
-			}		
+            private function textInputChange(event:Event):void
+            {
+                textToChange.text = event.target.text;
+            }
 
-		]]>
-	</fx:Script>
-	
-		<fx:Binding
-		source="input1.text"
-		destination="textToChange.text"/>
-		
-		<fx:Binding
-		source="input2.text"
-		destination="textToChange.text"/>
-	
-	<j:initialView>
-		<j:View width="100%" height="100%">
-			<j:VGroup width="100%" height="100%" gap="5" >		
-				<j:TextInput id="input1" width="300" text="" change="textInputChange(event)">
-					<j:beads>
-						<j:TextPrompt prompt="Type something"/>
-					</j:beads>			
-				</j:TextInput>
-				
-        <j:Label id="textToChange" text="This is a text" />	
-				
-			  <j:TextInput id="input2" width="300" text="" change="textInputChange(event)">
-					<j:beads>
-						<j:TextPrompt prompt="Type something else"/>
-					</j:beads>
-		    </j:TextInput >
-	
-			</j:VGroup>	
-		</j:View>
-	</j:initialView>
+        ]]>
+    </fx:Script>
+    
+        <fx:Binding
+        source="input1.text"
+        destination="textToChange.text"/>
+        
+        <fx:Binding
+        source="input2.text"
+        destination="textToChange.text"/>
+    
+    <j:initialView>
+        <j:View width="100%" height="100%">
+            <j:VGroup width="100%" height="100%" gap="5" >
+                <j:TextInput id="input1" width="300" text="" change="textInputChange(event)">
+                    <j:beads>
+                        <j:TextPrompt prompt="Type something"/>
+                    </j:beads>
+                </j:TextInput>
+                
+        <j:Label id="textToChange" text="This is a text" />
+                
+              <j:TextInput id="input2" width="300" text="" change="textInputChange(event)">
+                    <j:beads>
+                        <j:TextPrompt prompt="Type something else"/>
+                    </j:beads>
+            </j:TextInput >
+    
+            </j:VGroup>
+        </j:View>
+    </j:initialView>
 </j:Application>
 ```
 

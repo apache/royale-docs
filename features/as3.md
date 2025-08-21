@@ -31,23 +31,23 @@ The following code snippet shows some of ActionScript's core syntax:
 ```as3
 package org.apache.royale
 {
-	public class WelcomeToActionScript
-	{
-		public function WelcomeToActionScript()
-		{
-			var message:String = "Hello world";
-			sayHi(message, 3);
-		}
+    public class WelcomeToActionScript
+    {
+        public function WelcomeToActionScript()
+        {
+            var message:String = "Hello world";
+            sayHi(message, 3);
+        }
 
-		private function sayHi(message:String, times:int):void
-		{
-			for (var i:int = 0; i < times; i++)
-			{
-				// prints message to debug console
-				trace(message);
-			}
-		}
-	}
+        private function sayHi(message:String, times:int):void
+        {
+            for (var i:int = 0; i < times; i++)
+            {
+                // prints message to debug console
+                trace(message);
+            }
+        }
+    }
 }
 ```
 

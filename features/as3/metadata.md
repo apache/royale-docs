@@ -37,7 +37,7 @@ The next example in **MXML** decorates the class with `[Event]` metadata inside 
 
 ```mxml
 <fx:Metadata>
-	[Event(name="someEvent", type="org.apache.royale.events.Event")]
+    [Event(name="someEvent", type="org.apache.royale.events.Event")]
 </fx:Metadata>
 ```
 
@@ -633,7 +633,7 @@ For example, you may create an **MXML** component that defines a new event. To m
 
 ```mxml
 <fx:Metadata>
-	[Event(name="someEvent",type="org.apache.royale.events.Event")]
+    [Event(name="someEvent",type="org.apache.royale.events.Event")]
 </fx:Metadata>
 ```
 
@@ -643,7 +643,7 @@ In an MXML file, you insert the metadata tags either in an `<fx:Script>` block a
 
 ```mxml
 <j:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
-	xmlns:j="library://ns.apache.org/royale/jewel">
+    xmlns:j="library://ns.apache.org/royale/jewel">
 
     <fx:Metadata>
         [Event("enableChange",type="org.apache.royale.events.Event")]

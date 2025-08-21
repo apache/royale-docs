@@ -45,7 +45,7 @@ In __MXML__ declare an `Application` as the root tag of the main application fil
 
 ```mxml
 <j:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
-	xmlns:j="library://ns.apache.org/royale/jewel">
+    xmlns:j="library://ns.apache.org/royale/jewel">
 
     <j:valuesImpl>
          <js:SimpleCSSValuesImpl />
@@ -63,7 +63,7 @@ If the filename is `App.mxml`, building the application will generate the follow
 
 ```javascript
 <script type="text/javascript">
-	new App().start();
+    new App().start();
 </script>
 ```
 

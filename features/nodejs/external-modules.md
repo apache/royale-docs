@@ -43,11 +43,11 @@ Create a file named *boxen.as* and add the following code:
 ```actionscript
 package
 {
-	/**
-	 * @externs
-	 */
-	[JSModule(name="boxen")]
-	public native function boxen(message:String, options:Object = null):String;
+    /**
+     * @externs
+     */
+    [JSModule(name="boxen")]
+    public native function boxen(message:String, options:Object = null):String;
 }
 ```
 
@@ -89,14 +89,14 @@ Create a file named *MyScript.as*, and add the following content:
 ```actionscript
 package
 {
-	public class MyScript
-	{
-		public function MyScript()
-		{
-			var result:String = boxen("I loaded a module!");
-			trace(result);
-		}
-	}
+    public class MyScript
+    {
+        public function MyScript()
+        {
+            var result:String = boxen("I loaded a module!");
+            trace(result);
+        }
+    }
 }
 ```
 

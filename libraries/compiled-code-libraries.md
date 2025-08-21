@@ -68,12 +68,12 @@ In order for classes to be included in your SWC, you need to actually use them s
 
 ```actionscript
 package {
-	internal class MyLibrary {
-		import com.example.ClassA;ClassA;
-		import com.example.ClassB;ClassB;
-		import com.example.ClassC;ClassC;
-		import com.example.ClassD;ClassD;
-	}
+    internal class MyLibrary {
+        import com.example.ClassA;ClassA;
+        import com.example.ClassB;ClassB;
+        import com.example.ClassC;ClassC;
+        import com.example.ClassD;ClassD;
+    }
 }
 ```
 
@@ -88,9 +88,9 @@ Just referencing the classes like that is enough to have them included.
 
 MyComponent1
 {
-	IBeadModel: ClassReference("com.example.ComponentModel");
-	IBeadView:  ClassReference("com.example.ComponentView");			
-	IBeadController: ClassReference("com.example.ComponentController");	
+    IBeadModel: ClassReference("com.example.ComponentModel");
+    IBeadView:  ClassReference("com.example.ComponentView");
+    IBeadController: ClassReference("com.example.ComponentController");
 }
 
 ```
@@ -128,12 +128,12 @@ Note the important pieces in the config:
         </external-library-path>
         <allow-subclass-overrides>true</allow-subclass-overrides>
         
-		<mxml>
-			<children-as-data>true</children-as-data>
-		</mxml>
-		<binding-value-change-event>org.apache.royale.events.ValueChangeEvent</binding-value-change-event>
-		<binding-value-change-event-kind>org.apache.royale.events.ValueChangeEvent</binding-value-change-event-kind>
-		<binding-value-change-event-type>valueChange</binding-value-change-event-type>
+        <mxml>
+            <children-as-data>true</children-as-data>
+        </mxml>
+        <binding-value-change-event>org.apache.royale.events.ValueChangeEvent</binding-value-change-event>
+        <binding-value-change-event-kind>org.apache.royale.events.ValueChangeEvent</binding-value-change-event-kind>
+        <binding-value-change-event-type>valueChange</binding-value-change-event-type>
 
         <define>
             <name>COMPILE::SWF</name>
@@ -151,7 +151,7 @@ Note the important pieces in the config:
           <name>NonCommittingChangeEvent</name>
           <name>Transient</name>
         </keep-as3-metadata>
-	  
+      
         <locale/>
         
         <library-path/>
@@ -198,12 +198,12 @@ Note the important pieces in the config:
         </js-external-library-path>
         <allow-subclass-overrides>true</allow-subclass-overrides>
         
-		<mxml>
-			<children-as-data>true</children-as-data>
-		</mxml>
-		<binding-value-change-event>org.apache.royale.events.ValueChangeEvent</binding-value-change-event>
-		<binding-value-change-event-kind>org.apache.royale.events.ValueChangeEvent</binding-value-change-event-kind>
-		<binding-value-change-event-type>valueChange</binding-value-change-event-type>
+        <mxml>
+            <children-as-data>true</children-as-data>
+        </mxml>
+        <binding-value-change-event>org.apache.royale.events.ValueChangeEvent</binding-value-change-event>
+        <binding-value-change-event-kind>org.apache.royale.events.ValueChangeEvent</binding-value-change-event-kind>
+        <binding-value-change-event-type>valueChange</binding-value-change-event-type>
 
         <define>
             <name>COMPILE::SWF</name>
@@ -221,7 +221,7 @@ Note the important pieces in the config:
           <name>NonCommittingChangeEvent</name>
           <name>Transient</name>
         </keep-as3-metadata>
-	  
+      
         <locale/>
         
         <library-path/>
@@ -295,7 +295,7 @@ Your asconfig.json file should look like this the file below. You can use any st
         "output": "target/MyLibrary.swc"
     },
     "additionalOptions":[
-			//include any options you want here
+            //include any options you want here
     ]
 }
 ```

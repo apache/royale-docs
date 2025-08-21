@@ -43,7 +43,7 @@ Specify a method to run after each test in this class.
 [After]
 public static function after():void
 {
-	// runs after every test method in the same class
+    // runs after every test method in the same class
 }
 ```
 
@@ -55,7 +55,7 @@ Specify a static method to run one time, after all tests have completed in this 
 [AfterClass]
 public static function afterClass():void
 {
-	// runs after all test methods in the same class have completed
+    // runs after all test methods in the same class have completed
 }
 ```
 
@@ -69,7 +69,7 @@ Specify a method to run before each test in this class.
 [Before]
 public static function before():void
 {
-	// runs before every test method in the same class
+    // runs before every test method in the same class
 }
 ```
 
@@ -81,7 +81,7 @@ Specify a static method to run one time, before any tests have run in this class
 [BeforeClass]
 public static function beforeClass():void
 {
-	// runs before all test methods in the same class
+    // runs before all test methods in the same class
 }
 ```
 
@@ -96,7 +96,7 @@ Specify that a specific test method should not run.
 [Test]
 public function ignoredTest():void
 {
-	// this test will not be run
+    // this test will not be run
 }
 ```
 
@@ -123,8 +123,8 @@ Specify that a class is a test suite. Should be combined with [`[RunWith]` metad
 [RunWith("org.apache.royale.test.runners.SuiteRunner")]
 public class MySuite()
 {
-	public var myTestCase:MyTestCase;
-	public var myOtherSuite:MyOtherSuite;
+    public var myTestCase:MyTestCase;
+    public var myOtherSuite:MyOtherSuite;
 }
 ```
 
@@ -138,8 +138,8 @@ Specify that a method is a test that should be run.
 [Test]
 public function testSimpleAdd():void
 {
-	var result:Number = 2 + 3;
-	Assert.assertEquals(result, 5);
+    var result:Number = 2 + 3;
+    Assert.assertEquals(result, 5);
 }
 ```
 
@@ -151,10 +151,10 @@ To test asynchronous functionality, add the `async` modifier to the `[Test]` met
 [Test(async)]
 public function testAsync():void
 {
-	Async.delayCall(this, function():void
-	{
-		// add asserts here
-	}, 250);
+    Async.delayCall(this, function():void
+    {
+        // add asserts here
+    }, 250);
 }
 ```
 
@@ -183,7 +183,7 @@ To require that a specific exception is thrown while a test is running, set the 
 [Test(expected="RangeError")]
 public function testWithExpectedException():void
 {
-	throw new RangeError("Out of range");
+    throw new RangeError("Out of range");
 }
 ```
 

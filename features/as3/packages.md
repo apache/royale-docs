@@ -28,10 +28,10 @@ Code in ActionScript is structured the same way Java code is structured. Each Ac
 
 ```as3
 package {
-	class Foo {
-		public function Foo() {
-		}
-	}
+    class Foo {
+        public function Foo() {
+        }
+    }
 }
 ```
 
@@ -39,10 +39,10 @@ You can name your folder structure any way you like, but an accepted convention 
 
 ```as3
 package com.acme {
-	class MyFoo {
-		public function MyFoo() {
-		}
-	}
+    class MyFoo {
+        public function MyFoo() {
+        }
+    }
 }
 ```
 

@@ -43,12 +43,12 @@ In __MXML__ declare a `VGroup` like this:
 
 ```mxml
 <j:VGroup width="100%" height="300" gap="3" itemsVerticalAlign="itemsBottom">
-	<j:Card width="50%" height="100">
-		<j:Label text="vert bottom"/>
-	</j:Card>
-	<j:Card width="50%" height="100">
-		<j:Label text="vert bottom"/>
-	</j:Card>
+    <j:Card width="50%" height="100">
+        <j:Label text="vert bottom"/>
+    </j:Card>
+    <j:Card width="50%" height="100">
+        <j:Label text="vert bottom"/>
+    </j:Card>
 </j:VGroup>
 ```
 

@@ -43,12 +43,12 @@ In __MXML__ declare a `HGroup` like this:
 
 ```mxml
 <j:HGroup width="100%" height="300" gap="3" itemsHorizontalAlign="itemsCenter">
-	<j:Card width="100" height="50%">
-		<j:Label text="horz center"/>
-	</j:Card>
-	<j:Card width="100" height="50%">
-		<j:Label text="horz center"/>
-	</j:Card>
+    <j:Card width="100" height="50%">
+        <j:Label text="horz center"/>
+    </j:Card>
+    <j:Card width="100" height="50%">
+        <j:Label text="horz center"/>
+    </j:Card>
 </j:HGroup>
 ```
 

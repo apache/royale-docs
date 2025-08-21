@@ -43,12 +43,12 @@ In __MXML__ declare a `HContainer` like this:
 
 ```mxml
 <j:HContainer width="100%" height="300" gap="3" itemsHorizontalAlign="itemsCenter">
-	<j:Card width="100" height="50%">
-		<j:Label text="horz center"/>
-	</j:Card>
-	<j:Card width="100" height="50%">
-		<j:Label text="horz center"/>
-	</j:Card>
+    <j:Card width="100" height="50%">
+        <j:Label text="horz center"/>
+    </j:Card>
+    <j:Card width="100" height="50%">
+        <j:Label text="horz center"/>
+    </j:Card>
 </j:HContainer>
 ```
 

@@ -47,7 +47,7 @@ In __MXML__ declare a `ResponsiveView` like this:
 
 ```mxml
 <j:ResponsiveView xmlns:fx="http://ns.adobe.com/mxml/2009" 
-	xmlns:j="library://ns.apache.org/royale/jewel">
+    xmlns:j="library://ns.apache.org/royale/jewel">
 
     <!-- ResponsiveView code goes here -->
 </j:ResponsiveView>
@@ -59,13 +59,13 @@ You can also set the ResponsiveView directly in the application mxml file inside
 
 ```mxml
 <j:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
-	xmlns:j="library://ns.apache.org/royale/jewel">
-	...
-	<j:initialView>
-		<j:ResponsiveView>
-			<!-- ResponsiveView code goes here -->
-		</j:ResponsiveView>
-	</j:initialView>
+    xmlns:j="library://ns.apache.org/royale/jewel">
+    ...
+    <j:initialView>
+        <j:ResponsiveView>
+            <!-- ResponsiveView code goes here -->
+        </j:ResponsiveView>
+    </j:initialView>
 </j:Application>
 ```
 

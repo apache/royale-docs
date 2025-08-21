@@ -43,28 +43,28 @@ You might implement a global logger as a singleton by using a private constructo
 ```as3
 package
 {
-	public class Logger
-	{
-		private static var _instance:Logger;
+    public class Logger
+    {
+        private static var _instance:Logger;
 
-		public static function getInstance():Logger
-		{
-			if(!_instance)
-			{
-				_instance = new Logger();
-			}
-			return _instance;
-		}
+        public static function getInstance():Logger
+        {
+            if(!_instance)
+            {
+                _instance = new Logger();
+            }
+            return _instance;
+        }
 
-		private function Logger()
-		{
-		}
+        private function Logger()
+        {
+        }
 
-		public function log(message:String):void
-		{
-			trace("LOG: " + message);
-		}
-	}
+        public function log(message:String):void
+        {
+            trace("LOG: " + message);
+        }
+    }
 }
 ```
 
@@ -73,14 +73,14 @@ If you were to attempt to instantate this `Logger` class, the compiler would fai
 ```as3
 package com.example
 {
-	public class MyApplication
-	{
-		public function MyApplication()
-		{
-			// Error: Attempted access of inaccessible constructor through a reference with static type Logger
-			var obj:Logger = new Logger();
-		}
-	}
+    public class MyApplication
+    {
+        public function MyApplication()
+        {
+            // Error: Attempted access of inaccessible constructor through a reference with static type Logger
+            var obj:Logger = new Logger();
+        }
+    }
 }
 ```
 
@@ -89,13 +89,13 @@ However, you may call `Logger.getInstance()` to access an instance that is creat
 ```as3
 package com.example
 {
-	public class MyApplication
-	{
-		public function MyApplication()
-		{
-			Logger.getInstance().log("Application started");
-		}
-	}
+    public class MyApplication
+    {
+        public function MyApplication()
+        {
+            Logger.getInstance().log("Application started");
+        }
+    }
 }
 ```
 

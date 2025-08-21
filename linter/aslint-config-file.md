@@ -30,9 +30,9 @@ The root of this file is an `<aslint-config>` element. To specify a [linter opti
 
 ```xml
 <aslint-config>
-	<max-params>5</max-params>
-	<no-dynamic-class>true</no-dynamic-class>
-	<line-comment-position>beside</line-comment-position>
+    <max-params>5</max-params>
+    <no-dynamic-class>true</no-dynamic-class>
+    <line-comment-position>beside</line-comment-position>
 </aslint-config>
 ```
 

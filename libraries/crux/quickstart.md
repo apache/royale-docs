@@ -48,12 +48,12 @@ Configuring Crux in your Royale application is very straightforward: declare Cru
                xmlns:config="crux.quickstart.config.*"
                initialize="setUp()">
     <fx:Script>
-		<![CDATA[
+        <![CDATA[
         public function setUp():void {
             tracer('application setUp stub');
         }
         ]]>
-	</fx:Script>
+    </fx:Script>
 
     <j:beads>
         <!-- support for simulated stage events in javascript (needed for Crux view processing)-->
@@ -89,14 +89,14 @@ Non-visual components that you want Crux to manage are defined in a BeanProvider
 
 ```mxml
 <crux:BeanProvider
-	xmlns:fx="http://ns.adobe.com/mxml/2009"
-	xmlns:crux="library://ns.apache.org/royale/crux"
-	xmlns:service="crux.quickstart.service.*"
-	xmlns:controller="crux.quickstart.controller.*">
-	
-	<service:UserService id="userService"/>
-	<controller:UserController id="userController"/>
-	
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:crux="library://ns.apache.org/royale/crux"
+    xmlns:service="crux.quickstart.service.*"
+    xmlns:controller="crux.quickstart.controller.*">
+    
+    <service:UserService id="userService"/>
+    <controller:UserController id="userController"/>
+    
 </crux:BeanProvider>
 ```
 
@@ -135,11 +135,11 @@ In addition to injecting a bean, you can inject individual bean properties. In t
     tabletNumerator="1" tabletDenominator="2"
     phoneNumerator="1" phoneDenominator="1">
 
-	<j:beads>
-	    <js:ContainerDataBinding/>
-	</j:beads>
+    <j:beads>
+        <js:ContainerDataBinding/>
+    </j:beads>
 
-	<fx:Script>
+    <fx:Script>
     <![CDATA[
         import crux.quickstart.event.UserEvent;
         import crux.quickstart.model.User;
@@ -160,8 +160,8 @@ In addition to injecting a bean, you can inject individual bean properties. In t
             this.user = val;
         }
     ]]>
-	</fx:Script>
-	
+    </fx:Script>
+    
     <j:Form>
         <j:FormHeading label="User Form (Crux Quickstart Example)"/>
         <j:FormItem label="User ID: ">

@@ -33,12 +33,12 @@ Create a file named *MyServer.as*, and add the following code:
 ```actionscript
 package
 {
-	public class MyServer
-	{
-		public function MyServer()
-		{
-		}
-	}
+    public class MyServer
+    {
+        public function MyServer()
+        {
+        }
+    }
 }
 ```
 
@@ -49,34 +49,34 @@ Next, let's expand this code to create a simple server using the [http](https://
 ```actionscript
 package
 {
-	import http.IncomingMessage;
-	import http.Server;
-	import http.ServerResponse;
+    import http.IncomingMessage;
+    import http.Server;
+    import http.ServerResponse;
 
-	public class MyServer
-	{
-		private static const HOSTNAME:String = "localhost";
-		private static const PORT:int = 3000;
+    public class MyServer
+    {
+        private static const HOSTNAME:String = "localhost";
+        private static const PORT:int = 3000;
 
-		public function MyServer()
-		{
-			var server:Server = http.createServer(handleRequest);
+        public function MyServer()
+        {
+            var server:Server = http.createServer(handleRequest);
 
-			server.listen(PORT, HOSTNAME, handleServerStart);
-		}
+            server.listen(PORT, HOSTNAME, handleServerStart);
+        }
 
-		private function handleRequest(req:IncomingMessage, res:ServerResponse):void
-		{
-			res.statusCode = 200;
-			res.setHeader("Content-Type", "text/plain");
-			res.end("Hello World\n");
-		}
+        private function handleRequest(req:IncomingMessage, res:ServerResponse):void
+        {
+            res.statusCode = 200;
+            res.setHeader("Content-Type", "text/plain");
+            res.end("Hello World\n");
+        }
 
-		private function handleServerStart():void
-		{
-			console.log("Server running at http://" + HOSTNAME + ":" + PORT + "/");
-		}
-	}
+        private function handleServerStart():void
+        {
+            console.log("Server running at http://" + HOSTNAME + ":" + PORT + "/");
+        }
+    }
 }
 ```
 

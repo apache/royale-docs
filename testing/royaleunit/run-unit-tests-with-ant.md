@@ -56,22 +56,22 @@ On Windows, set the `command` to an *.exe* file:
 
 ```xml
 <royaleunit player="html" swf="path/to/file.html"
-	command="c:/Program Files/Google/Chrome/Application/chrome.exe"/>
+    command="c:/Program Files/Google/Chrome/Application/chrome.exe"/>
 ```
 
 On macOS, set the `command` to the executable **inside** an *.app* package:
 
 ```xml
 <royaleunit player="html" swf="${basedir}/bin/js-debug/index.html"
-	command="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"/>
+    command="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"/>
 ```
 
 If you need to pass arguments to the executable, set the `commandArgs` attribute:
 
 ```xml
 <royaleunit player="html" swf="path/to/file.html"
-	command="c:/Program Files/Google/Chrome/Application/chrome.exe"
-	commandArgs="--no-sandbox --user-data-dir=custom_chrome_profile --no-first-run"/>
+    command="c:/Program Files/Google/Chrome/Application/chrome.exe"
+    commandArgs="--no-sandbox --user-data-dir=custom_chrome_profile --no-first-run"/>
 ```
 
 ## Run unit tests in Adobe Flash Player
@@ -88,14 +88,14 @@ On Windows, set the `command` to an *.exe* file:
 
 ```xml
 <royaleunit player="flash" swf="bin-debug/ExampleApp.html"
-	command="path/to/flashplayer_32_sa_debug.exe"/>
+    command="path/to/flashplayer_32_sa_debug.exe"/>
 ```
 
 On macOS, set the `command` to the executable **inside** an *.app* package:
 
 ```xml
 <royaleunit player="flash" swf="bin-debug/ExampleApp.html"
-	command="/Applications/Flash Player.app/Contents/MacOS/Flash Player Debugger"/>
+    command="/Applications/Flash Player.app/Contents/MacOS/Flash Player Debugger"/>
 ```
 
 ## Useful options

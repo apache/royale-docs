@@ -55,22 +55,22 @@ This is the code of the AS3 dialogPolyfill.as class file:
 ////////////////////////////////////////////////////////////////////////////////
 package
 {
-	/**
-	 * @externs
-	 */
-	COMPILE::JS
-	public class dialogPolyfill
-	{
-		/** 
-		 * <inject_html>
-		 * <script src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.min.js"></script>
-		 * <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.min.css">
-		 * </inject_html>
-		 */
-		public function dialogPolyfill(){}
-		 
-		public static function registerDialog(dialog:Element):void {}
-	}
+    /**
+     * @externs
+     */
+    COMPILE::JS
+    public class dialogPolyfill
+    {
+        /** 
+         * <inject_html>
+         * <script src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.min.js"></script>
+         * <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.min.css">
+         * </inject_html>
+         */
+        public function dialogPolyfill(){}
+         
+        public static function registerDialog(dialog:Element):void {}
+    }
 }
 ```
 

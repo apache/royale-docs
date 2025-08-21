@@ -40,7 +40,7 @@ In Apache Royale you can write an `mx:RemoteObject` like this:
 
 ```mxml
 <fx:Declarations>
-    	<mx:HTTPService id="srv" useProxy="false" resultFormat="text"
+        <mx:HTTPService id="srv" useProxy="false" resultFormat="text"
             result="resultHandler(event)" fault="faultHandler(event)"/>
 </fx:Declarations>
 ```

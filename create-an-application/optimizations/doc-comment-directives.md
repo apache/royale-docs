@@ -61,7 +61,7 @@ This means that for:
 
 ```as3
 class MyThing {  
-	public var myImportantVar:String = 'myValue';  
+    public var myImportantVar:String = 'myValue';  
 }
 ```
 
@@ -99,12 +99,12 @@ A simplistic, illustrative example is:
 
 ```as3
 if (myVar is MyClass) { //this generates code to check if myVar is of type 'MyClass'
-	(myVar as MyClass).myClassMethod(); 
-	//the above normally generates similar code to check if myVar is of type 'MyClass'
-	//or a subclass of MyClass, and if it is not, treats it as null
-	MyClass(myVar).myOtherClassMethod(); 
-	//the above normally generates similar code to check if myVar is of type 'MyClass'
-	//or a subclass of MyClass, and if it is not, throws an error
+    (myVar as MyClass).myClassMethod(); 
+    //the above normally generates similar code to check if myVar is of type 'MyClass'
+    //or a subclass of MyClass, and if it is not, treats it as null
+    MyClass(myVar).myOtherClassMethod(); 
+    //the above normally generates similar code to check if myVar is of type 'MyClass'
+    //or a subclass of MyClass, and if it is not, throws an error
 }
 ```
 
@@ -140,10 +140,10 @@ A simplistic example is:
  * setting goes here
  */
 public function testResolveUncertain():void {
-	var myClass:Class = int;
-	if (new myClass(30) === 30) trace('it worked!);
-	var myOtherClass:Class = String;
-	if (new myOtherClass('test') === 'test') trace('it worked again!);
+    var myClass:Class = int;
+    if (new myClass(30) === 30) trace('it worked!);
+    var myOtherClass:Class = String;
+    if (new myOtherClass('test') === 'test') trace('it worked again!);
 }
 ```
 
@@ -180,12 +180,12 @@ A simplistic example is:
  * setting goes here
  */
 public function myTest():void {
-	var vi:Vector.<int> = new <int>[0, 1, 2, 3, 4];
-	vi[8] = 0; 
-	//index 8 above is too high
-	//by default this will throw a RangeError, but if 
-	//@royalesuppressvectorindexcheck is used to suppress index checking,
-	//no runtime error would be thrown in javascript.
+    var vi:Vector.<int> = new <int>[0, 1, 2, 3, 4];
+    vi[8] = 0; 
+    //index 8 above is too high
+    //by default this will throw a RangeError, but if 
+    //@royalesuppressvectorindexcheck is used to suppress index checking,
+    //no runtime error would be thrown in javascript.
 }
 ```
 
@@ -221,8 +221,8 @@ A simplistic example is:
  * setting goes here
  */
 public function testComplexImplicitCoercion():void {
-	var something:* = new Cat();
-	var myDog:Dog = something;
+    var something:* = new Cat();
+    var myDog:Dog = something;
 }
 ```
 

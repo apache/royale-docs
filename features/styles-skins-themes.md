@@ -32,7 +32,7 @@ You can plug different style classes into your Royale app that can manage differ
 
 ```mxml
 <js:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
-	xmlns:js="library://ns.apache.org/royale/basic">
+    xmlns:js="library://ns.apache.org/royale/basic">
     ...
     <j:valuesImpl>
         <js:SimpleCSSValuesImpl />
