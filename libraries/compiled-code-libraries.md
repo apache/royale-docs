@@ -257,7 +257,7 @@ Note the important pieces in the config:
 ```
 
 ## Building the library
-Your asconfig.json file should look like this the file below. You can use any standard compiler options you need and you can also include `SWF` in the targets section, but if you are only targeting Javascript, it's not necessary.
+Your asconfig.json file should look like this the file below. You can use any standard compiler options you need and you can also include `SWF` in the targets section, but if you are only targeting JavaScript, it's not necessary.
 
 ```
 {

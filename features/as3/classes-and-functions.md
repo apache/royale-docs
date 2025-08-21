@@ -61,7 +61,7 @@ Using `this` is usually optional in ActionScript. If there is no local variable 
 Similarly, static accessors and methods can be referenced without using the class name, so `baz()` will be resolved to `Foo.baz()` automatically. If you are using a public static method (or accessor) outside the class that you will need to explicitly call `Foo.baz()`.
 
 ## Using `this` inside functions
-A common problem in Javascript is that `this` is lost within functions. ActionScript does not have this issue. You can freely use `this` inside instance methods. If the function is used as a callback, the compiler will automatically wrap the function to resolve `this` at runtime.
+A common problem in JavaScript is that `this` is lost within functions. ActionScript does not have this issue. You can freely use `this` inside instance methods. If the function is used as a callback, the compiler will automatically wrap the function to resolve `this` at runtime.
 
 In Royale, it's generally not recommended to use `this` inside non-instance methods and functions. In fact that compiler will warn you by default if you do. Generally, the only case where it's necessary to use `this` inside a function in Royale is if you need `Object.defineProperty` for some reason, and even that should be very rare. The `org.apache.royale.utils.object` package has a number of utility functions for helping to define properties without using `this`. Namely: `defineGetter`, `defineProperty`, `defineSimpleGetter` and `defineSimpleProperty`. If you do find yourself looking to use these functions often, you should probably examine your architecture because there's almost guaranteed to be a better way of designing the architecture in Royale.
 

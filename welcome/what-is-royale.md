@@ -16,20 +16,20 @@
 
 layout: docpage
 title: What is Royale
-description: How Royale fits into the Javascript ecosystem
+description: How Royale fits into the JavaScript ecosystem
 permalink: /welcome/what-is-royale
 ---
 # What is Royale?
 
-How Royale fits into the Javascript ecosystem
+How Royale fits into the JavaScript ecosystem
 
 When evaluating a framework or project, the first question you might ask is how is it the same or different as "x". How does this relate to other options? This document attempts to answer those questions.
 
 ## It's a language
-At the heart of [Apache Royale](https://royale.apache.org/), it's a language. Royale is the current shepherd of the ActionScript programming language. The most obvious language you would compare ActionScript to would be Typescript. The general goals of both are similar -- to add type protection for an ECMA language. There are differences between the approach taken by Typescript and ActionScript [which are discussed on a dedicated page](features/as3/actionscript-vs-typescript).
+At the heart of [Apache Royale](https://royale.apache.org/), it's a language. Royale is the current shepherd of the ActionScript programming language. The most obvious language you would compare ActionScript to would be Typescript. The general goals of both are similar -- to add type protection for an ECMAScript language. There are differences between the approach taken by Typescript and ActionScript [which are discussed on a dedicated page](features/as3/actionscript-vs-typescript).
 
 ## It's a compiler
-Royale compiles ActionScript for multiple run-times. The ActionScript compiler is an important piece of Royale. Currently, the targets are for Flash (mostly AIR applications today) and Javascript applications. However the architecture was designed to be platform agnostic and other native platforms can be targeted in the future.
+Royale compiles ActionScript for multiple run-times. The ActionScript compiler is an important piece of Royale. Currently, the targets are for Flash (mostly AIR applications today) and JavaScript applications. However the architecture was designed to be platform agnostic and other native platforms can be targeted in the future.
 
 ## It's a bundler
 You might compare Royale to Webpack, ES Build or Parcel. Royale compiles your app both for debugging and into a single JS file for deployment.
@@ -45,7 +45,7 @@ Royale tries to offset this by making a lot of functionality built in, so there'
 Libraries can be included in Royale projects. These are included as SWC files. The SWC files need to be compiled using Royale, but much open source ActionScript code can be compiled with little or no work for Royale.
 
 ## It's a framework
-You might compare Royale to React, Angular or Vue. Royale gives you the building blocks to create complex Javascript applications using both declarative and imperative code. Royale differs from most frameworks in that it's very un-opinionated about **how** you build your apps. How you control state is up to you. Royale is also laser focused on performance. Read about [PAYG](features/payg) and [Beads](features/strands-and-beads) to learn more about the solutions we take to common problems.
+You might compare Royale to React, Angular or Vue. Royale gives you the building blocks to create complex JavaScript applications using both declarative and imperative code. Royale differs from most frameworks in that it's very un-opinionated about **how** you build your apps. How you control state is up to you. Royale is also laser focused on performance. Read about [PAYG](features/payg) and [Beads](features/strands-and-beads) to learn more about the solutions we take to common problems.
 
 Royale tries to be as close to "vanilla" code as possible while giving you the tools you need when and where you need them.
 

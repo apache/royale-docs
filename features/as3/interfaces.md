@@ -32,7 +32,7 @@ Interfaces *do not* have to declare anything. You can declare an interface type 
 ## What can you declare in interfaces?
 Interfaces do not define *scope*. You don't declare something public. Also, interfaces are only for *methods*. You cannot declare variables in an interface. You *can* (and should) declare getter and/or setters in interfaces, but those must be implemented in your classes as getter and setter functions and not vars.
 
-Interfaces *must* be implemented as classes. You cannot declare an interface for a plain Javascript object like you can in [Typescript](https://www.typescriptlang.org/docs/handbook/2/objects.html).
+Interfaces *must* be implemented as classes. You cannot declare an interface for a plain JavaScript object like you can in [Typescript](https://www.typescriptlang.org/docs/handbook/2/objects.html).
 
 (Almost) never reference classes in an interface. If the interface needs to accept or return a type, use an interface. Pretty much the only exception to this rule is for native types such as `String`, `Number`, `int`, `XML`, etc.
 

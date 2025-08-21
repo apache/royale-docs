@@ -34,16 +34,16 @@ Flex has run huge enterprise applications and Royale sits on that experience. Or
 ## Safe
 Royale is backed by Apache and offers the peace of mind knowing that Apache processes govern Royale's releases.
 
-## Javascript. Fixed!
-Javascript is great, but it has a lot of weird parts. ActionScript and Royale fixes the problematic parts of Javascript:
+## JavaScript. Fixed!
+JavaScript is great, but it has a lot of weird parts. ActionScript and Royale fixes the problematic parts of JavaScript:
 
 - Unexpected type conversions are a thing of the past. Royale offers runtime type safety you will not find anywhere else.
 - You don't need to be concerned with scope of "this". Functions are automatically bound to the correct scope and behave predictably.
 - Inspectable types at runtime. Do you need to check for classes and interfaces at runtime? With Royale you can!
 - Runtime type casting. Do you want your code to fail early if an unexpected type is used? With Royale you can.
 - No more Number problems. Royale has true ints and uints. By declaring your types, you can be sure that your variables will not be converted to floating point numbers at runtime.
-- Improved loops. Don't like writing loops in Javascript? Find it hard to remember the difference between `for in` and `for of`? Royale has a more intuitive loop syntax: `for each(item in array)`. While this is similar to `for of`, the `for each` syntax in ActionScript supports all Javascript run-times including Internet Explorer.
-- Native XML support. Royale applications support the full ECMA E4X spec not generally supported by modern browsers today.
+- Improved loops. Don't like writing loops in JavaScript? Find it hard to remember the difference between `for in` and `for of`? Royale has a more intuitive loop syntax: `for each(item in array)`. While this is similar to `for of`, the `for each` syntax in ActionScript supports all JavaScript run-times including Internet Explorer.
+- Native XML support. Royale applications support the full E4X (ECMAScript for XML) spec not generally supported by modern browsers today.
 
 ## Unopinionated
 If you are using a framework, chances are you have been fighting to get the framework to do what you want. You searched Stack Overflow, only to be told, "You're doing it wrong. You need to use Framework "x" exactly like so!"
@@ -59,7 +59,7 @@ In Royale, we don't tell you how to build your applications.
 In short, Royale gives you the tools you need and gives you some examples of what they can do, but doesn't tell you how you have to use them.
 
 ## Fast!
-Most frameworks try to get as close to vanilla JavaScript as they can. In Royale we try to be _faster_ than vanilla JavaScript. In most cases Royale will _beat_ the best performance you can squeeze out of native HTML and Javascript. That's because Royale only uses the DOM when necessary and we never do any kind of DOM syncing or traversal.
+Most frameworks try to get as close to vanilla JavaScript as they can. In Royale we try to be _faster_ than vanilla JavaScript. In most cases Royale will _beat_ the best performance you can squeeze out of native HTML and JavaScript. That's because Royale only uses the DOM when necessary and we never do any kind of DOM syncing or traversal.
 
 ## Zero configuration necessary
 Out of the box, Royale will build both debug and release builds of your application. You don't need any external tools to package "tree shake" or what-have-you.

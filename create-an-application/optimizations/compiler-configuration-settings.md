@@ -40,7 +40,7 @@ You can provide these settings\ on the command line or via royale-config.xml, or
 
 ## Definitions:  
 
-**AVM:** Actionscript Virtual Machine. You can also broadly interpret this to mean 'SWF at runtime', the 'flash player' or 'Adobe AIR runtime'.
+**AVM:** ActionScript Virtual Machine. You can also broadly interpret this to mean 'SWF at runtime', the 'flash player' or 'Adobe AIR runtime'.
 
 ## Default initializers {#default-initializers}  
 

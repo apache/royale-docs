@@ -55,8 +55,10 @@ package org.apache.royale
 
 This document is divided into several sections:
 
-[Metadata](features/as3/metadata) describe the Metadata decorations that can be used for variables and functions.
-[Code Conventions](features/as3/code-conventions) explains the typical ways Royale developers name files, classes, function, variables and more.
+- [Classes and functions](features/as3/classes-and-functions) explains how to define classes for representing objects and how to define methods on those classes.
+- [Packages](features/as3/packages) explains how to organize code into packages using the `package` syntax.
+- [Metadata](features/as3/metadata) describes the metadata decorations that can be used for variables and functions.
+- [Code Conventions](features/as3/code-conventions) explains the typical ways Royale developers name files, classes, function, variables and more.
 
 ## New ActionScript language features in Royale
 

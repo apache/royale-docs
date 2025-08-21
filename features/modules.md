@@ -47,7 +47,7 @@ There is an example for [Basic](component-sets/basic) UI Set [here](https://gith
 Proper use of modules can help maintain _"separation of concerns"_ which helps keep you from writing _"spaghetti code"_. If only the code in one module changes, only that module needs to be recompiled. And if that code isn't needed to show the first screen, then the application might start up faster if that module is loaded only when it is needed.
 
 ## Why not modules? {#why-not-modules}
-In Flash, modules was very important. That's because application size and compilation time grew very rapidly. Flash applications were slow to load and modules were a good tool to help with that. The aggressive use of [PAYG](features/payg) in Royale along with browser features for loading Javascript made Royale applications much smaller and load times generally nearly instant. In many or most use cases of modules for Flex applications in Flash, Royale renders them unnecessary.
+In Flash, modules was very important. That's because application size and compilation time grew very rapidly. Flash applications were slow to load and modules were a good tool to help with that. The aggressive use of [PAYG](features/payg) in Royale along with browser features for loading JavaScript made Royale applications much smaller and load times generally nearly instant. In many or most use cases of modules for Flex applications in Flash, Royale renders them unnecessary.
 
 Using modules can make development more difficult and in many cases cause your application to actually load _**slower**_. Before using modules, consider the following points:
 

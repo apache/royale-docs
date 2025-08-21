@@ -24,9 +24,10 @@ permalink: /features/as3/language-basics
 
 Language basics in ActionScript 3
 
-ActionScript is a superset of the ecma 4 spec. That gives it the same roots as Javascript and code will look very similar. The biggest difference is the optionally typed quality of ActionScript, and classes. Ecma 6 added classes to Javascript as well, but Javascript classes are less structured that ActionScript classes.
+ActionScript is a superset of the ECMAScript edition 4 specification. That gives it the same roots as JavaScript and code will look very similar. The biggest difference is the optionally typed quality of ActionScript, and classes. Ecma 6 added classes to JavaScript as well, but JavaScript classes are less structured that ActionScript classes.
 
-Because ActionScript was forked from the ecma spec at version 4, there are features that Javascript has which are missing from ActionScript and vice versa. Below is an overview of the main ActionScript features.
+Because ActionScript was forked from the ECMAScript specification at version 4, there are features that JavaScript has which are missing from ActionScript and vice versa. Below is an overview of the main ActionScript features.
+
 ## Scope
 
 There are four levels of access scope in ActionScript:
@@ -45,7 +46,7 @@ There are three basic accessor types in ActionScript
 2. var
 3. const
 
-ActionScript does not support arrow functions or `let`. The use of the three accessor types are similar to Javascript.
+ActionScript does not support arrow functions or `let`. The use of the three accessor types are similar to JavaScript.
 
 ## Instance and Class Accessors
 By default any accessors of a class are instance accessors. For class-level methods, vars and const, you need to add the `static` modifier. For more details [read about static accessors in classes](features/as3/classes-and-functions#static-accessors).

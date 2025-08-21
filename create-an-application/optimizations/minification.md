@@ -16,7 +16,7 @@
 
 layout: docpage
 title: Minification
-description: Options and considerations for minimized Javascript output
+description: Options and considerations for minimized JavaScript output
 permalink: /create-an-application/optimizations/minification
 ---
 # Minification

@@ -28,9 +28,9 @@ XML in ActionScript 3
 ActionScript has support for XML as a native type.
 
 ## Some history
-In 2004 and 2005, [Ecma published ECMA-357](https://www.ecma-international.org/publications-and-standards/standards/ecma-357/) which was a spec for handling XML in Javascript. The spec was called E4X (Ecmascript for XML). This was adopted by Firefox (SpiderMonkey) and ActionScript. Unfortunately [it was not adopted by Chrome](https://bugs.chromium.org/p/v8/issues/detail?id=235), so it never became a Javascript standard.
+In 2004 and 2005, [Ecma published ECMA-357](https://www.ecma-international.org/publications-and-standards/standards/ecma-357/) which was a spec for handling XML in JavaScript. The spec was called E4X (Ecmascript for XML). This was adopted by Firefox (SpiderMonkey) and ActionScript. Unfortunately [it was not adopted by Chrome](https://bugs.chromium.org/p/v8/issues/detail?id=235), so it never became a JavaScript standard.
 
-Today, E4X lives on in ActionScript, Adobe's ExtendScript and [Rhino Javascript](http://mozilla.github.io/rhino/).
+Today, E4X lives on in ActionScript, Adobe's ExtendScript and [Rhino JavaScript](http://mozilla.github.io/rhino/).
 
 ## Types
 The XML spec defines 4 additonal types
@@ -53,7 +53,7 @@ E4X also allows filtering. Let's say you want to get only children who's name is
 Because XML and E4X is not supported natively by the browser, some E4X code needs to be rewritten by the compiler. For this to work, the compiler needs to know that an object is XML. For this reason it's very important to be consistent about declaring XML types in Royale. Particular care should be taken if you have an array of XML objects to either use `Vector`, declare a local variable (i.e. `var item:XML = arr[i]`) or use function access instead of E4X syntax. To further clarify: `myUnknownXML.child("foo")` will work as expected, but `myUnknownXML.foo` will not.
 
 ## Optimization
-We have done a lot of work to make XML and E4X as performant as possible. It's being used in production of applications with a lot of XML data without issues. However the E4X spec can sometimes lend itself to code which creates a lot of extra work for the Javascript engine.
+We have done a lot of work to make XML and E4X as performant as possible. It's being used in production of applications with a lot of XML data without issues. However the E4X spec can sometimes lend itself to code which creates a lot of extra work for the JavaScript engine.
 
 It's also possible to end up in situations where large amounts of XML are stored in memory. If there's a reference to a single XML node anywhere, the entire tree cannot be garbage collected.
 
