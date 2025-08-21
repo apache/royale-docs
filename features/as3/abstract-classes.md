@@ -26,6 +26,8 @@ permalink: /features/as3/abstract-classes
 
 [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for declaring `abstract` classes in [ActionScript](features/as3). An abstract class cannot be instantiated using the `new` keyword, meaning that it must be subclassed. Additionally, an abstract class may declare `abstract` methods that do not have a function body. Abstract methods must be implemented by the concrete subclass, similar to how the methods of an interface must also be implemented.
 
+_Requires Apache Royale 0.9.6 or newer._
+
 ## Compiler option
 
 Royale enables abstract classes by default. To disable abstract classes in your application, use the `-allow-abstract-classes` compiler option.
@@ -117,4 +119,4 @@ Checking whether a class is abstract happens at compile-time only. However, by u
 
 If a SWC library contains abstract classes, applications using that library must also enable abstract classes before the compiler will enforce any restrictions.
 
-Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize or enforce abstract classes. Attemping to pass source code or SWC libraries that contain classes with abstract classes to another compiler may result in compile-time errors or unexpected behavior at run-time. In other words, to write 100% portable ActionScript code that works with any compiler, avoid using abstract classes and any of Royale's other [extensions to the ActionScript language](features/as3#new-actionscript-language-features-in-royale).
+Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize or enforce abstract classes. Attemping to pass source code or SWC libraries that contain abstract classes to another compiler may result in compile-time errors or unexpected behavior at run-time. In other words, to write 100% portable ActionScript code that works with any compiler, avoid using abstract classes and any of Royale's other [extensions to the ActionScript language](features/as3#new-actionscript-language-features-in-royale).

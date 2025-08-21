@@ -26,6 +26,8 @@ permalink: /features/as3/private-constructors
 
 [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for declaring the constructor of a class `private` instead of `public` in [ActionScript](features/as3). When a constructor is private, it cannot be instantiated with the `new` keyword outside of the class where it is defined. Private constructors are commonly used for implementing the *singleton* design pattern, which is when only one instance of a particular class should ever be created.
 
+_Requires Apache Royale 0.9.6 or newer._
+
 ## Compiler option
 
 Royale enables private constructors by default. To disable private constructors in your application, use the `-allow-private-constructors` compiler option.

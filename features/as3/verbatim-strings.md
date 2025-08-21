@@ -22,9 +22,11 @@ permalink: /features/as3/verbatim-strings
 
 # Verbatim strings in ActionScript
 
+Ignore escape sequences with @"" strings
+
 [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for declaring _verbatim strings_ in [ActionScript](features/as3). Verbatim strings start with a `@` character and don't treat the `\` character as the start of an escape sequence.
 
-Verbatim strings are also supported by the compiler included with the Adobe AIR SDK starting with version 50.0.
+_Requires Apache Royale 0.9.10 or newer._
 
 ## Code example
 

@@ -22,9 +22,11 @@ permalink: /features/as3/null-conditional-operator
 
 # Null conditional operator in ActionScript
 
+The ?. operator
+
 [Apache Royale](https://royale.apache.org/){:target='\_blank'} adds support for the _null conditional operator_ in [ActionScript](features/as3), which uses the symbol `?.`. The expression `a?.b` works similarly to a member access expression, like `a.b`. The difference when using `?.` is that, if the left operand is _nullish_, it will immediately return `null` instead of trying to access the right operand and throwing an exception.
 
-The null conditional operator is also supported by the compiler included with the Adobe AIR SDK starting with version 50.0.
+_Requires Apache Royale 0.9.10 or newer._
 
 ## Code example
 

@@ -22,11 +22,13 @@ permalink: /features/as3/nullish-coalescing-operator
 
 # Nullish coalescing operator in ActionScript
 
+The ?? operator
+
 [Apache Royale](https://royale.apache.org/){:target='\_blank'} adds support for the _nullish coalescing operator_ in [ActionScript](features/as3), which uses the symbol `??`. The `??` operator accepts two operands, one each on its left and right sides. Which operand is returned depends on whether the left operand is _nullish_ or not.
 
 Nullish values include `null` and `undefined` only. If the left operand is not nullish, then it is returned immediately, without executing the right operand. If the left operand is nullish, then the right operand is returned instead.
 
-The nullish coalescing operator is also supported by the compiler included with the Adobe AIR SDK starting with version 50.0.
+_Requires Apache Royale 0.9.10 or newer._
 
 ## Code example
 

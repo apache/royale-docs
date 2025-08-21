@@ -28,6 +28,8 @@ Using the `-infer-types` compiler option
 
 Traditionally, ActionScript has treated the type of a symbol with no explicitly declared type as the _any_ type `*`, and the compiler would emit a warning for the missing type declaration. When type inference is enabled, the compiler will skip the warning if a type other than `*` can be inferred from the initializer or return statements. If the intended type should actually be `*`, an explicit type declaration is encouraged.
 
+_Requires Apache Royale 0.9.12 or newer._
+
 ## Compiler option
 
 Royale does not enable type inference by default, to avoid potential backwards compatibility issues with existing AS3 code. To enable type inference in your application, use the `-infer-types` compiler option.

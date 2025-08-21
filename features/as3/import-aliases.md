@@ -26,6 +26,8 @@ permalink: /features/as3/import-aliases
 
 [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for declaring _import aliaes_ in [ActionScript](features/as3). An import alias allows a class to be imported, but referenced in later code using a different base name. It is intended to help differentiate between multiple imported classes that have the same base name, but are in different packages, without having to use the fully-qualified name.
 
+_Requires Apache Royale 0.9.6 or newer._
+
 ## Compiler option
 
 Royale enables import aliases by default. To disable import aliases in your application, use the `-allow-import-aliases` compiler option.
