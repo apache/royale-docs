@@ -65,6 +65,7 @@ The Royale compiler extends the ActionScript language with useful, new features.
 The following new ActionScript features are available with the Royale compiler:
 
 * [Abstract Classes](features/as3/abstract-classes)
+* [Arrow Functions](features/as3/arrow-functions)
 * [Import Aliases](features/as3/import-aliases)
 * [Null Conditional Operator](features/as3/null-conditional-operator)
 * [Nullish Coalescing Operator](features/as3/nullish-coalescing-operator)
