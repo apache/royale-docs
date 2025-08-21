@@ -28,9 +28,9 @@ The Royale team typically discovers the need to emulate a component when a proje
 
 Further information is in these documents:
 
-- [Creating a high-level emulation component](https://github.com/apache/royale-asjs/wiki/Creating-A-High-Level-Emulation-Component){:target="_blank"}
+- [Creating a high-level emulation component](https://github.com/apache/royale-asjs/wiki/Creating-A-High-Level-Emulation-Component){:target="\_blank"}
 
-- [Emulation components](https://github.com/apache/royale-asjs/wiki/Emulation-Components){:target="_blank"}
+- [Emulation components](https://github.com/apache/royale-asjs/wiki/Emulation-Components){:target="\_blank"}
 
 
 

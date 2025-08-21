@@ -29,7 +29,7 @@ When a user is working with your application, you may need to get their attentio
 
 _Information about the Alert component will appear here_
 
-Read a [tutorial about creating an Alert](https://royale.apache.org/using-jewel-alert-control/){:target="_blank")
+Read a [tutorial about creating an Alert](https://royale.apache.org/using-jewel-alert-control/){:target="\_blank")
 
 ## Banner
 
@@ -55,7 +55,7 @@ _Information about the toast feature will appear here_
 _Information about the tooltip component will appear here_
 
 ## Examples
-[Tour de Jewel](https://royale.apache.org/tourdejewel/#){:target="_Blank"} is not just an excellent resource for not seeing what various Royale components can do. You can also review the code for each sample online, or download it so you can study it in detail and adapt it to your project.
+[Tour de Jewel](https://royale.apache.org/tourdejewel/#){:target="\_blank"} is not just an excellent resource for not seeing what various Royale components can do. You can also review the code for each sample online, or download it so you can study it in detail and adapt it to your project.
 
 Tour de Jewel has examples of the three ways of alerting your app users or asking them questions:
 

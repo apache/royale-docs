@@ -48,5 +48,5 @@ Are you new to Royale libraries? [Read what they are and how to use them](librar
 * Use Adobe's [Spectrum with Royale](libraries/spectrum-royale). Spectrum supports large application ecosystems.
 * You can use [Material Design Lite (MDL) with Royale](libraries/mdl-royale). MDL is a library/CSS structure that follows the Material Design principles that Google developed.
 
-See a working example of [Using external JavaScript libraries in Apache Royale](https://royale.apache.org/using-external-javascript-libraries-in-apache-royale/){:target="_blank"}.
+See a working example of [Using external JavaScript libraries in Apache Royale](https://royale.apache.org/using-external-javascript-libraries-in-apache-royale/){:target="\_blank"}.
 

@@ -39,6 +39,6 @@ Here you can find links to tutorials and how-to blog articles that will help you
   * [Using View States to show or hide content](https://royale.apache.org/blog/using-view-states-to-show-or-hide-content){:target='_blank'}
   * [Using an item renderer with a list](https://royale.apache.org/blog/using-an-item-renderer-with-a-list){:target='_blank'}
   * [Customization through the Royale API](https://royale.apache.org/blog/customization-through-the-royale-api){:target='_blank'}
-  * [Data binding](https://royale.apache.org/blog/binding-the-text-property-of-a-jewel-textinput-to-update-a-text-label/){:target="_blank"}
+  * [Data binding](https://royale.apache.org/blog/binding-the-text-property-of-a-jewel-textinput-to-update-a-text-label/){:target="\_blank"}
   
 [Tour de Jewel](https://royale.apache.org/tourdejewel){:target='_blank'} is a set of examples of how to use the [Jewel component set](component-sets/jewel) to build a [user interface](user-interface) that will deliver what you want and provide a great user experience.
