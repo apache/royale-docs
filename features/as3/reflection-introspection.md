@@ -47,7 +47,7 @@ Use reflection to find the class of an object.
 Sets up an alias mapping for serialization/deserialization purposes. The Royale compiler can auto-generate this when using class level metadata, e.g. [RemoteClass(alias='someAlias')]
 
 ```
-registerClassAlias("someAlias", com.acme.Foo);
+registerClassAlias("someAlias", com.example.Foo);
 ```
 
 ### getAliasByClass
@@ -55,7 +55,7 @@ registerClassAlias("someAlias", com.acme.Foo);
 Retrieves an alias for a class, based on an alias mapping previously registered with `registerClassAlias`, or possibly using [RemoteClass(alias='someAlias')] metadata.
 
 ```
-var alias:String = getAliasByClass(com.acme.Foo);
+var alias:String = getAliasByClass(com.example.Foo);
 trace(alias); // Displays the alias name (i.e. someAlias)
 ```
 
@@ -64,7 +64,7 @@ Retrieves a class based on an alias mapping previously registered with `register
 
 ```
 var classRef:Class = getClassByAlias("someAlias");
-trace(classRef); // Displays the class (i.e. com.acme.Foo)
+trace(classRef); // Displays the class (i.e. com.example.Foo)
 ```
 
 ### getAncestry

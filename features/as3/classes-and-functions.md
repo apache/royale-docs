@@ -66,10 +66,10 @@ A common problem in JavaScript is that `this` is lost within functions. ActionSc
 In Royale, it's generally not recommended to use `this` inside non-instance methods and functions. In fact that compiler will warn you by default if you do. Generally, the only case where it's necessary to use `this` inside a function in Royale is if you need `Object.defineProperty` for some reason, and even that should be very rare. The `org.apache.royale.utils.object` package has a number of utility functions for helping to define properties without using `this`. Namely: `defineGetter`, `defineProperty`, `defineSimpleGetter` and `defineSimpleProperty`. If you do find yourself looking to use these functions often, you should probably examine your architecture because there's almost guaranteed to be a better way of designing the architecture in Royale.
 
 ## Package level functions
-You don't need to declare a class to use code. You can have "utility" functions as first class citizens. To create a public function you create a file similar to a class (but name it camel-case). Assuming your file structure is like so: `src/com/acme/doAwesome.as` Inside the file you declare the function like this:
+You don't need to declare a class to use code. You can have "utility" functions as first class citizens. To create a public function you create a file similar to a class (but name it camel-case). Assuming your file structure is like so: `src/com/example/doAwesome.as` Inside the file you declare the function like this:
 
 ```as3
-package com.acme {
+package com.example {
     public function doAwesome(notSoAwesome:Object):Awesome {
         return new Awesome(
             doSomethingComplicatedInTheSamePackage(notSoAwesome)
@@ -78,7 +78,7 @@ package com.acme {
 }
 ```
 
-Then `doAwesome()` is available anywhere in your project. Your IDE should `import com.acme.doAwesome` if you use it.
+Then `doAwesome()` is available anywhere in your project. Your IDE should `import com.example.doAwesome` if you use it.
 
 ## Static classes and singletons
 One of the cool new features in ActionScript is [private constructors](features/as3/private-constructors). Use that if you have a class that you want to use as static-only class or as a [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern)

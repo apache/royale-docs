@@ -35,10 +35,10 @@ package {
 }
 ```
 
-You can name your folder structure any way you like, but an accepted convention is to nest it in a unique domain to prevent potential package conflicts. So for a class `MyFoo` you might have a folder structure like this: `src/com/acme/MyFoo.as` and the class would look like this:
+You can name your folder structure any way you like, but an accepted convention is to nest it in a unique domain to prevent potential package conflicts. So for a class `MyFoo` you might have a folder structure like this: `src/com/example/MyFoo.as` and the class would look like this:
 
 ```as3
-package com.acme {
+package com.example {
     class MyFoo {
         public function MyFoo() {
         }

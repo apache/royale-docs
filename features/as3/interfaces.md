@@ -41,7 +41,7 @@ Interfaces *must* be implemented as classes. You cannot declare an interface for
 Here's one example
 
 ```as3
-package com.acme {
+package com.example {
     public interface IFoo {
         function get name():String;
         function set name(name:String):void;
