@@ -65,6 +65,7 @@ The Royale compiler extends the ActionScript language with useful, new features.
 The following new ActionScript features are available with the Royale compiler:
 
 * [Abstract Classes](features/as3/abstract-classes)
+* [Import Aliases](features/as3/import-aliases)
 * [Private Constructors](features/as3/private-constructors)
 * [Type Inference](features/as3/type-inference)
 * [Verbatim Strings](features/as3/verbatim-strings)
