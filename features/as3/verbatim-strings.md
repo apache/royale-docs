@@ -57,4 +57,4 @@ one\ntwo
 
 ## Limitations of verbatim strings in Royale
 
-Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize verbatim strings. Attemping to pass ActionScript or MXML source code that contains verbatim strings to another compiler will result in compile-time errors. In other words, to write 100% portable ActionScript code that works with any compiler, avoid using verbatim strings and any of Royale's other [extensions to the ActionScript language](features/as3#new-actionscript-language-features-in-royale).
+Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize verbatim strings. Attemping to pass ActionScript or MXML source code that contains verbatim strings to another compiler may result in compile-time errors. In other words, to write 100% portable ActionScript code that works with any compiler, avoid using verbatim strings and any of Royale's other [extensions to the ActionScript language](features/as3#new-actionscript-language-features-in-royale).
