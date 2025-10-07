@@ -48,6 +48,39 @@ var resolved:Object = obj?.a;
 trace(resolved); // 123.4
 ```
 
+## Null conditional operator with bracket notation
+
+_Requires Apache Royale 0.9.13 or newer._
+
+The Royale compiler also supports a variation of the null conditional operator using bracket notation, to request a property using a string value. This can be useful for accessing properties with names that are known at run-time, but not at compile-time.
+
+### Code example (bracket notation)
+
+Consider the following code that uses the `?.` operator with bracket notation to access the field specified by a string on the condition that the object is not nullish.
+
+```as3
+var obj:Object = null;
+var resolved:Object = obj?.["a"];
+trace(resolved); // null
+```
+
+If the expression `obj["a"]` were used instead of `obj?.["a"]`, then an exception would be thrown instead.
+
+If the object is not nullish, then it works similarly to regular dynamic access with bracket notation.
+
+```as3
+var obj:Object = {a: 123.4};
+var resolved:Object = obj?.["a"];
+trace(resolved); // 123.4
+```
+
+Alternatively, the brackets may contain any expression that results in a string value, such as variables.
+
+```as3
+var name:String = "a";
+var resolved:Object = obj?.[name];
+```
+
 ## Limitations of the null conditional operator in Royale
 
 Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize the null conditional operator. Attemping to pass ActionScript or MXML source code that contains null conditional operators to another compiler may result in compile-time errors. In other words, to write 100% portable ActionScript code that works with any compiler, avoid using null conditional operator and any of Royale's other [extensions to the ActionScript language](features/as3#new-actionscript-language-features-in-royale).
