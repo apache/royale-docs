@@ -40,6 +40,7 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 - [`-compiler.allow-private-constructors`](compiler/compiler-options#allow-private-constructors) -- If true, constructors can be declared private. Useful for a class with all-static methods or Singletons.  
 - `-compiler.allow-private-name-conflicts`  
 - `-compiler.allow-source-path-overlap` -- Checks if a source-path entry is a subdirectory of another source-path entry. It helps make the package names of MXML components unambiguous.
+- [`-compiler.allow-strict-function-types`](compiler/compiler-options#allow-strict-function-types) -- If true, strict function type expressions may be used.
 - `-compiler.allow-subclass-overrides`  
 - `-compiler.as3` -- With the SWF target, use the ActionScript 3 class based object model for greater performance and better error reporting. In the class based object model most built-in functions are implemented as fixed methods of classes.
 - `-compiler.binding-event-handler-class` `<string>`  
@@ -113,7 +114,6 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 - `-compiler.states-style-override-class` `<string>`  
 - `-compiler.strict` -- Runs the AS3 compiler in strict error checking mode.
 - [`-compiler.strict-identifier-names`](compiler/compiler-options#strict-identifier-names) -- Toggles whether identifier names may be keywords or not.
-- [`-compiler.strict-function-types`](compiler/compiler-options#strict-function-types) -- Toggles whether function type experssions are enabled or not.
 - `-compiler.strict-xml` -- Enables stricter rules for XML and E4X.
 - `-compiler.swf-external-library-path` `[path-element]` `[...]` -- Overrides `-external-library-path` for the SWF target.
 - `-compiler.swf-library-path` `[path-element]` `[...]` -- Overrides `-library-path` for JavaScript targets.
@@ -323,6 +323,22 @@ Determines if the `private` namespace may be used with class constructors. For m
 
 ```xml
 <additionalCompilerOptions>-allow-private-constructors=true;</additionalCompilerOptions>
+```
+
+### allow-strict-function-types {#allow-strict-function-types}
+
+_Available since Royale 0.9.13_
+
+If true, strict function type expressions may be used in ActionScript code. Allows compile-time signature checking of variables that store `Function` objects. Includes parameter types and return types. Defaults to `true`.
+
+```sh
+-allow-strict-function-types
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-allow-strict-function-types=true;</additionalCompilerOptions>
 ```
 
 ### closure-lib {#closure-lib}
@@ -1188,22 +1204,6 @@ Determines if names of identifiers must follow the strict rules of ActionScript 
 
 ```xml
 <additionalCompilerOptions>-strict-identifier-names=true;</additionalCompilerOptions>
-```
-
-### strict-function-types {#strict-function-types}
-
-_Available since Royale 0.9.13_
-
-Determines if strict function type expressions are enabled or not. Allows compile-time signature checking of variables that store `Function` objects. Includes parameter types and return types. Defaults to `true`.
-
-```sh
--strict-function-types
-```
-
-#### Maven configuration:
-
-```xml
-<additionalCompilerOptions>-strict-function-types=true;</additionalCompilerOptions>
 ```
 
 ### source-map {#source-map}

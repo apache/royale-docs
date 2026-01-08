@@ -23,7 +23,7 @@ permalink: /features/as3/strict-function-types
 
 # Strict function types in ActionScript
 
--strict-function-types
+-allow-strict-function-types
 
 [Apache Royale](https://royale.apache.org/){:target='\_blank'} adds support for strict function types in [ActionScript](features/as3). Sometimes also called _function type expressions_, strict function types allow developers to require a function to have a compatible signature before it can be assigned to a variable, passed as a function parameter, or returned from a method. Strict function types are completely optional, and ActionScript still supports the `Function` type that accepts any function, regardless of signature.
 
@@ -31,10 +31,10 @@ _Requires Apache Royale 0.9.13 or newer._
 
 ## Compiler option
 
-Royale enables strict function types by default. To disable strict function types in your application, use the `-strict-function-types` compiler option.
+Royale enables strict function types by default. To disable strict function types in your application, use the `-allow-strict-function-types` compiler option.
 
 ```sh
-mxmlc -strict-function-types=false MyApp.mxml
+mxmlc -allow-strict-function-types=false MyApp.mxml
 ```
 
 ## Code examples
