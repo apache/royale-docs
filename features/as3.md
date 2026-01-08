@@ -72,6 +72,7 @@ The following new ActionScript features are available with the Royale compiler:
 * [Null Conditional Operator](features/as3/null-conditional-operator)
 * [Nullish Coalescing Operator](features/as3/nullish-coalescing-operator)
 * [Private Constructors](features/as3/private-constructors)
+* [Strict Function Types](features/as3/strict-function-types)
 * [Type Inference](features/as3/type-inference)
 * [Verbatim Strings](features/as3/verbatim-strings)
 

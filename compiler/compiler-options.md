@@ -113,6 +113,7 @@ The [**mxmlc** and **compc** compilers](compiler/command-line-compiler-usage) bu
 - `-compiler.states-style-override-class` `<string>`  
 - `-compiler.strict` -- Runs the AS3 compiler in strict error checking mode.
 - [`-compiler.strict-identifier-names`](compiler/compiler-options#strict-identifier-names) -- Toggles whether identifier names may be keywords or not.
+- [`-compiler.strict-function-types`](compiler/compiler-options#strict-function-types) -- Toggles whether function type experssions are enabled or not.
 - `-compiler.strict-xml` -- Enables stricter rules for XML and E4X.
 - `-compiler.swf-external-library-path` `[path-element]` `[...]` -- Overrides `-external-library-path` for the SWF target.
 - `-compiler.swf-library-path` `[path-element]` `[...]` -- Overrides `-library-path` for JavaScript targets.
@@ -1187,6 +1188,22 @@ Determines if names of identifiers must follow the strict rules of ActionScript 
 
 ```xml
 <additionalCompilerOptions>-strict-identifier-names=true;</additionalCompilerOptions>
+```
+
+### strict-function-types {#strict-function-types}
+
+_Available since Royale 0.9.13_
+
+Determines if strict function type expressions are enabled or not. Allows compile-time signature checking of variables that store `Function` objects. Includes parameter types and return types. Defaults to `true`.
+
+```sh
+-strict-function-types
+```
+
+#### Maven configuration:
+
+```xml
+<additionalCompilerOptions>-strict-function-types=true;</additionalCompilerOptions>
 ```
 
 ### source-map {#source-map}
