@@ -93,6 +93,9 @@
                         },
                         {
                             "path": "features/as3/type-inference.md"
+                        },
+                        {
+                            "path": "features/as3/strict-function-types.md"
                         }
                     ]
                 },
