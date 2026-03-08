@@ -71,4 +71,4 @@ The standard method is to declare an item renderer in a separate file which you 
 
 ## Example
 
-- [Using an item renderer with a list](https://royale.apache.org/using-an-item-renderer-with-a-list){:target='_blank'}
+- [Using an item renderer with a list](https://royale.apache.org/blog/using-an-item-renderer-with-a-list){:target='_blank'}
