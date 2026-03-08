@@ -32,11 +32,11 @@ Frameworks provide reliable templates to help you develop complex projects more 
 
 ### Designed for Apache Royale:
 
-* [Crux](libraries/crux) is a library based on Swiz. Swiz is a framework that simplifies applications and gives you Inversion of Control/Dependency Injection, Event handling, new Metadatas, simplified life cycle for asynchronous remote method invocations and many more. Swiz was developed specifically for ActionScript and Flex.
+* [Crux](libraries/crux) is a library based on Swiz. Swiz is a framework that simplifies applications and gives you Inversion of Control/Dependency Injection, Event handling, new Metadatas, a simplified life cycle for asynchronous remote method invocations and many more features. Swiz was developed specifically for ActionScript and Flex.
 
 ### Third party frameworks
 
-* [PureMVC](https://github.com/PureMVC/puremvc-as3-multicore-framework/wiki){:target='_blank'} is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. Is part of [The PureMVC Framework](https://puremvc.org){:target='_blank'} that implements the same library in many other popular languages and technologies.
+* [PureMVC](https://github.com/PureMVC/puremvc-as3-multicore-framework/wiki){:target='_blank'} is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. It is part of [The PureMVC Framework](https://puremvc.org){:target='_blank'} that implements the same library in many other popular languages and technologies.
 
 ## Libraries
 
