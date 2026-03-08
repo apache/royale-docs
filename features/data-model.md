@@ -25,6 +25,4 @@ Creating and using data models
 
 A data model helps organize data elements so you can easily use them in your application.
 
->See an example of using a data model in the [GitHub Commit log Application tutorial](/create-an-application/application-tutorial).
-
-_Details coming soon_
+>See an example of using a data model in the <a href="https://apache.github.io/royale-docs/create-an-application/application-tutorial">GitHub Commit Log Application tutorial</a>.
