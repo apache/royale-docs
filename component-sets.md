@@ -40,4 +40,4 @@ Participants in the Royale project have started several component sets, such as 
 
 ### External component sets
 
-Besides the component sets included in Royale, you can use just about any CSS Framework as the basis for your components. One example is [Spectrum-Royale](https://github.com/unhurdle/spectrum-royale) which uses Adobe's [Spectrum System](https://spectrum.adobe.com/).
+Besides the component sets included in Royale, you can use just about any CSS Framework as the basis for your components. One example is [Spectrum-Royale](https://github.com/unhurdle/spectrum-royale) which uses Adobe's [Spectrum System](https://spectrum.adobe.com/). You can see this component set at work at <a href="https://unhurdle.github.io/spectrum-royale/" target="_blank">unhurdle.github.io/spectrum-royale/</a>.
