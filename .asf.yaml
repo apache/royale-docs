@@ -1,0 +1,5 @@
+# options are described here: https://github.com/apache/infrastructure-asfyaml?tab=readme-ov-file#repository-features
+
+github:
+  del_branch_on_merge: true
+  issues: true
