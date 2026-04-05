@@ -25,11 +25,9 @@ permalink: /features/as3/arrow-functions
 
 -allow-arrow-functions
 
-[Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for arrow function expressions in [ActionScript](features/as3). An arrow function provides shorter syntax for declaring local functions, and it inherits the `this` value from its containing scope.
+Starting in **version 1.0.0**, [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for arrow function expressions in [ActionScript](features/as3). An arrow function provides shorter syntax for declaring local functions, and it inherits the `this` value from its containing scope.
 
-Arrow functions do not have names. Unlike regular function expressions, arrow functions omit the `function` keyword, and they have an arrow (in the format `=>`) between the parameters and the body instead. In certain situations, both the parentheses around the parameters and the braces around the body may be omitted.
-
-_Requires Apache Royale 0.9.13 or newer._
+Arrow functions do not have names. Unlike regular function expressions, arrow functions omit the `function` keyword; isntead they have an arrow (in the format `=>`) between the parameters and the body. In certain situations, both the parentheses around the parameters and the braces around the body may be omitted.
 
 ## Compiler option
 
