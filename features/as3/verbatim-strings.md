@@ -24,9 +24,8 @@ permalink: /features/as3/verbatim-strings
 
 Ignore escape sequences with @"" strings
 
-[Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for declaring _verbatim strings_ in [ActionScript](features/as3). Verbatim strings start with a `@` character and don't treat the `\` character as the start of an escape sequence.
+Starting in **version 0.9.10**, [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for declaring _verbatim strings_ in [ActionScript](features/as3). Verbatim strings start with a `@` character and don't treat the `\` character as the start of an escape sequence.
 
-_Requires Apache Royale 0.9.10 or newer._
 
 ## Code example
 
