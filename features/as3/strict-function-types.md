@@ -25,9 +25,9 @@ permalink: /features/as3/strict-function-types
 
 -allow-strict-function-types
 
-[Apache Royale](https://royale.apache.org/){:target='\_blank'} adds support for strict function types in [ActionScript](features/as3). Sometimes also called _function type expressions_, strict function types allow developers to require a function to have a compatible signature before it can be assigned to a variable, passed as a function parameter, or returned from a method. Strict function types are completely optional, and ActionScript still supports the `Function` type that accepts any function, regardless of signature.
+Starting in **version 1.0.0**, [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for strict function types in [ActionScript](features/as3). 
 
-_Requires Apache Royale 0.9.13 or newer._
+Sometimes also called _function type expressions_, strict function types allow developers to require a function to have a compatible signature before it can be assigned to a variable, passed as a function parameter, or returned from a method. Strict function types are completely optional, and ActionScript still supports the `Function` type that accepts any function, regardless of signature.
 
 ## Compiler option
 
