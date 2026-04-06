@@ -24,9 +24,7 @@ permalink: /features/as3/null-conditional-operator
 
 The ?. operator
 
-[Apache Royale](https://royale.apache.org/){:target='\_blank'} adds support for the _null conditional operator_ in [ActionScript](features/as3), which uses the symbol `?.`. The expression `a?.b` works similarly to a member access expression, like `a.b`. The difference when using `?.` is that, if the left operand is _nullish_, it will immediately return `null` instead of trying to access the right operand and throwing an exception.
-
-_Requires Apache Royale 0.9.10 or newer._
+Starting in **version 1.0.0**, [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for the _null conditional operator_ in [ActionScript](features/as3), which uses the symbol `?.`. The expression `a?.b` works similarly to a member access expression, like `a.b`. The difference when using `?.` is that, if the left operand is _nullish_, it will immediately return `null` instead of trying to access the right operand and throwing an exception.
 
 ## Code example
 
