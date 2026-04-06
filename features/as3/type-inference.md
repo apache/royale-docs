@@ -24,11 +24,9 @@ permalink: /features/as3/type-inference
 
 Using the `-infer-types` compiler option
 
-[Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for _type inference_, which enables the ActionScript compiler to automatically fill in missing type declarations on variables, fields, and function returns. The compiler can typically detect an appropriate type based on a variable's initializer or a function's return statements. This feature gives developers the ability to purposefully omit type declarations — which allows them to write less code, while still gaining the performance and productivity benefits of stricter types.
+Starting in **version 0.9.12**, [Apache Royale](https://royale.apache.org/){:target='_blank'} adds support for _type inference_, which enables the ActionScript compiler to automatically fill in missing type declarations on variables, fields, and function returns. The compiler can typically detect an appropriate type based on a variable's initializer or a function's return statements. This feature gives developers the ability to purposefully omit type declarations — which allows them to write less code, while still gaining the performance and productivity benefits of stricter types.
 
 Traditionally, ActionScript has treated the type of a symbol with no explicitly declared type as the _any_ type `*`, and the compiler would emit a warning for the missing type declaration. When type inference is enabled, the compiler will skip the warning if a type other than `*` can be inferred from the initializer or return statements. If the intended type should actually be `*`, an explicit type declaration is encouraged.
-
-_Requires Apache Royale 0.9.12 or newer._
 
 ## Compiler option
 
