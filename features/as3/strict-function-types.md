@@ -31,7 +31,7 @@ Sometimes also called _function type expressions_, strict function types allow d
 
 ## Compiler option
 
-Royale enables strict function types by default. To disable strict function types in your application, use the `-allow-strict-function-types` compiler option.
+Royale enables strict function types by default. To disable strict function types in your application, set the `-allow-strict-function-types` compiler option to false:
 
 ```sh
 mxmlc -allow-strict-function-types=false MyApp.mxml
@@ -39,7 +39,7 @@ mxmlc -allow-strict-function-types=false MyApp.mxml
 
 ## Code examples
 
-Traditionally, to assign a function to a variable in ActionScript, a developer would set the variable's type to `Function`.
+Traditionally, to assign a function to a variable in ActionScript, you would set the variable's type to `Function`:
 
 ```as3
 var greet:Function;
@@ -50,14 +50,14 @@ greet = function(name:String):String
 var greeting:String = greet("hi");
 ```
 
-If a developer tries to call the `Function` with incorrect arguments, or assigns the return value to an incompatible type, the compiler will allow it because the signature information has been lost.
+If you try to call the `Function` with incorrect arguments, or assign the return value to an incompatible type, the compiler will allow it because the signature information has been lost.
 
 ```as3
 // no errors because the type of greet is Function
 var result:Array = greet(123.4, true);
 ```
 
-A function type expression may be used instead of `Function` to retain the signature so that the compiler may check for errors when the function is called.
+You can use a function type expression instead of `Function` to retain the signature so that the compiler may check for errors when the function is called:
 
 ```as3
 var strictGreet:(s:String)=>String;
@@ -68,7 +68,7 @@ strictGreet = function(name:String):String
 var greeting:String = strictGreet("hi");
 ```
 
-The following attempt to call `strictGreet` will fail because the arguments don't match the parameter types and the return type doesn't match the variable it is assigned to.
+The following attempt to call `strictGreet` will fail because the arguments don't match the parameter types and the return type doesn't match the variable it is assigned to:
 
 ```as3
 // Error: Implicit coercion of a value of type String to an unrelated type Array.
@@ -77,7 +77,7 @@ The following attempt to call `strictGreet` will fail because the arguments don'
 var result:Array = strictGreet(123.4, true);
 ```
 
-The compiler also checks for errors when a function is assigned to the function type expression. The following assignment fails because the parameter type does not match.
+The compiler also checks for errors when a function is assigned to the function type expression. The following assignment fails because the parameter type does not match:
 
 ```as3
 var strictGreet:(s:String)=>String;
@@ -91,7 +91,7 @@ strictGreet = function(n:Number):String
 
 The signature of the assigned function does not need to match the function type expression exactly. Its parameter and return types may differ if they are compatible when one is assigned to the other.
 
-For example, if you create a class `B` that extends class `A`, you may assign variables of type `B` to variables of type `A`.
+For example, if you create a class `B` that extends class `A`, you may assign variables of type `B` to variables of type `A`:
 
 ```as3
 class A {}
@@ -103,27 +103,27 @@ var b:B;
 a = b; // valid; no error!
 ```
 
-Inheritance is also considered when checking whether function signatures are compatible.
+Inheritance is also considered when checking whether function signatures are compatible:
 
 ```as3
 var func1:(x:B)=>void;
 var func2:(x:A)=>void;
 ```
 
-When `func1` is called, it will be passed a value of type `B`. `func2` is considered compatible with `func1` because a value of type `B` may be assigned to a parameter of type `A`.
+When `func1` is called, it will be passed a value of type `B`. `func2` is considered compatible with `func1` because a value of type `B` may be assigned to a parameter of type `A`:
 
 ```as3
 func1 = func2; // valid; no error!
 ```
 
-However, `func2` will accept any value of type `A`. If there's another class, `C`, that also extends `A`, but doesn't extend `B`, this value of type `C` cannot be assigned to a parameter of type `B`, so an error must be reported if `func1` is assigned to `func2`.
+However, `func2` will accept any value of type `A`. If there's another class, `C`, that also extends `A` but doesn't extend `B`, this value of type `C` cannot be assigned to a parameter of type `B`, so an error must be reported if `func1` is assigned to `func2`:
 
 ```as3
 // Error: Implicit coercion of a value of type (x:A)=>void to an unrelated type (x:B)=>void.
 func2 = func1;
 ```
 
-A `...rest` parameter is compatible with any number of parameters, and their types don't matter.
+A `...rest` parameter is compatible with any number of parameters, and their types don't matter:
 
 ```as3
 var func1:(x:String, y:Number, z:Boolean)=>void;
@@ -133,27 +133,27 @@ func1 = func2;
 
 `func2` can accept any combination of arguments, including the `String`, `Number`, and `Boolean` that must be passed to `func1`, so `func2` is allowed to be assigned to `func1`.
 
-Inheritance is also considered for return types.
+Inheritance is also considered for return types:
 
 ```as3
 var func1:()=>A;
 var func2:()=>B;
 ```
 
-When `func1` is called, it will be return a value of type `A`. `func2` is considered compatible with `func1` because it returns a value of type `B`, which is a subclass of `A`.
+When `func1` is called, it returns a value of type `A`. `func2` is considered compatible with `func1` because it returns a value of type `B`, which is a subclass of `A`:
 
 ```as3
 func1 = func2; // valid; no error!
 ```
 
-However, `func1` may return any value of type `A`. If there's another class, `C`, that also extends `A`, but doesn't extend `B`, this value of type `C` would not be a compatible return type for `func2`, so an error must be reported if `func1` is assigned to `func2`.
+However, `func1` may return any value of type `A`. If there's another class, `C`, that also extends `A` but doesn't extend `B`, this value of type `C` would not be a compatible return type for `func2`, so an error must be reported if `func1` is assigned to `func2`:
 
 ```as3
 // Error: Implicit coercion of a value of type ()=>A to an unrelated type ()=>B.
 func2 = func1;
 ```
 
-A function type expression with a `void` return type is compatible with any other return type because the return type may be safely ignored.
+A function type expression with a `void` return type is compatible with any other return type because the return type may be safely ignored:
 
 ```as3
 var func:(x:String)=>void;
@@ -168,6 +168,6 @@ func = greet;
 
 ## Limitations of strict function types in Royale
 
-Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize strict function types. Attemping to pass ActionScript or MXML source code that contain strict function types to another compiler may result in compile-time errors. In other words, to write 100% portable ActionScript code that works with any compiler, avoid using arrow functions and any of Royale's other [extensions to the ActionScript language](features/as3#new-actionscript-language-features-in-royale).
+Other ActionScript compilers, such as the one in the [Apache Flex SDK](https://flex.apache.org/){:target='_blank'}, may not recognize strict function types. Attemping to pass ActionScript or MXML source code that contain strict function types to another compiler may result in compile-time errors. In fact, to write 100% portable ActionScript code that works with any compiler, avoid using arrow functions and any of Royale's other [extensions to the ActionScript language](features/as3#new-actionscript-language-features-in-royale).
 
-Strict function types are a compile-time only feature. At runtime, strict function types are ignored and treated as if the type were simply `Function`. No run-time exception will be thrown if the signature of a function assigned to a variable with a strict function type does not match.
+Strict function types are a compile-time only feature. At runtime, strict function types are treated as if the type were simply `Function`. No run-time exception will be thrown if the signature of a function assigned to a variable with a strict function type does not match.
