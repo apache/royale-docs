@@ -62,7 +62,7 @@ This document is divided into several sections:
 
 ## New ActionScript language features in Royale
 
-The Royale compiler extends the ActionScript language with useful, new features. These language extensions are considered optional, and to use the new syntax, you must enable certain compiler flags.
+The Royale compiler extends the ActionScript language with useful new features. These language extensions are considered optional, and to use the new syntax you must enable certain compiler flags.
 
 The following new ActionScript features are available with the Royale compiler:
 
