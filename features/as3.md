@@ -53,7 +53,7 @@ package org.apache.royale
 
 ## Sections
 
-This document is divided into several sections:
+AS3 information is in four sections:
 
 - [Classes and functions](features/as3/classes-and-functions) explains how to define classes for representing objects and how to define methods on those classes.
 - [Packages](features/as3/packages) explains how to organize code into packages using the `package` syntax.
