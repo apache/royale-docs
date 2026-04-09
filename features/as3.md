@@ -64,7 +64,7 @@ This document is divided into several sections:
 
 The Royale compiler extends the ActionScript language with useful new features. These language extensions are considered optional, and to use the new syntax you must enable certain compiler flags.
 
-The following new ActionScript features are available with the Royale compiler:
+The following new ActionScript features are available with the Royale compiler. Each page indicates in which release of Apache Royale the feature becomes available:
 
 * [Abstract Classes](features/as3/abstract-classes)
 * [Arrow Functions](features/as3/arrow-functions)
@@ -75,6 +75,7 @@ The following new ActionScript features are available with the Royale compiler:
 * [Strict Function Types](features/as3/strict-function-types)
 * [Type Inference](features/as3/type-inference)
 * [Verbatim Strings](features/as3/verbatim-strings)
+
 
 ### Limitations of ActionScript language extensions
 
