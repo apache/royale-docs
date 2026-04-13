@@ -47,7 +47,7 @@ Finding the beads that will provide what you want for a given component, or even
 * __Specific Component Beads__. (beads only usable for a specific component, like [Jewel PasswordInput](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls.textinput/PasswordInput){:target='_blank'} for an instance of [Jewel TextInput](component-sets/jewel/textinput))
 * __Common Shared Beads__. Beads that can be used with more than one component, like [Jewel Disabled bead](https://royale.apache.org/asdoc/index.html#!org.apache.royale.jewel.beads.controls/Disabled){:target='_blank'}, which can be used by [Jewel Button](component-sets/jewel/button), [Jewel TextInput](component-sets/jewel/textinput) or [Jewel CheckBox](component-sets/jewel/checkbox).
 
-## Adding a bead
+## Adding and removing beads
 
 There are three ways to add beads to a component: bake it into the code using `<j:beads>`, declare it through CSS, or add it dynamically using `addBead()`.
 
@@ -115,7 +115,14 @@ alertView.content.addBead(verticalLayout);
 ```
 See a full example of the code above in the [Customization through the Royale API](https://royale.apache.org/customization-through-the-royale-api/){:target='_blank'} example.
 
-### Accessing a bead from a strand
+### Removing a bead
+If you want to remove a bead you are not using from a strand for some reason, such a simplifying your code, choose the option used to add the bead:
+
+  - If you added the bead directly in code, edit the component's mxml to remove it.
+  - if you added the bead through CSS, remove it from your CSS file.
+  - If you added the bead in ActionScript using `addBead()`, use `removeBead()` to remove it.
+    
+## Accessing a bead from a strand
 There are many cases where you need to find a specific bead without necessarily knowing the implementation. The two most common cases are accessing a strand's view and model.
 
 For these two cases, any class which implements `IStrandWithModelAndView` or inherits from `UIBase` (which is pretty much every visual component) has direct access to the `view` and `model` getters on the strand. These getters should always be used for views and models. 
@@ -165,4 +172,4 @@ If you see the need for a bead that does not yet exist, you can create your own 
 
 ## Strand management
 
-_This section will include information on adding and removing beads and the significance of bead order_
+_This section will include information on the significance of bead order_
