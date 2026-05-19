@@ -569,6 +569,20 @@ public class MyClass
 
 In the output directory, typically _bin/js-debug_ or _bin/js-release_, the _index.html_ file will be generated in the root, and _.js_ files will be copied into a _scripts_ sub-directory.
 
+### JSX
+
+_Available since Royale 0.9.7_
+
+ActionScript has traditionally supported an inline XML syntax named E4X. JSX is another form of inline XML that was created for JavaScript frameworks like React, and its syntax largely overlaps with E4X. `[JSX]` metadata may be added to a method to treat any inline XML that the method contains as JSX instead of E4X.
+
+```as3
+[JSX]
+public function methodWithJSX():void
+{
+    return <MyComponent/>;
+}
+```
+
 ### Managed
 
 Managed
