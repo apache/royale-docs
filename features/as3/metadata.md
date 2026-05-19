@@ -468,17 +468,17 @@ To support any type of keys when targeting JavaScript, the `[JSDynamicOverride]`
 - `deleteMethod` translates `delete object[key]` removals
 - `inMethod` translates `key in object` conditions
 
-The following example demonstrates how to add this metadata to a class, and the
-expected method signatures.
+The following example demonstrates how to add this metadata to a class, along
+with sample method signatures.
 
 ```as3
 [JSDynamicOverride(getMethod="getKey",setMethod="setKey",deleteMethod="deleteKey",inMethod="keyIn")]
 public interface DynamicLookup {
-    public function getKey(key:String):Object {
+    public function getKey(key:Object):Object {
         // implementation
     }
 
-    public function setKey(key:Object, value:Object):void {
+    public function setKey(key:Object, value:Object):Object {
         // implementation
     }
 
@@ -523,6 +523,88 @@ assertTrue(valueToStore == valueThatWasStored); // true
 
 if (lookup.keyIn(key)) {
     lookup.deleteKey(key);
+}
+```
+
+## JSForEachOverride
+
+_Available since Royale 1.0.0_
+
+ActionScript supports looping through the values of an array or collection using the `for-each` loop. When targeting SWF, `for-each` loops may provide special behavior for classes like `flash.utils.Dictionary`.
+
+To support iterating over the values of custom types when targeting JavaScript, the `[JSForEachOverride]` metadata may be used to inform the compiler that it should translate `for-each` loop code to method calls. There are a number of method names that may be set on this meta. All are optional, and none require any others.
+
+- `iteratorMethod` creates an iterator object
+- `iteratorNextMethod` returns the next value from the iterator object
+- `iteratorHasNextMethod` determines if the iterator has additional values
+- `iteratorDoneMethod` determines if the iterator has no additional values
+
+Generally, the metadata should define either `iteratorHasNextMethod` or `iteratorDoneMethod`, but not both. These properties exist to support both styles if checking if the iterator can continue or not. Alternately, you may omit both method names, and the compiler will check if the result of the `iteratorNextMethod` is `null` to determine when the loop has completed. However, this prevents looping over a collection that may contain `null` values.
+
+The following example demonstrates how to add this metadata to a class, along
+with sample method signatures. It uses `iteratorHasNextMethod`.
+
+```as3
+[JSForEachOverride(iteratorMethod="getIterator",iteratorNextMethod="getNext",iteratorHasNextMethod="hasNext")]
+class DynamicForEach {
+    public function getIterator():Object {
+        return new DynamicForEachIterator(this);
+    }
+}
+
+class DynamicForEachIterator {
+    public function DynamicForEachIterator(target:DynamicForEach) {
+        // implementation
+    }
+
+    public function getNext():Object {
+        // implementation
+    }
+
+    public function hasNext():Boolean {
+        // implementation
+    }
+}
+```
+
+## JSForInOverride
+
+_Available since Royale 1.0.0_
+
+ActionScript supports looping through object keys using the `for-in` loop. For most objects, those keys are strings. Arrays typically use integers for keys. When targeting SWF, the `flash.utils.Dictionary` class supports keys of any type.
+
+To support iterating over any type of keys when targeting JavaScript, the `[JSForInOverride]` metadata may be used to inform the compiler that it should translate `for-in` loop code to method calls. There are a number of method names that may be set on this meta. All are optional, and none require any others.
+
+- `iteratorMethod` creates an iterator object
+- `iteratorNextMethod` returns the next key from the iterator object
+- `iteratorHasNextMethod` determines if the iterator has additional keys
+- `iteratorDoneMethod` determines if the iterator has no additional keys
+
+Generally, the metadata should define either `iteratorHasNextMethod` or `iteratorDoneMethod`, but not both. These properties exist to support both styles if checking if the iterator can continue or not. Alternately, you may omit both method names, and the compiler will check if the result of the `iteratorNextMethod` is `null` to determine when the loop has completed. However, this prevents looping over a collection that may contain `null` values.
+
+The following example demonstrates how to add this metadata to a class, along
+with sample method signatures. It uses `iteratorHasNextMethod`.
+
+```as3
+[JSForInOverride(iteratorMethod="getIterator",iteratorNextMethod="getNext",iteratorHasNextMethod="hasNext")]
+class DynamicForIn {
+    public function getIterator():Object {
+        return new DynamicForInIterator(this);
+    }
+}
+
+class DynamicForInIterator {
+    public function DynamicForInIterator(target:DynamicForIn) {
+        // implementation
+    }
+
+    public function getNext():Object {
+        // implementation
+    }
+
+    public function hasNext():Boolean {
+        // implementation
+    }
 }
 ```
 
