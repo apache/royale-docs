@@ -569,6 +569,26 @@ public class MyClass
 
 In the output directory, typically _bin/js-debug_ or _bin/js-release_, the _index.html_ file will be generated in the root, and _.js_ files will be copied into a _scripts_ sub-directory.
 
+### JSModule
+
+_Available since Royale 0.9.7_
+
+When targeting a JavaScript runtime that supports CommonJS modules, like Node.js, you may need to access external modules. You can define classes with `@externs` to indicate that they will be available in global scope at run-time, rather than compiled from ActionScript to JavaScript. To indicate that that an extern is located in a module, use `[JSModule]` metadata. The `name` property may be used to indicate the name of the module to require.
+
+```as3
+[JSModule(name="mymodule")]
+/**
+ * @externs
+ */
+public class MyClass {}
+```
+
+When the compiler generates JavaScript code, it will import the module using `require()`.
+
+```js
+var MyClass = require("mymodule");
+```
+
 ### JSX
 
 _Available since Royale 0.9.7_
