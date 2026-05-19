@@ -455,6 +455,77 @@ public function get data():Object;
 
 InstanceType
 
+## JSDynamicOverride
+
+_Available since Royale 1.0.0_
+
+ActionScript supports dynamically accessing object keys using square brackets, removing keys with the `delete` keyword, and checking whether a key exists with the `in` keyword. For most objects, those keys are strings. Arrays typically use integers for keys. When targeting SWF, the `flash.utils.Dictionary` class supports keys of any type.
+
+To support any type of keys when targeting JavaScript, the `[JSDynamicOverride]` metadata may be used to inform the compiler that it should translate dynamic code to method calls. There are a number of method names that may be set on this meta. All are optional, and none require any others.
+
+- `getMethod` translates `object[key]` reads
+- `setMethod` translates `object[key]` writes
+- `deleteMethod` translates `delete object[key]` removals
+- `inMethod` translates `key in object` conditions
+
+The following example demonstrates how to add this metadata to a class, and the
+expected method signatures.
+
+```as3
+[JSDynamicOverride(getMethod="getKey",setMethod="setKey",deleteMethod="deleteKey",inMethod="keyIn")]
+public interface DynamicLookup {
+    public function getKey(key:String):Object {
+        // implementation
+    }
+
+    public function setKey(key:Object, value:Object):void {
+        // implementation
+    }
+
+    public function deleteKey(key:Object):Boolean {
+        // implementation
+    }
+
+    public function keyIn(key:Object):Boolean {
+        // implementation
+    }
+}
+```
+
+The next example shows how the class above might be used:
+
+```as3
+var valueToStore:Number = 123.4;
+var key:Object = {};
+
+var obj:DynamicLookup = new DynamicLookup();
+obj[key] = valueToStore;
+
+var valueThatWasStored:Number = lookup[key];
+assertTrue(valueToStore == valueThatWasStored); // true
+
+if (key in lookup) {
+    delete lookup[key];
+}
+```
+
+When the compiler generates JavaScript from the code above, its translation will look roughly similar to the following:
+
+```js
+var valueToStore = 123.4;
+var key = {};
+
+var obj = new DynamicLookup();
+obj.setKey(key, valueToStore);
+
+var valueThatWasStored = obj.getKey(key);
+assertTrue(valueToStore == valueThatWasStored); // true
+
+if (lookup.keyIn(key)) {
+    lookup.deleteKey(key);
+}
+```
+
 ## JSIncludeAsset
 
 _Available since Royale 0.9.13_
