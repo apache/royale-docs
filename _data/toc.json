@@ -287,6 +287,9 @@
                     "path": "create-an-application/application-structure.md"
                 },
                 {
+                    "path": "create-an-application/codegraphs.md"
+                },
+                {
                     "path": "create-an-application/application-tutorial.md",
                     "children": [
                         {

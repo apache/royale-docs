@@ -30,6 +30,8 @@ This document is divided into several sections:
 
 [Application Structure](create-an-application/application-structure) explains the important files that typically comprise an application and what they do.
 
+[Using codegraphs](create-an-application/codegraphs) explains how to generate a compiler-resolved description of your application's API and how development tools and AI models can use application and framework codegraphs.
+
 [Application Tutorial](create-an-application/application-tutorial) is a step-by-step example of building an application.
 
 [Migrate an Existing App](migrate-an-existing-app) provides strategies and techniques when migrating existing Flex apps to Royale, and how to switch to Royale if you already have a JavaScript application.
